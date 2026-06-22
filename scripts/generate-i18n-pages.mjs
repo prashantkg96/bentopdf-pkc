@@ -65,6 +65,9 @@ function buildUrl(langPrefix, pagePath) {
 const ORGANIZATION_LD_MARKER = 'data-bentopdf-organization';
 
 function injectOrganizationLd(document) {
+  // PKC: do not inject the upstream BentoPDF Organization schema / social links.
+  return;
+  // eslint-disable-next-line no-unreachable
   if (document.querySelector(`script[${ORGANIZATION_LD_MARKER}]`)) return;
   const existing = document.querySelectorAll(
     'script[type="application/ld+json"]'

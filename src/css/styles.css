@@ -16,6 +16,7 @@
 @import '@fontsource/cedarville-cursive/400.css';
 @import 'cropperjs/dist/cropper.css';
 @import 'tailwindcss';
+@import './pkc-theme.css';
 
 @theme {
   --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
@@ -726,3 +727,6 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none; /* Chrome, Safari, Edge */
   margin: 0;
 }
+
+/* PKC: the Tailwind palette remap lives in pkc-theme.css (imported at the top),
+   which is the part of this stylesheet that reliably reaches the bundle. */
