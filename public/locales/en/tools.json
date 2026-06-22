@@ -658,40 +658,10 @@
     "name": "Change Permissions",
     "subtitle": "Set or change user permissions on a PDF."
   },
-  "odtToPdf": {
-    "name": "ODT to PDF",
-    "subtitle": "Convert OpenDocument Text files to PDF format. Supports multiple files.",
-    "acceptedFormats": "ODT files",
-    "convertButton": "Convert to PDF"
-  },
   "csvToPdf": {
     "name": "CSV to PDF",
     "subtitle": "Convert CSV spreadsheet files to PDF format. Supports multiple files.",
     "acceptedFormats": "CSV files",
-    "convertButton": "Convert to PDF"
-  },
-  "rtfToPdf": {
-    "name": "RTF to PDF",
-    "subtitle": "Convert Rich Text Format documents to PDF. Supports multiple files.",
-    "acceptedFormats": "RTF files",
-    "convertButton": "Convert to PDF"
-  },
-  "wordToPdf": {
-    "name": "Word to PDF",
-    "subtitle": "Convert Word documents (DOCX, DOC, ODT, RTF) to PDF format. Supports multiple files.",
-    "acceptedFormats": "DOCX, DOC, ODT, RTF files",
-    "convertButton": "Convert to PDF"
-  },
-  "excelToPdf": {
-    "name": "Excel to PDF",
-    "subtitle": "Convert Excel spreadsheets (XLSX, XLS, ODS, CSV) to PDF format. Supports multiple files.",
-    "acceptedFormats": "XLSX, XLS, ODS, CSV files",
-    "convertButton": "Convert to PDF"
-  },
-  "powerpointToPdf": {
-    "name": "PowerPoint to PDF",
-    "subtitle": "Convert PowerPoint presentations (PPTX, PPT, ODP) to PDF format. Supports multiple files.",
-    "acceptedFormats": "PPTX, PPT, ODP files",
     "convertButton": "Convert to PDF"
   },
   "markdownToPdf": {
@@ -760,58 +730,10 @@
     "acceptedFormats": "CBZ, CBR files",
     "convertButton": "Convert to PDF"
   },
-  "wpdToPdf": {
-    "name": "WPD to PDF",
-    "subtitle": "Convert WordPerfect documents (WPD) to PDF format. Supports multiple files.",
-    "acceptedFormats": "WPD files",
-    "convertButton": "Convert to PDF"
-  },
-  "wpsToPdf": {
-    "name": "WPS to PDF",
-    "subtitle": "Convert WPS Office documents to PDF format. Supports multiple files.",
-    "acceptedFormats": "WPS files",
-    "convertButton": "Convert to PDF"
-  },
   "xmlToPdf": {
     "name": "XML to PDF",
     "subtitle": "Convert XML documents to PDF format. Supports multiple files.",
     "acceptedFormats": "XML files",
-    "convertButton": "Convert to PDF"
-  },
-  "pagesToPdf": {
-    "name": "Pages to PDF",
-    "subtitle": "Convert Apple Pages documents to PDF format. Supports multiple files.",
-    "acceptedFormats": "Pages files",
-    "convertButton": "Convert to PDF"
-  },
-  "odgToPdf": {
-    "name": "ODG to PDF",
-    "subtitle": "Convert OpenDocument Graphics (ODG) files to PDF format. Supports multiple files.",
-    "acceptedFormats": "ODG files",
-    "convertButton": "Convert to PDF"
-  },
-  "odsToPdf": {
-    "name": "ODS to PDF",
-    "subtitle": "Convert OpenDocument Spreadsheet (ODS) files to PDF format. Supports multiple files.",
-    "acceptedFormats": "ODS files",
-    "convertButton": "Convert to PDF"
-  },
-  "odpToPdf": {
-    "name": "ODP to PDF",
-    "subtitle": "Convert OpenDocument Presentation (ODP) files to PDF format. Supports multiple files.",
-    "acceptedFormats": "ODP files",
-    "convertButton": "Convert to PDF"
-  },
-  "pubToPdf": {
-    "name": "PUB to PDF",
-    "subtitle": "Convert Microsoft Publisher (PUB) files to PDF format. Supports multiple files.",
-    "acceptedFormats": "PUB files",
-    "convertButton": "Convert to PDF"
-  },
-  "vsdToPdf": {
-    "name": "VSD to PDF",
-    "subtitle": "Convert Microsoft Visio (VSD, VSDX) files to PDF format. Supports multiple files.",
-    "acceptedFormats": "VSD, VSDX files",
     "convertButton": "Convert to PDF"
   },
   "psdToPdf": {

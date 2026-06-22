@@ -47,9 +47,6 @@ import { PdfToCsvNode } from './pdf-to-csv-node';
 import { PdfToSvgNode } from './pdf-to-svg-node';
 import { PdfToMarkdownNode } from './pdf-to-markdown-node';
 import { ExtractImagesNode } from './extract-images-node';
-import { WordToPdfNode } from './word-to-pdf-node';
-import { ExcelToPdfNode } from './excel-to-pdf-node';
-import { PowerPointToPdfNode } from './powerpoint-to-pdf-node';
 import { TextToPdfNode } from './text-to-pdf-node';
 import { SvgToPdfNode } from './svg-to-pdf-node';
 import { EpubToPdfNode } from './epub-to-pdf-node';
@@ -69,12 +66,6 @@ import { CbzToPdfNode } from './cbz-to-pdf-node';
 import { MarkdownToPdfNode } from './markdown-to-pdf-node';
 import { JsonToPdfNode } from './json-to-pdf-node';
 import { XmlToPdfNode } from './xml-to-pdf-node';
-import { WpdToPdfNode } from './wpd-to-pdf-node';
-import { WpsToPdfNode } from './wps-to-pdf-node';
-import { PagesToPdfNode } from './pages-to-pdf-node';
-import { OdgToPdfNode } from './odg-to-pdf-node';
-import { PubToPdfNode } from './pub-to-pdf-node';
-import { VsdToPdfNode } from './vsd-to-pdf-node';
 
 export interface NodeRegistryEntry {
   label: string;
@@ -101,30 +92,6 @@ export const nodeRegistry: Record<string, NodeRegistryEntry> = {
     description: 'Upload images and convert to PDF',
     factory: () => new ImageInputNode(),
     toolPageId: 'image-to-pdf',
-  },
-  WordToPdfNode: {
-    label: 'Word to PDF',
-    category: 'Input',
-    icon: 'ph-microsoft-word-logo',
-    description: 'Convert Word documents to PDF',
-    factory: () => new WordToPdfNode(),
-    toolPageId: 'word-to-pdf',
-  },
-  ExcelToPdfNode: {
-    label: 'Excel to PDF',
-    category: 'Input',
-    icon: 'ph-microsoft-excel-logo',
-    description: 'Convert Excel spreadsheets to PDF',
-    factory: () => new ExcelToPdfNode(),
-    toolPageId: 'excel-to-pdf',
-  },
-  PowerPointToPdfNode: {
-    label: 'PowerPoint to PDF',
-    category: 'Input',
-    icon: 'ph-microsoft-powerpoint-logo',
-    description: 'Convert PowerPoint presentations to PDF',
-    factory: () => new PowerPointToPdfNode(),
-    toolPageId: 'powerpoint-to-pdf',
   },
   TextToPdfNode: {
     label: 'Text to PDF',
@@ -213,54 +180,6 @@ export const nodeRegistry: Record<string, NodeRegistryEntry> = {
     description: 'Convert XML documents to PDF',
     factory: () => new XmlToPdfNode(),
     toolPageId: 'xml-to-pdf',
-  },
-  WpdToPdfNode: {
-    label: 'WPD to PDF',
-    category: 'Input',
-    icon: 'ph-file-text',
-    description: 'Convert WordPerfect documents to PDF',
-    factory: () => new WpdToPdfNode(),
-    toolPageId: 'wpd-to-pdf',
-  },
-  WpsToPdfNode: {
-    label: 'WPS to PDF',
-    category: 'Input',
-    icon: 'ph-file-text',
-    description: 'Convert WPS Office documents to PDF',
-    factory: () => new WpsToPdfNode(),
-    toolPageId: 'wps-to-pdf',
-  },
-  PagesToPdfNode: {
-    label: 'Pages to PDF',
-    category: 'Input',
-    icon: 'ph-file-text',
-    description: 'Convert Apple Pages documents to PDF',
-    factory: () => new PagesToPdfNode(),
-    toolPageId: 'pages-to-pdf',
-  },
-  OdgToPdfNode: {
-    label: 'ODG to PDF',
-    category: 'Input',
-    icon: 'ph-image',
-    description: 'Convert OpenDocument Graphics to PDF',
-    factory: () => new OdgToPdfNode(),
-    toolPageId: 'odg-to-pdf',
-  },
-  PubToPdfNode: {
-    label: 'PUB to PDF',
-    category: 'Input',
-    icon: 'ph-book-open',
-    description: 'Convert Microsoft Publisher to PDF',
-    factory: () => new PubToPdfNode(),
-    toolPageId: 'pub-to-pdf',
-  },
-  VsdToPdfNode: {
-    label: 'VSD to PDF',
-    category: 'Input',
-    icon: 'ph-git-branch',
-    description: 'Convert Visio diagrams (VSD/VSDX) to PDF',
-    factory: () => new VsdToPdfNode(),
-    toolPageId: 'vsd-to-pdf',
   },
   MergeNode: {
     label: 'Merge PDFs',

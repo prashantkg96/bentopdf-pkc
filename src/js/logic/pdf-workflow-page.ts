@@ -12,9 +12,6 @@ import {
   PDFInputNode,
   EncryptedPDFError,
   ImageInputNode,
-  WordToPdfNode,
-  ExcelToPdfNode,
-  PowerPointToPdfNode,
   TextToPdfNode,
   SvgToPdfNode,
   EpubToPdfNode,
@@ -27,12 +24,6 @@ import {
   MarkdownToPdfNode,
   JsonToPdfNode,
   XmlToPdfNode,
-  WpdToPdfNode,
-  WpsToPdfNode,
-  PagesToPdfNode,
-  OdgToPdfNode,
-  PubToPdfNode,
-  VsdToPdfNode,
 } from '@/js/workflow/nodes';
 import {
   saveWorkflow,
@@ -925,27 +916,6 @@ function showNodeSettings(node: BaseWorkflowNode) {
     hint?: string;
   }[] = [
     {
-      cls: WordToPdfNode,
-      label: 'Word Documents',
-      accept: '.doc,.docx,.odt,.rtf',
-      btnLabel: 'Documents',
-      hint: 'Supported: DOC, DOCX, ODT, RTF',
-    },
-    {
-      cls: ExcelToPdfNode,
-      label: 'Spreadsheets',
-      accept: '.xlsx,.xls,.ods,.csv',
-      btnLabel: 'Spreadsheets',
-      hint: 'Supported: XLSX, XLS, ODS, CSV',
-    },
-    {
-      cls: PowerPointToPdfNode,
-      label: 'Presentations',
-      accept: '.ppt,.pptx,.odp',
-      btnLabel: 'Presentations',
-      hint: 'Supported: PPT, PPTX, ODP',
-    },
-    {
       cls: TextToPdfNode,
       label: 'Text Files',
       accept: '.txt',
@@ -1013,43 +983,6 @@ function showNodeSettings(node: BaseWorkflowNode) {
       label: 'XML Files',
       accept: '.xml',
       btnLabel: 'XML Files',
-    },
-    {
-      cls: WpdToPdfNode,
-      label: 'WordPerfect Files',
-      accept: '.wpd',
-      btnLabel: 'WPD Files',
-    },
-    {
-      cls: WpsToPdfNode,
-      label: 'WPS Files',
-      accept: '.wps',
-      btnLabel: 'WPS Files',
-    },
-    {
-      cls: PagesToPdfNode,
-      label: 'Pages Files',
-      accept: '.pages',
-      btnLabel: 'Pages Files',
-    },
-    {
-      cls: OdgToPdfNode,
-      label: 'ODG Files',
-      accept: '.odg',
-      btnLabel: 'ODG Files',
-    },
-    {
-      cls: PubToPdfNode,
-      label: 'Publisher Files',
-      accept: '.pub',
-      btnLabel: 'PUB Files',
-    },
-    {
-      cls: VsdToPdfNode,
-      label: 'Visio Files',
-      accept: '.vsd,.vsdx',
-      btnLabel: 'Visio Files',
-      hint: 'Supported: VSD, VSDX',
     },
   ];
 

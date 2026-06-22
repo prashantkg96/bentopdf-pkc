@@ -9,13 +9,11 @@ export enum PreloadStatus {
 }
 
 interface PreloadState {
-  libreoffice: PreloadStatus;
   pymupdf: PreloadStatus;
   ghostscript: PreloadStatus;
 }
 
 const preloadState: PreloadState = {
-  libreoffice: PreloadStatus.IDLE,
   pymupdf: PreloadStatus.IDLE,
   ghostscript: PreloadStatus.IDLE,
 };
@@ -95,33 +93,6 @@ function scheduleIdleTask(task: () => Promise<void>): void {
 
 export function startBackgroundPreload(): void {
   console.log('[Preloader] Scheduling background WASM preloads...');
-
-  const libreOfficePages = [
-    'word-to-pdf',
-    'excel-to-pdf',
-    'ppt-to-pdf',
-    'powerpoint-to-pdf',
-    'docx-to-pdf',
-    'xlsx-to-pdf',
-    'pptx-to-pdf',
-    'csv-to-pdf',
-    'rtf-to-pdf',
-    'odt-to-pdf',
-    'ods-to-pdf',
-    'odp-to-pdf',
-  ];
-
-  const currentPath = window.location.pathname;
-  const isLibreOfficePage = libreOfficePages.some((page) =>
-    currentPath.includes(page)
-  );
-
-  if (isLibreOfficePage) {
-    console.log(
-      '[Preloader] Skipping preloads on LibreOffice page to save memory'
-    );
-    return;
-  }
 
   scheduleIdleTask(async () => {
     console.log('[Preloader] Starting sequential WASM preloads...');

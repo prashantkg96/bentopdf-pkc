@@ -49,7 +49,6 @@ export const simpleTools = [
   'decrypt',
   'change-permissions',
   'pdf-to-markdown',
-  'word-to-pdf',
 ];
 
 export const multiFileTools = [

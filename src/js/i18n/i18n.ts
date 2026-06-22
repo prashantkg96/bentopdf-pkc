@@ -2,53 +2,11 @@ import i18next from 'i18next';
 import HttpBackend from 'i18next-http-backend';
 
 // Supported languages
-export const supportedLanguages = [
-  'en',
-  'ar',
-  'be',
-  'ru',
-  'fr',
-  'de',
-  'es',
-  'zh',
-  'zh-TW',
-  'vi',
-  'tr',
-  'id',
-  'it',
-  'pt',
-  'nl',
-  'da',
-  'sv',
-  'ko',
-  'ja',
-  'uk',
-  'sk',
-] as const;
+export const supportedLanguages = ['en'] as const;
 export type SupportedLanguage = (typeof supportedLanguages)[number];
 
 export const languageNames: Record<SupportedLanguage, string> = {
   en: 'English',
-  ar: 'العربية',
-  be: 'Беларуская',
-  ru: 'Русский',
-  fr: 'Français',
-  de: 'Deutsch',
-  es: 'Español',
-  zh: '中文',
-  'zh-TW': '繁體中文（台灣）',
-  vi: 'Tiếng Việt',
-  tr: 'Türkçe',
-  id: 'Bahasa Indonesia',
-  it: 'Italiano',
-  pt: 'Português',
-  nl: 'Nederlands',
-  da: 'Dansk',
-  sv: 'Svenska',
-  ko: '한국어',
-  ja: '日本語',
-  uk: 'Українська',
-  sk: 'Slovenčina',
 };
 
 export const getLanguageFromUrl = (): SupportedLanguage => {
@@ -63,9 +21,7 @@ export const getLanguageFromUrl = (): SupportedLanguage => {
     path = '/' + path;
   }
 
-  const langMatch = path.match(
-    /^\/(en|ar|fr|es|de|zh|zh-TW|vi|tr|id|it|pt|nl|be|da|ko|sv|ru|ja|uk|sk)(?:\/|$)/
-  );
+  const langMatch = path.match(/^\/(en)(?:\/|$)/);
   if (
     langMatch &&
     supportedLanguages.includes(langMatch[1] as SupportedLanguage)
@@ -153,9 +109,7 @@ export const changeLanguage = (lang: SupportedLanguage): void => {
   }
 
   let pagePathWithoutLang = relativePath;
-  const langPrefixMatch = relativePath.match(
-    /^\/(en|ar|fr|es|de|zh|zh-TW|vi|tr|id|it|pt|nl|be|da|ko|sv|ru|ja|uk|sk)(\/.*)?$/
-  );
+  const langPrefixMatch = relativePath.match(/^\/(en)(\/.*)?$/);
   if (langPrefixMatch) {
     pagePathWithoutLang = langPrefixMatch[2] || '/';
   }
@@ -249,7 +203,7 @@ export const rewriteLinks = (): void => {
     }
 
     const langPrefixRegex = new RegExp(
-      `^(${basePath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})?/?(en|ar|fr|es|de|zh|zh-TW|vi|tr|id|it|pt|nl|be|da|ko|sv|ru|ja|uk|sk)(/|$)`
+      `^(${basePath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})?/?(en)(/|$)`
     );
     if (langPrefixRegex.test(href)) {
       return;
