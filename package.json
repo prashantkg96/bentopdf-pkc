@@ -39,7 +39,7 @@
     "security:codeql:quick": "codeql database analyze ./codeql-db --format=csv --output=codeql-results.csv --threads=0 codeql/javascript-queries:codeql-suites/javascript-security-extended.qls",
     "security:audit": "npm audit --audit-level=high && npm run lint:security",
     "prepare": "husky",
-    "build:deploy": "export BASE_URL=/pdf && tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs"
+    "build:deploy": "export BASE_URL=/toolkits/pdf-tools && tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
