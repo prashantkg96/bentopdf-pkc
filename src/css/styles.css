@@ -848,9 +848,15 @@ input[type='number']::-webkit-outer-spin-button {
   }
 }
 
-/* The page-level tool header (← Back to Tools + breadcrumb). */
+/* The page-level tool header (← Back to Tools + breadcrumb), boxed in a rounded
+   surface card (mirrors the banner's rounded box) so it reads as a contained
+   element rather than floating text. */
 .pkc-tool-header {
   flex: none;
+  background: var(--surface-1);
+  border: 1px solid var(--outline);
+  border-radius: 0.9rem;
+  padding: 0.8rem 1.1rem;
 }
 .pkc-tool-header .pkc-back-link {
   display: inline-flex;
