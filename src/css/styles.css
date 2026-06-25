@@ -811,13 +811,46 @@ input[type='number']::-webkit-outer-spin-button {
   padding-top: 0.25rem;
 }
 
-/* PKC: consistent page-level tool header (← Back to Tools + breadcrumb),
-   injected after the privacy banner on every tool page and left-aligned to the
-   content shell. `flex: none` keeps it from stretching on the full-screen
-   builder pages whose <body> is a flex column. */
+/* PKC: tool intro row — the back/breadcrumb header sits to the LEFT of the
+   privacy banner on the same row (banner stays centered in the shell via the
+   1fr/auto/1fr grid, header fills the left gap), both vertically centered.
+   `flex: none` keeps it from stretching on the full-screen builder pages whose
+   <body> is a flex column. Stacks on narrow screens. */
+.pkc-tool-intro {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  flex: none;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.pkc-tool-intro > .pkc-tool-header {
+  grid-column: 1;
+  justify-self: start;
+}
+.pkc-tool-intro > .pkc-love-note {
+  grid-column: 2;
+  margin: 0;
+}
+@media (max-width: 980px) {
+  .pkc-tool-intro {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .pkc-tool-intro > .pkc-tool-header {
+    grid-column: 1;
+    justify-self: start;
+  }
+  .pkc-tool-intro > .pkc-love-note {
+    grid-column: 1;
+    justify-self: center;
+  }
+}
+
+/* The page-level tool header (← Back to Tools + breadcrumb). */
 .pkc-tool-header {
   flex: none;
-  margin: 0 auto 1rem;
 }
 .pkc-tool-header .pkc-back-link {
   display: inline-flex;

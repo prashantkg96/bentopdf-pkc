@@ -113,7 +113,7 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   // left-aligned to the content shell. Replaces the old in-card breadcrumb;
   // the old in-card #back-to-tools button is hidden via CSS.
   const header = document.createElement('div');
-  header.className = 'pkc-tool-header pkc-shell';
+  header.className = 'pkc-tool-header';
   header.setAttribute(BREADCRUMB_MARKER, '');
 
   const back = document.createElement('a');
@@ -148,10 +148,18 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   header.appendChild(back);
   header.appendChild(nav);
 
+  // Lay the header out to the LEFT of the privacy banner on the same row
+  // (banner stays centered in the shell, header fills the left gap, both
+  // vertically centered). Falls back to a bare header if the banner is absent.
   const banner = document.querySelector('.pkc-love-note');
   if (banner && banner.parentNode) {
-    banner.parentNode.insertBefore(header, banner.nextSibling);
+    const intro = document.createElement('div');
+    intro.className = 'pkc-tool-intro pkc-shell';
+    banner.parentNode.insertBefore(intro, banner);
+    intro.appendChild(header); // left column
+    intro.appendChild(banner); // centered column
   } else {
+    header.classList.add('pkc-shell');
     document.body.insertBefore(header, document.body.firstChild);
   }
 
