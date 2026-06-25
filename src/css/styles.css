@@ -97,12 +97,22 @@ body {
   text-align: center;
 }
 
+.tool-card {
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
 .tool-card:hover {
   transform: translateY(-5px);
   box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.2),
     0 4px 6px -2px rgba(0, 0, 0, 0.1);
   border-color: var(--primary);
+  /* Tint the whole tile (not just the border) toward the brand colour. */
+  background-color: color-mix(in srgb, var(--primary) 16%, var(--surface-2));
 }
 
 .category-header {
@@ -790,6 +800,13 @@ input[type='number']::-webkit-outer-spin-button {
   width: 100%;
   margin-inline: 0;
   padding-inline: 0;
+}
+
+/* The BentoPDF upload wrapper is a solid bg-gray-900 block; on our themed
+   backdrop it read as a black box above and below the bordered card. Make it
+   transparent so only the card shows, sitting on the page backdrop. */
+.pkc-shell > #uploader {
+  background-color: transparent;
 }
 
 /* PKC: the Tailwind palette remap lives in pkc-theme.css (imported at the top),
