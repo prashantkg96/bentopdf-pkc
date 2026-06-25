@@ -2,6 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // PKC: honor the theme chosen on the main site (shared localStorage key)
+      // before paint, so the shared top-pill nav renders in the right theme.
+      (function () {
+        var t = localStorage.getItem('theme');
+        document.documentElement.setAttribute(
+          'data-theme',
+          t === 'light' ? 'light' : 'dark'
+        );
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
@@ -188,29 +199,8 @@
       }
     </style>
 
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/images/favicon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/images/favicon-512x512.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/apple-touch-icon.png"
-    />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <!-- PKC favicon (served same-origin by the pkc-in worker at /assets) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   </head>
 
   <body class="antialiased bg-gray-900">

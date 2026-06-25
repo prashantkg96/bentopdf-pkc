@@ -117,7 +117,7 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   const homeLink = document.createElement('a');
   homeLink.href = homeUrl;
   homeLink.className = 'hover:text-indigo-300';
-  homeLink.textContent = 'BentoPDF';
+  homeLink.textContent = 'pdf-tools';
 
   const sep = document.createElement('span');
   sep.setAttribute('aria-hidden', 'true');
@@ -142,7 +142,7 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'BentoPDF',
+        name: 'pdf-tools',
         item: homeUrl,
       },
       {

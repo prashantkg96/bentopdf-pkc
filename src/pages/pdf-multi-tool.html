@@ -2,6 +2,17 @@
 <html lang="en" class="overflow-hidden">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // PKC: honor the theme chosen on the main site (shared localStorage key)
+      // before paint, so the shared top-pill nav renders in the right theme.
+      (function () {
+        var t = localStorage.getItem('theme');
+        document.documentElement.setAttribute(
+          'data-theme',
+          t === 'light' ? 'light' : 'dark'
+        );
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
@@ -98,63 +109,33 @@
       }
     </style>
 
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/images/favicon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/images/favicon-512x512.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/apple-touch-icon.png"
-    />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <!-- PKC favicon (served same-origin by the pkc-in worker at /assets) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   </head>
 
   <body
     class="antialiased bg-gray-900 h-[100dvh] overflow-hidden flex flex-col"
   >
-    <!-- Navigation -->
-    <nav class="bg-gray-800 border-b border-gray-700 flex-none z-30">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex-shrink-0 flex items-center">
-            <img
-              src="{{baseUrl}}{{#if brandLogo}}{{brandLogo}}{{else}}images/favicon-no-bg.svg{{/if}}"
-              alt="{{#if brandName}}{{brandName}}{{else}}Bento PDF{{/if}} Logo"
-              class="h-8 w-8"
-            />
-            <span class="text-white font-bold text-xl ml-2">
-              <a href="/"
-                >{{#if brandName}}{{brandName}}{{else}}BentoPDF{{/if}}</a
-              >
-            </span>
-            <span class="text-gray-400 ml-3 text-sm sm:text-base"
-              >PDF Multi Tool</span
-            >
-          </div>
-          <button
-            id="close-tool-btn"
-            class="flex items-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded text-xs sm:text-sm md:text-base"
-          >
-            <i data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i>
-            <span data-i18n="common.close">Close</span>
-          </button>
-        </div>
-      </div>
-    </nav>
+    <!-- PKC: BentoPDF logo bar replaced with the shared top-pill nav (same as
+         every other tool page). The old "Close" button just went to BASE_URL
+         (the tools index) — the pill's "Toolkits → PDF Tools"/"Home" links
+         provide the same exit, so the bespoke bar is no longer needed. -->
+    <div class="pkc-nav-shell flex-none" data-simple-nav="true">
+      <div id="topPillsMount"></div>
+    </div>
+    <script>
+      (function () {
+        if (window.__pkcTopPillsLoaded) return;
+        window.__pkcTopPillsLoaded = true;
+        var css = document.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = '/assets/shared/top-pills.css';
+        document.head.appendChild(css);
+        var js = document.createElement('script');
+        js.src = '/assets/shared/top-pills.js';
+        document.body.appendChild(js);
+      })();
+    </script>
 
     <!-- SEO H1 (visually hidden but present for search engines) -->
     <h1 class="sr-only">PDF Multi Tool Free Online - Edit & Organize PDFs</h1>

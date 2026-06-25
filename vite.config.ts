@@ -420,16 +420,20 @@ function rewriteHtmlPathsPlugin(): Plugin {
       const outDir = options.dir;
       if (!outDir) return;
 
+      // PKC: never prefix /assets/* — those are main pkc-in site assets served
+      // at the domain root (favicon, shared top-pill nav), not app assets under
+      // this BASE_URL. (Vite-emitted app bundles already carry the base, so the
+      // base lookahead excludes them; this only spares hand-authored /assets.)
       const hrefRegex = new RegExp(
-        `href="\\/(?!${escapedBase.slice(1)}|test\\/|http|\\/\\/)`,
+        `href="\\/(?!${escapedBase.slice(1)}|assets\\/|test\\/|http|\\/\\/)`,
         'g'
       );
       const srcRegex = new RegExp(
-        `src="\\/(?!${escapedBase.slice(1)}|test\\/|http|\\/\\/)`,
+        `src="\\/(?!${escapedBase.slice(1)}|assets\\/|test\\/|http|\\/\\/)`,
         'g'
       );
       const contentRegex = new RegExp(
-        `content="\\/(?!${escapedBase.slice(1)}|test\\/|http|\\/\\/)`,
+        `content="\\/(?!${escapedBase.slice(1)}|assets\\/|test\\/|http|\\/\\/)`,
         'g'
       );
 
