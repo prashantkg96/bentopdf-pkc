@@ -50,17 +50,39 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: #111827;
-  color: #d1d5db;
+  font-family: var(--font-sans);
+  /* Same background construct as the deployed PKC pages: a near-flat gradient in
+     dark mode, plus the --glow radial layer that lights up in light mode. html
+     keeps a solid --bg (set in pkc-theme.css) since this shorthand makes body's
+     own background-color transparent. */
+  background: linear-gradient(
+    160deg,
+    var(--bg) 0%,
+    var(--bg-elevated) 55%,
+    var(--bg) 100%
+  );
+  background-image: var(--glow);
+  color: var(--text-strong);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+/* Match the homepage day/night transition: the circular clip-path reveal is
+   driven by top-pills.js, and top-pills.css sets the snapshot z-index ordering.
+   The default cross-fade must be disabled here or it fights the clip animation. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 
 .tool-card {
   transition:
     transform 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
-  border: 1px solid #374151;
-  background-color: #1f2937;
+  border: 1px solid var(--surface-3);
+  background-color: var(--surface-2);
   padding: 1.5rem;
   border-radius: 0.5rem;
   display: flex;
@@ -74,7 +96,7 @@ body {
   box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.2),
     0 4px 6px -2px rgba(0, 0, 0, 0.1);
-  border-color: #4f46e5;
+  border-color: var(--primary);
 }
 
 .category-header {
@@ -90,7 +112,7 @@ body {
   cursor: pointer;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-strong);
   text-align: left;
 }
 
@@ -99,11 +121,11 @@ body {
 }
 
 .category-header:hover {
-  color: #818cf8;
+  color: var(--primary-strong);
 }
 
 .category-header:hover .category-chevron {
-  color: #818cf8;
+  color: var(--primary-strong);
 }
 
 .category-tools {
@@ -127,7 +149,7 @@ body {
   border-left: none;
   border-right: none;
   border-top: none;
-  border-bottom: 1px solid #1f2937;
+  border-bottom: 1px solid var(--surface-2);
   background-color: transparent;
   align-items: center;
   justify-content: flex-start;
@@ -161,8 +183,8 @@ body {
 .compact-mode .tool-card:hover {
   transform: none;
   box-shadow: none;
-  background-color: #1f2937;
-  border-color: #1f2937;
+  background-color: var(--surface-2);
+  border-color: var(--surface-2);
 }
 
 @media (min-width: 640px) {
@@ -198,23 +220,23 @@ input[type='file']::file-selector-button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1f2937;
+  background: var(--surface-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4f46e5;
+  background: var(--primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4338ca;
+  background: var(--primary-strong);
   /* indigo-700 */
 }
 
 /* Style for drag-and-drop placeholder */
 .sortable-ghost {
   opacity: 0.4;
-  border: 2px dashed #4f46e5;
+  border: 2px dashed var(--primary);
 }
 
 #embed-pdf-container > div {
@@ -223,7 +245,7 @@ input[type='file']::file-selector-button {
 }
 
 #tool-interface {
-  color: #39a0ed;
+  color: var(--primary-strong);
 }
 
 #page-organizer .page-thumbnail,
@@ -252,9 +274,9 @@ input[type='file']::file-selector-button {
   min-width: 0;
   overflow: auto;
   height: 75vh;
-  border: 2px solid #374151;
+  border: 2px solid var(--surface-3);
   border-radius: 0.5rem;
-  background-color: #1f2937;
+  background-color: var(--surface-2);
 }
 
 /* This rule ensures canvases in side-by-side panels display at their natural rendered size. */
@@ -279,16 +301,16 @@ footer a {
   left: 0;
   width: 100%;
   /* height: 30px; */
-  background-color: orange;
-  /* Yellow marker color */
+  background-color: var(--primary);
+  /* Highlighter marker (PKC primary) */
   z-index: -1;
   transform: skew(-20deg);
 }
 
 .pill {
-  background-color: #374151;
+  background-color: var(--surface-3);
   /* bg-gray-700 */
-  color: #d1d5db;
+  color: var(--text-muted);
   /* text-gray-300 */
   padding: 8px 16px;
   border-radius: 9999px;
@@ -298,7 +320,7 @@ footer a {
 }
 
 .cta-button {
-  background-color: #4f46e5;
+  background-color: var(--primary);
   /* indigo-600 */
   color: white;
   font-weight: 600;
@@ -309,7 +331,7 @@ footer a {
 }
 
 .cta-button:hover {
-  background-color: #4338ca;
+  background-color: var(--primary-strong);
   /* indigo-700 */
 }
 
@@ -320,7 +342,7 @@ footer a {
 }
 
 .feature-card {
-  background-color: #1f2937;
+  background-color: var(--surface-2);
   /* bg-gray-800 */
   padding: 24px;
   border-radius: 8px;
@@ -348,14 +370,19 @@ footer a {
   right: 0;
   bottom: 0;
   height: 6px;
-  background: linear-gradient(120deg, #6366f1, #8b5cf6);
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
   z-index: -1;
 }
 
 .section-divider {
   height: 1px;
-  background: linear-gradient(to right, transparent, #4d44f7, transparent);
-  /* Fades from transparent to indigo and back */
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary),
+    transparent
+  );
+  /* Fades from transparent to primary and back */
   margin: 2rem auto;
   /* my-16 */
   max-width: 42rem;
@@ -369,8 +396,12 @@ footer a {
   /* py-3 px-8 */
   border-radius: 0.5rem;
   /* rounded-lg */
-  background-image: linear-gradient(to bottom, #6366f1, #4f46e5);
-  /* from-indigo-500 to-indigo-600 */
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-strong),
+    var(--primary)
+  );
+  /* PKC primary gradient */
   color: #ffffff;
   /* text-white */
   font-weight: 600;
@@ -382,17 +413,17 @@ footer a {
 
 .btn-gradient:hover {
   box-shadow:
-    0 10px 15px -3px rgba(79, 70, 229, 0.3),
-    0 4px 6px -4px rgba(79, 70, 229, 0.3);
+    0 10px 15px -3px color-mix(in srgb, var(--primary) 30%, transparent),
+    0 4px 6px -4px color-mix(in srgb, var(--primary) 30%, transparent);
 }
 
 .btn-gradient:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   box-shadow:
-    0 0 0 2px #111827,
-    0 0 0 4px #818cf8;
-  /* focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-indigo-400 */
+    0 0 0 2px var(--bg),
+    0 0 0 4px var(--primary-strong);
+  /* PKC focus ring */
 }
 
 .btn-gradient:disabled {
@@ -407,9 +438,9 @@ footer a {
   /* w-16 */
   height: 64px;
   /* h-16 */
-  border: 5px solid #374151;
+  border: 5px solid var(--surface-3);
   /* border-gray-700 */
-  border-bottom-color: #4f46e5;
+  border-bottom-color: var(--primary);
   /* border-indigo-600 */
   border-radius: 50%;
   display: inline-block;
@@ -439,9 +470,8 @@ footer a {
 
 /* Highlight for selected signature in the saved list */
 .saved-signature.selected {
-  border-color: #4f46e5;
-  /* indigo-600 */
-  box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+  border-color: var(--primary);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--primary) 50%, transparent);
 }
 
 /* Cursor change when hovering over a placed signature */
@@ -466,7 +496,7 @@ footer a {
 }
 
 .faq-item.open .faq-question {
-  color: #818cf8;
+  color: var(--primary-strong);
   /* indigo-400 */
 }
 
@@ -476,21 +506,21 @@ footer a {
 
 /* Testimonial Card Styles */
 .testimonial-card {
-  background-color: #1f2937;
+  background-color: var(--surface-2);
   /* bg-gray-800 */
   padding: 24px;
   border-radius: 0.75rem;
   /* rounded-xl */
-  border: 1px solid #374151;
+  border: 1px solid var(--surface-3);
   /* border-gray-700 */
   display: flex;
   flex-direction: column;
 }
 
 .pill {
-  background-color: #374151;
+  background-color: var(--surface-3);
   /* bg-gray-700 */
-  color: #d1d5db;
+  color: var(--text-muted);
   /* text-gray-300 */
   padding: 8px 16px;
   border-radius: 9999px;
@@ -500,9 +530,9 @@ footer a {
 }
 
 .pill {
-  background-color: #374151;
+  background-color: var(--surface-3);
   /* bg-gray-700 */
-  color: #d1d5db;
+  color: var(--text-muted);
   /* text-gray-300 */
   /* Smaller padding and font size by default for mobile */
   padding: 6px 12px;
@@ -550,7 +580,7 @@ footer a {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  color: white;
+  color: var(--text-strong);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -559,7 +589,7 @@ footer a {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
-  color: rgb(129 140 248);
+  color: var(--primary-strong);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -567,7 +597,7 @@ footer a {
 .legal-content p {
   margin-bottom: 1rem;
   line-height: 1.625;
-  color: rgb(156 163 175);
+  color: var(--text-muted);
 }
 
 .legal-content ul {
@@ -575,16 +605,16 @@ footer a {
   list-style-position: inside;
   margin-bottom: 1rem;
   padding-left: 1rem;
-  color: rgb(156 163 175);
+  color: var(--text-muted);
 }
 
 .legal-content a {
-  color: rgb(129 140 248);
+  color: var(--primary-strong);
   text-decoration: underline;
 }
 
 .legal-content a:hover {
-  color: rgb(165 180 252);
+  color: var(--accent);
 }
 
 details > summary {
@@ -627,11 +657,11 @@ button:disabled,
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
   line-height: 1;
-  color: #e5e7eb;
-  background-color: #374151;
-  border: 1px solid #4b5563;
+  color: var(--text-strong);
+  background-color: var(--surface-3);
+  border: 1px solid var(--outline);
   border-radius: 0.25rem;
-  box-shadow: 0 1px 0 0 #1f2937;
+  box-shadow: 0 1px 0 0 var(--surface-2);
 }
 
 .shortcut-input {
@@ -643,8 +673,8 @@ button:disabled,
 
 .shortcut-input:focus {
   outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 20%, transparent);
 }
 
 /* Custom Scrollbar for Modal Content */
@@ -653,16 +683,16 @@ button:disabled,
 }
 
 #shortcuts-list::-webkit-scrollbar-track {
-  background: #1f2937;
+  background: var(--surface-2);
 }
 
 #shortcuts-list::-webkit-scrollbar-thumb {
-  background: #4b5563;
+  background: var(--outline);
   border-radius: 3px;
 }
 
 #shortcuts-list::-webkit-scrollbar-thumb:hover {
-  background: #6b7280;
+  background: var(--text-muted);
 }
 
 /* Scroll to Top Button Visibility */
@@ -694,7 +724,7 @@ input[type='color'] {
   width: 2.5rem;
   height: 2.5rem;
   padding: 0;
-  border: 2px solid #4b5563;
+  border: 2px solid var(--outline);
   border-radius: 9999px;
   background: transparent;
   cursor: pointer;
@@ -726,6 +756,15 @@ input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none; /* Chrome, Safari, Edge */
   margin: 0;
+}
+
+/* PKC: contain the shared top-pill nav to the same width as the homepage shell
+   (width: min(1120px, 92vw); centered) so it matches the common top-pill design
+   instead of bleeding full-width as a bare <body> child. */
+.pkc-nav-shell {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+  padding-top: 1rem;
 }
 
 /* PKC: the Tailwind palette remap lives in pkc-theme.css (imported at the top),

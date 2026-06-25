@@ -4,8 +4,11 @@
    remapped onto these tokens so the whole UI follows [data-theme] light/dark. */
 
 :root {
-  --bg: #030303;
-  --bg-elevated: #0a0a0a;
+  color-scheme: dark;
+  /* Match the deployed PKC pages (index/contact/jharkhand) exactly: pure black
+     base + the body gradient/glow layer below, not the template's #030303. */
+  --bg: #000000;
+  --bg-elevated: #000000;
   --surface-1: #0b0b0b;
   --surface-2: #121212;
   --surface-3: #1a1a1a;
@@ -23,10 +26,12 @@
   --danger: #ff7f95;
   --success: #57d188;
   --warning: #f2c98a;
+  --glow: none;
   --soft-shadow: 0 24px 55px rgba(0, 0, 0, 0.35);
 }
 
 [data-theme='light'] {
+  color-scheme: light;
   --bg: #fff8f2;
   --bg-elevated: #fffdf9;
   --surface-1: #ffffff;
@@ -46,6 +51,9 @@
   --danger: #c6294a;
   --success: #137d61;
   --warning: #9a640f;
+  --glow:
+    radial-gradient(circle at 15% 18%, rgba(226, 95, 0, 0.22), transparent 46%),
+    radial-gradient(circle at 85% 0%, rgba(124, 58, 237, 0.14), transparent 35%);
   --soft-shadow: 0 24px 46px rgba(56, 76, 117, 0.2);
 }
 

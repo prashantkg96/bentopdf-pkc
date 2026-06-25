@@ -31,26 +31,11 @@
     />
     <meta name="apple-mobile-web-app-title" content="PDF Tools" />
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/images/favicon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/images/favicon-512x512.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/apple-touch-icon.png"
-    />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <!-- Favicons: use the PKC site favicon (served same-origin by the pkc-in
+         Worker at /assets), so the browser tab matches the rest of the site.
+         Absolute /assets path is outside this app's BASE_URL, so Vite leaves it
+         unprefixed and it resolves at the domain root, not under /toolkits. -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,8 +47,12 @@
   </head>
 
   <body class="antialiased">
-    <!-- PKC shared top-pill nav (CSS/JS loaded same-origin from /assets) -->
-    <div id="topPillsMount"></div>
+    <!-- PKC shared top-pill nav (CSS/JS loaded same-origin from /assets).
+         Wrapped in a shell that mirrors the homepage width so the pill is
+         contained/centered instead of bleeding full-width across the body. -->
+    <div class="pkc-nav-shell">
+      <div id="topPillsMount"></div>
+    </div>
 
     <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
       <!-- Simple Mode Header -->
