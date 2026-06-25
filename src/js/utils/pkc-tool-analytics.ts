@@ -13,13 +13,13 @@ const TRACK_URL = '/api/track';
 
 function getSessionId(): string {
   try {
-    let sid = localStorage.getItem('pkc_sid');
+    let sid = localStorage.getItem('_sid');
     if (!sid) {
       sid =
         typeof crypto !== 'undefined' && crypto.randomUUID
           ? crypto.randomUUID()
           : `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
-      localStorage.setItem('pkc_sid', sid);
+      localStorage.setItem('_sid', sid);
     }
     return sid;
   } catch {

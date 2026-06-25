@@ -885,6 +885,12 @@ input[type='number']::-webkit-outer-spin-button {
 .pkc-tool-header .pkc-crumb-sep {
   margin: 0 0.5rem;
 }
+.pkc-tool-header .pkc-crumb-source {
+  color: var(--primary-strong);
+}
+.pkc-tool-header .pkc-crumb-source:hover {
+  text-decoration: underline;
+}
 
 /* The page-level header above replaces the old in-card "Back to Tools" button
    (kept in the DOM for the per-tool JS that references it, just hidden). */
@@ -892,12 +898,16 @@ input[type='number']::-webkit-outer-spin-button {
   display: none !important;
 }
 
-/* PKC: privacy-promise callout above the search bar. */
+/* PKC: privacy-promise callout above the search bar. text-wrap: balance evens
+   the lines so the last word ("promise.") never sits alone on its own line. */
 .pkc-love-note {
   border: 1px solid color-mix(in srgb, var(--primary) 35%, var(--outline));
   background: color-mix(in srgb, var(--primary) 8%, var(--surface-1));
   border-radius: 0.9rem;
   padding: 1rem 1.25rem;
+}
+.pkc-love-note p {
+  text-wrap: balance;
 }
 
 /* PKC: "Why choose" feature tiles — tint toward the brand colour on hover,

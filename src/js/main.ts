@@ -56,59 +56,18 @@ const init = async () => {
   ).toString();
   if (__SIMPLE_MODE__) {
     const hideBrandingSections = () => {
-      const heroSection = document.getElementById('hero-section');
-      if (heroSection) {
-        heroSection.style.display = 'none';
-      }
-
-      // PKC: the features and security/compliance sections are intentionally
-      // present and re-themed on our simple-mode index, and the lone
-      // alam00000/bentopdf link is our "special thanks" attribution — so they
-      // are NOT hidden here (unlike upstream BentoPDF's marketing build).
-
+      // PKC: our simple-mode index (simple-index.html) is fully custom. Upstream
+      // BentoPDF's marketing sections (hero/testimonials/support/used-by/
+      // tools-header) don't exist in it, and our features/compliance/thanks
+      // sections + .section-divider are kept on purpose — so only the FAQ
+      // accordion (still present on a hub page) is hidden here.
       const faqSection = document.getElementById('faq-accordion');
       if (faqSection) {
         faqSection.style.display = 'none';
       }
 
-      const testimonialsSection = document.getElementById(
-        'testimonials-section'
-      );
-      if (testimonialsSection) {
-        testimonialsSection.style.display = 'none';
-      }
-
-      const supportSection = document.getElementById('support-section');
-      if (supportSection) {
-        supportSection.style.display = 'none';
-      }
-
-      // Hide "Used by companies" section
-      const usedBySection = document.querySelector(
-        '.hide-section'
-      ) as HTMLElement;
-      if (usedBySection) {
-        usedBySection.style.display = 'none';
-      }
-
-      // PKC: keep .section-divider visible — used to separate our index sections.
-
-      const brandName = __BRAND_NAME__ || 'BentoPDF';
+      const brandName = __BRAND_NAME__ || 'PKC PDF Tools';
       document.title = `${brandName} - ${t('simpleMode.title')}`;
-
-      const toolsHeader = document.getElementById('tools-header');
-      if (toolsHeader) {
-        const title = toolsHeader.querySelector('h2');
-        const subtitle = toolsHeader.querySelector('p');
-        if (title) {
-          title.textContent = t('simpleMode.title');
-          title.className = 'text-4xl md:text-5xl font-bold text-white mb-3';
-        }
-        if (subtitle) {
-          subtitle.textContent = t('simpleMode.subtitle');
-          subtitle.className = 'text-lg text-gray-400';
-        }
-      }
 
       const app = document.getElementById('app');
       if (app) {
@@ -509,7 +468,6 @@ const init = async () => {
   }
 
   createIcons({ icons });
-  console.log('Please share our tool and share the love!');
 
   const githubStarsElements = [
     document.getElementById('github-stars-desktop'),

@@ -64,40 +64,9 @@ function buildUrl(langPrefix, pagePath) {
 
 const ORGANIZATION_LD_MARKER = 'data-bentopdf-organization';
 
-function injectOrganizationLd(document) {
-  // PKC: do not inject the upstream BentoPDF Organization schema / social links.
-  return;
-  // eslint-disable-next-line no-unreachable
-  if (document.querySelector(`script[${ORGANIZATION_LD_MARKER}]`)) return;
-  const existing = document.querySelectorAll(
-    'script[type="application/ld+json"]'
-  );
-  for (const node of existing) {
-    try {
-      const parsed = JSON.parse(node.textContent || '');
-      if (parsed && parsed['@type'] === 'Organization') return;
-    } catch {
-      continue;
-    }
-  }
-  const data = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'BentoPDF',
-    url: SITE_URL,
-    logo: `${SITE_URL}/images/favicon.svg`,
-    sameAs: [
-      'https://github.com/alam00000/bentopdf',
-      'https://x.com/BentoPDF',
-      'https://www.linkedin.com/company/bentopdf/',
-      'https://www.instagram.com/thebentopdf/',
-    ],
-  };
-  const script = document.createElement('script');
-  script.setAttribute('type', 'application/ld+json');
-  script.setAttribute(ORGANIZATION_LD_MARKER, '');
-  script.textContent = JSON.stringify(data, null, 2);
-  document.body.appendChild(script);
+function injectOrganizationLd() {
+  // PKC: intentionally a no-op. Upstream BentoPDF injected an Organization
+  // schema with BentoPDF social links here; we don't want that branding.
 }
 
 const BREADCRUMB_MARKER = 'data-bentopdf-breadcrumb';
@@ -145,6 +114,23 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   nav.appendChild(homeLink);
   nav.appendChild(sep);
   nav.appendChild(current);
+
+  // AGPL-3.0: the running modified version must offer its corresponding source
+  // to interacting users. Surface a source link on EVERY tool page (the index
+  // also links it via the "Open Source" tile).
+  const sep2 = document.createElement('span');
+  sep2.setAttribute('aria-hidden', 'true');
+  sep2.className = 'pkc-crumb-sep';
+  sep2.textContent = '·';
+  const source = document.createElement('a');
+  source.href = 'https://github.com/prashantkg96/bentopdf-pkc';
+  source.target = '_blank';
+  source.rel = 'noopener';
+  source.className = 'pkc-crumb-source';
+  source.textContent = 'Source (AGPL-3.0)';
+  nav.appendChild(sep2);
+  nav.appendChild(source);
+
   header.appendChild(back);
   header.appendChild(nav);
 
@@ -223,7 +209,7 @@ function processFileForLanguage(
     title =
       tools[translationKey].pageTitle ||
       (tools[translationKey].name
-        ? `${tools[translationKey].name} - BentoPDF`
+        ? `${tools[translationKey].name} - PKC PDF Tools`
         : null);
     description = tools[translationKey].subtitle;
   }

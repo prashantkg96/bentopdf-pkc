@@ -51,3 +51,5 @@ bentopdf-*.tgz
 # test 
 dist-test
 test
+# VitePress build cache (regenerated; should not be tracked)
+docs/.vitepress/cache/

@@ -1,0 +1,13 @@
+# PKC: security headers for the PDF tools (Cloudflare static-assets _headers).
+# CSP mirrors the app's generated policy (WASM needs 'wasm-unsafe-eval'/'unsafe-eval'
+# + blob:; jsDelivr serves the heavy WASM) and adds 'unsafe-inline' for the small
+# inline theme-bootstrap + top-pill loader scripts. COOP/COEP are intentionally
+# omitted: the deployed app works without cross-origin isolation, and enabling it
+# risks blocking cross-origin CDN/WASM loads.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' 'unsafe-eval' blob: https://cdn.jsdelivr.net; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com https://rawcdn.githack.com; connect-src 'self' blob: https://api.github.com https://fonts.gstatic.com https://cdn.jsdelivr.net https://bentopdf-cors-proxy.bentopdf.workers.dev https://rawcdn.githack.com; object-src 'none'; base-uri 'self'; frame-src 'self' blob:; frame-ancestors 'self'; form-action 'self'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
