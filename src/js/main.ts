@@ -60,24 +60,10 @@ const init = async () => {
         heroSection.style.display = 'none';
       }
 
-      const githubLink = document.querySelector(
-        'a[href*="github.com/alam00000/bentopdf"]'
-      );
-      if (githubLink) {
-        (githubLink as HTMLElement).style.display = 'none';
-      }
-
-      const featuresSection = document.getElementById('features-section');
-      if (featuresSection) {
-        featuresSection.style.display = 'none';
-      }
-
-      const securitySection = document.getElementById(
-        'security-compliance-section'
-      );
-      if (securitySection) {
-        securitySection.style.display = 'none';
-      }
+      // PKC: the features and security/compliance sections are intentionally
+      // present and re-themed on our simple-mode index, and the lone
+      // alam00000/bentopdf link is our "special thanks" attribution — so they
+      // are NOT hidden here (unlike upstream BentoPDF's marketing build).
 
       const faqSection = document.getElementById('faq-accordion');
       if (faqSection) {
@@ -104,10 +90,7 @@ const init = async () => {
         usedBySection.style.display = 'none';
       }
 
-      const sectionDividers = document.querySelectorAll('.section-divider');
-      sectionDividers.forEach((divider) => {
-        (divider as HTMLElement).style.display = 'none';
-      });
+      // PKC: keep .section-divider visible — used to separate our index sections.
 
       const brandName = __BRAND_NAME__ || 'BentoPDF';
       document.title = `${brandName} - ${t('simpleMode.title')}`;
