@@ -115,22 +115,6 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   nav.appendChild(sep);
   nav.appendChild(current);
 
-  // AGPL-3.0: the running modified version must offer its corresponding source
-  // to interacting users. Surface a source link on EVERY tool page (the index
-  // also links it via the "Open Source" tile).
-  const sep2 = document.createElement('span');
-  sep2.setAttribute('aria-hidden', 'true');
-  sep2.className = 'pkc-crumb-sep';
-  sep2.textContent = '·';
-  const source = document.createElement('a');
-  source.href = 'https://github.com/prashantkg96/bentopdf-pkc';
-  source.target = '_blank';
-  source.rel = 'noopener';
-  source.className = 'pkc-crumb-source';
-  source.textContent = 'Source (AGPL-3.0)';
-  nav.appendChild(sep2);
-  nav.appendChild(source);
-
   header.appendChild(back);
   header.appendChild(nav);
 
@@ -147,6 +131,26 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   } else {
     header.classList.add('pkc-shell');
     document.body.insertBefore(header, document.body.firstChild);
+  }
+
+  // AGPL-3.0 source offer lives in the page FOOTER. Standard tool pages render
+  // it from the footer-simple partial; the full-screen builders have no
+  // {{> footer}}, so inject the footer here when one isn't already present.
+  if (!document.querySelector('.pkc-tool-footer')) {
+    const footer = document.createElement('footer');
+    footer.className = 'pkc-tool-footer';
+    const p = document.createElement('p');
+    p.appendChild(
+      document.createTextNode('Free, private, in-browser PDF tools · ')
+    );
+    const src = document.createElement('a');
+    src.href = 'https://github.com/prashantkg96/bentopdf-pkc';
+    src.target = '_blank';
+    src.rel = 'noopener';
+    src.textContent = 'Source (AGPL-3.0)';
+    p.appendChild(src);
+    footer.appendChild(p);
+    document.body.appendChild(footer);
   }
 
   const ld = {

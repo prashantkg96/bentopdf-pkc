@@ -885,10 +885,21 @@ input[type='number']::-webkit-outer-spin-button {
 .pkc-tool-header .pkc-crumb-sep {
   margin: 0 0.5rem;
 }
-.pkc-tool-header .pkc-crumb-source {
+/* PKC: minimal tool-page footer (carries the AGPL-3.0 source offer). flex: none
+   keeps it pinned at the bottom on the full-screen builder pages. */
+.pkc-tool-footer {
+  flex: none;
+  margin-top: 2.5rem;
+  padding: 1.25rem 1rem;
+  border-top: 1px solid var(--outline);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+.pkc-tool-footer a {
   color: var(--primary-strong);
 }
-.pkc-tool-header .pkc-crumb-source:hover {
+.pkc-tool-footer a:hover {
   text-decoration: underline;
 }
 
