@@ -87,9 +87,17 @@
 }
 
 @layer base {
+  /* Dark (default): leave the backdrop transparent so `color-scheme: dark` paints
+     the browser's dark canvas (~#121212), identical to the homepage — not the
+     pure-black --bg, which surfaces still use. Light: paint the cream base. */
   html,
   body {
-    background-color: var(--bg);
+    background-color: transparent;
     color: var(--text-strong);
+  }
+
+  [data-theme='light'] html,
+  [data-theme='light'] body {
+    background-color: var(--bg);
   }
 }

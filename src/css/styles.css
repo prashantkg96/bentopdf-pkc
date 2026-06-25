@@ -51,10 +51,20 @@ html {
 
 body {
   font-family: var(--font-sans);
-  /* Same background construct as the deployed PKC pages: a near-flat gradient in
-     dark mode, plus the --glow radial layer that lights up in light mode. html
-     keeps a solid --bg (set in pkc-theme.css) since this shorthand makes body's
-     own background-color transparent. */
+  /* Match the deployed PKC homepage exactly: in dark mode it leaves the backdrop
+     transparent and lets `color-scheme: dark` paint the browser's dark canvas
+     (~#121212) — it is NOT pure black. Matching the mechanism (transparent)
+     rather than a fixed hex keeps this page identical to the homepage on any
+     browser. The cream base + --glow radial layer apply only in light mode. */
+  background: transparent;
+  background-image: var(--glow);
+  color: var(--text-strong);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+[data-theme='light'] body {
   background: linear-gradient(
     160deg,
     var(--bg) 0%,
@@ -62,10 +72,6 @@ body {
     var(--bg) 100%
   );
   background-image: var(--glow);
-  color: var(--text-strong);
-  transition:
-    background-color 180ms ease,
-    color 180ms ease;
 }
 
 /* Match the homepage day/night transition: the circular clip-path reveal is
