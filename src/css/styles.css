@@ -804,9 +804,47 @@ input[type='number']::-webkit-outer-spin-button {
 
 /* The BentoPDF upload wrapper is a solid bg-gray-900 block; on our themed
    backdrop it read as a black box above and below the bordered card. Make it
-   transparent so only the card shows, sitting on the page backdrop. */
+   transparent so only the card shows, sitting on the page backdrop. Trim its
+   large top padding so the card sits snug under the tool header (no dead gap). */
 .pkc-shell > #uploader {
   background-color: transparent;
+  padding-top: 0.25rem;
+}
+
+/* PKC: consistent page-level tool header (← Back to Tools + breadcrumb),
+   injected after the privacy banner on every tool page and left-aligned to the
+   content shell. `flex: none` keeps it from stretching on the full-screen
+   builder pages whose <body> is a flex column. */
+.pkc-tool-header {
+  flex: none;
+  margin: 0 auto 1rem;
+}
+.pkc-tool-header .pkc-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: var(--primary-strong);
+}
+.pkc-tool-header .pkc-back-link:hover {
+  color: var(--primary);
+}
+.pkc-tool-header .pkc-crumb {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+.pkc-tool-header .pkc-crumb a:hover {
+  color: var(--accent);
+}
+.pkc-tool-header .pkc-crumb-sep {
+  margin: 0 0.5rem;
+}
+
+/* The page-level header above replaces the old in-card "Back to Tools" button
+   (kept in the DOM for the per-tool JS that references it, just hidden). */
+#back-to-tools {
+  display: none !important;
 }
 
 /* PKC: privacy-promise callout above the search bar. */

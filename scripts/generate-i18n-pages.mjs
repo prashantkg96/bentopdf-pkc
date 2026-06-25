@@ -103,37 +103,57 @@ function injectOrganizationLd(document) {
 const BREADCRUMB_MARKER = 'data-bentopdf-breadcrumb';
 
 function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
-  const h1 = document.querySelector('h1[data-i18n^="tools:"]');
-  if (!h1) return;
   if (document.querySelector(`[${BREADCRUMB_MARKER}]`)) return;
 
   const homeUrl = buildUrl(lang === 'en' ? '' : lang, '');
 
+  // PKC: a consistent page-level tool header — "← Back to Tools" plus the
+  // "pdf-tools › <Tool>" breadcrumb — inserted right after the privacy banner
+  // on EVERY tool page (including the full-screen builders that have no card),
+  // left-aligned to the content shell. Replaces the old in-card breadcrumb;
+  // the old in-card #back-to-tools button is hidden via CSS.
+  const header = document.createElement('div');
+  header.className = 'pkc-tool-header pkc-shell';
+  header.setAttribute(BREADCRUMB_MARKER, '');
+
+  const back = document.createElement('a');
+  back.href = homeUrl;
+  back.className = 'pkc-back-link';
+  const backArrow = document.createElement('span');
+  backArrow.setAttribute('aria-hidden', 'true');
+  backArrow.textContent = '←';
+  back.appendChild(backArrow);
+  back.appendChild(document.createTextNode(' Back to Tools'));
+
   const nav = document.createElement('nav');
   nav.setAttribute('aria-label', 'Breadcrumb');
-  nav.setAttribute(BREADCRUMB_MARKER, '');
-  nav.className = 'text-sm text-gray-400 mb-4';
+  nav.className = 'pkc-crumb';
 
   const homeLink = document.createElement('a');
   homeLink.href = homeUrl;
-  homeLink.className = 'hover:text-indigo-300';
   homeLink.textContent = 'pdf-tools';
 
   const sep = document.createElement('span');
   sep.setAttribute('aria-hidden', 'true');
-  sep.className = 'mx-2';
+  sep.className = 'pkc-crumb-sep';
   sep.textContent = '›';
 
   const current = document.createElement('span');
-  current.className = 'text-gray-300';
   current.setAttribute('aria-current', 'page');
   current.textContent = toolName;
 
   nav.appendChild(homeLink);
   nav.appendChild(sep);
   nav.appendChild(current);
+  header.appendChild(back);
+  header.appendChild(nav);
 
-  h1.parentNode.insertBefore(nav, h1);
+  const banner = document.querySelector('.pkc-love-note');
+  if (banner && banner.parentNode) {
+    banner.parentNode.insertBefore(header, banner.nextSibling);
+  } else {
+    document.body.insertBefore(header, document.body.firstChild);
+  }
 
   const ld = {
     '@context': 'https://schema.org',
