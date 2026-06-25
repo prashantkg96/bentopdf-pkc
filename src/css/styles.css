@@ -808,6 +808,14 @@ input[type='number']::-webkit-outer-spin-button {
    large top padding so the card sits snug under the tool header (no dead gap). */
 .pkc-shell > #uploader {
   background-color: transparent;
+  /* Normalize the uploader: some tools use `min-h-screen flex items-center
+     justify-center`, which vertically centers the card and leaves a big gap
+     under the banner. Force a top-aligned, content-height column so the card
+     sits right under the header on every tool. */
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 0;
   padding-top: 0.25rem;
 }
 
@@ -895,6 +903,12 @@ input[type='number']::-webkit-outer-spin-button {
   text-align: center;
   font-size: 0.875rem;
   color: var(--text-muted);
+}
+.pkc-tool-footer p {
+  margin: 0;
+}
+.pkc-tool-footer p + p {
+  margin-top: 0.4rem;
 }
 .pkc-tool-footer a {
   color: var(--primary-strong);

@@ -27,6 +27,42 @@ const KEY_MAPPING = {
   404: 'notFound',
 };
 
+// The set of actual tool pages (everything under src/pages). Only these get the
+// injected back/breadcrumb header + footer — not the index/category/legal pages.
+const TOOL_PAGES = (() => {
+  try {
+    const dir = path.resolve(__dirname, '../src/pages');
+    return new Set(
+      fs
+        .readdirSync(dir)
+        .filter((f) => f.endsWith('.html'))
+        .map((f) => f.replace('.html', ''))
+    );
+  } catch {
+    return new Set();
+  }
+})();
+
+// The tools.json key for a page. Filenames don't always match the key
+// (bookmark -> editBookmarks, edit-pdf -> pdfEditor, organize-pdf ->
+// duplicateOrganize), so prefer the key the page declares on its
+// <h1 data-i18n="tools:KEY.name">; fall back to the filename-derived key.
+function resolveToolKey(document, filenameNoExt) {
+  const h1 = document.querySelector('h1[data-i18n^="tools:"]');
+  if (h1) {
+    const m = (h1.getAttribute('data-i18n') || '').match(/^tools:([^.]+)\./);
+    if (m) return m[1];
+  }
+  return KEY_MAPPING[filenameNoExt] || toCamelCase(filenameNoExt);
+}
+
+function prettifyToolName(slug) {
+  return slug
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bPdf\b/g, 'PDF');
+}
+
 function loadAllTranslations() {
   const translations = {};
   for (const lang of languages) {
@@ -369,11 +405,20 @@ function updateEnglishFile(filePath, originalContent) {
 
   injectOrganizationLd(document);
 
-  const enTranslationKey =
-    KEY_MAPPING[filenameNoExt] || toCamelCase(filenameNoExt);
-  const enToolName = resolveToolName(enTranslationKey, ENGLISH_TOOLS);
-  if (enToolName) {
-    injectToolBreadcrumb(document, 'en', enToolName, canonicalUrl);
+  // Every tool page (under src/pages) gets the header/breadcrumb/footer. The
+  // name comes from the page's declared tools key, then its <h1> text, then a
+  // prettified slug — so a filename/key mismatch can't drop the header.
+  if (TOOL_PAGES.has(filenameNoExt)) {
+    const key = resolveToolKey(document, filenameNoExt);
+    let toolName = resolveToolName(key, ENGLISH_TOOLS);
+    if (!toolName) {
+      const h1 = document.querySelector('h1');
+      const txt =
+        h1 && h1.textContent ? h1.textContent.trim().replace(/\s+/g, ' ') : '';
+      toolName =
+        txt && txt.length <= 48 ? txt : prettifyToolName(filenameNoExt);
+    }
+    injectToolBreadcrumb(document, 'en', toolName, canonicalUrl);
   }
 
   const result = dom.serialize();
