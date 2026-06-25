@@ -1,17 +1,31 @@
-<p align="center"><img src="public/images/favicon-no-bg.svg" width="80"></p>
-<h1 align="center">BentoPDF</h1>
-<p align="center">
-  <a href="https://www.digitalocean.com/?refcode=d93c189ef6d0&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
-    <img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge">
-  </a>
-</p>
+<h1 align="center">PKC PDF Tools</h1>
 
-**BentoPDF** is a powerful, privacy-first, client-side PDF toolkit that is self hostable and allows you to manipulate, edit, merge, and process PDF files directly in your browser. No server-side processing is required, ensuring your files remain secure and private.
+> **A modified fork of [BentoPDF](https://github.com/alam00000/bentopdf), licensed under AGPL-3.0.**
+> This repository is the complete corresponding source for the privacy-first,
+> 100% client-side PDF toolkit running at
+> **[prashantkumarchandra.in/toolkits/pdf-tools](https://prashantkumarchandra.in/toolkits/pdf-tools)**.
+> Files are processed entirely in the browser — they never leave your device.
 
-[![Docker Downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fghcr-badge.elias.eu.org%2Fapi%2Falam00000%2Fbentopdf%2Fbentopdf&query=%24.downloadCount&logo=docker&label=Docker%20Downloads&color=blue)](https://github.com/alam00000/bentopdf/pkgs/container/bentopdf) [![Ko-fi](https://img.shields.io/badge/Buy%20me%20a%20Coffee-yellow?logo=kofi&style=flat-square)](https://ko-fi.com/alio01) ![GitHub Stars](https://img.shields.io/github/stars/alam00000/bentopdf?style=social)
-[![Sponsor me on GitHub](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ff69b4)](https://github.com/sponsors/alam00000)
+## About this fork
 
-![BentoPDF Tools](public/images/bentopdf-tools.png)
+**PKC PDF Tools** is a rebranded, slimmed-down fork of the excellent open-source
+[BentoPDF](https://github.com/alam00000/bentopdf) project. Per the AGPL-3.0
+license, this repository is published as the corresponding source, and a
+**"Source (AGPL-3.0)"** link is shown on every page of the running site.
+
+**Notable changes from upstream BentoPDF:**
+
+- **Rebranding** to "PKC PDF Tools" — PKC orange/black theme (`src/css/pkc-theme.css`); the BentoPDF navbar/footer are replaced by the shared PKC top-pill nav and a minimal footer, and a consistent page header (back link + breadcrumb) is injected per tool (`scripts/generate-i18n-pages.mjs`).
+- **Deployment**: built in `SIMPLE_MODE` with `BASE_URL=/toolkits/pdf-tools`, deployed as its own Cloudflare Worker and reverse-proxied by the main `pkc-in` site Worker.
+- **Slimming**: removed the Office→PDF / LibreOffice-WASM feature and non-English locales to fit Cloudflare's 25 MiB per-asset limit.
+- **Privacy-preserving analytics** (`src/js/utils/pkc-tool-analytics.ts`): logs only the tool used + file type/size/count — **never** file names or content.
+- **Security headers / CSP** shipped via `public/_headers`.
+- A privacy promise banner; otherwise the tools and their client-side processing are unchanged from upstream.
+
+All the underlying PDF capability is [BentoPDF](https://github.com/alam00000/bentopdf)'s work — huge thanks to the BentoPDF team. ❤️
+
+> The sections below are inherited from the upstream BentoPDF README and document
+> the underlying project, its features, and how to build / self-host it.
 
 ---
 
