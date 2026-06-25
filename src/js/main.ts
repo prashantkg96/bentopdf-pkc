@@ -1,4 +1,5 @@
 import { categories } from './config/tools.js';
+import './utils/pkc-tool-analytics.js'; // privacy-safe tool-usage logging (side-effect import)
 import { dom, switchView, hideAlert } from './ui.js';
 import { ShortcutsManager } from './logic/shortcuts.js';
 import { createIcons, icons } from 'lucide';
