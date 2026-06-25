@@ -773,5 +773,24 @@ input[type='number']::-webkit-outer-spin-button {
   padding-top: 1rem;
 }
 
+/* PKC: page content shell — same width as the top-pill nav (and the main site's
+   .shell on /sir/jharkhand) so tool content lines up edge-to-edge with the pill
+   instead of using Tailwind's `container` (index) or bleeding full-width (tool
+   subpages). Applied to the index #app and to a <main> wrapper on tool pages. */
+.pkc-shell {
+  width: min(1120px, 92vw);
+  margin-inline: auto;
+}
+
+/* Inside the shell, let BentoPDF's per-section blocks fill the shell width so
+   they align to the pill edges instead of re-centering at their own max-w-*. */
+.pkc-shell > #uploader,
+.pkc-shell > section {
+  max-width: none;
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
 /* PKC: the Tailwind palette remap lives in pkc-theme.css (imported at the top),
    which is the part of this stylesheet that reliably reaches the bundle. */
