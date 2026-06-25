@@ -1,5 +1,5 @@
 name: 🐛 Bug Report
-description: Report a bug in BentoPDF
+description: Report a bug in PKC PDF Tools
 title: "(Bug) "
 labels: ["bug", "needs triage"]
 body:
@@ -92,10 +92,10 @@ body:
       required: true
 
   - type: input
-    id: bentopdf-version
+    id: pkc-pdf-tools-version
     attributes:
-      label: BentoPDF Version
-      description: Check the footer or package.json
+      label: Version (if known)
+      description: Check package.json, or note the date/URL you used
       placeholder: "1.15.4"
     validations:
       required: false

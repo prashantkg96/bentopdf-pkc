@@ -1,4 +1,4 @@
-name: BentoPDF CodeQL config
+name: PKC PDF Tools CodeQL config
 
 paths-ignore:
   - dist
