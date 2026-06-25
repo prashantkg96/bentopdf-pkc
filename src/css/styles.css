@@ -828,6 +828,8 @@ input[type='number']::-webkit-outer-spin-button {
 .pkc-tool-intro > .pkc-tool-header {
   grid-column: 1;
   justify-self: start;
+  min-width: 0;
+  max-width: 100%; /* never exceed the column — long crumbs wrap inside the box */
 }
 .pkc-tool-intro > .pkc-love-note {
   grid-column: 2;
@@ -875,6 +877,7 @@ input[type='number']::-webkit-outer-spin-button {
 .pkc-tool-header .pkc-crumb {
   font-size: 0.875rem;
   color: var(--text-muted);
+  overflow-wrap: anywhere; /* wrap long tool names instead of overflowing */
 }
 .pkc-tool-header .pkc-crumb a:hover {
   color: var(--accent);
