@@ -817,14 +817,15 @@ input[type='number']::-webkit-outer-spin-button {
   padding: 1rem 1.25rem;
 }
 
-/* PKC: "Open Source" feature tile — tint toward the brand colour on hover,
-   matching the .tool-card behaviour. */
-.pkc-feature-link {
+/* PKC: "Why choose" feature tiles — tint toward the brand colour on hover,
+   matching the .tool-card behaviour. Applied to all tiles; the non-link tiles
+   keep the default cursor (no redirect), only the Open Source <a> is clickable. */
+.pkc-feature-tile {
   transition:
     background-color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
 }
-.pkc-feature-link:hover {
+.pkc-feature-tile:hover {
   transform: translateY(-3px);
   background-color: color-mix(in srgb, var(--primary) 16%, var(--surface-2));
 }
