@@ -20,6 +20,13 @@ const WORKING_CLASSES =
 
 type State = 'off' | 'working' | 'on';
 
+// Icons (inline so they don't depend on lucide re-rendering after init):
+// download cloud for off/working, encircled tick once offline-ready.
+const ICON_DOWNLOAD =
+  '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 13v8"/><path d="m8 17 4 4 4-4"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg>';
+const ICON_CHECK =
+  '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>';
+
 function btn(): HTMLButtonElement | null {
   return document.getElementById('offline-toggle') as HTMLButtonElement | null;
 }
@@ -35,6 +42,9 @@ function setUi(state: State, label: string) {
         ? WORKING_CLASSES
         : OFF_CLASSES;
   b.disabled = state === 'working';
+  b.innerHTML =
+    (state === 'on' ? ICON_CHECK : ICON_DOWNLOAD) +
+    '<span id="offline-toggle-label"></span>';
   const span = document.getElementById('offline-toggle-label');
   if (span) span.textContent = label;
 }
@@ -57,9 +67,12 @@ async function getSw(): Promise<ServiceWorker | null> {
 }
 
 async function fetchManifest(): Promise<string[]> {
-  const res = await fetch(`${import.meta.env.BASE_URL}offline-manifest.json`, {
-    cache: 'no-cache',
-  });
+  // ?t= bypasses the SW cache (the SW skips requests carrying a `t` query),
+  // so we always read the freshest manifest after a deploy.
+  const res = await fetch(
+    `${import.meta.env.BASE_URL}offline-manifest.json?t=${Date.now()}`,
+    { cache: 'no-cache' }
+  );
   if (!res.ok) throw new Error(`manifest ${res.status}`);
   const data = await res.json();
   return Array.isArray(data.urls) ? data.urls : [];
