@@ -5,7 +5,7 @@
  * Version: 1.1.0
  */
 
-const CACHE_VERSION = 'bentopdf-v11';
+const CACHE_VERSION = 'bentopdf-v12';
 const CACHE_NAME = `${CACHE_VERSION}-static`;
 
 const trustedCdnOrigins = new Set(['https://cdn.jsdelivr.net']);
@@ -338,11 +338,27 @@ async function precacheUrls(urls, client) {
     await Promise.all(
       batch.map(async (url) => {
         try {
-          const hit = await cache.match(url);
+          const absUrl = new URL(url, self.location.href).href;
+          const hit = await cache.match(absUrl);
           if (!hit) {
             const res = await fetch(url, { cache: 'no-cache' });
             if (res && res.ok && res.status === 200) {
-              await cache.put(url, res);
+              const body = await res.arrayBuffer();
+              // Reconstruct a fresh (non-redirected) response — a redirected
+              // response can't be served to a navigation request, which would
+              // break offline navigation to tool pages.
+              const make = () =>
+                new Response(body, {
+                  status: 200,
+                  statusText: 'OK',
+                  headers: res.headers,
+                });
+              await cache.put(absUrl, make());
+              // The server redirects .html -> clean URLs; cache the final URL
+              // too so offline works whichever URL the browser lands on.
+              if (res.url && res.url !== absUrl) {
+                await cache.put(res.url, make());
+              }
             } else {
               failed++;
             }
