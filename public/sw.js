@@ -100,12 +100,16 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(cacheFirstStrategyWithDedup(event.request, isCDN));
   } else if (
     isLocal &&
-    (url.pathname.endsWith('.html') ||
+    (event.request.mode === 'navigate' ||
+      url.pathname.endsWith('.html') ||
       url.pathname === '/' ||
       /^\/(en|fr|es|de|zh|zh-TW|vi|tr|id|it|pt|ru|nl|be)(\/|$)/.test(
         url.pathname
       ))
   ) {
+    // Navigations (incl. the base index /toolkits/pdf-tools/, which matches none
+    // of the patterns above) go network-first with cache fallback, so going
+    // back to the tools index works offline.
     event.respondWith(networkFirstStrategy(event.request));
   }
 });
