@@ -12,8 +12,10 @@ import { join, relative, sep } from 'node:path';
 const DIST = 'dist';
 const BASE = (process.env.BASE_URL || '/').replace(/\/?$/, '/'); // trailing slash
 
+// Includes .html — BentoPDF tools are separate pages (merge-pdf.html, …), so
+// they must be cached for offline navigation to work, not just their assets.
 const CACHEABLE =
-  /\.(js|mjs|css|wasm|whl|zip|json|png|jpe?g|gif|svg|woff2?|ttf)$/i;
+  /\.(html|js|mjs|css|wasm|whl|zip|json|png|jpe?g|gif|svg|woff2?|ttf)$/i;
 const EXCLUDE = /\.(map|br|gz)$/i;
 
 function walk(dir, out = []) {
