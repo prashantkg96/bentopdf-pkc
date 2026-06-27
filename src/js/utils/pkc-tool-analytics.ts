@@ -10,6 +10,7 @@
 // origin) → `events` table in the `jharkhand-analytics` D1.
 
 const TRACK_URL = '/api/track';
+const QUEUE_KEY = '_pkc_track_queue';
 
 function getSessionId(): string {
   try {
@@ -35,27 +36,91 @@ function toolSlug(): string {
   return m ? m[1].replace(/\.html$/, '') : 'index';
 }
 
+type TrackPayload = {
+  event: string;
+  data: Record<string, unknown>;
+  session: string;
+  ts: number;
+};
+
+function readQueue(): TrackPayload[] {
+  try {
+    const arr = JSON.parse(localStorage.getItem(QUEUE_KEY) || '[]');
+    return Array.isArray(arr) ? arr : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeQueue(q: TrackPayload[]): void {
+  try {
+    localStorage.setItem(QUEUE_KEY, JSON.stringify(q));
+  } catch {
+    /* ignore quota/serialization errors */
+  }
+}
+
+// Queue an event that couldn't be sent (offline / failed). Tag it `offline`
+// so the backend can tell it happened offline. Capped to avoid unbounded growth.
+function enqueue(payload: TrackPayload): void {
+  const q = readQueue();
+  q.push({ ...payload, data: { ...payload.data, offline: true } });
+  while (q.length > 100) q.shift();
+  writeQueue(q);
+}
+
+// Send one event. Resolves true on success, false on any failure. Keeps the
+// original `ts`, so a flushed offline event is recorded at the time it happened.
+function sendOne(payload: TrackPayload): Promise<boolean> {
+  try {
+    return fetch(TRACK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    })
+      .then((r) => r.ok || r.status === 204)
+      .catch(() => false);
+  } catch {
+    return Promise.resolve(false);
+  }
+}
+
+let flushing = false;
+// Flush queued offline events oldest-first; stop if a send fails (still down).
+async function flushQueue(): Promise<void> {
+  if (flushing) return;
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) return;
+  flushing = true;
+  try {
+    const q = readQueue();
+    while (q.length) {
+      const ok = await sendOne(q[0]);
+      if (!ok) break;
+      q.shift();
+      writeQueue(q);
+    }
+  } finally {
+    flushing = false;
+  }
+}
+
 function track(event: string, data: Record<string, unknown>): void {
   try {
-    const body = JSON.stringify({
+    const payload: TrackPayload = {
       event,
       data,
       session: getSessionId(),
       ts: Date.now(),
-    });
-    if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
-      navigator.sendBeacon(
-        TRACK_URL,
-        new Blob([body], { type: 'application/json' })
-      );
-    } else {
-      fetch(TRACK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body,
-        keepalive: true,
-      }).catch(() => {});
+    };
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+      enqueue(payload); // offline → queue with the offline tag, flush later
+      return;
     }
+    sendOne(payload).then((ok) => {
+      if (!ok) enqueue(payload); // send failed (likely connectivity) → queue
+    });
+    flushQueue(); // opportunistically drain anything queued earlier
   } catch {
     /* analytics must never throw into the UI */
   }
@@ -113,6 +178,15 @@ function init(): void {
     if ((window as unknown as { __pkcToolTrack?: boolean }).__pkcToolTrack)
       return;
     (window as unknown as { __pkcToolTrack?: boolean }).__pkcToolTrack = true;
+
+    // Flush any events queued while offline — on load and whenever we reconnect.
+    // Runs on every page (incl. the index) so the queue drains promptly.
+    if (typeof window !== 'undefined') {
+      window.addEventListener('online', () => {
+        flushQueue();
+      });
+    }
+    flushQueue();
 
     const tool = toolSlug();
     if (tool === 'index') return; // the tool listing is not a tool itself
