@@ -111,6 +111,10 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   if (document.querySelector(`[${BREADCRUMB_MARKER}]`)) return;
 
   const homeUrl = buildUrl(lang === 'en' ? '' : lang, '');
+  // Trailing slash keeps the link inside the service-worker scope
+  // (/toolkits/pdf-tools/); without it, "Back to Tools" fails offline (the URL
+  // is above the SW scope and relies on the Worker's redirect, which needs net).
+  const homeHref = homeUrl.endsWith('/') ? homeUrl : homeUrl + '/';
 
   // PKC: a consistent page-level tool header — "← Back to Tools" plus the
   // "pdf-tools › <Tool>" breadcrumb — inserted right after the privacy banner
@@ -122,7 +126,7 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   header.setAttribute(BREADCRUMB_MARKER, '');
 
   const back = document.createElement('a');
-  back.href = homeUrl;
+  back.href = homeHref;
   back.className = 'pkc-back-link';
   const backArrow = document.createElement('span');
   backArrow.setAttribute('aria-hidden', 'true');
@@ -135,7 +139,7 @@ function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   nav.className = 'pkc-crumb';
 
   const homeLink = document.createElement('a');
-  homeLink.href = homeUrl;
+  homeLink.href = homeHref;
   homeLink.textContent = 'pdf-tools';
 
   const sep = document.createElement('span');
