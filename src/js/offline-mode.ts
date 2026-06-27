@@ -39,19 +39,18 @@ function setUi(state: State, label: string) {
   if (span) span.textContent = label;
 }
 
-/** Resolve the active service worker, or null (with a short timeout for dev). */
+/** Resolve the active service worker, or null. Looks the registration up by
+ * scope (BASE_URL) rather than relying on `controller`/`ready`, which only
+ * resolve once the current page is actually controlled by the SW. */
 async function getSw(): Promise<ServiceWorker | null> {
   if (!('serviceWorker' in navigator)) return null;
   if (navigator.serviceWorker.controller)
     return navigator.serviceWorker.controller;
   try {
-    const reg = await Promise.race([
-      navigator.serviceWorker.ready,
-      new Promise<null>((resolve) => {
-        setTimeout(() => resolve(null), 3000);
-      }),
-    ]);
-    return reg ? reg.active : null;
+    const reg = await navigator.serviceWorker.getRegistration(
+      import.meta.env.BASE_URL
+    );
+    return reg ? reg.active || reg.waiting || reg.installing : null;
   } catch {
     return null;
   }
