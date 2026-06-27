@@ -76,25 +76,14 @@
           <div class="pkc-feature-tile rounded-lg bg-gray-800 p-6">
             <div class="mb-3 flex items-center gap-4">
               <i
-                data-lucide="user-plus"
+                data-lucide="shield-check"
                 class="h-10 w-10 flex-shrink-0 text-indigo-400"
               ></i>
-              <h3 class="text-xl font-bold text-white">No Signup</h3>
+              <h3 class="text-xl font-bold text-white">No Signup or Upload</h3>
             </div>
             <p class="pl-14 text-gray-400">
-              Start instantly, no accounts or emails.
-            </p>
-          </div>
-          <div class="pkc-feature-tile rounded-lg bg-gray-800 p-6">
-            <div class="mb-3 flex items-center gap-4">
-              <i
-                data-lucide="shield"
-                class="h-10 w-10 flex-shrink-0 text-indigo-400"
-              ></i>
-              <h3 class="text-xl font-bold text-white">No Uploads</h3>
-            </div>
-            <p class="pl-14 text-gray-400">
-              100% client-side — your files never leave your device.
+              Start instantly — no accounts, and 100% client-side so your files
+              never leave your device.
             </p>
           </div>
           <div class="pkc-feature-tile rounded-lg bg-gray-800 p-6">
@@ -131,6 +120,18 @@
               Process PDFs instantly, without waiting or delays.
             </p>
           </div>
+          <div class="pkc-feature-tile rounded-lg bg-gray-800 p-6">
+            <div class="mb-3 flex items-center gap-4">
+              <i
+                data-lucide="wifi-off"
+                class="h-10 w-10 flex-shrink-0 text-indigo-400"
+              ></i>
+              <h3 class="text-xl font-bold text-white">Works Offline</h3>
+            </div>
+            <p class="pl-14 text-gray-400">
+              Turn on offline mode and use every tool with no internet at all.
+            </p>
+          </div>
           <!-- PKC: Open Source tile — links to this site's own repo -->
           <a
             href="https://github.com/prashantkg96/bentopdf-pkc"
@@ -156,9 +157,11 @@
       <div class="section-divider"></div>
 
       <div id="grid-view" class="pt-2">
-        <!-- Tool search -->
-        <div class="mb-8 max-w-lg mx-auto">
-          <div class="relative">
+        <!-- Tool search + offline-mode toggle -->
+        <div
+          class="mb-8 max-w-2xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3"
+        >
+          <div class="relative flex-1">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
               <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
             </span>
@@ -185,6 +188,16 @@
               </button>
             </span>
           </div>
+          <button
+            id="offline-toggle"
+            type="button"
+            data-state="off"
+            class="offline-toggle flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-gray-200 hover:bg-gray-600 transition-colors text-sm font-semibold whitespace-nowrap"
+            title="Cache the whole app so every tool works without internet"
+          >
+            <i data-lucide="cloud-download" class="w-4 h-4"></i>
+            <span id="offline-toggle-label">Offline mode</span>
+          </button>
         </div>
 
         <div
@@ -447,5 +460,6 @@
     <script type="module" src="src/js/utils/lucide-init.ts"></script>
     <script type="module" src="src/js/main.ts"></script>
     <script type="module" src="src/js/sw-register.ts"></script>
+    <script type="module" src="src/js/offline-mode.ts"></script>
   </body>
 </html>

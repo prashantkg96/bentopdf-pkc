@@ -322,6 +322,47 @@ async function cacheInBatches(cache, urls, batchSize = 5) {
   }
 }
 
+/**
+ * Precache an explicit list of URLs (used by the "Enable offline mode" toggle).
+ * Caches in batches, skips already-cached URLs, and reports progress back to
+ * the requesting page so it can show a progress bar.
+ */
+async function precacheUrls(urls, client) {
+  const cache = await caches.open(CACHE_NAME);
+  const total = urls.length;
+  let done = 0;
+  let failed = 0;
+  const BATCH = 6;
+  for (let i = 0; i < total; i += BATCH) {
+    const batch = urls.slice(i, i + BATCH);
+    await Promise.all(
+      batch.map(async (url) => {
+        try {
+          const hit = await cache.match(url);
+          if (!hit) {
+            const res = await fetch(url, { cache: 'no-cache' });
+            if (res && res.ok && res.status === 200) {
+              await cache.put(url, res);
+            } else {
+              failed++;
+            }
+          }
+        } catch (e) {
+          failed++;
+        } finally {
+          done++;
+        }
+      })
+    );
+    if (client && client.postMessage) {
+      client.postMessage({ type: 'PRECACHE_PROGRESS', done, total, failed });
+    }
+  }
+  if (client && client.postMessage) {
+    client.postMessage({ type: 'PRECACHE_DONE', total, failed });
+  }
+}
+
 self.addEventListener('message', (event) => {
   if (!event.data) return;
 
@@ -352,6 +393,12 @@ self.addEventListener('message', (event) => {
         console.log('[ServiceWorker] Cache cleared');
       })
     );
+    return;
+  }
+
+  if (event.data.type === 'PRECACHE_URLS' && Array.isArray(event.data.urls)) {
+    const urls = event.data.urls.filter((u) => typeof u === 'string');
+    event.waitUntil(precacheUrls(urls, event.source));
     return;
   }
 

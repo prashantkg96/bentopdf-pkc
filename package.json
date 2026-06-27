@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs && node scripts/seo-audit.mjs",
+    "build": "tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs && node scripts/generate-offline-manifest.mjs && node scripts/seo-audit.mjs",
     "seo-audit": "node scripts/seo-audit.mjs",
     "build:with-docs": "npm run build && npm run docs:build && node scripts/include-docs-in-dist.js",
     "build:gzip": "COMPRESSION_MODE=g npm run build",
@@ -39,7 +39,7 @@
     "security:codeql:quick": "codeql database analyze ./codeql-db --format=csv --output=codeql-results.csv --threads=0 codeql/javascript-queries:codeql-suites/javascript-security-extended.qls",
     "security:audit": "npm audit --audit-level=high && npm run lint:security",
     "prepare": "husky",
-    "build:deploy": "export BASE_URL=/toolkits/pdf-tools SIMPLE_MODE=true \"VITE_BRAND_NAME=PKC PDF Tools\" SITE_URL=https://prashantkumarchandra.in && tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs"
+    "build:deploy": "export BASE_URL=/toolkits/pdf-tools SIMPLE_MODE=true \"VITE_BRAND_NAME=PKC PDF Tools\" SITE_URL=https://prashantkumarchandra.in && tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs && node scripts/generate-offline-manifest.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
