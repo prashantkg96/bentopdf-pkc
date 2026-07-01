@@ -492,6 +492,29 @@
             <i data-lucide="cloud-download" class="w-4 h-4"></i>
             <span id="offline-toggle-label">Offline mode</span>
           </button>
+          <button
+            id="pwa-install-btn"
+            type="button"
+            hidden
+            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-gray-200 hover:bg-gray-600 transition-colors text-sm font-semibold whitespace-nowrap"
+            title="Install PDF Tools as an app on this device"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Install App</span>
+          </button>
         </div>
 
         <div
@@ -1151,6 +1174,7 @@
     <script type="module" src="src/js/mobileMenu.ts"></script>
     <script type="module" src="src/js/sw-register.ts"></script>
     <script type="module" src="src/js/offline-mode.ts"></script>
+    <script type="module" src="src/js/pwa-install.ts"></script>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">

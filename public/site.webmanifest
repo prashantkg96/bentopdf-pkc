@@ -1,11 +1,12 @@
 {
-    "name": "BentoPDF",
-    "short_name": "BentoPDF",
-    "description": "Free online PDF tools - Privacy-first PDF toolkit that works 100% in your browser",
-    "start_url": "/",
+    "name": "PKC PDF Tools",
+    "short_name": "PDF Tools",
+    "description": "100+ free PDF tools — merge, split, compress, convert and more. 100% browser-based, works offline, no upload.",
+    "start_url": "/toolkits/pdf-tools/",
+    "scope": "/toolkits/pdf-tools/",
     "display": "standalone",
-    "background_color": "#262d3b",
-    "theme_color": "#4f46e5",
+    "background_color": "#000000",
+    "theme_color": "#ff6a00",
     "orientation": "portrait-primary",
     "icons": [
         {
