@@ -75,7 +75,7 @@ export interface MarkdownEditorOptions {
 
 export type { MarkdownItOptions } from '@/types';
 
-const DEFAULT_MARKDOWN = `# Welcome to BentoPDF Markdown Editor
+const DEFAULT_MARKDOWN = `# Welcome to PKC PDF Tools Markdown Editor
 
 This is a **live preview** markdown editor with full plugin support.
 
@@ -85,7 +85,7 @@ This is a **live preview** markdown editor with full plugin support.
 
 - **Bold** and *italic* text
 - ~~Strikethrough~~ text
-- [Links](https://bentopdf.com)
+- [Links](https://prashantkumarchandra.in/toolkits/pdf-tools)
 - ==Highlighted text== using mark
 - ++Inserted text++ using ins
 - H~2~O for subscript
@@ -145,12 +145,12 @@ graph TD
 \`\`\`mermaid
 sequenceDiagram
     participant User
-    participant BentoPDF
+    participant PKC
     participant Server
-    User->>BentoPDF: Upload PDF
-    BentoPDF->>BentoPDF: Process locally
-    BentoPDF-->>User: Download result
-    Note over BentoPDF: No server needed!
+    User->>PKC: Upload PDF
+    PKC->>PKC: Process locally
+    PKC-->>User: Download result
+    Note over PKC: No server needed!
 \`\`\`
 
 ### Pie Chart
@@ -218,7 +218,7 @@ erDiagram
 
 \`\`\`mermaid
 mindmap
-    root((BentoPDF))
+    root((PKC PDF Tools))
         Convert
             Word to PDF
             Excel to PDF

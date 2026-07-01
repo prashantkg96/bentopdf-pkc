@@ -110,7 +110,7 @@ export class ShortcutsManager {
       encodeURIComponent(JSON.stringify(exportObj, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute('href', dataStr);
-    downloadAnchorNode.setAttribute('download', 'bentopdf_shortcuts.json');
+    downloadAnchorNode.setAttribute('download', 'pkc-pdf-tools_shortcuts.json');
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();

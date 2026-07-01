@@ -1,11 +1,14 @@
 /**
- * BentoPDF Service Worker
+ * PKC PDF Tools Service Worker
  * Caches WASM files and static assets for offline support and faster loading
  * Supports both local and CDN delivery with deduplication
  * Version: 1.1.0
  */
 
-const CACHE_VERSION = 'bentopdf-v13';
+// NOTE: keep the 'bentopdf-' prefix — the activate handler purges old caches
+// via startsWith('bentopdf-'), so this must stay prefix-compatible with the
+// historical bentopdf-v* names to evict them on upgrade.
+const CACHE_VERSION = 'bentopdf-pkc-v13';
 const CACHE_NAME = `${CACHE_VERSION}-static`;
 
 const trustedCdnOrigins = new Set(['https://cdn.jsdelivr.net']);
