@@ -10,6 +10,9 @@
  */
 
 const STORAGE_KEY = 'pkc_offline_enabled';
+// Set once we've auto-enabled offline mode inside the installed PWA, so a user
+// who later turns it back off isn't nagged into re-downloading on every launch.
+const PWA_AUTO_KEY = 'pkc_offline_pwa_auto';
 
 const OFF_CLASSES =
   'offline-toggle flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-gray-200 hover:bg-gray-600 transition-colors text-sm font-semibold whitespace-nowrap';
@@ -126,6 +129,9 @@ async function disableOffline() {
   const sw = await getSw();
   if (sw) sw.postMessage({ type: 'CLEAR_CACHE' });
   localStorage.removeItem(STORAGE_KEY);
+  // Turning it off in the installed PWA is a deliberate choice — remember it so
+  // we don't auto-re-download on the next launch.
+  localStorage.setItem(PWA_AUTO_KEY, '1');
   setUi('off', 'Offline mode');
 }
 
@@ -152,6 +158,35 @@ function init() {
     if (state === 'on') disableOffline();
     else startPrecache(false);
   });
+
+  maybeAutoEnableForPwa();
+}
+
+/**
+ * When launched as an installed PWA, enable offline mode automatically the
+ * first time so every tool works with no connection out of the box. Only fires
+ * once (guarded by PWA_AUTO_KEY) so a later manual disable is respected, and
+ * waits for the service worker to be active before precaching.
+ */
+function maybeAutoEnableForPwa() {
+  const standalone =
+    window.matchMedia?.('(display-mode: standalone)').matches === true ||
+    (navigator as unknown as { standalone?: boolean }).standalone === true;
+  if (!standalone) return;
+  if (localStorage.getItem(STORAGE_KEY) === '1') return; // already enabled
+  if (localStorage.getItem(PWA_AUTO_KEY) === '1') return; // user opted out
+  if (!('serviceWorker' in navigator)) return;
+
+  // Don't set a guard here: on the very first launch the service worker taking
+  // control triggers a one-time reload (see sw-register.ts) that can interrupt
+  // this. Leaving STORAGE_KEY/PWA_AUTO_KEY unset means the retry after reload
+  // runs again and completes; success sets STORAGE_KEY, a manual disable sets
+  // PWA_AUTO_KEY — either one stops future auto-triggers.
+  navigator.serviceWorker.ready
+    .then(() => startPrecache(false))
+    .catch(() => {
+      /* SW never became ready; leave the toggle for manual use */
+    });
 }
 
 if (document.readyState === 'loading') {

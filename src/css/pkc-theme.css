@@ -101,3 +101,12 @@
     background-color: var(--bg);
   }
 }
+
+/* Installed PWA: pwa-nav.ts trims the shared top-pill down to a single
+   in-scope "PDF Tools" link. Hide the external Instagram link up-front so it
+   never flashes before that JS runs. (The menu itself is rewritten in JS.) */
+@media (display-mode: standalone) {
+  #topPillsMount .nav-action-pill .social-link {
+    display: none !important;
+  }
+}
