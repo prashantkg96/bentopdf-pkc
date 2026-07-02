@@ -11,6 +11,10 @@ const SITE_URL = (process.env.SITE_URL || 'https://www.bentopdf.com').replace(
   /\/+$/,
   ''
 );
+// The app is deployed under a sub-path (BASE_URL=/toolkits/pdf-tools/), so the
+// sitemap URLs MUST carry that prefix to match the pages' canonical tags —
+// otherwise every entry points at a root path (e.g. /merge-pdf) that 404s.
+const BASE_PATH = (process.env.BASE_URL || '/').replace(/\/+$/, ''); // '' or '/toolkits/pdf-tools'
 const EXCLUDED_PAGES = new Set(['404', 'wasm-settings']);
 
 const languages = fs.readdirSync(LOCALES_DIR).filter((file) => {
@@ -45,11 +49,13 @@ function getPriority(pageName) {
 }
 
 function buildUrl(lang, pageName) {
-  const pagePath = pageName === 'index' ? '' : pageName;
-  if (lang === 'en') {
-    return pagePath ? `${SITE_URL}/${pagePath}` : SITE_URL;
-  }
-  return pagePath ? `${SITE_URL}/${lang}/${pagePath}` : `${SITE_URL}/${lang}`;
+  const segs = [];
+  if (lang !== 'en') segs.push(lang);
+  if (pageName !== 'index') segs.push(pageName);
+  const tail = segs.join('/');
+  // index → SITE_URL + BASE_PATH + '/'  (matches the trailing-slash canonical)
+  // page  → SITE_URL + BASE_PATH + '/' + tail  (e.g. /toolkits/pdf-tools/merge-pdf)
+  return tail ? `${SITE_URL}${BASE_PATH}/${tail}` : `${SITE_URL}${BASE_PATH}/`;
 }
 
 function generateSitemap() {
