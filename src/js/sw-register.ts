@@ -49,6 +49,10 @@ if (isDevelopment) {
 } else if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     const swPath = `${import.meta.env.BASE_URL}sw.js`;
+    // Absolute URL of *our* SW, so we can tell it apart from any other SW that
+    // may already control this page (e.g. the main PKC site registers a
+    // broader-scope /sw.js that claims /toolkits/pdf-tools/ too).
+    const swUrl = new URL(swPath, window.location.href).href;
     console.log('[SW] Registering Service Worker at:', swPath);
     navigator.serviceWorker
       .register(swPath)
@@ -76,9 +80,15 @@ if (isDevelopment) {
               if (newWorker.state === 'activated') {
                 sendTrustedHostsToSw(newWorker);
               }
+              // Only a genuine update: the page must already be controlled by a
+              // PREVIOUS version of *our* SW. A foreign controller (the main
+              // site's /sw.js) on a first visit is not an update — treat that as
+              // a silent first install.
+              const controller = navigator.serviceWorker.controller;
               if (
                 newWorker.state === 'installed' &&
-                navigator.serviceWorker.controller
+                controller &&
+                controller.scriptURL === swUrl
               ) {
                 console.log('[SW] New version available! Reload to update.');
 
