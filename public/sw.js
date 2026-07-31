@@ -97,7 +97,21 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (isLocal && url.pathname.includes('/locales/')) {
+  // Site chrome owned by the main site (/assets/shared/top-pills.{css,js}).
+  // This app is reverse-proxied onto prashantkumarchandra.in, so those files are
+  // same-origin here and shouldCache() — which matches ANY path containing
+  // /assets/ — used to serve them cache-first. That pinned a stale copy of the
+  // nav until this app was next deployed, so a menu item added on the main site
+  // simply would not appear here. Network-first keeps it current while still
+  // falling back to cache, so the pill and footer survive offline mode.
+  //
+  // This must sit ABOVE the shouldCache() branch. Making shouldCache() return
+  // false instead would NOT reach networkFirstStrategy: the only branch left
+  // below matches navigations and .html, so a .js request would fall out of the
+  // chain entirely to a plain fetch — fresh, but broken offline.
+  if (isLocal && url.pathname.startsWith('/assets/shared/')) {
+    event.respondWith(networkFirstStrategy(event.request));
+  } else if (isLocal && url.pathname.includes('/locales/')) {
     event.respondWith(networkFirstStrategy(event.request));
   } else if (shouldCache(url.pathname, isCDN)) {
     event.respondWith(cacheFirstStrategyWithDedup(event.request, isCDN));
