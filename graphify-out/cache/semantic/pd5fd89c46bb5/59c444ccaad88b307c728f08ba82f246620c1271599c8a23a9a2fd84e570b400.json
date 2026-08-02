@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "id": "docs_licensing_dual_license",
+      "label": "AGPL-3.0 / Commercial Dual Licensing",
+      "file_type": "rationale",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "BentoPDF is dual-licensed so open-source/internal users can use it free under AGPL-3.0, while proprietary/closed-source or SaaS users must buy a Commercial License; no license key is used, to reduce operational friction."
+    },
+    {
+      "id": "docs_licensing_commercial_license",
+      "label": "Commercial License ($79 Lifetime)",
+      "file_type": "concept",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_licensing_agpl_v3",
+      "label": "AGPL-3.0 License",
+      "file_type": "concept",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_licensing_pymupdf",
+      "label": "PyMuPDF",
+      "file_type": "concept",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_licensing_ghostscript",
+      "label": "Ghostscript",
+      "file_type": "concept",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_licensing_coherentpdf",
+      "label": "CoherentPDF",
+      "file_type": "concept",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_licensing_wasm_cdn_loading",
+      "label": "AGPL Components Loaded via CDN",
+      "file_type": "rationale",
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "BentoPDF does not bundle AGPL-licensed processing libraries (PyMuPDF, Ghostscript, CoherentPDF) in source; they load at runtime from pre-configured CDN URLs so BentoPDF's own code stays under its dual-license and compliance boundaries stay clear."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_licensing_dual_license",
+      "target": "docs_licensing_commercial_license",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_dual_license",
+      "target": "docs_licensing_agpl_v3",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_pymupdf",
+      "target": "docs_licensing_agpl_v3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_ghostscript",
+      "target": "docs_licensing_agpl_v3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_coherentpdf",
+      "target": "docs_licensing_agpl_v3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_wasm_cdn_loading",
+      "target": "docs_licensing_pymupdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_wasm_cdn_loading",
+      "target": "docs_licensing_ghostscript",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_wasm_cdn_loading",
+      "target": "docs_licensing_coherentpdf",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_licensing_wasm_cdn_loading",
+      "target": "docs_self_hosting_index_wasm_configuration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/licensing.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

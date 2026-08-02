@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_to_docx",
+      "label": "PDF to Word (DOCX)",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_pdf_to_docx_pymupdf",
+      "label": "PyMuPDF conversion engine (DOCX)",
+      "file_type": "concept",
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_to_docx",
+      "target": "docs_tools_pdf_to_docx_pymupdf",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_docx",
+      "target": "docs_tools_pdf_to_text",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_docx",
+      "target": "docs_tools_pdf_to_markdown",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_docx",
+      "target": "docs_tools_pdf_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_docx_pymupdf",
+      "target": "docs_tools_pdf_to_markdown_pymupdf",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/tools/pdf-to-docx.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

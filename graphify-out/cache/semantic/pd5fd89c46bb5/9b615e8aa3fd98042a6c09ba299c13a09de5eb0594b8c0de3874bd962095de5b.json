@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_to_text",
+      "label": "pdf-to-text.html (PDF to Text tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-to-text.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_to_text",
+      "target": "src_js_logic_pdf_to_text_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-to-text.html",
+      "source_location": "script[type=module][src='/src/js/logic/pdf-to-text-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

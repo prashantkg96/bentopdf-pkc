@@ -1,0 +1,243 @@
+{
+  "nodes": [
+    {
+      "id": "tasks_lessons_overlay_css_regression",
+      "label": "Check shared CSS before changing overlay/compare-tool logic",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Global canvas positioning rules can hide rendered PDF content while leaving highlight layers visible, so shared CSS must be checked before page logic changes to avoid regressions in the compare tool overlay."
+    },
+    {
+      "id": "tasks_lessons_no_empty_catch_blocks",
+      "label": "Never leave empty catch {} blocks after type-safety hardening",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Either guard the risky call up front or catch the error into a variable and handle it intentionally with a safe fallback, warning, or typed default, so failures are not silently swallowed."
+    },
+    {
+      "id": "tasks_lessons_shared_form_creator_types",
+      "label": "Keep reusable form creator types in src/js/types",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Logic modules should import shared types rather than owning them, avoiding duplicated or inline type definitions across logic files and tests."
+    },
+    {
+      "id": "tasks_lessons_shared_types_export_alias",
+      "label": "Export shared app types from src/js/types/index.ts via @/types alias",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Do not import shared types from individual type files or relative types/index paths in feature code or tests, to keep a single canonical import path."
+    },
+    {
+      "id": "tasks_lessons_avoid_any_in_bug_fixes",
+      "label": "Never leave any in a bug fix when library types can be narrowed",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "After a user correction about type safety, capture the lesson immediately: prefer extracting the logic into a typed helper and adding regression tests for the corrected path."
+    },
+    {
+      "id": "tasks_lessons_pdfjs_font_prefix_normalization",
+      "label": "Normalize pdf.js document-scoped font name prefixes before comparison",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "pdf.js assigns document-scoped font name prefixes (g_d0_, g_d1_, ...) per loaded document; without normalization, comparing font names across documents produces false positive style changes."
+    },
+    {
+      "id": "tasks_lessons_libreoffice_import_filters",
+      "label": "LibreOffice PDF conversion depends on explicit import filters",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Before concluding soffice or LibreOffice WASM cannot convert pdf -> docx/pptx, test the exact filtered path such as --infilter=writer_pdf_import or --infilter=impress_pdf_import and inspect wrapper code for hardcoded capability gates."
+    },
+    {
+      "id": "tasks_lessons_lok_documentloadwithoptions_filteroptions",
+      "label": "LibreOfficeKit documentLoadWithOptions() forwards FilterOptions, not FilterName",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "In the current WASM/LOK build, the options string is forwarded as FilterOptions, not media-descriptor FilterName, so passing FilterName=writer_pdf_import from JS does not force PDF to load as Writer or Impress."
+    },
+    {
+      "id": "tasks_lessons_no_unrelated_features_in_patch",
+      "label": "Never bundle unrelated features into one patch",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A compile failure in one bundled feature (e.g. abort API + PDF filter fix) breaks the whole build; split by concern, and if already bundled, surgically remove the broken feature rather than layering a second undo patch on top."
+    },
+    {
+      "id": "tasks_lessons_wasm_header_visibility",
+      "label": "Confirm header declarations are visible at compile time before adding WASM C++ APIs",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The OperationType enum was declared in lok.hxx but the .cxx failed because of include ordering or missing header propagation, showing new enums/functions need visibility confirmed in all translation units that use them."
+    },
+    {
+      "id": "tasks_lessons_unified_diff_hunk_editing",
+      "label": "Carefully update unified diff hunks when removing content",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "When removing hunks: update hunk line counts in @@ headers, remove entire file sections if no +/- lines remain, verify old-side line numbers still match the source since removing earlier hunks shifts offsets, and verify '-' lines match the actual source text character-for-character."
+    },
+    {
+      "id": "tasks_lessons_check_existing_api_before_wasm_rebuild",
+      "label": "Check existing API before rebuilding WASM or forking libraries",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The matbee libreoffice-converter already had inputFilter support in ConversionOptions, browser.worker.ts, and buildLoadOptions(); the entire WASM rebuild was unnecessary and replacing browser.worker.global.js with a fork build caused a DeploymentException that broke all LibreOffice conversions."
+    },
+    {
+      "id": "tasks_lessons_no_replace_compiled_vendor_assets",
+      "label": "Never replace compiled vendor assets unless absolutely necessary",
+      "file_type": "concept",
+      "source_file": "tasks/lessons.md",
+      "source_location": "L13",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Assets such as browser.worker.global.js and soffice.wasm.gz are tightly coupled; a mismatched worker JS + WASM binary causes initialization failures."
+    }
+  ],
+  "edges": [
+    {
+      "source": "tasks_lessons_shared_form_creator_types",
+      "target": "tasks_lessons_shared_types_export_alias",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L3-L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_no_empty_catch_blocks",
+      "target": "tasks_lessons_avoid_any_in_bug_fixes",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L2,L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_libreoffice_import_filters",
+      "target": "tasks_lessons_lok_documentloadwithoptions_filteroptions",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L7-L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_lok_documentloadwithoptions_filteroptions",
+      "target": "tasks_lessons_check_existing_api_before_wasm_rebuild",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L8,L12",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_check_existing_api_before_wasm_rebuild",
+      "target": "tasks_lessons_no_replace_compiled_vendor_assets",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L12-L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_no_unrelated_features_in_patch",
+      "target": "tasks_lessons_unified_diff_hunk_editing",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L9,L11",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_unified_diff_hunk_editing",
+      "target": "tasks_lessons_wasm_header_visibility",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L10-L11",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_lessons_wasm_header_visibility",
+      "target": "tasks_lessons_no_unrelated_features_in_patch",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "tasks/lessons.md",
+      "source_location": "L9-L10",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

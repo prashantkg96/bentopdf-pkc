@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_combine_single_page",
+      "label": "Combine to Single Page tool page",
+      "file_type": "code",
+      "source_file": "src/pages/combine-single-page.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_combine_single_page",
+      "target": "src_js_logic_combine_single_page_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/combine-single-page.html",
+      "source_location": "line 446-449",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_combine_single_page",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/combine-single-page.html",
+      "source_location": "line 88",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_combine_single_page",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/combine-single-page.html",
+      "source_location": "line 442",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

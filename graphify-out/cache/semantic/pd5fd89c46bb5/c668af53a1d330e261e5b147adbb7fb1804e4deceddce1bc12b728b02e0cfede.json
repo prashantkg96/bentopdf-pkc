@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "docker_compose_dev_config",
+      "label": "docker-compose.dev.yml",
+      "file_type": "document",
+      "source_file": "docker-compose.dev.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docker_compose_dev_config",
+      "target": "simple_mode_doc_simple_mode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.dev.yml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docker_compose_dev_config",
+      "target": "readme_bentopdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.dev.yml",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

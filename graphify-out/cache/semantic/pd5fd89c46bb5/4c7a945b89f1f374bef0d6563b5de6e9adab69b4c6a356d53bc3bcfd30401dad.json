@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "chart_templates_tests_test_connection_testconnectiontemplate",
+      "label": "Helm Test Connection Pod",
+      "file_type": "code",
+      "source_file": "chart/templates/tests/test-connection.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "chart_templates_tests_test_connection_testconnectiontemplate",
+      "target": "chart_templates_service_servicetemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "chart/templates/tests/test-connection.yaml",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

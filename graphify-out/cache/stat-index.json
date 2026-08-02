@@ -1,0 +1,5839 @@
+{
+  ".github/ISSUE_TEMPLATE/bug_report.yml": {
+    "size": 3401,
+    "mtime_ns": 1782424557229991100,
+    "word_count": 404,
+    "hashes": {
+      ".github/issue_template/bug_report.yml": "d3061f2e5daaa6027f119e3ea786bb8cc3730403b78e67fe71c1a7d90f148222"
+    }
+  },
+  ".github/ISSUE_TEMPLATE/feature_request.yml": {
+    "size": 1129,
+    "mtime_ns": 1782424562172591000,
+    "word_count": 125,
+    "hashes": {
+      ".github/issue_template/feature_request.yml": "0d4c7a8897387cca7d5e35238b40e944f73fd016543862278f6e9113911e2c66"
+    }
+  },
+  ".github/ISSUE_TEMPLATE/question.yml": {
+    "size": 784,
+    "mtime_ns": 1782424566739432000,
+    "word_count": 87,
+    "hashes": {
+      ".github/issue_template/question.yml": "b1701f00ef4b7d6e739145df25c6b3c7a759d0589848ea6004bd10029dc5d27d"
+    }
+  },
+  ".github/codeql-config.yml": {
+    "size": 588,
+    "mtime_ns": 1782424635197507300,
+    "word_count": 54,
+    "hashes": {
+      ".github/codeql-config.yml": "ffebe339984d39c7dcd563828eca39d19986bc0d8ed20d736ef4445fe949aba6"
+    }
+  },
+  ".github/dependabot.yml": {
+    "size": 385,
+    "mtime_ns": 1782151868837721100,
+    "word_count": 32,
+    "hashes": {
+      ".github/dependabot.yml": "a4c87b99566d74aa51b67d16d622da07e50790f0496d2e0b90675fc96f4dbd73"
+    }
+  },
+  ".github/pull_request_template.md": {
+    "size": 1573,
+    "mtime_ns": 1782424683387213000,
+    "word_count": 275,
+    "hashes": {
+      ".github/pull_request_template.md": "500a7a312c049a2ac591218205a728bb5f7fd72ff3a10145e69b5450ddb86719"
+    }
+  },
+  ".github/workflows/codeql.yml": {
+    "size": 903,
+    "mtime_ns": 1782151868839648300,
+    "word_count": 75,
+    "hashes": {
+      ".github/workflows/codeql.yml": "6c38fc44441b4ef3670270b0a4784153ce3001bc9af044c6c006f83a65a84400"
+    }
+  },
+  ".github/workflows/seo-audit.yml": {
+    "size": 814,
+    "mtime_ns": 1782424621633440300,
+    "word_count": 72,
+    "hashes": {
+      ".github/workflows/seo-audit.yml": "d01708e35ecd777ff907b19ddfbf2e97baa41913b79ec96d0566ef96f8d05c1d"
+    }
+  },
+  "404.html": {
+    "size": 6122,
+    "mtime_ns": 1782420255981468400,
+    "word_count": 528,
+    "hashes": {
+      "404.html": "c95f20efbbf932d1c35a7f2cc2d32bb27eb3282dbad4cacd7e3b327df0b59c4b"
+    }
+  },
+  "CONTRIBUTING.md": {
+    "size": 1401,
+    "mtime_ns": 1782424464011159400,
+    "word_count": 159,
+    "hashes": {
+      "contributing.md": "928ad02a8d1210a0e9baca51b4808491a4c8ae071c0f58028919cba22306a8cf"
+    }
+  },
+  "README.md": {
+    "size": 3710,
+    "mtime_ns": 1782423990682327700,
+    "word_count": 460,
+    "hashes": {
+      "readme.md": "1cd8152b5318364fa2567d7ce69d64fb939ca90a21dc0c7e65f01deab5e5fb4a"
+    }
+  },
+  "RELEASE.md": {
+    "size": 7856,
+    "mtime_ns": 1782151868849226600,
+    "word_count": 1135,
+    "hashes": {
+      "release.md": "c4352052037cb1b1c446c3554ed1c6e0bcd0c82167785229f8eb91bc54a422df"
+    }
+  },
+  "SECURITY.md": {
+    "size": 1209,
+    "mtime_ns": 1782424475207868200,
+    "word_count": 149,
+    "hashes": {
+      "security.md": "62c16824da1be388b4cbcb3fa35152b765f34efd6c37185ea74521e4c36876de"
+    }
+  },
+  "SIMPLE_MODE.md": {
+    "size": 7116,
+    "mtime_ns": 1782151868850231700,
+    "word_count": 848,
+    "hashes": {
+      "simple_mode.md": "e160f662e26a2df12693a30e714557efcc9540c07f30799a477ef3c79acfceb8"
+    }
+  },
+  "STATIC-HOSTING.md": {
+    "size": 7635,
+    "mtime_ns": 1782151868850231700,
+    "word_count": 1179,
+    "hashes": {
+      "static-hosting.md": "ae0325791abfa225eb9e5994fa2e624ccbc4778ae1c4be99a7c734d4afcf69cd"
+    }
+  },
+  "TRANSLATION.md": {
+    "size": 15517,
+    "mtime_ns": 1782151868850231700,
+    "word_count": 2018,
+    "hashes": {
+      "translation.md": "59a663e98d825dfd56cedf86b8c10eac4c3c769766de0c5ba7e2e289b4bdc107"
+    }
+  },
+  "about.html": {
+    "size": 11084,
+    "mtime_ns": 1782420256016471200,
+    "word_count": 885,
+    "hashes": {
+      "about.html": "feb5bf8ddb0d90c10ebb698db812c0a6b4d1adf756adcb5ca0e7853e9ad7b92d"
+    }
+  },
+  "chart/Chart.yaml": {
+    "size": 800,
+    "mtime_ns": 1782151868852231600,
+    "word_count": 109,
+    "hashes": {
+      "chart/chart.yaml": "62236dc9d759016567f8e457273f9afb5e904712b96fd33758ad0489420d988c"
+    }
+  },
+  "chart/README.md": {
+    "size": 2172,
+    "mtime_ns": 1782151868852231600,
+    "word_count": 243,
+    "hashes": {
+      "chart/readme.md": "44270646d7a92d3f1fd7cedda3db6489b2d415979107aa31b2c8fe748b229360"
+    }
+  },
+  "chart/templates/NOTES.txt": {
+    "size": 3121,
+    "mtime_ns": 1782151868853742400,
+    "word_count": 359,
+    "hashes": {
+      "chart/templates/notes.txt": "48e017e0e7382d54dfc12fab222653c2952aac58e938e2057d297feb3b0dea42"
+    }
+  },
+  "chart/templates/deployment.yaml": {
+    "size": 2315,
+    "mtime_ns": 1782151868853742400,
+    "word_count": 246,
+    "hashes": {
+      "chart/templates/deployment.yaml": "969ce70c994412a96a1dd822bf4bd54916ad97758fa9a2ac58becb0619649dc1"
+    }
+  },
+  "chart/templates/gateway.yaml": {
+    "size": 799,
+    "mtime_ns": 1782151868855061100,
+    "word_count": 92,
+    "hashes": {
+      "chart/templates/gateway.yaml": "3279708166c6862ad7d6218f3e923f79e4e2205d3609308d60d69681cae04c9b"
+    }
+  },
+  "chart/templates/httproute.yaml": {
+    "size": 1732,
+    "mtime_ns": 1782151868855061100,
+    "word_count": 226,
+    "hashes": {
+      "chart/templates/httproute.yaml": "d081beab0417e63f6fbce13637f1c329972a29978b3dec8757cc9f84ae64fb50"
+    }
+  },
+  "chart/templates/ingress.yaml": {
+    "size": 1165,
+    "mtime_ns": 1782151868855061100,
+    "word_count": 145,
+    "hashes": {
+      "chart/templates/ingress.yaml": "9d6f1f18ad1a0a27692620ec5de6abfb3a0879e55ad28c39c2c34c58881fa257"
+    }
+  },
+  "chart/templates/service.yaml": {
+    "size": 414,
+    "mtime_ns": 1782151868855061100,
+    "word_count": 50,
+    "hashes": {
+      "chart/templates/service.yaml": "618d0822483a9bd2c9d5b1efbabd36a570ce9ceae2cf0ee3f4f01874180414fa"
+    }
+  },
+  "chart/templates/tests/test-connection.yaml": {
+    "size": 405,
+    "mtime_ns": 1782151868856616000,
+    "word_count": 43,
+    "hashes": {
+      "chart/templates/tests/test-connection.yaml": "4c7a945b89f1f374bef0d6563b5de6e9adab69b4c6a356d53bc3bcfd30401dad"
+    }
+  },
+  "chart/values.yaml": {
+    "size": 1866,
+    "mtime_ns": 1782151868857195400,
+    "word_count": 209,
+    "hashes": {
+      "chart/values.yaml": "6374d7b364fa7c3054d2947c7a67cef2698ca9cf329fc90b14b6668b01945a91"
+    }
+  },
+  "cloudflare/WASM-PROXY.md": {
+    "size": 3587,
+    "mtime_ns": 1782151868857621500,
+    "word_count": 400,
+    "hashes": {
+      "cloudflare/wasm-proxy.md": "074802f6735e5882cbbd57a74dafeddb38f4ce3cd9b6675adbff813d96ea2711"
+    }
+  },
+  "cloudflare/cors-proxy-worker.js": {
+    "size": 13672,
+    "mtime_ns": 1782151868857621500,
+    "word_count": 1167
+  },
+  "cloudflare/wasm-proxy-worker.js": {
+    "size": 10000,
+    "mtime_ns": 1782151868858625500,
+    "word_count": 861
+  },
+  "contact.html": {
+    "size": 4001,
+    "mtime_ns": 1785516088560715200,
+    "word_count": 380,
+    "hashes": {
+      "contact.html": "6c3819f23c155055f3e3f24f76061240dde7ebe8d075af18bce351d26a57668d"
+    }
+  },
+  "docker-compose.dev.yml": {
+    "size": 345,
+    "mtime_ns": 1782151868859629200,
+    "word_count": 34,
+    "hashes": {
+      "docker-compose.dev.yml": "c668af53a1d330e261e5b147adbb7fb1804e4deceddce1bc12b728b02e0cfede"
+    }
+  },
+  "docker-compose.yml": {
+    "size": 577,
+    "mtime_ns": 1782151868861173000,
+    "word_count": 48,
+    "hashes": {
+      "docker-compose.yml": "dab282ce2174539222f8381cadf6131a45539138473eeedacf592d1ccaa2ce9b"
+    }
+  },
+  "docs/.vitepress/config.mts": {
+    "size": 13463,
+    "mtime_ns": 1782151868885401300,
+    "word_count": 1207
+  },
+  "docs/contributing.md": {
+    "size": 3347,
+    "mtime_ns": 1782151868885401300,
+    "word_count": 404,
+    "hashes": {
+      "docs/contributing.md": "ccda3affeb7275f96050e82ff332d4cce85885a528d8e367021a88566f7927b6"
+    }
+  },
+  "docs/getting-started.md": {
+    "size": 3350,
+    "mtime_ns": 1782151868885401300,
+    "word_count": 416,
+    "hashes": {
+      "docs/getting-started.md": "724a371987e808be78b92ed57b1dd1351ba71bede51d943164e7d48db162207a"
+    }
+  },
+  "docs/index.md": {
+    "size": 1610,
+    "mtime_ns": 1782151868887060900,
+    "word_count": 205,
+    "hashes": {
+      "docs/index.md": "02c1054437dadce7954416b341fd6b66a015fb34c6dae6c385083d13a5a1d1db"
+    }
+  },
+  "docs/licensing.md": {
+    "size": 4695,
+    "mtime_ns": 1782151868887060900,
+    "word_count": 616,
+    "hashes": {
+      "docs/licensing.md": "59c444ccaad88b307c728f08ba82f246620c1271599c8a23a9a2fd84e570b400"
+    }
+  },
+  "docs/public/images/favicon-no-bg.svg": {
+    "size": 557,
+    "mtime_ns": 1782151868888125600,
+    "word_count": 48,
+    "hashes": {
+      "docs/public/images/favicon-no-bg.svg": "5d815923e1c00905cd23a96143dfa114fa386b7fec2b6ebbf47f1c5382b5cd3f"
+    }
+  },
+  "docs/public/images/favicon.svg": {
+    "size": 557,
+    "mtime_ns": 1782151868888866900,
+    "word_count": 48,
+    "hashes": {
+      "docs/public/images/favicon.svg": "5f08cf22edb4efd7ecba1bfe6cbc2d148334dd3dfda09175e9884ab9bb1aea6a"
+    }
+  },
+  "docs/self-hosting/apache.md": {
+    "size": 7583,
+    "mtime_ns": 1782151868888866900,
+    "word_count": 793,
+    "hashes": {
+      "docs/self-hosting/apache.md": "941349a204c14c102635e6943149d4461270c439c90dd576388935f7788af395"
+    }
+  },
+  "docs/self-hosting/aws.md": {
+    "size": 5928,
+    "mtime_ns": 1782151868888866900,
+    "word_count": 655,
+    "hashes": {
+      "docs/self-hosting/aws.md": "fb8da1acf23391baf9338d575742af8bb5e64561a6e9db995e33f89e11d8c85f"
+    }
+  },
+  "docs/self-hosting/cloudflare.md": {
+    "size": 4545,
+    "mtime_ns": 1782151868890130600,
+    "word_count": 519,
+    "hashes": {
+      "docs/self-hosting/cloudflare.md": "618e5da91bb33ddddd4c754c7c19e22f546ed1a55541aabbd095f78e0c47cc87"
+    }
+  },
+  "docs/self-hosting/cors-proxy.md": {
+    "size": 6270,
+    "mtime_ns": 1782151868890885000,
+    "word_count": 734,
+    "hashes": {
+      "docs/self-hosting/cors-proxy.md": "d03ba696c8347395fc9472716ff33688e96cbc686f09d86684d052755fdaeabb"
+    }
+  },
+  "docs/self-hosting/docker.md": {
+    "size": 25596,
+    "mtime_ns": 1782151868890885000,
+    "word_count": 2453,
+    "hashes": {
+      "docs/self-hosting/docker.md": "2078a7775cc96d0ed9bf2d955f1fc9a57a387f8ac433a1153f7fb0998f4a30fe"
+    }
+  },
+  "docs/self-hosting/hostinger.md": {
+    "size": 8846,
+    "mtime_ns": 1782151868891932000,
+    "word_count": 894,
+    "hashes": {
+      "docs/self-hosting/hostinger.md": "495d9f2583b672f8cffdfdccda9149a10ffe7713410d733579ef2ff8e015f7fc"
+    }
+  },
+  "docs/self-hosting/index.md": {
+    "size": 25109,
+    "mtime_ns": 1782151868891932000,
+    "word_count": 2779,
+    "hashes": {
+      "docs/self-hosting/index.md": "db4ccf7b03002f3d40773242c4060c7540d9db93ec1645f02d2ebc1e6aa32b3d"
+    }
+  },
+  "docs/self-hosting/kubernetes.md": {
+    "size": 6174,
+    "mtime_ns": 1782151868891932000,
+    "word_count": 693,
+    "hashes": {
+      "docs/self-hosting/kubernetes.md": "4abeb567d5ccd39f43e1d4d71ed2f6a7f343b202303132bc9315cdf5371eb7ca"
+    }
+  },
+  "docs/self-hosting/netlify.md": {
+    "size": 4631,
+    "mtime_ns": 1782151868892894500,
+    "word_count": 530,
+    "hashes": {
+      "docs/self-hosting/netlify.md": "be639ec7f20239010662cd81f3a660515c96306551babe719d91423a79494e2a"
+    }
+  },
+  "docs/self-hosting/nginx.md": {
+    "size": 6629,
+    "mtime_ns": 1782151868892894500,
+    "word_count": 731,
+    "hashes": {
+      "docs/self-hosting/nginx.md": "13cf34d76965951148d532a9eeecf264ffab1865f76e25a70e3c5a1edf330906"
+    }
+  },
+  "docs/self-hosting/vercel.md": {
+    "size": 3688,
+    "mtime_ns": 1782151868893442100,
+    "word_count": 409,
+    "hashes": {
+      "docs/self-hosting/vercel.md": "de2a8f9ccebd33ef095b16c51530c2231bd3ff5d1f781189bd51303b315a604b"
+    }
+  },
+  "docs/tools/add-attachments.md": {
+    "size": 2172,
+    "mtime_ns": 1782151868893442100,
+    "word_count": 317,
+    "hashes": {
+      "docs/tools/add-attachments.md": "98bda9276006ba3be3d5c32f994cca88f536c66b22f7a21b999c5b5bc51c0eb3"
+    }
+  },
+  "docs/tools/add-blank-page.md": {
+    "size": 1564,
+    "mtime_ns": 1782151868894490400,
+    "word_count": 262,
+    "hashes": {
+      "docs/tools/add-blank-page.md": "a6b375c46504fc6975f8be9b5bd0c9c786629f90f624d6dd27119691c9cf6c10"
+    }
+  },
+  "docs/tools/add-page-labels.md": {
+    "size": 2832,
+    "mtime_ns": 1782151868894490400,
+    "word_count": 448,
+    "hashes": {
+      "docs/tools/add-page-labels.md": "ad1118b464bc6e489c23998e5a16173114af12d1e3d5d24daebce9158a81a482"
+    }
+  },
+  "docs/tools/add-stamps.md": {
+    "size": 1842,
+    "mtime_ns": 1782151868895446700,
+    "word_count": 288,
+    "hashes": {
+      "docs/tools/add-stamps.md": "1eea31af77172ff02e2c0b30012a6ab0b608a6771b97299ae0f70e7d22f89af0"
+    }
+  },
+  "docs/tools/add-watermark.md": {
+    "size": 3003,
+    "mtime_ns": 1782151868895446700,
+    "word_count": 466,
+    "hashes": {
+      "docs/tools/add-watermark.md": "b0bfe0f91c84ef08ce846be55a708d4f4e8ec117cd95438a24fdcfb967afd460"
+    }
+  },
+  "docs/tools/adjust-colors.md": {
+    "size": 2582,
+    "mtime_ns": 1782151868895446700,
+    "word_count": 403,
+    "hashes": {
+      "docs/tools/adjust-colors.md": "7a74488292e536c6a8f5c51f637da3ddb0b01f32ad1afce77fce73932cab70be"
+    }
+  },
+  "docs/tools/alternate-merge.md": {
+    "size": 1892,
+    "mtime_ns": 1782151868896487400,
+    "word_count": 310,
+    "hashes": {
+      "docs/tools/alternate-merge.md": "1d81128e20bd2eebfcff3677972a25ed982510403f5a1be1179dee5ee9663159"
+    }
+  },
+  "docs/tools/background-color.md": {
+    "size": 1938,
+    "mtime_ns": 1782151868896487400,
+    "word_count": 299,
+    "hashes": {
+      "docs/tools/background-color.md": "612560f48463e007d9c8515fbdb206dcfa31fbbcca7738b524ed93774687089e"
+    }
+  },
+  "docs/tools/bates-numbering.md": {
+    "size": 2985,
+    "mtime_ns": 1782151868896487400,
+    "word_count": 451,
+    "hashes": {
+      "docs/tools/bates-numbering.md": "e7aa7f92e54225e27e38eb8ac7a51887df039c49b5d6afeb91eab52cd8f30245"
+    }
+  },
+  "docs/tools/bmp-to-pdf.md": {
+    "size": 1737,
+    "mtime_ns": 1782151868896487400,
+    "word_count": 279,
+    "hashes": {
+      "docs/tools/bmp-to-pdf.md": "36eb170eb62992d91ff55393bbdb749952564fb4142fab881b331f7ef2694ebf"
+    }
+  },
+  "docs/tools/bookmark.md": {
+    "size": 2900,
+    "mtime_ns": 1782151868897486400,
+    "word_count": 461,
+    "hashes": {
+      "docs/tools/bookmark.md": "b7c7838d7fc1f81d258de75dd5c70e31a56f834607f544ed92be8a09a4f462b8"
+    }
+  },
+  "docs/tools/cbz-to-pdf.md": {
+    "size": 2610,
+    "mtime_ns": 1782151868898034800,
+    "word_count": 415,
+    "hashes": {
+      "docs/tools/cbz-to-pdf.md": "99e43c979d363b54c7aaab7ac77f65810d77008b0e0ae6c08195bb1e30691058"
+    }
+  },
+  "docs/tools/change-permissions.md": {
+    "size": 3489,
+    "mtime_ns": 1782151868898034800,
+    "word_count": 504,
+    "hashes": {
+      "docs/tools/change-permissions.md": "8ea35e5dd9945ef0447efff7aec34062b421b0d924e85713229817858e00de7f"
+    }
+  },
+  "docs/tools/combine-single-page.md": {
+    "size": 2513,
+    "mtime_ns": 1782151868898034800,
+    "word_count": 366,
+    "hashes": {
+      "docs/tools/combine-single-page.md": "47cc460e26eeb202195b1fe22d47ed049a65ddb79a4248d3dc7a313d5db56142"
+    }
+  },
+  "docs/tools/compare-pdfs.md": {
+    "size": 3322,
+    "mtime_ns": 1782151868898034800,
+    "word_count": 425,
+    "hashes": {
+      "docs/tools/compare-pdfs.md": "5cefde7b09d19a5a85d33faefd753fcc95fa6a2c5f87ee42b3411cb60c59c631"
+    }
+  },
+  "docs/tools/compress-pdf.md": {
+    "size": 3499,
+    "mtime_ns": 1782151868899076800,
+    "word_count": 514,
+    "hashes": {
+      "docs/tools/compress-pdf.md": "4ca5b52b7fa6f12dbe673fa15f5b681056f87af65d815124095853088cd9dbc5"
+    }
+  },
+  "docs/tools/crop-pdf.md": {
+    "size": 2002,
+    "mtime_ns": 1782151868899076800,
+    "word_count": 333,
+    "hashes": {
+      "docs/tools/crop-pdf.md": "1bed68cd5831cc93f7d52ab4506023782743fc74730bdc5a3765f0399287df4a"
+    }
+  },
+  "docs/tools/csv-to-pdf.md": {
+    "size": 2110,
+    "mtime_ns": 1782151868899076800,
+    "word_count": 321,
+    "hashes": {
+      "docs/tools/csv-to-pdf.md": "c4c31784885cd464e839dcd45faf2eb60293c93ee746d1738d949dc3b9cb30e4"
+    }
+  },
+  "docs/tools/decrypt-pdf.md": {
+    "size": 2334,
+    "mtime_ns": 1782151868900079000,
+    "word_count": 346,
+    "hashes": {
+      "docs/tools/decrypt-pdf.md": "d08f9db6881516a39207d599273c038efea77987eb5c3e7aa7b5f64a8dadee58"
+    }
+  },
+  "docs/tools/delete-pages.md": {
+    "size": 1764,
+    "mtime_ns": 1782151868900079000,
+    "word_count": 277,
+    "hashes": {
+      "docs/tools/delete-pages.md": "0cbefbfdeefd46020d01825c05b709b0c7917fe33f822a4475091b971929adcd"
+    }
+  },
+  "docs/tools/deskew-pdf.md": {
+    "size": 2275,
+    "mtime_ns": 1782151868901077100,
+    "word_count": 354,
+    "hashes": {
+      "docs/tools/deskew-pdf.md": "93110fe7c915cfeef96148851fbff0e1eb16c78698cde3555bb632a6043df610"
+    }
+  },
+  "docs/tools/digital-sign-pdf.md": {
+    "size": 3886,
+    "mtime_ns": 1782151868901077100,
+    "word_count": 523,
+    "hashes": {
+      "docs/tools/digital-sign-pdf.md": "8aae120ab6a170457e8c0c2864f66c43b697aea8ac6a1e2c5425412da67fd662"
+    }
+  },
+  "docs/tools/divide-pages.md": {
+    "size": 1744,
+    "mtime_ns": 1782151868901077100,
+    "word_count": 259,
+    "hashes": {
+      "docs/tools/divide-pages.md": "bd927c4e242d10b7aecee3076862309db00b78fa711ccf1949b73d966244350a"
+    }
+  },
+  "docs/tools/edit-attachments.md": {
+    "size": 1979,
+    "mtime_ns": 1782151868902076800,
+    "word_count": 302,
+    "hashes": {
+      "docs/tools/edit-attachments.md": "f89de290c7bf71ae38a60983dcd7f17a9e470a2e3559d5c4e801da556ea02ba7"
+    }
+  },
+  "docs/tools/edit-metadata.md": {
+    "size": 2914,
+    "mtime_ns": 1782151868902624300,
+    "word_count": 413,
+    "hashes": {
+      "docs/tools/edit-metadata.md": "9ca3251c5e33288dbfd862ba405f8584ef6d7bd85799679ba76ea5513663312c"
+    }
+  },
+  "docs/tools/edit-pdf.md": {
+    "size": 2017,
+    "mtime_ns": 1782151868902624300,
+    "word_count": 299,
+    "hashes": {
+      "docs/tools/edit-pdf.md": "2495c4c3014dcb62ae736dd150c6f0258cf3456e8cf3f2d1359272f341bb716d"
+    }
+  },
+  "docs/tools/email-to-pdf.md": {
+    "size": 3069,
+    "mtime_ns": 1782151868902624300,
+    "word_count": 434,
+    "hashes": {
+      "docs/tools/email-to-pdf.md": "ea7b52f938b4fd579d97f7616040b3cf5203eee22ab91eac583d3b51a51caba0"
+    }
+  },
+  "docs/tools/encrypt-pdf.md": {
+    "size": 2908,
+    "mtime_ns": 1782151868902624300,
+    "word_count": 425,
+    "hashes": {
+      "docs/tools/encrypt-pdf.md": "544da829514fcaf3783f7351e097a35ed5e6e6e67bb044e1156b3938bc0d5cf5"
+    }
+  },
+  "docs/tools/epub-to-pdf.md": {
+    "size": 1997,
+    "mtime_ns": 1782151868903667000,
+    "word_count": 322,
+    "hashes": {
+      "docs/tools/epub-to-pdf.md": "c9504c4479c471c44de664db0f7ecdce0ae23080dd4024e351c51db5af140c96"
+    }
+  },
+  "docs/tools/excel-to-pdf.md": {
+    "size": 2534,
+    "mtime_ns": 1782151868904677600,
+    "word_count": 361,
+    "hashes": {
+      "docs/tools/excel-to-pdf.md": "191d6e579160f832ef043e5d4f66152d4871e1f68ded91cf01eaf32c37a435f0"
+    }
+  },
+  "docs/tools/extract-attachments.md": {
+    "size": 1723,
+    "mtime_ns": 1782151868904677600,
+    "word_count": 260,
+    "hashes": {
+      "docs/tools/extract-attachments.md": "92ed407d9819a2d8498bcd9b6047a561a0ab55d1800cffb79a772f25cfe06d1f"
+    }
+  },
+  "docs/tools/extract-images.md": {
+    "size": 2206,
+    "mtime_ns": 1782151868904677600,
+    "word_count": 361,
+    "hashes": {
+      "docs/tools/extract-images.md": "a38ef03381622d932bef0ec961cf22daa2eb643713a8a222d43045993f3b33f6"
+    }
+  },
+  "docs/tools/extract-pages.md": {
+    "size": 1651,
+    "mtime_ns": 1782151868904677600,
+    "word_count": 277,
+    "hashes": {
+      "docs/tools/extract-pages.md": "091b90d27b319b481005b91725d906e3b135a81fb05c8e7d4a48445abb9b4275"
+    }
+  },
+  "docs/tools/extract-tables.md": {
+    "size": 2313,
+    "mtime_ns": 1782151868904677600,
+    "word_count": 348,
+    "hashes": {
+      "docs/tools/extract-tables.md": "8319353daeabe4ad5d5d651ddd328e66d5e6655435abf1088ae7fa2c1606493c"
+    }
+  },
+  "docs/tools/fb2-to-pdf.md": {
+    "size": 1831,
+    "mtime_ns": 1782151868906223500,
+    "word_count": 286,
+    "hashes": {
+      "docs/tools/fb2-to-pdf.md": "8e763bbe0dd9f14440d1ff1645fdeb43f3552a3ad80e097c71341349fa5f4556"
+    }
+  },
+  "docs/tools/fix-page-size.md": {
+    "size": 2049,
+    "mtime_ns": 1782151868906223500,
+    "word_count": 329,
+    "hashes": {
+      "docs/tools/fix-page-size.md": "a7c8218aab59b44b0fb1f9d36d2fff5e03da64cbfc4ddcbd4a7b1fc7fb926fe9"
+    }
+  },
+  "docs/tools/flatten-pdf.md": {
+    "size": 2520,
+    "mtime_ns": 1782151868906223500,
+    "word_count": 374,
+    "hashes": {
+      "docs/tools/flatten-pdf.md": "014fcc5b8c4dca4f01462e6224dc20b10c4e15d881ba22f29ae71119640eeb34"
+    }
+  },
+  "docs/tools/font-to-outline.md": {
+    "size": 2385,
+    "mtime_ns": 1782151868907269400,
+    "word_count": 373,
+    "hashes": {
+      "docs/tools/font-to-outline.md": "40445750386d1abe8d32239a9d1591caed024a94cf1cca99ec0bdbc218362fff"
+    }
+  },
+  "docs/tools/form-creator.md": {
+    "size": 3507,
+    "mtime_ns": 1782151868908027900,
+    "word_count": 552,
+    "hashes": {
+      "docs/tools/form-creator.md": "e345b5425eadde428f92ce02dfe6d5631ec74d9f896241b02b4c15e8ed9f2a11"
+    }
+  },
+  "docs/tools/form-filler.md": {
+    "size": 2071,
+    "mtime_ns": 1782151868908027900,
+    "word_count": 327,
+    "hashes": {
+      "docs/tools/form-filler.md": "93fc8d7b7317b3a031c07f19fbd318b46635ebda8d992b60ec2768c753a1428c"
+    }
+  },
+  "docs/tools/header-footer.md": {
+    "size": 2448,
+    "mtime_ns": 1782151868908027900,
+    "word_count": 398,
+    "hashes": {
+      "docs/tools/header-footer.md": "8f5771b4bbde01c2b6c7a2228a683c5ce15f5def1078b157c206a7fd16053634"
+    }
+  },
+  "docs/tools/heic-to-pdf.md": {
+    "size": 1913,
+    "mtime_ns": 1782151868909081600,
+    "word_count": 319,
+    "hashes": {
+      "docs/tools/heic-to-pdf.md": "01ed0074279faf67507303b2c74cec246794ce261032d3d4e494933c7a175ae7"
+    }
+  },
+  "docs/tools/image-to-pdf.md": {
+    "size": 3338,
+    "mtime_ns": 1782151868909081600,
+    "word_count": 477,
+    "hashes": {
+      "docs/tools/image-to-pdf.md": "e49d61b15e9b57c20ec3bd944753a81bb55a02b88a5d02085c1177653d691591"
+    }
+  },
+  "docs/tools/index.md": {
+    "size": 11062,
+    "mtime_ns": 1782151868909081600,
+    "word_count": 1517,
+    "hashes": {
+      "docs/tools/index.md": "3eb04851737dc40d0e11e0671d92a7e26d7d28a87af14f543c0e2ea9fbf2eafd"
+    }
+  },
+  "docs/tools/invert-colors.md": {
+    "size": 1808,
+    "mtime_ns": 1782151868909081600,
+    "word_count": 273,
+    "hashes": {
+      "docs/tools/invert-colors.md": "ce034e53c569fe891d0a501d11771f8b5968ac8b6a0dc42ef9bc23dd4a74462f"
+    }
+  },
+  "docs/tools/jpg-to-pdf.md": {
+    "size": 1945,
+    "mtime_ns": 1782151868909081600,
+    "word_count": 318,
+    "hashes": {
+      "docs/tools/jpg-to-pdf.md": "462b5f783b2dca96a5c2b1fe473bb297a7d5525892cb4758ea91d89d7a6b7cf0"
+    }
+  },
+  "docs/tools/json-to-pdf.md": {
+    "size": 2358,
+    "mtime_ns": 1782151868910626500,
+    "word_count": 367,
+    "hashes": {
+      "docs/tools/json-to-pdf.md": "0a54c6e8114ee4a76b95587303fd191dd46909c03562a3830ca355833672bb4c"
+    }
+  },
+  "docs/tools/linearize-pdf.md": {
+    "size": 2328,
+    "mtime_ns": 1782151868910626500,
+    "word_count": 351,
+    "hashes": {
+      "docs/tools/linearize-pdf.md": "8aca7857bbdd50504c0eeb009adbb5d30d68c21a71d6110aa9b9b811ba85904b"
+    }
+  },
+  "docs/tools/markdown-to-pdf.md": {
+    "size": 2875,
+    "mtime_ns": 1782151868911694500,
+    "word_count": 440,
+    "hashes": {
+      "docs/tools/markdown-to-pdf.md": "e7f2ffd2d71517511d042875c1931f12b3f76ef1415d48ee557191ac550c3a08"
+    }
+  },
+  "docs/tools/merge-pdf.md": {
+    "size": 2786,
+    "mtime_ns": 1782151868911694500,
+    "word_count": 424,
+    "hashes": {
+      "docs/tools/merge-pdf.md": "5aeb3ff76fc341a65fd1521e5a21bed2d7345135a019d8463d6b2b039fa095a3"
+    }
+  },
+  "docs/tools/mobi-to-pdf.md": {
+    "size": 1840,
+    "mtime_ns": 1782151868911694500,
+    "word_count": 293,
+    "hashes": {
+      "docs/tools/mobi-to-pdf.md": "84cb3a21a39025323d2651d101e74cf02aed0268c4281403a6fbbdfff3ea65e6"
+    }
+  },
+  "docs/tools/n-up-pdf.md": {
+    "size": 2525,
+    "mtime_ns": 1782151868912700700,
+    "word_count": 363,
+    "hashes": {
+      "docs/tools/n-up-pdf.md": "91f2e29d45af5655b5c63c0a902a5dad06892f703a525978d8d0bdb64cab5ab0"
+    }
+  },
+  "docs/tools/ocr-pdf.md": {
+    "size": 3494,
+    "mtime_ns": 1782151868912700700,
+    "word_count": 429,
+    "hashes": {
+      "docs/tools/ocr-pdf.md": "dccfc094a228af214879dd43f889179aea6549d6cde35d2e82ac5f725c15049c"
+    }
+  },
+  "docs/tools/odg-to-pdf.md": {
+    "size": 2012,
+    "mtime_ns": 1782151868912700700,
+    "word_count": 306,
+    "hashes": {
+      "docs/tools/odg-to-pdf.md": "a4a7719659e29e90b881963488f31fcf2bbbca6173f02ec8f57960938492aac9"
+    }
+  },
+  "docs/tools/odp-to-pdf.md": {
+    "size": 2115,
+    "mtime_ns": 1782151868913700400,
+    "word_count": 315,
+    "hashes": {
+      "docs/tools/odp-to-pdf.md": "aa2cfded98b15c94fabb871047a613be7e41ad38d0cc988f3efd3931f5d69128"
+    }
+  },
+  "docs/tools/ods-to-pdf.md": {
+    "size": 2052,
+    "mtime_ns": 1782151868913700400,
+    "word_count": 308,
+    "hashes": {
+      "docs/tools/ods-to-pdf.md": "91862c446d7ae5e39dfcf88b5d5467d1180d86dcce52358eef81711e68de39ba"
+    }
+  },
+  "docs/tools/odt-to-pdf.md": {
+    "size": 2428,
+    "mtime_ns": 1782151868913700400,
+    "word_count": 346,
+    "hashes": {
+      "docs/tools/odt-to-pdf.md": "1ad33211c0d1c1c12b5b1e6edde83945c204568e15ae91c35131339cddec9672"
+    }
+  },
+  "docs/tools/organize-pdf.md": {
+    "size": 2041,
+    "mtime_ns": 1782151868913700400,
+    "word_count": 314,
+    "hashes": {
+      "docs/tools/organize-pdf.md": "a6328001a72736f925a78f0fc5b43ddc6efe1f406747833ceeeb631cc4e56ca6"
+    }
+  },
+  "docs/tools/page-dimensions.md": {
+    "size": 2596,
+    "mtime_ns": 1782151868915711800,
+    "word_count": 391,
+    "hashes": {
+      "docs/tools/page-dimensions.md": "64d8989b769fe44bcdc9bbb91fb95141a9df068fab5f7c53e6a6a3ae0252eff8"
+    }
+  },
+  "docs/tools/page-numbers.md": {
+    "size": 1959,
+    "mtime_ns": 1782151868916305600,
+    "word_count": 316,
+    "hashes": {
+      "docs/tools/page-numbers.md": "c4d1207ff348894472dcadc9a73949d5df1a580866fc4cf934b5bd6d4150717a"
+    }
+  },
+  "docs/tools/pdf-booklet.md": {
+    "size": 1811,
+    "mtime_ns": 1782151868916305600,
+    "word_count": 284,
+    "hashes": {
+      "docs/tools/pdf-booklet.md": "71dc85f74dc91f24824acb14391776d187e6f38171f796fe492401836dce16cd"
+    }
+  },
+  "docs/tools/pdf-layers.md": {
+    "size": 2050,
+    "mtime_ns": 1782151868916305600,
+    "word_count": 336,
+    "hashes": {
+      "docs/tools/pdf-layers.md": "88040b4c9aa536218b497b51ca579a66f2d3b186e12f7d19ec0220aa911a3f12"
+    }
+  },
+  "docs/tools/pdf-multi-tool.md": {
+    "size": 2756,
+    "mtime_ns": 1782151868917305000,
+    "word_count": 436,
+    "hashes": {
+      "docs/tools/pdf-multi-tool.md": "1ee572b4738e9aadd76873b769dd8159851a5d1f99f19be2223bfb6367c3e9b8"
+    }
+  },
+  "docs/tools/pdf-to-bmp.md": {
+    "size": 1491,
+    "mtime_ns": 1782151868917305000,
+    "word_count": 235,
+    "hashes": {
+      "docs/tools/pdf-to-bmp.md": "09bc2b7f621cb95e056a48c35e745a777549e3fd4dfb72e9bc1debe9e168308c"
+    }
+  },
+  "docs/tools/pdf-to-cbz.md": {
+    "size": 3948,
+    "mtime_ns": 1782151868917305000,
+    "word_count": 545,
+    "hashes": {
+      "docs/tools/pdf-to-cbz.md": "daff3bf7a26a13c9eda25a01a7490fbac83441e6475fc5ad05441763ab5db022"
+    }
+  },
+  "docs/tools/pdf-to-csv.md": {
+    "size": 1942,
+    "mtime_ns": 1782151868918304900,
+    "word_count": 306,
+    "hashes": {
+      "docs/tools/pdf-to-csv.md": "16e49f0905a1212d3519d6139550bc1a84d6ccb91e42a905ea2f4958a117aad9"
+    }
+  },
+  "docs/tools/pdf-to-docx.md": {
+    "size": 1819,
+    "mtime_ns": 1782151868918304900,
+    "word_count": 277,
+    "hashes": {
+      "docs/tools/pdf-to-docx.md": "82903238ee1b5f88e68b2e303f83ac1679f56314cded1821b2d005274c4a0db7"
+    }
+  },
+  "docs/tools/pdf-to-excel.md": {
+    "size": 1953,
+    "mtime_ns": 1782151868918304900,
+    "word_count": 304,
+    "hashes": {
+      "docs/tools/pdf-to-excel.md": "01509d7365b90b83c11f7d3fe19a4935772191e9d6103e70a0a411356aed2410"
+    }
+  },
+  "docs/tools/pdf-to-greyscale.md": {
+    "size": 1939,
+    "mtime_ns": 1782151868920233900,
+    "word_count": 308,
+    "hashes": {
+      "docs/tools/pdf-to-greyscale.md": "02f827214c7081439583f6e5f96322c93c6458577993877313d58d8a3d96f1ff"
+    }
+  },
+  "docs/tools/pdf-to-jpg.md": {
+    "size": 1951,
+    "mtime_ns": 1782151868920233900,
+    "word_count": 304,
+    "hashes": {
+      "docs/tools/pdf-to-jpg.md": "96bc1f1cfa90593db57530e1d58504226286200fd6c3c6fec51f24fa4be40b29"
+    }
+  },
+  "docs/tools/pdf-to-json.md": {
+    "size": 1855,
+    "mtime_ns": 1782151868920935900,
+    "word_count": 276,
+    "hashes": {
+      "docs/tools/pdf-to-json.md": "943ea6a42c79c3319e5ee607e1fefd84a97f8b8092f4c50d861dffb26291fa81"
+    }
+  },
+  "docs/tools/pdf-to-markdown.md": {
+    "size": 1955,
+    "mtime_ns": 1782151868920935900,
+    "word_count": 283,
+    "hashes": {
+      "docs/tools/pdf-to-markdown.md": "ee4eb42626d3eac740dd26a28f35b7700a2acbc6fe6496712850fa4fb9738031"
+    }
+  },
+  "docs/tools/pdf-to-pdfa.md": {
+    "size": 2695,
+    "mtime_ns": 1782151868921935200,
+    "word_count": 364,
+    "hashes": {
+      "docs/tools/pdf-to-pdfa.md": "b375bfd93dc0047a15b7958bb2510af108b454e43b440b41d58eaace0c759ccf"
+    }
+  },
+  "docs/tools/pdf-to-png.md": {
+    "size": 1724,
+    "mtime_ns": 1782151868921935200,
+    "word_count": 263,
+    "hashes": {
+      "docs/tools/pdf-to-png.md": "66c46893b31871e31e48c3fcecb0256394d9e684a2754ad2fea9215a85d927c6"
+    }
+  },
+  "docs/tools/pdf-to-svg.md": {
+    "size": 1945,
+    "mtime_ns": 1782151868922937100,
+    "word_count": 295,
+    "hashes": {
+      "docs/tools/pdf-to-svg.md": "67a60c28654fc06086db687507c08ed710df30d76d593d81c8c8b7446f2aa578"
+    }
+  },
+  "docs/tools/pdf-to-text.md": {
+    "size": 1979,
+    "mtime_ns": 1782151868922937100,
+    "word_count": 295,
+    "hashes": {
+      "docs/tools/pdf-to-text.md": "cc79fa02efbb495baf2229da52b5c5b3901ba8ffc33aabbec7d1b1cbfc6592ce"
+    }
+  },
+  "docs/tools/pdf-to-tiff.md": {
+    "size": 1717,
+    "mtime_ns": 1782151868922937100,
+    "word_count": 280,
+    "hashes": {
+      "docs/tools/pdf-to-tiff.md": "f23c2439b6dc2433171a5ea05407a64d90d4b8dedc418f2881c4d8d036872704"
+    }
+  },
+  "docs/tools/pdf-to-webp.md": {
+    "size": 1574,
+    "mtime_ns": 1782151868924442600,
+    "word_count": 240,
+    "hashes": {
+      "docs/tools/pdf-to-webp.md": "5de8bde5dc452ebb18d9aa75b346557ffd91d20185b427a354fc77f4e50b2a43"
+    }
+  },
+  "docs/tools/pdf-to-zip.md": {
+    "size": 1500,
+    "mtime_ns": 1782151868924442600,
+    "word_count": 244,
+    "hashes": {
+      "docs/tools/pdf-to-zip.md": "2984f8b7c7bbcc5070c422d0c003613321b18a4bdcb3909074741056361698f1"
+    }
+  },
+  "docs/tools/pdf-workflow.md": {
+    "size": 6020,
+    "mtime_ns": 1782151868925448400,
+    "word_count": 953,
+    "hashes": {
+      "docs/tools/pdf-workflow.md": "9c514e49dbb8de6915b1fa04f14a153cc5c7d9f62c5d8a87eef0e834514108f8"
+    }
+  },
+  "docs/tools/png-to-pdf.md": {
+    "size": 1902,
+    "mtime_ns": 1782151868925448400,
+    "word_count": 305,
+    "hashes": {
+      "docs/tools/png-to-pdf.md": "f4b961625dc55ccbd2b715f0276eb714206eef2bd596dbc70b2f441e1c974199"
+    }
+  },
+  "docs/tools/posterize-pdf.md": {
+    "size": 2359,
+    "mtime_ns": 1782151868925448400,
+    "word_count": 381,
+    "hashes": {
+      "docs/tools/posterize-pdf.md": "f632fd11e1ddbfb9f16255e863340f385d5f6b38c5290f9478321fe96e7ecbd0"
+    }
+  },
+  "docs/tools/powerpoint-to-pdf.md": {
+    "size": 2583,
+    "mtime_ns": 1782151868926449500,
+    "word_count": 377,
+    "hashes": {
+      "docs/tools/powerpoint-to-pdf.md": "184656750cb5c1608e5b178d77d6643bd6567a23c08d5f90942e54a562831b50"
+    }
+  },
+  "docs/tools/prepare-pdf-for-ai.md": {
+    "size": 2094,
+    "mtime_ns": 1782151868926449500,
+    "word_count": 298,
+    "hashes": {
+      "docs/tools/prepare-pdf-for-ai.md": "98ec29995c61a30d1638ae0e1d1abc1df180b7a22ffa64c560d0591155089870"
+    }
+  },
+  "docs/tools/psd-to-pdf.md": {
+    "size": 2166,
+    "mtime_ns": 1782151868926449500,
+    "word_count": 339,
+    "hashes": {
+      "docs/tools/psd-to-pdf.md": "bafc9c3611f4f72181a68387b7a7dabda05dc61e8f19ee94626288170c6bf5a7"
+    }
+  },
+  "docs/tools/pub-to-pdf.md": {
+    "size": 2132,
+    "mtime_ns": 1782151868927449500,
+    "word_count": 322,
+    "hashes": {
+      "docs/tools/pub-to-pdf.md": "97772e0c2ff8cc425c7c0fbf2140f0b63b46278a14c26e80a658693400c900f4"
+    }
+  },
+  "docs/tools/rasterize-pdf.md": {
+    "size": 2500,
+    "mtime_ns": 1782151868927449500,
+    "word_count": 381,
+    "hashes": {
+      "docs/tools/rasterize-pdf.md": "d2e35f32b01c9bd32bcea511d5700ffd8da623e5af12653fdc2a885c3bb015a5"
+    }
+  },
+  "docs/tools/remove-annotations.md": {
+    "size": 2000,
+    "mtime_ns": 1782151868927449500,
+    "word_count": 291,
+    "hashes": {
+      "docs/tools/remove-annotations.md": "0353d0f9a2a2ab5db06bfcd763b04ef22b7f6f1a1d7b31dfc99a7c29ccdd23f2"
+    }
+  },
+  "docs/tools/remove-blank-pages.md": {
+    "size": 2436,
+    "mtime_ns": 1782151868927449500,
+    "word_count": 379,
+    "hashes": {
+      "docs/tools/remove-blank-pages.md": "6e9b61cd384976ddab9d19eae44855b165e69516ba1516aef26557fd9cdf5148"
+    }
+  },
+  "docs/tools/remove-metadata.md": {
+    "size": 2302,
+    "mtime_ns": 1782151868927449500,
+    "word_count": 347,
+    "hashes": {
+      "docs/tools/remove-metadata.md": "9059c03e65c0769566216376716ef119e7489d4101325e6ece045826cef5fbeb"
+    }
+  },
+  "docs/tools/remove-restrictions.md": {
+    "size": 1966,
+    "mtime_ns": 1782151868928958700,
+    "word_count": 300,
+    "hashes": {
+      "docs/tools/remove-restrictions.md": "b7279e3ed073fb9a8cb4e343fb2b4c401e89b63911f778a6693d5383996dfede"
+    }
+  },
+  "docs/tools/repair-pdf.md": {
+    "size": 2447,
+    "mtime_ns": 1782151868928958700,
+    "word_count": 377,
+    "hashes": {
+      "docs/tools/repair-pdf.md": "f353446ca78496268fab46040be967df8fa0b3072733880a0b844524e998ce0b"
+    }
+  },
+  "docs/tools/reverse-pages.md": {
+    "size": 1479,
+    "mtime_ns": 1782151868928958700,
+    "word_count": 235,
+    "hashes": {
+      "docs/tools/reverse-pages.md": "cf3b91821480d47e645158ed135f1ff9abe4096400fda5599108ef615ba327cb"
+    }
+  },
+  "docs/tools/rotate-custom.md": {
+    "size": 1842,
+    "mtime_ns": 1782151868929967700,
+    "word_count": 281,
+    "hashes": {
+      "docs/tools/rotate-custom.md": "0e867a155bce200af3b1bb132e32b8f2be9b4f1b0ea59c88f14205857ae5068d"
+    }
+  },
+  "docs/tools/rotate-pdf.md": {
+    "size": 1907,
+    "mtime_ns": 1782151868929967700,
+    "word_count": 290,
+    "hashes": {
+      "docs/tools/rotate-pdf.md": "3b3bd3889b375a25676608bc1c7dc8d94e029934c49dba76606a6bc09d16cced"
+    }
+  },
+  "docs/tools/rtf-to-pdf.md": {
+    "size": 2331,
+    "mtime_ns": 1782151868929967700,
+    "word_count": 349,
+    "hashes": {
+      "docs/tools/rtf-to-pdf.md": "e7a2c357be2836cea508faf31aad60a504c2b14d19b6fe16b1df653fceb1e768"
+    }
+  },
+  "docs/tools/sanitize-pdf.md": {
+    "size": 3105,
+    "mtime_ns": 1782151868931638400,
+    "word_count": 424,
+    "hashes": {
+      "docs/tools/sanitize-pdf.md": "f6f1de9bf0e50afae624415dd6809524f7565c18d315e62733d3ec475146e51b"
+    }
+  },
+  "docs/tools/scanner-effect.md": {
+    "size": 2847,
+    "mtime_ns": 1782151868931638400,
+    "word_count": 430,
+    "hashes": {
+      "docs/tools/scanner-effect.md": "36e7fe5793c6e843e9fdfb3681e632533651d0a98b5bca803cb484fbae09c91e"
+    }
+  },
+  "docs/tools/sign-pdf.md": {
+    "size": 2278,
+    "mtime_ns": 1782151868931638400,
+    "word_count": 360,
+    "hashes": {
+      "docs/tools/sign-pdf.md": "db692c9882319ccb289c993fc6777177909d483faca4e9f4836829c216b7655d"
+    }
+  },
+  "docs/tools/split-pdf.md": {
+    "size": 3084,
+    "mtime_ns": 1782151868932643700,
+    "word_count": 431,
+    "hashes": {
+      "docs/tools/split-pdf.md": "5c3ae8ba535516e90e3eb5b292540b327f3ddcfcbc64cd3b46e714fb9b9de628"
+    }
+  },
+  "docs/tools/svg-to-pdf.md": {
+    "size": 2131,
+    "mtime_ns": 1782151868932643700,
+    "word_count": 336,
+    "hashes": {
+      "docs/tools/svg-to-pdf.md": "e4e355de9bfad11c4711d338f2f29d7eee75fd97dcb52b49fe1475d2762f86fb"
+    }
+  },
+  "docs/tools/table-of-contents.md": {
+    "size": 2169,
+    "mtime_ns": 1782151868933148000,
+    "word_count": 351,
+    "hashes": {
+      "docs/tools/table-of-contents.md": "9fe4966ab4786208c0590e32af74c69c7b93861efffc86c841f88bebf6d827c0"
+    }
+  },
+  "docs/tools/text-color.md": {
+    "size": 1770,
+    "mtime_ns": 1782151868933148000,
+    "word_count": 276,
+    "hashes": {
+      "docs/tools/text-color.md": "83ecb5ab56b1022410d1463e1ef1ffa7e3e7f30a56d4dcfed249ea019eac8f30"
+    }
+  },
+  "docs/tools/tiff-to-pdf.md": {
+    "size": 1954,
+    "mtime_ns": 1782151868933148000,
+    "word_count": 317,
+    "hashes": {
+      "docs/tools/tiff-to-pdf.md": "a882f86c2b5c7542c1e5d20c878509d96aa101efba0fc60f67d60ace29d93156"
+    }
+  },
+  "docs/tools/txt-to-pdf.md": {
+    "size": 2765,
+    "mtime_ns": 1782151868934154400,
+    "word_count": 406,
+    "hashes": {
+      "docs/tools/txt-to-pdf.md": "d86d30a23a28942cbab343af4afa0c9b54381df7d094ff9940fbbf238a8da5cf"
+    }
+  },
+  "docs/tools/validate-signature-pdf.md": {
+    "size": 6043,
+    "mtime_ns": 1782151868934154400,
+    "word_count": 844,
+    "hashes": {
+      "docs/tools/validate-signature-pdf.md": "9b149d8557165036c6127e2a5d7338c781776ed9c96eab9bee9b12aadd402bfb"
+    }
+  },
+  "docs/tools/view-metadata.md": {
+    "size": 2537,
+    "mtime_ns": 1782151868934154400,
+    "word_count": 346,
+    "hashes": {
+      "docs/tools/view-metadata.md": "3aa56cedd76c4e7f46016023514dbea1279fc466ea29b0fdfcf0c65438ee048d"
+    }
+  },
+  "docs/tools/vsd-to-pdf.md": {
+    "size": 2202,
+    "mtime_ns": 1782151868935154300,
+    "word_count": 340,
+    "hashes": {
+      "docs/tools/vsd-to-pdf.md": "cc7cddfa93ae914b1a2863e04bd94de8fc92a5356d41b753fd8a92a3b022a52f"
+    }
+  },
+  "docs/tools/webp-to-pdf.md": {
+    "size": 1875,
+    "mtime_ns": 1782151868936157400,
+    "word_count": 303,
+    "hashes": {
+      "docs/tools/webp-to-pdf.md": "a90b671f2155bd55c47ddc1b5b77866e9378d10df621edd8512f91adee4ad0f6"
+    }
+  },
+  "docs/tools/word-to-pdf.md": {
+    "size": 2645,
+    "mtime_ns": 1782151868936662000,
+    "word_count": 394,
+    "hashes": {
+      "docs/tools/word-to-pdf.md": "d1948e987f42258f82236eccf074f7b0543cc1cde3ef061887186bff4d693bf4"
+    }
+  },
+  "docs/tools/wpd-to-pdf.md": {
+    "size": 1922,
+    "mtime_ns": 1782151868936662000,
+    "word_count": 297,
+    "hashes": {
+      "docs/tools/wpd-to-pdf.md": "ba83d777fa232c86a2f597f75fd350414e7f2ba02c773671e137ffe567655ebe"
+    }
+  },
+  "docs/tools/wps-to-pdf.md": {
+    "size": 1968,
+    "mtime_ns": 1782151868936662000,
+    "word_count": 309,
+    "hashes": {
+      "docs/tools/wps-to-pdf.md": "b05a6bb2c31e4f9b80dd5ddf025a53154f118771c0def7d4952edd69cbf3132d"
+    }
+  },
+  "docs/tools/xml-to-pdf.md": {
+    "size": 2213,
+    "mtime_ns": 1782151868937666700,
+    "word_count": 339,
+    "hashes": {
+      "docs/tools/xml-to-pdf.md": "e3da9357dc4653bf5a54b935e80dbe3a99e5dbe78a554ac89d94c4afa55178f0"
+    }
+  },
+  "docs/tools/xps-to-pdf.md": {
+    "size": 2058,
+    "mtime_ns": 1782151868937666700,
+    "word_count": 317,
+    "hashes": {
+      "docs/tools/xps-to-pdf.md": "e1970b07ee8280d4ab23490a278a792003378f6eacb79372e97ac424d700bd72"
+    }
+  },
+  "entrypoint.sh": {
+    "size": 1734,
+    "mtime_ns": 1782151868937666700,
+    "word_count": 199,
+    "hashes": {
+      "entrypoint.sh": "b462ceaf579cdcd2bc08b85ed5413dab8482def1c573fbeaeb9af10e572ee677"
+    }
+  },
+  "eslint.config.mjs": {
+    "size": 3314,
+    "mtime_ns": 1782151868938805500,
+    "word_count": 175
+  },
+  "faq.html": {
+    "size": 14649,
+    "mtime_ns": 1782420256076519200,
+    "word_count": 1503,
+    "hashes": {
+      "faq.html": "c7a7c4e099362ae24156524f5bf33aaae43ab115d82486cbe63fd66dffdc601c"
+    }
+  },
+  "index.html": {
+    "size": 56593,
+    "mtime_ns": 1782926909082960100,
+    "word_count": 4216,
+    "hashes": {
+      "index.html": "6ed41c3fe459c7dc6ebe9319efe75516b113aef7d8507745d42de97b80efacd4"
+    }
+  },
+  "licensing.html": {
+    "size": 47082,
+    "mtime_ns": 1782423350565236800,
+    "word_count": 3462,
+    "hashes": {
+      "licensing.html": "b1e6ff52ed52c5aed86562818c2ae7742b026e54e235778a39117c3253d81ad9"
+    }
+  },
+  "nginx-ipv6.sh": {
+    "size": 633,
+    "mtime_ns": 1782151868940805900,
+    "word_count": 63,
+    "hashes": {
+      "nginx-ipv6.sh": "ef80d5dbf97110e8456cb88a3a82d66e8a7b5c9f948a2972c1fb7bb345e9bcf6"
+    }
+  },
+  "nginx-noindex.sh": {
+    "size": 976,
+    "mtime_ns": 1782151868940805900,
+    "word_count": 111,
+    "hashes": {
+      "nginx-noindex.sh": "cfd77f3848ef0f46d87d91e2a745253981149e1c3001544e1a18650792d32558"
+    }
+  },
+  "package.json": {
+    "size": 6640,
+    "mtime_ns": 1782571561764694400,
+    "word_count": 473,
+    "hashes": {
+      "package.json": "059afac15c955b10bb27248b1d2af8a36166d14a33d1a1dce5e215606bdd5f25"
+    }
+  },
+  "pdf-converter.html": {
+    "size": 20280,
+    "mtime_ns": 1782420256135035000,
+    "word_count": 1787,
+    "hashes": {
+      "pdf-converter.html": "6a77ea9bc233ecb1d77557e98a4363c4ee2d836fc829c37680bc18b56607ede6"
+    }
+  },
+  "pdf-editor.html": {
+    "size": 17219,
+    "mtime_ns": 1782420256188077300,
+    "word_count": 1466,
+    "hashes": {
+      "pdf-editor.html": "8a7a3bf125e70ecf23b62f44ae20d577bb002c4dabf3a296939783d8de6fe75e"
+    }
+  },
+  "pdf-merge-split.html": {
+    "size": 14330,
+    "mtime_ns": 1782420256219078500,
+    "word_count": 1284,
+    "hashes": {
+      "pdf-merge-split.html": "14c93d81ad800f16a86661bbb16fcbd70e2e36880281ac6edb24b983bcd2e821"
+    }
+  },
+  "pdf-security.html": {
+    "size": 13703,
+    "mtime_ns": 1782420256249078200,
+    "word_count": 1185,
+    "hashes": {
+      "pdf-security.html": "bc0b3a679720c062c1f0970563d7ad9e08b49947cb72da7afdb48e887e24de6c"
+    }
+  },
+  "privacy.html": {
+    "size": 9023,
+    "mtime_ns": 1785516088563694100,
+    "word_count": 955,
+    "hashes": {
+      "privacy.html": "3f817ea7cf5f2804816bbf2b533e5029269f28bfaa8f1fd3ba085f6d3ecd76bc"
+    }
+  },
+  "public/CHANGELOG.md": {
+    "size": 3038,
+    "mtime_ns": 1782151868949366800,
+    "word_count": 238,
+    "hashes": {
+      "public/changelog.md": "8dd074b05d7b3b0f3a6eb08b178936f0b08b27844c2b02e20715454b1170a52b"
+    }
+  },
+  "public/coherentpdf.browser.min.js": {
+    "size": 1325062,
+    "mtime_ns": 1782151868957001300,
+    "word_count": 26517
+  },
+  "public/config.json": {
+    "size": 4,
+    "mtime_ns": 1782151868958005900,
+    "word_count": 1,
+    "hashes": {
+      "public/config.json": "7f83ca3e9a143a4a48b25938573a8eb1dd3141c0554bc9a70d2d0ed6c1a4753b"
+    }
+  },
+  "public/images/apple-touch-icon.png": {
+    "size": 4078,
+    "mtime_ns": 1782929038685204100,
+    "word_count": 175,
+    "hashes": {
+      "public/images/apple-touch-icon.png": "e94aead803faf1da07247f865e9418afe0f69717329f38e5ad5f1a2fde226a88"
+    }
+  },
+  "public/images/badge.svg": {
+    "size": 7962,
+    "mtime_ns": 1782151868959996300,
+    "word_count": 244,
+    "hashes": {
+      "public/images/badge.svg": "65c4c0dd1ea68251858e349efb4f0df524d3798360cd9efbc7c6f38da19cf7a4"
+    }
+  },
+  "public/images/bentopdf-tools.png": {
+    "size": 116232,
+    "mtime_ns": 1782151868960501000,
+    "word_count": 4291,
+    "hashes": {
+      "public/images/bentopdf-tools.png": "1b1b33050f41708b89944d8cd49b7063522a6859f991a395c514ff82448bd4b0"
+    }
+  },
+  "public/images/ccpa.svg": {
+    "size": 2296,
+    "mtime_ns": 1782151868960501000,
+    "word_count": 231,
+    "hashes": {
+      "public/images/ccpa.svg": "abdb33c8593e3414a6d53bf64ba5ef9caee599faffe9c5fd9d0cbc6f24e6459a"
+    }
+  },
+  "public/images/favicon-192x192.png": {
+    "size": 4489,
+    "mtime_ns": 1782929038618184500,
+    "word_count": 180,
+    "hashes": {
+      "public/images/favicon-192x192.png": "8e2b3c0ba3b087a381fcb51c6d53a1d56ce91e2039ea036c8f4ff247a693b134"
+    }
+  },
+  "public/images/favicon-512x512.png": {
+    "size": 15326,
+    "mtime_ns": 1782929038652230000,
+    "word_count": 698,
+    "hashes": {
+      "public/images/favicon-512x512.png": "3e99ecd9e6a50bb2147b411a0b4d937e17c11f9472d129ad6150c5bb5630c8d7"
+    }
+  },
+  "public/images/favicon-no-bg.svg": {
+    "size": 557,
+    "mtime_ns": 1782151868962157000,
+    "word_count": 48,
+    "hashes": {
+      "public/images/favicon-no-bg.svg": "e8bc133e78bedaa5cffe8b6d320cc1eb0044ba76ebfbf54510171214624711b1"
+    }
+  },
+  "public/images/favicon.png": {
+    "size": 7099,
+    "mtime_ns": 1782151868962157000,
+    "word_count": 257,
+    "hashes": {
+      "public/images/favicon.png": "475552b06a23da24914600d552cc1eaa07f87c40742c4be96ed36a26fdb9ed58"
+    }
+  },
+  "public/images/favicon.svg": {
+    "size": 649,
+    "mtime_ns": 1782151868963527600,
+    "word_count": 58,
+    "hashes": {
+      "public/images/favicon.svg": "3057c1dc55d58762ef79004c25f864838484ea546f8cecaa306ff95107ae4b51"
+    }
+  },
+  "public/images/gdpr.svg": {
+    "size": 3843,
+    "mtime_ns": 1782151868963527600,
+    "word_count": 279,
+    "hashes": {
+      "public/images/gdpr.svg": "03d5dffa8491d7080fc2d9b8650506045bf2a04ffb0c8ba69df9e617ca2be463"
+    }
+  },
+  "public/images/hipaa.svg": {
+    "size": 10907,
+    "mtime_ns": 1782151868963527600,
+    "word_count": 1061,
+    "hashes": {
+      "public/images/hipaa.svg": "81f72bf39a61ff41726d06c284540d2b0a5d32c801b658b79df12751d42bf563"
+    }
+  },
+  "public/images/og-pdf-converter.png": {
+    "size": 767612,
+    "mtime_ns": 1782151868968087600,
+    "word_count": 24416,
+    "hashes": {
+      "public/images/og-pdf-converter.png": "b11c23d8dcc233cdd9bfa6d2d8bef25584806ff03282ee2169964f78752d290f"
+    }
+  },
+  "public/images/og-pdf-editor.png": {
+    "size": 739158,
+    "mtime_ns": 1782151868972613800,
+    "word_count": 23470,
+    "hashes": {
+      "public/images/og-pdf-editor.png": "4700bb4edd7dd7c494edca5a5ddf525433fd360936af0195435b6d8cadb69f77"
+    }
+  },
+  "public/images/og-pdf-merge-split.png": {
+    "size": 788265,
+    "mtime_ns": 1782151868977137800,
+    "word_count": 25482,
+    "hashes": {
+      "public/images/og-pdf-merge-split.png": "67fb926b56304da72cdee98c21423b9a2f97d9798b89889bc48c16ebc9f4194c"
+    }
+  },
+  "public/images/og-pdf-security.png": {
+    "size": 735267,
+    "mtime_ns": 1782151868981785800,
+    "word_count": 24413,
+    "hashes": {
+      "public/images/og-pdf-security.png": "61b561e611c4fc3ba21b44441de9b06731d491f6174508aaad1332c61ff1afd3"
+    }
+  },
+  "public/images/og-tools.png": {
+    "size": 508229,
+    "mtime_ns": 1782151868985883200,
+    "word_count": 18130,
+    "hashes": {
+      "public/images/og-tools.png": "2fec60e81e6613e6af9cddd873d213f937c5d875d58935ce162e5a776739a749"
+    }
+  },
+  "public/images/pkc-apple-touch-icon.png": {
+    "size": 4078,
+    "mtime_ns": 1782930203946738100,
+    "word_count": 175,
+    "hashes": {
+      "public/images/pkc-apple-touch-icon.png": "e2bd804df69fe5b53f56c12a5958168d2c9b6283f39760ab643f4e7ba03d285e"
+    }
+  },
+  "public/images/pkc-icon-192.png": {
+    "size": 4489,
+    "mtime_ns": 1782930203880349400,
+    "word_count": 180,
+    "hashes": {
+      "public/images/pkc-icon-192.png": "17180ce7e243b565be0aab811ed7283e4191405b49b69314fca6dd3ea2b6d14e"
+    }
+  },
+  "public/images/pkc-icon-512.png": {
+    "size": 15326,
+    "mtime_ns": 1782930203913729500,
+    "word_count": 698,
+    "hashes": {
+      "public/images/pkc-icon-512.png": "0dbdcea9235334ae15c36e8b9c4b8758d837bd63a7eb855f097ebc92bd3e5b19"
+    }
+  },
+  "public/locales/en/common.json": {
+    "size": 16568,
+    "mtime_ns": 1785516088564694800,
+    "word_count": 1947,
+    "hashes": {
+      "public/locales/en/common.json": "92756066145a913bd6d57a3d730eadae23941aa80b8c6258ee524237f0478996"
+    }
+  },
+  "public/locales/en/tools.json": {
+    "size": 49482,
+    "mtime_ns": 1782153303222502000,
+    "word_count": 5545,
+    "hashes": {
+      "public/locales/en/tools.json": "637bf625719f0259bbb71e773ee1e231dc40d2b9949769a26a7c2930c87cd249"
+    }
+  },
+  "public/pdfjs-annotation-viewer/pdfjs-annotation-extension-testdata.json": {
+    "size": 59170,
+    "mtime_ns": 1782151869545771800,
+    "word_count": 761,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/pdfjs-annotation-extension-testdata.json": "c847a8f873c0ba0622254e86061330bcef75090572ec879f8843aafc97868fe6"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/altText_add.svg": {
+    "size": 923,
+    "mtime_ns": 1782151869649360600,
+    "word_count": 98,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/alttext_add.svg": "a59870286add828c342bd02d392ab14a37c4f8364e5e6dc1cd28f12c6f27fef3"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/altText_done.svg": {
+    "size": 1090,
+    "mtime_ns": 1782151869649360600,
+    "word_count": 119,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/alttext_done.svg": "1c02dd868a4c83b2025b5e2fe9b99ad04bcfdfedd989395d6e9401894fa8ecef"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-check.svg": {
+    "size": 426,
+    "mtime_ns": 1782151869651046000,
+    "word_count": 25,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-check.svg": "b0737a020e5ef2f0cb1fba03e87d0a36ca661d4a2c179f246bc4e0d8c10b6533"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-comment.svg": {
+    "size": 899,
+    "mtime_ns": 1782151869651046000,
+    "word_count": 45,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-comment.svg": "0ba61b935040a04ed2d5ca18c49cf0131e4eeb9f44483d1e207fc8af1018cd6b"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-help.svg": {
+    "size": 2194,
+    "mtime_ns": 1782151869651046000,
+    "word_count": 131,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-help.svg": "118f0dcc59034e71ebb7f8d8526f64a97a30a9b805943dd2207fc8ac9e8d6b50"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-insert.svg": {
+    "size": 418,
+    "mtime_ns": 1782151869652054800,
+    "word_count": 21,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-insert.svg": "a8d6d5c27b20f47ac8adde71c134d7aa25c0725c92598bcadeff4591c215b393"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-key.svg": {
+    "size": 1463,
+    "mtime_ns": 1782151869652054800,
+    "word_count": 84,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-key.svg": "6598e8928179c8f5f3a493f73ac327bd5e30659c7c04ef60115fd38c43ec4e96"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-newparagraph.svg": {
+    "size": 437,
+    "mtime_ns": 1782151869652054800,
+    "word_count": 22,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-newparagraph.svg": "c6fd419991f1968f69510d8148e73fa87532f77e3e1a7055030bc99002372aae"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-noicon.svg": {
+    "size": 165,
+    "mtime_ns": 1782151869652054800,
+    "word_count": 13,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-noicon.svg": "d140091066a0726e731f073a2dd12857dbc3d40cd1d70050b8fd23049d5c8ad8"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-note.svg": {
+    "size": 1083,
+    "mtime_ns": 1782151869653187900,
+    "word_count": 53,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-note.svg": "71f102f744daab67862ea0b5d00be8af7482506490e6edd938ba1735b8c1d831"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-paperclip.svg": {
+    "size": 558,
+    "mtime_ns": 1782151869653187900,
+    "word_count": 93,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-paperclip.svg": "5826a7d62a7454db34bddc50193826f9afec3557a0f46bdb2f7e2bd079adbae7"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-paragraph.svg": {
+    "size": 1159,
+    "mtime_ns": 1782151869653187900,
+    "word_count": 49,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-paragraph.svg": "c50916046570510ee46252a92e4c47dca6d1182d8fab8d11745686160f938950"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/annotation-pushpin.svg": {
+    "size": 1382,
+    "mtime_ns": 1782151869654186700,
+    "word_count": 168,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/annotation-pushpin.svg": "4d9149f208befc5a34be5ae96bef9351051cf3d20ee0b6d6d5fdf7585f103c21"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/cursor-editorFreeHighlight.svg": {
+    "size": 2942,
+    "mtime_ns": 1782151869654186700,
+    "word_count": 272,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/cursor-editorfreehighlight.svg": "d0b72da24f96194691dd4071d20053230811e6b82de8d190b6867b648de22048"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/cursor-editorFreeText.svg": {
+    "size": 1455,
+    "mtime_ns": 1782151869654186700,
+    "word_count": 137,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/cursor-editorfreetext.svg": "69d3bb57437dbba6657f0d8c0f6df4ee868ec1c16ed9fe832aa20cff0f234ca6"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/cursor-editorInk.svg": {
+    "size": 1327,
+    "mtime_ns": 1782151869654186700,
+    "word_count": 122,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/cursor-editorink.svg": "b3a42adfc2388364acd769200ad98668928cbc1e8ba4f9f3feadc3aa9ca5277e"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/cursor-editorTextHighlight.svg": {
+    "size": 5410,
+    "mtime_ns": 1782151869655769400,
+    "word_count": 532,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/cursor-editortexthighlight.svg": "64335c19a165314b2a412d770f7ea61a56c158b482ea2ec1124b56670b6c9b2e"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/editor-toolbar-delete.svg": {
+    "size": 913,
+    "mtime_ns": 1782151869656463500,
+    "word_count": 105,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/editor-toolbar-delete.svg": "a66b180fcff2f45d7478a31dcb26c78351c6a50afd3bb29b540d5bdb9a18744b"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/findbarButton-next.svg": {
+    "size": 581,
+    "mtime_ns": 1782151869656463500,
+    "word_count": 59,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/findbarbutton-next.svg": "71c32effca5cf744a57b3ac2539e04b0d6745397f49218000b5907c2743a8fba"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/findbarButton-previous.svg": {
+    "size": 581,
+    "mtime_ns": 1782151869656463500,
+    "word_count": 59,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/findbarbutton-previous.svg": "21a9996ed75381334cb2dbfb7b3adae69170a0033165ce3f68d708769df464e5"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/gv-toolbarButton-download.svg": {
+    "size": 785,
+    "mtime_ns": 1782151869657467000,
+    "word_count": 83,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/gv-toolbarbutton-download.svg": "173870540e68fb4150853705a5e55bd903e619394a88fb012c548f0c09556b94"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/loading-icon.gif": {
+    "size": 2545,
+    "mtime_ns": 1782151869657467000,
+    "word_count": 185,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/loading-icon.gif": "2838173413a8f73ac7bae0f1d0259925b0382820ffca810164cf1ef7549fe1e4"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/loading.svg": {
+    "size": 1559,
+    "mtime_ns": 1782151869657467000,
+    "word_count": 116,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/loading.svg": "3c63cff41b15decc0101bdf87446edf2b521d8fe5a843b6fdd2a6fe2dd4354ad"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-documentProperties.svg": {
+    "size": 420,
+    "mtime_ns": 1782151869658462000,
+    "word_count": 57,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-documentproperties.svg": "1985b53597c815809e8dc3f926d3293a8a26bb30c2a1095ecd6f2720370c5944"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-firstPage.svg": {
+    "size": 263,
+    "mtime_ns": 1782151869658462000,
+    "word_count": 26,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-firstpage.svg": "ee1aae8c142152832706e3f924438ea97bc955874b68dd5e15b341d083619066"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-handTool.svg": {
+    "size": 1347,
+    "mtime_ns": 1782151869658462000,
+    "word_count": 147,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-handtool.svg": "acb14e2eee7530038f19e1adbbbb55b5cdbbd30e21b3479cae2fbd763a2bcdde"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-lastPage.svg": {
+    "size": 260,
+    "mtime_ns": 1782151869659964900,
+    "word_count": 26,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-lastpage.svg": "6cb233acbce47ea2068ae3b094f0e27f5dc64cb7c60fa8d6303f24452eb74d79"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-rotateCcw.svg": {
+    "size": 599,
+    "mtime_ns": 1782151869659964900,
+    "word_count": 71,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-rotateccw.svg": "ca2d97286d1cbfb83c508892ae7bd61649e27f6b4050fc17c56c09e9e59883fb"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-rotateCw.svg": {
+    "size": 579,
+    "mtime_ns": 1782151869659964900,
+    "word_count": 71,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-rotatecw.svg": "f509812423e80debe06ad33bdab4cc8c4656d85a5d1e0983a98f097280962456"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-scrollHorizontal.svg": {
+    "size": 974,
+    "mtime_ns": 1782151869660972600,
+    "word_count": 117,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-scrollhorizontal.svg": "1c66ba8cad3c65a170ffaf091b5d824969877d17f8389c3cd83722d1acc821d8"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-scrollPage.svg": {
+    "size": 734,
+    "mtime_ns": 1782151869660972600,
+    "word_count": 90,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-scrollpage.svg": "794dfbe8873a3a5001263cc91b976d68f3f457bc5b431f7546a25255185c3f00"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-scrollVertical.svg": {
+    "size": 972,
+    "mtime_ns": 1782151869660972600,
+    "word_count": 117,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-scrollvertical.svg": "3fe1a167cf28fce9129f54e5fbb7f8d8081b4f56dd6a8945f5968b3c6f00cdeb"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-scrollWrapped.svg": {
+    "size": 1231,
+    "mtime_ns": 1782151869662516600,
+    "word_count": 181,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-scrollwrapped.svg": "8c0f577c5ee92f26247f12512f7ca81b6930ff3a704a18a5cd5815a4fe2ea87b"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-selectTool.svg": {
+    "size": 1088,
+    "mtime_ns": 1782151869662516600,
+    "word_count": 101,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-selecttool.svg": "f8a314d76e32d53d504de2f508e71cc7fc374136efb543e46903624a3f27ce26"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-spreadEven.svg": {
+    "size": 778,
+    "mtime_ns": 1782151869662516600,
+    "word_count": 91,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-spreadeven.svg": "5447aa44c748f77c355d83210a11bc623bacf8263ddaf856aa891e18ec077fc8"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-spreadNone.svg": {
+    "size": 398,
+    "mtime_ns": 1782151869663522500,
+    "word_count": 55,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-spreadnone.svg": "e6730ef6eab5312711d1cc68519e3a893fc6e7bfe81599acd0fbcaf810483e29"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/secondaryToolbarButton-spreadOdd.svg": {
+    "size": 714,
+    "mtime_ns": 1782151869663522500,
+    "word_count": 85,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/secondarytoolbarbutton-spreadodd.svg": "02085a64a56b43d7650c5ec0f8805b59ceba25a51363524a7790493a6b6e2b1c"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-bookmark.svg": {
+    "size": 864,
+    "mtime_ns": 1782151869663522500,
+    "word_count": 102,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-bookmark.svg": "4c3c4e81962ad6b082e6b626ee5747ed278e47552e34cda79c5fd24642add88f"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-currentOutlineItem.svg": {
+    "size": 610,
+    "mtime_ns": 1782151869664522200,
+    "word_count": 41,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-currentoutlineitem.svg": "c435c4d17a64290424c26df9250e6715ca469390b42ad1b14e59665ec08d8753"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-download.svg": {
+    "size": 1040,
+    "mtime_ns": 1782151869664522200,
+    "word_count": 92,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-download.svg": "d496a66b128cd97606a56dc26bf243d96504278789ac98149b1df7cf8e1ab3a2"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-editorFreeText.svg": {
+    "size": 503,
+    "mtime_ns": 1782151869665026600,
+    "word_count": 48,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-editorfreetext.svg": "5f8e63b91b55b6ba5b0e6695eac03d371f784d19b66590d4e608d168d7ce98f5"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-editorHighlight.svg": {
+    "size": 915,
+    "mtime_ns": 1782151869665026600,
+    "word_count": 89,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-editorhighlight.svg": "57522afd54ea60ed73b113c1bc437e1ff9d4c13d062b027fc7cbd7ef7bcb5bca"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-editorInk.svg": {
+    "size": 1193,
+    "mtime_ns": 1782151869666137300,
+    "word_count": 111,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-editorink.svg": "f53223b1c6bab067b52d780ccdb54bd019590c76dbff891dc16ae5e61b21b7ef"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-editorStamp.svg": {
+    "size": 742,
+    "mtime_ns": 1782151869667032200,
+    "word_count": 124,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-editorstamp.svg": "e8890f6595f4330bf4df1caad00b276ef27be30080376eade48e8f7012bd671f"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-menuArrow.svg": {
+    "size": 684,
+    "mtime_ns": 1782151869667032200,
+    "word_count": 69,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-menuarrow.svg": "51008aa2208c69777dd4226a169e19e051fd6e33074e362f66bab274c7aa6dc0"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-openFile.svg": {
+    "size": 1403,
+    "mtime_ns": 1782151869667032200,
+    "word_count": 154,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-openfile.svg": "4145562ba581693d969b63dae700b9736cada43e64787fe7312d0e3a6decec3f"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-pageDown.svg": {
+    "size": 704,
+    "mtime_ns": 1782151869668032000,
+    "word_count": 69,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-pagedown.svg": "b56e8291641364bf51093b07760b0de6e9515732efece90137d940608ae5519a"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-pageUp.svg": {
+    "size": 685,
+    "mtime_ns": 1782151869668032000,
+    "word_count": 69,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-pageup.svg": "bdb0d43243e8a646bb78d5c1a51d744b716fc699fb878e858f3a88bae6639967"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-presentationMode.svg": {
+    "size": 684,
+    "mtime_ns": 1782151869668032000,
+    "word_count": 79,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-presentationmode.svg": "097eb318b534686519bc218fe8cf3d9726555df325a445d3730b394e6822614c"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-print.svg": {
+    "size": 930,
+    "mtime_ns": 1782151869669031800,
+    "word_count": 106,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-print.svg": "f0186e9687252f99e45a3555e05facb55f307059c6dd4e997569315b47cae6f5"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-search.svg": {
+    "size": 1237,
+    "mtime_ns": 1782151869669581400,
+    "word_count": 134,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-search.svg": "11d82e2ece537ae83ed70338a1e076d577e22caba63e285b7979e9403780b0cf"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-secondaryToolbarToggle.svg": {
+    "size": 1083,
+    "mtime_ns": 1782151869669581400,
+    "word_count": 105,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-secondarytoolbartoggle.svg": "712b9b057f5e42d36349ad21e4263934159a8fd9b9819310267a67a082f57f92"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-sidebarToggle.svg": {
+    "size": 1563,
+    "mtime_ns": 1782151869669581400,
+    "word_count": 184,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-sidebartoggle.svg": "2555407438369f50dd397c208449e57c70108f4e544bb9baec9bc6e574359631"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-viewAttachments.svg": {
+    "size": 573,
+    "mtime_ns": 1782151869670582300,
+    "word_count": 74,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-viewattachments.svg": "d1cd7d4f0fe507a2e8fd1939364310f24b1b72a18715e8712494ae9bb0264250"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-viewLayers.svg": {
+    "size": 674,
+    "mtime_ns": 1782151869671583100,
+    "word_count": 65,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-viewlayers.svg": "cc6a58b8203abfe0df4aa6d29b6de1790470d6038855c503631a2260fb853b08"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-viewOutline.svg": {
+    "size": 335,
+    "mtime_ns": 1782151869671583100,
+    "word_count": 21,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-viewoutline.svg": "54e1d90e743c4520da8b78fab5b2c923b847b05fbcd9a0c8d2c439c4e38d4104"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-viewThumbnail.svg": {
+    "size": 1399,
+    "mtime_ns": 1782151869671583100,
+    "word_count": 181,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-viewthumbnail.svg": "e27f4fd498734767682e0af70a59df36301a066e14756ad5ef5c03ad588385b6"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-zoomIn.svg": {
+    "size": 961,
+    "mtime_ns": 1782151869672593500,
+    "word_count": 98,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-zoomin.svg": "b7798e16099f1dbf02099ee844bdda9d9f97b9d9df6cafc03a7265edcf7fcbdf"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/toolbarButton-zoomOut.svg": {
+    "size": 475,
+    "mtime_ns": 1782151869672593500,
+    "word_count": 54,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/toolbarbutton-zoomout.svg": "58c01cae620447e72fc8b3862af897f6ef96e92c4e4665f0e65027f13f6df2a7"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/treeitem-collapsed.svg": {
+    "size": 93,
+    "mtime_ns": 1782151869672593500,
+    "word_count": 7,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/treeitem-collapsed.svg": "05dc91a17f6d17c390520c239aa475f8beaaf86e36135817983cc28a5930fac0"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/images/treeitem-expanded.svg": {
+    "size": 94,
+    "mtime_ns": 1782151869673586300,
+    "word_count": 6,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/images/treeitem-expanded.svg": "63366bc0566600dbea4f41345662cf85cc91dad7a15eba27469f0a77f6e69a79"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/locale/locale.json": {
+    "size": 2498,
+    "mtime_ns": 1782151869713437900,
+    "word_count": 1,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/locale/locale.json": "2b1793275ef216278bd607b9e89a4ac25324857282d5158fff68711850cd3a00"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/pdfjs-annotation-extension/pdfjs-annotation-extension.js": {
+    "size": 3982886,
+    "mtime_ns": 1782151869773417800,
+    "word_count": 54247
+  },
+  "public/pdfjs-annotation-viewer/web/viewer.html": {
+    "size": 47255,
+    "mtime_ns": 1782151869789567300,
+    "word_count": 1957,
+    "hashes": {
+      "public/pdfjs-annotation-viewer/web/viewer.html": "aef6018cd70f80153d37622704a39f3b40cd11e7aa34db3db82f0aebaa70c79d"
+    }
+  },
+  "public/pdfjs-annotation-viewer/web/viewer.mjs": {
+    "size": 461965,
+    "mtime_ns": 1782151869792661000,
+    "word_count": 38652
+  },
+  "public/pdfjs-viewer/form-viewer.html": {
+    "size": 11231,
+    "mtime_ns": 1782151869871177600,
+    "word_count": 925,
+    "hashes": {
+      "public/pdfjs-viewer/form-viewer.html": "c37c88b80a20018b339f7f0730655a5a31c6b65e76d684a5cab47bb38c703b9a"
+    }
+  },
+  "public/pdfjs-viewer/images/altText_add.svg": {
+    "size": 923,
+    "mtime_ns": 1782151869873225100,
+    "word_count": 98,
+    "hashes": {
+      "public/pdfjs-viewer/images/alttext_add.svg": "127b31a04820e4cf76e0cde72b19204efc3f9778072fdcba4a632ec1933dfd5c"
+    }
+  },
+  "public/pdfjs-viewer/images/altText_disclaimer.svg": {
+    "size": 3400,
+    "mtime_ns": 1782151869873225100,
+    "word_count": 336,
+    "hashes": {
+      "public/pdfjs-viewer/images/alttext_disclaimer.svg": "a49d302311e3a880ccc1756175b2e8b5e467995e588f44ce7be7b722297ce046"
+    }
+  },
+  "public/pdfjs-viewer/images/altText_done.svg": {
+    "size": 1090,
+    "mtime_ns": 1782151869873225100,
+    "word_count": 119,
+    "hashes": {
+      "public/pdfjs-viewer/images/alttext_done.svg": "f668374c97765f594d8e8854ebd90c27bb229c2cd32a2fa8280a96103d512091"
+    }
+  },
+  "public/pdfjs-viewer/images/altText_spinner.svg": {
+    "size": 2740,
+    "mtime_ns": 1782151869873225100,
+    "word_count": 266,
+    "hashes": {
+      "public/pdfjs-viewer/images/alttext_spinner.svg": "7487a66bcb4088368652a22f135ad9b4314c422744d9246db58b9c4be644f40a"
+    }
+  },
+  "public/pdfjs-viewer/images/altText_warning.svg": {
+    "size": 1535,
+    "mtime_ns": 1782151869874771200,
+    "word_count": 147,
+    "hashes": {
+      "public/pdfjs-viewer/images/alttext_warning.svg": "0dd38d372efa29dd7e7f03629688521384f79ae20364b2742c342022ba0637f6"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-check.svg": {
+    "size": 426,
+    "mtime_ns": 1782151869874771200,
+    "word_count": 25,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-check.svg": "65c437307aaadedcb1b3d5a1d36d4e9b554e4675a447fea39851ee410c32f16a"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-comment.svg": {
+    "size": 899,
+    "mtime_ns": 1782151869874771200,
+    "word_count": 45,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-comment.svg": "f7b20eacde26f7dbccbfce5e4fb08ed73c92fb7e7d52d6c594a2b12649564aba"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-help.svg": {
+    "size": 2194,
+    "mtime_ns": 1782151869875821300,
+    "word_count": 131,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-help.svg": "e386420f18707b029ab68e5f14b987cb76a0451c25c2280e0f4dfc1f5d155048"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-insert.svg": {
+    "size": 418,
+    "mtime_ns": 1782151869875821300,
+    "word_count": 21,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-insert.svg": "1d673168c3d36c85a6f9804d3d597e62dd6fa41ae514e1dafce535a4be1a3e26"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-key.svg": {
+    "size": 1463,
+    "mtime_ns": 1782151869876781200,
+    "word_count": 84,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-key.svg": "ce3e1d5afa1f79796762259c4299fa67a8c099a26e16d26246e59ba3c12d8c93"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-newparagraph.svg": {
+    "size": 437,
+    "mtime_ns": 1782151869876781200,
+    "word_count": 22,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-newparagraph.svg": "127cde4c914c2d6294fb400b952c5bcabbd39daa1fd48fa2ceaeb4b6ed06ccf9"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-noicon.svg": {
+    "size": 165,
+    "mtime_ns": 1782151869876781200,
+    "word_count": 13,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-noicon.svg": "000ac514f5eb0f1c0d92490ea228be7c27b6d5a19c41170e923ec40505d6659c"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-note.svg": {
+    "size": 1083,
+    "mtime_ns": 1782151869876781200,
+    "word_count": 53,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-note.svg": "5b7fd65f136501eb1c54cf0a6cf093f4b39d46bf7e2078e081cdbd32064e8928"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-paperclip.svg": {
+    "size": 558,
+    "mtime_ns": 1782151869877819100,
+    "word_count": 93,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-paperclip.svg": "71caa0df626b8a07926f46732706fa9086b8abe017ee2f820a23035627c62282"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-paragraph.svg": {
+    "size": 1159,
+    "mtime_ns": 1782151869877819100,
+    "word_count": 49,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-paragraph.svg": "00f74f707960266c6b126816626edcef326056e4d977aad2d299be194cd7ef01"
+    }
+  },
+  "public/pdfjs-viewer/images/annotation-pushpin.svg": {
+    "size": 1382,
+    "mtime_ns": 1782151869877819100,
+    "word_count": 168,
+    "hashes": {
+      "public/pdfjs-viewer/images/annotation-pushpin.svg": "cdb0586b7f03f252f00ca39dda1e741ac17542109ad0e6820ed898f8a85dc295"
+    }
+  },
+  "public/pdfjs-viewer/images/comment-actionsButton.svg": {
+    "size": 424,
+    "mtime_ns": 1782151869879346300,
+    "word_count": 30,
+    "hashes": {
+      "public/pdfjs-viewer/images/comment-actionsbutton.svg": "5d88037e2528f765683cfcd1bd78dbecb74b73658bf560c745c297bcad4bee3e"
+    }
+  },
+  "public/pdfjs-viewer/images/comment-closeButton.svg": {
+    "size": 1202,
+    "mtime_ns": 1782151869879346300,
+    "word_count": 117,
+    "hashes": {
+      "public/pdfjs-viewer/images/comment-closebutton.svg": "7bc74792604203a7b73f9a3741ce537ab5d9e9db38ec86e052fb292d56f06725"
+    }
+  },
+  "public/pdfjs-viewer/images/comment-editButton.svg": {
+    "size": 916,
+    "mtime_ns": 1782151869879346300,
+    "word_count": 96,
+    "hashes": {
+      "public/pdfjs-viewer/images/comment-editbutton.svg": "102152dc5e83f467c8a26c542664c6b49c31a64e2e2e330a747507eacd804dc1"
+    }
+  },
+  "public/pdfjs-viewer/images/comment-popup-editButton.svg": {
+    "size": 1639,
+    "mtime_ns": 1782151869880362600,
+    "word_count": 146,
+    "hashes": {
+      "public/pdfjs-viewer/images/comment-popup-editbutton.svg": "280d15c0b810bbfb70b7a369f0b919c5b1d17847d42219d06f5b2089693963ac"
+    }
+  },
+  "public/pdfjs-viewer/images/cursor-editorFreeHighlight.svg": {
+    "size": 2942,
+    "mtime_ns": 1782151869880362600,
+    "word_count": 272,
+    "hashes": {
+      "public/pdfjs-viewer/images/cursor-editorfreehighlight.svg": "46485b91cf0952ddebe07134d5c053325474e763a8b6d5dc033411b962123ccd"
+    }
+  },
+  "public/pdfjs-viewer/images/cursor-editorFreeText.svg": {
+    "size": 1455,
+    "mtime_ns": 1782151869880362600,
+    "word_count": 137,
+    "hashes": {
+      "public/pdfjs-viewer/images/cursor-editorfreetext.svg": "900bb6f7d87cfb684a5ae365ed9f7d699bbf570f932c49488b1cbb775b9eec43"
+    }
+  },
+  "public/pdfjs-viewer/images/cursor-editorInk.svg": {
+    "size": 1327,
+    "mtime_ns": 1782151869881362700,
+    "word_count": 122,
+    "hashes": {
+      "public/pdfjs-viewer/images/cursor-editorink.svg": "bf9668f83d9a8a2d80502adfce1dc642f5e2bc01be4a8de2541ea22f11343366"
+    }
+  },
+  "public/pdfjs-viewer/images/cursor-editorTextHighlight.svg": {
+    "size": 5410,
+    "mtime_ns": 1782151869881362700,
+    "word_count": 532,
+    "hashes": {
+      "public/pdfjs-viewer/images/cursor-editortexthighlight.svg": "566c3b95a2215cda48ceb2edf6e32fd5c712acfd935d831c9c599fec700512c1"
+    }
+  },
+  "public/pdfjs-viewer/images/editor-toolbar-delete.svg": {
+    "size": 913,
+    "mtime_ns": 1782151869881362700,
+    "word_count": 105,
+    "hashes": {
+      "public/pdfjs-viewer/images/editor-toolbar-delete.svg": "42615b650573ee9c64a8a8cc0bc4ea46f3f3e0ef407436577d1055df907f7b4c"
+    }
+  },
+  "public/pdfjs-viewer/images/editor-toolbar-edit.svg": {
+    "size": 872,
+    "mtime_ns": 1782151869882605900,
+    "word_count": 78,
+    "hashes": {
+      "public/pdfjs-viewer/images/editor-toolbar-edit.svg": "22c7fdf975f96476a87215616a74f698adc7b151440ca367b2f59ae2c8b403ec"
+    }
+  },
+  "public/pdfjs-viewer/images/findbarButton-next.svg": {
+    "size": 581,
+    "mtime_ns": 1782151869882605900,
+    "word_count": 59,
+    "hashes": {
+      "public/pdfjs-viewer/images/findbarbutton-next.svg": "be10f3cd146a33111589d252489dda9e94d7e5343f2a89d9a1f84149ff67ff84"
+    }
+  },
+  "public/pdfjs-viewer/images/findbarButton-previous.svg": {
+    "size": 581,
+    "mtime_ns": 1782151869883462400,
+    "word_count": 59,
+    "hashes": {
+      "public/pdfjs-viewer/images/findbarbutton-previous.svg": "a605881df745c28e674c6d803be700f88cd31c886df6e3423d00eebc6c71c6f4"
+    }
+  },
+  "public/pdfjs-viewer/images/gv-toolbarButton-download.svg": {
+    "size": 785,
+    "mtime_ns": 1782151869883462400,
+    "word_count": 83,
+    "hashes": {
+      "public/pdfjs-viewer/images/gv-toolbarbutton-download.svg": "1ca5f2ef12f6d00a1cf5c408c323a14defa8111e7fbc11bac662e8ef9ce464f8"
+    }
+  },
+  "public/pdfjs-viewer/images/loading-icon.gif": {
+    "size": 2545,
+    "mtime_ns": 1782151869883462400,
+    "word_count": 185,
+    "hashes": {
+      "public/pdfjs-viewer/images/loading-icon.gif": "b9d49bdc5a818c1f4c80c16975dd7a6d3b8fe06928123543b0a9e62799756dc5"
+    }
+  },
+  "public/pdfjs-viewer/images/loading.svg": {
+    "size": 1559,
+    "mtime_ns": 1782151869883462400,
+    "word_count": 116,
+    "hashes": {
+      "public/pdfjs-viewer/images/loading.svg": "1f4d24db16cc1aed74a4925c3cc9cafb863dc677f92a97351380b9f71d435bf1"
+    }
+  },
+  "public/pdfjs-viewer/images/messageBar_closingButton.svg": {
+    "size": 1095,
+    "mtime_ns": 1782151869884478000,
+    "word_count": 104,
+    "hashes": {
+      "public/pdfjs-viewer/images/messagebar_closingbutton.svg": "8984936de76782c75aba9006e810e3a671bfe2a72cf953f8454a443d95c0d4b0"
+    }
+  },
+  "public/pdfjs-viewer/images/messageBar_info.svg": {
+    "size": 1079,
+    "mtime_ns": 1782151869884478000,
+    "word_count": 121,
+    "hashes": {
+      "public/pdfjs-viewer/images/messagebar_info.svg": "ab1179fc47f0d36258d776098e0be699549e1ffa6d0ac79db2122541406d7da3"
+    }
+  },
+  "public/pdfjs-viewer/images/messageBar_warning.svg": {
+    "size": 814,
+    "mtime_ns": 1782151869884478000,
+    "word_count": 82,
+    "hashes": {
+      "public/pdfjs-viewer/images/messagebar_warning.svg": "440822c333b1971b1af69866d82a6ce6d3cffba504f1d97c8a04791f924a6787"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-documentProperties.svg": {
+    "size": 420,
+    "mtime_ns": 1782151869885899600,
+    "word_count": 57,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-documentproperties.svg": "16878391c2f5f278202dfc9ebc0a85d43e5e705cda8f66529b7798b85f9186b5"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-firstPage.svg": {
+    "size": 263,
+    "mtime_ns": 1782151869885899600,
+    "word_count": 26,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-firstpage.svg": "4026d135f512a9547f6cfb614d2321b86ace4ec59b4cc7094dda4311ee56d71f"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-handTool.svg": {
+    "size": 1347,
+    "mtime_ns": 1782151869885899600,
+    "word_count": 147,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-handtool.svg": "4d15fbef762cef58727f20034e5471b2aec1434cd60405c080aed5d2d3ffde2c"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-lastPage.svg": {
+    "size": 260,
+    "mtime_ns": 1782151869886945700,
+    "word_count": 26,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-lastpage.svg": "0e15f98aafe77b862e5020a7fb83392f263bfe8ceb670f3e8a4b9d6f2080374a"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-rotateCcw.svg": {
+    "size": 599,
+    "mtime_ns": 1782151869886945700,
+    "word_count": 71,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-rotateccw.svg": "b3b58f184ece481aeda4a8a33ac3275fa51043178c4c7988badd519cf5720203"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-rotateCw.svg": {
+    "size": 579,
+    "mtime_ns": 1782151869886945700,
+    "word_count": 71,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-rotatecw.svg": "66d015eb1d5e44652a8158fa769be4639e7671e6241c2498f3c986330ca719ed"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-scrollHorizontal.svg": {
+    "size": 974,
+    "mtime_ns": 1782151869887946900,
+    "word_count": 117,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-scrollhorizontal.svg": "326017bf04f89e8fe95a077f838027c2bf6ac1b8b322013b3f6c1d86b0cc46aa"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-scrollPage.svg": {
+    "size": 734,
+    "mtime_ns": 1782151869887946900,
+    "word_count": 90,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-scrollpage.svg": "3b573f799547b290d77a1d7e8b3db90ddef37e350cbfec6309e28b6c97192a2a"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-scrollVertical.svg": {
+    "size": 972,
+    "mtime_ns": 1782151869888494000,
+    "word_count": 117,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-scrollvertical.svg": "cb8f4abf810531ceca0792e21ce5f975e324cb9f2308db286f5d0cfcd9ecc372"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-scrollWrapped.svg": {
+    "size": 1231,
+    "mtime_ns": 1782151869888494000,
+    "word_count": 181,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-scrollwrapped.svg": "c049243b238acbf78a1f0706183eae5a25afa335ba27f680abc1697352a4c748"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-selectTool.svg": {
+    "size": 1088,
+    "mtime_ns": 1782151869889540500,
+    "word_count": 101,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-selecttool.svg": "68b52d806281092b2b67c9af81cb413a76ad7c3fbcd61677ca058d36d84d4245"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-spreadEven.svg": {
+    "size": 778,
+    "mtime_ns": 1782151869889540500,
+    "word_count": 91,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-spreadeven.svg": "c3225e5ab9aabd67a7b0ff323c9f33f96a3f8cf246d2ce2f3742f27e609e4a04"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-spreadNone.svg": {
+    "size": 398,
+    "mtime_ns": 1782151869889540500,
+    "word_count": 55,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-spreadnone.svg": "b51028c70c03f3365b28ffad0f52e40591bcb1a04c3e1c297e44bdf052d11885"
+    }
+  },
+  "public/pdfjs-viewer/images/secondaryToolbarButton-spreadOdd.svg": {
+    "size": 714,
+    "mtime_ns": 1782151869890536200,
+    "word_count": 85,
+    "hashes": {
+      "public/pdfjs-viewer/images/secondarytoolbarbutton-spreadodd.svg": "159b32cd08255f484f65d53087c75614b225fddb6857ee47977da3e9c785b1a0"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-bookmark.svg": {
+    "size": 864,
+    "mtime_ns": 1782151869890536200,
+    "word_count": 102,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-bookmark.svg": "8cdfa42322fcc919b64daf9e858df27d2c2effec616d2b69eeb5b809dfdd2793"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-currentOutlineItem.svg": {
+    "size": 610,
+    "mtime_ns": 1782151869890536200,
+    "word_count": 41,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-currentoutlineitem.svg": "fe6b215c2be4901f2e82b555996951e2db54ffa20909e0bc7be79d608103ee1b"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-download.svg": {
+    "size": 1040,
+    "mtime_ns": 1782151869892495500,
+    "word_count": 92,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-download.svg": "522e99b51feb63543b6a0b0e5d6ccd72d57ab29f27a6f082c429eade70961731"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-editorFreeText.svg": {
+    "size": 503,
+    "mtime_ns": 1782151869892495500,
+    "word_count": 48,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-editorfreetext.svg": "c7e97d2c146061a0d70ca653637c8fab0d51d0f579c161c850ebdaa0cb526e6f"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-editorHighlight.svg": {
+    "size": 915,
+    "mtime_ns": 1782151869892495500,
+    "word_count": 89,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-editorhighlight.svg": "ee3d8750dd40041517ee29c25b8c692e2e71676edd890bfbae885f371b9c584c"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-editorInk.svg": {
+    "size": 1193,
+    "mtime_ns": 1782151869892495500,
+    "word_count": 111,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-editorink.svg": "2cd40953df00f8b1d3a6e7b0b87e33088c3a7d28c0d7815fceec51dbbdda285e"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-editorSignature.svg": {
+    "size": 1583,
+    "mtime_ns": 1782151869892495500,
+    "word_count": 183,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-editorsignature.svg": "4397ae108dd796dbe7a86d7e6052bc60f88ddc35df3a703c878f42fa0d80f9ff"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-editorStamp.svg": {
+    "size": 742,
+    "mtime_ns": 1782151869894032500,
+    "word_count": 124,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-editorstamp.svg": "a5971b9a185d4f0fc8574909ddd4906e4384715491a505f670c7ac6aee451807"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-menuArrow.svg": {
+    "size": 684,
+    "mtime_ns": 1782151869894032500,
+    "word_count": 69,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-menuarrow.svg": "e1e1dec08b942b69ff0495d5c99610f9b4cba1c33b32ff974e53e5e4cd22d83f"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-openFile.svg": {
+    "size": 1403,
+    "mtime_ns": 1782151869894032500,
+    "word_count": 154,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-openfile.svg": "e87baa36740e90c045eefbb1b15eb5310f66f057307620aad59f4cdfa72064c4"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-pageDown.svg": {
+    "size": 704,
+    "mtime_ns": 1782151869895026600,
+    "word_count": 69,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-pagedown.svg": "9c1387fbe92fb4b89c180f3d4df2247d5f378f314e29bd3ade864854b91ae850"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-pageUp.svg": {
+    "size": 685,
+    "mtime_ns": 1782151869896026400,
+    "word_count": 69,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-pageup.svg": "a268a610c2039aa528ab4c3af5a74eb54040b11539fa803efbb173cc0b600e6e"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-presentationMode.svg": {
+    "size": 684,
+    "mtime_ns": 1782151869896026400,
+    "word_count": 79,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-presentationmode.svg": "fe63aa4fccca8c33b69eeaccc22c50020821c27bbf02a77b5093138baebcd0fe"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-print.svg": {
+    "size": 930,
+    "mtime_ns": 1782151869896026400,
+    "word_count": 106,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-print.svg": "09d4c82ec706f845a266b54c2b28c279e690fe47105baf05904c82d33b3e8ef9"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-search.svg": {
+    "size": 1237,
+    "mtime_ns": 1782151869896026400,
+    "word_count": 134,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-search.svg": "f02b3b23e92764649243babfefcb6c48e03cc9daa151410d5a66dceb5bbffdbf"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-secondaryToolbarToggle.svg": {
+    "size": 1083,
+    "mtime_ns": 1782151869897026300,
+    "word_count": 105,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-secondarytoolbartoggle.svg": "78afe2db76ab918c9c17ff967a421deddce39946bc3f853ed8ad9a71fe5809f4"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-sidebarToggle.svg": {
+    "size": 1563,
+    "mtime_ns": 1782151869897573500,
+    "word_count": 184,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-sidebartoggle.svg": "46cf173160cb08212783dd77265860e0dec1724cedee56f6ed9c5995849e9605"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-viewAttachments.svg": {
+    "size": 573,
+    "mtime_ns": 1782151869897573500,
+    "word_count": 74,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-viewattachments.svg": "ab8eec35c635fe01e07ca69223786b94fee78eaf2e53b546e94669c05c41aa2a"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-viewLayers.svg": {
+    "size": 674,
+    "mtime_ns": 1782151869897573500,
+    "word_count": 65,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-viewlayers.svg": "3d6536497cff529d6a110cc8c05ac50932c5a3ce29be87239a12bf1ed95569b9"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-viewOutline.svg": {
+    "size": 335,
+    "mtime_ns": 1782151869897573500,
+    "word_count": 21,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-viewoutline.svg": "d7b0be2c327a8093b9d90812e91cb7ee7c7daca25a2d2ccb58fe184035b8467f"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-viewThumbnail.svg": {
+    "size": 1399,
+    "mtime_ns": 1782151869898618200,
+    "word_count": 181,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-viewthumbnail.svg": "8533186b72d53eb1f91b09456259c567446489fdc97d39755137a36c4105d79e"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-zoomIn.svg": {
+    "size": 961,
+    "mtime_ns": 1782151869898618200,
+    "word_count": 98,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-zoomin.svg": "4f716f9984e16c80bc96ab74592ac37ad0525ce4d842a64b035dbb72d17c93b5"
+    }
+  },
+  "public/pdfjs-viewer/images/toolbarButton-zoomOut.svg": {
+    "size": 475,
+    "mtime_ns": 1782151869898618200,
+    "word_count": 54,
+    "hashes": {
+      "public/pdfjs-viewer/images/toolbarbutton-zoomout.svg": "e2fd8071bb3ade8783371c192cb57a70f66b207a53d7f839a64bdd3503b7c8d4"
+    }
+  },
+  "public/pdfjs-viewer/images/treeitem-collapsed.svg": {
+    "size": 93,
+    "mtime_ns": 1782151869899575100,
+    "word_count": 7,
+    "hashes": {
+      "public/pdfjs-viewer/images/treeitem-collapsed.svg": "d191c6b98245f32d6e094ae890f5cdd7e78f488fad60d3d7402e7556db62fd6c"
+    }
+  },
+  "public/pdfjs-viewer/images/treeitem-expanded.svg": {
+    "size": 94,
+    "mtime_ns": 1782151869899575100,
+    "word_count": 6,
+    "hashes": {
+      "public/pdfjs-viewer/images/treeitem-expanded.svg": "d767db3a698caa869c34d29485bc876f947f0135766e3a4609c3e3ecc6d16210"
+    }
+  },
+  "public/pdfjs-viewer/locale/locale.json": {
+    "size": 2519,
+    "mtime_ns": 1782151869937434300,
+    "word_count": 1,
+    "hashes": {
+      "public/pdfjs-viewer/locale/locale.json": "eb9ab37a17255a070f5f407e398c14dcd1521b8d69bc1135fe2f62addf9f0092"
+    }
+  },
+  "public/pdfjs-viewer/pdf.mjs": {
+    "size": 811479,
+    "mtime_ns": 1782151869969932600,
+    "word_count": 74016
+  },
+  "public/pdfjs-viewer/pdf.sandbox.mjs": {
+    "size": 728774,
+    "mtime_ns": 1782151869971914300,
+    "word_count": 12205
+  },
+  "public/pdfjs-viewer/pdf.worker.mjs": {
+    "size": 1965031,
+    "mtime_ns": 1782151870005246700,
+    "word_count": 213323
+  },
+  "public/pdfjs-viewer/pdf_viewer.d.mts": {
+    "size": 55,
+    "mtime_ns": 1782151870007294700,
+    "word_count": 4
+  },
+  "public/pdfjs-viewer/pdf_viewer.mjs": {
+    "size": 303239,
+    "mtime_ns": 1782151870008839900,
+    "word_count": 26917
+  },
+  "public/pdfjs-viewer/sign-viewer.html": {
+    "size": 12221,
+    "mtime_ns": 1782151870010902700,
+    "word_count": 1019,
+    "hashes": {
+      "public/pdfjs-viewer/sign-viewer.html": "9b6ad56c8b6a0f2128f564bf1cfe14df3b23b6cf66131df882dd93dd0e9bfd6a"
+    }
+  },
+  "public/pdfjs-viewer/viewer.html": {
+    "size": 53978,
+    "mtime_ns": 1782151870035765600,
+    "word_count": 2213,
+    "hashes": {
+      "public/pdfjs-viewer/viewer.html": "b9327913e052c87b3f95551fa5bb3d4243719bf448bfc11469fd8546b43e9309"
+    }
+  },
+  "public/pdfjs-viewer/viewer.mjs": {
+    "size": 597800,
+    "mtime_ns": 1782151870039894300,
+    "word_count": 48865
+  },
+  "public/pdfjs-viewer/wasm/openjpeg_nowasm_fallback.js": {
+    "size": 451794,
+    "mtime_ns": 1782151870052675200,
+    "word_count": 4257
+  },
+  "public/robots.txt": {
+    "size": 647,
+    "mtime_ns": 1782151870064405500,
+    "word_count": 71,
+    "hashes": {
+      "public/robots.txt": "ee394545e74f401d5779d23304ad43ea6e60b9dc28703d5ca120e3fac4066a4a"
+    }
+  },
+  "public/sw.js": {
+    "size": 15059,
+    "mtime_ns": 1785516088860953800,
+    "word_count": 1562
+  },
+  "public/workers/add-attachments.worker.d.ts": {
+    "size": 566,
+    "mtime_ns": 1782151870066410500,
+    "word_count": 42
+  },
+  "public/workers/add-attachments.worker.js": {
+    "size": 5154,
+    "mtime_ns": 1782151870066410500,
+    "word_count": 492
+  },
+  "public/workers/alternate-merge.worker.d.ts": {
+    "size": 532,
+    "mtime_ns": 1782151870067419600,
+    "word_count": 45
+  },
+  "public/workers/alternate-merge.worker.js": {
+    "size": 2626,
+    "mtime_ns": 1782151870068411000,
+    "word_count": 269
+  },
+  "public/workers/edit-attachments.worker.d.ts": {
+    "size": 1305,
+    "mtime_ns": 1782151870068411000,
+    "word_count": 104
+  },
+  "public/workers/edit-attachments.worker.js": {
+    "size": 5617,
+    "mtime_ns": 1782151870068411000,
+    "word_count": 472
+  },
+  "public/workers/extract-attachments.worker.d.ts": {
+    "size": 581,
+    "mtime_ns": 1782151870069692400,
+    "word_count": 45
+  },
+  "public/workers/extract-attachments.worker.js": {
+    "size": 4097,
+    "mtime_ns": 1782151870069692400,
+    "word_count": 364
+  },
+  "public/workers/json-to-pdf.worker.d.ts": {
+    "size": 516,
+    "mtime_ns": 1782151870069692400,
+    "word_count": 44
+  },
+  "public/workers/json-to-pdf.worker.js": {
+    "size": 2421,
+    "mtime_ns": 1782151870070692600,
+    "word_count": 249
+  },
+  "public/workers/merge.worker.d.ts": {
+    "size": 703,
+    "mtime_ns": 1782151870070692600,
+    "word_count": 69
+  },
+  "public/workers/merge.worker.js": {
+    "size": 2964,
+    "mtime_ns": 1782151870070692600,
+    "word_count": 294
+  },
+  "public/workers/pdf-to-json.worker.d.ts": {
+    "size": 517,
+    "mtime_ns": 1782151870070692600,
+    "word_count": 44
+  },
+  "public/workers/pdf-to-json.worker.js": {
+    "size": 2056,
+    "mtime_ns": 1782151870071694800,
+    "word_count": 203
+  },
+  "public/workers/table-of-contents.worker.d.ts": {
+    "size": 512,
+    "mtime_ns": 1782151870071694800,
+    "word_count": 45
+  },
+  "public/workers/table-of-contents.worker.js": {
+    "size": 2386,
+    "mtime_ns": 1782151870071694800,
+    "word_count": 218
+  },
+  "scripts/build.js": {
+    "size": 1822,
+    "mtime_ns": 1782151870072692400,
+    "word_count": 168
+  },
+  "scripts/check-translations.js": {
+    "size": 7379,
+    "mtime_ns": 1782151870072692400,
+    "word_count": 680
+  },
+  "scripts/compress-static-assets.mjs": {
+    "size": 6580,
+    "mtime_ns": 1782151870072692400,
+    "word_count": 611
+  },
+  "scripts/generate-i18n-pages.mjs": {
+    "size": 15989,
+    "mtime_ns": 1782580544299902100,
+    "word_count": 1538
+  },
+  "scripts/generate-offline-manifest.mjs": {
+    "size": 5347,
+    "mtime_ns": 1783021505897523900,
+    "word_count": 577
+  },
+  "scripts/generate-security-headers.mjs": {
+    "size": 4183,
+    "mtime_ns": 1782151870074077000,
+    "word_count": 327
+  },
+  "scripts/generate-sitemap.mjs": {
+    "size": 4064,
+    "mtime_ns": 1783023574912364500,
+    "word_count": 407
+  },
+  "scripts/include-docs-in-dist.js": {
+    "size": 1724,
+    "mtime_ns": 1782151870075038400,
+    "word_count": 165
+  },
+  "scripts/package-dist.js": {
+    "size": 1630,
+    "mtime_ns": 1782151870075038400,
+    "word_count": 162
+  },
+  "scripts/prepare-airgap.sh": {
+    "size": 39330,
+    "mtime_ns": 1782151870076038700,
+    "word_count": 4357,
+    "hashes": {
+      "scripts/prepare-airgap.sh": "9d9c4c94f852abf7e9cf9685261942565e747ad533d5d9addd02586ccf2b9745"
+    }
+  },
+  "scripts/release.js": {
+    "size": 4299,
+    "mtime_ns": 1782151870076038700,
+    "word_count": 421
+  },
+  "scripts/seo-audit.mjs": {
+    "size": 7965,
+    "mtime_ns": 1782151870076038700,
+    "word_count": 827
+  },
+  "scripts/update-partials.js": {
+    "size": 1928,
+    "mtime_ns": 1782151870077043000,
+    "word_count": 219
+  },
+  "serve.json": {
+    "size": 731,
+    "mtime_ns": 1782151870077043000,
+    "word_count": 55,
+    "hashes": {
+      "serve.json": "156cc6c7828a9070a5818319adf0bd7809ca64f161b52ec6c0541b9b760825ea"
+    }
+  },
+  "signatures/cla.json": {
+    "size": 12317,
+    "mtime_ns": 1782151870078298700,
+    "word_count": 859,
+    "hashes": {
+      "signatures/cla.json": "3833d49c5a37682aef6d2c2e72070ff46cd94973249a24d2ababafd9d1e999e4"
+    }
+  },
+  "simple-index.html": {
+    "size": 19058,
+    "mtime_ns": 1782930234648883000,
+    "word_count": 1483,
+    "hashes": {
+      "simple-index.html": "91132250cf083fa32f0329c24c93ae54290a3c06fd8a3011597a6ec1a15759a4"
+    }
+  },
+  "src/js/canvasEditor.ts": {
+    "size": 10933,
+    "mtime_ns": 1782151870080268500,
+    "word_count": 932
+  },
+  "src/js/compare/config.ts": {
+    "size": 1035,
+    "mtime_ns": 1782151870081269800,
+    "word_count": 141
+  },
+  "src/js/compare/engine/compare-content.ts": {
+    "size": 6602,
+    "mtime_ns": 1782151870081269800,
+    "word_count": 626
+  },
+  "src/js/compare/engine/compare-page-models.ts": {
+    "size": 4416,
+    "mtime_ns": 1782151870082341300,
+    "word_count": 392
+  },
+  "src/js/compare/engine/compare.worker.ts": {
+    "size": 2275,
+    "mtime_ns": 1782151870082341300,
+    "word_count": 246
+  },
+  "src/js/compare/engine/diff-text-runs.ts": {
+    "size": 13839,
+    "mtime_ns": 1782151870083576800,
+    "word_count": 1380
+  },
+  "src/js/compare/engine/extract-page-model.ts": {
+    "size": 20621,
+    "mtime_ns": 1782151870083576800,
+    "word_count": 2071
+  },
+  "src/js/compare/engine/ocr-page.ts": {
+    "size": 2690,
+    "mtime_ns": 1782151870083576800,
+    "word_count": 250
+  },
+  "src/js/compare/engine/page-signatures.ts": {
+    "size": 1725,
+    "mtime_ns": 1782151870084584100,
+    "word_count": 168
+  },
+  "src/js/compare/engine/pair-pages.ts": {
+    "size": 3381,
+    "mtime_ns": 1782151870084584100,
+    "word_count": 424
+  },
+  "src/js/compare/engine/text-normalization.ts": {
+    "size": 3472,
+    "mtime_ns": 1782151870084584100,
+    "word_count": 346
+  },
+  "src/js/compare/engine/visual-diff.ts": {
+    "size": 3985,
+    "mtime_ns": 1782151870085581900,
+    "word_count": 341
+  },
+  "src/js/compare/lru-cache.ts": {
+    "size": 778,
+    "mtime_ns": 1782151870085581900,
+    "word_count": 86
+  },
+  "src/js/compare/reporting/export-compare-pdf.ts": {
+    "size": 10966,
+    "mtime_ns": 1782929904532449400,
+    "word_count": 1074
+  },
+  "src/js/compare/types.ts": {
+    "size": 4924,
+    "mtime_ns": 1782151870086639800,
+    "word_count": 477
+  },
+  "src/js/compare/worker-api.ts": {
+    "size": 2425,
+    "mtime_ns": 1782151870087631100,
+    "word_count": 267
+  },
+  "src/js/config/font-mappings.ts": {
+    "size": 8580,
+    "mtime_ns": 1782151870087631100,
+    "word_count": 625
+  },
+  "src/js/config/pdf-tools.ts": {
+    "size": 1246,
+    "mtime_ns": 1782153307223749200,
+    "word_count": 82
+  },
+  "src/js/config/tesseract-languages.ts": {
+    "size": 2309,
+    "mtime_ns": 1782151870088641600,
+    "word_count": 250
+  },
+  "src/js/config/timestamp-tsa.ts": {
+    "size": 594,
+    "mtime_ns": 1782151870088641600,
+    "word_count": 73
+  },
+  "src/js/config/tools.ts": {
+    "size": 24832,
+    "mtime_ns": 1782153307299000900,
+    "word_count": 2450
+  },
+  "src/js/config/wasm-cdn-config.ts": {
+    "size": 1424,
+    "mtime_ns": 1782151870090152200,
+    "word_count": 147
+  },
+  "src/js/const/cdn-version.ts": {
+    "size": 96,
+    "mtime_ns": 1782151870090152200,
+    "word_count": 12
+  },
+  "src/js/handlers/fileHandler.ts": {
+    "size": 33530,
+    "mtime_ns": 1782151870091161500,
+    "word_count": 2737
+  },
+  "src/js/i18n/i18n.ts": {
+    "size": 6675,
+    "mtime_ns": 1782153307341491200,
+    "word_count": 662
+  },
+  "src/js/i18n/index.ts": {
+    "size": 314,
+    "mtime_ns": 1782151870092110700,
+    "word_count": 27
+  },
+  "src/js/i18n/language-switcher.ts": {
+    "size": 7710,
+    "mtime_ns": 1782151870093116600,
+    "word_count": 575
+  },
+  "src/js/logic/add-attachments-page.ts": {
+    "size": 12769,
+    "mtime_ns": 1782151870093116600,
+    "word_count": 995
+  },
+  "src/js/logic/add-blank-page-page.ts": {
+    "size": 8391,
+    "mtime_ns": 1782151870093116600,
+    "word_count": 741
+  },
+  "src/js/logic/add-page-labels-page.ts": {
+    "size": 17139,
+    "mtime_ns": 1782151870094699300,
+    "word_count": 1349
+  },
+  "src/js/logic/add-stamps.ts": {
+    "size": 11136,
+    "mtime_ns": 1782151870095705000,
+    "word_count": 1017
+  },
+  "src/js/logic/add-watermark-page.ts": {
+    "size": 35414,
+    "mtime_ns": 1782151870095705000,
+    "word_count": 2890
+  },
+  "src/js/logic/adjust-colors-page.ts": {
+    "size": 11883,
+    "mtime_ns": 1782151870096705000,
+    "word_count": 1024
+  },
+  "src/js/logic/alternate-merge-page.ts": {
+    "size": 8651,
+    "mtime_ns": 1782151870097728500,
+    "word_count": 752
+  },
+  "src/js/logic/background-color-page.ts": {
+    "size": 5834,
+    "mtime_ns": 1782151870097728500,
+    "word_count": 498
+  },
+  "src/js/logic/bates-numbering-page.ts": {
+    "size": 17248,
+    "mtime_ns": 1782151870097728500,
+    "word_count": 1622
+  },
+  "src/js/logic/bmp-to-pdf-page.ts": {
+    "size": 7225,
+    "mtime_ns": 1782151870097728500,
+    "word_count": 585
+  },
+  "src/js/logic/bookmark-pdf.ts": {
+    "size": 73987,
+    "mtime_ns": 1782151870099243600,
+    "word_count": 6662
+  },
+  "src/js/logic/cbz-to-pdf-page.ts": {
+    "size": 11703,
+    "mtime_ns": 1782151870100261000,
+    "word_count": 1097
+  },
+  "src/js/logic/change-permissions-page.ts": {
+    "size": 11033,
+    "mtime_ns": 1782151870100261000,
+    "word_count": 916
+  },
+  "src/js/logic/combine-single-page-page.ts": {
+    "size": 11049,
+    "mtime_ns": 1782151870101273600,
+    "word_count": 977
+  },
+  "src/js/logic/compare-pdfs-page.ts": {
+    "size": 37751,
+    "mtime_ns": 1782151870102279400,
+    "word_count": 2923
+  },
+  "src/js/logic/compare-render.ts": {
+    "size": 13614,
+    "mtime_ns": 1782151870102279400,
+    "word_count": 1198
+  },
+  "src/js/logic/compress-pdf-page.ts": {
+    "size": 20489,
+    "mtime_ns": 1782151870102279400,
+    "word_count": 1719
+  },
+  "src/js/logic/crop-pdf-page.ts": {
+    "size": 14103,
+    "mtime_ns": 1782151870103792500,
+    "word_count": 1216
+  },
+  "src/js/logic/cropper.ts": {
+    "size": 12928,
+    "mtime_ns": 1782151870104811900,
+    "word_count": 1301
+  },
+  "src/js/logic/csv-to-pdf-page.ts": {
+    "size": 8278,
+    "mtime_ns": 1782151870104811900,
+    "word_count": 673
+  },
+  "src/js/logic/decrypt-pdf-page.ts": {
+    "size": 8946,
+    "mtime_ns": 1782151870105811800,
+    "word_count": 774
+  },
+  "src/js/logic/delete-pages-page.ts": {
+    "size": 10121,
+    "mtime_ns": 1782151870105811800,
+    "word_count": 815
+  },
+  "src/js/logic/deskew-pdf-page.ts": {
+    "size": 8803,
+    "mtime_ns": 1782151870105811800,
+    "word_count": 720
+  },
+  "src/js/logic/digital-sign-pdf-page.ts": {
+    "size": 24568,
+    "mtime_ns": 1782151870106812200,
+    "word_count": 1882
+  },
+  "src/js/logic/digital-sign-pdf.ts": {
+    "size": 12425,
+    "mtime_ns": 1782151870106812200,
+    "word_count": 1302
+  },
+  "src/js/logic/divide-pages-page.ts": {
+    "size": 8294,
+    "mtime_ns": 1782151870106812200,
+    "word_count": 715
+  },
+  "src/js/logic/duplicate-organize.ts": {
+    "size": 8020,
+    "mtime_ns": 1782151870106812200,
+    "word_count": 702
+  },
+  "src/js/logic/edit-attachments-page.ts": {
+    "size": 13134,
+    "mtime_ns": 1782151870108902800,
+    "word_count": 995
+  },
+  "src/js/logic/edit-metadata-page.ts": {
+    "size": 14293,
+    "mtime_ns": 1782151870108902800,
+    "word_count": 1169
+  },
+  "src/js/logic/edit-pdf-page.ts": {
+    "size": 9874,
+    "mtime_ns": 1782151870108902800,
+    "word_count": 795
+  },
+  "src/js/logic/email-to-pdf-page.ts": {
+    "size": 9142,
+    "mtime_ns": 1782151870109948300,
+    "word_count": 760
+  },
+  "src/js/logic/email-to-pdf.ts": {
+    "size": 10176,
+    "mtime_ns": 1782151870109948300,
+    "word_count": 1005
+  },
+  "src/js/logic/encrypt-pdf-page.ts": {
+    "size": 8383,
+    "mtime_ns": 1782151870110911700,
+    "word_count": 716
+  },
+  "src/js/logic/epub-to-pdf-page.ts": {
+    "size": 7049,
+    "mtime_ns": 1782151870110911700,
+    "word_count": 589
+  },
+  "src/js/logic/extract-attachments-page.ts": {
+    "size": 9275,
+    "mtime_ns": 1782151870111950300,
+    "word_count": 765
+  },
+  "src/js/logic/extract-images-page.ts": {
+    "size": 9690,
+    "mtime_ns": 1782151870112988200,
+    "word_count": 825
+  },
+  "src/js/logic/extract-pages-page.ts": {
+    "size": 6768,
+    "mtime_ns": 1782151870112988200,
+    "word_count": 581
+  },
+  "src/js/logic/extract-tables-page.ts": {
+    "size": 7711,
+    "mtime_ns": 1782151870112988200,
+    "word_count": 709
+  },
+  "src/js/logic/fb2-to-pdf-page.ts": {
+    "size": 6893,
+    "mtime_ns": 1782151870113999800,
+    "word_count": 577
+  },
+  "src/js/logic/fix-page-size-page.ts": {
+    "size": 7051,
+    "mtime_ns": 1782151870113999800,
+    "word_count": 559
+  },
+  "src/js/logic/flatten-pdf-page.ts": {
+    "size": 8724,
+    "mtime_ns": 1782151870113999800,
+    "word_count": 729
+  },
+  "src/js/logic/font-to-outline-page.ts": {
+    "size": 7734,
+    "mtime_ns": 1782151870114999900,
+    "word_count": 624
+  },
+  "src/js/logic/form-creator-extraction.ts": {
+    "size": 10393,
+    "mtime_ns": 1782151870114999900,
+    "word_count": 1000
+  },
+  "src/js/logic/form-creator.ts": {
+    "size": 111924,
+    "mtime_ns": 1782929904824260800,
+    "word_count": 9945
+  },
+  "src/js/logic/form-filler-page.ts": {
+    "size": 9973,
+    "mtime_ns": 1782151870117515900,
+    "word_count": 866
+  },
+  "src/js/logic/header-footer-page.ts": {
+    "size": 9167,
+    "mtime_ns": 1782151870117515900,
+    "word_count": 707
+  },
+  "src/js/logic/heic-to-pdf-page.ts": {
+    "size": 6235,
+    "mtime_ns": 1782151870117515900,
+    "word_count": 489
+  },
+  "src/js/logic/image-to-pdf-page.ts": {
+    "size": 6326,
+    "mtime_ns": 1782151870118525700,
+    "word_count": 547
+  },
+  "src/js/logic/index.ts": {
+    "size": 482,
+    "mtime_ns": 1782151870118525700,
+    "word_count": 56
+  },
+  "src/js/logic/invert-colors-page.ts": {
+    "size": 6679,
+    "mtime_ns": 1782151870118525700,
+    "word_count": 568
+  },
+  "src/js/logic/jpg-to-pdf-page.ts": {
+    "size": 6247,
+    "mtime_ns": 1782151870119525600,
+    "word_count": 549
+  },
+  "src/js/logic/json-to-pdf.ts": {
+    "size": 6238,
+    "mtime_ns": 1782151870119525600,
+    "word_count": 518
+  },
+  "src/js/logic/linearize-pdf-page.ts": {
+    "size": 8252,
+    "mtime_ns": 1782151870119525600,
+    "word_count": 688
+  },
+  "src/js/logic/markdown-to-pdf-page.ts": {
+    "size": 628,
+    "mtime_ns": 1782151870120525700,
+    "word_count": 50
+  },
+  "src/js/logic/md-to-pdf.ts": {
+    "size": 5004,
+    "mtime_ns": 1782151870120525700,
+    "word_count": 635
+  },
+  "src/js/logic/merge-pdf-page.ts": {
+    "size": 22315,
+    "mtime_ns": 1782151870122037300,
+    "word_count": 1852
+  },
+  "src/js/logic/mobi-to-pdf-page.ts": {
+    "size": 6896,
+    "mtime_ns": 1782151870122037300,
+    "word_count": 577
+  },
+  "src/js/logic/n-up-pdf-page.ts": {
+    "size": 9565,
+    "mtime_ns": 1782151870123046200,
+    "word_count": 870
+  },
+  "src/js/logic/ocr-pdf-page.ts": {
+    "size": 15388,
+    "mtime_ns": 1782151870123046200,
+    "word_count": 1174
+  },
+  "src/js/logic/organize-pdf-page.ts": {
+    "size": 14043,
+    "mtime_ns": 1782151870125084900,
+    "word_count": 1199
+  },
+  "src/js/logic/overlay-pdf-page.ts": {
+    "size": 8458,
+    "mtime_ns": 1782151870125084900,
+    "word_count": 710
+  },
+  "src/js/logic/page-dimensions-page.ts": {
+    "size": 12317,
+    "mtime_ns": 1782151870125084900,
+    "word_count": 1005
+  },
+  "src/js/logic/page-numbers-page.ts": {
+    "size": 6053,
+    "mtime_ns": 1782151870126643700,
+    "word_count": 510
+  },
+  "src/js/logic/pdf-booklet-page.ts": {
+    "size": 19756,
+    "mtime_ns": 1782151870127679700,
+    "word_count": 1976
+  },
+  "src/js/logic/pdf-layers-page.ts": {
+    "size": 15868,
+    "mtime_ns": 1782151870127679700,
+    "word_count": 1358
+  },
+  "src/js/logic/pdf-multi-tool.ts": {
+    "size": 48346,
+    "mtime_ns": 1782151870128673800,
+    "word_count": 4226
+  },
+  "src/js/logic/pdf-to-bmp-page.ts": {
+    "size": 6701,
+    "mtime_ns": 1782151870129451800,
+    "word_count": 574
+  },
+  "src/js/logic/pdf-to-cbz-page.ts": {
+    "size": 16111,
+    "mtime_ns": 1782151870129451800,
+    "word_count": 1384
+  },
+  "src/js/logic/pdf-to-csv-page.ts": {
+    "size": 5647,
+    "mtime_ns": 1782151870129451800,
+    "word_count": 510
+  },
+  "src/js/logic/pdf-to-docx-page.ts": {
+    "size": 7432,
+    "mtime_ns": 1782151870129451800,
+    "word_count": 620
+  },
+  "src/js/logic/pdf-to-excel-page.ts": {
+    "size": 5990,
+    "mtime_ns": 1782151870131008700,
+    "word_count": 538
+  },
+  "src/js/logic/pdf-to-greyscale-page.ts": {
+    "size": 6903,
+    "mtime_ns": 1782151870131008700,
+    "word_count": 607
+  },
+  "src/js/logic/pdf-to-jpg-page.ts": {
+    "size": 7539,
+    "mtime_ns": 1782151870131008700,
+    "word_count": 643
+  },
+  "src/js/logic/pdf-to-json.ts": {
+    "size": 6302,
+    "mtime_ns": 1782151870132054400,
+    "word_count": 516
+  },
+  "src/js/logic/pdf-to-markdown-page.ts": {
+    "size": 7619,
+    "mtime_ns": 1782151870132054400,
+    "word_count": 642
+  },
+  "src/js/logic/pdf-to-markdown.ts": {
+    "size": 1277,
+    "mtime_ns": 1782151870132054400,
+    "word_count": 156
+  },
+  "src/js/logic/pdf-to-pdfa-page.ts": {
+    "size": 9279,
+    "mtime_ns": 1782151870133054500,
+    "word_count": 773
+  },
+  "src/js/logic/pdf-to-png-page.ts": {
+    "size": 7434,
+    "mtime_ns": 1782151870133054500,
+    "word_count": 633
+  },
+  "src/js/logic/pdf-to-svg-page.ts": {
+    "size": 7908,
+    "mtime_ns": 1782151870133054500,
+    "word_count": 726
+  },
+  "src/js/logic/pdf-to-text-page.ts": {
+    "size": 7033,
+    "mtime_ns": 1782151870134055400,
+    "word_count": 619
+  },
+  "src/js/logic/pdf-to-tiff-page.ts": {
+    "size": 13104,
+    "mtime_ns": 1782151870134055400,
+    "word_count": 1188
+  },
+  "src/js/logic/pdf-to-webp-page.ts": {
+    "size": 7556,
+    "mtime_ns": 1782151870134055400,
+    "word_count": 643
+  },
+  "src/js/logic/pdf-to-zip-page.ts": {
+    "size": 5334,
+    "mtime_ns": 1782151870134055400,
+    "word_count": 447
+  },
+  "src/js/logic/pdf-workflow-page.ts": {
+    "size": 51288,
+    "mtime_ns": 1782153307511283900,
+    "word_count": 4598
+  },
+  "src/js/logic/png-to-pdf-page.ts": {
+    "size": 7555,
+    "mtime_ns": 1782151870135560900,
+    "word_count": 665
+  },
+  "src/js/logic/posterize-page.ts": {
+    "size": 15655,
+    "mtime_ns": 1782151870136611400,
+    "word_count": 1341
+  },
+  "src/js/logic/prepare-pdf-for-ai-page.ts": {
+    "size": 8259,
+    "mtime_ns": 1782151870138119700,
+    "word_count": 697
+  },
+  "src/js/logic/psd-to-pdf-page.ts": {
+    "size": 6057,
+    "mtime_ns": 1782151870138119700,
+    "word_count": 512
+  },
+  "src/js/logic/rasterize-pdf-page.ts": {
+    "size": 8827,
+    "mtime_ns": 1782151870139166400,
+    "word_count": 724
+  },
+  "src/js/logic/redact.ts": {
+    "size": 1570,
+    "mtime_ns": 1782151870139166400,
+    "word_count": 176
+  },
+  "src/js/logic/remove-annotations-page.ts": {
+    "size": 6400,
+    "mtime_ns": 1782151870139711100,
+    "word_count": 555
+  },
+  "src/js/logic/remove-blank-pages-page.ts": {
+    "size": 13214,
+    "mtime_ns": 1782151870139711100,
+    "word_count": 1127
+  },
+  "src/js/logic/remove-metadata-page.ts": {
+    "size": 7333,
+    "mtime_ns": 1782151870140756500,
+    "word_count": 632
+  },
+  "src/js/logic/remove-restrictions-page.ts": {
+    "size": 7743,
+    "mtime_ns": 1782151870140756500,
+    "word_count": 665
+  },
+  "src/js/logic/repair-pdf-page.ts": {
+    "size": 3251,
+    "mtime_ns": 1782151870141716700,
+    "word_count": 244
+  },
+  "src/js/logic/repair-pdf.ts": {
+    "size": 4096,
+    "mtime_ns": 1782151870141716700,
+    "word_count": 405
+  },
+  "src/js/logic/reverse-pages-page.ts": {
+    "size": 6708,
+    "mtime_ns": 1782151870141716700,
+    "word_count": 586
+  },
+  "src/js/logic/rotate-custom-page.ts": {
+    "size": 14207,
+    "mtime_ns": 1782151870142717400,
+    "word_count": 1182
+  },
+  "src/js/logic/rotate-pdf-page.ts": {
+    "size": 11490,
+    "mtime_ns": 1782151870142717400,
+    "word_count": 935
+  },
+  "src/js/logic/sanitize-pdf-page.ts": {
+    "size": 6921,
+    "mtime_ns": 1782151870142717400,
+    "word_count": 535
+  },
+  "src/js/logic/scan-to-pdf.ts": {
+    "size": 266,
+    "mtime_ns": 1782151870144222000,
+    "word_count": 39
+  },
+  "src/js/logic/scanner-effect-page.ts": {
+    "size": 13147,
+    "mtime_ns": 1782151870144222000,
+    "word_count": 1123
+  },
+  "src/js/logic/shortcuts.ts": {
+    "size": 6086,
+    "mtime_ns": 1782929904851227500,
+    "word_count": 581
+  },
+  "src/js/logic/sign-pdf-page.ts": {
+    "size": 11615,
+    "mtime_ns": 1782151870145919500,
+    "word_count": 977
+  },
+  "src/js/logic/split-pdf-page.ts": {
+    "size": 21964,
+    "mtime_ns": 1782425191051316300,
+    "word_count": 1871
+  },
+  "src/js/logic/svg-to-pdf-page.ts": {
+    "size": 7953,
+    "mtime_ns": 1782151870145919500,
+    "word_count": 731
+  },
+  "src/js/logic/table-of-contents.ts": {
+    "size": 6563,
+    "mtime_ns": 1782151870146925200,
+    "word_count": 537
+  },
+  "src/js/logic/text-color-page.ts": {
+    "size": 7172,
+    "mtime_ns": 1782151870146925200,
+    "word_count": 635
+  },
+  "src/js/logic/tiff-to-pdf-page.ts": {
+    "size": 7186,
+    "mtime_ns": 1782151870146925200,
+    "word_count": 630
+  },
+  "src/js/logic/timestamp-pdf-page.ts": {
+    "size": 7094,
+    "mtime_ns": 1782151870146925200,
+    "word_count": 607
+  },
+  "src/js/logic/txt-to-pdf-page.ts": {
+    "size": 8776,
+    "mtime_ns": 1782151870148430100,
+    "word_count": 750
+  },
+  "src/js/logic/validate-signature-pdf-page.ts": {
+    "size": 18208,
+    "mtime_ns": 1782151870148430100,
+    "word_count": 1393
+  },
+  "src/js/logic/validate-signature-pdf.ts": {
+    "size": 25861,
+    "mtime_ns": 1782151870149436000,
+    "word_count": 2470
+  },
+  "src/js/logic/view-metadata-page.ts": {
+    "size": 13369,
+    "mtime_ns": 1782151870149436000,
+    "word_count": 1217
+  },
+  "src/js/logic/wasm-settings-page.ts": {
+    "size": 8331,
+    "mtime_ns": 1782151870150436100,
+    "word_count": 612
+  },
+  "src/js/logic/webp-to-pdf-page.ts": {
+    "size": 7559,
+    "mtime_ns": 1782151870150436100,
+    "word_count": 665
+  },
+  "src/js/logic/xml-to-pdf-page.ts": {
+    "size": 6680,
+    "mtime_ns": 1782151870151436200,
+    "word_count": 555
+  },
+  "src/js/logic/xps-to-pdf-page.ts": {
+    "size": 7138,
+    "mtime_ns": 1782151870152941200,
+    "word_count": 596
+  },
+  "src/js/main.ts": {
+    "size": 38806,
+    "mtime_ns": 1783020724462949300,
+    "word_count": 3060
+  },
+  "src/js/mobileMenu.ts": {
+    "size": 1940,
+    "mtime_ns": 1782151870152941200,
+    "word_count": 131
+  },
+  "src/js/offline-mode.ts": {
+    "size": 7583,
+    "mtime_ns": 1783020902167666400,
+    "word_count": 953
+  },
+  "src/js/pwa-install.ts": {
+    "size": 1979,
+    "mtime_ns": 1782926294728237700,
+    "word_count": 239
+  },
+  "src/js/pwa-nav.ts": {
+    "size": 2806,
+    "mtime_ns": 1783020713473756400,
+    "word_count": 349
+  },
+  "src/js/state.ts": {
+    "size": 604,
+    "mtime_ns": 1782151870153947200,
+    "word_count": 75
+  },
+  "src/js/sw-register.ts": {
+    "size": 4278,
+    "mtime_ns": 1785516088565696500,
+    "word_count": 401
+  },
+  "src/js/types/add-blank-page-type.ts": {
+    "size": 159,
+    "mtime_ns": 1782151870154451700,
+    "word_count": 21
+  },
+  "src/js/types/add-page-labels-type.ts": {
+    "size": 450,
+    "mtime_ns": 1782151870154451700,
+    "word_count": 46
+  },
+  "src/js/types/add-watermark-type.ts": {
+    "size": 700,
+    "mtime_ns": 1782151870155462900,
+    "word_count": 85
+  },
+  "src/js/types/adjust-colors-type.ts": {
+    "size": 209,
+    "mtime_ns": 1782151870155462900,
+    "word_count": 21
+  },
+  "src/js/types/alternate-merge-page-type.ts": {
+    "size": 198,
+    "mtime_ns": 1782151870156457600,
+    "word_count": 20
+  },
+  "src/js/types/attachment-type.ts": {
+    "size": 186,
+    "mtime_ns": 1782151870156457600,
+    "word_count": 23
+  },
+  "src/js/types/background-color-type.ts": {
+    "size": 164,
+    "mtime_ns": 1782151870157457700,
+    "word_count": 21
+  },
+  "src/js/types/bates-numbering-type.ts": {
+    "size": 286,
+    "mtime_ns": 1782151870157963100,
+    "word_count": 34
+  },
+  "src/js/types/bookmark-pdf-type.ts": {
+    "size": 4279,
+    "mtime_ns": 1782151870157963100,
+    "word_count": 491
+  },
+  "src/js/types/canvas-editor-type.ts": {
+    "size": 122,
+    "mtime_ns": 1782151870157963100,
+    "word_count": 17
+  },
+  "src/js/types/change-permissions-type.ts": {
+    "size": 70,
+    "mtime_ns": 1782151870158969600,
+    "word_count": 9
+  },
+  "src/js/types/combine-single-page-type.ts": {
+    "size": 166,
+    "mtime_ns": 1782151870158969600,
+    "word_count": 21
+  },
+  "src/js/types/compare-pdfs-type.ts": {
+    "size": 221,
+    "mtime_ns": 1782151870158969600,
+    "word_count": 14
+  },
+  "src/js/types/config-types.ts": {
+    "size": 102,
+    "mtime_ns": 1782151870159969100,
+    "word_count": 9
+  },
+  "src/js/types/crop-pdf-type.ts": {
+    "size": 432,
+    "mtime_ns": 1782151870159969100,
+    "word_count": 50
+  },
+  "src/js/types/decrypt-pdf-type.ts": {
+    "size": 57,
+    "mtime_ns": 1782151870159969100,
+    "word_count": 7
+  },
+  "src/js/types/delete-pages-type.ts": {
+    "size": 301,
+    "mtime_ns": 1782151870159969100,
+    "word_count": 36
+  },
+  "src/js/types/digital-sign-type.ts": {
+    "size": 1002,
+    "mtime_ns": 1782151870160969200,
+    "word_count": 105
+  },
+  "src/js/types/divide-pages-type.ts": {
+    "size": 183,
+    "mtime_ns": 1782151870161969300,
+    "word_count": 23
+  },
+  "src/js/types/edit-attachments-type.ts": {
+    "size": 264,
+    "mtime_ns": 1782151870161969300,
+    "word_count": 26
+  },
+  "src/js/types/edit-metadata-type.ts": {
+    "size": 159,
+    "mtime_ns": 1782151870162474000,
+    "word_count": 21
+  },
+  "src/js/types/edit-pdf-type.ts": {
+    "size": 446,
+    "mtime_ns": 1782151870162474000,
+    "word_count": 57
+  },
+  "src/js/types/email-to-pdf-type.ts": {
+    "size": 545,
+    "mtime_ns": 1782151870162474000,
+    "word_count": 57
+  },
+  "src/js/types/encrypt-pdf-type.ts": {
+    "size": 63,
+    "mtime_ns": 1782151870163479800,
+    "word_count": 9
+  },
+  "src/js/types/extract-attachments-type.ts": {
+    "size": 67,
+    "mtime_ns": 1782151870163479800,
+    "word_count": 7
+  },
+  "src/js/types/extract-images-type.ts": {
+    "size": 146,
+    "mtime_ns": 1782151870164480400,
+    "word_count": 15
+  },
+  "src/js/types/extract-pages-type.ts": {
+    "size": 125,
+    "mtime_ns": 1782151870164480400,
+    "word_count": 15
+  },
+  "src/js/types/fix-page-size-type.ts": {
+    "size": 64,
+    "mtime_ns": 1782151870164480400,
+    "word_count": 9
+  },
+  "src/js/types/flatten-pdf-type.ts": {
+    "size": 59,
+    "mtime_ns": 1782151870164480400,
+    "word_count": 7
+  },
+  "src/js/types/form-creator-type.ts": {
+    "size": 2037,
+    "mtime_ns": 1782151870165479700,
+    "word_count": 197
+  },
+  "src/js/types/header-footer-type.ts": {
+    "size": 161,
+    "mtime_ns": 1782151870165479700,
+    "word_count": 21
+  },
+  "src/js/types/index.ts": {
+    "size": 2791,
+    "mtime_ns": 1782151870165479700,
+    "word_count": 272
+  },
+  "src/js/types/invert-colors-type.ts": {
+    "size": 161,
+    "mtime_ns": 1782151870166479900,
+    "word_count": 21
+  },
+  "src/js/types/linearize-pdf-type.ts": {
+    "size": 61,
+    "mtime_ns": 1782151870166479900,
+    "word_count": 7
+  },
+  "src/js/types/markdown-editor-type.ts": {
+    "size": 634,
+    "mtime_ns": 1782151870166984500,
+    "word_count": 65
+  },
+  "src/js/types/merge-pdf-type.ts": {
+    "size": 189,
+    "mtime_ns": 1782151870168092900,
+    "word_count": 20
+  },
+  "src/js/types/merge-worker-type.ts": {
+    "size": 681,
+    "mtime_ns": 1782151870168092900,
+    "word_count": 72
+  },
+  "src/js/types/n-up-pdf-type.ts": {
+    "size": 116,
+    "mtime_ns": 1782151870168092900,
+    "word_count": 15
+  },
+  "src/js/types/ocr-pdf-type.ts": {
+    "size": 893,
+    "mtime_ns": 1782151870169098700,
+    "word_count": 117
+  },
+  "src/js/types/ocr-type.ts": {
+    "size": 177,
+    "mtime_ns": 1782151870169098700,
+    "word_count": 20
+  },
+  "src/js/types/organize-pdf-type.ts": {
+    "size": 147,
+    "mtime_ns": 1782151870169098700,
+    "word_count": 17
+  },
+  "src/js/types/overlay-pdf-type.ts": {
+    "size": 94,
+    "mtime_ns": 1782151870169098700,
+    "word_count": 13
+  },
+  "src/js/types/page-dimensions-type.ts": {
+    "size": 421,
+    "mtime_ns": 1782151870169098700,
+    "word_count": 49
+  },
+  "src/js/types/page-numbers-type.ts": {
+    "size": 64,
+    "mtime_ns": 1782151870169098700,
+    "word_count": 9
+  },
+  "src/js/types/page-preview-type.ts": {
+    "size": 255,
+    "mtime_ns": 1782151870170604200,
+    "word_count": 29
+  },
+  "src/js/types/password-prompt-type.ts": {
+    "size": 152,
+    "mtime_ns": 1782151870171609800,
+    "word_count": 18
+  },
+  "src/js/types/pdf-booklet-type.ts": {
+    "size": 120,
+    "mtime_ns": 1782151870171609800,
+    "word_count": 15
+  },
+  "src/js/types/pdf-layers-type.ts": {
+    "size": 97,
+    "mtime_ns": 1782151870171609800,
+    "word_count": 11
+  },
+  "src/js/types/pdf-multi-tool-type.ts": {
+    "size": 222,
+    "mtime_ns": 1782151870172610400,
+    "word_count": 21
+  },
+  "src/js/types/pdf-to-cbz-type.ts": {
+    "size": 650,
+    "mtime_ns": 1782151870172610400,
+    "word_count": 68
+  },
+  "src/js/types/pdf-to-tiff-type.ts": {
+    "size": 120,
+    "mtime_ns": 1782151870172610400,
+    "word_count": 13
+  },
+  "src/js/types/pdf-to-zip-type.ts": {
+    "size": 57,
+    "mtime_ns": 1782151870173610200,
+    "word_count": 7
+  },
+  "src/js/types/posterize-type.ts": {
+    "size": 261,
+    "mtime_ns": 1782151870173610200,
+    "word_count": 28
+  },
+  "src/js/types/redact-type.ts": {
+    "size": 148,
+    "mtime_ns": 1782151870173610200,
+    "word_count": 15
+  },
+  "src/js/types/remove-metadata-type.ts": {
+    "size": 67,
+    "mtime_ns": 1782151870175625600,
+    "word_count": 9
+  },
+  "src/js/types/remove-restrictions-type.ts": {
+    "size": 71,
+    "mtime_ns": 1782151870175625600,
+    "word_count": 9
+  },
+  "src/js/types/reverse-pages-type.ts": {
+    "size": 120,
+    "mtime_ns": 1782151870175625600,
+    "word_count": 15
+  },
+  "src/js/types/rotate-pdf-type.ts": {
+    "size": 160,
+    "mtime_ns": 1782151870176631800,
+    "word_count": 18
+  },
+  "src/js/types/sanitize-pdf-type.ts": {
+    "size": 139,
+    "mtime_ns": 1782151870176631800,
+    "word_count": 19
+  },
+  "src/js/types/sanitize-type.ts": {
+    "size": 193,
+    "mtime_ns": 1782151870176631800,
+    "word_count": 20
+  },
+  "src/js/types/scanner-effect-type.ts": {
+    "size": 315,
+    "mtime_ns": 1782151870176631800,
+    "word_count": 34
+  },
+  "src/js/types/shortcuts-type.ts": {
+    "size": 85,
+    "mtime_ns": 1782151870177631700,
+    "word_count": 11
+  },
+  "src/js/types/sign-pdf-type.ts": {
+    "size": 820,
+    "mtime_ns": 1782151870177631700,
+    "word_count": 94
+  },
+  "src/js/types/table-of-contents-type.ts": {
+    "size": 367,
+    "mtime_ns": 1782151870178824700,
+    "word_count": 35
+  },
+  "src/js/types/text-color-type.ts": {
+    "size": 158,
+    "mtime_ns": 1782151870179331800,
+    "word_count": 21
+  },
+  "src/js/types/ui-type.ts": {
+    "size": 110,
+    "mtime_ns": 1782151870179331800,
+    "word_count": 11
+  },
+  "src/js/types/utils-types.ts": {
+    "size": 6952,
+    "mtime_ns": 1782151870179331800,
+    "word_count": 704
+  },
+  "src/js/types/validate-signature-type.ts": {
+    "size": 1259,
+    "mtime_ns": 1782151870180337800,
+    "word_count": 116
+  },
+  "src/js/types/view-metadata-type.ts": {
+    "size": 105,
+    "mtime_ns": 1782151870180337800,
+    "word_count": 12
+  },
+  "src/js/ui.ts": {
+    "size": 19695,
+    "mtime_ns": 1782151870180337800,
+    "word_count": 1545
+  },
+  "src/js/utils/alternate-merge.ts": {
+    "size": 1519,
+    "mtime_ns": 1782151870181337800,
+    "word_count": 138
+  },
+  "src/js/utils/comic-info.ts": {
+    "size": 4589,
+    "mtime_ns": 1782929904873519000,
+    "word_count": 393
+  },
+  "src/js/utils/compress.ts": {
+    "size": 4879,
+    "mtime_ns": 1782151870181337800,
+    "word_count": 497
+  },
+  "src/js/utils/cpdf-helper.ts": {
+    "size": 1652,
+    "mtime_ns": 1782151870182337800,
+    "word_count": 175
+  },
+  "src/js/utils/csv-to-pdf.ts": {
+    "size": 3118,
+    "mtime_ns": 1782151870182337800,
+    "word_count": 252
+  },
+  "src/js/utils/deduplicate-filename.ts": {
+    "size": 748,
+    "mtime_ns": 1782151870183842800,
+    "word_count": 77
+  },
+  "src/js/utils/disabled-tools.ts": {
+    "size": 1838,
+    "mtime_ns": 1782151870183842800,
+    "word_count": 172
+  },
+  "src/js/utils/flatten-annotations.ts": {
+    "size": 5046,
+    "mtime_ns": 1782151870183842800,
+    "word_count": 522
+  },
+  "src/js/utils/font-loader.ts": {
+    "size": 8713,
+    "mtime_ns": 1782151870184849500,
+    "word_count": 980
+  },
+  "src/js/utils/full-width.ts": {
+    "size": 1186,
+    "mtime_ns": 1782151870184849500,
+    "word_count": 108
+  },
+  "src/js/utils/ghostscript-dynamic-loader.ts": {
+    "size": 2938,
+    "mtime_ns": 1782151870184849500,
+    "word_count": 293
+  },
+  "src/js/utils/ghostscript-loader.ts": {
+    "size": 14113,
+    "mtime_ns": 1782151870185849000,
+    "word_count": 1429
+  },
+  "src/js/utils/helpers.ts": {
+    "size": 14077,
+    "mtime_ns": 1782151870185849000,
+    "word_count": 1646
+  },
+  "src/js/utils/hocr-transform.ts": {
+    "size": 8389,
+    "mtime_ns": 1782151870186848800,
+    "word_count": 952
+  },
+  "src/js/utils/image-compress.ts": {
+    "size": 4298,
+    "mtime_ns": 1782151870186848800,
+    "word_count": 441
+  },
+  "src/js/utils/image-effects.ts": {
+    "size": 9039,
+    "mtime_ns": 1782151870186848800,
+    "word_count": 1337
+  },
+  "src/js/utils/image-input-utils.ts": {
+    "size": 3053,
+    "mtime_ns": 1782151870186848800,
+    "word_count": 304
+  },
+  "src/js/utils/images-to-pdf-lib.ts": {
+    "size": 2620,
+    "mtime_ns": 1782151870188359800,
+    "word_count": 269
+  },
+  "src/js/utils/load-pdf-document.ts": {
+    "size": 1890,
+    "mtime_ns": 1782151870189490000,
+    "word_count": 194
+  },
+  "src/js/utils/lucide-init.ts": {
+    "size": 135,
+    "mtime_ns": 1782151870190365600,
+    "word_count": 15
+  },
+  "src/js/utils/markdown-editor.ts": {
+    "size": 29557,
+    "mtime_ns": 1782929904919518400,
+    "word_count": 2666
+  },
+  "src/js/utils/merge-cpdf.ts": {
+    "size": 1569,
+    "mtime_ns": 1782151870190365600,
+    "word_count": 152
+  },
+  "src/js/utils/multi-tool-file-input.ts": {
+    "size": 658,
+    "mtime_ns": 1782151870191364800,
+    "word_count": 71
+  },
+  "src/js/utils/ocr.ts": {
+    "size": 11076,
+    "mtime_ns": 1782151870191364800,
+    "word_count": 1049
+  },
+  "src/js/utils/page-labels.ts": {
+    "size": 1503,
+    "mtime_ns": 1782151870191364800,
+    "word_count": 127
+  },
+  "src/js/utils/page-preview.ts": {
+    "size": 7784,
+    "mtime_ns": 1782151870191364800,
+    "word_count": 661
+  },
+  "src/js/utils/password-prompt.ts": {
+    "size": 28948,
+    "mtime_ns": 1782151870192869900,
+    "word_count": 2376
+  },
+  "src/js/utils/pdf-decrypt.ts": {
+    "size": 4812,
+    "mtime_ns": 1782151870193927800,
+    "word_count": 452
+  },
+  "src/js/utils/pdf-operations.ts": {
+    "size": 17026,
+    "mtime_ns": 1782151870193927800,
+    "word_count": 1868
+  },
+  "src/js/utils/pkc-tool-analytics.ts": {
+    "size": 6348,
+    "mtime_ns": 1782579210440200600,
+    "word_count": 858
+  },
+  "src/js/utils/pymupdf-loader.ts": {
+    "size": 3007,
+    "mtime_ns": 1782151870193927800,
+    "word_count": 288
+  },
+  "src/js/utils/render-utils.ts": {
+    "size": 13429,
+    "mtime_ns": 1782151870194987500,
+    "word_count": 1221
+  },
+  "src/js/utils/rotation-state.ts": {
+    "size": 623,
+    "mtime_ns": 1782151870194987500,
+    "word_count": 71
+  },
+  "src/js/utils/rotation-utils.ts": {
+    "size": 534,
+    "mtime_ns": 1782151870194987500,
+    "word_count": 59
+  },
+  "src/js/utils/sanitize.ts": {
+    "size": 18984,
+    "mtime_ns": 1782151870195978400,
+    "word_count": 1590
+  },
+  "src/js/utils/shortcuts-init.ts": {
+    "size": 193,
+    "mtime_ns": 1782151870195978400,
+    "word_count": 15
+  },
+  "src/js/utils/simple-mode-footer.ts": {
+    "size": 1006,
+    "mtime_ns": 1782151870195978400,
+    "word_count": 87
+  },
+  "src/js/utils/split-pdf-helpers.ts": {
+    "size": 3959,
+    "mtime_ns": 1782425190955553700,
+    "word_count": 522
+  },
+  "src/js/utils/tesseract-language-availability.ts": {
+    "size": 4029,
+    "mtime_ns": 1782929904943530300,
+    "word_count": 347
+  },
+  "src/js/utils/tesseract-runtime.ts": {
+    "size": 3865,
+    "mtime_ns": 1782151870198233000,
+    "word_count": 309
+  },
+  "src/js/utils/tiff-utils.ts": {
+    "size": 1286,
+    "mtime_ns": 1782151870198233000,
+    "word_count": 198
+  },
+  "src/js/utils/wasm-preloader.ts": {
+    "size": 3070,
+    "mtime_ns": 1782153307619358000,
+    "word_count": 276
+  },
+  "src/js/utils/wasm-provider.ts": {
+    "size": 13634,
+    "mtime_ns": 1782151870199279200,
+    "word_count": 1226
+  },
+  "src/js/utils/xml-to-pdf.ts": {
+    "size": 8192,
+    "mtime_ns": 1782151870199279200,
+    "word_count": 844
+  },
+  "src/js/workflow/editor.ts": {
+    "size": 13528,
+    "mtime_ns": 1782151870200280500,
+    "word_count": 1178
+  },
+  "src/js/workflow/engine.ts": {
+    "size": 5518,
+    "mtime_ns": 1782151870200280500,
+    "word_count": 560
+  },
+  "src/js/workflow/errors.ts": {
+    "size": 195,
+    "mtime_ns": 1782151870200280500,
+    "word_count": 23
+  },
+  "src/js/workflow/i18n.ts": {
+    "size": 2107,
+    "mtime_ns": 1782151870200280500,
+    "word_count": 176
+  },
+  "src/js/workflow/nodes/add-blank-page-node.ts": {
+    "size": 2751,
+    "mtime_ns": 1782151870201281100,
+    "word_count": 265
+  },
+  "src/js/workflow/nodes/adjust-colors-node.ts": {
+    "size": 4911,
+    "mtime_ns": 1782151870201828700,
+    "word_count": 421
+  },
+  "src/js/workflow/nodes/alternate-merge-node.ts": {
+    "size": 1931,
+    "mtime_ns": 1782151870202833900,
+    "word_count": 185
+  },
+  "src/js/workflow/nodes/background-color-node.ts": {
+    "size": 2307,
+    "mtime_ns": 1782151870202833900,
+    "word_count": 227
+  },
+  "src/js/workflow/nodes/base-node.ts": {
+    "size": 781,
+    "mtime_ns": 1782151870202833900,
+    "word_count": 84
+  },
+  "src/js/workflow/nodes/booklet-node.ts": {
+    "size": 6009,
+    "mtime_ns": 1782151870203837700,
+    "word_count": 614
+  },
+  "src/js/workflow/nodes/cbz-to-pdf-node.ts": {
+    "size": 2248,
+    "mtime_ns": 1782151870203837700,
+    "word_count": 244
+  },
+  "src/js/workflow/nodes/combine-single-page-node.ts": {
+    "size": 6473,
+    "mtime_ns": 1782151870203837700,
+    "word_count": 629
+  },
+  "src/js/workflow/nodes/compress-node.ts": {
+    "size": 4415,
+    "mtime_ns": 1782151870203837700,
+    "word_count": 362
+  },
+  "src/js/workflow/nodes/crop-node.ts": {
+    "size": 2522,
+    "mtime_ns": 1782151870205003500,
+    "word_count": 258
+  },
+  "src/js/workflow/nodes/decrypt-node.ts": {
+    "size": 1665,
+    "mtime_ns": 1782151870205510400,
+    "word_count": 159
+  },
+  "src/js/workflow/nodes/delete-pages-node.ts": {
+    "size": 1833,
+    "mtime_ns": 1782151870205510400,
+    "word_count": 171
+  },
+  "src/js/workflow/nodes/deskew-node.ts": {
+    "size": 2195,
+    "mtime_ns": 1782151870205510400,
+    "word_count": 210
+  },
+  "src/js/workflow/nodes/digital-sign-node.ts": {
+    "size": 3915,
+    "mtime_ns": 1782151870206517800,
+    "word_count": 392
+  },
+  "src/js/workflow/nodes/divide-pages-node.ts": {
+    "size": 3128,
+    "mtime_ns": 1782151870206517800,
+    "word_count": 304
+  },
+  "src/js/workflow/nodes/download-node.ts": {
+    "size": 2416,
+    "mtime_ns": 1782151870206517800,
+    "word_count": 233
+  },
+  "src/js/workflow/nodes/download-pdf-node.ts": {
+    "size": 2093,
+    "mtime_ns": 1782151870207557900,
+    "word_count": 202
+  },
+  "src/js/workflow/nodes/download-zip-node.ts": {
+    "size": 1931,
+    "mtime_ns": 1782151870208160800,
+    "word_count": 197
+  },
+  "src/js/workflow/nodes/edit-metadata-node.ts": {
+    "size": 2860,
+    "mtime_ns": 1782151870208160800,
+    "word_count": 252
+  },
+  "src/js/workflow/nodes/email-to-pdf-node.ts": {
+    "size": 3862,
+    "mtime_ns": 1782151870208160800,
+    "word_count": 383
+  },
+  "src/js/workflow/nodes/encrypt-node.ts": {
+    "size": 3283,
+    "mtime_ns": 1782151870208160800,
+    "word_count": 274
+  },
+  "src/js/workflow/nodes/epub-to-pdf-node.ts": {
+    "size": 2169,
+    "mtime_ns": 1782151870208160800,
+    "word_count": 236
+  },
+  "src/js/workflow/nodes/extract-images-node.ts": {
+    "size": 2268,
+    "mtime_ns": 1782151870209643300,
+    "word_count": 234
+  },
+  "src/js/workflow/nodes/extract-pages-node.ts": {
+    "size": 2243,
+    "mtime_ns": 1782151870209643300,
+    "word_count": 228
+  },
+  "src/js/workflow/nodes/fb2-to-pdf-node.ts": {
+    "size": 2182,
+    "mtime_ns": 1782151870210690000,
+    "word_count": 237
+  },
+  "src/js/workflow/nodes/fix-page-size-node.ts": {
+    "size": 3461,
+    "mtime_ns": 1782151870210690000,
+    "word_count": 313
+  },
+  "src/js/workflow/nodes/flatten-node.ts": {
+    "size": 1693,
+    "mtime_ns": 1782151870211652200,
+    "word_count": 163
+  },
+  "src/js/workflow/nodes/font-to-outline-node.ts": {
+    "size": 1460,
+    "mtime_ns": 1782151870211652200,
+    "word_count": 142
+  },
+  "src/js/workflow/nodes/greyscale-node.ts": {
+    "size": 2939,
+    "mtime_ns": 1782151870211652200,
+    "word_count": 271
+  },
+  "src/js/workflow/nodes/header-footer-node.ts": {
+    "size": 5648,
+    "mtime_ns": 1782151870212690000,
+    "word_count": 506
+  },
+  "src/js/workflow/nodes/image-input-node.ts": {
+    "size": 2219,
+    "mtime_ns": 1782151870212690000,
+    "word_count": 228
+  },
+  "src/js/workflow/nodes/index.ts": {
+    "size": 2447,
+    "mtime_ns": 1782153307636559700,
+    "word_count": 276
+  },
+  "src/js/workflow/nodes/invert-colors-node.ts": {
+    "size": 3154,
+    "mtime_ns": 1782151870212690000,
+    "word_count": 284
+  },
+  "src/js/workflow/nodes/json-to-pdf-node.ts": {
+    "size": 2471,
+    "mtime_ns": 1782151870212690000,
+    "word_count": 264
+  },
+  "src/js/workflow/nodes/linearize-node.ts": {
+    "size": 2065,
+    "mtime_ns": 1782151870214235800,
+    "word_count": 185
+  },
+  "src/js/workflow/nodes/markdown-to-pdf-node.ts": {
+    "size": 3307,
+    "mtime_ns": 1782151870214235800,
+    "word_count": 365
+  },
+  "src/js/workflow/nodes/merge-node.ts": {
+    "size": 1898,
+    "mtime_ns": 1782151870215246100,
+    "word_count": 189
+  },
+  "src/js/workflow/nodes/mobi-to-pdf-node.ts": {
+    "size": 2191,
+    "mtime_ns": 1782151870215246100,
+    "word_count": 237
+  },
+  "src/js/workflow/nodes/n-up-node.ts": {
+    "size": 4854,
+    "mtime_ns": 1782151870215246100,
+    "word_count": 509
+  },
+  "src/js/workflow/nodes/ocr-node.ts": {
+    "size": 2531,
+    "mtime_ns": 1782151870216281900,
+    "word_count": 232
+  },
+  "src/js/workflow/nodes/overlay-node.ts": {
+    "size": 2944,
+    "mtime_ns": 1782151870216281900,
+    "word_count": 264
+  },
+  "src/js/workflow/nodes/page-numbers-node.ts": {
+    "size": 2731,
+    "mtime_ns": 1782151870217283300,
+    "word_count": 256
+  },
+  "src/js/workflow/nodes/pdf-input-node.ts": {
+    "size": 3326,
+    "mtime_ns": 1782151870217283300,
+    "word_count": 344
+  },
+  "src/js/workflow/nodes/pdf-to-csv-node.ts": {
+    "size": 2962,
+    "mtime_ns": 1782151870217283300,
+    "word_count": 322
+  },
+  "src/js/workflow/nodes/pdf-to-docx-node.ts": {
+    "size": 1873,
+    "mtime_ns": 1782151870219234800,
+    "word_count": 196
+  },
+  "src/js/workflow/nodes/pdf-to-images-node.ts": {
+    "size": 4685,
+    "mtime_ns": 1782151870219234800,
+    "word_count": 486
+  },
+  "src/js/workflow/nodes/pdf-to-markdown-node.ts": {
+    "size": 1914,
+    "mtime_ns": 1782151870219800700,
+    "word_count": 204
+  },
+  "src/js/workflow/nodes/pdf-to-pdfa-node.ts": {
+    "size": 2726,
+    "mtime_ns": 1782151870219800700,
+    "word_count": 256
+  },
+  "src/js/workflow/nodes/pdf-to-svg-node.ts": {
+    "size": 1731,
+    "mtime_ns": 1782151870219800700,
+    "word_count": 196
+  },
+  "src/js/workflow/nodes/pdf-to-text-node.ts": {
+    "size": 1821,
+    "mtime_ns": 1782151870220836100,
+    "word_count": 198
+  },
+  "src/js/workflow/nodes/pdf-to-xlsx-node.ts": {
+    "size": 3346,
+    "mtime_ns": 1782151870220836100,
+    "word_count": 364
+  },
+  "src/js/workflow/nodes/posterize-node.ts": {
+    "size": 4106,
+    "mtime_ns": 1782151870221795500,
+    "word_count": 390
+  },
+  "src/js/workflow/nodes/rasterize-node.ts": {
+    "size": 2511,
+    "mtime_ns": 1782151870223340700,
+    "word_count": 238
+  },
+  "src/js/workflow/nodes/redact-node.ts": {
+    "size": 3747,
+    "mtime_ns": 1782151870223340700,
+    "word_count": 352
+  },
+  "src/js/workflow/nodes/registry.ts": {
+    "size": 19974,
+    "mtime_ns": 1782153307672052900,
+    "word_count": 2151
+  },
+  "src/js/workflow/nodes/remove-annotations-node.ts": {
+    "size": 1557,
+    "mtime_ns": 1782151870224386800,
+    "word_count": 153
+  },
+  "src/js/workflow/nodes/remove-blank-pages-node.ts": {
+    "size": 3490,
+    "mtime_ns": 1782151870224386800,
+    "word_count": 354
+  },
+  "src/js/workflow/nodes/repair-node.ts": {
+    "size": 2093,
+    "mtime_ns": 1782151870224386800,
+    "word_count": 189
+  },
+  "src/js/workflow/nodes/reverse-pages-node.ts": {
+    "size": 1701,
+    "mtime_ns": 1782151870225386900,
+    "word_count": 168
+  },
+  "src/js/workflow/nodes/rotate-node.ts": {
+    "size": 1643,
+    "mtime_ns": 1782151870226045600,
+    "word_count": 158
+  },
+  "src/js/workflow/nodes/sanitize-node.ts": {
+    "size": 3300,
+    "mtime_ns": 1782151870226045600,
+    "word_count": 272
+  },
+  "src/js/workflow/nodes/scanner-effect-node.ts": {
+    "size": 5593,
+    "mtime_ns": 1782151870226045600,
+    "word_count": 475
+  },
+  "src/js/workflow/nodes/split-node.ts": {
+    "size": 1804,
+    "mtime_ns": 1782151870226045600,
+    "word_count": 174
+  },
+  "src/js/workflow/nodes/svg-to-pdf-node.ts": {
+    "size": 3169,
+    "mtime_ns": 1782151870226045600,
+    "word_count": 323
+  },
+  "src/js/workflow/nodes/table-of-contents-node.ts": {
+    "size": 4013,
+    "mtime_ns": 1782151870227498600,
+    "word_count": 343
+  },
+  "src/js/workflow/nodes/text-to-pdf-node.ts": {
+    "size": 3281,
+    "mtime_ns": 1782151870227498600,
+    "word_count": 331
+  },
+  "src/js/workflow/nodes/timestamp-node.ts": {
+    "size": 2191,
+    "mtime_ns": 1782151870227498600,
+    "word_count": 213
+  },
+  "src/js/workflow/nodes/watermark-node.ts": {
+    "size": 6116,
+    "mtime_ns": 1782151870229224900,
+    "word_count": 577
+  },
+  "src/js/workflow/nodes/xml-to-pdf-node.ts": {
+    "size": 2304,
+    "mtime_ns": 1782151870230289900,
+    "word_count": 247
+  },
+  "src/js/workflow/nodes/xps-to-pdf-node.ts": {
+    "size": 2239,
+    "mtime_ns": 1782151870230289900,
+    "word_count": 243
+  },
+  "src/js/workflow/serialization.ts": {
+    "size": 7389,
+    "mtime_ns": 1782151870230289900,
+    "word_count": 736
+  },
+  "src/js/workflow/sockets.ts": {
+    "size": 632,
+    "mtime_ns": 1782151870231836600,
+    "word_count": 71
+  },
+  "src/js/workflow/types.ts": {
+    "size": 3137,
+    "mtime_ns": 1782151870231836600,
+    "word_count": 354
+  },
+  "src/pages/add-attachments.html": {
+    "size": 18370,
+    "mtime_ns": 1782420256381418100,
+    "word_count": 1397,
+    "hashes": {
+      "src/pages/add-attachments.html": "8aae6f1ece93a68e3fdd1836167a869db962627b977320ddd94529bdc2e61d34"
+    }
+  },
+  "src/pages/add-blank-page.html": {
+    "size": 17746,
+    "mtime_ns": 1782420256411947800,
+    "word_count": 1393,
+    "hashes": {
+      "src/pages/add-blank-page.html": "c95caf2d16900ca0e7edab69206623096f5dd56387564486b86eea378b76bc24"
+    }
+  },
+  "src/pages/add-page-labels.html": {
+    "size": 19780,
+    "mtime_ns": 1782420256432948900,
+    "word_count": 1379,
+    "hashes": {
+      "src/pages/add-page-labels.html": "74e14674c70187f497bed527dd32be6e1f7890d9273011fc7cbf52f1e0c741fe"
+    }
+  },
+  "src/pages/add-stamps.html": {
+    "size": 15538,
+    "mtime_ns": 1782420256456951100,
+    "word_count": 1221,
+    "hashes": {
+      "src/pages/add-stamps.html": "4d44267da99b7b8d15d656028436c8c958b9f1f11433c36917a5bd3dcf005fa7"
+    }
+  },
+  "src/pages/add-watermark.html": {
+    "size": 32919,
+    "mtime_ns": 1782420256507001100,
+    "word_count": 2070,
+    "hashes": {
+      "src/pages/add-watermark.html": "7e487d664d38061c1a90bb81ed81728fb4aae9c1b7f43cda4389a7e6ad1fda30"
+    }
+  },
+  "src/pages/adjust-colors.html": {
+    "size": 21977,
+    "mtime_ns": 1782420256534997700,
+    "word_count": 1465,
+    "hashes": {
+      "src/pages/adjust-colors.html": "cd413a8e7cb6f694c2e19f346cf4f79d0257ece399ae2cd32e37383e75592899"
+    }
+  },
+  "src/pages/alternate-merge.html": {
+    "size": 16990,
+    "mtime_ns": 1782420256562010000,
+    "word_count": 1326,
+    "hashes": {
+      "src/pages/alternate-merge.html": "29e8b5c23eb166734408980c12a1345d400b58f8966be2baa7b36542ec7ead4e"
+    }
+  },
+  "src/pages/background-color.html": {
+    "size": 15821,
+    "mtime_ns": 1782420256582033000,
+    "word_count": 1229,
+    "hashes": {
+      "src/pages/background-color.html": "c6ac4eb83c9609fe41f842cffa586fd7b4e45fa04ac8aa8ade985c1054982348"
+    }
+  },
+  "src/pages/bates-numbering.html": {
+    "size": 21671,
+    "mtime_ns": 1782420256606032100,
+    "word_count": 1515,
+    "hashes": {
+      "src/pages/bates-numbering.html": "5632efb45e92a30a4bcaf5e5b0510397f26c53145b8b714bd4bc6a6cda72f6e5"
+    }
+  },
+  "src/pages/bmp-to-pdf.html": {
+    "size": 15889,
+    "mtime_ns": 1782420256624036000,
+    "word_count": 1273,
+    "hashes": {
+      "src/pages/bmp-to-pdf.html": "864580040e6abb29c5d6f270fb2da452b96d156203f8432a258916b3de7ed179"
+    }
+  },
+  "src/pages/bookmark.html": {
+    "size": 36913,
+    "mtime_ns": 1782420256664037700,
+    "word_count": 2404,
+    "hashes": {
+      "src/pages/bookmark.html": "fea09b5c982b3e64f4d9c7265d5e6e0d38d437891f3ff397fec82e85a2bfa9cc"
+    }
+  },
+  "src/pages/cbz-to-pdf.html": {
+    "size": 16135,
+    "mtime_ns": 1782420256704078200,
+    "word_count": 1285,
+    "hashes": {
+      "src/pages/cbz-to-pdf.html": "5cc428388a389ea208ac62d07e20717343ed7c739afe5996adce6c7c57a3d282"
+    }
+  },
+  "src/pages/change-permissions.html": {
+    "size": 20832,
+    "mtime_ns": 1782420256728050300,
+    "word_count": 1513,
+    "hashes": {
+      "src/pages/change-permissions.html": "926594b7ab28345f461c09f3250ed177c9e1c94b123d2bb4d39d0ccc02ef4f35"
+    }
+  },
+  "src/pages/combine-single-page.html": {
+    "size": 18997,
+    "mtime_ns": 1782420256755059400,
+    "word_count": 1426,
+    "hashes": {
+      "src/pages/combine-single-page.html": "8733344779a24b176f0fb227d8c83bdbd1baeffee7c2297e71e68e31ef50939c"
+    }
+  },
+  "src/pages/compare-pdfs.html": {
+    "size": 43165,
+    "mtime_ns": 1782420256816666400,
+    "word_count": 2943,
+    "hashes": {
+      "src/pages/compare-pdfs.html": "74470304af35500e65f10b457d50e2a44acc3d00fc0e4afded845400200b9d78"
+    }
+  },
+  "src/pages/compress-pdf.html": {
+    "size": 24592,
+    "mtime_ns": 1782420256844667600,
+    "word_count": 1782,
+    "hashes": {
+      "src/pages/compress-pdf.html": "26435b95a5c6a2728aee43944f444ed109208dc3612b13089cf595ad8d0b5dad"
+    }
+  },
+  "src/pages/crop-pdf.html": {
+    "size": 17716,
+    "mtime_ns": 1782420256866709600,
+    "word_count": 1390,
+    "hashes": {
+      "src/pages/crop-pdf.html": "542536f431f746b3843e6b9f03052f02a418ff2070da2545385be83bdb318e69"
+    }
+  },
+  "src/pages/csv-to-pdf.html": {
+    "size": 16081,
+    "mtime_ns": 1782420256887294600,
+    "word_count": 1289,
+    "hashes": {
+      "src/pages/csv-to-pdf.html": "4dba66db1f40b1d3c7b70d30b66ae0bbb1353301dea8d3b86db8bf7a78afc29c"
+    }
+  },
+  "src/pages/decrypt-pdf.html": {
+    "size": 16953,
+    "mtime_ns": 1782420256904294200,
+    "word_count": 1321,
+    "hashes": {
+      "src/pages/decrypt-pdf.html": "d2ec89f9b651ad9be94f976e49f9bb877527d2a01eda2c27c0fcaeeeee039ed8"
+    }
+  },
+  "src/pages/delete-pages.html": {
+    "size": 15917,
+    "mtime_ns": 1782420256920294700,
+    "word_count": 1243,
+    "hashes": {
+      "src/pages/delete-pages.html": "553a30677c683524148266520f62f759f6ea5591940330f5303ea8269eec01cc"
+    }
+  },
+  "src/pages/deskew-pdf.html": {
+    "size": 17990,
+    "mtime_ns": 1782420256940298300,
+    "word_count": 1354,
+    "hashes": {
+      "src/pages/deskew-pdf.html": "73c8359193932dc2c661a6bc369f7ecf9d0ebe1f8f01c23aa3993add7bbe6bd3"
+    }
+  },
+  "src/pages/digital-sign-pdf.html": {
+    "size": 36646,
+    "mtime_ns": 1782420256975819900,
+    "word_count": 2240,
+    "hashes": {
+      "src/pages/digital-sign-pdf.html": "c4a66d0c563d1cd5d8453f1b0342b4358cd9c283b3b93d8acb6f2fb996747da8"
+    }
+  },
+  "src/pages/divide-pages.html": {
+    "size": 17626,
+    "mtime_ns": 1782420256999335500,
+    "word_count": 1379,
+    "hashes": {
+      "src/pages/divide-pages.html": "40edbf62dc7d0aacc6acf6cfbf954ef0ad75d669d3cdf86b0428f7e9c93d7116"
+    }
+  },
+  "src/pages/edit-attachments.html": {
+    "size": 15603,
+    "mtime_ns": 1782420257021338400,
+    "word_count": 1222,
+    "hashes": {
+      "src/pages/edit-attachments.html": "3319b9969b2b8e37711bcda600b2df34f7b2b00e87fc278f39e22c2553a41872"
+    }
+  },
+  "src/pages/edit-metadata.html": {
+    "size": 20519,
+    "mtime_ns": 1782420257053342600,
+    "word_count": 1506,
+    "hashes": {
+      "src/pages/edit-metadata.html": "835a549cdf9c997c831aaca638b97b086a2c7187563cbad8fd1d3695bb5ca984"
+    }
+  },
+  "src/pages/edit-pdf.html": {
+    "size": 15300,
+    "mtime_ns": 1782420257078997600,
+    "word_count": 1212,
+    "hashes": {
+      "src/pages/edit-pdf.html": "a5c200686b7a3721ecb03169f4768adcc4bf58d45d11d47fb1668028f32dea51"
+    }
+  },
+  "src/pages/email-to-pdf.html": {
+    "size": 18858,
+    "mtime_ns": 1782420257109996900,
+    "word_count": 1494,
+    "hashes": {
+      "src/pages/email-to-pdf.html": "7c73e1b79352b9fb2d0af42c7fa3c7dbf36fed063101b519913e7b80fa6d8ec9"
+    }
+  },
+  "src/pages/encrypt-pdf.html": {
+    "size": 17247,
+    "mtime_ns": 1782420257142995100,
+    "word_count": 1351,
+    "hashes": {
+      "src/pages/encrypt-pdf.html": "048cd0603fd629d79429e5104e24996124bc8457c347266338a2766007b198a7"
+    }
+  },
+  "src/pages/epub-to-pdf.html": {
+    "size": 16113,
+    "mtime_ns": 1782420257170094000,
+    "word_count": 1283,
+    "hashes": {
+      "src/pages/epub-to-pdf.html": "81299b9b0574d8cc8344ad15e7e456dc5d671fda8b68d594f6b37a27308513c9"
+    }
+  },
+  "src/pages/extract-attachments.html": {
+    "size": 15942,
+    "mtime_ns": 1782420257193300500,
+    "word_count": 1237,
+    "hashes": {
+      "src/pages/extract-attachments.html": "6714ba231685bccef996cd8a96fc73fe708f104be812ddb0675f44659c635043"
+    }
+  },
+  "src/pages/extract-images.html": {
+    "size": 16708,
+    "mtime_ns": 1782420257214301600,
+    "word_count": 1307,
+    "hashes": {
+      "src/pages/extract-images.html": "9e2996a6ddba0adf7703d850b2db4e1849f344b8ad4d46091e267fb7d40ddfb0"
+    }
+  },
+  "src/pages/extract-pages.html": {
+    "size": 16060,
+    "mtime_ns": 1782420257236298500,
+    "word_count": 1275,
+    "hashes": {
+      "src/pages/extract-pages.html": "df4570f7cbb0ea583c029c90de552e8a9463f9b2fd04adf0e9b7cf5c7fbed5ae"
+    }
+  },
+  "src/pages/extract-tables.html": {
+    "size": 16867,
+    "mtime_ns": 1782420257262338000,
+    "word_count": 1293,
+    "hashes": {
+      "src/pages/extract-tables.html": "29f0c327fcd4756aba489895f8f14ff090858ad1af09cce44302865aece29bfc"
+    }
+  },
+  "src/pages/fb2-to-pdf.html": {
+    "size": 16064,
+    "mtime_ns": 1782420257282900300,
+    "word_count": 1283,
+    "hashes": {
+      "src/pages/fb2-to-pdf.html": "bef226e2cbf461c52bc3f2fa14ce5be6ad53740d7768b3904f8cadb33438c8b1"
+    }
+  },
+  "src/pages/fix-page-size.html": {
+    "size": 21074,
+    "mtime_ns": 1782420257305538500,
+    "word_count": 1578,
+    "hashes": {
+      "src/pages/fix-page-size.html": "56f3d4ddb946fb9413f952be5b0e92e7cb60a02b7460f8585bcd6a5e864a9834"
+    }
+  },
+  "src/pages/flatten-pdf.html": {
+    "size": 17049,
+    "mtime_ns": 1782420257322653500,
+    "word_count": 1341,
+    "hashes": {
+      "src/pages/flatten-pdf.html": "9ba65b164efe7909fc665b72a56ae5a1a04de90971e690a44c38b2b14fa93ed1"
+    }
+  },
+  "src/pages/font-to-outline.html": {
+    "size": 17424,
+    "mtime_ns": 1782420257340919000,
+    "word_count": 1380,
+    "hashes": {
+      "src/pages/font-to-outline.html": "8b9ddaabc10eb2f7a19fb41436f2888e6aaba4603978c74d39a7a4498a46a98c"
+    }
+  },
+  "src/pages/form-creator.html": {
+    "size": 31305,
+    "mtime_ns": 1782420257371923900,
+    "word_count": 2116,
+    "hashes": {
+      "src/pages/form-creator.html": "6776b00b67ec17d73145072de5cbe838ebd043ff2bc496e8453936e83b7a04f6"
+    }
+  },
+  "src/pages/form-filler.html": {
+    "size": 16741,
+    "mtime_ns": 1782420257393558700,
+    "word_count": 1352,
+    "hashes": {
+      "src/pages/form-filler.html": "a5683f87456c3e1bd9cc701c0db7f87b8c88fcc3e595995929b9c8e46f1b258b"
+    }
+  },
+  "src/pages/header-footer.html": {
+    "size": 20302,
+    "mtime_ns": 1782420257412082300,
+    "word_count": 1478,
+    "hashes": {
+      "src/pages/header-footer.html": "4175c98998e8ad042fef8a441e358e8f92b02b6a592db00f346dd288c2ec045f"
+    }
+  },
+  "src/pages/heic-to-pdf.html": {
+    "size": 15919,
+    "mtime_ns": 1782420257432127800,
+    "word_count": 1273,
+    "hashes": {
+      "src/pages/heic-to-pdf.html": "bdfbdc63013bfdb8e6de894160ba71e3abc65f3c0654477555d336450d20cdbf"
+    }
+  },
+  "src/pages/image-to-pdf.html": {
+    "size": 17342,
+    "mtime_ns": 1782420257450132700,
+    "word_count": 1379,
+    "hashes": {
+      "src/pages/image-to-pdf.html": "f934f77bc668b01b0f579430d5d985f55cec788b04325e08b68fc68c3ba81a85"
+    }
+  },
+  "src/pages/invert-colors.html": {
+    "size": 15502,
+    "mtime_ns": 1782420257469161700,
+    "word_count": 1224,
+    "hashes": {
+      "src/pages/invert-colors.html": "4183dde1c01f45ef66500ce82d47eb93d11994574fc7e549b849945eb47fa538"
+    }
+  },
+  "src/pages/jpg-to-pdf.html": {
+    "size": 17167,
+    "mtime_ns": 1782420257491196100,
+    "word_count": 1376,
+    "hashes": {
+      "src/pages/jpg-to-pdf.html": "e6f14562485be76197593c4f082a7f66c07913824112ef1861affd9ca10f72bb"
+    }
+  },
+  "src/pages/json-to-pdf.html": {
+    "size": 14653,
+    "mtime_ns": 1782420257507197800,
+    "word_count": 1173,
+    "hashes": {
+      "src/pages/json-to-pdf.html": "46c11ffc62dd691e305a2babbffdc51ca76ee635df13742a8bf8c2780eddb075"
+    }
+  },
+  "src/pages/linearize-pdf.html": {
+    "size": 17032,
+    "mtime_ns": 1782420257525197200,
+    "word_count": 1338,
+    "hashes": {
+      "src/pages/linearize-pdf.html": "ae7257153ac441e0518804f7ed8a97449a0379ccb94d808412c0c6eb32c4e1fd"
+    }
+  },
+  "src/pages/markdown-to-pdf.html": {
+    "size": 12613,
+    "mtime_ns": 1782420256021469000,
+    "word_count": 1040,
+    "hashes": {
+      "src/pages/markdown-to-pdf.html": "83607ee9df732cce097f3b39d129da37d86bd6e902a328b6300cba3b4fa03887"
+    }
+  },
+  "src/pages/merge-pdf.html": {
+    "size": 20925,
+    "mtime_ns": 1782420256088518900,
+    "word_count": 1663,
+    "hashes": {
+      "src/pages/merge-pdf.html": "c81298e38f8115288d825e3285628c86abc08a51e68125d98e9746af26a0b23e"
+    }
+  },
+  "src/pages/mobi-to-pdf.html": {
+    "size": 16062,
+    "mtime_ns": 1782420256130035000,
+    "word_count": 1282,
+    "hashes": {
+      "src/pages/mobi-to-pdf.html": "1412e5dbda7db19579d533c597e85a19517253f9b1db2dc9f200461e522940c7"
+    }
+  },
+  "src/pages/n-up-pdf.html": {
+    "size": 19451,
+    "mtime_ns": 1782420256169041900,
+    "word_count": 1492,
+    "hashes": {
+      "src/pages/n-up-pdf.html": "9c4880c3ecd0045a44f4137b9b927eacdf876f82b875414af9707bacfebfb37b"
+    }
+  },
+  "src/pages/ocr-pdf.html": {
+    "size": 28796,
+    "mtime_ns": 1782420256237082200,
+    "word_count": 1924,
+    "hashes": {
+      "src/pages/ocr-pdf.html": "10f54159f122472aab7db1ec0d2834d43a534cddce925a81eeaedf1f105c13c0"
+    }
+  },
+  "src/pages/organize-pdf.html": {
+    "size": 16875,
+    "mtime_ns": 1782420256266085500,
+    "word_count": 1293,
+    "hashes": {
+      "src/pages/organize-pdf.html": "07451896bf10a56a458bf3911aeb6a27e7ddb3b54c5cc590ba72bb4540cb4bcd"
+    }
+  },
+  "src/pages/overlay-pdf.html": {
+    "size": 18636,
+    "mtime_ns": 1782420256288119400,
+    "word_count": 1296,
+    "hashes": {
+      "src/pages/overlay-pdf.html": "caa8845781a192c7de1190ec4c264ff54d1df6e935d32bbe123c130a7b5ae39d"
+    }
+  },
+  "src/pages/page-dimensions.html": {
+    "size": 16923,
+    "mtime_ns": 1782420256310332900,
+    "word_count": 1296,
+    "hashes": {
+      "src/pages/page-dimensions.html": "ef8a7b14604e4d39b28b1d2c8a9a03e0488738274f5250d9183c2f2872cec7ef"
+    }
+  },
+  "src/pages/page-numbers.html": {
+    "size": 17874,
+    "mtime_ns": 1782420256334336500,
+    "word_count": 1350,
+    "hashes": {
+      "src/pages/page-numbers.html": "601547f1f7d808f3eb502667d01d4a5d2237c8f6ad786fac67e8e0f40c5ff65b"
+    }
+  },
+  "src/pages/pdf-booklet.html": {
+    "size": 26222,
+    "mtime_ns": 1782420256370853400,
+    "word_count": 1851,
+    "hashes": {
+      "src/pages/pdf-booklet.html": "07237e4a2b45db4b9619172d9ce10c591f64702714d287d07f3ddd4935a87f1f"
+    }
+  },
+  "src/pages/pdf-layers.html": {
+    "size": 19631,
+    "mtime_ns": 1782420256415953800,
+    "word_count": 1550,
+    "hashes": {
+      "src/pages/pdf-layers.html": "6402db731b88c5abc001cb90f1def343e3a5329834cd58b504660734cf21abda"
+    }
+  },
+  "src/pages/pdf-multi-tool.html": {
+    "size": 19309,
+    "mtime_ns": 1782420256451949300,
+    "word_count": 1584,
+    "hashes": {
+      "src/pages/pdf-multi-tool.html": "fc2cf54718905dfa2167eff41f7c814f8faca2cab12717efc6cf5051ff332ce7"
+    }
+  },
+  "src/pages/pdf-to-bmp.html": {
+    "size": 15280,
+    "mtime_ns": 1782420256477999700,
+    "word_count": 1230,
+    "hashes": {
+      "src/pages/pdf-to-bmp.html": "5235633325e7a99fb6ca07a900d734ec0de7ce00347b6cf3eac78113e6f54330"
+    }
+  },
+  "src/pages/pdf-to-cbz.html": {
+    "size": 24602,
+    "mtime_ns": 1782420256504000700,
+    "word_count": 1637,
+    "hashes": {
+      "src/pages/pdf-to-cbz.html": "548c127fb75d501b413496b807b37c11a522c04583baf42c8fa0d393eb9e7f0c"
+    }
+  },
+  "src/pages/pdf-to-csv.html": {
+    "size": 15069,
+    "mtime_ns": 1782420256524996800,
+    "word_count": 1229,
+    "hashes": {
+      "src/pages/pdf-to-csv.html": "797a692c8fc1bcae2673f671345416a87c62d1144e96ba265a78d83faa6c8ff0"
+    }
+  },
+  "src/pages/pdf-to-docx.html": {
+    "size": 15689,
+    "mtime_ns": 1782420256544998000,
+    "word_count": 1262,
+    "hashes": {
+      "src/pages/pdf-to-docx.html": "8ccb33a919d16e4387140a278a8d8e1b73daf103b5784ea6afb5a61e17d19c7d"
+    }
+  },
+  "src/pages/pdf-to-excel.html": {
+    "size": 15214,
+    "mtime_ns": 1782420256567007700,
+    "word_count": 1234,
+    "hashes": {
+      "src/pages/pdf-to-excel.html": "455caf066a0a180f04b66cdf462f75c60f3844447f50b8d00e3e4122d980b915"
+    }
+  },
+  "src/pages/pdf-to-greyscale.html": {
+    "size": 15431,
+    "mtime_ns": 1782420256586031900,
+    "word_count": 1229,
+    "hashes": {
+      "src/pages/pdf-to-greyscale.html": "ad70b73a9075b696e37f74bef129eff12f5666d982dce53c01916c8eed798ed3"
+    }
+  },
+  "src/pages/pdf-to-jpg.html": {
+    "size": 17058,
+    "mtime_ns": 1782420256606032100,
+    "word_count": 1350,
+    "hashes": {
+      "src/pages/pdf-to-jpg.html": "569d7470958df29ec4516fb6080de2d115cc7d1a6c40d87ff8dee3fb0a3402b2"
+    }
+  },
+  "src/pages/pdf-to-json.html": {
+    "size": 14137,
+    "mtime_ns": 1782420256621030100,
+    "word_count": 1135,
+    "hashes": {
+      "src/pages/pdf-to-json.html": "9ec7ac69b771324fad6e45626594fa95ccb25e6bb10f824fc3875ba193cf1718"
+    }
+  },
+  "src/pages/pdf-to-markdown.html": {
+    "size": 16459,
+    "mtime_ns": 1782420256641034000,
+    "word_count": 1306,
+    "hashes": {
+      "src/pages/pdf-to-markdown.html": "23563f0b2902900a136ff3da6ff7b621ce88bb8c0c486c095277d92886c9e011"
+    }
+  },
+  "src/pages/pdf-to-pdfa.html": {
+    "size": 17906,
+    "mtime_ns": 1782420256662037400,
+    "word_count": 1411,
+    "hashes": {
+      "src/pages/pdf-to-pdfa.html": "3d7f64a4624ed832fba540b704cb0d8dfeb08337e217186380009db949706bb6"
+    }
+  },
+  "src/pages/pdf-to-png.html": {
+    "size": 16295,
+    "mtime_ns": 1782420256682046900,
+    "word_count": 1282,
+    "hashes": {
+      "src/pages/pdf-to-png.html": "dfa3ca600b042f82d83785c8ae0076fed166401f6d7fb7fa085cc5e38efafd18"
+    }
+  },
+  "src/pages/pdf-to-svg.html": {
+    "size": 16034,
+    "mtime_ns": 1782420256708045300,
+    "word_count": 1287,
+    "hashes": {
+      "src/pages/pdf-to-svg.html": "61f1453e1d491364802a4f6f86be6b0d8b1015075f71dfbf1022610cb168e4d0"
+    }
+  },
+  "src/pages/pdf-to-text.html": {
+    "size": 17159,
+    "mtime_ns": 1782420256727049100,
+    "word_count": 1362,
+    "hashes": {
+      "src/pages/pdf-to-text.html": "9b615e8aa3fd98042a6c09ba299c13a09de5eb0594b8c0de3874bd962095de5b"
+    }
+  },
+  "src/pages/pdf-to-tiff.html": {
+    "size": 18954,
+    "mtime_ns": 1782420256750051700,
+    "word_count": 1425,
+    "hashes": {
+      "src/pages/pdf-to-tiff.html": "fcd34fcb42afd247da626c734b85d7811a9cd18b978f8d4c4783afb94fb52d33"
+    }
+  },
+  "src/pages/pdf-to-webp.html": {
+    "size": 16324,
+    "mtime_ns": 1782420256778665500,
+    "word_count": 1279,
+    "hashes": {
+      "src/pages/pdf-to-webp.html": "c3a6eb28a3316749534a440f087c1b18c068d2a9732a5a448cf94610a623d095"
+    }
+  },
+  "src/pages/pdf-to-zip.html": {
+    "size": 16032,
+    "mtime_ns": 1782420256804665600,
+    "word_count": 1291,
+    "hashes": {
+      "src/pages/pdf-to-zip.html": "de260a272bfc1870e0be77a50dd3abdf10b7641d1250963f645d9f0d6b900ada"
+    }
+  },
+  "src/pages/pdf-workflow.html": {
+    "size": 17883,
+    "mtime_ns": 1782420256835665700,
+    "word_count": 1416,
+    "hashes": {
+      "src/pages/pdf-workflow.html": "0d81a1a25f53aedbae6c181a1ef3803fadd2f76e10d155a9f4f2b45975bb97a6"
+    }
+  },
+  "src/pages/png-to-pdf.html": {
+    "size": 17053,
+    "mtime_ns": 1782420256858708200,
+    "word_count": 1362,
+    "hashes": {
+      "src/pages/png-to-pdf.html": "a2314ab9f672398e781c36e9d84d75bf958b85028ca25bf105aa1b21aafae9d7"
+    }
+  },
+  "src/pages/posterize-pdf.html": {
+    "size": 23949,
+    "mtime_ns": 1782420256890294800,
+    "word_count": 1689,
+    "hashes": {
+      "src/pages/posterize-pdf.html": "fdc5726ec936aa07b823ded03265b69bc6bed2010906b18c591bd5250d8f507d"
+    }
+  },
+  "src/pages/prepare-pdf-for-ai.html": {
+    "size": 17093,
+    "mtime_ns": 1782420256910295700,
+    "word_count": 1377,
+    "hashes": {
+      "src/pages/prepare-pdf-for-ai.html": "a3bed7f678ed7efd727dd0272301752a051a540e5b7e91bf2ea6cb8d540e2d2c"
+    }
+  },
+  "src/pages/psd-to-pdf.html": {
+    "size": 16009,
+    "mtime_ns": 1782420256929294300,
+    "word_count": 1284,
+    "hashes": {
+      "src/pages/psd-to-pdf.html": "855b3676e4eaf550762fbeb69fa4da6f232f887932400465c18376489debaca9"
+    }
+  },
+  "src/pages/rasterize-pdf.html": {
+    "size": 17821,
+    "mtime_ns": 1782420256948295800,
+    "word_count": 1365,
+    "hashes": {
+      "src/pages/rasterize-pdf.html": "ddd962bd3e06e8d2040a3ec2810f7ccef4185c46e2169efafd6ae6bdcb722213"
+    }
+  },
+  "src/pages/remove-annotations.html": {
+    "size": 15738,
+    "mtime_ns": 1782420256974819300,
+    "word_count": 1225,
+    "hashes": {
+      "src/pages/remove-annotations.html": "29e20667624f54bed0c2f6c956d6f7ddcfac6b3030e8b5acccdc9d00473f7353"
+    }
+  },
+  "src/pages/remove-blank-pages.html": {
+    "size": 17093,
+    "mtime_ns": 1782420257000336900,
+    "word_count": 1330,
+    "hashes": {
+      "src/pages/remove-blank-pages.html": "195ffbc8d93533051c58a3d6c3715b769ac3711fc94e832a184cbe62953b3884"
+    }
+  },
+  "src/pages/remove-metadata.html": {
+    "size": 16120,
+    "mtime_ns": 1782420257023339000,
+    "word_count": 1269,
+    "hashes": {
+      "src/pages/remove-metadata.html": "20441032e6980192aefda7b63edbaa83ae84b6aa1869d5a379817cb103e7da49"
+    }
+  },
+  "src/pages/remove-restrictions.html": {
+    "size": 16881,
+    "mtime_ns": 1782420257050336500,
+    "word_count": 1303,
+    "hashes": {
+      "src/pages/remove-restrictions.html": "4491d6a74d9c308a152d11e847d41648878c7b587c86dff8ccc4705edfde374c"
+    }
+  },
+  "src/pages/repair-pdf.html": {
+    "size": 16094,
+    "mtime_ns": 1782420257076882100,
+    "word_count": 1265,
+    "hashes": {
+      "src/pages/repair-pdf.html": "2e5cfcac935d062e947f9e589725cea34a5df9e85d058e30a6dc549ef140d57a"
+    }
+  },
+  "src/pages/reverse-pages.html": {
+    "size": 16122,
+    "mtime_ns": 1782420257100995700,
+    "word_count": 1282,
+    "hashes": {
+      "src/pages/reverse-pages.html": "462224a018d08cb0eb1bc4647a1d650b91d46da5826cdcf43f92525be1b5e085"
+    }
+  },
+  "src/pages/rotate-custom.html": {
+    "size": 17136,
+    "mtime_ns": 1782420257124994400,
+    "word_count": 1334,
+    "hashes": {
+      "src/pages/rotate-custom.html": "708558637594e4a5f5f25743aee3a5d8f05251f4a7b708cc16ae11a2adba2837"
+    }
+  },
+  "src/pages/rotate-pdf.html": {
+    "size": 16829,
+    "mtime_ns": 1782420257155995700,
+    "word_count": 1321,
+    "hashes": {
+      "src/pages/rotate-pdf.html": "eccc0cbeaa3ec0a31b175e2373fc75b302cb9fdf8046c7891e87ac68d78423db"
+    }
+  },
+  "src/pages/sanitize-pdf.html": {
+    "size": 20665,
+    "mtime_ns": 1782420257182301900,
+    "word_count": 1501,
+    "hashes": {
+      "src/pages/sanitize-pdf.html": "ffa579d1b5053a3012a055cfa7dbdce45417d8862969c707c1193210e89fff5a"
+    }
+  },
+  "src/pages/scanner-effect.html": {
+    "size": 24225,
+    "mtime_ns": 1782420257205301900,
+    "word_count": 1563,
+    "hashes": {
+      "src/pages/scanner-effect.html": "6d4d35640e60315864b51b780e98cff90237283445737afd18d06141037d3353"
+    }
+  },
+  "src/pages/sign-pdf.html": {
+    "size": 16225,
+    "mtime_ns": 1782420257232297500,
+    "word_count": 1291,
+    "hashes": {
+      "src/pages/sign-pdf.html": "041a0551060ee577c6d675d8571adc8e888e31c5b84718aa832f0ed14f4c5286"
+    }
+  },
+  "src/pages/split-pdf.html": {
+    "size": 25986,
+    "mtime_ns": 1782425204306728500,
+    "word_count": 1931,
+    "hashes": {
+      "src/pages/split-pdf.html": "cbd4b547120582fd708b447a1037f9f1709d2c871aebc2f1236b61789b69cf43"
+    }
+  },
+  "src/pages/svg-to-pdf.html": {
+    "size": 17019,
+    "mtime_ns": 1782420257282900300,
+    "word_count": 1361,
+    "hashes": {
+      "src/pages/svg-to-pdf.html": "4d99e8f02a67b15b5f5012a57a233287cbd6d5de73ab81119349a59af655ae99"
+    }
+  },
+  "src/pages/table-of-contents.html": {
+    "size": 18062,
+    "mtime_ns": 1782420257305538500,
+    "word_count": 1342,
+    "hashes": {
+      "src/pages/table-of-contents.html": "a544ac92a3d4dfec782f9347feff1aa9d59ba3ce234da08cbbb772bfbef81394"
+    }
+  },
+  "src/pages/text-color.html": {
+    "size": 15653,
+    "mtime_ns": 1782420257321552800,
+    "word_count": 1234,
+    "hashes": {
+      "src/pages/text-color.html": "7f27e09159171de06599cf7f6a27b493b26afede45e2bf3983bb4570942fcda4"
+    }
+  },
+  "src/pages/tiff-to-pdf.html": {
+    "size": 16891,
+    "mtime_ns": 1782420257342919200,
+    "word_count": 1335,
+    "hashes": {
+      "src/pages/tiff-to-pdf.html": "c16b4da56f5f020cf240463df6a0150619d42a0147de686df5e1e986b0244d23"
+    }
+  },
+  "src/pages/timestamp-pdf.html": {
+    "size": 17815,
+    "mtime_ns": 1782420257362924800,
+    "word_count": 1395,
+    "hashes": {
+      "src/pages/timestamp-pdf.html": "479dfe8581bfa3c6a86fec7ff8e96f32420c10f53fc4d8da8cc244fd542c7c03"
+    }
+  },
+  "src/pages/txt-to-pdf.html": {
+    "size": 23057,
+    "mtime_ns": 1782420257389556900,
+    "word_count": 1758,
+    "hashes": {
+      "src/pages/txt-to-pdf.html": "4d3ac237e70b0fd623ec3efd662249058d8c5fbb6522ec3ff5cc8777b768852b"
+    }
+  },
+  "src/pages/validate-signature-pdf.html": {
+    "size": 16004,
+    "mtime_ns": 1782420257406082800,
+    "word_count": 1213,
+    "hashes": {
+      "src/pages/validate-signature-pdf.html": "c676974e85d0c46a52c3c1bea318bd163ce55e22710cd0f3f7d2870ce6dd283f"
+    }
+  },
+  "src/pages/view-metadata.html": {
+    "size": 15796,
+    "mtime_ns": 1782420257424132100,
+    "word_count": 1246,
+    "hashes": {
+      "src/pages/view-metadata.html": "832f4bfe8f9c5fdb29a5980ea120ee533076df326ccbc85b13e44978273204a5"
+    }
+  },
+  "src/pages/wasm-settings.html": {
+    "size": 15673,
+    "mtime_ns": 1782420257437128300,
+    "word_count": 985,
+    "hashes": {
+      "src/pages/wasm-settings.html": "ac409cb249c76f6857f79d75d96c42192775724b675b73de2b15d5e092d1c999"
+    }
+  },
+  "src/pages/webp-to-pdf.html": {
+    "size": 17035,
+    "mtime_ns": 1782420257455165900,
+    "word_count": 1361,
+    "hashes": {
+      "src/pages/webp-to-pdf.html": "36fac4c01d60819ae51bc0ece7fa144b32b3430b5c9b070e8c6ac1e935809e88"
+    }
+  },
+  "src/pages/xml-to-pdf.html": {
+    "size": 15965,
+    "mtime_ns": 1782420257472162200,
+    "word_count": 1279,
+    "hashes": {
+      "src/pages/xml-to-pdf.html": "36f6c95eb2f7db2d857737039511f2c2e1ff469f573d47559cb469331ddac40d"
+    }
+  },
+  "src/pages/xps-to-pdf.html": {
+    "size": 16060,
+    "mtime_ns": 1782420257488196100,
+    "word_count": 1283,
+    "hashes": {
+      "src/pages/xps-to-pdf.html": "7bf1468c3e38e46ae6aaf512066b49f03628bdb366aafaa864054c762a738250"
+    }
+  },
+  "src/partials/footer-simple.html": {
+    "size": 481,
+    "mtime_ns": 1782420685588992900,
+    "word_count": 47,
+    "hashes": {
+      "src/partials/footer-simple.html": "5f15092f89dc08509b1bd2ca0a8a78f4f18d0b5da6c4e6eec49afcabefcc72dc"
+    }
+  },
+  "src/partials/footer.html": {
+    "size": 7393,
+    "mtime_ns": 1782151870284273800,
+    "word_count": 480,
+    "hashes": {
+      "src/partials/footer.html": "5b1795183b054202b3016896ed80eefc7097f4fd5ef22f34b2c9b601757c0ec0"
+    }
+  },
+  "src/partials/navbar-simple.html": {
+    "size": 1418,
+    "mtime_ns": 1782423083077827200,
+    "word_count": 160,
+    "hashes": {
+      "src/partials/navbar-simple.html": "d19e11ccdad26cacee271c72993be6086816441e6b2316152ee9a81c2b2f8d47"
+    }
+  },
+  "src/partials/navbar.html": {
+    "size": 6818,
+    "mtime_ns": 1782151870285819700,
+    "word_count": 454,
+    "hashes": {
+      "src/partials/navbar.html": "ae9eebe8de0a6a2fb29c7048cdf3666e92f2979b9aa66a0d81756ee8335fd448"
+    }
+  },
+  "src/partials/settings-modal.html": {
+    "size": 8513,
+    "mtime_ns": 1782151870285819700,
+    "word_count": 549,
+    "hashes": {
+      "src/partials/settings-modal.html": "295af760f5f0f9880cef73aa357e343fc3d21a8aa07f7d46cfb8ef467ad50a23"
+    }
+  },
+  "src/partials/warning-modal.html": {
+    "size": 1520,
+    "mtime_ns": 1782151870285819700,
+    "word_count": 110,
+    "hashes": {
+      "src/partials/warning-modal.html": "2f7adafb4ba4d0ee44d8efecdd0fd60c7764032913439c2605a928547c89e750"
+    }
+  },
+  "src/tests/comic-info.test.ts": {
+    "size": 13374,
+    "mtime_ns": 1782929904988827000,
+    "word_count": 1050
+  },
+  "src/tests/compare/diff-text-runs.test.ts": {
+    "size": 16837,
+    "mtime_ns": 1782151870286873800,
+    "word_count": 1554
+  },
+  "src/tests/compare/ocr-page.test.ts": {
+    "size": 2871,
+    "mtime_ns": 1782151870287866200,
+    "word_count": 231
+  },
+  "src/tests/compare/pair-pages.test.ts": {
+    "size": 1271,
+    "mtime_ns": 1782151870287866200,
+    "word_count": 123
+  },
+  "src/tests/compare/text-normalization.test.ts": {
+    "size": 903,
+    "mtime_ns": 1782151870288828000,
+    "word_count": 83
+  },
+  "src/tests/deduplicate-filename.test.ts": {
+    "size": 7565,
+    "mtime_ns": 1782151870288828000,
+    "word_count": 629
+  },
+  "src/tests/digital-sign-pdf.test.ts": {
+    "size": 5218,
+    "mtime_ns": 1782151870288828000,
+    "word_count": 436
+  },
+  "src/tests/email-to-pdf.test.ts": {
+    "size": 10483,
+    "mtime_ns": 1782151870290373800,
+    "word_count": 862
+  },
+  "src/tests/fix-page-size.test.ts": {
+    "size": 8630,
+    "mtime_ns": 1782151870290373800,
+    "word_count": 882
+  },
+  "src/tests/fixtures/sample.pdf": {
+    "size": 18810,
+    "mtime_ns": 1782151870291426300,
+    "word_count": 0,
+    "hashes": {
+      "src/tests/fixtures/sample.pdf": "3db412adcfe728c20d0401081d846ec2c38376440abb9ce29181ffb0038dd857"
+    }
+  },
+  "src/tests/flatten-annotations.test.ts": {
+    "size": 10422,
+    "mtime_ns": 1782151870291426300,
+    "word_count": 971
+  },
+  "src/tests/font-loader.test.ts": {
+    "size": 1057,
+    "mtime_ns": 1782151870291426300,
+    "word_count": 97
+  },
+  "src/tests/form-creator-extraction.test.ts": {
+    "size": 13600,
+    "mtime_ns": 1782151870292421200,
+    "word_count": 1143
+  },
+  "src/tests/helpers.test.ts": {
+    "size": 6692,
+    "mtime_ns": 1782151870292421200,
+    "word_count": 712
+  },
+  "src/tests/hocr-transform.test.ts": {
+    "size": 13546,
+    "mtime_ns": 1782151870292421200,
+    "word_count": 1485
+  },
+  "src/tests/i18n.test.ts": {
+    "size": 4031,
+    "mtime_ns": 1782151870293420200,
+    "word_count": 341
+  },
+  "src/tests/image-effects.test.ts": {
+    "size": 8483,
+    "mtime_ns": 1782151870293420200,
+    "word_count": 808
+  },
+  "src/tests/image-input-utils.test.ts": {
+    "size": 5770,
+    "mtime_ns": 1782151870293420200,
+    "word_count": 529
+  },
+  "src/tests/images-to-pdf-lib.test.ts": {
+    "size": 9614,
+    "mtime_ns": 1782151870293420200,
+    "word_count": 885
+  },
+  "src/tests/markdown-mermaid.test.ts": {
+    "size": 2421,
+    "mtime_ns": 1782151870293420200,
+    "word_count": 193
+  },
+  "src/tests/multi-tool-file-input.test.ts": {
+    "size": 3308,
+    "mtime_ns": 1782151870294965500,
+    "word_count": 263
+  },
+  "src/tests/ocr.test.ts": {
+    "size": 5997,
+    "mtime_ns": 1782151870295974100,
+    "word_count": 499
+  },
+  "src/tests/page-labels.test.ts": {
+    "size": 1438,
+    "mtime_ns": 1782151870295974100,
+    "word_count": 125
+  },
+  "src/tests/password-prompt.test.ts": {
+    "size": 38646,
+    "mtime_ns": 1782151870296981200,
+    "word_count": 3095
+  },
+  "src/tests/pdf-decrypt.test.ts": {
+    "size": 8323,
+    "mtime_ns": 1782151870296981200,
+    "word_count": 663
+  },
+  "src/tests/pdf-operations.test.ts": {
+    "size": 9358,
+    "mtime_ns": 1782151870296981200,
+    "word_count": 940
+  },
+  "src/tests/pdf-tools.test.ts": {
+    "size": 3019,
+    "mtime_ns": 1782151870297980700,
+    "word_count": 286
+  },
+  "src/tests/rotate-pdf-page.test.ts": {
+    "size": 12961,
+    "mtime_ns": 1782151870297980700,
+    "word_count": 994
+  },
+  "src/tests/rotation-state.test.ts": {
+    "size": 3653,
+    "mtime_ns": 1782151870297980700,
+    "word_count": 290
+  },
+  "src/tests/rotation-utils.test.ts": {
+    "size": 3528,
+    "mtime_ns": 1782151870297980700,
+    "word_count": 251
+  },
+  "src/tests/setup.ts": {
+    "size": 976,
+    "mtime_ns": 1782151870297980700,
+    "word_count": 105
+  },
+  "src/tests/split-pdf-helpers.test.ts": {
+    "size": 11826,
+    "mtime_ns": 1782425312316782100,
+    "word_count": 1329
+  },
+  "src/tests/state.test.ts": {
+    "size": 2346,
+    "mtime_ns": 1782151870300020500,
+    "word_count": 246
+  },
+  "src/tests/tesseract-runtime.test.ts": {
+    "size": 4144,
+    "mtime_ns": 1782929905004784000,
+    "word_count": 279
+  },
+  "src/tests/tiff-to-pdf.test.ts": {
+    "size": 8470,
+    "mtime_ns": 1782151870300020500,
+    "word_count": 913
+  },
+  "src/tests/timestamp-node.test.ts": {
+    "size": 4779,
+    "mtime_ns": 1782151870301077600,
+    "word_count": 498
+  },
+  "src/tests/timestamp-pdf-page.test.ts": {
+    "size": 6348,
+    "mtime_ns": 1782151870301077600,
+    "word_count": 531
+  },
+  "src/tests/timestamp-tsa.test.ts": {
+    "size": 1664,
+    "mtime_ns": 1782151870301077600,
+    "word_count": 145
+  },
+  "src/tests/tools.test.ts": {
+    "size": 2407,
+    "mtime_ns": 1782151870302067200,
+    "word_count": 248
+  },
+  "src/tests/watermark.test.ts": {
+    "size": 7231,
+    "mtime_ns": 1782151870302067200,
+    "word_count": 578
+  },
+  "src/tests/xml-to-pdf.test.ts": {
+    "size": 8583,
+    "mtime_ns": 1782151870302067200,
+    "word_count": 735
+  },
+  "src/tests/xss-replay.test.ts": {
+    "size": 13765,
+    "mtime_ns": 1782151870303076400,
+    "word_count": 1162
+  },
+  "src/types/coherentpdf.global.d.ts": {
+    "size": 65610,
+    "mtime_ns": 1782151870304075600,
+    "word_count": 9215
+  },
+  "src/types/globals.d.ts": {
+    "size": 462,
+    "mtime_ns": 1782151870304624100,
+    "word_count": 38
+  },
+  "src/types/markdown-it-plugins.d.ts": {
+    "size": 1443,
+    "mtime_ns": 1782151870304624100,
+    "word_count": 150
+  },
+  "src/types/vite-plugin-handlebars.d.ts": {
+    "size": 42,
+    "mtime_ns": 1782151870305666100,
+    "word_count": 3
+  },
+  "tasks/lessons.md": {
+    "size": 3647,
+    "mtime_ns": 1782151870305666100,
+    "word_count": 526,
+    "hashes": {
+      "tasks/lessons.md": "aeb80c740d12cbfed75025b12fc2f7a99941afcd644692a41ec062a597d1fc76"
+    }
+  },
+  "terms.html": {
+    "size": 11036,
+    "mtime_ns": 1785516088565696500,
+    "word_count": 1140,
+    "hashes": {
+      "terms.html": "168cd085b430a694556bf65dbb2782d1581a32a3daed2e762c7d2a553df8eda7"
+    }
+  },
+  "tools.html": {
+    "size": 21390,
+    "mtime_ns": 1782420257534197200,
+    "word_count": 1682,
+    "hashes": {
+      "tools.html": "7a13c6aedd3e0794fac883908250934f212253166da7574f784e9e539294a359"
+    }
+  },
+  "tsconfig.json": {
+    "size": 1933,
+    "mtime_ns": 1782151870307628300,
+    "word_count": 182,
+    "hashes": {
+      "tsconfig.json": "01ac0e0a0d9a9d5ed8b90a0156d0ce2b8022787e8c06a814b641ae83a4086fbf"
+    }
+  },
+  "vite.config.ts": {
+    "size": 26659,
+    "mtime_ns": 1782407347868272700,
+    "word_count": 1882
+  },
+  "vitest.config.ts": {
+    "size": 1229,
+    "mtime_ns": 1782151870328936000,
+    "word_count": 116
+  },
+  "wrangler.json": {
+    "size": 119,
+    "mtime_ns": 1782151870328936000,
+    "word_count": 11,
+    "hashes": {
+      "wrangler.json": "f8565f66d09eab090516dc2afe663f4468119a1135348ad67b8109b6d36dec03"
+    }
+  }
+}

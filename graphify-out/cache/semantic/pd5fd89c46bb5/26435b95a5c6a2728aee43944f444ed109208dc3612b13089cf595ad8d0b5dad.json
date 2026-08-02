@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_compress_pdf",
+      "label": "Compress PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/compress-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_compress_pdf",
+      "target": "src_js_logic_compress_pdf_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/compress-pdf.html",
+      "source_location": "line 568",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_compress_pdf",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/compress-pdf.html",
+      "source_location": "line 85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_compress_pdf",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/compress-pdf.html",
+      "source_location": "line 564",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "multi_file_batch_upload_tools",
+      "label": "Tool pages sharing the multi-file batch-upload UI pattern (add-more-btn / clear-files-btn controls over a file list)",
+      "nodes": [
+        "src_pages_bmp_to_pdf",
+        "src_pages_cbz_to_pdf",
+        "src_pages_csv_to_pdf",
+        "src_pages_deskew_pdf",
+        "src_pages_bates_numbering",
+        "src_pages_decrypt_pdf",
+        "src_pages_compress_pdf"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/compress-pdf.html"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_apache_apache_http_server",
+      "label": "Apache HTTP Server",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_apache_mod_rewrite",
+      "label": "mod_rewrite",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_apache_htaccess",
+      "label": "Apache .htaccess Routing Config",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_apache_wasm_mime_type",
+      "label": "WASM MIME Type Config (Apache)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_apache_mjs_mime_fix",
+      "label": ".mjs MIME Type Fix (Apache)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Apache's stock mime.types doesn't map .mjs to application/javascript by default, causing the bundled ES-module PDF viewer (Sign PDF, Form Filler) to fail strict MIME checking; fixed by adding AddType application/javascript .mjs."
+    },
+    {
+      "id": "docs_self_hosting_apache_sharedarraybuffer_headers",
+      "label": "SharedArrayBuffer Headers (Apache)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "LibreOffice WASM (Word/ODT/Excel conversion) requires SharedArrayBuffer, which needs COEP/COOP headers plus a secure context; LAN IP HTTP origins don't count as secure even with headers present."
+    },
+    {
+      "id": "docs_self_hosting_apache_subdirectory_deployment",
+      "label": "Apache Subdirectory Deployment",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_apache_apache_http_server",
+      "target": "docs_self_hosting_apache_mod_rewrite",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_apache_htaccess",
+      "target": "docs_self_hosting_apache_mod_rewrite",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_apache_apache_http_server",
+      "target": "docs_self_hosting_apache_wasm_mime_type",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_apache_apache_http_server",
+      "target": "docs_self_hosting_apache_mjs_mime_fix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_apache_apache_http_server",
+      "target": "docs_self_hosting_apache_sharedarraybuffer_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_apache_htaccess",
+      "target": "docs_self_hosting_apache_subdirectory_deployment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/apache.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

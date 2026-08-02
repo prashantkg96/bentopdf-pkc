@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_bookmark",
+      "label": "Bookmark editor tool page",
+      "file_type": "code",
+      "source_file": "src/pages/bookmark.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_bookmark",
+      "target": "src_js_logic_bookmark_pdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/bookmark.html",
+      "source_location": "line 850 (note: logic file named bookmark-pdf.ts, not the usual '<slug>-page.ts' pattern)",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_bookmark",
+      "target": "src_css_bookmark",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/bookmark.html",
+      "source_location": "line 75 (link href=\"../../src/css/bookmark.css\")",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_bookmark",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/bookmark.html",
+      "source_location": "line 82",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_bookmark",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/bookmark.html",
+      "source_location": "line 846",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

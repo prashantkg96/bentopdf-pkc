@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_netlify_toml",
+      "label": "netlify.toml Config",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_netlify_headers",
+      "label": "Netlify COOP/COEP Headers Block",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_netlify_large_media",
+      "label": "Netlify Large Media (Git LFS for WASM)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_netlify_redirects",
+      "label": "Netlify SPA Redirects",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_netlify_toml",
+      "target": "docs_self_hosting_netlify_headers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_netlify_toml",
+      "target": "docs_self_hosting_netlify_redirects",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_netlify_large_media",
+      "target": "docs_self_hosting_netlify_toml",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_netlify_headers",
+      "target": "docs_self_hosting_cloudflare_headers_file",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/netlify.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

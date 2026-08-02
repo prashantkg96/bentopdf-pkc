@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_cbz_to_pdf",
+      "label": "CBZ to PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/cbz-to-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_cbz_to_pdf",
+      "target": "src_js_logic_cbz_to_pdf_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/cbz-to-pdf.html",
+      "source_location": "line 370",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_cbz_to_pdf",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/cbz-to-pdf.html",
+      "source_location": "line 85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_cbz_to_pdf",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/cbz-to-pdf.html",
+      "source_location": "line 366",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

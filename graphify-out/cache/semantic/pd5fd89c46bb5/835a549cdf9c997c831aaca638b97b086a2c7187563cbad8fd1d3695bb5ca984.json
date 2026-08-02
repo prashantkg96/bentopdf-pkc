@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_edit_metadata_page",
+      "label": "Edit Metadata tool page",
+      "file_type": "code",
+      "source_file": "src/pages/edit-metadata.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_edit_metadata_page",
+      "target": "src_js_logic_edit_metadata_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/edit-metadata.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_workflow",
+      "label": "pdf-workflow.html (visual PDF workflow builder page, Rete.js canvas)",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-workflow.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_js_workflow",
+      "label": "PDF workflow engine module (src/js/workflow/*) \u2014 Rete.js node/pipeline runtime backing pdf-workflow.html",
+      "file_type": "concept",
+      "source_file": "src/pages/pdf-workflow.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_workflow",
+      "target": "src_js_logic_pdf_workflow_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-workflow.html",
+      "source_location": "script[type=module][src='/src/js/logic/pdf-workflow-page.ts']",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_pdf_workflow",
+      "target": "src_js_workflow",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/pdf-workflow.html",
+      "source_location": "#rete-container canvas + #toolbox-categories node palette imply a src/js/workflow/* engine",
+      "weight": 1.0
+    },
+    {
+      "source": "src_js_logic_pdf_workflow_page",
+      "target": "src_js_workflow",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/pdf-workflow.html",
+      "source_location": "pdf-workflow-page.ts is the page entry point that is expected to orchestrate the Rete.js/workflow engine module",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdf_workflow_builder_pattern",
+      "label": "Visual PDF workflow builder: page shell + page-logic entry point + underlying workflow/node-graph engine",
+      "nodes": [
+        "src_pages_pdf_workflow",
+        "src_js_logic_pdf_workflow_page",
+        "src_js_workflow"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/pdf-workflow.html"
+    }
+  ]
+}

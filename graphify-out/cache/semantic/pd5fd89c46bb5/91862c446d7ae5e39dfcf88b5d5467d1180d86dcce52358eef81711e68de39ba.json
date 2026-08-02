@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_ods_to_pdf",
+      "label": "ODS to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_ods_to_pdf_libreoffice_engine",
+      "label": "LibreOffice-based browser engine (Calc)",
+      "file_type": "concept",
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_ods_to_pdf_ods_format",
+      "label": "OpenDocument Spreadsheet (.ods) format",
+      "file_type": "concept",
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_ods_to_pdf",
+      "target": "docs_tools_ods_to_pdf_libreoffice_engine",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_ods_to_pdf",
+      "target": "docs_tools_ods_to_pdf_ods_format",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_ods_to_pdf",
+      "target": "docs_tools_odg_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_ods_to_pdf",
+      "target": "docs_tools_odp_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_ods_to_pdf",
+      "target": "docs_tools_xml_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/ods-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

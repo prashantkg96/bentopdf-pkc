@@ -1,0 +1,123 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_cors_proxy_zgapdfsigner",
+      "label": "zgapdfsigner Library",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cors_proxy_digital_signature",
+      "label": "Digital Signature CORS Proxy",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cors_proxy_cloudflare_worker",
+      "label": "Cloudflare Workers CORS Proxy Option",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cors_proxy_custom_backend",
+      "label": "Custom Backend Proxy Option",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cors_proxy_hmac_signatures",
+      "label": "HMAC Signatures (Proxy Abuse Deterrent)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cors_proxy_allowed_origins",
+      "label": "ALLOWED_ORIGINS Config",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_cors_proxy_digital_signature",
+      "target": "docs_self_hosting_cors_proxy_zgapdfsigner",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cors_proxy_cloudflare_worker",
+      "target": "docs_self_hosting_cors_proxy_allowed_origins",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cors_proxy_cloudflare_worker",
+      "target": "docs_self_hosting_cors_proxy_hmac_signatures",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cors_proxy_custom_backend",
+      "target": "docs_self_hosting_cors_proxy_digital_signature",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cors_proxy_cloudflare_worker",
+      "target": "docs_self_hosting_cors_proxy_digital_signature",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cors-proxy.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

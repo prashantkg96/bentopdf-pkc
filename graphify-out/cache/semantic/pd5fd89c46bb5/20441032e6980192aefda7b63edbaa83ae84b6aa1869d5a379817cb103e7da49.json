@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_remove_metadata",
+      "label": "remove-metadata.html (Remove Metadata tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/remove-metadata.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_remove_metadata",
+      "target": "src_js_logic_remove_metadata_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/remove-metadata.html",
+      "source_location": "script[type=module][src='/src/js/logic/remove-metadata-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdf_cleanup_sanitization_family",
+      "label": "PDF cleanup/sanitization tools (strip annotations, metadata, restrictions, blank pages)",
+      "nodes": [
+        "src_pages_remove_annotations",
+        "src_pages_remove_metadata",
+        "src_pages_remove_restrictions",
+        "src_pages_remove_blank_pages"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/remove-metadata.html"
+    }
+  ]
+}

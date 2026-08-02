@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_divide_pages_page",
+      "label": "Divide Pages tool page",
+      "file_type": "code",
+      "source_file": "src/pages/divide-pages.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_divide_pages_page",
+      "target": "src_js_logic_divide_pages_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/divide-pages.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "page_geometry_cluster",
+      "label": "Page geometry/structure manipulation tools (divide, resize, extract pages)",
+      "nodes": [
+        "src_pages_divide_pages_page",
+        "src_pages_fix_page_size_page",
+        "src_pages_extract_pages_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/pages/divide-pages.html"
+    }
+  ]
+}

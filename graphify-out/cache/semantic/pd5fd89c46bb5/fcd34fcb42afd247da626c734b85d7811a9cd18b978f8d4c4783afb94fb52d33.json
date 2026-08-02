@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_to_tiff",
+      "label": "pdf-to-tiff.html (PDF to TIFF tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-to-tiff.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_to_tiff",
+      "target": "src_js_logic_pdf_to_tiff_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-to-tiff.html",
+      "source_location": "script[type=module][src='/src/js/logic/pdf-to-tiff-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

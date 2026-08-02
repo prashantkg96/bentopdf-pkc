@@ -1,0 +1,261 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_docker_self_hosted_build",
+      "label": "Self-Hosted Build (bentopdf-simple)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_commercial_build",
+      "label": "Commercial Build (bentopdf)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_docker_compose",
+      "label": "Docker Compose Deployment",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_traefik",
+      "label": "Traefik Reverse Proxy Integration",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_caddy",
+      "label": "Caddy Reverse Proxy Integration",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_podman_quadlet",
+      "label": "Podman Quadlet (Systemd Integration)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_csp",
+      "label": "Content-Security-Policy (Build-Time Generated)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "CSP script-src/connect-src/font-src are generated at build time from VITE_* URL vars, including 'unsafe-eval' because LibreOffice WASM compiles dispatch code via new Function(); air-gapped overrides replace rather than append CDN origins."
+    },
+    {
+      "id": "docs_self_hosting_docker_disable_tools",
+      "label": "DISABLE_TOOLS / config.json Tool Disabling",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_wasm_env_vars",
+      "label": "VITE_WASM_*/VITE_TESSERACT_* Env Vars",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_airgap_workflow",
+      "label": "Full Air-Gapped Docker Workflow",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "WASM URLs are baked in at build time but files are fetched by the user's browser at runtime, so air-gapped networks must pre-download packages and host them on an internal server reachable by the browser."
+    },
+    {
+      "id": "docs_self_hosting_docker_puid_pgid",
+      "label": "Custom User ID (PUID/PGID, Dockerfile.nonroot)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_docker_editor_disabled_categories",
+      "label": "editorDisabledCategories Config",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_docker_csp",
+      "target": "docs_self_hosting_docker_wasm_env_vars",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_disable_tools",
+      "target": "docs_self_hosting_docker_editor_disabled_categories",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_airgap_workflow",
+      "target": "docs_self_hosting_docker_wasm_env_vars",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_puid_pgid",
+      "target": "docs_self_hosting_docker_self_hosted_build",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_traefik",
+      "target": "docs_self_hosting_docker_self_hosted_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_caddy",
+      "target": "docs_self_hosting_docker_self_hosted_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_podman_quadlet",
+      "target": "docs_self_hosting_docker_self_hosted_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_self_hosted_build",
+      "target": "docs_self_hosting_docker_commercial_build",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_wasm_env_vars",
+      "target": "docs_licensing_pymupdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_wasm_env_vars",
+      "target": "docs_licensing_ghostscript",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_wasm_env_vars",
+      "target": "docs_licensing_coherentpdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_docker_self_hosted_build",
+      "target": "docs_self_hosting_nginx_server_config",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/docker.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_rotate_pdf",
+      "label": "rotate-pdf.html (Rotate PDF tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/rotate-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_js_logic_rotate_pdf_page",
+      "label": "rotate-pdf-page.ts (logic module)",
+      "file_type": "code",
+      "source_file": "src/pages/rotate-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_rotate_pdf",
+      "target": "src_js_logic_rotate_pdf_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/rotate-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_rotate_pdf",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/rotate-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_rotate_pdf",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/rotate-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_rotate_pdf",
+      "target": "src_pages_split_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/rotate-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pages_recommending_rotate_pdf",
+      "label": "Tool pages that cross-link to Rotate PDF as a related tool",
+      "nodes": [
+        "src_pages_rotate_pdf",
+        "src_pages_sanitize_pdf",
+        "src_pages_scanner_effect",
+        "src_pages_sign_pdf",
+        "src_pages_svg_to_pdf",
+        "src_pages_table_of_contents",
+        "src_pages_text_color",
+        "src_pages_tiff_to_pdf",
+        "src_pages_txt_to_pdf",
+        "src_pages_webp_to_pdf",
+        "src_pages_xml_to_pdf",
+        "src_pages_xps_to_pdf"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/rotate-pdf.html"
+    }
+  ]
+}

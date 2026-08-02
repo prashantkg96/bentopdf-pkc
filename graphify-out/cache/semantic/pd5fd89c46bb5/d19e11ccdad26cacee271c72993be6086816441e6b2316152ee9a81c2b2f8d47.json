@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {
+      "id": "src_partials_navbar_simple",
+      "label": "navbar-simple.html partial (shared PKC top-pill nav shell)",
+      "file_type": "code",
+      "source_file": "src/partials/navbar-simple.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": []
+}

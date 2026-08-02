@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_word_to_pdf_word_to_pdf",
+      "label": "Word to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_word_to_pdf_libreoffice_engine",
+      "label": "Browser-based LibreOffice conversion engine (DOC/DOCX/ODT/RTF)",
+      "file_type": "concept",
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_word_to_pdf_word_to_pdf",
+      "target": "docs_tools_odt_to_pdf_odt_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_word_to_pdf_word_to_pdf",
+      "target": "docs_tools_rtf_to_pdf_rtf_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_word_to_pdf_word_to_pdf",
+      "target": "docs_tools_excel_to_pdf_excel_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_word_to_pdf_word_to_pdf",
+      "target": "docs_tools_powerpoint_to_pdf_powerpoint_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_word_to_pdf_word_to_pdf",
+      "target": "docs_tools_word_to_pdf_libreoffice_engine",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_word_to_pdf_libreoffice_engine",
+      "target": "docs_tools_wpd_to_pdf_libreoffice_engine",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/tools/word-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "libreoffice_browser_conversion_pattern",
+      "label": "Shared browser-based LibreOffice conversion pattern across legacy office format converters",
+      "nodes": [
+        "docs_tools_vsd_to_pdf_libreoffice_engine",
+        "docs_tools_word_to_pdf_libreoffice_engine",
+        "docs_tools_wpd_to_pdf_libreoffice_engine",
+        "docs_tools_wps_to_pdf_libreoffice_engine"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/tools/word-to-pdf.md"
+    }
+  ]
+}

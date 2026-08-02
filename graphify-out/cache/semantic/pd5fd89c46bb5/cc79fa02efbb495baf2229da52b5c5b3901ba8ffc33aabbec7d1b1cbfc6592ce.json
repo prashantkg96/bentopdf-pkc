@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_to_text",
+      "label": "PDF to Text",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_pdf_to_text_pymupdf",
+      "label": "PyMuPDF (used by PDF to Text)",
+      "file_type": "concept",
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_to_text",
+      "target": "docs_tools_pdf_to_text_pymupdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_text",
+      "target": "docs_tools_pdf_to_markdown",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_text",
+      "target": "docs_tools_prepare_pdf_for_ai",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_text",
+      "target": "docs_tools_pdf_to_docx",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_text_pymupdf",
+      "target": "docs_tools_prepare_pdf_for_ai_pymupdf",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_text_pymupdf",
+      "target": "docs_tools_psd_to_pdf_pymupdf",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "docs/tools/pdf-to-text.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

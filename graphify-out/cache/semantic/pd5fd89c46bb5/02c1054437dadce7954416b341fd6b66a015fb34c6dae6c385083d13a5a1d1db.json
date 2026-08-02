@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "docs_index_bentopdf",
+      "label": "BentoPDF",
+      "file_type": "document",
+      "source_file": "docs/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_index_offline_ocr",
+      "label": "Offline OCR (Air-Gapped)",
+      "file_type": "rationale",
+      "source_file": "docs/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "OCR in air-gapped/offline self-hosted environments needs more than the Tesseract worker and traineddata files -- searchable PDF output also needs OCR text-layer fonts served internally via VITE_OCR_FONT_BASE_URL and the bundled ocr-fonts/ directory."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_index_bentopdf",
+      "target": "docs_index_offline_ocr",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_index_offline_ocr",
+      "target": "docs_self_hosting_index_self_hosting_guide",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_index_offline_ocr",
+      "target": "docs_self_hosting_docker_wasm_env_vars",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_index_offline_ocr",
+      "target": "docs_self_hosting_index_airgap_deployment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/index.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

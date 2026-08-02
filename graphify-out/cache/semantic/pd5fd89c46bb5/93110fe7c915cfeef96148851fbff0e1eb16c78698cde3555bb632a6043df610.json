@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_deskew_pdf_deskew_pdf",
+      "label": "Deskew PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_deskew_pdf_opencv",
+      "label": "OpenCV (skew-angle detection via dominant line angles)",
+      "file_type": "concept",
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_deskew_pdf_deskew_pdf",
+      "target": "docs_tools_deskew_pdf_opencv",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_deskew_pdf_deskew_pdf",
+      "target": "docs_tools_rasterize_pdf_rasterize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_deskew_pdf_deskew_pdf",
+      "target": "docs_tools_compress_pdf_compress_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_deskew_pdf_deskew_pdf",
+      "target": "docs_tools_repair_pdf_repair_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_deskew_pdf_opencv",
+      "target": "docs_tools_crop_pdf_cropperjs",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "docs/tools/deskew-pdf.md",
+      "source_location": null,
+      "weight": 0.6
+    }
+  ],
+  "hyperedges": []
+}

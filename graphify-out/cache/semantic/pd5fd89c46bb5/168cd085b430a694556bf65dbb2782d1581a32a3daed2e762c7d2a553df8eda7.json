@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "terms_page",
+      "label": "Terms and Conditions Page",
+      "file_type": "document",
+      "source_file": "terms.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "terms_page_commercial_license_terms",
+      "label": "Commercial License Terms (Section 10)",
+      "file_type": "concept",
+      "source_file": "terms.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "terms_page_liability_disclaimer",
+      "label": "Liability Disclaimer & $0.00 Cap",
+      "file_type": "rationale",
+      "source_file": "terms.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Liability is capped at $0.00 given the service is free, and provided 'as is' because file corruption/loss during conversion, while unlikely, is possible and users are advised to keep backups."
+    },
+    {
+      "id": "terms_page_governing_law",
+      "label": "Governing Law: India",
+      "file_type": "concept",
+      "source_file": "terms.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "terms_page",
+      "target": "terms_page_commercial_license_terms",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "terms.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "terms_page_commercial_license_terms",
+      "target": "licensing_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "terms.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "terms_page_commercial_license_terms",
+      "target": "licensing_page_commercial_license",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "terms.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "terms_page",
+      "target": "terms_page_liability_disclaimer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "terms.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "terms_page",
+      "target": "terms_page_governing_law",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "terms.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "terms_page",
+      "target": "contact_page",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.3,
+      "source_file": "terms.html",
+      "source_location": null,
+      "weight": 0.3
+    }
+  ],
+  "hyperedges": []
+}

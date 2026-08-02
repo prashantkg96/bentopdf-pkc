@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_decrypt_pdf_decrypt_pdf",
+      "label": "Decrypt PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/decrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_decrypt_pdf_decrypt_pdf",
+      "target": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/decrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_decrypt_pdf_decrypt_pdf",
+      "target": "docs_tools_remove_restrictions_remove_restrictions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/decrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_decrypt_pdf_decrypt_pdf",
+      "target": "docs_tools_change_permissions_change_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/decrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

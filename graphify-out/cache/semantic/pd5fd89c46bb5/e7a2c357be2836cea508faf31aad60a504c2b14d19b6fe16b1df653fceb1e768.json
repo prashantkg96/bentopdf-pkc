@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_rtf_to_pdf",
+      "label": "RTF to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/rtf-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_rtf_to_pdf_libreoffice",
+      "label": "LibreOffice engine (used by RTF to PDF)",
+      "file_type": "concept",
+      "source_file": "docs/tools/rtf-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_rtf_to_pdf",
+      "target": "docs_tools_rtf_to_pdf_libreoffice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/rtf-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_rtf_to_pdf",
+      "target": "docs_tools_word_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/rtf-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_rtf_to_pdf",
+      "target": "docs_tools_odt_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/rtf-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_rtf_to_pdf",
+      "target": "docs_tools_txt_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/rtf-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_svg_to_pdf_svg_to_pdf",
+      "label": "SVG to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_svg_to_pdf_pdf_lib",
+      "label": "pdf-lib embedding pipeline (SVG to PDF)",
+      "file_type": "concept",
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_svg_to_pdf_svg_to_pdf",
+      "target": "docs_tools_image_to_pdf_image_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_svg_to_pdf_svg_to_pdf",
+      "target": "docs_tools_png_to_pdf_png_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_svg_to_pdf_svg_to_pdf",
+      "target": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_svg_to_pdf_svg_to_pdf",
+      "target": "docs_tools_svg_to_pdf_pdf_lib",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_svg_to_pdf_pdf_lib",
+      "target": "docs_tools_webp_to_pdf_pdf_lib",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_svg_to_pdf_pdf_lib",
+      "target": "docs_tools_tiff_to_pdf_pdf_lib",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/tools/svg-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "canvas_rasterize_pdflib_embed_pattern",
+      "label": "Canvas rasterize-to-PNG then pdf-lib embed pattern shared by image-format converters",
+      "nodes": [
+        "docs_tools_svg_to_pdf_pdf_lib",
+        "docs_tools_tiff_to_pdf_pdf_lib",
+        "docs_tools_webp_to_pdf_pdf_lib"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/tools/svg-to-pdf.md"
+    }
+  ]
+}

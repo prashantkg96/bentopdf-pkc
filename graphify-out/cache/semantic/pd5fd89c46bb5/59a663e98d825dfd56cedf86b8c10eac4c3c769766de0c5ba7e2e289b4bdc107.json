@@ -1,0 +1,220 @@
+{
+  "nodes": [
+    {
+      "id": "translation_doc",
+      "label": "TRANSLATION.md",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "translation_doc_i18next_framework",
+      "label": "i18next Internationalization Framework",
+      "file_type": "concept",
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "translation_doc_i18n_architecture",
+      "label": "Static Pre-Rendering i18n Architecture",
+      "file_type": "rationale",
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Uses build-time static pre-rendering (generate-i18n-pages.mjs writes dist/{lang}/ files) rather than client-side-only i18n switching, specifically to make every locale SEO-crawlable."
+    },
+    {
+      "id": "translation_doc_data_i18n_mechanism",
+      "label": "data-i18n HTML Attribute Mechanism",
+      "file_type": "concept",
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "translation_doc_supported_languages",
+      "label": "20 Supported Languages List",
+      "file_type": "concept",
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "translation_doc",
+      "target": "translation_doc_i18next_framework",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "translation_doc_i18n_architecture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc_i18n_architecture",
+      "target": "readme_generate_i18n_pages_script",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "translation_doc_supported_languages",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "translation_doc_data_i18n_mechanism",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "about_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "contact_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "faq_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc",
+      "target": "index_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc_data_i18n_mechanism",
+      "target": "about_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc_data_i18n_mechanism",
+      "target": "contact_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc_data_i18n_mechanism",
+      "target": "faq_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc_data_i18n_mechanism",
+      "target": "index_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "translation_doc_data_i18n_mechanism",
+      "target": "licensing_page",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "TRANSLATION.md",
+      "source_location": null,
+      "weight": 0.95
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "data_i18n_translation_pages",
+      "label": "Pages Implementing the data-i18n Translation Mechanism",
+      "nodes": [
+        "translation_doc_data_i18n_mechanism",
+        "about_page",
+        "contact_page",
+        "faq_page",
+        "index_page",
+        "licensing_page"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TRANSLATION.md"
+    }
+  ]
+}

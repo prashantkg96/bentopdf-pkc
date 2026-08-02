@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_multi_tool",
+      "label": "PDF Multi Tool page",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-multi-tool.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_multi_tool",
+      "target": "src_js_logic_pdf_multi_tool",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-multi-tool.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_pdf_multi_tool",
+      "target": "src_pages_organize_pdf",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/pdf-multi-tool.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_pdf_multi_tool",
+      "target": "src_pages_merge_pdf",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/pages/pdf-multi-tool.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

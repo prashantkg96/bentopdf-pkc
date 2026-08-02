@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "public_pdfjs_viewer_viewer",
+      "label": "PDF.js Viewer (viewer.html)",
+      "file_type": "code",
+      "source_file": "public/pdfjs-viewer/viewer.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_pdfjs_viewer_viewer",
+      "target": "public_pdfjs_viewer_pdf_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/pdfjs-viewer/viewer.html",
+      "source_location": "line 32",
+      "weight": 1.0
+    },
+    {
+      "source": "public_pdfjs_viewer_viewer",
+      "target": "public_pdfjs_viewer_viewer_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/pdfjs-viewer/viewer.html",
+      "source_location": "line 36",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

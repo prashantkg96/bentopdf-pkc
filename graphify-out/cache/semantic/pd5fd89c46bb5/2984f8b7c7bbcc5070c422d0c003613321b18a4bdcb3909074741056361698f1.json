@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_to_zip",
+      "label": "PDFs to ZIP",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-to-zip.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_to_zip",
+      "target": "docs_tools_merge_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-zip.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_zip",
+      "target": "docs_tools_split_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-zip.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_zip",
+      "target": "docs_tools_compress_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-zip.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

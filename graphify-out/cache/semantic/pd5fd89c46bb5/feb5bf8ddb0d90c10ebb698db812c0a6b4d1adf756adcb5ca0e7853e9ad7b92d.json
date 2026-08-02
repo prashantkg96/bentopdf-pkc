@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "about_page",
+      "label": "About Page",
+      "file_type": "document",
+      "source_file": "about.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "about_page",
+      "target": "readme_pkc_pdf_tools",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "about.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_page",
+      "target": "readme_privacy_first_architecture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "about.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_page",
+      "target": "privacy_page_client_side_principle",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "about.html",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": []
+}

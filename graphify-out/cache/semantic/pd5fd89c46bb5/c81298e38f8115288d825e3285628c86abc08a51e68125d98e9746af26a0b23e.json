@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_merge_pdf",
+      "label": "Merge PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/merge-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_merge_pdf",
+      "target": "src_js_logic_merge_pdf_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/merge-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_merge_pdf",
+      "target": "src_pages_organize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/merge-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdf_page_composition_tools",
+      "label": "PDF page arrangement/composition tool cluster (merge, organize, n-up, booklet)",
+      "nodes": [
+        "src_pages_merge_pdf",
+        "src_pages_organize_pdf",
+        "src_pages_n_up_pdf",
+        "src_pages_pdf_booklet"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/merge-pdf.html"
+    }
+  ]
+}

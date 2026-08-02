@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_reverse_pages",
+      "label": "reverse-pages.html (Reverse PDF Pages tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/reverse-pages.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_reverse_pages",
+      "target": "src_js_logic_reverse_pages_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/reverse-pages.html",
+      "source_location": "script[type=module][src='/src/js/logic/reverse-pages-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_cloudflare_pages",
+      "label": "Cloudflare Pages",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cloudflare_headers_file",
+      "label": "Cloudflare Pages _headers Config",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "COEP/COOP/CORP headers required for SharedArrayBuffer so LibreOffice WASM (Word/ODT/Excel/PowerPoint conversion) can initialize."
+    },
+    {
+      "id": "docs_self_hosting_cloudflare_redirects_file",
+      "label": "Cloudflare Pages _redirects Config",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cloudflare_cors_proxy_worker",
+      "label": "CORS Proxy Worker (Digital Signature)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cloudflare_wrangler",
+      "label": "Wrangler CLI",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_cloudflare_rate_limiting_kv",
+      "label": "Rate Limiting via Cloudflare KV",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_cloudflare_pages",
+      "target": "docs_self_hosting_cloudflare_headers_file",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cloudflare_pages",
+      "target": "docs_self_hosting_cloudflare_redirects_file",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cloudflare_cors_proxy_worker",
+      "target": "docs_self_hosting_cloudflare_wrangler",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cloudflare_cors_proxy_worker",
+      "target": "docs_self_hosting_cloudflare_rate_limiting_kv",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cloudflare_cors_proxy_worker",
+      "target": "docs_self_hosting_cors_proxy_digital_signature",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_cloudflare_cors_proxy_worker",
+      "target": "docs_self_hosting_cors_proxy_cloudflare_worker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/cloudflare.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

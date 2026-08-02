@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_add_stamps",
+      "label": "Add Stamps tool page",
+      "file_type": "code",
+      "source_file": "src/pages/add-stamps.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_add_stamps",
+      "target": "src_js_logic_add_stamps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/add-stamps.html",
+      "source_location": "line 348 (note: logic file lacks the usual '-page' suffix seen on sibling tool pages)",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_add_stamps",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/add-stamps.html",
+      "source_location": "line 81",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_add_stamps",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/add-stamps.html",
+      "source_location": "line 344",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

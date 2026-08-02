@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_prepare_pdf_for_ai",
+      "label": "prepare-pdf-for-ai.html (Prepare PDF for AI / LlamaIndex JSON tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/prepare-pdf-for-ai.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_prepare_pdf_for_ai",
+      "target": "src_js_logic_prepare_pdf_for_ai_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/prepare-pdf-for-ai.html",
+      "source_location": "script[type=module][src='/src/js/logic/prepare-pdf-for-ai-page.ts']",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_prepare_pdf_for_ai",
+      "target": "src_pages_pdf_to_json",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/pages/prepare-pdf-for-ai.html",
+      "source_location": "both extract PDF content into structured JSON (LlamaIndex Document JSON vs generic PDF-to-JSON), but for different downstream consumers (RAG/LLM pipelines vs generic data export) and not cross-linked in either page's Related Tools section",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

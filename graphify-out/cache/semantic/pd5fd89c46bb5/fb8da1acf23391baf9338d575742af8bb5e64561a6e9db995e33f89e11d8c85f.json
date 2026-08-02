@@ -1,0 +1,114 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_aws_s3",
+      "label": "AWS S3 (Static Hosting)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_aws_cloudfront",
+      "label": "AWS CloudFront Distribution",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_aws_response_headers_policy",
+      "label": "CloudFront Response Headers Policy (COOP/COEP)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Without the response headers policy, SharedArrayBuffer is unavailable and LibreOffice WASM conversions hang at ~55%; without correct Content-Encoding on .gz files, WASM compilation fails."
+    },
+    {
+      "id": "docs_self_hosting_aws_terraform",
+      "label": "Terraform Automation for S3/CloudFront",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_aws_mjs_mime_type",
+      "label": ".mjs Content-Type Fix (S3)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "S3 defaults .mjs to application/octet-stream which browsers refuse to execute as ES modules; the bundled PDF viewer ships .mjs ES modules and needs the content-type explicitly set to application/javascript."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_aws_cloudfront",
+      "target": "docs_self_hosting_aws_s3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_aws_response_headers_policy",
+      "target": "docs_self_hosting_aws_cloudfront",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_aws_terraform",
+      "target": "docs_self_hosting_aws_s3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_aws_terraform",
+      "target": "docs_self_hosting_aws_cloudfront",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_aws_s3",
+      "target": "docs_self_hosting_aws_mjs_mime_type",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/aws.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

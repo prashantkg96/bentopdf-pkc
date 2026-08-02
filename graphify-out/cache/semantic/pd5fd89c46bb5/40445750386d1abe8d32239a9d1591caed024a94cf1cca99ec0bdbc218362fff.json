@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_font_to_outline_tool",
+      "label": "Font to Outline",
+      "file_type": "document",
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ghostscript",
+      "label": "Ghostscript (WebAssembly)",
+      "file_type": "concept",
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_font_to_outline_tool",
+      "target": "concept_ghostscript",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_font_to_outline_tool",
+      "target": "docs_tools_flatten_pdf_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_font_to_outline_tool",
+      "target": "docs_tools_rasterize_pdf_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_font_to_outline_tool",
+      "target": "docs_tools_compress_pdf_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_font_to_outline_tool",
+      "target": "docs_tools_pdf_to_pdfa_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/font-to-outline.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

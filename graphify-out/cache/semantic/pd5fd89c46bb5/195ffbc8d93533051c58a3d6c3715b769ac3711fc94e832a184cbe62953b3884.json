@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_remove_blank_pages",
+      "label": "remove-blank-pages.html (Remove Blank Pages tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/remove-blank-pages.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_remove_blank_pages",
+      "target": "src_js_logic_remove_blank_pages_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/remove-blank-pages.html",
+      "source_location": "script[type=module][src='/src/js/logic/remove-blank-pages-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

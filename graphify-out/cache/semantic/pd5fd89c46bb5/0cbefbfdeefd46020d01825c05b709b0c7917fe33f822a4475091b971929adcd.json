@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_delete_pages_delete_pages",
+      "label": "Delete Pages",
+      "file_type": "document",
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_extract_pages_extract_pages",
+      "label": "Extract Pages",
+      "file_type": "document",
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_organize_pdf_organize_pdf",
+      "label": "Organize & Duplicate",
+      "file_type": "document",
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_split_pdf_split_pdf",
+      "label": "Split PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_delete_pages_delete_pages",
+      "target": "docs_tools_extract_pages_extract_pages",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_delete_pages_delete_pages",
+      "target": "docs_tools_organize_pdf_organize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_delete_pages_delete_pages",
+      "target": "docs_tools_split_pdf_split_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/delete-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_wasm_settings",
+      "label": "wasm-settings.html (Advanced Features / WASM Settings page)",
+      "file_type": "code",
+      "source_file": "src/pages/wasm-settings.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_js_logic_wasm_settings_page",
+      "label": "wasm-settings-page.ts (logic module)",
+      "file_type": "code",
+      "source_file": "src/pages/wasm-settings.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_wasm_settings",
+      "target": "src_js_logic_wasm_settings_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/wasm-settings.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_wasm_settings",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/wasm-settings.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_wasm_settings",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/wasm-settings.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

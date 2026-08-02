@@ -1,0 +1,443 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_index_self_hosting_guide",
+      "label": "Self-Hosting Guide",
+      "file_type": "document",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_index_simple_mode",
+      "label": "Self-Hosted Build / Simple Mode",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Simple Mode is functionally identical to the Commercial build -- every PDF tool works the same -- it only hides marketing chrome (hero, FAQ, testimonials, footer); it is not a feature-reduced 'lite' version."
+    },
+    {
+      "id": "docs_self_hosting_index_commercial_build",
+      "label": "Commercial Build (Public-Facing)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "label": "Common Issue: SharedArrayBuffer Unavailable",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_index_mjs_mime_issue",
+      "label": "Common Issue: .mjs Served as octet-stream",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_index_wasm_configuration",
+      "label": "WASM Configuration (AGPL Components)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_index_airgap_deployment",
+      "label": "Air-Gapped / Offline Deployment",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_index_prepare_airgap_script",
+      "label": "prepare-airgap.sh Script",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_vercel_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_netlify_toml",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_cloudflare_pages",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_aws_cloudfront",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_hostinger_shared_hosting",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_nginx_server_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_apache_apache_http_server",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_docker_self_hosted_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_kubernetes_helm_chart",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_cors_proxy_digital_signature",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_self_hosting_guide",
+      "target": "docs_self_hosting_index_simple_mode",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_simple_mode",
+      "target": "docs_self_hosting_index_commercial_build",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_nginx_sharedarraybuffer_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_apache_sharedarraybuffer_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_aws_response_headers_policy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_cloudflare_headers_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_netlify_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_vercel_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_hostinger_sharedarraybuffer_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_sharedarraybuffer_issue",
+      "target": "docs_self_hosting_kubernetes_sharedarraybuffer_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_mjs_mime_issue",
+      "target": "docs_self_hosting_nginx_mjs_mime_fix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_mjs_mime_issue",
+      "target": "docs_self_hosting_apache_mjs_mime_fix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_mjs_mime_issue",
+      "target": "docs_self_hosting_aws_mjs_mime_type",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_mjs_mime_issue",
+      "target": "docs_self_hosting_kubernetes_mjs_mime_fix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_airgap_deployment",
+      "target": "docs_self_hosting_index_prepare_airgap_script",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_wasm_configuration",
+      "target": "docs_licensing_pymupdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_wasm_configuration",
+      "target": "docs_licensing_ghostscript",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_wasm_configuration",
+      "target": "docs_licensing_coherentpdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_wasm_configuration",
+      "target": "docs_tools_add_attachments_tool",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_index_wasm_configuration",
+      "target": "docs_tools_alternate_merge_tool",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "docs/self-hosting/index.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "coop_coep_wasm_headers",
+      "label": "Cross-Origin Isolation Headers for LibreOffice WASM",
+      "nodes": [
+        "docs_self_hosting_nginx_sharedarraybuffer_headers",
+        "docs_self_hosting_apache_sharedarraybuffer_headers",
+        "docs_self_hosting_aws_response_headers_policy",
+        "docs_self_hosting_cloudflare_headers_file",
+        "docs_self_hosting_netlify_headers",
+        "docs_self_hosting_vercel_headers",
+        "docs_self_hosting_kubernetes_sharedarraybuffer_headers",
+        "docs_self_hosting_hostinger_sharedarraybuffer_headers"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/self-hosting/index.md"
+    },
+    {
+      "id": "mjs_module_mime_fix",
+      "label": ".mjs ES Module MIME-Type Fix Pattern",
+      "nodes": [
+        "docs_self_hosting_nginx_mjs_mime_fix",
+        "docs_self_hosting_apache_mjs_mime_fix",
+        "docs_self_hosting_kubernetes_mjs_mime_fix",
+        "docs_self_hosting_aws_mjs_mime_type"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/self-hosting/index.md"
+    },
+    {
+      "id": "airgap_offline_deployment_workflow",
+      "label": "Air-Gapped/Offline Deployment Workflow",
+      "nodes": [
+        "docs_self_hosting_docker_airgap_workflow",
+        "docs_self_hosting_index_airgap_deployment",
+        "docs_self_hosting_index_prepare_airgap_script",
+        "docs_index_offline_ocr"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/index.md"
+    }
+  ]
+}

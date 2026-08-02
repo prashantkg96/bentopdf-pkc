@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_page_dimensions",
+      "label": "Page Dimensions",
+      "file_type": "document",
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_page_dimensions_standard_size_detection",
+      "label": "Standard paper size detection (A4, Letter, etc.)",
+      "file_type": "concept",
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_page_dimensions",
+      "target": "docs_tools_page_dimensions_standard_size_detection",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_page_dimensions",
+      "target": "docs_tools_fix_page_size",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_page_dimensions",
+      "target": "docs_tools_compress_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_page_dimensions",
+      "target": "docs_tools_rotate_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_page_dimensions",
+      "target": "docs_tools_pdf_to_csv",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "docs/tools/page-dimensions.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

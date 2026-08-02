@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_compare_pdfs",
+      "label": "Compare PDFs tool page",
+      "file_type": "code",
+      "source_file": "src/pages/compare-pdfs.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_compare_pdfs",
+      "target": "src_js_logic_compare_pdfs_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/compare-pdfs.html",
+      "source_location": "line 1215",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_compare_pdfs",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/compare-pdfs.html",
+      "source_location": "line 549",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_compare_pdfs",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/compare-pdfs.html",
+      "source_location": "line 1211",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_compare_pdfs",
+      "target": "src_pages_bookmark",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/pages/compare-pdfs.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "canvas_interactive_editor_tools",
+      "label": "Tool pages built around a live canvas viewer with direct on-canvas manipulation (rather than a simple form-and-process flow)",
+      "nodes": [
+        "src_pages_compare_pdfs",
+        "src_pages_bookmark",
+        "src_pages_crop_pdf",
+        "src_pages_add_watermark"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/compare-pdfs.html"
+    }
+  ]
+}

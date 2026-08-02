@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_jpg_to_pdf",
+      "label": "JPG to PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/jpg-to-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_jpg_to_pdf",
+      "target": "src_js_logic_jpg_to_pdf_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/jpg-to-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_jpg_to_pdf",
+      "target": "src_pages_merge_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/jpg-to-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "convert_to_pdf_tools",
+      "label": "Convert external format (JPG/JSON/MOBI/Markdown) to PDF tool cluster",
+      "nodes": [
+        "src_pages_jpg_to_pdf",
+        "src_pages_json_to_pdf",
+        "src_pages_mobi_to_pdf",
+        "src_pages_markdown_to_pdf"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/jpg-to-pdf.html"
+    }
+  ]
+}

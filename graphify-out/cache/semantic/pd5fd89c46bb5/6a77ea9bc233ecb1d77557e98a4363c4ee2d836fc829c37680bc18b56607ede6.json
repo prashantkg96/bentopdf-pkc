@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "pdf_converter_page",
+      "label": "PDF Converter Hub Page",
+      "file_type": "document",
+      "source_file": "pdf-converter.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_converter_page_tool_grid",
+      "label": "PDF Converter Tool Grid (40+ formats)",
+      "file_type": "concept",
+      "source_file": "pdf-converter.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_converter_page_pdf_to_greyscale_tool",
+      "label": "PDF to Greyscale Tool",
+      "file_type": "concept",
+      "source_file": "pdf-converter.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "pdf_converter_page",
+      "target": "pdf_converter_page_tool_grid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-converter.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_converter_page_tool_grid",
+      "target": "pdf_converter_page_pdf_to_greyscale_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-converter.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdf_tool_category_hub_pages",
+      "label": "PDF Tool Category Hub Pages (Converter/Editor/Merge&Split/Security)",
+      "nodes": [
+        "pdf_converter_page",
+        "pdf_editor_page",
+        "pdf_merge_split_page",
+        "pdf_security_page"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "pdf-converter.html"
+    }
+  ]
+}

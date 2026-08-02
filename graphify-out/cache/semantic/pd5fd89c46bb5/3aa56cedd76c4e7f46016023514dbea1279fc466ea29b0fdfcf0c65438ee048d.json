@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_view_metadata_view_metadata",
+      "label": "View Metadata",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_view_metadata_view_metadata",
+      "target": "docs_tools_edit_metadata_edit_metadata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_view_metadata_view_metadata",
+      "target": "docs_tools_pdf_layers_pdf_layers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_view_metadata_view_metadata",
+      "target": "docs_tools_compare_pdfs_compare_pdfs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_view_metadata_view_metadata",
+      "target": "docs_tools_remove_metadata_remove_metadata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

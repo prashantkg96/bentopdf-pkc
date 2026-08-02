@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_timestamp_pdf",
+      "label": "timestamp-pdf.html (Timestamp PDF / RFC 3161 tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_js_logic_timestamp_pdf_page",
+      "label": "timestamp-pdf-page.ts (logic module)",
+      "file_type": "code",
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_timestamp_pdf",
+      "target": "src_js_logic_timestamp_pdf_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_timestamp_pdf",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_timestamp_pdf",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_timestamp_pdf",
+      "target": "src_pages_validate_signature_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_timestamp_pdf",
+      "target": "src_pages_sanitize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/timestamp-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

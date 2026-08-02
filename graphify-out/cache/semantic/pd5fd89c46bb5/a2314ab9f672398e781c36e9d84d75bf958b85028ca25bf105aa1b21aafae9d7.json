@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_png_to_pdf",
+      "label": "png-to-pdf.html (PNG to PDF tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/png-to-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_png_to_pdf",
+      "target": "src_js_logic_png_to_pdf_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/png-to-pdf.html",
+      "source_location": "script[type=module][src='/src/js/logic/png-to-pdf-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

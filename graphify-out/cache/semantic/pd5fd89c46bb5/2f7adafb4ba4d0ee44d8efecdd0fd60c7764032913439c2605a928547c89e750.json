@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {
+      "id": "src_partials_warning_modal_partial",
+      "label": "Warning Modal Partial",
+      "file_type": "code",
+      "source_file": "src/partials/warning-modal.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": []
+}

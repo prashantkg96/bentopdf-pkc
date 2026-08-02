@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_encrypt_pdf_page",
+      "label": "Encrypt PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/encrypt-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_encrypt_pdf_page",
+      "target": "src_js_logic_encrypt_pdf_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/encrypt-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

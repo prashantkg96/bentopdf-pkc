@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "public_images_og_tools",
+      "label": "OG image: BentoPDF 'All PDF Tools' (103 Free Tools) - tools.html social preview",
+      "file_type": "image",
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_images_og_tools_pdf_converters",
+      "label": "PDF Converters (tool category)",
+      "file_type": "concept",
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_images_og_tools_pdf_editors",
+      "label": "PDF Editors (tool category)",
+      "file_type": "concept",
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_images_og_tools_pdf_security",
+      "label": "PDF Security tools (tool category)",
+      "file_type": "concept",
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_images_og_tools_pdf_merge",
+      "label": "PDF Merge (tool category)",
+      "file_type": "concept",
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_images_og_tools",
+      "target": "public_images_og_tools_pdf_converters",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_images_og_tools",
+      "target": "public_images_og_tools_pdf_editors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_images_og_tools",
+      "target": "public_images_og_tools_pdf_security",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_images_og_tools",
+      "target": "public_images_og_tools_pdf_merge",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/og-tools.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

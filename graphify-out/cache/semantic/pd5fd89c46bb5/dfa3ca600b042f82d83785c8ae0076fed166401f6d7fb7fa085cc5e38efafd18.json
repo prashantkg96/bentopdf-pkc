@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_to_png",
+      "label": "pdf-to-png.html (PDF to PNG tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-to-png.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_to_png",
+      "target": "src_js_logic_pdf_to_png_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-to-png.html",
+      "source_location": "script[type=module][src='/src/js/logic/pdf-to-png-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdf_raster_image_export_family",
+      "label": "PDF-to-raster-image export tools (PNG/SVG/TIFF/WebP) sharing the render-page-to-canvas-then-encode pattern",
+      "nodes": [
+        "src_pages_pdf_to_png",
+        "src_pages_pdf_to_svg",
+        "src_pages_pdf_to_tiff",
+        "src_pages_pdf_to_webp"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/pdf-to-png.html"
+    }
+  ]
+}

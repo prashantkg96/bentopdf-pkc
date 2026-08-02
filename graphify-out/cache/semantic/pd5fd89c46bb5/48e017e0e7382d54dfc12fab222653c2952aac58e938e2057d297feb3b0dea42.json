@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "chart_templates_notes_notestxt",
+      "label": "Helm NOTES.txt Template",
+      "file_type": "code",
+      "source_file": "chart/templates/NOTES.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "chart_templates_notes_notestxt",
+      "target": "chart_values_defaultvalues",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "chart/templates/NOTES.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "chart_templates_notes_notestxt",
+      "target": "chart_templates_httproute_httproutetemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "chart/templates/NOTES.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "chart_templates_notes_notestxt",
+      "target": "chart_templates_gateway_gatewaytemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "chart/templates/NOTES.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_text_color",
+      "label": "text-color.html (Change Text Color tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/text-color.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_js_logic_text_color_page",
+      "label": "text-color-page.ts (logic module)",
+      "file_type": "code",
+      "source_file": "src/pages/text-color.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_text_color",
+      "target": "src_js_logic_text_color_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/text-color.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_text_color",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/text-color.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_text_color",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/text-color.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_text_color",
+      "target": "src_pages_rotate_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/text-color.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

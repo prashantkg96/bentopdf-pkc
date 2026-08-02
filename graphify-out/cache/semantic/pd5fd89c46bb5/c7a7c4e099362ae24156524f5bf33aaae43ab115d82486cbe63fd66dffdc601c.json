@@ -1,0 +1,100 @@
+{
+  "nodes": [
+    {
+      "id": "faq_page",
+      "label": "FAQ Page",
+      "file_type": "document",
+      "source_file": "faq.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "faq_page_offline_capability",
+      "label": "Offline Tool Usage FAQ Answer",
+      "file_type": "concept",
+      "source_file": "faq.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "faq_page_file_size_no_limits",
+      "label": "No File Size/Usage Limits FAQ Answer",
+      "file_type": "concept",
+      "source_file": "faq.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "faq_page",
+      "target": "readme_privacy_first_architecture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "faq.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "faq_page",
+      "target": "privacy_page_simple_analytics",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "faq.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "faq_page",
+      "target": "faq_page_offline_capability",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "faq.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "faq_page",
+      "target": "faq_page_file_size_no_limits",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "faq.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "faq_page",
+      "target": "contact_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "faq.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "faq_page_offline_capability",
+      "target": "index_page_offline_mode_feature",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "faq.html",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": []
+}

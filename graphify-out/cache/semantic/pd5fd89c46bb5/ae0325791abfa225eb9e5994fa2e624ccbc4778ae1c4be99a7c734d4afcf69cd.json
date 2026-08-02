@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "id": "static_hosting_doc",
+      "label": "STATIC-HOSTING.md",
+      "file_type": "document",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_hosting_doc_netlify_deployment",
+      "label": "Netlify Static/Dynamic Deployment",
+      "file_type": "concept",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_hosting_doc_vercel_deployment",
+      "label": "Vercel Deployment",
+      "file_type": "concept",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_hosting_doc_github_pages_deployment",
+      "label": "GitHub Pages Deployment",
+      "file_type": "concept",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_hosting_doc_seo_canonical_strategy",
+      "label": "Default Canonical-to-bentopdf.com SEO Strategy",
+      "file_type": "rationale",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Self-hosted BentoPDF instances default their canonical/hreflang to bentopdf.com so self-hosters don't compete with the official site on brand search and aren't surfaced to strangers via Google; SITE_URL and ROBOTS_NOINDEX give two independent, combinable overrides."
+    },
+    {
+      "id": "static_hosting_doc_site_url_override",
+      "label": "SITE_URL Build-Time Override",
+      "file_type": "concept",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_hosting_doc_robots_noindex",
+      "label": "ROBOTS_NOINDEX Runtime Override",
+      "file_type": "concept",
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "static_hosting_doc",
+      "target": "static_hosting_doc_netlify_deployment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc",
+      "target": "static_hosting_doc_vercel_deployment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc",
+      "target": "static_hosting_doc_github_pages_deployment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc",
+      "target": "static_hosting_doc_seo_canonical_strategy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc_seo_canonical_strategy",
+      "target": "static_hosting_doc_site_url_override",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc_seo_canonical_strategy",
+      "target": "static_hosting_doc_robots_noindex",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc_site_url_override",
+      "target": "readme_base_url_deployment",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 0.95
+    },
+    {
+      "source": "static_hosting_doc_github_pages_deployment",
+      "target": "readme_base_url_deployment",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 0.95
+    },
+    {
+      "source": "static_hosting_doc",
+      "target": "simple_mode_doc_simple_mode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc_robots_noindex",
+      "target": "simple_mode_doc_simple_mode",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc",
+      "target": "readme_bentopdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_hosting_doc",
+      "target": "readme_bentopdf_pkc_worker",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": "STATIC-HOSTING.md",
+      "source_location": null,
+      "weight": 0.25
+    }
+  ],
+  "hyperedges": []
+}

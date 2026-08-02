@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "id": "public_changelog_changelog",
+      "label": "BentoPDF Changelog",
+      "file_type": "document",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_v1_0_0",
+      "label": "v1.0.0 Release",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_ocr_whitelist_presets",
+      "label": "OCR whitelist presets feature",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_simple_mode",
+      "label": "Simple Mode for internal organizational use",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_versioning_system",
+      "label": "Version management system",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_attachments_feature",
+      "label": "Embed attachments in PDFs feature",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_linearize_pdf_tool",
+      "label": "Linearize PDF tool for web optimization",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_posterize_feature",
+      "label": "Posterize feature",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_remove_blank_pages_tool",
+      "label": "Remove blank pages tool with sensitivity control",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_changelog_alternate_merge_tool",
+      "label": "Alternate merge tool for mixing PDF pages",
+      "file_type": "concept",
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_v1_0_0",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_ocr_whitelist_presets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_simple_mode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_versioning_system",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_attachments_feature",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_linearize_pdf_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_posterize_feature",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_remove_blank_pages_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_changelog",
+      "target": "public_changelog_alternate_merge_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_ocr_whitelist_presets",
+      "target": "docs_tools_ocr_pdf_ocr_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_alternate_merge_tool",
+      "target": "docs_tools_merge_pdf_merge_pdf",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_changelog_remove_blank_pages_tool",
+      "target": "docs_tools_remove_blank_pages_remove_blank_pages",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/CHANGELOG.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

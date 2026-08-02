@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_to_png",
+      "label": "PDF to PNG",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-to-png.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_to_png",
+      "target": "docs_tools_pdf_to_jpg",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-png.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_png",
+      "target": "docs_tools_pdf_to_webp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-png.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_png",
+      "target": "docs_tools_pdf_to_svg",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-png.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

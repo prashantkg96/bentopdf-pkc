@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_add_blank_page",
+      "label": "Add Blank Page tool page",
+      "file_type": "code",
+      "source_file": "src/pages/add-blank-page.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_add_blank_page",
+      "target": "src_js_logic_add_blank_page_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/add-blank-page.html",
+      "source_location": "line 417",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_add_blank_page",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/add-blank-page.html",
+      "source_location": "line 88",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_add_blank_page",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/add-blank-page.html",
+      "source_location": "line 413",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

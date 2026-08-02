@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "id": "cloudflare_wasm_proxy_wasmproxyguide",
+      "label": "WASM Proxy Setup Guide",
+      "file_type": "document",
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "label": "BentoPDF WASM Proxy Cloudflare Worker",
+      "file_type": "concept",
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Proxies WASM library requests through a Cloudflare Worker to bypass CORS restrictions when loading AGPL-licensed components (PyMuPDF, Ghostscript, CoherentPDF) from external CDN sources; enforces origin validation, rate limiting, file-type/size restrictions and caching, and supports self-hosting by letting operators point the proxy at their own WASM origins via secrets."
+    },
+    {
+      "id": "cloudflare_wasm_proxy_pymupdfwasm",
+      "label": "PyMuPDF WASM module",
+      "file_type": "concept",
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cloudflare_wasm_proxy_ghostscriptwasm",
+      "label": "Ghostscript WASM module",
+      "file_type": "concept",
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cloudflare_wasm_proxy_coherentpdfwasm",
+      "label": "CoherentPDF WASM module",
+      "file_type": "concept",
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cloudflare_wasm_proxy_wasmwranglertoml",
+      "label": "wasm-wrangler.toml deploy config",
+      "file_type": "concept",
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "cloudflare_wasm_proxy_wasmproxyguide",
+      "target": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "target": "cloudflare_wasm_proxy_pymupdfwasm",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "target": "cloudflare_wasm_proxy_ghostscriptwasm",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "target": "cloudflare_wasm_proxy_coherentpdfwasm",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "target": "cloudflare_wasm_proxy_wasmwranglertoml",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloudflare_wasm_proxy_bentopdfwasmproxyworker",
+      "target": "docs_getting_started_airgappedocrguide",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "cloudflare/WASM-PROXY.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

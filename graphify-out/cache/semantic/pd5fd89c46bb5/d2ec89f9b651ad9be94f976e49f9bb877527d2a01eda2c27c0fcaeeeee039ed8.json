@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_decrypt_pdf",
+      "label": "Decrypt PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/decrypt-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_decrypt_pdf",
+      "target": "src_js_logic_decrypt_pdf_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/decrypt-pdf.html",
+      "source_location": "line 393",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_decrypt_pdf",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/decrypt-pdf.html",
+      "source_location": "line 85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_decrypt_pdf",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/decrypt-pdf.html",
+      "source_location": "line 389",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

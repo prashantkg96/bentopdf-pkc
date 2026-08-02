@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "chart_templates_ingress_ingresstemplate",
+      "label": "Ingress Template",
+      "file_type": "code",
+      "source_file": "chart/templates/ingress.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "chart_templates_ingress_ingresstemplate",
+      "target": "chart_values_defaultvalues",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "chart/templates/ingress.yaml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "chart_templates_ingress_ingresstemplate",
+      "target": "chart_templates_service_servicetemplate",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "chart/templates/ingress.yaml",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

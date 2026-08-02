@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "id": "licensing_page",
+      "label": "Licensing Page",
+      "file_type": "document",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "licensing_page_open_source_license",
+      "label": "Open Source (AGPL-3.0) License Option",
+      "file_type": "concept",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "licensing_page_commercial_license",
+      "label": "Commercial License ($79 one-time)",
+      "file_type": "concept",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "licensing_page_agpl_requirements",
+      "label": "AGPL-3.0 Compliance Requirements",
+      "file_type": "rationale",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "AGPL-3.0 requires retaining the producer line/copyright and disclosing the full modified source to any users interacting with a network-deployed instance, which is the stated reason a paid commercial license exists for closed-source use."
+    },
+    {
+      "id": "licensing_page_agpl_compliance_matrix",
+      "label": "AGPL-Compliant vs Not-Compliant Use-Case Matrix",
+      "file_type": "concept",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "licensing_page_agpl_excluded_components",
+      "label": "AGPL Components Not Bundled (PyMuPDF/Ghostscript/CPDF)",
+      "file_type": "concept",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "licensing_page_polar_payments",
+      "label": "Polar Payment/Invoicing Platform",
+      "file_type": "concept",
+      "source_file": "licensing.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "licensing_page",
+      "target": "licensing_page_open_source_license",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page",
+      "target": "licensing_page_commercial_license",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page_open_source_license",
+      "target": "readme_agpl_3_0_license",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page_open_source_license",
+      "target": "readme_bentopdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page",
+      "target": "licensing_page_agpl_requirements",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page",
+      "target": "licensing_page_agpl_compliance_matrix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page",
+      "target": "licensing_page_agpl_excluded_components",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page_agpl_excluded_components",
+      "target": "licensing_page_commercial_license",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page_commercial_license",
+      "target": "licensing_page_polar_payments",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page",
+      "target": "contact_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "licensing_page_agpl_compliance_matrix",
+      "target": "contributing_no_cla_policy",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "licensing.html",
+      "source_location": null,
+      "weight": 0.75
+    }
+  ],
+  "hyperedges": []
+}

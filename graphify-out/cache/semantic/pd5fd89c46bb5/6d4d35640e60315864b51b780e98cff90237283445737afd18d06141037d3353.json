@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_scanner_effect",
+      "label": "scanner-effect.html (Scanner Effect tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/scanner-effect.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_js_logic_scanner_effect_page",
+      "label": "scanner-effect-page.ts (logic module)",
+      "file_type": "code",
+      "source_file": "src/pages/scanner-effect.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_scanner_effect",
+      "target": "src_js_logic_scanner_effect_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/scanner-effect.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_scanner_effect",
+      "target": "src_partials_navbar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/scanner-effect.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_scanner_effect",
+      "target": "src_partials_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/scanner-effect.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_scanner_effect",
+      "target": "src_pages_rotate_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/scanner-effect.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

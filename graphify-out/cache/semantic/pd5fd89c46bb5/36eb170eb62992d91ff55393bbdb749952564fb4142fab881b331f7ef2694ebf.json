@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "label": "BMP to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_bmp_to_pdf_bmp_format",
+      "label": "BMP Format",
+      "file_type": "concept",
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_bmp_to_pdf_pdf_lib",
+      "label": "pdf-lib (used to embed images as PDF pages)",
+      "file_type": "concept",
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_image_to_pdf_image_to_pdf",
+      "label": "Images to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_png_to_pdf_png_to_pdf",
+      "label": "PNG to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_tiff_to_pdf_tiff_to_pdf",
+      "label": "TIFF to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "target": "docs_tools_bmp_to_pdf_bmp_format",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "target": "docs_tools_bmp_to_pdf_pdf_lib",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "target": "docs_tools_image_to_pdf_image_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "target": "docs_tools_png_to_pdf_png_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "target": "docs_tools_tiff_to_pdf_tiff_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_bmp_to_pdf_bmp_to_pdf",
+      "target": "docs_tools_cbz_to_pdf_cbz_to_pdf",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "docs/tools/bmp-to-pdf.md",
+      "source_location": null,
+      "weight": 0.65
+    }
+  ],
+  "hyperedges": []
+}

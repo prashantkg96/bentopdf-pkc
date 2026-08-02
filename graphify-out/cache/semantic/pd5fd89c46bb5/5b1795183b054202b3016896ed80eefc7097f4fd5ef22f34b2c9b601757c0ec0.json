@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "id": "src_partials_footer",
+      "label": "footer.html partial (full site footer with company/legal/social links)",
+      "file_type": "code",
+      "source_file": "src/partials/footer.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_partials_footer",
+      "target": "src_partials_footer_simple",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/partials/footer.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_partials_footer",
+      "target": "src_pages_wasm_settings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/partials/footer.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pages_sharing_footer_layout",
+      "label": "Tool pages sharing the shared footer partial layout",
+      "nodes": [
+        "src_partials_footer",
+        "src_pages_rotate_pdf",
+        "src_pages_sanitize_pdf",
+        "src_pages_scanner_effect",
+        "src_pages_sign_pdf",
+        "src_pages_split_pdf",
+        "src_pages_svg_to_pdf",
+        "src_pages_table_of_contents",
+        "src_pages_text_color",
+        "src_pages_tiff_to_pdf",
+        "src_pages_timestamp_pdf",
+        "src_pages_txt_to_pdf",
+        "src_pages_validate_signature_pdf",
+        "src_pages_view_metadata",
+        "src_pages_wasm_settings",
+        "src_pages_webp_to_pdf",
+        "src_pages_xml_to_pdf",
+        "src_pages_xps_to_pdf"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/partials/footer.html"
+    }
+  ]
+}

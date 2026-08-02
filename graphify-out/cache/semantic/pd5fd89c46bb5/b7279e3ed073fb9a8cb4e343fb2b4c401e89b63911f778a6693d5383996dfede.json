@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_remove_restrictions",
+      "label": "Remove Restrictions",
+      "file_type": "document",
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_remove_restrictions_qpdf",
+      "label": "QPDF (used by Remove Restrictions)",
+      "file_type": "concept",
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_remove_restrictions",
+      "target": "docs_tools_remove_restrictions_qpdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_remove_restrictions",
+      "target": "docs_tools_decrypt_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_remove_restrictions",
+      "target": "docs_tools_encrypt_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_remove_restrictions",
+      "target": "docs_tools_change_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_remove_restrictions_qpdf",
+      "target": "docs_tools_repair_pdf_qpdf",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/tools/remove-restrictions.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

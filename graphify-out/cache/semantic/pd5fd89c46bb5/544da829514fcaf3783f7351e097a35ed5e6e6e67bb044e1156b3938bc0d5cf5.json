@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "label": "Encrypt PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_encrypt_pdf_aes_256",
+      "label": "AES-256 Encryption (PDF 2.0 standard, computationally infeasible to brute-force)",
+      "file_type": "concept",
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_encrypt_pdf_qpdf",
+      "label": "QPDF (implements PDF 2.0 encryption in-browser)",
+      "file_type": "concept",
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_encrypt_pdf_user_password",
+      "label": "User Password (required, opens the document)",
+      "file_type": "concept",
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_encrypt_pdf_owner_password",
+      "label": "Owner Password (optional, applies strictest restriction set when distinct)",
+      "file_type": "concept",
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_sanitize_pdf_sanitize_pdf",
+      "label": "Sanitize PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_encrypt_pdf_aes_256",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_encrypt_pdf_qpdf",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_encrypt_pdf_user_password",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_encrypt_pdf_owner_password",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_decrypt_pdf_decrypt_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_change_permissions_change_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_remove_restrictions_remove_restrictions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_encrypt_pdf_encrypt_pdf",
+      "target": "docs_tools_sanitize_pdf_sanitize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/encrypt-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

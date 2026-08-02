@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "pdf_merge_split_page",
+      "label": "PDF Merge & Split Hub Page",
+      "file_type": "document",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_tool_grid",
+      "label": "PDF Merge & Split Tool Grid",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_organize_pdf_tool",
+      "label": "Organize PDF Tool",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_extract_pages_tool",
+      "label": "Extract Pages Tool",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_delete_pages_tool",
+      "label": "Delete Pages Tool",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_divide_pages_tool",
+      "label": "Divide Pages Tool",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_add_blank_page_tool",
+      "label": "Add Blank Page Tool",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_merge_split_page_reverse_pages_tool",
+      "label": "Reverse Pages Tool",
+      "file_type": "concept",
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "pdf_merge_split_page",
+      "target": "pdf_merge_split_page_tool_grid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_merge_split_page_tool_grid",
+      "target": "pdf_merge_split_page_organize_pdf_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_merge_split_page_tool_grid",
+      "target": "pdf_merge_split_page_extract_pages_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_merge_split_page_tool_grid",
+      "target": "pdf_merge_split_page_delete_pages_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_merge_split_page_tool_grid",
+      "target": "pdf_merge_split_page_divide_pages_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_merge_split_page_tool_grid",
+      "target": "pdf_merge_split_page_add_blank_page_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_merge_split_page_tool_grid",
+      "target": "pdf_merge_split_page_reverse_pages_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pdf-merge-split.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

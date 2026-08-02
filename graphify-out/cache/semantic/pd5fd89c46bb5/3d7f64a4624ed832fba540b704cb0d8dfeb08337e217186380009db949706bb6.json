@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_to_pdfa",
+      "label": "pdf-to-pdfa.html (PDF to PDF/A tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-to-pdfa.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_to_pdfa",
+      "target": "src_js_logic_pdf_to_pdfa_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-to-pdfa.html",
+      "source_location": "script[type=module][src='/src/js/logic/pdf-to-pdfa-page.ts']",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_pdf_to_pdfa",
+      "target": "src_pages_rasterize_pdf",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/pages/pdf-to-pdfa.html",
+      "source_location": "pdf-to-pdfa.html's 'pre-flatten PDF' checkbox converts the PDF to images first for PDF/A compliance, conceptually the same image-flattening operation as rasterize-pdf.html, though the two pages are not cross-linked",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_to_excel",
+      "label": "PDF to Excel",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_pdf_to_excel_pymupdf_table_detection",
+      "label": "PyMuPDF table detection engine",
+      "file_type": "concept",
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_pdf_to_excel_sheetjs",
+      "label": "SheetJS library (Excel generation)",
+      "file_type": "concept",
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_to_excel",
+      "target": "docs_tools_pdf_to_excel_pymupdf_table_detection",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_excel",
+      "target": "docs_tools_pdf_to_excel_sheetjs",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_excel",
+      "target": "docs_tools_pdf_to_csv",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_excel",
+      "target": "docs_tools_extract_tables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_to_excel",
+      "target": "docs_tools_pdf_to_text",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-to-excel.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

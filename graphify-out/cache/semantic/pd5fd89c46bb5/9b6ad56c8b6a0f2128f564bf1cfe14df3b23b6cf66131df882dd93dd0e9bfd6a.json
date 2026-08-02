@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "id": "public_pdfjs_viewer_sign_viewer_sign_viewer",
+      "label": "PDF Signer viewer (sign-viewer.html)",
+      "file_type": "code",
+      "source_file": "public/pdfjs-viewer/sign-viewer.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pdfjs_viewer_sign_viewer_annotation_editor_modes",
+      "label": "Annotation editor modes (Ink/FreeText/Stamp) for signature placement",
+      "file_type": "concept",
+      "source_file": "public/pdfjs-viewer/sign-viewer.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pdfjs_viewer_sign_viewer_postmessage_bridge",
+      "label": "Parent-iframe postMessage bridge (loadPDF/save/downloadPDF/viewerReady)",
+      "file_type": "concept",
+      "source_file": "public/pdfjs-viewer/sign-viewer.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_pdfjs_viewer_sign_viewer_sign_viewer",
+      "target": "public_pdfjs_viewer_sign_viewer_annotation_editor_modes",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/pdfjs-viewer/sign-viewer.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_pdfjs_viewer_sign_viewer_sign_viewer",
+      "target": "public_pdfjs_viewer_sign_viewer_postmessage_bridge",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/pdfjs-viewer/sign-viewer.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_pdfjs_viewer_form_viewer_postmessage_bridge",
+      "target": "public_pdfjs_viewer_sign_viewer_postmessage_bridge",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/pdfjs-viewer/sign-viewer.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdfjs_iframe_postmessage_bridge_pattern",
+      "label": "PDF.js viewers embedded via iframe with parent-window postMessage bridge for load/save workflows",
+      "nodes": [
+        "public_pdfjs_viewer_form_viewer_form_viewer",
+        "public_pdfjs_viewer_sign_viewer_sign_viewer",
+        "public_pdfjs_annotation_viewer_web_viewer_viewer"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/pdfjs-viewer/sign-viewer.html"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_multi_tool",
+      "label": "PDF Multi Tool",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-multi-tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_multi_tool",
+      "target": "docs_tools_merge_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-multi-tool.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_multi_tool",
+      "target": "docs_tools_split_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-multi-tool.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_multi_tool",
+      "target": "docs_tools_organize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-multi-tool.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_multi_tool",
+      "target": "docs_tools_rotate_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-multi-tool.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pdf_page_organization_family",
+      "label": "Page-level reorder/duplicate/split tools operating on the same visual thumbnail-grid pattern",
+      "nodes": [
+        "docs_tools_organize_pdf",
+        "docs_tools_pdf_multi_tool",
+        "docs_tools_pdf_booklet"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.8,
+      "source_file": "docs/tools/pdf-multi-tool.md"
+    }
+  ]
+}

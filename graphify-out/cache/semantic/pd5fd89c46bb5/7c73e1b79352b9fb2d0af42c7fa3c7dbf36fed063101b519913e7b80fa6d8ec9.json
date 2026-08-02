@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_email_to_pdf_page",
+      "label": "Email to PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/email-to-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_email_to_pdf_page",
+      "target": "src_js_logic_email_to_pdf_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/email-to-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_email_to_pdf_page",
+      "target": "src_pages_extract_attachments_page",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/pages/email-to-pdf.html",
+      "source_location": null,
+      "weight": 0.5
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "convert_to_pdf_cluster",
+      "label": "Format-to-PDF conversion tool pattern (email/epub/fb2/heic/image sources)",
+      "nodes": [
+        "src_pages_email_to_pdf_page",
+        "src_pages_epub_to_pdf_page",
+        "src_pages_fb2_to_pdf_page",
+        "src_pages_heic_to_pdf_page",
+        "src_pages_image_to_pdf_page"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/pages/email-to-pdf.html"
+    }
+  ]
+}

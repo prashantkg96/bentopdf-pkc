@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_rasterize_pdf",
+      "label": "rasterize-pdf.html (Rasterize PDF tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/rasterize-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_rasterize_pdf",
+      "target": "src_js_logic_rasterize_pdf_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/rasterize-pdf.html",
+      "source_location": "script[type=module][src='/src/js/logic/rasterize-pdf-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

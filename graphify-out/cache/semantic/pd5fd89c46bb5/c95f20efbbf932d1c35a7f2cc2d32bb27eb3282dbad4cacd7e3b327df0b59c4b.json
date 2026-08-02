@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "404_page",
+      "label": "404 Not Found Page",
+      "file_type": "document",
+      "source_file": "404.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": [
+    {
+      "id": "pkc_theme_sync_snippet_pages",
+      "label": "Pages Sharing the PKC Theme-Sync Inline Script",
+      "nodes": [
+        "404_page",
+        "about_page",
+        "contact_page",
+        "faq_page",
+        "licensing_page",
+        "pdf_converter_page",
+        "pdf_editor_page",
+        "pdf_merge_split_page",
+        "pdf_security_page",
+        "privacy_page",
+        "terms_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "404.html"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_divide_pages_divide_pages",
+      "label": "Divide Pages",
+      "file_type": "document",
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_rotate_pdf_rotate_pdf",
+      "label": "Rotate PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_posterize_pdf_posterize_pdf",
+      "label": "Posterize PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_divide_pages_divide_pages",
+      "target": "docs_tools_split_pdf_split_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_divide_pages_divide_pages",
+      "target": "docs_tools_crop_pdf_crop_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_divide_pages_divide_pages",
+      "target": "docs_tools_n_up_pdf_n_up_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_divide_pages_divide_pages",
+      "target": "docs_tools_posterize_pdf_posterize_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_divide_pages_divide_pages",
+      "target": "docs_tools_rotate_pdf_rotate_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/divide-pages.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "page_layout_manipulation_group",
+      "label": "Page Layout Manipulation Tools",
+      "nodes": [
+        "docs_tools_delete_pages_delete_pages",
+        "docs_tools_divide_pages_divide_pages",
+        "docs_tools_crop_pdf_crop_pdf",
+        "docs_tools_combine_single_page_combine_single_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "docs/tools/divide-pages.md"
+    }
+  ]
+}

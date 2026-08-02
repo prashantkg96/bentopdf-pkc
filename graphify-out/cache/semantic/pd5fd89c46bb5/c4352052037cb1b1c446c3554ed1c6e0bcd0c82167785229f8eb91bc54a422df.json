@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "release_doc",
+      "label": "RELEASE.md",
+      "file_type": "document",
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "release_npm_release_scripts",
+      "label": "npm run release / release:minor / release:major",
+      "file_type": "concept",
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "release_semver_versioning",
+      "label": "Semantic Versioning Scheme",
+      "file_type": "concept",
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "release_github_actions_docker_workflow",
+      "label": "GitHub Actions Docker Build Workflow",
+      "file_type": "concept",
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "release_docker_hub_publish",
+      "label": "Docker Hub Image Publishing (bentopdfteam)",
+      "file_type": "concept",
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "release_doc",
+      "target": "release_npm_release_scripts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_npm_release_scripts",
+      "target": "release_semver_versioning",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_npm_release_scripts",
+      "target": "release_github_actions_docker_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_github_actions_docker_workflow",
+      "target": "release_docker_hub_publish",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_docker_hub_publish",
+      "target": "simple_mode_doc_self_hosted_build",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "release_docker_hub_publish",
+      "target": "simple_mode_doc_commercial_build",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "release_doc",
+      "target": "readme_bentopdf_pkc_worker",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "RELEASE.md",
+      "source_location": null,
+      "weight": 0.2
+    }
+  ],
+  "hyperedges": []
+}

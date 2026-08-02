@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "label": "Validate Signature",
+      "file_type": "document",
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_validate_signature_pdf_pkcs7",
+      "label": "PKCS#7 signature parsing (ASN.1, X.509 extraction)",
+      "file_type": "concept",
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_validate_signature_pdf_signature_algorithms",
+      "label": "Supported signature algorithms (RSA PKCS#1 v1.5, RSA-PSS, ECDSA P-256/384/521)",
+      "file_type": "concept",
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_validate_signature_pdf_insecure_digests",
+      "label": "Insecure digest rejection (MD5, SHA-1)",
+      "file_type": "concept",
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "MD5 and SHA-1 have published collision attacks, so a signature computed over either hash offers no real integrity guarantee; the tool therefore flags such signatures as invalid rather than trusting the digest."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "target": "docs_tools_digital_sign_pdf_digital_sign_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "target": "docs_tools_flatten_pdf_flatten_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "target": "docs_tools_remove_metadata_remove_metadata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "target": "docs_tools_validate_signature_pdf_pkcs7",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "target": "docs_tools_validate_signature_pdf_signature_algorithms",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_validate_signature_pdf_validate_signature_pdf",
+      "target": "docs_tools_validate_signature_pdf_insecure_digests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/validate-signature-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

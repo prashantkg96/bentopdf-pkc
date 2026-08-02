@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_odp_to_pdf",
+      "label": "ODP to PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_odp_to_pdf_libreoffice_engine",
+      "label": "LibreOffice-based browser engine (Impress)",
+      "file_type": "concept",
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_odp_to_pdf_odp_format",
+      "label": "OpenDocument Presentation (.odp) format",
+      "file_type": "concept",
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_odp_to_pdf",
+      "target": "docs_tools_odp_to_pdf_libreoffice_engine",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_odp_to_pdf",
+      "target": "docs_tools_odp_to_pdf_odp_format",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_odp_to_pdf_libreoffice_engine",
+      "target": "docs_tools_odg_to_pdf_libreoffice_engine",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_odp_to_pdf_libreoffice_engine",
+      "target": "docs_tools_ods_to_pdf_libreoffice_engine",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_odp_to_pdf",
+      "target": "docs_tools_odg_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_odp_to_pdf",
+      "target": "docs_tools_ods_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_odp_to_pdf",
+      "target": "docs_tools_pub_to_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/odp-to-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "libreoffice_engine_family",
+      "label": "LibreOffice-based browser conversion tools for OpenDocument formats",
+      "nodes": [
+        "docs_tools_odg_to_pdf",
+        "docs_tools_odp_to_pdf",
+        "docs_tools_ods_to_pdf",
+        "docs_tools_odt_to_pdf"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "docs/tools/odp-to-pdf.md"
+    }
+  ]
+}

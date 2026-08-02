@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_crop_pdf_crop_pdf",
+      "label": "Crop PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_crop_pdf_cropperjs",
+      "label": "Cropper.js (powers the visual crop editor)",
+      "file_type": "concept",
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_page_numbers_page_numbers",
+      "label": "Page Numbers",
+      "file_type": "document",
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_remove_blank_pages_remove_blank_pages",
+      "label": "Remove Blank Pages",
+      "file_type": "document",
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_fix_page_size_fix_page_size",
+      "label": "Fix Page Size",
+      "file_type": "document",
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_crop_pdf_crop_pdf",
+      "target": "docs_tools_crop_pdf_cropperjs",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_crop_pdf_crop_pdf",
+      "target": "docs_tools_edit_pdf_edit_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_crop_pdf_crop_pdf",
+      "target": "docs_tools_page_numbers_page_numbers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_crop_pdf_crop_pdf",
+      "target": "docs_tools_remove_blank_pages_remove_blank_pages",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_crop_pdf_crop_pdf",
+      "target": "docs_tools_fix_page_size_fix_page_size",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/crop-pdf.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

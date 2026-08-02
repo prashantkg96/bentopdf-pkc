@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "tools_toolsdirectorypage",
+      "label": "PKC PDF Tools Directory Page",
+      "file_type": "code",
+      "source_file": "tools.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_rendertools",
+      "label": "renderTools() search/filter function",
+      "file_type": "code",
+      "source_file": "tools.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_toolscatalog",
+      "label": "Tools catalog data (103 tools, 5 categories)",
+      "file_type": "code",
+      "source_file": "tools.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_sharedpkcthemesync",
+      "label": "Shared PKC pre-paint theme sync",
+      "file_type": "rationale",
+      "source_file": "tools.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Reads the shared 'theme' localStorage key and sets data-theme before paint so the shared top-pill PKC nav (reused across all PKC toolkit sites) renders in the correct theme without a flash, keeping visual consistency across the multi-tool PKC network."
+    }
+  ],
+  "edges": [
+    {
+      "source": "tools_rendertools",
+      "target": "tools_toolscatalog",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_toolsdirectorypage",
+      "target": "tools_sharedpkcthemesync",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_toolsdirectorypage",
+      "target": "tools_rendertools",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_toolscatalog",
+      "target": "docs_getting_started_bentopdfproduct",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "tools.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

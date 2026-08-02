@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "docs_contributing_contributingguide",
+      "label": "Contributing Guide",
+      "file_type": "document",
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_contributing_duallicensingmodel",
+      "label": "BentoPDF Dual Licensing Model (AGPL-3.0 + Commercial)",
+      "file_type": "rationale",
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "BentoPDF is dual-licensed: AGPL-3.0 for open-source projects that publicly share their full source, and a paid Commercial License (lifetime, $79 via Ko-fi) for proprietary/closed-source use. This lets the project stay open-source while monetizing commercial/closed deployments; contributors' code is licensed under these same terms."
+    },
+    {
+      "id": "docs_contributing_clarequirement",
+      "label": "CLA Requirement (ICLA/CCLA)",
+      "file_type": "concept",
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_contributing_translationprocess",
+      "label": "Translation Contribution Process",
+      "file_type": "concept",
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_contributing_contributingguide",
+      "target": "docs_contributing_duallicensingmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_contributing_contributingguide",
+      "target": "docs_contributing_clarequirement",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_contributing_contributingguide",
+      "target": "docs_contributing_translationprocess",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_contributing_contributingguide",
+      "target": "docs_getting_started_gettingstartedguide",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/contributing.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

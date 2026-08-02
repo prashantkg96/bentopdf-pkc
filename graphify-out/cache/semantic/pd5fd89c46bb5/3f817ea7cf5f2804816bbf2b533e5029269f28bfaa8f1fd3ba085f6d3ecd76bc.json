@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "privacy_page",
+      "label": "Privacy Policy Page",
+      "file_type": "document",
+      "source_file": "privacy.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "privacy_page_client_side_principle",
+      "label": "Client-Side Processing Privacy Principle",
+      "file_type": "rationale",
+      "source_file": "privacy.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Core privacy claim: because processing never leaves the browser, the operator is technically incapable of collecting file content, names, or derived metadata \u2014 a stronger guarantee than a mere no-logging policy."
+    },
+    {
+      "id": "privacy_page_simple_analytics",
+      "label": "Simple Analytics (anonymous visit counts)",
+      "file_type": "concept",
+      "source_file": "privacy.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "privacy_page_data_not_collected",
+      "label": "Information We Do Not Collect List",
+      "file_type": "concept",
+      "source_file": "privacy.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "privacy_page",
+      "target": "privacy_page_client_side_principle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "privacy.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "privacy_page",
+      "target": "privacy_page_data_not_collected",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "privacy.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "privacy_page",
+      "target": "privacy_page_simple_analytics",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "privacy.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "privacy_page_client_side_principle",
+      "target": "readme_privacy_first_architecture",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "privacy.html",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "privacy_page",
+      "target": "readme_pkc_pdf_tools",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "privacy.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

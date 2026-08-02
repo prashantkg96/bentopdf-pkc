@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_pdf_to_jpg",
+      "label": "PDF to JPG tool page",
+      "file_type": "code",
+      "source_file": "src/pages/pdf-to-jpg.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_pdf_to_jpg",
+      "target": "src_js_logic_pdf_to_jpg_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/pdf-to-jpg.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

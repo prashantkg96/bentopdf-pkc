@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_rotate_custom",
+      "label": "rotate-custom.html (Rotate PDF by Custom Degrees tool page)",
+      "file_type": "code",
+      "source_file": "src/pages/rotate-custom.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_rotate_custom",
+      "target": "src_js_logic_rotate_custom_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/rotate-custom.html",
+      "source_location": "script[type=module][src='/src/js/logic/rotate-custom-page.ts']",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

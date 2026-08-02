@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_kubernetes_helm_chart",
+      "label": "BentoPDF Helm Chart",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_kubernetes_ingress",
+      "label": "Kubernetes Ingress (nginx-ingress)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_kubernetes_gateway_api",
+      "label": "Gateway API (Gateway + HTTPRoute)",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_kubernetes_sharedarraybuffer_headers",
+      "label": "SharedArrayBuffer Headers (K8s Ingress/Gateway)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_kubernetes_mjs_mime_fix",
+      "label": ".mjs MIME Fix (K8s Ingress/Gateway)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_kubernetes_configmap_disable_tools",
+      "label": "ConfigMap-Based Tool Disabling",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_kubernetes_helm_chart",
+      "target": "docs_self_hosting_docker_self_hosted_build",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_kubernetes_ingress",
+      "target": "docs_self_hosting_kubernetes_sharedarraybuffer_headers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_kubernetes_gateway_api",
+      "target": "docs_self_hosting_kubernetes_sharedarraybuffer_headers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_kubernetes_ingress",
+      "target": "docs_self_hosting_kubernetes_mjs_mime_fix",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_kubernetes_gateway_api",
+      "target": "docs_self_hosting_kubernetes_mjs_mime_fix",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_kubernetes_configmap_disable_tools",
+      "target": "docs_self_hosting_docker_disable_tools",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/kubernetes.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

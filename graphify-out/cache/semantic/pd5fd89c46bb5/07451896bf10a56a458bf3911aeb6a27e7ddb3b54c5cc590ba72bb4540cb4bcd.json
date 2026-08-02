@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "src_pages_organize_pdf",
+      "label": "Organize/Duplicate PDF tool page",
+      "file_type": "code",
+      "source_file": "src/pages/organize-pdf.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_pages_organize_pdf",
+      "target": "src_js_logic_organize_pdf_page",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/organize-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_organize_pdf",
+      "target": "src_pages_merge_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/organize-pdf.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

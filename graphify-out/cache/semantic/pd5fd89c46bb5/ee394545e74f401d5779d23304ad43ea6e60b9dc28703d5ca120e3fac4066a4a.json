@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {
+      "id": "public_robots_robots",
+      "label": "BentoPDF robots.txt crawler rules",
+      "file_type": "code",
+      "source_file": "public/robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": []
+}

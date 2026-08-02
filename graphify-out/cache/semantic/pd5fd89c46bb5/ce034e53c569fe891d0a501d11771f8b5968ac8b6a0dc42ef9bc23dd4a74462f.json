@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_invert_colors_tool",
+      "label": "Invert Colors",
+      "file_type": "document",
+      "source_file": "docs/tools/invert-colors.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_invert_colors_tool",
+      "target": "docs_tools_adjust_colors_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/invert-colors.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_invert_colors_tool",
+      "target": "docs_tools_background_color_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/invert-colors.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_invert_colors_tool",
+      "target": "docs_tools_scanner_effect_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/invert-colors.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

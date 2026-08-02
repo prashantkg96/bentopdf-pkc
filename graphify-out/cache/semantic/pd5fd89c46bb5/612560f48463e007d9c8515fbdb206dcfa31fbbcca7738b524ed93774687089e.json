@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_background_color_tool",
+      "label": "Background Color Tool",
+      "file_type": "document",
+      "source_file": "docs/tools/background-color.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Works at the PDF structural level (not rasterization), so text remains selectable/searchable -- contrasts with rasterizing tools like Adjust Colors."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_background_color_tool",
+      "target": "docs_tools_text_color_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/background-color.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_background_color_tool",
+      "target": "docs_tools_invert_colors_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/background-color.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_background_color_tool",
+      "target": "docs_tools_adjust_colors_tool",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/background-color.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

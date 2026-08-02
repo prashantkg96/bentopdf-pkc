@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "docs_self_hosting_hostinger_shared_hosting",
+      "label": "Hostinger Shared Hosting Deployment",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_hostinger_htaccess",
+      "label": "Hostinger .htaccess Config",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_hostinger_language_routes",
+      "label": "Language Route Rewrites",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_hostinger_docs_routing",
+      "label": "VitePress Docs Routing",
+      "file_type": "concept",
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_self_hosting_hostinger_sharedarraybuffer_headers",
+      "label": "SharedArrayBuffer Headers (Hostinger)",
+      "file_type": "rationale",
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_self_hosting_hostinger_htaccess",
+      "target": "docs_self_hosting_hostinger_language_routes",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_hostinger_htaccess",
+      "target": "docs_self_hosting_hostinger_docs_routing",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_hostinger_htaccess",
+      "target": "docs_self_hosting_hostinger_sharedarraybuffer_headers",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_self_hosting_hostinger_htaccess",
+      "target": "docs_self_hosting_apache_htaccess",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/self-hosting/hostinger.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

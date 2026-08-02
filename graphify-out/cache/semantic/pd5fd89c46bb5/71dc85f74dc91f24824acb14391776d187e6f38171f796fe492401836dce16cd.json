@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "id": "docs_tools_pdf_booklet",
+      "label": "PDF Booklet",
+      "file_type": "document",
+      "source_file": "docs/tools/pdf-booklet.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_tools_pdf_booklet_saddle_stitch_imposition",
+      "label": "Saddle-stitch booklet imposition",
+      "file_type": "concept",
+      "source_file": "docs/tools/pdf-booklet.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_tools_pdf_booklet",
+      "target": "docs_tools_pdf_booklet_saddle_stitch_imposition",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-booklet.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_booklet",
+      "target": "docs_tools_n_up_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-booklet.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_booklet",
+      "target": "docs_tools_rotate_pdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-booklet.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_tools_pdf_booklet",
+      "target": "docs_tools_add_blank_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/tools/pdf-booklet.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}
