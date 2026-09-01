@@ -39,7 +39,7 @@
     "security:codeql:quick": "codeql database analyze ./codeql-db --format=csv --output=codeql-results.csv --threads=0 codeql/javascript-queries:codeql-suites/javascript-security-extended.qls",
     "security:audit": "npm audit --audit-level=high && npm run lint:security",
     "prepare": "husky",
-    "build:deploy": "export BASE_URL=/toolkits/pdf-tools SIMPLE_MODE=true \"VITE_BRAND_NAME=PKC PDF Tools\" SITE_URL=https://prashantkumarchandra.in && tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs && node scripts/generate-offline-manifest.mjs"
+    "build:deploy": "export BASE_URL=/toolkits/pdf-tools SIMPLE_MODE=true \"VITE_BRAND_NAME=PKC PDF Tools\" SITE_URL=https://prashantkumarchandra.in VITE_WASM_PYMUPDF_URL=https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev/pymupdf/ VITE_WASM_GS_URL=https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev/gs/ VITE_WASM_CPDF_URL=https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev/cpdf/ VITE_TESSERACT_WORKER_URL=https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev/tesseract/tesseract.js@v7.0.0/dist/worker.min.js VITE_TESSERACT_CORE_URL=https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev/tesseract/tesseract.js-core@v7.0.0 VITE_TESSERACT_LANG_URL=https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev/tesseract-lang && tsc && vite build && NODE_OPTIONS='--max-old-space-size=3072' node scripts/generate-i18n-pages.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-security-headers.mjs && node scripts/generate-offline-manifest.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

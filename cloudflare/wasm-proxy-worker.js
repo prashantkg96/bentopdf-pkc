@@ -18,7 +18,10 @@
  * - CPDF_SOURCE: Base URL for CoherentPDF files (e.g., https://cdn.example.com/cpdf)
  */
 
-const ALLOWED_ORIGINS = ['https://www.bentopdf.com', 'https://bentopdf.com'];
+const ALLOWED_ORIGINS = [
+  'https://prashantkumarchandra.in',
+  'https://www.prashantkumarchandra.in',
+];
 
 const MAX_FILE_SIZE_BYTES = 100 * 1024 * 1024;
 
@@ -40,7 +43,27 @@ const ALLOWED_EXTENSIONS = [
   '.asm.js',
   '.worker.js',
   '.html',
+  '.gz', // tesseract.js-data/*/**.traineddata.gz
+  '.whl', // pymupdf's pyodide Python wheel dependencies (numpy, opencv, etc.)
 ];
+
+// PKC: /tesseract/* is a scoped passthrough to jsDelivr's npm CDN, not an open
+// mirror. Only these package-name prefixes are allowed through, so this can't
+// be abused to proxy arbitrary jsDelivr traffic. Tesseract.js (OCR) needs its
+// worker script, its WASM core, and per-language .traineddata.gz files (one
+// package per language — ~100 possible, hence a prefix allowlist rather than
+// fixed URLs like the PYMUPDF_SOURCE/GS_SOURCE/CPDF_SOURCE routes above).
+const TESSERACT_JSDELIVR_BASE = 'https://cdn.jsdelivr.net/npm';
+const TESSERACT_ALLOWED_PREFIXES = [
+  'tesseract.js@',
+  'tesseract.js-core@',
+  '@tesseract.js-data/',
+];
+
+function isAllowedTesseractPath(subpath) {
+  const p = subpath.replace(/^\/+/, '');
+  return TESSERACT_ALLOWED_PREFIXES.some((prefix) => p.startsWith(prefix));
+}
 
 function isAllowedOrigin(origin) {
   if (!origin) return true; // Allow no-origin requests (e.g., direct browser navigation)
@@ -90,8 +113,88 @@ function getContentType(pathname) {
     '.zip': 'application/zip',
     '.mem': 'application/octet-stream',
     '.html': 'text/html',
+    '.gz': 'application/gzip',
+    '.whl': 'application/zip',
   };
   return contentTypes[ext] || 'application/octet-stream';
+}
+
+// PKC: Tesseract.js builds its language-data URL two different ways depending
+// on whether `langPath` is left at its default or overridden by us:
+//   - default (unset):  `${jsdelivr}/@tesseract.js-data/${lang}/${version}/${lang}.traineddata.gz`
+//     (version chosen internally: "4.0.0_best_int" for LSTM-only, else "4.0.0")
+//   - overridden (ours): `${langPath}/${lang}.traineddata.gz` — flat, no version segment
+// (see node_modules/tesseract.js/src/worker-script/index.js — `langPathDownload`).
+// So a plain host-swap of the default URL doesn't work; this route reconstructs
+// the version segment server-side. "4.0.0_best_int" matches what this app
+// requests today (LSTM-only is the default OEM); "4.0.0" is a fallback for the
+// Legacy/Combined OEM modes exposed in the OCR tool's Advanced Settings.
+const TESSERACT_LANG_DATA_VERSIONS = ['4.0.0_best_int', '4.0.0'];
+
+async function proxyTesseractLangData(request, subpath, origin) {
+  const match = subpath.match(/^\/([a-zA-Z0-9_]+)\.traineddata\.gz$/);
+  if (!match) {
+    return new Response(
+      JSON.stringify({
+        error: 'Invalid path',
+        message: 'Expected /tesseract-lang/<lang>.traineddata.gz',
+      }),
+      {
+        status: 400,
+        headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+      }
+    );
+  }
+  const lang = match[1];
+
+  for (const version of TESSERACT_LANG_DATA_VERSIONS) {
+    const targetUrl = `${TESSERACT_JSDELIVR_BASE}/@tesseract.js-data/${lang}/${version}/${lang}.traineddata.gz`;
+    const cacheKey = new Request(targetUrl, request);
+    const cache = caches.default;
+    let response = await cache.match(cacheKey);
+
+    if (!response) {
+      const upstream = await fetch(targetUrl, {
+        headers: {
+          'User-Agent': 'BentoPDF-WASM-Proxy/1.0',
+          Accept: '*/*',
+        },
+      });
+      if (!upstream.ok) continue; // try next version
+
+      response = new Response(upstream.body, upstream);
+      response.headers.set(
+        'Cache-Control',
+        `public, max-age=${CACHE_TTL_SECONDS}`
+      );
+      if (response.status === 200) {
+        await cache.put(cacheKey, response.clone());
+      }
+    }
+
+    const bodyData = await response.arrayBuffer();
+    return new Response(bodyData, {
+      status: 200,
+      headers: {
+        ...corsHeaders(origin),
+        'Content-Type': 'application/gzip',
+        'Content-Length': bodyData.byteLength.toString(),
+        'Cache-Control': `public, max-age=${CACHE_TTL_SECONDS}`,
+        'X-Proxied-From': new URL(targetUrl).hostname,
+      },
+    });
+  }
+
+  return new Response(
+    JSON.stringify({
+      error: 'Failed to fetch resource',
+      message: `No traineddata found for language "${lang}" under any known version.`,
+    }),
+    {
+      status: 404,
+      headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+    }
+  );
 }
 
 async function proxyRequest(request, env, sourceBaseUrl, subpath, origin) {
@@ -313,6 +416,38 @@ export default {
       return proxyRequest(request, env, env.CPDF_SOURCE, subpath, origin);
     }
 
+    if (pathname.startsWith('/tesseract/')) {
+      const subpath = pathname.replace('/tesseract', '');
+      if (!isAllowedTesseractPath(subpath)) {
+        return new Response(
+          JSON.stringify({
+            error: 'Forbidden package',
+            message:
+              'Only tesseract.js, tesseract.js-core and @tesseract.js-data packages may be proxied.',
+          }),
+          {
+            status: 403,
+            headers: {
+              ...corsHeaders(origin),
+              'Content-Type': 'application/json',
+            },
+          }
+        );
+      }
+      return proxyRequest(
+        request,
+        env,
+        TESSERACT_JSDELIVR_BASE,
+        subpath,
+        origin
+      );
+    }
+
+    if (pathname.startsWith('/tesseract-lang/')) {
+      const subpath = pathname.replace('/tesseract-lang', '');
+      return proxyTesseractLangData(request, subpath, origin);
+    }
+
     if (pathname === '/' || pathname === '/health') {
       return new Response(
         JSON.stringify({
@@ -322,11 +457,15 @@ export default {
             pymupdf: '/pymupdf/*',
             gs: '/gs/*',
             cpdf: '/cpdf/*',
+            tesseract: '/tesseract/*',
+            tesseractLang: '/tesseract-lang/<lang>.traineddata.gz',
           },
           configured: {
             pymupdf: !!env.PYMUPDF_SOURCE,
             gs: !!env.GS_SOURCE,
             cpdf: !!env.CPDF_SOURCE,
+            tesseract: true,
+            tesseractLang: true,
           },
         }),
         {

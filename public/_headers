@@ -1,11 +1,14 @@
 # PKC: security headers for the PDF tools (Cloudflare static-assets _headers).
 # CSP mirrors the app's generated policy (WASM needs 'wasm-unsafe-eval'/'unsafe-eval'
-# + blob:; jsDelivr serves the heavy WASM) and adds 'unsafe-inline' for the small
-# inline theme-bootstrap + top-pill loader scripts. COOP/COEP are intentionally
-# omitted: the deployed app works without cross-origin isolation, and enabling it
-# risks blocking cross-origin CDN/WASM loads.
+# + blob:). WASM (PyMuPDF/Ghostscript/CoherentPDF) is served through the first-party
+# bentopdf-wasm-proxy Worker, which fetches jsDelivr server-side and re-serves it
+# same-origin-trusted — this keeps a public CDN out of script-src (toolkits audit H2,
+# 2026-08-15) without vendoring ~77MB of WASM into this Worker's own deploy.
+# See ../cloudflare/wasm-proxy-worker.js and package.json's build:deploy VITE_WASM_*_URL.
+# COOP/COEP are intentionally omitted: the deployed app works without cross-origin
+# isolation, and enabling it risks blocking cross-origin CDN/WASM loads.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' 'unsafe-eval' blob: https://cdn.jsdelivr.net https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com https://rawcdn.githack.com; connect-src 'self' blob: https://api.github.com https://fonts.gstatic.com https://cdn.jsdelivr.net https://bentopdf-cors-proxy.bentopdf.workers.dev https://rawcdn.githack.com https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; frame-src 'self' blob:; frame-ancestors 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' 'unsafe-eval' blob: https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com https://rawcdn.githack.com; connect-src 'self' blob: https://api.github.com https://fonts.gstatic.com https://bentopdf-wasm-proxy.prashantprivate29051996.workers.dev https://bentopdf-cors-proxy.bentopdf.workers.dev https://rawcdn.githack.com https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; frame-src 'self' blob:; frame-ancestors 'self'; form-action 'self'
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN

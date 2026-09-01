@@ -55,10 +55,13 @@ compatibility_date = "2024-01-01"
 # binding = "RATE_LIMIT_KV"
 # id = "<YOUR_KV_NAMESPACE_ID>"
 
-# Use the same KV namespace as the CORS proxy if you want shared rate limiting
-[[kv_namespaces]]
-binding = "RATE_LIMIT_KV"
-id = "b88e030b308941118cd484e3fcb3ae49"
+# PKC: no KV namespace exists in this Cloudflare account yet (the id below was
+# an upstream bentopdf.com placeholder, not real here). The Worker runs fine
+# without it — env.RATE_LIMIT_KV is optional and rate limiting is just skipped.
+# Create a namespace and uncomment to enable it later.
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT_KV"
+# id = "<YOUR_KV_NAMESPACE_ID>"
 
 # =============================================================================
 # CUSTOM DOMAIN (Optional)
