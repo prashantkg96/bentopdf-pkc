@@ -10,7 +10,7 @@
           'data-theme',
           t === 'light' ? 'light' : 'dark'
         );
-        if (localStorage.getItem('glass') === 'on') {
+        if (localStorage.getItem('glass') !== 'off') {
           document.documentElement.setAttribute('data-glass', 'on');
         }
       })();

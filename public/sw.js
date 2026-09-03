@@ -8,7 +8,7 @@
 // NOTE: keep the 'bentopdf-' prefix — the activate handler purges old caches
 // via startsWith('bentopdf-'), so this must stay prefix-compatible with the
 // historical bentopdf-v* names to evict them on upgrade.
-const CACHE_VERSION = 'bentopdf-pkc-v14';
+const CACHE_VERSION = 'bentopdf-pkc-v15';
 const CACHE_NAME = `${CACHE_VERSION}-static`;
 
 const trustedCdnOrigins = new Set(['https://cdn.jsdelivr.net']);
