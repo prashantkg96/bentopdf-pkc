@@ -73,6 +73,7 @@
       name="twitter:description"
       content="Free PDF merger. Combine multiple PDFs, no signup, privacy-first."
     />
+
     <!-- Mobile Web App -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -260,10 +261,26 @@
                   class="block text-xs text-gray-400 mt-0.5"
                   data-i18n="tools:mergePdf.retainPageLabelsHint"
                 >
-                  Off (default): the merged PDF uses natural page numbering 1–N.
-                  On: each file's original page labels are preserved (may
+                  Off (default): the merged PDF uses natural page numbering 1 to
+                  N. On: each file's original page labels are preserved (may
                   produce duplicate labels).
                 </span>
+              </span>
+            </label>
+
+            <label
+              class="mt-4 flex items-start gap-2 text-sm text-gray-300 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                id="remove-duplicate-fonts"
+                class="mt-0.5 w-4 h-4 rounded text-indigo-600 bg-gray-700 border-gray-600"
+              />
+              <span
+                class="font-medium"
+                data-i18n="tools:mergePdf.removeDuplicateFonts"
+              >
+                Remove duplicate fonts
               </span>
             </label>
 
@@ -395,29 +412,29 @@
             href="split-pdf.html"
             class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
           >
-            <h3 class="text-white font-semibold mb-1">Split Pdf</h3>
-            <p class="text-gray-400 text-sm">Free online split pdf tool</p>
+            <h3 class="text-white font-semibold mb-1">Split PDF</h3>
+            <p class="text-gray-400 text-sm">Free online split PDF tool</p>
           </a>
           <a
             href="organize-pdf.html"
             class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
           >
-            <h3 class="text-white font-semibold mb-1">Organize Pdf</h3>
-            <p class="text-gray-400 text-sm">Free online organize pdf tool</p>
+            <h3 class="text-white font-semibold mb-1">Organize PDF</h3>
+            <p class="text-gray-400 text-sm">Free online organize PDF tool</p>
           </a>
           <a
             href="compress-pdf.html"
             class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
           >
-            <h3 class="text-white font-semibold mb-1">Compress Pdf</h3>
-            <p class="text-gray-400 text-sm">Free online compress pdf tool</p>
+            <h3 class="text-white font-semibold mb-1">Compress PDF</h3>
+            <p class="text-gray-400 text-sm">Free online compress PDF tool</p>
           </a>
           <a
             href="rotate-pdf.html"
             class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
           >
-            <h3 class="text-white font-semibold mb-1">Rotate Pdf</h3>
-            <p class="text-gray-400 text-sm">Free online rotate pdf tool</p>
+            <h3 class="text-white font-semibold mb-1">Rotate PDF</h3>
+            <p class="text-gray-400 text-sm">Free online rotate PDF tool</p>
           </a>
           <a
             href="delete-pages.html"

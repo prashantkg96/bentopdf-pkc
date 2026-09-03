@@ -642,6 +642,7 @@ export default defineConfig(() => {
           'view-metadata': resolve(__dirname, 'src/pages/view-metadata.html'),
           'edit-metadata': resolve(__dirname, 'src/pages/edit-metadata.html'),
           'pdf-to-zip': resolve(__dirname, 'src/pages/pdf-to-zip.html'),
+          'duplex-collate': resolve(__dirname, 'src/pages/duplex-collate.html'),
           'alternate-merge': resolve(
             __dirname,
             'src/pages/alternate-merge.html'

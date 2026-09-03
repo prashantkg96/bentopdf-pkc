@@ -67,6 +67,13 @@ const baseCategories = [
         subtitle: 'Save a selection of pages as new files.',
       },
       {
+        href: import.meta.env.BASE_URL + 'duplex-collate.html',
+        name: 'Duplex Collate',
+        icon: 'ph-arrows-vertical',
+        subtitle:
+          'Reorder front/back scan blocks into collated page order in one PDF.',
+      },
+      {
         href: import.meta.env.BASE_URL + 'organize-pdf.html',
         name: 'Duplicate & Organize',
         icon: 'ph-files',
