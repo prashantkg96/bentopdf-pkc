@@ -21,6 +21,25 @@ const CACHEABLE =
   /\.(html|js|mjs|css|wasm|whl|zip|json|png|jpe?g|gif|svg|woff2?|ttf)$/i;
 const EXCLUDE = /\.(map|br|gz)$/i;
 
+// Office→PDF is the one family of tools that cannot work offline: it runs on a
+// ~75 MB LibreOffice WASM payload served from the proxy Worker (three times
+// Cloudflare's 25 MiB per-asset limit, so it is never bundled). Precaching its
+// code would claim an offline capability we cannot deliver.
+//
+// We drop each tool's own JS chunk but KEEP its HTML shell, so navigating there
+// offline still renders a real page — src/js/utils/internet-required.ts, which
+// lives in the always-cached shared bundle, then swaps the drop zone for a
+// "needs an internet connection" notice.
+//
+// libreoffice-loader-*.js is deliberately NOT excluded: pdf-workflow.html
+// statically imports it (and modulepreloads it), so dropping it would break the
+// whole workflow page offline, not just the Office nodes. It is 16 KB.
+const INTERNET_REQUIRED =
+  require('../src/js/config/internet-required-tools.json').tools;
+const internetRequiredChunk = new RegExp(
+  `^assets/(?:${INTERNET_REQUIRED.join('|')})-[A-Za-z0-9_-]+\.js$`
+);
+
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
     const full = join(dir, name);
@@ -30,10 +49,16 @@ function walk(dir, out = []) {
   return out;
 }
 
+const skippedOfflineChunks = [];
 const localUrls = walk(DIST)
   .filter((f) => CACHEABLE.test(f) && !EXCLUDE.test(f))
   .map((f) => relative(DIST, f).split(sep).join('/'))
   .filter((p) => p !== 'offline-manifest.json')
+  .filter((p) => {
+    if (!internetRequiredChunk.test(p)) return true;
+    skippedOfflineChunks.push(p);
+    return false;
+  })
   .map((p) => BASE + p)
   .sort();
 
@@ -114,6 +139,22 @@ const urls = [BASE, ...localUrls, ...cdnWasmUrls, ...tesseractUrls];
 
 const manifest = { base: BASE, count: urls.length, urls };
 writeFileSync(join(DIST, 'offline-manifest.json'), JSON.stringify(manifest));
+// Fail loudly rather than silently precaching Office→PDF again. If rollup ever
+// changes its chunk naming, the regex above stops matching and this catches it
+// instead of the exclusion quietly becoming a no-op.
+if (skippedOfflineChunks.length !== INTERNET_REQUIRED.length) {
+  throw new Error(
+    `[offline-manifest] expected to exclude ${INTERNET_REQUIRED.length} ` +
+      `internet-required tool chunks, excluded ${skippedOfflineChunks.length}: ` +
+      `${skippedOfflineChunks.join(', ') || '(none)'}. ` +
+      `Check the asset naming against internet-required-tools.json.`
+  );
+}
+
 console.log(
   `[offline-manifest] wrote ${urls.length} asset URLs (base ${BASE})`
+);
+console.log(
+  `[offline-manifest] excluded ${skippedOfflineChunks.length} internet-required tool chunk(s); ` +
+    `their HTML shells stay cached so the offline notice can render`
 );

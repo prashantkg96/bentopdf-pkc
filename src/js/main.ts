@@ -2,6 +2,7 @@ import './utils/map-upsert-polyfill.js';
 import { categories } from './config/tools.js';
 import './utils/pkc-tool-analytics.js'; // privacy-safe tool-usage logging (side-effect import)
 import './pwa-nav.js'; // trims the top-pill nav to in-scope links when installed as a PWA
+import './utils/internet-required.js'; // Office→PDF needs the network; say so offline
 import { dom, switchView, hideAlert } from './ui.js';
 import { ShortcutsManager } from './logic/shortcuts.js';
 import { createIcons, icons } from 'lucide';

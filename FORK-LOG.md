@@ -248,6 +248,64 @@ engine:
   mis-served. Tightening the matcher stops _new_ bad matches but cannot un-cache
   old ones — only a version bump evicts them.
 
+### Office to PDF is excluded from offline mode, by design
+
+Office to PDF is the only tool family here that genuinely cannot work offline —
+the LibreOffice payload is remote by necessity. Rather than let it look broken,
+it is explicitly out of the offline story:
+
+- `src/js/config/internet-required-tools.json` is the single source of truth,
+  read by both `generate-offline-manifest.mjs` (build) and
+  `src/js/utils/internet-required.ts` (runtime), so the precache and the notice
+  cannot drift apart.
+- The 13 per-tool JS chunks are dropped from the precache (~51 KB). The build
+  **throws** if it does not exclude exactly 13, so a change in rollup's chunk
+  naming fails loudly instead of silently re-caching them.
+- The HTML shells stay cached on purpose: navigating there offline has to render
+  a real page for the notice to appear on.
+- The notice therefore lives in the shared bundle pulled in by `main.ts`, not in
+  the per-tool chunk — that chunk is precisely the thing that is not cached.
+- `libreoffice-loader-*.js` is **not** excluded. `pdf-workflow.html` statically
+  imports and modulepreloads it, so dropping it would break the entire workflow
+  page offline rather than just the Office nodes. It is 16 KB.
+- `epub`/`mobi`/`fb2` to PDF look like the same family but run on PyMuPDF, which
+  is precached and does work offline. A test asserts the list contains exactly
+  the LibreOffice-backed tools and none of these.
+
+### Browser verification (2026-09-04)
+
+Ran against a real `build:deploy` output served at the deploy base path.
+
+- **Edit PDF Text** — full round trip. The editcore WASM engine loaded, parsed a
+  14-page PDF into 38 paragraph boxes with the embedded font detected, an inline
+  edit reflowed live, Export produced a valid PDF, and re-importing that PDF
+  showed the edited text still there with the font re-detected. Also confirms the
+  Tier 1 pdf.js polyfill wrapper is live (`pdf.worker-*.js` is the wrapped one).
+- **Word to PDF** — converted a .docx to a valid 1-page PDF 1.7. Tested against a
+  cross-origin stand-in for the proxy route, which means the blob:-URL worker
+  path in `libreoffice-loader.ts` is exercised, not just the same-origin path:
+  all five payload files were fetched cross-origin and the conversion completed.
+- **Duplex Collate** — 14-page input, auto-split at 7, correct preview summary,
+  and the collated output re-parses as a valid 14-page PDF.
+- **The offline notice** — appears on going offline, hides the drop zone and the
+  (now misleading) "first load downloads our engine" hint, and reloads the page
+  back to working state on reconnect.
+
+**Correction to an earlier note in this log.** Getting Office to PDF working in
+production needs **two** steps, not one. The deployed WASM proxy Worker is still
+running the old code — its `/` health endpoint does not list a `libreoffice`
+endpoint and `/libreoffice/*` 404s. So:
+
+```sh
+cd cloudflare
+npx wrangler deploy -c wasm-wrangler.toml          # ship the /libreoffice/* route
+npx wrangler secret put LIBREOFFICE_SOURCE -c wasm-wrangler.toml
+```
+
+Until both are done, the Office tools will fail at the payload fetch. Everything
+on the client side is verified correct — it requests
+`<proxy>/libreoffice/soffice.{wasm,data}.gz` and the three glue scripts.
+
 ### Known stale tests (pre-existing, not caused by this sync)
 
 - `src/tests/i18n.test.ts` — 8 failures. Asserts multi-language `getLanguageFromUrl`

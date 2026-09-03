@@ -1,0 +1,19 @@
+{
+  "$comment": "Single source of truth for tools that cannot work offline. Read at runtime by src/js/utils/internet-required.ts and at build time by scripts/generate-offline-manifest.mjs, so the precache and the on-page notice can never disagree. Slugs are page basenames without .html.",
+  "reasonKey": "offline.internetRequired",
+  "tools": [
+    "word-to-pdf",
+    "excel-to-pdf",
+    "powerpoint-to-pdf",
+    "odt-to-pdf",
+    "ods-to-pdf",
+    "odp-to-pdf",
+    "odg-to-pdf",
+    "rtf-to-pdf",
+    "pub-to-pdf",
+    "vsd-to-pdf",
+    "wpd-to-pdf",
+    "wps-to-pdf",
+    "pages-to-pdf"
+  ]
+}
