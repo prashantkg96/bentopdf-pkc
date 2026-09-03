@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_md",
+      "label": "table-of-contents.md",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "label": "Table of Contents",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_how_it_works",
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_options",
+      "label": "Options",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_features",
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_use_cases",
+      "label": "Use Cases",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_tips",
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_table_of_contents_related_tools",
+      "label": "Related Tools",
+      "file_type": "document",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L45"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_md",
+      "target": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "target": "$graphify-root$_docs_tools_table_of_contents_how_it_works",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "target": "$graphify-root$_docs_tools_table_of_contents_options",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "target": "$graphify-root$_docs_tools_table_of_contents_features",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "target": "$graphify-root$_docs_tools_table_of_contents_use_cases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "target": "$graphify-root$_docs_tools_table_of_contents_tips",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_md",
+      "target": "$graphify-root$_docs_tools_bookmark_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/bookmark.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_table_of_contents",
+      "target": "$graphify-root$_docs_tools_table_of_contents_related_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_md",
+      "target": "$graphify-root$_docs_tools_page_numbers_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/page-numbers.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_table_of_contents_md",
+      "target": "$graphify-root$_docs_tools_header_footer_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/table-of-contents.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/header-footer.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

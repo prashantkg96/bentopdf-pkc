@@ -1,0 +1,454 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "label": "pkcify-page.py",
+      "file_type": "code",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "label": "drop_meta()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L46",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "label": "pkcify()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L55",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_pkcify_page_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L153",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_pkcify_page_rationale_1",
+      "label": "Convert an upstream BentoPDF src/pages/*.html into this fork's PKC form. Used\u2026",
+      "file_type": "rationale",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_pkcify_page_rationale_47",
+      "label": "Remove a whole <meta ...> tag identified by one attribute value.",
+      "file_type": "rationale",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L47"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "target": "io",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_main",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_rationale_1",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_pkcify_page_rationale_47",
+      "target": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L47",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "callee": "compile",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L48",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "callee": "escape",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L49",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "callee": "escape",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L49",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_drop_meta",
+      "callee": "sub",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L52",
+      "receiver": "pat"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "search",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L60",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L62",
+      "receiver": "THEME_BOOTSTRAP"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "end",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L63",
+      "receiver": "charset"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "end",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L63",
+      "receiver": "charset"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "compile",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L74",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "search",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L78",
+      "receiver": "block"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "sub",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L79",
+      "receiver": "block"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L79",
+      "receiver": "PKC_FAVICON"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "sub",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L82",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "sub",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L83",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L86",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L86",
+      "receiver": "PKC_FAVICON"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L89",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "SITE",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L90",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "SITE",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "sub",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L91",
+      "receiver": "re"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "find",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L100",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "find",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L101",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "SystemExit",
+      "is_member_call": false,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L103",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "count",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L107",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "count",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L108",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "SystemExit",
+      "is_member_call": false,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L110",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L115",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L117",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L123",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L124",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L128",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L132",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L133",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L139",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_pkcify",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L145",
+      "receiver": "html"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_main",
+      "callee": "read",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L155",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_pkcify_page_main",
+      "callee": "write",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/pkcify-page.py",
+      "source_location": "L157",
+      "receiver": null
+    }
+  ]
+}

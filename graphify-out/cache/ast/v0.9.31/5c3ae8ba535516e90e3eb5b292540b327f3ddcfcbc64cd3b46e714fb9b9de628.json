@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_md",
+      "label": "split-pdf.md",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "label": "Split PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_how_it_works",
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_split_modes",
+      "label": "Split Modes",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_features",
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L29"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_use_cases",
+      "label": "Use Cases",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_tips",
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L46"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_split_pdf_related_tools",
+      "label": "Related Tools",
+      "file_type": "document",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L52"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_md",
+      "target": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "target": "$graphify-root$_docs_tools_split_pdf_how_it_works",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "target": "$graphify-root$_docs_tools_split_pdf_split_modes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "target": "$graphify-root$_docs_tools_split_pdf_features",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "target": "$graphify-root$_docs_tools_split_pdf_use_cases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "target": "$graphify-root$_docs_tools_split_pdf_tips",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_split_pdf",
+      "target": "$graphify-root$_docs_tools_split_pdf_related_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_md",
+      "target": "$graphify-root$_docs_tools_merge_pdf_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/merge-pdf.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_md",
+      "target": "$graphify-root$_docs_tools_extract_pages_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/extract-pages.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_md",
+      "target": "$graphify-root$_docs_tools_delete_pages_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/delete-pages.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_split_pdf_md",
+      "target": "$graphify-root$_docs_tools_pdf_multi_tool_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/split-pdf.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/pdf-multi-tool.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

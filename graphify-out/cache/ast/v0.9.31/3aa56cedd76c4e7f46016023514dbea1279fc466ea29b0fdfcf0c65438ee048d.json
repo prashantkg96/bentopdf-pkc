@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_md",
+      "label": "view-metadata.md",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "label": "View Metadata",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_how_it_works",
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_features",
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_metadata_sections",
+      "label": "Metadata Sections",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_use_cases",
+      "label": "Use Cases",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_tips",
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L41"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_view_metadata_related_tools",
+      "label": "Related Tools",
+      "file_type": "document",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L47"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_md",
+      "target": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "target": "$graphify-root$_docs_tools_view_metadata_how_it_works",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "target": "$graphify-root$_docs_tools_view_metadata_features",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "target": "$graphify-root$_docs_tools_view_metadata_metadata_sections",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "target": "$graphify-root$_docs_tools_view_metadata_use_cases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "target": "$graphify-root$_docs_tools_view_metadata_tips",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_md",
+      "target": "$graphify-root$_docs_tools_edit_metadata_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/edit-metadata.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_view_metadata",
+      "target": "$graphify-root$_docs_tools_view_metadata_related_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_md",
+      "target": "$graphify-root$_docs_tools_pdf_layers_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/pdf-layers.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_view_metadata_md",
+      "target": "$graphify-root$_docs_tools_compare_pdfs_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/view-metadata.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/compare-pdfs.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

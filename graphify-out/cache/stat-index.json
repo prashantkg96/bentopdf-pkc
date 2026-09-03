@@ -24,12 +24,9 @@
     }
   },
   ".github/codeql-config.yml": {
-    "size": 588,
-    "mtime_ns": 1782424635197507300,
-    "word_count": 54,
-    "hashes": {
-      ".github/codeql-config.yml": "ffebe339984d39c7dcd563828eca39d19986bc0d8ed20d736ef4445fe949aba6"
-    }
+    "size": 593,
+    "mtime_ns": 1788475636250739200,
+    "word_count": 54
   },
   ".github/dependabot.yml": {
     "size": 385,
@@ -64,339 +61,209 @@
     }
   },
   "404.html": {
-    "size": 6122,
-    "mtime_ns": 1782420255981468400,
-    "word_count": 528,
-    "hashes": {
-      "404.html": "c95f20efbbf932d1c35a7f2cc2d32bb27eb3282dbad4cacd7e3b327df0b59c4b"
-    }
+    "size": 6256,
+    "mtime_ns": 1788453273072830100,
+    "word_count": 536
   },
   "CONTRIBUTING.md": {
-    "size": 1401,
-    "mtime_ns": 1782424464011159400,
-    "word_count": 159,
-    "hashes": {
-      "contributing.md": "928ad02a8d1210a0e9baca51b4808491a4c8ae071c0f58028919cba22306a8cf"
-    }
+    "size": 1440,
+    "mtime_ns": 1788475636189944900,
+    "word_count": 163
   },
   "README.md": {
-    "size": 3710,
-    "mtime_ns": 1782423990682327700,
-    "word_count": 460,
-    "hashes": {
-      "readme.md": "1cd8152b5318364fa2567d7ce69d64fb939ca90a21dc0c7e65f01deab5e5fb4a"
-    }
+    "size": 3778,
+    "mtime_ns": 1788475676214042000,
+    "word_count": 460
   },
   "RELEASE.md": {
-    "size": 7856,
-    "mtime_ns": 1782151868849226600,
-    "word_count": 1135,
-    "hashes": {
-      "release.md": "c4352052037cb1b1c446c3554ed1c6e0bcd0c82167785229f8eb91bc54a422df"
-    }
+    "size": 7555,
+    "mtime_ns": 1788476191440660100,
+    "word_count": 1135
   },
   "SECURITY.md": {
-    "size": 1209,
-    "mtime_ns": 1782424475207868200,
-    "word_count": 149,
-    "hashes": {
-      "security.md": "62c16824da1be388b4cbcb3fa35152b765f34efd6c37185ea74521e4c36876de"
-    }
+    "size": 1243,
+    "mtime_ns": 1788475636228853800,
+    "word_count": 153
   },
   "SIMPLE_MODE.md": {
-    "size": 7116,
-    "mtime_ns": 1782151868850231700,
-    "word_count": 848,
-    "hashes": {
-      "simple_mode.md": "e160f662e26a2df12693a30e714557efcc9540c07f30799a477ef3c79acfceb8"
-    }
+    "size": 7083,
+    "mtime_ns": 1788476191498454100,
+    "word_count": 854
   },
   "STATIC-HOSTING.md": {
-    "size": 7635,
-    "mtime_ns": 1782151868850231700,
-    "word_count": 1179,
-    "hashes": {
-      "static-hosting.md": "ae0325791abfa225eb9e5994fa2e624ccbc4778ae1c4be99a7c734d4afcf69cd"
-    }
+    "size": 7724,
+    "mtime_ns": 1788476191535755600,
+    "word_count": 1225
   },
   "TRANSLATION.md": {
-    "size": 15517,
-    "mtime_ns": 1782151868850231700,
-    "word_count": 2018,
-    "hashes": {
-      "translation.md": "59a663e98d825dfd56cedf86b8c10eac4c3c769766de0c5ba7e2e289b4bdc107"
-    }
+    "size": 14950,
+    "mtime_ns": 1788476191749589900,
+    "word_count": 2036
   },
   "about.html": {
-    "size": 11084,
-    "mtime_ns": 1782420256016471200,
-    "word_count": 885,
-    "hashes": {
-      "about.html": "feb5bf8ddb0d90c10ebb698db812c0a6b4d1adf756adcb5ca0e7853e9ad7b92d"
-    }
+    "size": 11270,
+    "mtime_ns": 1788476191814990100,
+    "word_count": 901
   },
   "chart/Chart.yaml": {
-    "size": 800,
-    "mtime_ns": 1782151868852231600,
-    "word_count": 109,
-    "hashes": {
-      "chart/chart.yaml": "62236dc9d759016567f8e457273f9afb5e904712b96fd33758ad0489420d988c"
-    }
+    "size": 828,
+    "mtime_ns": 1788475914680633600,
+    "word_count": 111
   },
   "chart/README.md": {
-    "size": 2172,
-    "mtime_ns": 1782151868852231600,
-    "word_count": 243,
-    "hashes": {
-      "chart/readme.md": "44270646d7a92d3f1fd7cedda3db6489b2d415979107aa31b2c8fe748b229360"
-    }
+    "size": 2127,
+    "mtime_ns": 1788476191840292400,
+    "word_count": 249
   },
   "chart/templates/NOTES.txt": {
-    "size": 3121,
-    "mtime_ns": 1782151868853742400,
-    "word_count": 359,
-    "hashes": {
-      "chart/templates/notes.txt": "48e017e0e7382d54dfc12fab222653c2952aac58e938e2057d297feb3b0dea42"
-    }
+    "size": 3146,
+    "mtime_ns": 1788475636260392800,
+    "word_count": 359
   },
   "chart/templates/deployment.yaml": {
-    "size": 2315,
-    "mtime_ns": 1782151868853742400,
-    "word_count": 246,
-    "hashes": {
-      "chart/templates/deployment.yaml": "969ce70c994412a96a1dd822bf4bd54916ad97758fa9a2ac58becb0619649dc1"
-    }
+    "size": 2335,
+    "mtime_ns": 1788475636256877800,
+    "word_count": 246
   },
   "chart/templates/gateway.yaml": {
-    "size": 799,
-    "mtime_ns": 1782151868855061100,
-    "word_count": 92,
-    "hashes": {
-      "chart/templates/gateway.yaml": "3279708166c6862ad7d6218f3e923f79e4e2205d3609308d60d69681cae04c9b"
-    }
+    "size": 809,
+    "mtime_ns": 1788475636256877800,
+    "word_count": 92
   },
   "chart/templates/httproute.yaml": {
-    "size": 1732,
-    "mtime_ns": 1782151868855061100,
-    "word_count": 226,
-    "hashes": {
-      "chart/templates/httproute.yaml": "d081beab0417e63f6fbce13637f1c329972a29978b3dec8757cc9f84ae64fb50"
-    }
+    "size": 1752,
+    "mtime_ns": 1788475636258383900,
+    "word_count": 226
   },
   "chart/templates/ingress.yaml": {
-    "size": 1165,
-    "mtime_ns": 1782151868855061100,
-    "word_count": 145,
-    "hashes": {
-      "chart/templates/ingress.yaml": "9d6f1f18ad1a0a27692620ec5de6abfb3a0879e55ad28c39c2c34c58881fa257"
-    }
+    "size": 1180,
+    "mtime_ns": 1788475636259393700,
+    "word_count": 145
   },
   "chart/templates/service.yaml": {
-    "size": 414,
-    "mtime_ns": 1782151868855061100,
-    "word_count": 50,
-    "hashes": {
-      "chart/templates/service.yaml": "618d0822483a9bd2c9d5b1efbabd36a570ce9ceae2cf0ee3f4f01874180414fa"
-    }
+    "size": 429,
+    "mtime_ns": 1788475636260392800,
+    "word_count": 50
   },
   "chart/templates/tests/test-connection.yaml": {
-    "size": 405,
-    "mtime_ns": 1782151868856616000,
-    "word_count": 43,
-    "hashes": {
-      "chart/templates/tests/test-connection.yaml": "4c7a945b89f1f374bef0d6563b5de6e9adab69b4c6a356d53bc3bcfd30401dad"
-    }
+    "size": 420,
+    "mtime_ns": 1788475636261394000,
+    "word_count": 43
   },
   "chart/values.yaml": {
-    "size": 1866,
-    "mtime_ns": 1782151868857195400,
-    "word_count": 209,
-    "hashes": {
-      "chart/values.yaml": "6374d7b364fa7c3054d2947c7a67cef2698ca9cf329fc90b14b6668b01945a91"
-    }
+    "size": 1891,
+    "mtime_ns": 1788475636255871200,
+    "word_count": 213
   },
   "cloudflare/WASM-PROXY.md": {
-    "size": 3587,
-    "mtime_ns": 1782151868857621500,
-    "word_count": 400,
-    "hashes": {
-      "cloudflare/wasm-proxy.md": "074802f6735e5882cbbd57a74dafeddb38f4ce3cd9b6675adbff813d96ea2711"
-    }
+    "size": 3518,
+    "mtime_ns": 1788476191859536700,
+    "word_count": 408
   },
   "cloudflare/cors-proxy-worker.js": {
-    "size": 13672,
-    "mtime_ns": 1782151868857621500,
-    "word_count": 1167
+    "size": 13241,
+    "mtime_ns": 1788476193936174700,
+    "word_count": 1173
   },
   "cloudflare/wasm-proxy-worker.js": {
-    "size": 10000,
-    "mtime_ns": 1782151868858625500,
-    "word_count": 861
+    "size": 15321,
+    "mtime_ns": 1788475636267483400,
+    "word_count": 1405
   },
   "contact.html": {
-    "size": 4001,
-    "mtime_ns": 1785516088560715200,
-    "word_count": 380,
-    "hashes": {
-      "contact.html": "6c3819f23c155055f3e3f24f76061240dde7ebe8d075af18bce351d26a57668d"
-    }
+    "size": 4022,
+    "mtime_ns": 1788453273074827900,
+    "word_count": 388
   },
   "docker-compose.dev.yml": {
-    "size": 345,
-    "mtime_ns": 1782151868859629200,
-    "word_count": 34,
-    "hashes": {
-      "docker-compose.dev.yml": "c668af53a1d330e261e5b147adbb7fb1804e4deceddce1bc12b728b02e0cfede"
-    }
+    "size": 355,
+    "mtime_ns": 1788475636189944900,
+    "word_count": 34
   },
   "docker-compose.yml": {
-    "size": 577,
-    "mtime_ns": 1782151868861173000,
-    "word_count": 48,
-    "hashes": {
-      "docker-compose.yml": "dab282ce2174539222f8381cadf6131a45539138473eeedacf592d1ccaa2ce9b"
-    }
+    "size": 610,
+    "mtime_ns": 1788475778654321600,
+    "word_count": 48
   },
   "docs/.vitepress/config.mts": {
-    "size": 13463,
-    "mtime_ns": 1782151868885401300,
-    "word_count": 1207
+    "size": 13599,
+    "mtime_ns": 1788475895749655300,
+    "word_count": 1220
   },
   "docs/contributing.md": {
-    "size": 3347,
-    "mtime_ns": 1782151868885401300,
-    "word_count": 404,
-    "hashes": {
-      "docs/contributing.md": "ccda3affeb7275f96050e82ff332d4cce85885a528d8e367021a88566f7927b6"
-    }
+    "size": 3284,
+    "mtime_ns": 1788476191889459400,
+    "word_count": 408
   },
   "docs/getting-started.md": {
-    "size": 3350,
-    "mtime_ns": 1782151868885401300,
-    "word_count": 416,
-    "hashes": {
-      "docs/getting-started.md": "724a371987e808be78b92ed57b1dd1351ba71bede51d943164e7d48db162207a"
-    }
+    "size": 3387,
+    "mtime_ns": 1788476191904045600,
+    "word_count": 430
   },
   "docs/index.md": {
-    "size": 1610,
-    "mtime_ns": 1782151868887060900,
-    "word_count": 205,
-    "hashes": {
-      "docs/index.md": "02c1054437dadce7954416b341fd6b66a015fb34c6dae6c385083d13a5a1d1db"
-    }
+    "size": 1578,
+    "mtime_ns": 1788476191918216600,
+    "word_count": 209
   },
   "docs/licensing.md": {
-    "size": 4695,
-    "mtime_ns": 1782151868887060900,
-    "word_count": 616,
-    "hashes": {
-      "docs/licensing.md": "59c444ccaad88b307c728f08ba82f246620c1271599c8a23a9a2fd84e570b400"
-    }
-  },
-  "docs/public/images/favicon-no-bg.svg": {
-    "size": 557,
-    "mtime_ns": 1782151868888125600,
-    "word_count": 48,
-    "hashes": {
-      "docs/public/images/favicon-no-bg.svg": "5d815923e1c00905cd23a96143dfa114fa386b7fec2b6ebbf47f1c5382b5cd3f"
-    }
-  },
-  "docs/public/images/favicon.svg": {
-    "size": 557,
-    "mtime_ns": 1782151868888866900,
-    "word_count": 48,
-    "hashes": {
-      "docs/public/images/favicon.svg": "5f08cf22edb4efd7ecba1bfe6cbc2d148334dd3dfda09175e9884ab9bb1aea6a"
-    }
+    "size": 4715,
+    "mtime_ns": 1788476191938556800,
+    "word_count": 636
   },
   "docs/self-hosting/apache.md": {
-    "size": 7583,
-    "mtime_ns": 1782151868888866900,
-    "word_count": 793,
-    "hashes": {
-      "docs/self-hosting/apache.md": "941349a204c14c102635e6943149d4461270c439c90dd576388935f7788af395"
-    }
+    "size": 7380,
+    "mtime_ns": 1788476191957218500,
+    "word_count": 795
   },
   "docs/self-hosting/aws.md": {
-    "size": 5928,
-    "mtime_ns": 1782151868888866900,
-    "word_count": 655,
-    "hashes": {
-      "docs/self-hosting/aws.md": "fb8da1acf23391baf9338d575742af8bb5e64561a6e9db995e33f89e11d8c85f"
-    }
+    "size": 5823,
+    "mtime_ns": 1788476191973526600,
+    "word_count": 659
   },
   "docs/self-hosting/cloudflare.md": {
-    "size": 4545,
-    "mtime_ns": 1782151868890130600,
-    "word_count": 519,
-    "hashes": {
-      "docs/self-hosting/cloudflare.md": "618e5da91bb33ddddd4c754c7c19e22f546ed1a55541aabbd095f78e0c47cc87"
-    }
+    "size": 4408,
+    "mtime_ns": 1788476191991555300,
+    "word_count": 519
   },
   "docs/self-hosting/cors-proxy.md": {
-    "size": 6270,
-    "mtime_ns": 1782151868890885000,
-    "word_count": 734,
-    "hashes": {
-      "docs/self-hosting/cors-proxy.md": "d03ba696c8347395fc9472716ff33688e96cbc686f09d86684d052755fdaeabb"
-    }
+    "size": 6145,
+    "mtime_ns": 1788476192027578300,
+    "word_count": 742
   },
   "docs/self-hosting/docker.md": {
-    "size": 25596,
-    "mtime_ns": 1782151868890885000,
-    "word_count": 2453,
-    "hashes": {
-      "docs/self-hosting/docker.md": "2078a7775cc96d0ed9bf2d955f1fc9a57a387f8ac433a1153f7fb0998f4a30fe"
-    }
+    "size": 25436,
+    "mtime_ns": 1788476192113749000,
+    "word_count": 2483
   },
   "docs/self-hosting/hostinger.md": {
-    "size": 8846,
-    "mtime_ns": 1782151868891932000,
-    "word_count": 894,
-    "hashes": {
-      "docs/self-hosting/hostinger.md": "495d9f2583b672f8cffdfdccda9149a10ffe7713410d733579ef2ff8e015f7fc"
-    }
+    "size": 8638,
+    "mtime_ns": 1788476192128818900,
+    "word_count": 898
   },
   "docs/self-hosting/index.md": {
-    "size": 25109,
-    "mtime_ns": 1782151868891932000,
-    "word_count": 2779,
-    "hashes": {
-      "docs/self-hosting/index.md": "db4ccf7b03002f3d40773242c4060c7540d9db93ec1645f02d2ebc1e6aa32b3d"
-    }
+    "size": 24941,
+    "mtime_ns": 1788476192202086800,
+    "word_count": 2821
   },
   "docs/self-hosting/kubernetes.md": {
-    "size": 6174,
-    "mtime_ns": 1782151868891932000,
-    "word_count": 693,
-    "hashes": {
-      "docs/self-hosting/kubernetes.md": "4abeb567d5ccd39f43e1d4d71ed2f6a7f343b202303132bc9315cdf5371eb7ca"
-    }
+    "size": 6078,
+    "mtime_ns": 1788476192230414700,
+    "word_count": 703
   },
   "docs/self-hosting/netlify.md": {
-    "size": 4631,
-    "mtime_ns": 1782151868892894500,
-    "word_count": 530,
-    "hashes": {
-      "docs/self-hosting/netlify.md": "be639ec7f20239010662cd81f3a660515c96306551babe719d91423a79494e2a"
-    }
+    "size": 4509,
+    "mtime_ns": 1788476192247047800,
+    "word_count": 534
   },
   "docs/self-hosting/nginx.md": {
-    "size": 6629,
-    "mtime_ns": 1782151868892894500,
-    "word_count": 731,
-    "hashes": {
-      "docs/self-hosting/nginx.md": "13cf34d76965951148d532a9eeecf264ffab1865f76e25a70e3c5a1edf330906"
-    }
+    "size": 6454,
+    "mtime_ns": 1788476192262061300,
+    "word_count": 733
   },
   "docs/self-hosting/vercel.md": {
-    "size": 3688,
-    "mtime_ns": 1782151868893442100,
-    "word_count": 409,
-    "hashes": {
-      "docs/self-hosting/vercel.md": "de2a8f9ccebd33ef095b16c51530c2231bd3ff5d1f781189bd51303b315a604b"
-    }
+    "size": 3605,
+    "mtime_ns": 1788476191400488000,
+    "word_count": 413
   },
   "docs/tools/add-attachments.md": {
     "size": 2172,
@@ -431,12 +298,9 @@
     }
   },
   "docs/tools/add-watermark.md": {
-    "size": 3003,
-    "mtime_ns": 1782151868895446700,
-    "word_count": 466,
-    "hashes": {
-      "docs/tools/add-watermark.md": "b0bfe0f91c84ef08ce846be55a708d4f4e8ec117cd95438a24fdcfb967afd460"
-    }
+    "size": 3708,
+    "mtime_ns": 1788474121635894400,
+    "word_count": 592
   },
   "docs/tools/adjust-colors.md": {
     "size": 2582,
@@ -519,12 +383,9 @@
     }
   },
   "docs/tools/compress-pdf.md": {
-    "size": 3499,
-    "mtime_ns": 1782151868899076800,
-    "word_count": 514,
-    "hashes": {
-      "docs/tools/compress-pdf.md": "4ca5b52b7fa6f12dbe673fa15f5b681056f87af65d815124095853088cd9dbc5"
-    }
+    "size": 3435,
+    "mtime_ns": 1788476191439050200,
+    "word_count": 516
   },
   "docs/tools/crop-pdf.md": {
     "size": 2002,
@@ -567,12 +428,9 @@
     }
   },
   "docs/tools/digital-sign-pdf.md": {
-    "size": 3886,
-    "mtime_ns": 1782151868901077100,
-    "word_count": 523,
-    "hashes": {
-      "docs/tools/digital-sign-pdf.md": "8aae120ab6a170457e8c0c2864f66c43b697aea8ac6a1e2c5425412da67fd662"
-    }
+    "size": 3826,
+    "mtime_ns": 1788476191461844400,
+    "word_count": 525
   },
   "docs/tools/divide-pages.md": {
     "size": 1744,
@@ -599,12 +457,9 @@
     }
   },
   "docs/tools/edit-pdf.md": {
-    "size": 2017,
-    "mtime_ns": 1782151868902624300,
-    "word_count": 299,
-    "hashes": {
-      "docs/tools/edit-pdf.md": "2495c4c3014dcb62ae736dd150c6f0258cf3456e8cf3f2d1359272f341bb716d"
-    }
+    "size": 1975,
+    "mtime_ns": 1788476191480946400,
+    "word_count": 301
   },
   "docs/tools/email-to-pdf.md": {
     "size": 3069,
@@ -615,12 +470,9 @@
     }
   },
   "docs/tools/encrypt-pdf.md": {
-    "size": 2908,
-    "mtime_ns": 1782151868902624300,
-    "word_count": 425,
-    "hashes": {
-      "docs/tools/encrypt-pdf.md": "544da829514fcaf3783f7351e097a35ed5e6e6e67bb044e1156b3938bc0d5cf5"
-    }
+    "size": 2854,
+    "mtime_ns": 1788476191500454800,
+    "word_count": 429
   },
   "docs/tools/epub-to-pdf.md": {
     "size": 1997,
@@ -711,12 +563,9 @@
     }
   },
   "docs/tools/form-filler.md": {
-    "size": 2071,
-    "mtime_ns": 1782151868908027900,
-    "word_count": 327,
-    "hashes": {
-      "docs/tools/form-filler.md": "93fc8d7b7317b3a031c07f19fbd318b46635ebda8d992b60ec2768c753a1428c"
-    }
+    "size": 2029,
+    "mtime_ns": 1788476191516395800,
+    "word_count": 329
   },
   "docs/tools/header-footer.md": {
     "size": 2448,
@@ -735,20 +584,14 @@
     }
   },
   "docs/tools/image-to-pdf.md": {
-    "size": 3338,
-    "mtime_ns": 1782151868909081600,
-    "word_count": 477,
-    "hashes": {
-      "docs/tools/image-to-pdf.md": "e49d61b15e9b57c20ec3bd944753a81bb55a02b88a5d02085c1177653d691591"
-    }
+    "size": 3278,
+    "mtime_ns": 1788476191535755600,
+    "word_count": 479
   },
   "docs/tools/index.md": {
-    "size": 11062,
-    "mtime_ns": 1782151868909081600,
-    "word_count": 1517,
-    "hashes": {
-      "docs/tools/index.md": "3eb04851737dc40d0e11e0671d92a7e26d7d28a87af14f543c0e2ea9fbf2eafd"
-    }
+    "size": 10988,
+    "mtime_ns": 1788475636324883200,
+    "word_count": 1531
   },
   "docs/tools/invert-colors.md": {
     "size": 1808,
@@ -767,12 +610,9 @@
     }
   },
   "docs/tools/json-to-pdf.md": {
-    "size": 2358,
-    "mtime_ns": 1782151868910626500,
-    "word_count": 367,
-    "hashes": {
-      "docs/tools/json-to-pdf.md": "0a54c6e8114ee4a76b95587303fd191dd46909c03562a3830ca355833672bb4c"
-    }
+    "size": 2335,
+    "mtime_ns": 1788476191612305800,
+    "word_count": 375
   },
   "docs/tools/linearize-pdf.md": {
     "size": 2328,
@@ -1183,11 +1023,11 @@
     }
   },
   "docs/tools/sign-pdf.md": {
-    "size": 2278,
-    "mtime_ns": 1782151868931638400,
-    "word_count": 360,
+    "size": 2235,
+    "mtime_ns": 1788476191630542000,
+    "word_count": 362,
     "hashes": {
-      "docs/tools/sign-pdf.md": "db692c9882319ccb289c993fc6777177909d483faca4e9f4836829c216b7655d"
+      "docs/tools/sign-pdf.md": "f56868dee053864af97a6a0d10f13d4ab7126ad9a5559154cde65ccc3463ef17"
     }
   },
   "docs/tools/split-pdf.md": {
@@ -1311,41 +1151,32 @@
     }
   },
   "entrypoint.sh": {
-    "size": 1734,
-    "mtime_ns": 1782151868937666700,
-    "word_count": 199,
+    "size": 1764,
+    "mtime_ns": 1788475636190909300,
+    "word_count": 201,
     "hashes": {
-      "entrypoint.sh": "b462ceaf579cdcd2bc08b85ed5413dab8482def1c573fbeaeb9af10e572ee677"
+      "entrypoint.sh": "4f19a6b66e5d54a4332d16e455991c77402db44900477e1249fe1add34dc6577"
     }
   },
   "eslint.config.mjs": {
-    "size": 3314,
-    "mtime_ns": 1782151868938805500,
-    "word_count": 175
+    "size": 3494,
+    "mtime_ns": 1788475636192486900,
+    "word_count": 192
   },
   "faq.html": {
-    "size": 14649,
-    "mtime_ns": 1782420256076519200,
-    "word_count": 1503,
-    "hashes": {
-      "faq.html": "c7a7c4e099362ae24156524f5bf33aaae43ab115d82486cbe63fd66dffdc601c"
-    }
+    "size": 14783,
+    "mtime_ns": 1788453273074827900,
+    "word_count": 1511
   },
   "index.html": {
-    "size": 56593,
-    "mtime_ns": 1782926909082960100,
-    "word_count": 4216,
-    "hashes": {
-      "index.html": "6ed41c3fe459c7dc6ebe9319efe75516b113aef7d8507745d42de97b80efacd4"
-    }
+    "size": 56444,
+    "mtime_ns": 1788476191769768200,
+    "word_count": 4243
   },
   "licensing.html": {
-    "size": 47082,
-    "mtime_ns": 1782423350565236800,
-    "word_count": 3462,
-    "hashes": {
-      "licensing.html": "b1e6ff52ed52c5aed86562818c2ae7742b026e54e235778a39117c3253d81ad9"
-    }
+    "size": 47257,
+    "mtime_ns": 1788475636218533200,
+    "word_count": 3470
   },
   "nginx-ipv6.sh": {
     "size": 633,
@@ -1356,68 +1187,50 @@
     }
   },
   "nginx-noindex.sh": {
-    "size": 976,
-    "mtime_ns": 1782151868940805900,
+    "size": 981,
+    "mtime_ns": 1788475636219090000,
     "word_count": 111,
     "hashes": {
-      "nginx-noindex.sh": "cfd77f3848ef0f46d87d91e2a745253981149e1c3001544e1a18650792d32558"
+      "nginx-noindex.sh": "412470a680ac131a61dbbb8bffc87c68e3edd50ea0476c36de6c7bd33cef7750"
     }
   },
   "package.json": {
-    "size": 6640,
-    "mtime_ns": 1782571561764694400,
-    "word_count": 473,
+    "size": 7647,
+    "mtime_ns": 1788475464698342700,
+    "word_count": 494,
     "hashes": {
-      "package.json": "059afac15c955b10bb27248b1d2af8a36166d14a33d1a1dce5e215606bdd5f25"
+      "package.json": "9b82c3e11cc49e347a4d7760e725ec54fc594df3a5e55cc74470ee9233fbf30c"
     }
   },
   "pdf-converter.html": {
-    "size": 20280,
-    "mtime_ns": 1782420256135035000,
-    "word_count": 1787,
-    "hashes": {
-      "pdf-converter.html": "6a77ea9bc233ecb1d77557e98a4363c4ee2d836fc829c37680bc18b56607ede6"
-    }
+    "size": 23867,
+    "mtime_ns": 1788474648369012300,
+    "word_count": 2044
   },
   "pdf-editor.html": {
-    "size": 17219,
-    "mtime_ns": 1782420256188077300,
-    "word_count": 1466,
-    "hashes": {
-      "pdf-editor.html": "8a7a3bf125e70ecf23b62f44ae20d577bb002c4dabf3a296939783d8de6fe75e"
-    }
+    "size": 17627,
+    "mtime_ns": 1788475421605158400,
+    "word_count": 1495
   },
   "pdf-merge-split.html": {
-    "size": 14330,
-    "mtime_ns": 1782420256219078500,
-    "word_count": 1284,
-    "hashes": {
-      "pdf-merge-split.html": "14c93d81ad800f16a86661bbb16fcbd70e2e36880281ac6edb24b983bcd2e821"
-    }
+    "size": 14754,
+    "mtime_ns": 1788473894979251600,
+    "word_count": 1312
   },
   "pdf-security.html": {
-    "size": 13703,
-    "mtime_ns": 1782420256249078200,
-    "word_count": 1185,
-    "hashes": {
-      "pdf-security.html": "bc0b3a679720c062c1f0970563d7ad9e08b49947cb72da7afdb48e887e24de6c"
-    }
+    "size": 13837,
+    "mtime_ns": 1788453273081749900,
+    "word_count": 1193
   },
   "privacy.html": {
-    "size": 9023,
-    "mtime_ns": 1785516088563694100,
-    "word_count": 955,
-    "hashes": {
-      "privacy.html": "3f817ea7cf5f2804816bbf2b533e5029269f28bfaa8f1fd3ba085f6d3ecd76bc"
-    }
+    "size": 8940,
+    "mtime_ns": 1788453273083277000,
+    "word_count": 963
   },
   "public/CHANGELOG.md": {
-    "size": 3038,
-    "mtime_ns": 1782151868949366800,
-    "word_count": 238,
-    "hashes": {
-      "public/changelog.md": "8dd074b05d7b3b0f3a6eb08b178936f0b08b27844c2b02e20715454b1170a52b"
-    }
+    "size": 3299,
+    "mtime_ns": 1788476191903037300,
+    "word_count": 238
   },
   "public/coherentpdf.browser.min.js": {
     "size": 1325062,
@@ -1432,76 +1245,12 @@
       "public/config.json": "7f83ca3e9a143a4a48b25938573a8eb1dd3141c0554bc9a70d2d0ed6c1a4753b"
     }
   },
-  "public/images/apple-touch-icon.png": {
-    "size": 4078,
-    "mtime_ns": 1782929038685204100,
-    "word_count": 175,
-    "hashes": {
-      "public/images/apple-touch-icon.png": "e94aead803faf1da07247f865e9418afe0f69717329f38e5ad5f1a2fde226a88"
-    }
-  },
-  "public/images/badge.svg": {
-    "size": 7962,
-    "mtime_ns": 1782151868959996300,
-    "word_count": 244,
-    "hashes": {
-      "public/images/badge.svg": "65c4c0dd1ea68251858e349efb4f0df524d3798360cd9efbc7c6f38da19cf7a4"
-    }
-  },
-  "public/images/bentopdf-tools.png": {
-    "size": 116232,
-    "mtime_ns": 1782151868960501000,
-    "word_count": 4291,
-    "hashes": {
-      "public/images/bentopdf-tools.png": "1b1b33050f41708b89944d8cd49b7063522a6859f991a395c514ff82448bd4b0"
-    }
-  },
   "public/images/ccpa.svg": {
     "size": 2296,
     "mtime_ns": 1782151868960501000,
     "word_count": 231,
     "hashes": {
       "public/images/ccpa.svg": "abdb33c8593e3414a6d53bf64ba5ef9caee599faffe9c5fd9d0cbc6f24e6459a"
-    }
-  },
-  "public/images/favicon-192x192.png": {
-    "size": 4489,
-    "mtime_ns": 1782929038618184500,
-    "word_count": 180,
-    "hashes": {
-      "public/images/favicon-192x192.png": "8e2b3c0ba3b087a381fcb51c6d53a1d56ce91e2039ea036c8f4ff247a693b134"
-    }
-  },
-  "public/images/favicon-512x512.png": {
-    "size": 15326,
-    "mtime_ns": 1782929038652230000,
-    "word_count": 698,
-    "hashes": {
-      "public/images/favicon-512x512.png": "3e99ecd9e6a50bb2147b411a0b4d937e17c11f9472d129ad6150c5bb5630c8d7"
-    }
-  },
-  "public/images/favicon-no-bg.svg": {
-    "size": 557,
-    "mtime_ns": 1782151868962157000,
-    "word_count": 48,
-    "hashes": {
-      "public/images/favicon-no-bg.svg": "e8bc133e78bedaa5cffe8b6d320cc1eb0044ba76ebfbf54510171214624711b1"
-    }
-  },
-  "public/images/favicon.png": {
-    "size": 7099,
-    "mtime_ns": 1782151868962157000,
-    "word_count": 257,
-    "hashes": {
-      "public/images/favicon.png": "475552b06a23da24914600d552cc1eaa07f87c40742c4be96ed36a26fdb9ed58"
-    }
-  },
-  "public/images/favicon.svg": {
-    "size": 649,
-    "mtime_ns": 1782151868963527600,
-    "word_count": 58,
-    "hashes": {
-      "public/images/favicon.svg": "3057c1dc55d58762ef79004c25f864838484ea546f8cecaa306ff95107ae4b51"
     }
   },
   "public/images/gdpr.svg": {
@@ -1518,46 +1267,6 @@
     "word_count": 1061,
     "hashes": {
       "public/images/hipaa.svg": "81f72bf39a61ff41726d06c284540d2b0a5d32c801b658b79df12751d42bf563"
-    }
-  },
-  "public/images/og-pdf-converter.png": {
-    "size": 767612,
-    "mtime_ns": 1782151868968087600,
-    "word_count": 24416,
-    "hashes": {
-      "public/images/og-pdf-converter.png": "b11c23d8dcc233cdd9bfa6d2d8bef25584806ff03282ee2169964f78752d290f"
-    }
-  },
-  "public/images/og-pdf-editor.png": {
-    "size": 739158,
-    "mtime_ns": 1782151868972613800,
-    "word_count": 23470,
-    "hashes": {
-      "public/images/og-pdf-editor.png": "4700bb4edd7dd7c494edca5a5ddf525433fd360936af0195435b6d8cadb69f77"
-    }
-  },
-  "public/images/og-pdf-merge-split.png": {
-    "size": 788265,
-    "mtime_ns": 1782151868977137800,
-    "word_count": 25482,
-    "hashes": {
-      "public/images/og-pdf-merge-split.png": "67fb926b56304da72cdee98c21423b9a2f97d9798b89889bc48c16ebc9f4194c"
-    }
-  },
-  "public/images/og-pdf-security.png": {
-    "size": 735267,
-    "mtime_ns": 1782151868981785800,
-    "word_count": 24413,
-    "hashes": {
-      "public/images/og-pdf-security.png": "61b561e611c4fc3ba21b44441de9b06731d491f6174508aaad1332c61ff1afd3"
-    }
-  },
-  "public/images/og-tools.png": {
-    "size": 508229,
-    "mtime_ns": 1782151868985883200,
-    "word_count": 18130,
-    "hashes": {
-      "public/images/og-tools.png": "2fec60e81e6613e6af9cddd873d213f937c5d875d58935ce162e5a776739a749"
     }
   },
   "public/images/pkc-apple-touch-icon.png": {
@@ -1585,19 +1294,19 @@
     }
   },
   "public/locales/en/common.json": {
-    "size": 16568,
-    "mtime_ns": 1785516088564694800,
-    "word_count": 1947,
+    "size": 16267,
+    "mtime_ns": 1788475984038075400,
+    "word_count": 1979,
     "hashes": {
-      "public/locales/en/common.json": "92756066145a913bd6d57a3d730eadae23941aa80b8c6258ee524237f0478996"
+      "public/locales/en/common.json": "a47180e21d5fb3eda7bdea39d8f24f78b12dcac8796811360007f97e7f91ad6a"
     }
   },
   "public/locales/en/tools.json": {
-    "size": 49482,
-    "mtime_ns": 1782153303222502000,
-    "word_count": 5545,
+    "size": 61202,
+    "mtime_ns": 1788475636358494300,
+    "word_count": 6813,
     "hashes": {
-      "public/locales/en/tools.json": "637bf625719f0259bbb71e773ee1e231dc40d2b9949769a26a7c2930c87cd249"
+      "public/locales/en/tools.json": "f961ddc2fcfe619caaeeea8aee818edc2e31eb8798e621b7f34ac8980304ae1f"
     }
   },
   "public/pdfjs-annotation-viewer/pdfjs-annotation-extension-testdata.json": {
@@ -2123,12 +1832,9 @@
     "word_count": 38652
   },
   "public/pdfjs-viewer/form-viewer.html": {
-    "size": 11231,
-    "mtime_ns": 1782151869871177600,
-    "word_count": 925,
-    "hashes": {
-      "public/pdfjs-viewer/form-viewer.html": "c37c88b80a20018b339f7f0730655a5a31c6b65e76d684a5cab47bb38c703b9a"
-    }
+    "size": 10919,
+    "mtime_ns": 1788476084566735600,
+    "word_count": 931
   },
   "public/pdfjs-viewer/images/altText_add.svg": {
     "size": 923,
@@ -2748,12 +2454,9 @@
     "word_count": 26917
   },
   "public/pdfjs-viewer/sign-viewer.html": {
-    "size": 12221,
-    "mtime_ns": 1782151870010902700,
-    "word_count": 1019,
-    "hashes": {
-      "public/pdfjs-viewer/sign-viewer.html": "9b6ad56c8b6a0f2128f564bf1cfe14df3b23b6cf66131df882dd93dd0e9bfd6a"
-    }
+    "size": 11896,
+    "mtime_ns": 1788476084597027500,
+    "word_count": 1025
   },
   "public/pdfjs-viewer/viewer.html": {
     "size": 53978,
@@ -2774,17 +2477,14 @@
     "word_count": 4257
   },
   "public/robots.txt": {
-    "size": 647,
-    "mtime_ns": 1782151870064405500,
-    "word_count": 71,
-    "hashes": {
-      "public/robots.txt": "ee394545e74f401d5779d23304ad43ea6e60b9dc28703d5ca120e3fac4066a4a"
-    }
+    "size": 704,
+    "mtime_ns": 1788475636339351000,
+    "word_count": 73
   },
   "public/sw.js": {
-    "size": 15059,
-    "mtime_ns": 1785516088860953800,
-    "word_count": 1562
+    "size": 16300,
+    "mtime_ns": 1788476250635368600,
+    "word_count": 1796
   },
   "public/workers/add-attachments.worker.d.ts": {
     "size": 566,
@@ -2842,9 +2542,9 @@
     "word_count": 69
   },
   "public/workers/merge.worker.js": {
-    "size": 2964,
-    "mtime_ns": 1782151870070692600,
-    "word_count": 294
+    "size": 2996,
+    "mtime_ns": 1788474124479785600,
+    "word_count": 301
   },
   "public/workers/pdf-to-json.worker.d.ts": {
     "size": 517,
@@ -2872,9 +2572,9 @@
     "word_count": 168
   },
   "scripts/check-translations.js": {
-    "size": 7379,
-    "mtime_ns": 1782151870072692400,
-    "word_count": 680
+    "size": 6935,
+    "mtime_ns": 1788476194477060100,
+    "word_count": 716
   },
   "scripts/compress-static-assets.mjs": {
     "size": 6580,
@@ -2882,24 +2582,24 @@
     "word_count": 611
   },
   "scripts/generate-i18n-pages.mjs": {
-    "size": 15989,
-    "mtime_ns": 1782580544299902100,
-    "word_count": 1538
+    "size": 16013,
+    "mtime_ns": 1788476194518877000,
+    "word_count": 1542
   },
   "scripts/generate-offline-manifest.mjs": {
-    "size": 5347,
-    "mtime_ns": 1783021505897523900,
-    "word_count": 577
+    "size": 5352,
+    "mtime_ns": 1788475636426573500,
+    "word_count": 579
   },
   "scripts/generate-security-headers.mjs": {
-    "size": 4183,
-    "mtime_ns": 1782151870074077000,
-    "word_count": 327
+    "size": 4262,
+    "mtime_ns": 1788476194543058700,
+    "word_count": 374
   },
   "scripts/generate-sitemap.mjs": {
-    "size": 4064,
-    "mtime_ns": 1783023574912364500,
-    "word_count": 407
+    "size": 4161,
+    "mtime_ns": 1788476194556125600,
+    "word_count": 413
   },
   "scripts/include-docs-in-dist.js": {
     "size": 1724,
@@ -2912,22 +2612,22 @@
     "word_count": 162
   },
   "scripts/prepare-airgap.sh": {
-    "size": 39330,
-    "mtime_ns": 1782151870076038700,
-    "word_count": 4357,
+    "size": 39538,
+    "mtime_ns": 1788475895751736000,
+    "word_count": 4399,
     "hashes": {
-      "scripts/prepare-airgap.sh": "9d9c4c94f852abf7e9cf9685261942565e747ad533d5d9addd02586ccf2b9745"
+      "scripts/prepare-airgap.sh": "350148c2a69ad564083e3b8faa1b3f1a6f11a019746bbd531e998914649d7743"
     }
   },
   "scripts/release.js": {
-    "size": 4299,
-    "mtime_ns": 1782151870076038700,
+    "size": 4173,
+    "mtime_ns": 1788476194568350800,
     "word_count": 421
   },
   "scripts/seo-audit.mjs": {
-    "size": 7965,
-    "mtime_ns": 1782151870076038700,
-    "word_count": 827
+    "size": 7839,
+    "mtime_ns": 1788476194588725600,
+    "word_count": 838
   },
   "scripts/update-partials.js": {
     "size": 1928,
@@ -2951,17 +2651,14 @@
     }
   },
   "simple-index.html": {
-    "size": 19058,
-    "mtime_ns": 1782930234648883000,
-    "word_count": 1483,
-    "hashes": {
-      "simple-index.html": "91132250cf083fa32f0329c24c93ae54290a3c06fd8a3011597a6ec1a15759a4"
-    }
+    "size": 19169,
+    "mtime_ns": 1788475636232429100,
+    "word_count": 1495
   },
   "src/js/canvasEditor.ts": {
-    "size": 10933,
-    "mtime_ns": 1782151870080268500,
-    "word_count": 932
+    "size": 10470,
+    "mtime_ns": 1788473684148767500,
+    "word_count": 921
   },
   "src/js/compare/config.ts": {
     "size": 1035,
@@ -3044,9 +2741,9 @@
     "word_count": 625
   },
   "src/js/config/pdf-tools.ts": {
-    "size": 1246,
-    "mtime_ns": 1782153307223749200,
-    "word_count": 82
+    "size": 1263,
+    "mtime_ns": 1788474651923681000,
+    "word_count": 83
   },
   "src/js/config/tesseract-languages.ts": {
     "size": 2309,
@@ -3054,14 +2751,14 @@
     "word_count": 250
   },
   "src/js/config/timestamp-tsa.ts": {
-    "size": 594,
-    "mtime_ns": 1782151870088641600,
-    "word_count": 73
+    "size": 1169,
+    "mtime_ns": 1788474124536458900,
+    "word_count": 141
   },
   "src/js/config/tools.ts": {
-    "size": 24832,
-    "mtime_ns": 1782153307299000900,
-    "word_count": 2450
+    "size": 28263,
+    "mtime_ns": 1788475469619904700,
+    "word_count": 2784
   },
   "src/js/config/wasm-cdn-config.ts": {
     "size": 1424,
@@ -3074,14 +2771,14 @@
     "word_count": 12
   },
   "src/js/handlers/fileHandler.ts": {
-    "size": 33530,
-    "mtime_ns": 1782151870091161500,
-    "word_count": 2737
+    "size": 32426,
+    "mtime_ns": 1788473684239404500,
+    "word_count": 2726
   },
   "src/js/i18n/i18n.ts": {
-    "size": 6675,
-    "mtime_ns": 1782153307341491200,
-    "word_count": 662
+    "size": 7131,
+    "mtime_ns": 1788473121478305300,
+    "word_count": 714
   },
   "src/js/i18n/index.ts": {
     "size": 314,
@@ -3114,14 +2811,14 @@
     "word_count": 1017
   },
   "src/js/logic/add-watermark-page.ts": {
-    "size": 35414,
-    "mtime_ns": 1782151870095705000,
-    "word_count": 2890
+    "size": 42627,
+    "mtime_ns": 1788474124748616700,
+    "word_count": 3614
   },
   "src/js/logic/adjust-colors-page.ts": {
-    "size": 11883,
-    "mtime_ns": 1782151870096705000,
-    "word_count": 1024
+    "size": 11390,
+    "mtime_ns": 1788473684402967900,
+    "word_count": 1019
   },
   "src/js/logic/alternate-merge-page.ts": {
     "size": 8651,
@@ -3144,14 +2841,14 @@
     "word_count": 585
   },
   "src/js/logic/bookmark-pdf.ts": {
-    "size": 73987,
-    "mtime_ns": 1782151870099243600,
-    "word_count": 6662
+    "size": 72704,
+    "mtime_ns": 1788473684564765900,
+    "word_count": 6746
   },
   "src/js/logic/cbz-to-pdf-page.ts": {
-    "size": 11703,
-    "mtime_ns": 1782151870100261000,
-    "word_count": 1097
+    "size": 12006,
+    "mtime_ns": 1788473684626065000,
+    "word_count": 1188
   },
   "src/js/logic/change-permissions-page.ts": {
     "size": 11033,
@@ -3159,14 +2856,14 @@
     "word_count": 916
   },
   "src/js/logic/combine-single-page-page.ts": {
-    "size": 11049,
-    "mtime_ns": 1782151870101273600,
-    "word_count": 977
+    "size": 10578,
+    "mtime_ns": 1788473684661449200,
+    "word_count": 966
   },
   "src/js/logic/compare-pdfs-page.ts": {
-    "size": 37751,
-    "mtime_ns": 1782151870102279400,
-    "word_count": 2923
+    "size": 36420,
+    "mtime_ns": 1788473684756212900,
+    "word_count": 2912
   },
   "src/js/logic/compare-render.ts": {
     "size": 13614,
@@ -3174,19 +2871,19 @@
     "word_count": 1198
   },
   "src/js/logic/compress-pdf-page.ts": {
-    "size": 20489,
-    "mtime_ns": 1782151870102279400,
-    "word_count": 1719
+    "size": 19743,
+    "mtime_ns": 1788473684823179100,
+    "word_count": 1708
   },
   "src/js/logic/crop-pdf-page.ts": {
-    "size": 14103,
-    "mtime_ns": 1782151870103792500,
-    "word_count": 1216
+    "size": 13533,
+    "mtime_ns": 1788473684860521000,
+    "word_count": 1205
   },
   "src/js/logic/cropper.ts": {
-    "size": 12928,
-    "mtime_ns": 1782151870104811900,
-    "word_count": 1301
+    "size": 12415,
+    "mtime_ns": 1788473684886813000,
+    "word_count": 1290
   },
   "src/js/logic/csv-to-pdf-page.ts": {
     "size": 8278,
@@ -3199,9 +2896,9 @@
     "word_count": 774
   },
   "src/js/logic/delete-pages-page.ts": {
-    "size": 10121,
-    "mtime_ns": 1782151870105811800,
-    "word_count": 815
+    "size": 9689,
+    "mtime_ns": 1788473684908215200,
+    "word_count": 804
   },
   "src/js/logic/deskew-pdf-page.ts": {
     "size": 8803,
@@ -3214,9 +2911,9 @@
     "word_count": 1882
   },
   "src/js/logic/digital-sign-pdf.ts": {
-    "size": 12425,
-    "mtime_ns": 1782151870106812200,
-    "word_count": 1302
+    "size": 12247,
+    "mtime_ns": 1788475636482458200,
+    "word_count": 1332
   },
   "src/js/logic/divide-pages-page.ts": {
     "size": 8294,
@@ -3224,9 +2921,9 @@
     "word_count": 715
   },
   "src/js/logic/duplicate-organize.ts": {
-    "size": 8020,
-    "mtime_ns": 1782151870106812200,
-    "word_count": 702
+    "size": 7659,
+    "mtime_ns": 1788473684925423100,
+    "word_count": 691
   },
   "src/js/logic/edit-attachments-page.ts": {
     "size": 13134,
@@ -3239,9 +2936,9 @@
     "word_count": 1169
   },
   "src/js/logic/edit-pdf-page.ts": {
-    "size": 9874,
-    "mtime_ns": 1782151870108902800,
-    "word_count": 795
+    "size": 12491,
+    "mtime_ns": 1788475470776825100,
+    "word_count": 1047
   },
   "src/js/logic/email-to-pdf-page.ts": {
     "size": 9142,
@@ -3249,9 +2946,9 @@
     "word_count": 760
   },
   "src/js/logic/email-to-pdf.ts": {
-    "size": 10176,
-    "mtime_ns": 1782151870109948300,
-    "word_count": 1005
+    "size": 10049,
+    "mtime_ns": 1788473684959304100,
+    "word_count": 1015
   },
   "src/js/logic/encrypt-pdf-page.ts": {
     "size": 8383,
@@ -3309,9 +3006,9 @@
     "word_count": 1000
   },
   "src/js/logic/form-creator.ts": {
-    "size": 111924,
-    "mtime_ns": 1782929904824260800,
-    "word_count": 9945
+    "size": 112019,
+    "mtime_ns": 1788473197935952600,
+    "word_count": 9957
   },
   "src/js/logic/form-filler-page.ts": {
     "size": 9973,
@@ -3339,9 +3036,9 @@
     "word_count": 56
   },
   "src/js/logic/invert-colors-page.ts": {
-    "size": 6679,
-    "mtime_ns": 1782151870118525700,
-    "word_count": 568
+    "size": 6376,
+    "mtime_ns": 1788473685176677700,
+    "word_count": 557
   },
   "src/js/logic/jpg-to-pdf-page.ts": {
     "size": 6247,
@@ -3369,9 +3066,9 @@
     "word_count": 635
   },
   "src/js/logic/merge-pdf-page.ts": {
-    "size": 22315,
-    "mtime_ns": 1782151870122037300,
-    "word_count": 1852
+    "size": 21756,
+    "mtime_ns": 1788474124911194900,
+    "word_count": 1861
   },
   "src/js/logic/mobi-to-pdf-page.ts": {
     "size": 6896,
@@ -3389,9 +3086,9 @@
     "word_count": 1174
   },
   "src/js/logic/organize-pdf-page.ts": {
-    "size": 14043,
-    "mtime_ns": 1782151870125084900,
-    "word_count": 1199
+    "size": 13539,
+    "mtime_ns": 1788473685252863500,
+    "word_count": 1194
   },
   "src/js/logic/overlay-pdf-page.ts": {
     "size": 8458,
@@ -3409,9 +3106,9 @@
     "word_count": 510
   },
   "src/js/logic/pdf-booklet-page.ts": {
-    "size": 19756,
-    "mtime_ns": 1782151870127679700,
-    "word_count": 1976
+    "size": 19055,
+    "mtime_ns": 1788473685287020600,
+    "word_count": 1971
   },
   "src/js/logic/pdf-layers-page.ts": {
     "size": 15868,
@@ -3419,19 +3116,19 @@
     "word_count": 1358
   },
   "src/js/logic/pdf-multi-tool.ts": {
-    "size": 48346,
-    "mtime_ns": 1782151870128673800,
-    "word_count": 4226
+    "size": 46646,
+    "mtime_ns": 1788473685371598100,
+    "word_count": 4215
   },
   "src/js/logic/pdf-to-bmp-page.ts": {
-    "size": 6701,
-    "mtime_ns": 1782151870129451800,
-    "word_count": 574
+    "size": 6356,
+    "mtime_ns": 1788473685389198200,
+    "word_count": 563
   },
   "src/js/logic/pdf-to-cbz-page.ts": {
-    "size": 16111,
-    "mtime_ns": 1782151870129451800,
-    "word_count": 1384
+    "size": 15482,
+    "mtime_ns": 1788473685417391200,
+    "word_count": 1373
   },
   "src/js/logic/pdf-to-csv-page.ts": {
     "size": 5647,
@@ -3449,14 +3146,14 @@
     "word_count": 538
   },
   "src/js/logic/pdf-to-greyscale-page.ts": {
-    "size": 6903,
-    "mtime_ns": 1782151870131008700,
-    "word_count": 607
+    "size": 6556,
+    "mtime_ns": 1788473685432014900,
+    "word_count": 596
   },
   "src/js/logic/pdf-to-jpg-page.ts": {
-    "size": 7539,
-    "mtime_ns": 1782151870131008700,
-    "word_count": 643
+    "size": 7171,
+    "mtime_ns": 1788473685448943000,
+    "word_count": 632
   },
   "src/js/logic/pdf-to-json.ts": {
     "size": 6302,
@@ -3479,9 +3176,9 @@
     "word_count": 773
   },
   "src/js/logic/pdf-to-png-page.ts": {
-    "size": 7434,
-    "mtime_ns": 1782151870133054500,
-    "word_count": 633
+    "size": 7072,
+    "mtime_ns": 1788473685466155300,
+    "word_count": 622
   },
   "src/js/logic/pdf-to-svg-page.ts": {
     "size": 7908,
@@ -3494,14 +3191,14 @@
     "word_count": 619
   },
   "src/js/logic/pdf-to-tiff-page.ts": {
-    "size": 13104,
-    "mtime_ns": 1782151870134055400,
-    "word_count": 1188
+    "size": 13758,
+    "mtime_ns": 1788474124956601800,
+    "word_count": 1262
   },
   "src/js/logic/pdf-to-webp-page.ts": {
-    "size": 7556,
-    "mtime_ns": 1782151870134055400,
-    "word_count": 643
+    "size": 7188,
+    "mtime_ns": 1788473685516529600,
+    "word_count": 632
   },
   "src/js/logic/pdf-to-zip-page.ts": {
     "size": 5334,
@@ -3509,9 +3206,9 @@
     "word_count": 447
   },
   "src/js/logic/pdf-workflow-page.ts": {
-    "size": 51288,
-    "mtime_ns": 1782153307511283900,
-    "word_count": 4598
+    "size": 52752,
+    "mtime_ns": 1788474652357546500,
+    "word_count": 4731
   },
   "src/js/logic/png-to-pdf-page.ts": {
     "size": 7555,
@@ -3519,9 +3216,9 @@
     "word_count": 665
   },
   "src/js/logic/posterize-page.ts": {
-    "size": 15655,
-    "mtime_ns": 1782151870136611400,
-    "word_count": 1341
+    "size": 15033,
+    "mtime_ns": 1788473685544919800,
+    "word_count": 1330
   },
   "src/js/logic/prepare-pdf-for-ai-page.ts": {
     "size": 8259,
@@ -3549,9 +3246,9 @@
     "word_count": 555
   },
   "src/js/logic/remove-blank-pages-page.ts": {
-    "size": 13214,
-    "mtime_ns": 1782151870139711100,
-    "word_count": 1127
+    "size": 12754,
+    "mtime_ns": 1788473685568935200,
+    "word_count": 1122
   },
   "src/js/logic/remove-metadata-page.ts": {
     "size": 7333,
@@ -3579,14 +3276,14 @@
     "word_count": 586
   },
   "src/js/logic/rotate-custom-page.ts": {
-    "size": 14207,
-    "mtime_ns": 1782151870142717400,
-    "word_count": 1182
+    "size": 13686,
+    "mtime_ns": 1788473685597779700,
+    "word_count": 1177
   },
   "src/js/logic/rotate-pdf-page.ts": {
-    "size": 11490,
-    "mtime_ns": 1782151870142717400,
-    "word_count": 935
+    "size": 11046,
+    "mtime_ns": 1788473685630685400,
+    "word_count": 930
   },
   "src/js/logic/sanitize-pdf-page.ts": {
     "size": 6921,
@@ -3599,9 +3296,9 @@
     "word_count": 39
   },
   "src/js/logic/scanner-effect-page.ts": {
-    "size": 13147,
-    "mtime_ns": 1782151870144222000,
-    "word_count": 1123
+    "size": 12609,
+    "mtime_ns": 1788473685668685700,
+    "word_count": 1118
   },
   "src/js/logic/shortcuts.ts": {
     "size": 6086,
@@ -3614,9 +3311,9 @@
     "word_count": 977
   },
   "src/js/logic/split-pdf-page.ts": {
-    "size": 21964,
-    "mtime_ns": 1782425191051316300,
-    "word_count": 1871
+    "size": 21839,
+    "mtime_ns": 1788473032983567200,
+    "word_count": 1860
   },
   "src/js/logic/svg-to-pdf-page.ts": {
     "size": 7953,
@@ -3629,9 +3326,9 @@
     "word_count": 537
   },
   "src/js/logic/text-color-page.ts": {
-    "size": 7172,
-    "mtime_ns": 1782151870146925200,
-    "word_count": 635
+    "size": 6847,
+    "mtime_ns": 1788473685726109300,
+    "word_count": 624
   },
   "src/js/logic/tiff-to-pdf-page.ts": {
     "size": 7186,
@@ -3649,14 +3346,14 @@
     "word_count": 750
   },
   "src/js/logic/validate-signature-pdf-page.ts": {
-    "size": 18208,
-    "mtime_ns": 1782151870148430100,
-    "word_count": 1393
+    "size": 17803,
+    "mtime_ns": 1788473685759996400,
+    "word_count": 1409
   },
   "src/js/logic/validate-signature-pdf.ts": {
-    "size": 25861,
-    "mtime_ns": 1782151870149436000,
-    "word_count": 2470
+    "size": 25139,
+    "mtime_ns": 1788473685820590600,
+    "word_count": 2480
   },
   "src/js/logic/view-metadata-page.ts": {
     "size": 13369,
@@ -3684,9 +3381,9 @@
     "word_count": 596
   },
   "src/js/main.ts": {
-    "size": 38806,
-    "mtime_ns": 1783020724462949300,
-    "word_count": 3060
+    "size": 39329,
+    "mtime_ns": 1788475677118353500,
+    "word_count": 3118
   },
   "src/js/mobileMenu.ts": {
     "size": 1940,
@@ -3714,9 +3411,9 @@
     "word_count": 75
   },
   "src/js/sw-register.ts": {
-    "size": 4278,
-    "mtime_ns": 1785516088565696500,
-    "word_count": 401
+    "size": 5709,
+    "mtime_ns": 1788474369646540100,
+    "word_count": 633
   },
   "src/js/types/add-blank-page-type.ts": {
     "size": 159,
@@ -3729,9 +3426,9 @@
     "word_count": 46
   },
   "src/js/types/add-watermark-type.ts": {
-    "size": 700,
-    "mtime_ns": 1782151870155462900,
-    "word_count": 85
+    "size": 791,
+    "mtime_ns": 1788474125042982700,
+    "word_count": 98
   },
   "src/js/types/adjust-colors-type.ts": {
     "size": 209,
@@ -3824,9 +3521,9 @@
     "word_count": 21
   },
   "src/js/types/edit-pdf-type.ts": {
-    "size": 446,
-    "mtime_ns": 1782151870162474000,
-    "word_count": 57
+    "size": 1444,
+    "mtime_ns": 1788475471093262400,
+    "word_count": 160
   },
   "src/js/types/email-to-pdf-type.ts": {
     "size": 545,
@@ -3899,9 +3596,9 @@
     "word_count": 20
   },
   "src/js/types/merge-worker-type.ts": {
-    "size": 681,
-    "mtime_ns": 1782151870168092900,
-    "word_count": 72
+    "size": 682,
+    "mtime_ns": 1788474125056150800,
+    "word_count": 74
   },
   "src/js/types/n-up-pdf-type.ts": {
     "size": 116,
@@ -4064,9 +3761,9 @@
     "word_count": 12
   },
   "src/js/ui.ts": {
-    "size": 19695,
-    "mtime_ns": 1782151870180337800,
-    "word_count": 1545
+    "size": 19056,
+    "mtime_ns": 1788473685907459500,
+    "word_count": 1534
   },
   "src/js/utils/alternate-merge.ts": {
     "size": 1519,
@@ -4129,9 +3826,9 @@
     "word_count": 1429
   },
   "src/js/utils/helpers.ts": {
-    "size": 14077,
-    "mtime_ns": 1782151870185849000,
-    "word_count": 1646
+    "size": 13863,
+    "mtime_ns": 1788473685945158200,
+    "word_count": 1673
   },
   "src/js/utils/hocr-transform.ts": {
     "size": 8389,
@@ -4194,9 +3891,9 @@
     "word_count": 127
   },
   "src/js/utils/page-preview.ts": {
-    "size": 7784,
-    "mtime_ns": 1782151870191364800,
-    "word_count": 661
+    "size": 7437,
+    "mtime_ns": 1788473685963282900,
+    "word_count": 650
   },
   "src/js/utils/password-prompt.ts": {
     "size": 28948,
@@ -4209,9 +3906,9 @@
     "word_count": 452
   },
   "src/js/utils/pdf-operations.ts": {
-    "size": 17026,
-    "mtime_ns": 1782151870193927800,
-    "word_count": 1868
+    "size": 19520,
+    "mtime_ns": 1788474125123437800,
+    "word_count": 2277
   },
   "src/js/utils/pkc-tool-analytics.ts": {
     "size": 6348,
@@ -4224,9 +3921,9 @@
     "word_count": 288
   },
   "src/js/utils/render-utils.ts": {
-    "size": 13429,
-    "mtime_ns": 1782151870194987500,
-    "word_count": 1221
+    "size": 12871,
+    "mtime_ns": 1788473685985014800,
+    "word_count": 1216
   },
   "src/js/utils/rotation-state.ts": {
     "size": 623,
@@ -4274,9 +3971,9 @@
     "word_count": 198
   },
   "src/js/utils/wasm-preloader.ts": {
-    "size": 3070,
-    "mtime_ns": 1782153307619358000,
-    "word_count": 276
+    "size": 3685,
+    "mtime_ns": 1788474652634157100,
+    "word_count": 324
   },
   "src/js/utils/wasm-provider.ts": {
     "size": 13634,
@@ -4329,9 +4026,9 @@
     "word_count": 227
   },
   "src/js/workflow/nodes/base-node.ts": {
-    "size": 781,
-    "mtime_ns": 1782151870202833900,
-    "word_count": 84
+    "size": 1187,
+    "mtime_ns": 1788474125148639900,
+    "word_count": 143
   },
   "src/js/workflow/nodes/booklet-node.ts": {
     "size": 6009,
@@ -4464,9 +4161,9 @@
     "word_count": 228
   },
   "src/js/workflow/nodes/index.ts": {
-    "size": 2447,
-    "mtime_ns": 1782153307636559700,
-    "word_count": 276
+    "size": 2774,
+    "mtime_ns": 1788474652657346600,
+    "word_count": 312
   },
   "src/js/workflow/nodes/invert-colors-node.ts": {
     "size": 3154,
@@ -4574,14 +4271,14 @@
     "word_count": 238
   },
   "src/js/workflow/nodes/redact-node.ts": {
-    "size": 3747,
-    "mtime_ns": 1782151870223340700,
-    "word_count": 352
+    "size": 3683,
+    "mtime_ns": 1788473686013964300,
+    "word_count": 356
   },
   "src/js/workflow/nodes/registry.ts": {
-    "size": 19974,
-    "mtime_ns": 1782153307672052900,
-    "word_count": 2151
+    "size": 22531,
+    "mtime_ns": 1788474652722967900,
+    "word_count": 2424
   },
   "src/js/workflow/nodes/remove-annotations-node.ts": {
     "size": 1557,
@@ -4639,14 +4336,14 @@
     "word_count": 331
   },
   "src/js/workflow/nodes/timestamp-node.ts": {
-    "size": 2191,
-    "mtime_ns": 1782151870227498600,
-    "word_count": 213
+    "size": 2405,
+    "mtime_ns": 1788474125163740700,
+    "word_count": 238
   },
   "src/js/workflow/nodes/watermark-node.ts": {
-    "size": 6116,
-    "mtime_ns": 1782151870229224900,
-    "word_count": 577
+    "size": 6517,
+    "mtime_ns": 1788474125187596500,
+    "word_count": 630
   },
   "src/js/workflow/nodes/xml-to-pdf-node.ts": {
     "size": 2304,
@@ -4659,9 +4356,9 @@
     "word_count": 243
   },
   "src/js/workflow/serialization.ts": {
-    "size": 7389,
-    "mtime_ns": 1782151870230289900,
-    "word_count": 736
+    "size": 7193,
+    "mtime_ns": 1788474125214709300,
+    "word_count": 739
   },
   "src/js/workflow/sockets.ts": {
     "size": 632,
@@ -4674,836 +4371,524 @@
     "word_count": 354
   },
   "src/pages/add-attachments.html": {
-    "size": 18370,
-    "mtime_ns": 1782420256381418100,
-    "word_count": 1397,
-    "hashes": {
-      "src/pages/add-attachments.html": "8aae6f1ece93a68e3fdd1836167a869db962627b977320ddd94529bdc2e61d34"
-    }
+    "size": 18504,
+    "mtime_ns": 1788453273163186600,
+    "word_count": 1405
   },
   "src/pages/add-blank-page.html": {
-    "size": 17746,
-    "mtime_ns": 1782420256411947800,
-    "word_count": 1393,
-    "hashes": {
-      "src/pages/add-blank-page.html": "c95caf2d16900ca0e7edab69206623096f5dd56387564486b86eea378b76bc24"
-    }
+    "size": 17880,
+    "mtime_ns": 1788453273164188600,
+    "word_count": 1401
   },
   "src/pages/add-page-labels.html": {
-    "size": 19780,
-    "mtime_ns": 1782420256432948900,
-    "word_count": 1379,
-    "hashes": {
-      "src/pages/add-page-labels.html": "74e14674c70187f497bed527dd32be6e1f7890d9273011fc7cbf52f1e0c741fe"
-    }
+    "size": 19914,
+    "mtime_ns": 1788453273164188600,
+    "word_count": 1387
   },
   "src/pages/add-stamps.html": {
-    "size": 15538,
-    "mtime_ns": 1782420256456951100,
-    "word_count": 1221,
-    "hashes": {
-      "src/pages/add-stamps.html": "4d44267da99b7b8d15d656028436c8c958b9f1f11433c36917a5bd3dcf005fa7"
-    }
+    "size": 15672,
+    "mtime_ns": 1788453273164188600,
+    "word_count": 1229
   },
   "src/pages/add-watermark.html": {
-    "size": 32919,
-    "mtime_ns": 1782420256507001100,
-    "word_count": 2070,
-    "hashes": {
-      "src/pages/add-watermark.html": "7e487d664d38061c1a90bb81ed81728fb4aae9c1b7f43cda4389a7e6ad1fda30"
-    }
+    "size": 35688,
+    "mtime_ns": 1788473971100605400,
+    "word_count": 2205
   },
   "src/pages/adjust-colors.html": {
-    "size": 21977,
-    "mtime_ns": 1782420256534997700,
-    "word_count": 1465,
-    "hashes": {
-      "src/pages/adjust-colors.html": "cd413a8e7cb6f694c2e19f346cf4f79d0257ece399ae2cd32e37383e75592899"
-    }
+    "size": 22111,
+    "mtime_ns": 1788453273166027400,
+    "word_count": 1473
   },
   "src/pages/alternate-merge.html": {
-    "size": 16990,
-    "mtime_ns": 1782420256562010000,
-    "word_count": 1326,
-    "hashes": {
-      "src/pages/alternate-merge.html": "29e8b5c23eb166734408980c12a1345d400b58f8966be2baa7b36542ec7ead4e"
-    }
+    "size": 17124,
+    "mtime_ns": 1788453273167035400,
+    "word_count": 1334
   },
   "src/pages/background-color.html": {
-    "size": 15821,
-    "mtime_ns": 1782420256582033000,
-    "word_count": 1229,
-    "hashes": {
-      "src/pages/background-color.html": "c6ac4eb83c9609fe41f842cffa586fd7b4e45fa04ac8aa8ade985c1054982348"
-    }
+    "size": 15955,
+    "mtime_ns": 1788453273167035400,
+    "word_count": 1237
   },
   "src/pages/bates-numbering.html": {
-    "size": 21671,
-    "mtime_ns": 1782420256606032100,
-    "word_count": 1515,
-    "hashes": {
-      "src/pages/bates-numbering.html": "5632efb45e92a30a4bcaf5e5b0510397f26c53145b8b714bd4bc6a6cda72f6e5"
-    }
+    "size": 21805,
+    "mtime_ns": 1788453273168037300,
+    "word_count": 1523
   },
   "src/pages/bmp-to-pdf.html": {
-    "size": 15889,
-    "mtime_ns": 1782420256624036000,
-    "word_count": 1273,
-    "hashes": {
-      "src/pages/bmp-to-pdf.html": "864580040e6abb29c5d6f270fb2da452b96d156203f8432a258916b3de7ed179"
-    }
+    "size": 16023,
+    "mtime_ns": 1788453273168037300,
+    "word_count": 1281
   },
   "src/pages/bookmark.html": {
-    "size": 36913,
-    "mtime_ns": 1782420256664037700,
-    "word_count": 2404,
-    "hashes": {
-      "src/pages/bookmark.html": "fea09b5c982b3e64f4d9c7265d5e6e0d38d437891f3ff397fec82e85a2bfa9cc"
-    }
+    "size": 37047,
+    "mtime_ns": 1788453273169039000,
+    "word_count": 2412
   },
   "src/pages/cbz-to-pdf.html": {
-    "size": 16135,
-    "mtime_ns": 1782420256704078200,
-    "word_count": 1285,
-    "hashes": {
-      "src/pages/cbz-to-pdf.html": "5cc428388a389ea208ac62d07e20717343ed7c739afe5996adce6c7c57a3d282"
-    }
+    "size": 16269,
+    "mtime_ns": 1788453273169039000,
+    "word_count": 1293
   },
   "src/pages/change-permissions.html": {
-    "size": 20832,
-    "mtime_ns": 1782420256728050300,
-    "word_count": 1513,
-    "hashes": {
-      "src/pages/change-permissions.html": "926594b7ab28345f461c09f3250ed177c9e1c94b123d2bb4d39d0ccc02ef4f35"
-    }
+    "size": 20966,
+    "mtime_ns": 1788453273170037900,
+    "word_count": 1521
   },
   "src/pages/combine-single-page.html": {
-    "size": 18997,
-    "mtime_ns": 1782420256755059400,
-    "word_count": 1426,
-    "hashes": {
-      "src/pages/combine-single-page.html": "8733344779a24b176f0fb227d8c83bdbd1baeffee7c2297e71e68e31ef50939c"
-    }
+    "size": 19131,
+    "mtime_ns": 1788453273170037900,
+    "word_count": 1434
   },
   "src/pages/compare-pdfs.html": {
-    "size": 43165,
-    "mtime_ns": 1782420256816666400,
-    "word_count": 2943,
-    "hashes": {
-      "src/pages/compare-pdfs.html": "74470304af35500e65f10b457d50e2a44acc3d00fc0e4afded845400200b9d78"
-    }
+    "size": 43299,
+    "mtime_ns": 1788453273171034200,
+    "word_count": 2951
   },
   "src/pages/compress-pdf.html": {
-    "size": 24592,
-    "mtime_ns": 1782420256844667600,
-    "word_count": 1782,
-    "hashes": {
-      "src/pages/compress-pdf.html": "26435b95a5c6a2728aee43944f444ed109208dc3612b13089cf595ad8d0b5dad"
-    }
+    "size": 24726,
+    "mtime_ns": 1788453273171034200,
+    "word_count": 1790
   },
   "src/pages/crop-pdf.html": {
-    "size": 17716,
-    "mtime_ns": 1782420256866709600,
-    "word_count": 1390,
-    "hashes": {
-      "src/pages/crop-pdf.html": "542536f431f746b3843e6b9f03052f02a418ff2070da2545385be83bdb318e69"
-    }
+    "size": 17850,
+    "mtime_ns": 1788453273172037000,
+    "word_count": 1398
   },
   "src/pages/csv-to-pdf.html": {
-    "size": 16081,
-    "mtime_ns": 1782420256887294600,
-    "word_count": 1289,
-    "hashes": {
-      "src/pages/csv-to-pdf.html": "4dba66db1f40b1d3c7b70d30b66ae0bbb1353301dea8d3b86db8bf7a78afc29c"
-    }
+    "size": 16215,
+    "mtime_ns": 1788453273172037000,
+    "word_count": 1297
   },
   "src/pages/decrypt-pdf.html": {
-    "size": 16953,
-    "mtime_ns": 1782420256904294200,
-    "word_count": 1321,
-    "hashes": {
-      "src/pages/decrypt-pdf.html": "d2ec89f9b651ad9be94f976e49f9bb877527d2a01eda2c27c0fcaeeeee039ed8"
-    }
+    "size": 17087,
+    "mtime_ns": 1788453273173038400,
+    "word_count": 1329
   },
   "src/pages/delete-pages.html": {
-    "size": 15917,
-    "mtime_ns": 1782420256920294700,
-    "word_count": 1243,
-    "hashes": {
-      "src/pages/delete-pages.html": "553a30677c683524148266520f62f759f6ea5591940330f5303ea8269eec01cc"
-    }
+    "size": 16051,
+    "mtime_ns": 1788453273173038400,
+    "word_count": 1251
   },
   "src/pages/deskew-pdf.html": {
-    "size": 17990,
-    "mtime_ns": 1782420256940298300,
-    "word_count": 1354,
-    "hashes": {
-      "src/pages/deskew-pdf.html": "73c8359193932dc2c661a6bc369f7ecf9d0ebe1f8f01c23aa3993add7bbe6bd3"
-    }
+    "size": 18124,
+    "mtime_ns": 1788453273174037200,
+    "word_count": 1362
   },
   "src/pages/digital-sign-pdf.html": {
-    "size": 36646,
-    "mtime_ns": 1782420256975819900,
-    "word_count": 2240,
-    "hashes": {
-      "src/pages/digital-sign-pdf.html": "c4a66d0c563d1cd5d8453f1b0342b4358cd9c283b3b93d8acb6f2fb996747da8"
-    }
+    "size": 36780,
+    "mtime_ns": 1788453273174037200,
+    "word_count": 2248
   },
   "src/pages/divide-pages.html": {
-    "size": 17626,
-    "mtime_ns": 1782420256999335500,
-    "word_count": 1379,
-    "hashes": {
-      "src/pages/divide-pages.html": "40edbf62dc7d0aacc6acf6cfbf954ef0ad75d669d3cdf86b0428f7e9c93d7116"
-    }
+    "size": 17760,
+    "mtime_ns": 1788453273175036200,
+    "word_count": 1387
   },
   "src/pages/edit-attachments.html": {
-    "size": 15603,
-    "mtime_ns": 1782420257021338400,
-    "word_count": 1222,
-    "hashes": {
-      "src/pages/edit-attachments.html": "3319b9969b2b8e37711bcda600b2df34f7b2b00e87fc278f39e22c2553a41872"
-    }
+    "size": 15737,
+    "mtime_ns": 1788453273175036200,
+    "word_count": 1230
   },
   "src/pages/edit-metadata.html": {
-    "size": 20519,
-    "mtime_ns": 1782420257053342600,
-    "word_count": 1506,
-    "hashes": {
-      "src/pages/edit-metadata.html": "835a549cdf9c997c831aaca638b97b086a2c7187563cbad8fd1d3695bb5ca984"
-    }
+    "size": 20653,
+    "mtime_ns": 1788453273176035400,
+    "word_count": 1514
   },
   "src/pages/edit-pdf.html": {
-    "size": 15300,
-    "mtime_ns": 1782420257078997600,
-    "word_count": 1212,
-    "hashes": {
-      "src/pages/edit-pdf.html": "a5c200686b7a3721ecb03169f4768adcc4bf58d45d11d47fb1668028f32dea51"
-    }
+    "size": 15434,
+    "mtime_ns": 1788453273176035400,
+    "word_count": 1220
   },
   "src/pages/email-to-pdf.html": {
-    "size": 18858,
-    "mtime_ns": 1782420257109996900,
-    "word_count": 1494,
-    "hashes": {
-      "src/pages/email-to-pdf.html": "7c73e1b79352b9fb2d0af42c7fa3c7dbf36fed063101b519913e7b80fa6d8ec9"
-    }
+    "size": 19330,
+    "mtime_ns": 1788474225798209700,
+    "word_count": 1527
   },
   "src/pages/encrypt-pdf.html": {
-    "size": 17247,
-    "mtime_ns": 1782420257142995100,
-    "word_count": 1351,
-    "hashes": {
-      "src/pages/encrypt-pdf.html": "048cd0603fd629d79429e5104e24996124bc8457c347266338a2766007b198a7"
-    }
+    "size": 17381,
+    "mtime_ns": 1788453273177034600,
+    "word_count": 1359
   },
   "src/pages/epub-to-pdf.html": {
-    "size": 16113,
-    "mtime_ns": 1782420257170094000,
-    "word_count": 1283,
-    "hashes": {
-      "src/pages/epub-to-pdf.html": "81299b9b0574d8cc8344ad15e7e456dc5d671fda8b68d594f6b37a27308513c9"
-    }
+    "size": 16247,
+    "mtime_ns": 1788453273177034600,
+    "word_count": 1291
   },
   "src/pages/extract-attachments.html": {
-    "size": 15942,
-    "mtime_ns": 1782420257193300500,
-    "word_count": 1237,
-    "hashes": {
-      "src/pages/extract-attachments.html": "6714ba231685bccef996cd8a96fc73fe708f104be812ddb0675f44659c635043"
-    }
+    "size": 16076,
+    "mtime_ns": 1788453273178036300,
+    "word_count": 1245
   },
   "src/pages/extract-images.html": {
-    "size": 16708,
-    "mtime_ns": 1782420257214301600,
-    "word_count": 1307,
-    "hashes": {
-      "src/pages/extract-images.html": "9e2996a6ddba0adf7703d850b2db4e1849f344b8ad4d46091e267fb7d40ddfb0"
-    }
+    "size": 16842,
+    "mtime_ns": 1788453273178036300,
+    "word_count": 1315
   },
   "src/pages/extract-pages.html": {
-    "size": 16060,
-    "mtime_ns": 1782420257236298500,
-    "word_count": 1275,
-    "hashes": {
-      "src/pages/extract-pages.html": "df4570f7cbb0ea583c029c90de552e8a9463f9b2fd04adf0e9b7cf5c7fbed5ae"
-    }
+    "size": 16194,
+    "mtime_ns": 1788453273179544700,
+    "word_count": 1283
   },
   "src/pages/extract-tables.html": {
-    "size": 16867,
-    "mtime_ns": 1782420257262338000,
-    "word_count": 1293,
-    "hashes": {
-      "src/pages/extract-tables.html": "29f0c327fcd4756aba489895f8f14ff090858ad1af09cce44302865aece29bfc"
-    }
+    "size": 17001,
+    "mtime_ns": 1788453273179544700,
+    "word_count": 1301
   },
   "src/pages/fb2-to-pdf.html": {
-    "size": 16064,
-    "mtime_ns": 1782420257282900300,
-    "word_count": 1283,
-    "hashes": {
-      "src/pages/fb2-to-pdf.html": "bef226e2cbf461c52bc3f2fa14ce5be6ad53740d7768b3904f8cadb33438c8b1"
-    }
+    "size": 16198,
+    "mtime_ns": 1788453273180552500,
+    "word_count": 1291
   },
   "src/pages/fix-page-size.html": {
-    "size": 21074,
-    "mtime_ns": 1782420257305538500,
-    "word_count": 1578,
-    "hashes": {
-      "src/pages/fix-page-size.html": "56f3d4ddb946fb9413f952be5b0e92e7cb60a02b7460f8585bcd6a5e864a9834"
-    }
+    "size": 21208,
+    "mtime_ns": 1788453273180552500,
+    "word_count": 1586
   },
   "src/pages/flatten-pdf.html": {
-    "size": 17049,
-    "mtime_ns": 1782420257322653500,
-    "word_count": 1341,
-    "hashes": {
-      "src/pages/flatten-pdf.html": "9ba65b164efe7909fc665b72a56ae5a1a04de90971e690a44c38b2b14fa93ed1"
-    }
+    "size": 17183,
+    "mtime_ns": 1788453273180552500,
+    "word_count": 1349
   },
   "src/pages/font-to-outline.html": {
-    "size": 17424,
-    "mtime_ns": 1782420257340919000,
-    "word_count": 1380,
-    "hashes": {
-      "src/pages/font-to-outline.html": "8b9ddaabc10eb2f7a19fb41436f2888e6aaba4603978c74d39a7a4498a46a98c"
-    }
+    "size": 17558,
+    "mtime_ns": 1788453273182061900,
+    "word_count": 1388
   },
   "src/pages/form-creator.html": {
-    "size": 31305,
-    "mtime_ns": 1782420257371923900,
-    "word_count": 2116,
-    "hashes": {
-      "src/pages/form-creator.html": "6776b00b67ec17d73145072de5cbe838ebd043ff2bc496e8453936e83b7a04f6"
-    }
+    "size": 31439,
+    "mtime_ns": 1788453273182061900,
+    "word_count": 2124
   },
   "src/pages/form-filler.html": {
-    "size": 16741,
-    "mtime_ns": 1782420257393558700,
-    "word_count": 1352,
-    "hashes": {
-      "src/pages/form-filler.html": "a5683f87456c3e1bd9cc701c0db7f87b8c88fcc3e595995929b9c8e46f1b258b"
-    }
+    "size": 16875,
+    "mtime_ns": 1788453273182061900,
+    "word_count": 1360
   },
   "src/pages/header-footer.html": {
-    "size": 20302,
-    "mtime_ns": 1782420257412082300,
-    "word_count": 1478,
-    "hashes": {
-      "src/pages/header-footer.html": "4175c98998e8ad042fef8a441e358e8f92b02b6a592db00f346dd288c2ec045f"
-    }
+    "size": 20436,
+    "mtime_ns": 1788453273183593700,
+    "word_count": 1486
   },
   "src/pages/heic-to-pdf.html": {
-    "size": 15919,
-    "mtime_ns": 1782420257432127800,
-    "word_count": 1273,
-    "hashes": {
-      "src/pages/heic-to-pdf.html": "bdfbdc63013bfdb8e6de894160ba71e3abc65f3c0654477555d336450d20cdbf"
-    }
+    "size": 16053,
+    "mtime_ns": 1788453273183593700,
+    "word_count": 1281
   },
   "src/pages/image-to-pdf.html": {
-    "size": 17342,
-    "mtime_ns": 1782420257450132700,
-    "word_count": 1379,
-    "hashes": {
-      "src/pages/image-to-pdf.html": "f934f77bc668b01b0f579430d5d985f55cec788b04325e08b68fc68c3ba81a85"
-    }
+    "size": 17476,
+    "mtime_ns": 1788453273184601500,
+    "word_count": 1387
   },
   "src/pages/invert-colors.html": {
-    "size": 15502,
-    "mtime_ns": 1782420257469161700,
-    "word_count": 1224,
-    "hashes": {
-      "src/pages/invert-colors.html": "4183dde1c01f45ef66500ce82d47eb93d11994574fc7e549b849945eb47fa538"
-    }
+    "size": 15636,
+    "mtime_ns": 1788453273184601500,
+    "word_count": 1232
   },
   "src/pages/jpg-to-pdf.html": {
-    "size": 17167,
-    "mtime_ns": 1782420257491196100,
-    "word_count": 1376,
-    "hashes": {
-      "src/pages/jpg-to-pdf.html": "e6f14562485be76197593c4f082a7f66c07913824112ef1861affd9ca10f72bb"
-    }
+    "size": 17301,
+    "mtime_ns": 1788453273185601300,
+    "word_count": 1384
   },
   "src/pages/json-to-pdf.html": {
-    "size": 14653,
-    "mtime_ns": 1782420257507197800,
-    "word_count": 1173,
-    "hashes": {
-      "src/pages/json-to-pdf.html": "46c11ffc62dd691e305a2babbffdc51ca76ee635df13742a8bf8c2780eddb075"
-    }
+    "size": 14787,
+    "mtime_ns": 1788453273185601300,
+    "word_count": 1181
   },
   "src/pages/linearize-pdf.html": {
-    "size": 17032,
-    "mtime_ns": 1782420257525197200,
-    "word_count": 1338,
-    "hashes": {
-      "src/pages/linearize-pdf.html": "ae7257153ac441e0518804f7ed8a97449a0379ccb94d808412c0c6eb32c4e1fd"
-    }
+    "size": 17166,
+    "mtime_ns": 1788453273186610900,
+    "word_count": 1346
   },
   "src/pages/markdown-to-pdf.html": {
-    "size": 12613,
-    "mtime_ns": 1782420256021469000,
-    "word_count": 1040,
-    "hashes": {
-      "src/pages/markdown-to-pdf.html": "83607ee9df732cce097f3b39d129da37d86bd6e902a328b6300cba3b4fa03887"
-    }
+    "size": 12747,
+    "mtime_ns": 1788453273186610900,
+    "word_count": 1048
   },
   "src/pages/merge-pdf.html": {
-    "size": 20925,
-    "mtime_ns": 1782420256088518900,
-    "word_count": 1663,
-    "hashes": {
-      "src/pages/merge-pdf.html": "c81298e38f8115288d825e3285628c86abc08a51e68125d98e9746af26a0b23e"
-    }
+    "size": 21605,
+    "mtime_ns": 1788474023195073300,
+    "word_count": 1702
   },
   "src/pages/mobi-to-pdf.html": {
-    "size": 16062,
-    "mtime_ns": 1782420256130035000,
-    "word_count": 1282,
-    "hashes": {
-      "src/pages/mobi-to-pdf.html": "1412e5dbda7db19579d533c597e85a19517253f9b1db2dc9f200461e522940c7"
-    }
+    "size": 16196,
+    "mtime_ns": 1788453273187604400,
+    "word_count": 1290
   },
   "src/pages/n-up-pdf.html": {
-    "size": 19451,
-    "mtime_ns": 1782420256169041900,
-    "word_count": 1492,
-    "hashes": {
-      "src/pages/n-up-pdf.html": "9c4880c3ecd0045a44f4137b9b927eacdf876f82b875414af9707bacfebfb37b"
-    }
+    "size": 19585,
+    "mtime_ns": 1788453273188603000,
+    "word_count": 1500
   },
   "src/pages/ocr-pdf.html": {
-    "size": 28796,
-    "mtime_ns": 1782420256237082200,
-    "word_count": 1924,
-    "hashes": {
-      "src/pages/ocr-pdf.html": "10f54159f122472aab7db1ec0d2834d43a534cddce925a81eeaedf1f105c13c0"
-    }
+    "size": 28930,
+    "mtime_ns": 1788453273188603000,
+    "word_count": 1932
   },
   "src/pages/organize-pdf.html": {
-    "size": 16875,
-    "mtime_ns": 1782420256266085500,
-    "word_count": 1293,
-    "hashes": {
-      "src/pages/organize-pdf.html": "07451896bf10a56a458bf3911aeb6a27e7ddb3b54c5cc590ba72bb4540cb4bcd"
-    }
+    "size": 17009,
+    "mtime_ns": 1788453273189600100,
+    "word_count": 1301
   },
   "src/pages/overlay-pdf.html": {
-    "size": 18636,
-    "mtime_ns": 1782420256288119400,
-    "word_count": 1296,
-    "hashes": {
-      "src/pages/overlay-pdf.html": "caa8845781a192c7de1190ec4c264ff54d1df6e935d32bbe123c130a7b5ae39d"
-    }
+    "size": 18770,
+    "mtime_ns": 1788453273189600100,
+    "word_count": 1304
   },
   "src/pages/page-dimensions.html": {
-    "size": 16923,
-    "mtime_ns": 1782420256310332900,
-    "word_count": 1296,
-    "hashes": {
-      "src/pages/page-dimensions.html": "ef8a7b14604e4d39b28b1d2c8a9a03e0488738274f5250d9183c2f2872cec7ef"
-    }
+    "size": 17057,
+    "mtime_ns": 1788453273190608600,
+    "word_count": 1304
   },
   "src/pages/page-numbers.html": {
-    "size": 17874,
-    "mtime_ns": 1782420256334336500,
-    "word_count": 1350,
-    "hashes": {
-      "src/pages/page-numbers.html": "601547f1f7d808f3eb502667d01d4a5d2237c8f6ad786fac67e8e0f40c5ff65b"
-    }
+    "size": 18008,
+    "mtime_ns": 1788453273190608600,
+    "word_count": 1358
   },
   "src/pages/pdf-booklet.html": {
-    "size": 26222,
-    "mtime_ns": 1782420256370853400,
-    "word_count": 1851,
-    "hashes": {
-      "src/pages/pdf-booklet.html": "07237e4a2b45db4b9619172d9ce10c591f64702714d287d07f3ddd4935a87f1f"
-    }
+    "size": 26356,
+    "mtime_ns": 1788453273191606400,
+    "word_count": 1859
   },
   "src/pages/pdf-layers.html": {
-    "size": 19631,
-    "mtime_ns": 1782420256415953800,
-    "word_count": 1550,
-    "hashes": {
-      "src/pages/pdf-layers.html": "6402db731b88c5abc001cb90f1def343e3a5329834cd58b504660734cf21abda"
-    }
+    "size": 19765,
+    "mtime_ns": 1788453273191606400,
+    "word_count": 1558
   },
   "src/pages/pdf-multi-tool.html": {
-    "size": 19309,
-    "mtime_ns": 1782420256451949300,
-    "word_count": 1584,
-    "hashes": {
-      "src/pages/pdf-multi-tool.html": "fc2cf54718905dfa2167eff41f7c814f8faca2cab12717efc6cf5051ff332ce7"
-    }
+    "size": 19443,
+    "mtime_ns": 1788453273192600500,
+    "word_count": 1592
   },
   "src/pages/pdf-to-bmp.html": {
-    "size": 15280,
-    "mtime_ns": 1782420256477999700,
-    "word_count": 1230,
-    "hashes": {
-      "src/pages/pdf-to-bmp.html": "5235633325e7a99fb6ca07a900d734ec0de7ce00347b6cf3eac78113e6f54330"
-    }
+    "size": 15414,
+    "mtime_ns": 1788453273192600500,
+    "word_count": 1238
   },
   "src/pages/pdf-to-cbz.html": {
-    "size": 24602,
-    "mtime_ns": 1782420256504000700,
-    "word_count": 1637,
-    "hashes": {
-      "src/pages/pdf-to-cbz.html": "548c127fb75d501b413496b807b37c11a522c04583baf42c8fa0d393eb9e7f0c"
-    }
+    "size": 24736,
+    "mtime_ns": 1788453273193604400,
+    "word_count": 1645
   },
   "src/pages/pdf-to-csv.html": {
-    "size": 15069,
-    "mtime_ns": 1782420256524996800,
-    "word_count": 1229,
-    "hashes": {
-      "src/pages/pdf-to-csv.html": "797a692c8fc1bcae2673f671345416a87c62d1144e96ba265a78d83faa6c8ff0"
-    }
+    "size": 15203,
+    "mtime_ns": 1788453273194604300,
+    "word_count": 1237
   },
   "src/pages/pdf-to-docx.html": {
-    "size": 15689,
-    "mtime_ns": 1782420256544998000,
-    "word_count": 1262,
-    "hashes": {
-      "src/pages/pdf-to-docx.html": "8ccb33a919d16e4387140a278a8d8e1b73daf103b5784ea6afb5a61e17d19c7d"
-    }
+    "size": 16161,
+    "mtime_ns": 1788474225844532500,
+    "word_count": 1295
   },
   "src/pages/pdf-to-excel.html": {
-    "size": 15214,
-    "mtime_ns": 1782420256567007700,
-    "word_count": 1234,
-    "hashes": {
-      "src/pages/pdf-to-excel.html": "455caf066a0a180f04b66cdf462f75c60f3844447f50b8d00e3e4122d980b915"
-    }
+    "size": 15348,
+    "mtime_ns": 1788453273195603500,
+    "word_count": 1242
   },
   "src/pages/pdf-to-greyscale.html": {
-    "size": 15431,
-    "mtime_ns": 1782420256586031900,
-    "word_count": 1229,
-    "hashes": {
-      "src/pages/pdf-to-greyscale.html": "ad70b73a9075b696e37f74bef129eff12f5666d982dce53c01916c8eed798ed3"
-    }
+    "size": 15565,
+    "mtime_ns": 1788453273195603500,
+    "word_count": 1237
   },
   "src/pages/pdf-to-jpg.html": {
-    "size": 17058,
-    "mtime_ns": 1782420256606032100,
-    "word_count": 1350,
-    "hashes": {
-      "src/pages/pdf-to-jpg.html": "569d7470958df29ec4516fb6080de2d115cc7d1a6c40d87ff8dee3fb0a3402b2"
-    }
+    "size": 17192,
+    "mtime_ns": 1788453273195603500,
+    "word_count": 1358
   },
   "src/pages/pdf-to-json.html": {
-    "size": 14137,
-    "mtime_ns": 1782420256621030100,
-    "word_count": 1135,
-    "hashes": {
-      "src/pages/pdf-to-json.html": "9ec7ac69b771324fad6e45626594fa95ccb25e6bb10f824fc3875ba193cf1718"
-    }
+    "size": 14271,
+    "mtime_ns": 1788453273197111200,
+    "word_count": 1143
   },
   "src/pages/pdf-to-markdown.html": {
-    "size": 16459,
-    "mtime_ns": 1782420256641034000,
-    "word_count": 1306,
-    "hashes": {
-      "src/pages/pdf-to-markdown.html": "23563f0b2902900a136ff3da6ff7b621ce88bb8c0c486c095277d92886c9e011"
-    }
+    "size": 16593,
+    "mtime_ns": 1788453273197111200,
+    "word_count": 1314
   },
   "src/pages/pdf-to-pdfa.html": {
-    "size": 17906,
-    "mtime_ns": 1782420256662037400,
-    "word_count": 1411,
-    "hashes": {
-      "src/pages/pdf-to-pdfa.html": "3d7f64a4624ed832fba540b704cb0d8dfeb08337e217186380009db949706bb6"
-    }
+    "size": 18040,
+    "mtime_ns": 1788453273198700000,
+    "word_count": 1419
   },
   "src/pages/pdf-to-png.html": {
-    "size": 16295,
-    "mtime_ns": 1782420256682046900,
-    "word_count": 1282,
-    "hashes": {
-      "src/pages/pdf-to-png.html": "dfa3ca600b042f82d83785c8ae0076fed166401f6d7fb7fa085cc5e38efafd18"
-    }
+    "size": 16429,
+    "mtime_ns": 1788453273198700000,
+    "word_count": 1290
   },
   "src/pages/pdf-to-svg.html": {
-    "size": 16034,
-    "mtime_ns": 1782420256708045300,
-    "word_count": 1287,
-    "hashes": {
-      "src/pages/pdf-to-svg.html": "61f1453e1d491364802a4f6f86be6b0d8b1015075f71dfbf1022610cb168e4d0"
-    }
+    "size": 16168,
+    "mtime_ns": 1788453273198700000,
+    "word_count": 1295
   },
   "src/pages/pdf-to-text.html": {
-    "size": 17159,
-    "mtime_ns": 1782420256727049100,
-    "word_count": 1362,
-    "hashes": {
-      "src/pages/pdf-to-text.html": "9b615e8aa3fd98042a6c09ba299c13a09de5eb0594b8c0de3874bd962095de5b"
-    }
+    "size": 17293,
+    "mtime_ns": 1788453273200275800,
+    "word_count": 1370
   },
   "src/pages/pdf-to-tiff.html": {
-    "size": 18954,
-    "mtime_ns": 1782420256750051700,
-    "word_count": 1425,
-    "hashes": {
-      "src/pages/pdf-to-tiff.html": "fcd34fcb42afd247da626c734b85d7811a9cd18b978f8d4c4783afb94fb52d33"
-    }
+    "size": 19088,
+    "mtime_ns": 1788453273200275800,
+    "word_count": 1433
   },
   "src/pages/pdf-to-webp.html": {
-    "size": 16324,
-    "mtime_ns": 1782420256778665500,
-    "word_count": 1279,
-    "hashes": {
-      "src/pages/pdf-to-webp.html": "c3a6eb28a3316749534a440f087c1b18c068d2a9732a5a448cf94610a623d095"
-    }
+    "size": 16458,
+    "mtime_ns": 1788453273201283700,
+    "word_count": 1287
   },
   "src/pages/pdf-to-zip.html": {
-    "size": 16032,
-    "mtime_ns": 1782420256804665600,
-    "word_count": 1291,
-    "hashes": {
-      "src/pages/pdf-to-zip.html": "de260a272bfc1870e0be77a50dd3abdf10b7641d1250963f645d9f0d6b900ada"
-    }
+    "size": 16166,
+    "mtime_ns": 1788453273201283700,
+    "word_count": 1299
   },
   "src/pages/pdf-workflow.html": {
-    "size": 17883,
-    "mtime_ns": 1782420256835665700,
-    "word_count": 1416,
-    "hashes": {
-      "src/pages/pdf-workflow.html": "0d81a1a25f53aedbae6c181a1ef3803fadd2f76e10d155a9f4f2b45975bb97a6"
-    }
+    "size": 18017,
+    "mtime_ns": 1788453273202284500,
+    "word_count": 1424
   },
   "src/pages/png-to-pdf.html": {
-    "size": 17053,
-    "mtime_ns": 1782420256858708200,
-    "word_count": 1362,
-    "hashes": {
-      "src/pages/png-to-pdf.html": "a2314ab9f672398e781c36e9d84d75bf958b85028ca25bf105aa1b21aafae9d7"
-    }
+    "size": 17187,
+    "mtime_ns": 1788453273202284500,
+    "word_count": 1370
   },
   "src/pages/posterize-pdf.html": {
-    "size": 23949,
-    "mtime_ns": 1782420256890294800,
-    "word_count": 1689,
-    "hashes": {
-      "src/pages/posterize-pdf.html": "fdc5726ec936aa07b823ded03265b69bc6bed2010906b18c591bd5250d8f507d"
-    }
+    "size": 24083,
+    "mtime_ns": 1788453273203287700,
+    "word_count": 1697
   },
   "src/pages/prepare-pdf-for-ai.html": {
-    "size": 17093,
-    "mtime_ns": 1782420256910295700,
-    "word_count": 1377,
-    "hashes": {
-      "src/pages/prepare-pdf-for-ai.html": "a3bed7f678ed7efd727dd0272301752a051a540e5b7e91bf2ea6cb8d540e2d2c"
-    }
+    "size": 17227,
+    "mtime_ns": 1788453273203287700,
+    "word_count": 1385
   },
   "src/pages/psd-to-pdf.html": {
-    "size": 16009,
-    "mtime_ns": 1782420256929294300,
-    "word_count": 1284,
-    "hashes": {
-      "src/pages/psd-to-pdf.html": "855b3676e4eaf550762fbeb69fa4da6f232f887932400465c18376489debaca9"
-    }
+    "size": 16143,
+    "mtime_ns": 1788453273203287700,
+    "word_count": 1292
   },
   "src/pages/rasterize-pdf.html": {
-    "size": 17821,
-    "mtime_ns": 1782420256948295800,
-    "word_count": 1365,
-    "hashes": {
-      "src/pages/rasterize-pdf.html": "ddd962bd3e06e8d2040a3ec2810f7ccef4185c46e2169efafd6ae6bdcb722213"
-    }
+    "size": 17955,
+    "mtime_ns": 1788453273204287800,
+    "word_count": 1373
   },
   "src/pages/remove-annotations.html": {
-    "size": 15738,
-    "mtime_ns": 1782420256974819300,
-    "word_count": 1225,
-    "hashes": {
-      "src/pages/remove-annotations.html": "29e20667624f54bed0c2f6c956d6f7ddcfac6b3030e8b5acccdc9d00473f7353"
-    }
+    "size": 15872,
+    "mtime_ns": 1788453273204287800,
+    "word_count": 1233
   },
   "src/pages/remove-blank-pages.html": {
-    "size": 17093,
-    "mtime_ns": 1782420257000336900,
-    "word_count": 1330,
-    "hashes": {
-      "src/pages/remove-blank-pages.html": "195ffbc8d93533051c58a3d6c3715b769ac3711fc94e832a184cbe62953b3884"
-    }
+    "size": 17227,
+    "mtime_ns": 1788453273205287200,
+    "word_count": 1338
   },
   "src/pages/remove-metadata.html": {
-    "size": 16120,
-    "mtime_ns": 1782420257023339000,
-    "word_count": 1269,
-    "hashes": {
-      "src/pages/remove-metadata.html": "20441032e6980192aefda7b63edbaa83ae84b6aa1869d5a379817cb103e7da49"
-    }
+    "size": 16254,
+    "mtime_ns": 1788453273205287200,
+    "word_count": 1277
   },
   "src/pages/remove-restrictions.html": {
-    "size": 16881,
-    "mtime_ns": 1782420257050336500,
-    "word_count": 1303,
-    "hashes": {
-      "src/pages/remove-restrictions.html": "4491d6a74d9c308a152d11e847d41648878c7b587c86dff8ccc4705edfde374c"
-    }
+    "size": 17015,
+    "mtime_ns": 1788453273206284800,
+    "word_count": 1311
   },
   "src/pages/repair-pdf.html": {
-    "size": 16094,
-    "mtime_ns": 1782420257076882100,
-    "word_count": 1265,
-    "hashes": {
-      "src/pages/repair-pdf.html": "2e5cfcac935d062e947f9e589725cea34a5df9e85d058e30a6dc549ef140d57a"
-    }
+    "size": 16228,
+    "mtime_ns": 1788453273206284800,
+    "word_count": 1273
   },
   "src/pages/reverse-pages.html": {
-    "size": 16122,
-    "mtime_ns": 1782420257100995700,
-    "word_count": 1282,
-    "hashes": {
-      "src/pages/reverse-pages.html": "462224a018d08cb0eb1bc4647a1d650b91d46da5826cdcf43f92525be1b5e085"
-    }
+    "size": 16256,
+    "mtime_ns": 1788453273207285900,
+    "word_count": 1290
   },
   "src/pages/rotate-custom.html": {
-    "size": 17136,
-    "mtime_ns": 1782420257124994400,
-    "word_count": 1334,
-    "hashes": {
-      "src/pages/rotate-custom.html": "708558637594e4a5f5f25743aee3a5d8f05251f4a7b708cc16ae11a2adba2837"
-    }
+    "size": 17270,
+    "mtime_ns": 1788453273207285900,
+    "word_count": 1342
   },
   "src/pages/rotate-pdf.html": {
-    "size": 16829,
-    "mtime_ns": 1782420257155995700,
-    "word_count": 1321,
-    "hashes": {
-      "src/pages/rotate-pdf.html": "eccc0cbeaa3ec0a31b175e2373fc75b302cb9fdf8046c7891e87ac68d78423db"
-    }
+    "size": 16963,
+    "mtime_ns": 1788453273208285400,
+    "word_count": 1329
   },
   "src/pages/sanitize-pdf.html": {
-    "size": 20665,
-    "mtime_ns": 1782420257182301900,
-    "word_count": 1501,
-    "hashes": {
-      "src/pages/sanitize-pdf.html": "ffa579d1b5053a3012a055cfa7dbdce45417d8862969c707c1193210e89fff5a"
-    }
+    "size": 20799,
+    "mtime_ns": 1788453273208285400,
+    "word_count": 1509
   },
   "src/pages/scanner-effect.html": {
-    "size": 24225,
-    "mtime_ns": 1782420257205301900,
-    "word_count": 1563,
-    "hashes": {
-      "src/pages/scanner-effect.html": "6d4d35640e60315864b51b780e98cff90237283445737afd18d06141037d3353"
-    }
+    "size": 24359,
+    "mtime_ns": 1788453273209289000,
+    "word_count": 1571
   },
   "src/pages/sign-pdf.html": {
-    "size": 16225,
-    "mtime_ns": 1782420257232297500,
-    "word_count": 1291,
-    "hashes": {
-      "src/pages/sign-pdf.html": "041a0551060ee577c6d675d8571adc8e888e31c5b84718aa832f0ed14f4c5286"
-    }
+    "size": 16359,
+    "mtime_ns": 1788453273209289000,
+    "word_count": 1299
   },
   "src/pages/split-pdf.html": {
-    "size": 25986,
-    "mtime_ns": 1782425204306728500,
-    "word_count": 1931,
-    "hashes": {
-      "src/pages/split-pdf.html": "cbd4b547120582fd708b447a1037f9f1709d2c871aebc2f1236b61789b69cf43"
-    }
+    "size": 26120,
+    "mtime_ns": 1788453273210287900,
+    "word_count": 1939
   },
   "src/pages/svg-to-pdf.html": {
-    "size": 17019,
-    "mtime_ns": 1782420257282900300,
-    "word_count": 1361,
-    "hashes": {
-      "src/pages/svg-to-pdf.html": "4d99e8f02a67b15b5f5012a57a233287cbd6d5de73ab81119349a59af655ae99"
-    }
+    "size": 17153,
+    "mtime_ns": 1788453273210287900,
+    "word_count": 1369
   },
   "src/pages/table-of-contents.html": {
-    "size": 18062,
-    "mtime_ns": 1782420257305538500,
-    "word_count": 1342,
-    "hashes": {
-      "src/pages/table-of-contents.html": "a544ac92a3d4dfec782f9347feff1aa9d59ba3ce234da08cbbb772bfbef81394"
-    }
+    "size": 18196,
+    "mtime_ns": 1788453273211284900,
+    "word_count": 1350
   },
   "src/pages/text-color.html": {
-    "size": 15653,
-    "mtime_ns": 1782420257321552800,
-    "word_count": 1234,
-    "hashes": {
-      "src/pages/text-color.html": "7f27e09159171de06599cf7f6a27b493b26afede45e2bf3983bb4570942fcda4"
-    }
+    "size": 15787,
+    "mtime_ns": 1788453273211284900,
+    "word_count": 1242
   },
   "src/pages/tiff-to-pdf.html": {
-    "size": 16891,
-    "mtime_ns": 1782420257342919200,
-    "word_count": 1335,
-    "hashes": {
-      "src/pages/tiff-to-pdf.html": "c16b4da56f5f020cf240463df6a0150619d42a0147de686df5e1e986b0244d23"
-    }
+    "size": 17025,
+    "mtime_ns": 1788453273212287400,
+    "word_count": 1343
   },
   "src/pages/timestamp-pdf.html": {
-    "size": 17815,
-    "mtime_ns": 1782420257362924800,
-    "word_count": 1395,
-    "hashes": {
-      "src/pages/timestamp-pdf.html": "479dfe8581bfa3c6a86fec7ff8e96f32420c10f53fc4d8da8cc244fd542c7c03"
-    }
+    "size": 17949,
+    "mtime_ns": 1788453273212287400,
+    "word_count": 1403
   },
   "src/pages/txt-to-pdf.html": {
-    "size": 23057,
-    "mtime_ns": 1782420257389556900,
-    "word_count": 1758,
-    "hashes": {
-      "src/pages/txt-to-pdf.html": "4d3ac237e70b0fd623ec3efd662249058d8c5fbb6522ec3ff5cc8777b768852b"
-    }
+    "size": 23191,
+    "mtime_ns": 1788453273213287000,
+    "word_count": 1766
   },
   "src/pages/validate-signature-pdf.html": {
-    "size": 16004,
-    "mtime_ns": 1782420257406082800,
-    "word_count": 1213,
-    "hashes": {
-      "src/pages/validate-signature-pdf.html": "c676974e85d0c46a52c3c1bea318bd163ce55e22710cd0f3f7d2870ce6dd283f"
-    }
+    "size": 16138,
+    "mtime_ns": 1788453273213287000,
+    "word_count": 1221
   },
   "src/pages/view-metadata.html": {
-    "size": 15796,
-    "mtime_ns": 1782420257424132100,
-    "word_count": 1246,
-    "hashes": {
-      "src/pages/view-metadata.html": "832f4bfe8f9c5fdb29a5980ea120ee533076df326ccbc85b13e44978273204a5"
-    }
+    "size": 15930,
+    "mtime_ns": 1788453273213287000,
+    "word_count": 1254
   },
   "src/pages/wasm-settings.html": {
-    "size": 15673,
-    "mtime_ns": 1782420257437128300,
-    "word_count": 985,
-    "hashes": {
-      "src/pages/wasm-settings.html": "ac409cb249c76f6857f79d75d96c42192775724b675b73de2b15d5e092d1c999"
-    }
+    "size": 15807,
+    "mtime_ns": 1788453273214795600,
+    "word_count": 993
   },
   "src/pages/webp-to-pdf.html": {
-    "size": 17035,
-    "mtime_ns": 1782420257455165900,
-    "word_count": 1361,
-    "hashes": {
-      "src/pages/webp-to-pdf.html": "36fac4c01d60819ae51bc0ece7fa144b32b3430b5c9b070e8c6ac1e935809e88"
-    }
+    "size": 17169,
+    "mtime_ns": 1788453273214795600,
+    "word_count": 1369
   },
   "src/pages/xml-to-pdf.html": {
-    "size": 15965,
-    "mtime_ns": 1782420257472162200,
-    "word_count": 1279,
-    "hashes": {
-      "src/pages/xml-to-pdf.html": "36f6c95eb2f7db2d857737039511f2c2e1ff469f573d47559cb469331ddac40d"
-    }
+    "size": 16099,
+    "mtime_ns": 1788453273214795600,
+    "word_count": 1287
   },
   "src/pages/xps-to-pdf.html": {
-    "size": 16060,
-    "mtime_ns": 1782420257488196100,
-    "word_count": 1283,
-    "hashes": {
-      "src/pages/xps-to-pdf.html": "7bf1468c3e38e46ae6aaf512066b49f03628bdb366aafaa864054c762a738250"
-    }
+    "size": 16194,
+    "mtime_ns": 1788453273215804700,
+    "word_count": 1291
   },
   "src/partials/footer-simple.html": {
     "size": 481,
@@ -5514,12 +4899,9 @@
     }
   },
   "src/partials/footer.html": {
-    "size": 7393,
-    "mtime_ns": 1782151870284273800,
-    "word_count": 480,
-    "hashes": {
-      "src/partials/footer.html": "5b1795183b054202b3016896ed80eefc7097f4fd5ef22f34b2c9b601757c0ec0"
-    }
+    "size": 7469,
+    "mtime_ns": 1788475895746644800,
+    "word_count": 485
   },
   "src/partials/navbar-simple.html": {
     "size": 1418,
@@ -5530,12 +4912,9 @@
     }
   },
   "src/partials/navbar.html": {
-    "size": 6818,
-    "mtime_ns": 1782151870285819700,
-    "word_count": 454,
-    "hashes": {
-      "src/partials/navbar.html": "ae9eebe8de0a6a2fb29c7048cdf3666e92f2979b9aa66a0d81756ee8335fd448"
-    }
+    "size": 6754,
+    "mtime_ns": 1788476192293071100,
+    "word_count": 457
   },
   "src/partials/settings-modal.html": {
     "size": 8513,
@@ -5584,9 +4963,9 @@
     "word_count": 629
   },
   "src/tests/digital-sign-pdf.test.ts": {
-    "size": 5218,
-    "mtime_ns": 1782151870288828000,
-    "word_count": 436
+    "size": 5073,
+    "mtime_ns": 1788476194800006100,
+    "word_count": 434
   },
   "src/tests/email-to-pdf.test.ts": {
     "size": 10483,
@@ -5632,9 +5011,9 @@
     "word_count": 1485
   },
   "src/tests/i18n.test.ts": {
-    "size": 4031,
-    "mtime_ns": 1782151870293420200,
-    "word_count": 341
+    "size": 3752,
+    "mtime_ns": 1788474652770211100,
+    "word_count": 354
   },
   "src/tests/image-effects.test.ts": {
     "size": 8483,
@@ -5652,9 +5031,9 @@
     "word_count": 885
   },
   "src/tests/markdown-mermaid.test.ts": {
-    "size": 2421,
-    "mtime_ns": 1782151870293420200,
-    "word_count": 193
+    "size": 2285,
+    "mtime_ns": 1788476194807955700,
+    "word_count": 189
   },
   "src/tests/multi-tool-file-input.test.ts": {
     "size": 3308,
@@ -5707,14 +5086,14 @@
     "word_count": 251
   },
   "src/tests/setup.ts": {
-    "size": 976,
-    "mtime_ns": 1782151870297980700,
-    "word_count": 105
+    "size": 1043,
+    "mtime_ns": 1788475471315605700,
+    "word_count": 119
   },
   "src/tests/split-pdf-helpers.test.ts": {
-    "size": 11826,
-    "mtime_ns": 1782425312316782100,
-    "word_count": 1329
+    "size": 11831,
+    "mtime_ns": 1788475636614394000,
+    "word_count": 1331
   },
   "src/tests/state.test.ts": {
     "size": 2346,
@@ -5732,9 +5111,9 @@
     "word_count": 913
   },
   "src/tests/timestamp-node.test.ts": {
-    "size": 4779,
-    "mtime_ns": 1782151870301077600,
-    "word_count": 498
+    "size": 6294,
+    "mtime_ns": 1788474047393214800,
+    "word_count": 657
   },
   "src/tests/timestamp-pdf-page.test.ts": {
     "size": 6348,
@@ -5762,19 +5141,19 @@
     "word_count": 735
   },
   "src/tests/xss-replay.test.ts": {
-    "size": 13765,
-    "mtime_ns": 1782151870303076400,
-    "word_count": 1162
+    "size": 15223,
+    "mtime_ns": 1788473686067450700,
+    "word_count": 1297
   },
   "src/types/coherentpdf.global.d.ts": {
-    "size": 65610,
-    "mtime_ns": 1782151870304075600,
-    "word_count": 9215
+    "size": 65203,
+    "mtime_ns": 1788476194904873400,
+    "word_count": 9311
   },
   "src/types/globals.d.ts": {
-    "size": 462,
-    "mtime_ns": 1782151870304624100,
-    "word_count": 38
+    "size": 488,
+    "mtime_ns": 1788475471325733800,
+    "word_count": 42
   },
   "src/types/markdown-it-plugins.d.ts": {
     "size": 1443,
@@ -5795,20 +5174,14 @@
     }
   },
   "terms.html": {
-    "size": 11036,
-    "mtime_ns": 1785516088565696500,
-    "word_count": 1140,
-    "hashes": {
-      "terms.html": "168cd085b430a694556bf65dbb2782d1581a32a3daed2e762c7d2a553df8eda7"
-    }
+    "size": 10940,
+    "mtime_ns": 1788476192316393600,
+    "word_count": 1158
   },
   "tools.html": {
-    "size": 21390,
-    "mtime_ns": 1782420257534197200,
-    "word_count": 1682,
-    "hashes": {
-      "tools.html": "7a13c6aedd3e0794fac883908250934f212253166da7574f784e9e539294a359"
-    }
+    "size": 23757,
+    "mtime_ns": 1788475421719511200,
+    "word_count": 1869
   },
   "tsconfig.json": {
     "size": 1933,
@@ -5819,9 +5192,9 @@
     }
   },
   "vite.config.ts": {
-    "size": 26659,
-    "mtime_ns": 1782407347868272700,
-    "word_count": 1882
+    "size": 28101,
+    "mtime_ns": 1788475753859233700,
+    "word_count": 1975
   },
   "vitest.config.ts": {
     "size": 1229,
@@ -5835,5 +5208,408 @@
     "hashes": {
       "wrangler.json": "f8565f66d09eab090516dc2afe663f4468119a1135348ad67b8109b6d36dec03"
     }
+  },
+  ".claude/settings.json": {
+    "size": 474,
+    "mtime_ns": 1785702532866513300,
+    "word_count": 38,
+    "hashes": {
+      ".claude/settings.json": "65d16eb80957176f56e58e54b6461e5248762c5e6f13e20753625be1c3edf98f"
+    }
+  },
+  "CLAUDE.md": {
+    "size": 773,
+    "mtime_ns": 1785702533079492800,
+    "word_count": 106,
+    "hashes": {
+      "claude.md": "ff660f38cb090bb2dff136d6d4af5fc33bdd77a893f49e41e11de8d043782a2b"
+    }
+  },
+  "FORK-LOG.md": {
+    "size": 21251,
+    "mtime_ns": 1788476340164164400,
+    "word_count": 2341,
+    "hashes": {
+      "fork-log.md": "d6f0994839ae4a45bbd062a2fea503dc88a17c340e3edafb9f253b553b5a4f72"
+    }
+  },
+  "docs/public/images/pkc-icon-192.png": {
+    "size": 4489,
+    "mtime_ns": 1788475922658593500,
+    "word_count": 180
+  },
+  "docs/tools/duplex-collate.md": {
+    "size": 2275,
+    "mtime_ns": 1788473876653595100,
+    "word_count": 356,
+    "hashes": {
+      "docs/tools/duplex-collate.md": "1722a141f8631181c8440f5186f6bc2e70f0ceeca74f0985cecfd7af965cdedf"
+    }
+  },
+  "scripts/pkc/debrand.py": {
+    "size": 6520,
+    "mtime_ns": 1788476269710172900,
+    "word_count": 614,
+    "hashes": {
+      "scripts/pkc/debrand.py": "6f146e08ec016066c8faa095307393cd7b5775027b869736dffe5330e3125742"
+    }
+  },
+  "scripts/pkc/pkcify-page.py": {
+    "size": 6847,
+    "mtime_ns": 1788475408679810700,
+    "word_count": 794,
+    "hashes": {
+      "scripts/pkc/pkcify-page.py": "3cb9b6027806a2bff1fca84391be4c16f499a9e3b8c7dfefe35a15104e5f4300"
+    }
+  },
+  "scripts/security-patterns-check.mjs": {
+    "size": 3860,
+    "mtime_ns": 1788473246061176500,
+    "word_count": 392
+  },
+  "scripts/verify-sw-guard.mjs": {
+    "size": 1792,
+    "mtime_ns": 1785703564711760500,
+    "word_count": 242
+  },
+  "src/js/config/editor-fonts.ts": {
+    "size": 1422,
+    "mtime_ns": 1788475469532308200,
+    "word_count": 107
+  },
+  "src/js/editcore/app.js": {
+    "size": 313570,
+    "mtime_ns": 1788475470383689800,
+    "word_count": 36910
+  },
+  "src/js/editcore/core.js": {
+    "size": 56762,
+    "mtime_ns": 1788475470529988900,
+    "word_count": 7083
+  },
+  "src/js/editcore/engine-loader.js": {
+    "size": 1323,
+    "mtime_ns": 1788475470540525200,
+    "word_count": 149
+  },
+  "src/js/editcore/shadingsurgery.js": {
+    "size": 24757,
+    "mtime_ns": 1788475470601471200,
+    "word_count": 3220
+  },
+  "src/js/editcore/streamsplice.js": {
+    "size": 23244,
+    "mtime_ns": 1788475470660148700,
+    "word_count": 3057
+  },
+  "src/js/editcore/tagsurgery.js": {
+    "size": 7848,
+    "mtime_ns": 1788475470679856800,
+    "word_count": 1030
+  },
+  "src/js/editcore/type3surgery.js": {
+    "size": 23127,
+    "mtime_ns": 1788475470729622500,
+    "word_count": 2943
+  },
+  "src/js/logic/duplex-collate-page.ts": {
+    "size": 19513,
+    "mtime_ns": 1788473876469959200,
+    "word_count": 1867
+  },
+  "src/js/logic/edit-pdf-text-dock.ts": {
+    "size": 25358,
+    "mtime_ns": 1788475470869246200,
+    "word_count": 2628
+  },
+  "src/js/logic/edit-pdf-text-page.ts": {
+    "size": 27920,
+    "mtime_ns": 1788475470965186300,
+    "word_count": 2649
+  },
+  "src/js/logic/excel-to-pdf-page.ts": {
+    "size": 6962,
+    "mtime_ns": 1788474190270142400,
+    "word_count": 587
+  },
+  "src/js/logic/odg-to-pdf-page.ts": {
+    "size": 6592,
+    "mtime_ns": 1788474652073779000,
+    "word_count": 550
+  },
+  "src/js/logic/odp-to-pdf-page.ts": {
+    "size": 6592,
+    "mtime_ns": 1788474652100052900,
+    "word_count": 550
+  },
+  "src/js/logic/ods-to-pdf-page.ts": {
+    "size": 6592,
+    "mtime_ns": 1788474652139073000,
+    "word_count": 550
+  },
+  "src/js/logic/odt-to-pdf-page.ts": {
+    "size": 6828,
+    "mtime_ns": 1788474190492623300,
+    "word_count": 579
+  },
+  "src/js/logic/pages-to-pdf-page.ts": {
+    "size": 6790,
+    "mtime_ns": 1788474190548357800,
+    "word_count": 564
+  },
+  "src/js/logic/powerpoint-to-pdf-page.ts": {
+    "size": 7171,
+    "mtime_ns": 1788474190603427100,
+    "word_count": 604
+  },
+  "src/js/logic/pub-to-pdf-page.ts": {
+    "size": 6764,
+    "mtime_ns": 1788474190658316100,
+    "word_count": 561
+  },
+  "src/js/logic/rtf-to-pdf-page.ts": {
+    "size": 7097,
+    "mtime_ns": 1788474190718317600,
+    "word_count": 606
+  },
+  "src/js/logic/vsd-to-pdf-page.ts": {
+    "size": 6773,
+    "mtime_ns": 1788474190783324600,
+    "word_count": 562
+  },
+  "src/js/logic/word-to-pdf-page.ts": {
+    "size": 8576,
+    "mtime_ns": 1788474190845772000,
+    "word_count": 707
+  },
+  "src/js/logic/word-to-pdf.ts": {
+    "size": 5675,
+    "mtime_ns": 1788474190907604900,
+    "word_count": 545
+  },
+  "src/js/logic/wpd-to-pdf-page.ts": {
+    "size": 6786,
+    "mtime_ns": 1788474190967784400,
+    "word_count": 564
+  },
+  "src/js/logic/wps-to-pdf-page.ts": {
+    "size": 6786,
+    "mtime_ns": 1788474191026432500,
+    "word_count": 564
+  },
+  "src/js/pdf.worker.ts": {
+    "size": 87,
+    "mtime_ns": 1788472991330865300,
+    "word_count": 4
+  },
+  "src/js/utils/freetext-flatten.ts": {
+    "size": 8623,
+    "mtime_ns": 1788475471137174800,
+    "word_count": 1047
+  },
+  "src/js/utils/freetext-font-embed.ts": {
+    "size": 15158,
+    "mtime_ns": 1788475471183260600,
+    "word_count": 2035
+  },
+  "src/js/utils/freetext-script.ts": {
+    "size": 3444,
+    "mtime_ns": 1788475354837973400,
+    "word_count": 226
+  },
+  "src/js/utils/libreoffice-loader.ts": {
+    "size": 7938,
+    "mtime_ns": 1788474262963056300,
+    "word_count": 782
+  },
+  "src/js/utils/map-upsert-polyfill.ts": {
+    "size": 1344,
+    "mtime_ns": 1788472991271924500,
+    "word_count": 142
+  },
+  "src/js/utils/safe-storage.ts": {
+    "size": 475,
+    "mtime_ns": 1788473105274333400,
+    "word_count": 67
+  },
+  "src/js/utils/setup-pdf-worker.ts": {
+    "size": 149,
+    "mtime_ns": 1788472991394890000,
+    "word_count": 13
+  },
+  "src/js/workflow/nodes/excel-to-pdf-node.ts": {
+    "size": 2324,
+    "mtime_ns": 1788474191140408500,
+    "word_count": 245
+  },
+  "src/js/workflow/nodes/odg-to-pdf-node.ts": {
+    "size": 2167,
+    "mtime_ns": 1788474191194557800,
+    "word_count": 234
+  },
+  "src/js/workflow/nodes/pages-to-pdf-node.ts": {
+    "size": 2183,
+    "mtime_ns": 1788474191246868700,
+    "word_count": 235
+  },
+  "src/js/workflow/nodes/powerpoint-to-pdf-node.ts": {
+    "size": 2312,
+    "mtime_ns": 1788474191298617000,
+    "word_count": 242
+  },
+  "src/js/workflow/nodes/pub-to-pdf-node.ts": {
+    "size": 2175,
+    "mtime_ns": 1788474191353100800,
+    "word_count": 235
+  },
+  "src/js/workflow/nodes/vsd-to-pdf-node.ts": {
+    "size": 2225,
+    "mtime_ns": 1788474191406618300,
+    "word_count": 240
+  },
+  "src/js/workflow/nodes/word-to-pdf-node.ts": {
+    "size": 2317,
+    "mtime_ns": 1788474191458844300,
+    "word_count": 245
+  },
+  "src/js/workflow/nodes/wpd-to-pdf-node.ts": {
+    "size": 2171,
+    "mtime_ns": 1788474191513551600,
+    "word_count": 234
+  },
+  "src/js/workflow/nodes/wps-to-pdf-node.ts": {
+    "size": 2170,
+    "mtime_ns": 1788474191566129200,
+    "word_count": 235
+  },
+  "src/pages/duplex-collate.html": {
+    "size": 24595,
+    "mtime_ns": 1788474121990011400,
+    "word_count": 1800
+  },
+  "src/pages/edit-pdf-text.html": {
+    "size": 45773,
+    "mtime_ns": 1788475392900542100,
+    "word_count": 2678
+  },
+  "src/pages/excel-to-pdf.html": {
+    "size": 16579,
+    "mtime_ns": 1788474648522157800,
+    "word_count": 1308
+  },
+  "src/pages/odg-to-pdf.html": {
+    "size": 16617,
+    "mtime_ns": 1788474648555711200,
+    "word_count": 1329
+  },
+  "src/pages/odp-to-pdf.html": {
+    "size": 16629,
+    "mtime_ns": 1788474648582499700,
+    "word_count": 1329
+  },
+  "src/pages/ods-to-pdf.html": {
+    "size": 16626,
+    "mtime_ns": 1788474648610347400,
+    "word_count": 1329
+  },
+  "src/pages/odt-to-pdf.html": {
+    "size": 16220,
+    "mtime_ns": 1788474648633954500,
+    "word_count": 1293
+  },
+  "src/pages/pages-to-pdf.html": {
+    "size": 16633,
+    "mtime_ns": 1788474648655392000,
+    "word_count": 1324
+  },
+  "src/pages/powerpoint-to-pdf.html": {
+    "size": 16745,
+    "mtime_ns": 1788474648701968400,
+    "word_count": 1301
+  },
+  "src/pages/pub-to-pdf.html": {
+    "size": 16611,
+    "mtime_ns": 1788474648727265600,
+    "word_count": 1329
+  },
+  "src/pages/rtf-to-pdf.html": {
+    "size": 16196,
+    "mtime_ns": 1788474648746724300,
+    "word_count": 1296
+  },
+  "src/pages/vsd-to-pdf.html": {
+    "size": 16627,
+    "mtime_ns": 1788474648768072400,
+    "word_count": 1332
+  },
+  "src/pages/word-to-pdf.html": {
+    "size": 17608,
+    "mtime_ns": 1788474648809346700,
+    "word_count": 1396
+  },
+  "src/pages/wpd-to-pdf.html": {
+    "size": 16583,
+    "mtime_ns": 1788474648839810500,
+    "word_count": 1324
+  },
+  "src/pages/wps-to-pdf.html": {
+    "size": 16562,
+    "mtime_ns": 1788474648861526200,
+    "word_count": 1326
+  },
+  "src/tests/duplex-collate.test.ts": {
+    "size": 1339,
+    "mtime_ns": 1788473876594379500,
+    "word_count": 141
+  },
+  "src/tests/editcore-fonts.test.ts": {
+    "size": 4096,
+    "mtime_ns": 1788475471222969400,
+    "word_count": 412
+  },
+  "src/tests/editcore-smoke.test.ts": {
+    "size": 2428,
+    "mtime_ns": 1788475471239176000,
+    "word_count": 213
+  },
+  "src/tests/freetext-flatten.test.ts": {
+    "size": 4243,
+    "mtime_ns": 1788475471256737800,
+    "word_count": 477
+  },
+  "src/tests/helpers/editcore-fixtures.ts": {
+    "size": 2081,
+    "mtime_ns": 1788475471268775100,
+    "word_count": 303
+  },
+  "src/tests/helpers/editcore-harness.ts": {
+    "size": 3895,
+    "mtime_ns": 1788475471291786700,
+    "word_count": 477
+  },
+  "src/tests/helpers/pdf-builder.ts": {
+    "size": 3036,
+    "mtime_ns": 1788475471305857500,
+    "word_count": 419
+  },
+  "src/tests/i18n-resilience.test.ts": {
+    "size": 1742,
+    "mtime_ns": 1788473219406678900,
+    "word_count": 172
+  },
+  "src/tests/map-upsert-polyfill.test.ts": {
+    "size": 4073,
+    "mtime_ns": 1788473083445869900,
+    "word_count": 349
+  },
+  "src/tests/pdf-worker-polyfill.test.ts": {
+    "size": 2001,
+    "mtime_ns": 1788472991507003800,
+    "word_count": 178
+  },
+  "src/tests/watermark-tile.test.ts": {
+    "size": 9836,
+    "mtime_ns": 1788473946794244000,
+    "word_count": 1013
   }
 }
