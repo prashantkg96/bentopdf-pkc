@@ -223,6 +223,31 @@ a different name, which would have silently broken `ROBOTS_NOINDEX` in the
 container. Both now say `pkc-pdf-tools-noindex.sh`. If you rename anything that
 crosses a file boundary like this, grep both sides.
 
+### PWA and offline mode
+
+Checked rather than assumed, since this release adds ~30 pages and a new WASM
+engine:
+
+- **Offline manifest** — `generate-offline-manifest.mjs` walks the whole `dist`
+  tree, so every new page is picked up with no per-tool registration. Verified in
+  the built output: 734 URLs, including Edit PDF Text, Duplex Collate and all 13
+  Office to PDF pages, plus `editcore.wasm`.
+- **Existing offline-mode users** need no action. `src/js/offline-mode.ts`
+  silently re-affirms the cache on page load from a cache-busted
+  `offline-manifest.json?t=`, so a returning user picks up the new tools on their
+  next visit.
+- **`pwa-nav.ts` and `site.webmanifest`** are tool-agnostic (the nav trim collapses
+  the pill to a single "PDF Tools" link regardless of tool count), so neither
+  needed touching.
+- **LibreOffice offline** — `public/sw.js` now caches the proxied
+  `/libreoffice/` payload, and `sw-register.ts` sends the proxy origin in
+  `SET_TRUSTED_CDN_HOSTS`, so Office to PDF works offline after first use.
+- **`CACHE_VERSION` bumped v15 → v16.** This one is deliberate, not
+  housekeeping: `findCachedFile()` previously matched on `pathname.endsWith()`,
+  so a cache populated by v15 may hold an entry that matcher would have
+  mis-served. Tightening the matcher stops _new_ bad matches but cannot un-cache
+  old ones — only a version bump evicts them.
+
 ### Known stale tests (pre-existing, not caused by this sync)
 
 - `src/tests/i18n.test.ts` — 8 failures. Asserts multi-language `getLanguageFromUrl`

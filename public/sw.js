@@ -5,10 +5,18 @@
  * Version: 1.1.0
  */
 
-// NOTE: keep the 'pkc-pdf-tools-' prefix — the activate handler purges old caches
-// via startsWith('bentopdf-'), so this must stay prefix-compatible with the
-// historical pkc-pdf-tools-v* names to evict them on upgrade.
-const CACHE_VERSION = 'bentopdf-pkc-v15';
+// NOTE: keep the literal 'bentopdf-' prefix. The activate handler purges old
+// caches via startsWith('bentopdf-'), so the name must stay prefix-compatible
+// with the historical bentopdf-v* / bentopdf-pkc-v* caches to evict them on
+// upgrade. This is a storage key, not branding — renaming it strands every
+// existing user's cache instead of clearing it.
+//
+// v16: the 2026-09 upstream sync. Bumped deliberately rather than incidentally —
+// findCachedFile() used to match on pathname.endsWith(), so a cache populated by
+// v15 may hold an entry that matcher would have mis-served. Tightening the
+// matcher stops new bad matches but cannot un-cache old ones; only a version
+// bump evicts them.
+const CACHE_VERSION = 'bentopdf-pkc-v16';
 const CACHE_NAME = `${CACHE_VERSION}-static`;
 
 const trustedCdnOrigins = new Set(['https://cdn.jsdelivr.net']);

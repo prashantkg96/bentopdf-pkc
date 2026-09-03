@@ -72,6 +72,8 @@ PROTECTED = [
     # that would be orphaned rather than migrated.
     "startsWith('bentopdf-')",
     "'bentopdf-pkc-v",
+    "'bentopdf-' prefix",
+    'bentopdf-v*',
     'bentopdf-fonts',
     'bentopdf:wasm-providers',
 ]
