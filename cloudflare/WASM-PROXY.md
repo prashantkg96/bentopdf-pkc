@@ -1,6 +1,6 @@
 # WASM Proxy Setup Guide
 
-BentoPDF uses a Cloudflare Worker to proxy WASM library requests, bypassing CORS restrictions when loading AGPL-licensed components (PyMuPDF, Ghostscript, CoherentPDF) from external sources.
+PKC PDF Tools uses a Cloudflare Worker to proxy WASM library requests, bypassing CORS restrictions when loading AGPL-licensed components (PyMuPDF, Ghostscript, CoherentPDF) from external sources.
 
 ## Quick Start
 
@@ -32,9 +32,9 @@ npx wrangler secret put CPDF_SOURCE -c wasm-wrangler.toml
 - GS_SOURCE: `https://cdn.jsdelivr.net/npm/@bentopdf/gs-wasm/assets/`
 - CPDF_SOURCE: `https://cdn.jsdelivr.net/npm/coherentpdf/dist/`
 
-> **Note:** You can use your own hosted WASM files instead of the recommended URLs. Just ensure your files match the expected directory structure and file names that BentoPDF expects for each module.
+> **Note:** You can use your own hosted WASM files instead of the recommended URLs. Just ensure your files match the expected directory structure and file names that PKC PDF Tools expects for each module.
 
-### 3. Configure BentoPDF
+### 3. Configure PKC PDF Tools
 
 **Option A: Environment variables (recommended — zero-config for users)**
 
@@ -48,7 +48,7 @@ VITE_WASM_CPDF_URL=https://bentopdf-wasm-proxy.<your-subdomain>.workers.dev/cpdf
 
 **Option B: Manual per-user configuration**
 
-In BentoPDF's Advanced Settings (wasm-settings.html), enter:
+In PKC PDF Tools's Advanced Settings (wasm-settings.html), enter:
 
 | Module      | URL                                                                 |
 | ----------- | ------------------------------------------------------------------- |
@@ -58,13 +58,13 @@ In BentoPDF's Advanced Settings (wasm-settings.html), enter:
 
 ## Custom Domain (Optional)
 
-To use a custom domain like `wasm.bentopdf.com`:
+To use a custom domain like `wasm.pkc-pdf-tools.com`:
 
 1. Add route in `wasm-wrangler.toml`:
 
 ```toml
 routes = [
-  { pattern = "wasm.bentopdf.com/*", zone_name = "bentopdf.com" }
+  { pattern = "wasm.pkc-pdf-tools.com/*", zone_name = "pkc-pdf-tools.com" }
 ]
 ```
 

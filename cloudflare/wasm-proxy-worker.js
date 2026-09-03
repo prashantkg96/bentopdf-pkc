@@ -1,5 +1,5 @@
 /**
- * BentoPDF WASM Proxy Worker
+ * PKC PDF Tools WASM Proxy Worker
  *
  * This Cloudflare Worker proxies WASM module requests to bypass CORS restrictions.
  * It fetches WASM libraries (PyMuPDF, Ghostscript, CoherentPDF) from configured sources
@@ -160,7 +160,7 @@ async function proxyTesseractLangData(request, subpath, origin) {
     if (!response) {
       const upstream = await fetch(targetUrl, {
         headers: {
-          'User-Agent': 'BentoPDF-WASM-Proxy/1.0',
+          'User-Agent': 'PKC PDF Tools-WASM-Proxy/1.0',
           Accept: '*/*',
         },
       });
@@ -248,7 +248,7 @@ async function proxyRequest(request, env, sourceBaseUrl, subpath, origin) {
     if (!response) {
       response = await fetch(targetUrl, {
         headers: {
-          'User-Agent': 'BentoPDF-WASM-Proxy/1.0',
+          'User-Agent': 'PKC PDF Tools-WASM-Proxy/1.0',
           Accept: '*/*',
         },
       });
@@ -466,7 +466,7 @@ export default {
     if (pathname === '/' || pathname === '/health') {
       return new Response(
         JSON.stringify({
-          service: 'BentoPDF WASM Proxy',
+          service: 'PKC PDF Tools WASM Proxy',
           version: '1.0.0',
           endpoints: {
             pymupdf: '/pymupdf/*',

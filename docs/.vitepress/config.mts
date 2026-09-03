@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
-const SITE_URL = 'https://www.bentopdf.com'
+const SITE_URL = 'https://prashantkumarchandra.in/toolkits/pdf-tools'
 
 export default defineConfig({
-    title: "BentoPDF Docs",
-    description: "Documentation for BentoPDF - The free, open-source, privacy-first PDF toolkit",
+    title: "PKC PDF Tools Docs",
+    description: "Documentation for PKC PDF Tools - The free, open-source, privacy-first PDF toolkit",
     base: '/docs/',
     cleanUrls: true,
 
@@ -17,7 +17,7 @@ export default defineConfig({
     },
 
     themeConfig: {
-        logo: '/images/favicon-no-bg.svg',
+        logo: '/images/pkc-icon-192.png',
 
         nav: [
             { text: 'Home', link: '/' },
@@ -218,13 +218,13 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/alam00000/bentopdf' },
+            { icon: 'github', link: 'https://github.com/prashantkg96/pkc-pdf-tools-pkc' },
             { icon: 'discord', link: 'https://discord.gg/Bgq3Ay3f2w' }
         ],
 
         footer: {
             message: 'Dual-licensed under AGPL-3.0 and Commercial License.',
-            copyright: 'Copyright © 2026 BentoPDF'
+            copyright: 'Copyright © 2026 PKC PDF Tools'
         },
 
         search: {

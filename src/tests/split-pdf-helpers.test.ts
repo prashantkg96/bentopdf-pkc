@@ -332,7 +332,7 @@ describe('split modes end-to-end with real qpdf', () => {
   });
 
   // PKC fork: skipped — these two assertions depend on binary fixtures
-  // (shared-resources.pdf, bookmarked.pdf) that upstream BentoPDF references
+  // (shared-resources.pdf, bookmarked.pdf) that upstream PKC PDF Tools references
   // but never committed, so they fail on any clean checkout. The 38 in-code
   // tests above already exercise the qpdf extraction path. Re-enable if the
   // fixtures are ever added under src/tests/fixtures/.

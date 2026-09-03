@@ -1,16 +1,16 @@
 # Getting Started
 
-Welcome to BentoPDF! This guide will help you get up and running quickly.
+Welcome to PKC PDF Tools! This guide will help you get up and running quickly.
 
-## What is BentoPDF?
+## What is PKC PDF Tools?
 
-BentoPDF is a free, open-source, privacy-first PDF toolkit that runs **entirely in your browser**. Your files never leave your device—all processing happens locally using WebAssembly (WASM) technology.
+PKC PDF Tools is a free, open-source, privacy-first PDF toolkit that runs **entirely in your browser**. Your files never leave your device—all processing happens locally using WebAssembly (WASM) technology.
 
 ## Quick Start
 
 ### Option 1: Use the Hosted Version
 
-Visit [bentopdf.com](https://bentopdf.com) to use BentoPDF instantly—no installation required.
+Visit [pkc-pdf-tools.com](https://prashantkumarchandra.in/toolkits/pdf-tools) to use PKC PDF Tools instantly—no installation required.
 
 ### Option 2: Self-Host with Docker
 
@@ -25,15 +25,15 @@ Visit [bentopdf.com](https://bentopdf.com) to use BentoPDF instantly—no instal
 
 ```bash
 # Pull and run the Docker image (self-hosted build)
-docker run -d -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
+docker run -d -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
 
 # Or use Docker Compose
-curl -O https://raw.githubusercontent.com/alam00000/bentopdf/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/alam00000/pkc-pdf-tools/main/docker-compose.yml
 docker compose up -d
 ```
 
 > [!TIP]
-> BentoPDF ships in two builds: the **Self-Hosted build** (`bentopdf-simple`, used above) for internal/team/organization deployments, and the **Commercial build** (`bentopdf:latest`) used by bentopdf.com itself and by commercial license holders running public-facing deployments. Both ship the same PDF tools — the Commercial build adds the bentopdf.com hero, FAQ, testimonials, and footer. If in doubt, use the Self-Hosted build.
+> PKC PDF Tools ships in two builds: the **Self-Hosted build** (`pkc-pdf-tools-simple`, used above) for internal/team/organization deployments, and the **Commercial build** (`pkc-pdf-tools:latest`) used by pkc-pdf-tools.com itself and by commercial license holders running public-facing deployments. Both ship the same PDF tools — the Commercial build adds the pkc-pdf-tools.com hero, FAQ, testimonials, and footer. If in doubt, use the Self-Hosted build.
 
 Then open `http://localhost:3000` in your browser.
 
@@ -44,8 +44,8 @@ Then open `http://localhost:3000` in your browser.
 
 ```bash
 # Clone the repository
-git clone https://github.com/alam00000/bentopdf.git
-cd bentopdf
+git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+cd pkc-pdf-tools
 
 # Install dependencies
 npm install
@@ -67,7 +67,7 @@ npm run dev
 
 ## Browser Support
 
-BentoPDF works best on modern browsers:
+PKC PDF Tools works best on modern browsers:
 
 - ✅ Chrome/Edge 90+
 - ✅ Firefox 90+
@@ -76,5 +76,5 @@ BentoPDF works best on modern browsers:
 ## Next Steps
 
 - [Explore all tools](/tools/)
-- [Self-host BentoPDF](/self-hosting/)
+- [Self-host PKC PDF Tools](/self-hosting/)
 - [Contribute to the project](/contributing)

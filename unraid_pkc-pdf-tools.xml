@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pkc-pdf-tools</Name>
+  <Repository>pkcpdftools/pkc-pdf-tools</Repository>
+  <Registry>https://github.com/prashantkg96/pkc-pdf-tools-pkc</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/prashantkg96/pkc-pdf-tools-pkc</Support>
+  <Project>https://prashantkumarchandra.in/toolkits/pdf-tools/</Project>
+  <Overview>Uploaded on behalf of creator: alam00000&#13;
+PKC PDF Tools is a privacy first PDF Toolkit&#13;
+&#13;
+https://github.com/prashantkg96/pkc-pdf-tools-pkc</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/alam00000/pkc-pdf-tools/refs/heads/main/public/images/pkc-icon-192.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1760606276</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web Port for Nginx and GUI" Target="8080" Default="8080" Mode="tcp" Description="Port used for PKC PDF Tools's web GUI" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <TailscaleStateDir/>
+</Container>
+

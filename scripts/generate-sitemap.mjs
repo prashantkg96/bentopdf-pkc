@@ -7,10 +7,9 @@ const __dirname = path.dirname(__filename);
 
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const LOCALES_DIR = path.resolve(__dirname, '../public/locales');
-const SITE_URL = (process.env.SITE_URL || 'https://www.bentopdf.com').replace(
-  /\/+$/,
-  ''
-);
+const SITE_URL = (
+  process.env.SITE_URL || 'https://prashantkumarchandra.in/toolkits/pdf-tools'
+).replace(/\/+$/, '');
 // The app is deployed under a sub-path (BASE_URL=/toolkits/pdf-tools/), so the
 // sitemap URLs MUST carry that prefix to match the pages' canonical tags —
 // otherwise every entry points at a root path (e.g. /merge-pdf) that 404s.

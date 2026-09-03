@@ -1,5 +1,5 @@
 /**
- * BentoPDF CORS Proxy Worker
+ * PKC PDF Tools CORS Proxy Worker
  *
  * This Cloudflare Worker proxies certificate requests for the digital signing tool.
  * It fetches certificates from external CAs that don't have CORS headers enabled
@@ -30,7 +30,10 @@ const ALLOWED_TSA_HOSTS = new Set([
   'tsa.mesign.com',
 ]);
 
-const ALLOWED_ORIGINS = ['https://www.bentopdf.com', 'https://bentopdf.com'];
+const ALLOWED_ORIGINS = [
+  'https://prashantkumarchandra.in/toolkits/pdf-tools',
+  'https://prashantkumarchandra.in/toolkits/pdf-tools',
+];
 
 const SAFE_CONTENT_TYPES = [
   'application/x-x509-ca-cert',
@@ -388,7 +391,7 @@ export default {
       const upstreamInit = {
         method: request.method,
         headers: {
-          'User-Agent': 'BentoPDF-CertProxy/1.0',
+          'User-Agent': 'PKC PDF Tools-CertProxy/1.0',
         },
       };
 

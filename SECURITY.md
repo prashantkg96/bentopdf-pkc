@@ -1,7 +1,7 @@
 # Security Policy
 
 **PKC PDF Tools** is a 100% client-side, in-browser PDF toolkit (a fork of
-[BentoPDF](https://github.com/alam00000/bentopdf)). Files are processed entirely
+[PKC PDF Tools](https://github.com/prashantkg96/pkc-pdf-tools-pkc)). Files are processed entirely
 in your browser using WebAssembly/JavaScript and are **never uploaded** to any
 server. The only network traffic is loading the static app/WASM assets and an
 anonymous usage ping (tool name + file type/size/count — never file names or
@@ -23,4 +23,4 @@ URL/tool.
 
 If the vulnerability is in the **underlying PDF tooling** (i.e. it also affects
 upstream), please also report it to
-[BentoPDF](https://github.com/alam00000/bentopdf) so the fix benefits everyone.
+[PKC PDF Tools](https://github.com/prashantkg96/pkc-pdf-tools-pkc) so the fix benefits everyone.

@@ -25,8 +25,11 @@ const DEFAULT_WASM_ORIGINS = {
   gs: 'https://cdn.jsdelivr.net',
   cpdf: 'https://cdn.jsdelivr.net',
 };
-const DEFAULT_CORS_PROXY_ORIGIN =
-  'https://bentopdf-cors-proxy.bentopdf.workers.dev';
+// PKC: no default CORS-proxy origin. Upstream shipped its own Worker here,
+// which would put a live connect-src permission for someone else's
+// infrastructure into our CSP. This deploy does not set
+// VITE_CORS_PROXY_URL at all, so the directive simply omits it; set that
+// env var to allow your own proxy.
 const DEFAULT_OCR_FONT_CDN_ORIGIN = 'https://rawcdn.githack.com';
 
 const wasmOrigins = [
@@ -41,8 +44,7 @@ const tesseractOrigins = uniq([
   originOf(process.env.VITE_TESSERACT_LANG_URL),
 ]);
 
-const corsProxyOrigin =
-  originOf(process.env.VITE_CORS_PROXY_URL) || DEFAULT_CORS_PROXY_ORIGIN;
+const corsProxyOrigin = originOf(process.env.VITE_CORS_PROXY_URL);
 
 const ocrFontOrigin =
   originOf(process.env.VITE_OCR_FONT_BASE_URL) || DEFAULT_OCR_FONT_CDN_ORIGIN;

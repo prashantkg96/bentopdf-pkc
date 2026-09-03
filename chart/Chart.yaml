@@ -1,7 +1,7 @@
 apiVersion: v2
-name: bentopdf
-description: BentoPDF static frontend served by NGINX
-icon: https://raw.githubusercontent.com/spwoodcock/bentopdf/refs/heads/main/public/favicon.ico
+name: pkc-pdf-tools
+description: PKC PDF Tools static frontend served by NGINX
+icon: https://raw.githubusercontent.com/prashantkg96/bentopdf-pkc/refs/heads/main/public/images/pkc-icon-192.png
 type: application
 
 # This is the chart version. This version number should be incremented each time you make changes

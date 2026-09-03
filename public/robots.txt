@@ -1,12 +1,12 @@
-# BentoPDF Robots.txt
-# https://www.bentopdf.com
+# PKC PDF Tools Robots.txt
+# https://prashantkumarchandra.in/toolkits/pdf-tools
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.bentopdf.com/sitemap.xml
+Sitemap: https://prashantkumarchandra.in/toolkits/pdf-tools/sitemap.xml
 
 # Disallow internal/system paths
 Disallow: /api/

@@ -46,10 +46,10 @@ compatibility_date = "2024-01-01"
 # =============================================================================
 # USAGE FROM BENTOPDF
 # =============================================================================
-# In BentoPDF's WASM Settings page, configure URLs like:
-#   PyMuPDF: https://wasm.bentopdf.com/pymupdf/
-#   Ghostscript: https://wasm.bentopdf.com/gs/
-#   CoherentPDF: https://wasm.bentopdf.com/cpdf/
+# In PKC PDF Tools's WASM Settings page, configure URLs like:
+#   PyMuPDF: https://wasm.example.com/pymupdf/
+#   Ghostscript: https://wasm.example.com/gs/
+#   CoherentPDF: https://wasm.example.com/cpdf/
 
 # =============================================================================
 # RATE LIMITING (Optional but recommended)
@@ -63,7 +63,7 @@ compatibility_date = "2024-01-01"
 # id = "<YOUR_KV_NAMESPACE_ID>"
 
 # PKC: no KV namespace exists in this Cloudflare account yet (the id below was
-# an upstream bentopdf.com placeholder, not real here). The Worker runs fine
+# an upstream pkc-pdf-tools.com placeholder, not real here). The Worker runs fine
 # without it — env.RATE_LIMIT_KV is optional and rate limiting is just skipped.
 # Create a namespace and uncomment to enable it later.
 # [[kv_namespaces]]
@@ -73,7 +73,7 @@ compatibility_date = "2024-01-01"
 # =============================================================================
 # CUSTOM DOMAIN (Optional)
 # =============================================================================
-# If you want a custom domain like wasm.bentopdf.com:
+# If you want a custom domain like wasm.pkc-pdf-tools.com:
 # routes = [
-#   { pattern = "wasm.bentopdf.com/*", zone_name = "bentopdf.com" }
+#   { pattern = "wasm.pkc-pdf-tools.com/*", zone_name = "pkc-pdf-tools.com" }
 # ]

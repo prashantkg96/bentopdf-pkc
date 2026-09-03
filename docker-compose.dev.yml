@@ -1,11 +1,11 @@
 services:
-  bentopdf:
+  pkc-pdf-tools:
     build:
       context: .
       dockerfile: Dockerfile
       args:
         SIMPLE_MODE: false # false for default mode, true for simple mode
-    container_name: bentopdf
+    container_name: pkc-pdf-tools
     ports:
       - '8080:8080'
     restart: unless-stopped

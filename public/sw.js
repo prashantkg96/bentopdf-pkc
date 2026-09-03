@@ -5,9 +5,9 @@
  * Version: 1.1.0
  */
 
-// NOTE: keep the 'bentopdf-' prefix — the activate handler purges old caches
+// NOTE: keep the 'pkc-pdf-tools-' prefix — the activate handler purges old caches
 // via startsWith('bentopdf-'), so this must stay prefix-compatible with the
-// historical bentopdf-v* names to evict them on upgrade.
+// historical pkc-pdf-tools-v* names to evict them on upgrade.
 const CACHE_VERSION = 'bentopdf-pkc-v15';
 const CACHE_NAME = `${CACHE_VERSION}-static`;
 

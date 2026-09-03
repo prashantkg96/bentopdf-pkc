@@ -8,10 +8,9 @@ const __dirname = path.dirname(__filename);
 
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const LOCALES_DIR = path.resolve(__dirname, '../public/locales');
-const SITE_URL = (process.env.SITE_URL || 'https://www.bentopdf.com').replace(
-  /\/+$/,
-  ''
-);
+const SITE_URL = (
+  process.env.SITE_URL || 'https://prashantkumarchandra.in/toolkits/pdf-tools'
+).replace(/\/+$/, '');
 const BASE_PATH = (process.env.BASE_URL || '/').replace(/\/$/, '');
 
 const languages = fs.readdirSync(LOCALES_DIR).filter((file) => {
@@ -98,14 +97,14 @@ function buildUrl(langPrefix, pagePath) {
   return parts.filter(Boolean).join('/').replace(/\/+$/, '') || SITE_URL;
 }
 
-const ORGANIZATION_LD_MARKER = 'data-bentopdf-organization';
+const ORGANIZATION_LD_MARKER = 'data-pkc-organization';
 
 function injectOrganizationLd() {
-  // PKC: intentionally a no-op. Upstream BentoPDF injected an Organization
-  // schema with BentoPDF social links here; we don't want that branding.
+  // PKC: intentionally a no-op. Upstream PKC PDF Tools injected an Organization
+  // schema with PKC PDF Tools social links here; we don't want that branding.
 }
 
-const BREADCRUMB_MARKER = 'data-bentopdf-breadcrumb';
+const BREADCRUMB_MARKER = 'data-pkc-breadcrumb';
 
 function injectToolBreadcrumb(document, lang, toolName, toolUrl) {
   if (document.querySelector(`[${BREADCRUMB_MARKER}]`)) return;

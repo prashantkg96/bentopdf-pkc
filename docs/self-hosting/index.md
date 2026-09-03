@@ -1,30 +1,30 @@
 # Self-Hosting Guide
 
-BentoPDF can be self-hosted on your own infrastructure. This guide covers various deployment options.
+PKC PDF Tools can be self-hosted on your own infrastructure. This guide covers various deployment options.
 
 ## Quick Start with Docker / Podman
 
-The fastest way to self-host BentoPDF:
+The fastest way to self-host PKC PDF Tools:
 
 > [!TIP]
-> BentoPDF ships in two builds:
+> PKC PDF Tools ships in two builds:
 >
-> - **Self-Hosted build** — `ghcr.io/alam00000/bentopdf-simple:latest`. Every PDF tool, **without** the marketing chrome (no hero, FAQ, testimonials, footer). Use this for internal/team/organization deployments. It is **not** a feature-reduced "lite" version.
-> - **Commercial build** — `ghcr.io/alam00000/bentopdf:latest`. The full marketing site, used by bentopdf.com itself and by commercial license holders running public-facing deployments.
+> - **Self-Hosted build** — `ghcr.io/alam00000/pkc-pdf-tools-simple:latest`. Every PDF tool, **without** the marketing chrome (no hero, FAQ, testimonials, footer). Use this for internal/team/organization deployments. It is **not** a feature-reduced "lite" version.
+> - **Commercial build** — `ghcr.io/alam00000/pkc-pdf-tools:latest`. The full marketing site, used by pkc-pdf-tools.com itself and by commercial license holders running public-facing deployments.
 >
 > If in doubt: pull the Self-Hosted build.
 
 > [!IMPORTANT]
 > Office file conversion requires `SharedArrayBuffer`, which means the app must be both cross-origin isolated and served from a secure context. The official image already sends the required COOP/COEP headers, but browsers still disable `SharedArrayBuffer` on plain HTTP local-network origins such as `http://192.168.x.x`.
 >
-> Use `http://localhost` only for same-device testing. If users access BentoPDF through a LAN IP or hostname, terminate it with HTTPS.
+> Use `http://localhost` only for same-device testing. If users access PKC PDF Tools through a LAN IP or hostname, terminate it with HTTPS.
 
 ```bash
 # Docker
-docker run -d -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
+docker run -d -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
 
 # Podman
-podman run -d -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
+podman run -d -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
 ```
 
 Or with Docker Compose / Podman Compose:
@@ -32,8 +32,8 @@ Or with Docker Compose / Podman Compose:
 ```yaml
 # docker-compose.yml
 services:
-  bentopdf:
-    image: ghcr.io/alam00000/bentopdf-simple:latest
+  pkc-pdf-tools:
+    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
     ports:
       - '3000:8080'
     restart: unless-stopped
@@ -49,12 +49,12 @@ podman-compose up -d
 
 ## Podman Quadlet (Linux Systemd)
 
-Run BentoPDF as a systemd service. Create `~/.config/containers/systemd/bentopdf.container`:
+Run PKC PDF Tools as a systemd service. Create `~/.config/containers/systemd/pkc-pdf-tools.container`:
 
 ```ini
 [Container]
-Image=ghcr.io/alam00000/bentopdf-simple:latest
-ContainerName=bentopdf
+Image=ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+ContainerName=pkc-pdf-tools
 PublishPort=3000:8080
 AutoUpdate=registry
 
@@ -67,7 +67,7 @@ WantedBy=default.target
 
 ```bash
 systemctl --user daemon-reload
-systemctl --user enable --now bentopdf
+systemctl --user enable --now pkc-pdf-tools
 ```
 
 See [Docker deployment guide](/self-hosting/docker) for full Quadlet documentation.
@@ -76,8 +76,8 @@ See [Docker deployment guide](/self-hosting/docker) for full Quadlet documentati
 
 ```bash
 # Clone and build
-git clone https://github.com/alam00000/bentopdf.git
-cd bentopdf
+git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+cd pkc-pdf-tools
 npm install
 npm run build
 
@@ -88,7 +88,7 @@ npm run build
 
 ### Self-Hosted build (Simple Mode)
 
-The Self-Hosted build (the `bentopdf-simple` image, also called Simple Mode) is **functionally identical** to the Commercial build — every PDF tool is present and behaves the same. It just hides the marketing chrome that only makes sense on bentopdf.com itself or on a commercial public-facing deployment. **It is not a feature-reduced or "lite" version.**
+The Self-Hosted build (the `pkc-pdf-tools-simple` image, also called Simple Mode) is **functionally identical** to the Commercial build — every PDF tool is present and behaves the same. It just hides the marketing chrome that only makes sense on pkc-pdf-tools.com itself or on a commercial public-facing deployment. **It is not a feature-reduced or "lite" version.**
 
 **What the Self-Hosted build hides** (cosmetic only — no PDF features are removed):
 
@@ -100,32 +100,32 @@ The Self-Hosted build (the `bentopdf-simple` image, also called Simple Mode) is 
 - Every PDF tool (merge, split, edit, sign, OCR, Office conversion, etc.)
 - Custom branding support, all build-time and runtime config
 
-The Commercial build (`ghcr.io/alam00000/bentopdf:latest`) is what powers bentopdf.com itself and is used by commercial license holders running public-facing deployments — it adds the hero, FAQ, testimonials, and footer that wouldn't make sense on an internal tool.
+The Commercial build (`ghcr.io/alam00000/pkc-pdf-tools:latest`) is what powers pkc-pdf-tools.com itself and is used by commercial license holders running public-facing deployments — it adds the hero, FAQ, testimonials, and footer that wouldn't make sense on an internal tool.
 
-If you're self-hosting BentoPDF for your team, organization, or as an internal tool, pull the Self-Hosted build:
+If you're self-hosting PKC PDF Tools for your team, organization, or as an internal tool, pull the Self-Hosted build:
 
 ```bash
 # Use the pre-built image (recommended)
-docker run -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
+docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
 
 # Or build it yourself
 SIMPLE_MODE=true npm run build
 ```
 
-See [SIMPLE_MODE.md](https://github.com/alam00000/bentopdf/blob/main/SIMPLE_MODE.md) for full details.
+See [SIMPLE_MODE.md](https://github.com/prashantkg96/pkc-pdf-tools-pkc/blob/main/SIMPLE_MODE.md) for full details.
 
 ### Commercial build (public-facing deployments with your own brand)
 
-The Commercial build (the `bentopdf` image — no `-simple` suffix) is what powers bentopdf.com itself. It includes the full marketing site (hero, features, FAQ, testimonials, footer) on top of every PDF tool. Use this build when you want to **deploy BentoPDF as a public-facing PDF service under your own brand** — for example:
+The Commercial build (the `pkc-pdf-tools` image — no `-simple` suffix) is what powers pkc-pdf-tools.com itself. It includes the full marketing site (hero, features, FAQ, testimonials, footer) on top of every PDF tool. Use this build when you want to **deploy PKC PDF Tools as a public-facing PDF service under your own brand** — for example:
 
-- You're running BentoPDF as a hosted SaaS for end-users on your own domain
+- You're running PKC PDF Tools as a hosted SaaS for end-users on your own domain
 - You want the landing-page experience (marketing sections + tools), not just the bare tool surface
-- You're a commercial license holder embedding BentoPDF into a commercial product
+- You're a commercial license holder embedding PKC PDF Tools into a commercial product
 
-**Run it as-is** (BentoPDF branding — useful to preview the build):
+**Run it as-is** (PKC PDF Tools branding — useful to preview the build):
 
 ```bash
-docker run -p 3000:8080 ghcr.io/alam00000/bentopdf:latest
+docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools:latest
 ```
 
 **Build with your own brand** (the typical commercial workflow):
@@ -143,12 +143,12 @@ docker run -p 3000:8080 acmepdf
 Every other build-time option (`BASE_URL`, `VITE_DEFAULT_LANGUAGE`, `DISABLE_TOOLS`, WASM URL overrides, etc.) works the same way it does on the Self-Hosted build.
 
 ::: warning Licensing
-Running the Commercial build is allowed under either of BentoPDF's two license options:
+Running the Commercial build is allowed under either of PKC PDF Tools's two license options:
 
 - **AGPL-3.0** (free) — allowed if your deployment publishes its full source code under AGPL, including any branding modifications and surrounding business logic.
 - **Commercial license** ($79 lifetime) — required for closed-source / proprietary deployments where you don't open-source your branding fork or business code.
 
-See the [Licensing page](https://bentopdf.com/licensing.html) for the full comparison. AGPL-licensed WASM modules (PyMuPDF, Ghostscript, CoherentPDF) load from a CDN at runtime, so they don't enter your image and don't change your licensing posture.
+See the [Licensing page](https://prashantkumarchandra.in/toolkits/pdf-tools/licensing) for the full comparison. AGPL-licensed WASM modules (PyMuPDF, Ghostscript, CoherentPDF) load from a CDN at runtime, so they don't enter your image and don't change your licensing posture.
 :::
 
 ### Base URL
@@ -161,13 +161,13 @@ BASE_URL=/pdf-tools/ npm run build
 
 ### Custom Branding
 
-Replace the default BentoPDF logo, name, and footer text with your own at build time:
+Replace the default PKC PDF Tools logo, name, and footer text with your own at build time:
 
-| Variable           | Description                           | Default                                 |
-| ------------------ | ------------------------------------- | --------------------------------------- |
-| `VITE_BRAND_NAME`  | Brand name shown in header and footer | `BentoPDF`                              |
-| `VITE_BRAND_LOGO`  | Logo path relative to `public/`       | `images/favicon-no-bg.svg`              |
-| `VITE_FOOTER_TEXT` | Custom footer/copyright text          | `© 2026 BentoPDF. All rights reserved.` |
+| Variable           | Description                           | Default                                      |
+| ------------------ | ------------------------------------- | -------------------------------------------- |
+| `VITE_BRAND_NAME`  | Brand name shown in header and footer | `PKC PDF Tools`                              |
+| `VITE_BRAND_LOGO`  | Logo path relative to `public/`       | `images/pkc-icon-192.png`                    |
+| `VITE_FOOTER_TEXT` | Custom footer/copyright text          | `© 2026 PKC PDF Tools. All rights reserved.` |
 
 ```bash
 # Place your logo in public/, then build
@@ -212,7 +212,7 @@ DISABLE_TOOLS="edit-pdf,sign-pdf" npm run build
 ```bash
 docker run -d -p 3000:8080 \
   -v ./config.json:/usr/share/nginx/html/config.json:ro \
-  ghcr.io/alam00000/bentopdf-simple:latest
+  ghcr.io/alam00000/pkc-pdf-tools-simple:latest
 ```
 
 Both methods can be combined — the lists are merged.
@@ -265,7 +265,7 @@ The `00 61 73 6d / 1f 8b 08 08` mismatch is a separate sub-symptom: the pre-comp
 - [Kubernetes →](/self-hosting/kubernetes#ensuring-the-sharedarraybuffer-headers-still-work-ingress-gateway)
 - **Docker**: handled automatically by the bundled nginx config — no action needed.
 
-**Verify**: open DevTools Console on any BentoPDF page and run:
+**Verify**: open DevTools Console on any PKC PDF Tools page and run:
 
 ```js
 console.log(window.crossOriginIsolated); // should be true
@@ -294,7 +294,7 @@ If the page is HTTPS or `http://localhost` AND both COEP/COOP headers are presen
 
 ## WASM Configuration (AGPL Components)
 
-BentoPDF **does not bundle** AGPL-licensed processing libraries in its source code, but **pre-configures CDN URLs** so all features work out of the box — no manual setup needed.
+PKC PDF Tools **does not bundle** AGPL-licensed processing libraries in its source code, but **pre-configures CDN URLs** so all features work out of the box — no manual setup needed.
 
 ::: tip Zero-Config by Default
 As of v2.0.0, WASM modules are pre-configured to load from jsDelivr CDN via environment variables. All advanced features work immediately without any user configuration.
@@ -336,7 +336,7 @@ docker build \
   --build-arg VITE_TESSERACT_LANG_URL=https://your-server.com/ocr/lang-data \
   --build-arg VITE_TESSERACT_AVAILABLE_LANGUAGES=eng,deu \
   --build-arg VITE_OCR_FONT_BASE_URL=https://your-server.com/ocr/fonts \
-  -t bentopdf .
+  -t pkc-pdf-tools .
 
 # Or via .env.production before building from source
 VITE_WASM_PYMUPDF_URL=https://your-server.com/pymupdf/ npm run build
@@ -357,8 +357,8 @@ For networks with no internet access (government, healthcare, financial, etc.). 
 The included `prepare-airgap.sh` script automates the entire process — downloading WASM packages, building the Docker image, and producing a self-contained bundle with a setup script.
 
 ```bash
-git clone https://github.com/alam00000/bentopdf.git
-cd bentopdf
+git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+cd pkc-pdf-tools
 
 # Show supported OCR language codes (for --ocr-languages)
 bash scripts/prepare-airgap.sh --list-ocr-languages
@@ -376,8 +376,8 @@ bash scripts/prepare-airgap.sh --wasm-base-url https://internal.example.com/wasm
 This produces a bundle directory:
 
 ```
-bentopdf-airgap-bundle/
-  bentopdf.tar              # Docker image
+pkc-pdf-tools-airgap-bundle/
+  pkc-pdf-tools.tar              # Docker image
   *.tgz                     # WASM packages (PyMuPDF, Ghostscript, CoherentPDF, Tesseract)
   tesseract-langdata/       # OCR traineddata files
   ocr-fonts/                # OCR text-layer font files
@@ -388,7 +388,7 @@ bentopdf-airgap-bundle/
 Transfer the bundle into the air-gapped network via USB, internal artifact repo, or approved method. Then run the included setup script:
 
 ```bash
-cd bentopdf-airgap-bundle
+cd pkc-pdf-tools-airgap-bundle
 bash setup.sh
 ```
 
@@ -399,8 +399,8 @@ The setup script loads the Docker image, extracts WASM files, and optionally sta
 | Flag                           | Description                                      | Default                           |
 | ------------------------------ | ------------------------------------------------ | --------------------------------- |
 | `--wasm-base-url <url>`        | Where WASMs will be hosted internally            | _(required, prompted if missing)_ |
-| `--image-name <name>`          | Docker image tag                                 | `bentopdf`                        |
-| `--output-dir <path>`          | Output bundle directory                          | `./bentopdf-airgap-bundle`        |
+| `--image-name <name>`          | Docker image tag                                 | `pkc-pdf-tools`                   |
+| `--output-dir <path>`          | Output bundle directory                          | `./pkc-pdf-tools-airgap-bundle`   |
 | `--simple-mode`                | Enable Simple Mode                               | off                               |
 | `--base-url <path>`            | Subdirectory base URL (e.g. `/pdf/`)             | `/`                               |
 | `--language <code>`            | Default UI language (e.g. `fr`, `de`)            | _(none)_                          |
@@ -417,7 +417,7 @@ The setup script loads the Docker image, extracts WASM files, and optionally sta
 The interactive prompt also accepts `list` to print the full supported Tesseract code list and `search <term>` to find matches such as `search german` or `search chi`.
 
 ::: warning Same-Origin Requirement
-WASM files must be served from the **same origin** as the BentoPDF app. Web Workers use `importScripts()` which cannot load scripts cross-origin. For example, if BentoPDF runs at `https://internal.example.com`, the WASM base URL should also be `https://internal.example.com/wasm`.
+WASM files must be served from the **same origin** as the PKC PDF Tools app. Web Workers use `importScripts()` which cannot load scripts cross-origin. For example, if PKC PDF Tools runs at `https://internal.example.com`, the WASM base URL should also be `https://internal.example.com/wasm`.
 :::
 
 #### Manual Steps
@@ -442,8 +442,8 @@ curl -fsSL https://raw.githack.com/googlefonts/noto-fonts/main/hinted/ttf/NotoSa
 **Step 2: Build the Docker image with internal URLs**
 
 ```bash
-git clone https://github.com/alam00000/bentopdf.git
-cd bentopdf
+git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+cd pkc-pdf-tools
 
 docker build \
   --build-arg VITE_WASM_PYMUPDF_URL=https://internal-server.example.com/wasm/pymupdf/ \
@@ -453,20 +453,20 @@ docker build \
   --build-arg VITE_TESSERACT_CORE_URL=https://internal-server.example.com/wasm/ocr/core \
   --build-arg VITE_TESSERACT_LANG_URL=https://internal-server.example.com/wasm/ocr/lang-data \
   --build-arg VITE_OCR_FONT_BASE_URL=https://internal-server.example.com/wasm/ocr/fonts \
-  -t bentopdf .
+  -t pkc-pdf-tools .
 ```
 
 **Step 3: Export the Docker image**
 
 ```bash
-docker save bentopdf -o bentopdf.tar
+docker save pkc-pdf-tools -o pkc-pdf-tools.tar
 ```
 
 **Step 4: Transfer into the air-gapped network**
 
 Copy via USB, internal artifact repo, or approved transfer method:
 
-- `bentopdf.tar` — the Docker image
+- `pkc-pdf-tools.tar` — the Docker image
 - The five `.tgz` WASM/OCR packages from Step 1
 - The `tesseract-langdata/` directory from Step 1
 - The `ocr-fonts/` directory from Step 1
@@ -475,7 +475,7 @@ Copy via USB, internal artifact repo, or approved transfer method:
 
 ```bash
 # Load the Docker image
-docker load -i bentopdf.tar
+docker load -i pkc-pdf-tools.tar
 
 # Extract WASM packages
 mkdir -p ./wasm/pymupdf ./wasm/gs ./wasm/cpdf ./wasm/ocr/core ./wasm/ocr/lang-data ./wasm/ocr/fonts
@@ -490,8 +490,8 @@ tar xzf tesseract.js-core-7.0.0.tgz -C ./wasm/ocr/core --strip-components=1
 cp ./tesseract-langdata/*.traineddata.gz ./wasm/ocr/lang-data/
 cp ./ocr-fonts/* ./wasm/ocr/fonts/
 
-# Run BentoPDF
-docker run -d -p 3000:8080 --restart unless-stopped bentopdf
+# Run PKC PDF Tools
+docker run -d -p 3000:8080 --restart unless-stopped pkc-pdf-tools
 ```
 
 Make sure the files are accessible at the URLs you configured in Step 2, including `.../ocr/worker.min.js`, `.../ocr/core`, `.../ocr/lang-data`, and `.../ocr/fonts`.
@@ -515,13 +515,13 @@ VITE_OCR_FONT_BASE_URL=https://internal-server.example.com/wasm/ocr/fonts
 
 ### Hosting Your Own WASM Proxy
 
-If you need to serve AGPL WASM files with proper CORS headers, you can deploy a simple proxy. See the [Cloudflare WASM Proxy guide](https://github.com/alam00000/bentopdf/blob/main/cloudflare/WASM-PROXY.md) for an example implementation.
+If you need to serve AGPL WASM files with proper CORS headers, you can deploy a simple proxy. See the [Cloudflare WASM Proxy guide](https://github.com/prashantkg96/pkc-pdf-tools-pkc/blob/main/cloudflare/WASM-PROXY.md) for an example implementation.
 
 ::: tip Why Separate?
 This separation ensures:
 
 - Clear legal compliance for commercial users
-- BentoPDF's core remains under its dual-license (AGPL-3.0 / Commercial)
+- PKC PDF Tools's core remains under its dual-license (AGPL-3.0 / Commercial)
 - WASM files are loaded at runtime, not bundled in the source
   :::
 
@@ -534,5 +534,5 @@ This separation ensures:
 | CPU         | Any modern processor                |
 
 ::: tip
-BentoPDF is a static site—there's no database or backend server required!
+PKC PDF Tools is a static site—there's no database or backend server required!
 :::

@@ -8,7 +8,7 @@ paths-ignore:
   - vendor
   - bentopdf-pymupdf-wasm
   - libreoffice-wasm-package
-  - bentopdf-airgap-bundle
+  - pkc-pdf-tools-airgap-bundle
   - public/pdfjs-viewer
   - public/pdfjs-annotation-viewer
   - public/libreoffice-wasm

@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "bentopdf.name" . }}
+  name: {{ include "pkc-pdf-tools.name" . }}
   namespace: {{ .Release.Namespace }}
   labels:
-    {{- include "bentopdf.labels" . | nindent 4 }}
+    {{- include "pkc-pdf-tools.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -13,4 +13,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "bentopdf.selectorLabels" . | nindent 4 }}
+    {{- include "pkc-pdf-tools.selectorLabels" . | nindent 4 }}

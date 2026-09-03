@@ -17,7 +17,7 @@ export default [
       'vendor/**',
       'bentopdf-pymupdf-wasm/**',
       'libreoffice-wasm-package/**',
-      'bentopdf-airgap-bundle/**',
+      'pkc-pdf-tools-airgap-bundle/**',
       'public/pdfjs-viewer/**',
       'public/pdfjs-annotation-viewer/**',
       'public/coherentpdf.browser.min.js',

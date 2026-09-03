@@ -167,6 +167,62 @@ and looked for `D:\D:\...`. The leading slash is now stripped and the path
 percent-decoded, so the editcore tests run on Windows. Worth re-checking after
 any upstream bump of that file — it is an upstream bug, not a fork-local one.
 
+### Branding sweep
+
+Porting three tiers of upstream work reintroduced a lot of BentoPDF branding, so
+this is now a repeatable script rather than a one-off:
+`python scripts/pkc/debrand.py [--write]`. It reports by default and is
+idempotent — a clean tree reports "0 files would change". **Run it after every
+upstream port.**
+
+What ships now, verified against a real `build:deploy` output:
+
+- Zero `BentoPDF` / `Bento PDF` strings in any shipped HTML.
+- Zero outbound links to `bentopdf.com`, `github.com/alam00000`, or upstream's
+  Instagram/LinkedIn/X. The only `bentopdf` substring left in the built site is
+  `github.com/prashantkg96/bentopdf-pkc` — this fork's own repo, linked from
+  every page as the AGPL corresponding source.
+- No BentoPDF artwork at all. Deleted `bentopdf-tools.png`, five `og-*.png`,
+  `favicon.png/.svg/-no-bg.svg/-192x192.png/-512x512.png`, `apple-touch-icon.png`,
+  `badge.svg`, `public/favicon.ico` and the two `docs/public/images` marks. The
+  navbar/footer logo fallbacks and the docs logo now use `pkc-icon-192.png`.
+  `public/images/` holds only the PKC icons plus the generic CCPA/GDPR/HIPAA badges.
+- Removed the DigitalOcean referral badge from `index.html` — upstream's
+  affiliate link, not ours.
+
+Two things that were doing real damage, not just cosmetic:
+
+- `scripts/generate-security-headers.mjs` had `DEFAULT_CORS_PROXY_ORIGIN`
+  pointing at `bentopdf-cors-proxy.bentopdf.workers.dev`, which put a live
+  `connect-src` grant for upstream's infrastructure into our shipped CSP and
+  `public/_headers`. There is now **no** default; the directive omits it unless
+  `VITE_CORS_PROXY_URL` is set.
+- `src/js/main.ts` fetched the GitHub star count from
+  `api.github.com/repos/alam00000/bentopdf` — upstream's repo. Retargeted.
+
+Deliberately left alone:
+
+- **`LICENSE`, `README.md`, `FORK-LOG.md`, `CLAUDE.md`.** AGPL-3.0 requires
+  upstream's copyright and licence notices to survive, and these documents exist
+  to say what this fork is a fork _of_. An early run rewrote README's credit into
+  "a modified fork of PKC PDF Tools", which is both nonsense and a licence
+  problem. None of them ship in the built site. They are in the script's
+  `SKIP_PATHS` so this cannot happen again.
+- **Load-bearing runtime keys**, protected in the script by name: the service
+  worker purges old caches via `startsWith('bentopdf-')`, and `bentopdf-fonts`
+  (IndexedDB) and `bentopdf:wasm-providers` (localStorage) hold user state.
+  Renaming them is a silent data migration that orphans downloaded fonts and
+  provider settings rather than moving them.
+- **npm package names** — `@bentopdf/pymupdf-wasm`, `@bentopdf/gs-wasm`,
+  `bentopdf-viewer`, `bentopdf-pdfium` — and the fork's own Worker/repo names.
+  These are identifiers, not branding.
+
+One near-miss worth remembering: the sweep renamed the noindex script path in
+`entrypoint.sh` but the `Dockerfile.nonroot` `COPY` target was edited by hand to
+a different name, which would have silently broken `ROBOTS_NOINDEX` in the
+container. Both now say `pkc-pdf-tools-noindex.sh`. If you rename anything that
+crosses a file boundary like this, grep both sides.
+
 ### Known stale tests (pre-existing, not caused by this sync)
 
 - `src/tests/i18n.test.ts` — 8 failures. Asserts multi-language `getLanguageFromUrl`

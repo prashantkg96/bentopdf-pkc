@@ -10,24 +10,24 @@ Kubernetes may be overkill for a static site, but it can be a great fit if you a
 > - `Cross-Origin-Opener-Policy: same-origin`
 > - `Cross-Origin-Embedder-Policy: require-corp`
 >
-> The official BentoPDF nginx images include these headers. In Kubernetes, **Ingress/Gateway controllers are also reverse proxies**, so ensure these headers are preserved (or add them at the edge).
+> The official PKC PDF Tools nginx images include these headers. In Kubernetes, **Ingress/Gateway controllers are also reverse proxies**, so ensure these headers are preserved (or add them at the edge).
 
 ## Prereqs
 
 - Kubernetes cluster
 - Helm v3
-- A BentoPDF nginx image (e.g. `ghcr.io/alam00000/bentopdf:<tag>`) that serves on **port 8080**
+- A PKC PDF Tools nginx image (e.g. `ghcr.io/alam00000/pkc-pdf-tools:<tag>`) that serves on **port 8080**
 
 ## Deploy with Helm
 
 ### Install from this repo (local chart)
 
 ```bash
-kubectl create namespace bentopdf
+kubectl create namespace pkc-pdf-tools
 
-helm upgrade --install bentopdf /path/to/bentopdf/chart \
-  --namespace bentopdf \
-  --set image.repository=ghcr.io/alam00000/bentopdf \
+helm upgrade --install pkc-pdf-tools /path/to/pkc-pdf-tools/chart \
+  --namespace pkc-pdf-tools \
+  --set image.repository=ghcr.io/alam00000/pkc-pdf-tools \
   --set image.tag=latest
 ```
 
@@ -38,11 +38,11 @@ If the chart is published to GHCR as an OCI artifact:
 ```bash
 export GHCR_USERNAME="<github-org-or-user>"
 
-helm upgrade --install bentopdf oci://ghcr.io/$GHCR_USERNAME/charts/bentopdf \
-  --namespace bentopdf \
+helm upgrade --install pkc-pdf-tools oci://ghcr.io/$GHCR_USERNAME/charts/pkc-pdf-tools \
+  --namespace pkc-pdf-tools \
   --create-namespace \
   --version 0.1.0 \
-  --set image.repository=ghcr.io/alam00000/bentopdf \
+  --set image.repository=ghcr.io/alam00000/pkc-pdf-tools \
   --set image.tag=latest
 ```
 
@@ -51,7 +51,7 @@ helm upgrade --install bentopdf oci://ghcr.io/$GHCR_USERNAME/charts/bentopdf \
 ### Port-forward (quick test)
 
 ```bash
-kubectl -n bentopdf port-forward deploy/bentopdf 8080:8080
+kubectl -n pkc-pdf-tools port-forward deploy/pkc-pdf-tools 8080:8080
 ```
 
 ### Ingress (optional)
@@ -79,14 +79,14 @@ Example (Cloudflare Gateway API operator):
 gateway:
   enabled: true
   name: bento-tunnel
-  namespace: bentopdf
+  namespace: pkc-pdf-tools
   gatewayClassName: cloudflare
 
 httpRoute:
   enabled: true
   parentRefs:
     - name: bento-tunnel
-      namespace: bentopdf
+      namespace: pkc-pdf-tools
       sectionName: http
   hostnames:
     - pdfs.example.com
@@ -96,7 +96,7 @@ httpRoute:
 
 ### What "should" happen
 
-BentoPDF’s nginx config sets the required response headers. Most Ingress/Gateway controllers **pass upstream response headers through unchanged**.
+PKC PDF Tools’s nginx config sets the required response headers. Most Ingress/Gateway controllers **pass upstream response headers through unchanged**.
 
 ### What can break it
 
@@ -132,9 +132,9 @@ ingress:
 
 ## `.mjs` MIME-type errors (Sign PDF / Form Filler iframe blank)
 
-If the browser console shows `Failed to load module script: ... non-JavaScript MIME type "application/octet-stream"` on a `.mjs` request, an Ingress/Gateway controller in front of the BentoPDF nginx is replacing the upstream `Content-Type` header with `application/octet-stream`.
+If the browser console shows `Failed to load module script: ... non-JavaScript MIME type "application/octet-stream"` on a `.mjs` request, an Ingress/Gateway controller in front of the PKC PDF Tools nginx is replacing the upstream `Content-Type` header with `application/octet-stream`.
 
-The BentoPDF image's nginx already serves `.mjs` as `application/javascript`. The fix is to stop the controller from stripping/replacing it. For nginx-ingress:
+The PKC PDF Tools image's nginx already serves `.mjs` as `application/javascript`. The fix is to stop the controller from stripping/replacing it. For nginx-ingress:
 
 ```yaml
 ingress:
@@ -182,8 +182,8 @@ Use a ConfigMap to disable tools at runtime without rebuilding the image:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: bentopdf-config
-  namespace: bentopdf
+  name: pkc-pdf-tools-config
+  namespace: pkc-pdf-tools
 data:
   config.json: |
     {
@@ -196,7 +196,7 @@ Mount it into the served directory:
 ```yaml
 spec:
   containers:
-    - name: bentopdf
+    - name: pkc-pdf-tools
       volumeMounts:
         - name: config
           mountPath: /usr/share/nginx/html/config.json
@@ -205,7 +205,7 @@ spec:
   volumes:
     - name: config
       configMap:
-        name: bentopdf-config
+        name: pkc-pdf-tools-config
 ```
 
 Tool IDs are the page URL without `.html` — open any tool and look at the URL (e.g., `edit-pdf`, `merge-pdf`, `compress-pdf`). Disabled tools are hidden from the homepage, search, shortcuts, workflow builder, and direct URL access. See the [Docker guide](/self-hosting/docker#disabling-specific-tools) for the full list of options.

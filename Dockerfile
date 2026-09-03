@@ -65,7 +65,7 @@ ENV DISABLE_TOOLS=$DISABLE_TOOLS
 # Public-facing canonical site URL. Defaults to the official site so self-hosters
 # consolidate SEO signals back to bentopdf.com. Override with --build-arg
 # SITE_URL=https://your-domain.example to claim canonical for your own deployment.
-ARG SITE_URL=https://www.bentopdf.com
+ARG SITE_URL=https://prashantkumarchandra.in
 ENV SITE_URL=$SITE_URL
 
 ENV NODE_OPTIONS="--max-old-space-size=3072"
@@ -79,8 +79,8 @@ RUN --mount=type=secret,id=VITE_CORS_PROXY_URL,required=false \
 # Production stage
 FROM quay.io/nginx/nginx-unprivileged:alpine-slim
 
-LABEL org.opencontainers.image.source="https://github.com/alam00000/bentopdf"
-LABEL org.opencontainers.image.url="https://github.com/alam00000/bentopdf"
+LABEL org.opencontainers.image.source="https://github.com/prashantkg96/bentopdf-pkc"
+LABEL org.opencontainers.image.url="https://github.com/prashantkg96/bentopdf-pkc"
 
 # global arg to local arg
 ARG BASE_URL

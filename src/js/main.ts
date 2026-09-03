@@ -60,7 +60,7 @@ const init = async () => {
   if (__SIMPLE_MODE__) {
     const hideBrandingSections = () => {
       // PKC: our simple-mode index (simple-index.html) is fully custom. Upstream
-      // BentoPDF's marketing sections (hero/testimonials/support/used-by/
+      // PKC PDF Tools's marketing sections (hero/testimonials/support/used-by/
       // tools-header) don't exist in it, and our features/compliance/thanks
       // sections + .section-divider are kept on purpose — so only the FAQ
       // accordion (still present on a hub page) is hidden here.
@@ -490,7 +490,7 @@ const init = async () => {
   ];
 
   if (githubStarsElements.some((el) => el) && !__SIMPLE_MODE__) {
-    fetch('https://api.github.com/repos/alam00000/bentopdf')
+    fetch('https://api.github.com/repos/prashantkg96/bentopdf-pkc')
       .then((response) => response.json())
       .then((data) => {
         if (data.stargazers_count !== undefined) {
