@@ -2587,9 +2587,9 @@
     "word_count": 1542
   },
   "scripts/generate-offline-manifest.mjs": {
-    "size": 5352,
-    "mtime_ns": 1788475636426573500,
-    "word_count": 579
+    "size": 7312,
+    "mtime_ns": 1788478563035148400,
+    "word_count": 831
   },
   "scripts/generate-security-headers.mjs": {
     "size": 4262,
@@ -3381,9 +3381,9 @@
     "word_count": 596
   },
   "src/js/main.ts": {
-    "size": 39329,
-    "mtime_ns": 1788475677118353500,
-    "word_count": 3118
+    "size": 39418,
+    "mtime_ns": 1788477463074165900,
+    "word_count": 3128
   },
   "src/js/mobileMenu.ts": {
     "size": 1940,
@@ -5226,11 +5226,11 @@
     }
   },
   "FORK-LOG.md": {
-    "size": 21251,
-    "mtime_ns": 1788476340164164400,
-    "word_count": 2341,
+    "size": 24536,
+    "mtime_ns": 1788478557181324100,
+    "word_count": 2849,
     "hashes": {
-      "fork-log.md": "d6f0994839ae4a45bbd062a2fea503dc88a17c340e3edafb9f253b553b5a4f72"
+      "fork-log.md": "9879822a8432f494970ed8093ab84657511697a4d44374489a923ee24542d84c"
     }
   },
   "docs/public/images/pkc-icon-192.png": {
@@ -5611,5 +5611,23 @@
     "size": 9836,
     "mtime_ns": 1788473946794244000,
     "word_count": 1013
+  },
+  "src/js/config/internet-required-tools.json": {
+    "size": 597,
+    "mtime_ns": 1788477429351434800,
+    "word_count": 58,
+    "hashes": {
+      "src/js/config/internet-required-tools.json": "bb5f2c74a3e577e0a0d3b9c8494b47e3dc2d4914dc8021ffe1ba6ffbf8147185"
+    }
+  },
+  "src/js/utils/internet-required.ts": {
+    "size": 5778,
+    "mtime_ns": 1788477970786781300,
+    "word_count": 722
+  },
+  "src/tests/internet-required.test.ts": {
+    "size": 2845,
+    "mtime_ns": 1788478563245805800,
+    "word_count": 307
   }
 }
