@@ -161,7 +161,21 @@
   background-attachment: fixed;
 }
 
-/* WHY THE PREFIXED COPY IS QUARANTINED IN AN @supports BLOCK.
+/* .pkc-nav-shell and .pkc-shell are deliberately NOT in this list. Both are
+   pure layout wrappers — width: min(1120px, 92vw) and a centring margin, no
+   background, no border (styles.css). Frosting them blurred the ambient
+   backdrop across the whole content column for no visible gain, and then every
+   .tool-card inside blurred an already-blurred backdrop.
+
+   Worse, it broke the nav: backdrop-filter creates a STACKING CONTEXT, so
+   .pkc-nav-shell (z-index auto, i.e. level 0) became a lid over the header
+   inside it, trapping .top-pills' z-index: 1000 within a context that itself
+   sits at 0. .pkc-shell, a later sibling and also a stacking context once
+   frosted, then painted straight over the nav dropdown. Frost surfaces, not
+   layout containers — and keep every ancestor of .top-pills free of anything
+   that opens a stacking context.
+
+   WHY THE PREFIXED COPY IS QUARANTINED IN AN @supports BLOCK.
    Lightning CSS (the minifier behind vite build) treats -webkit-backdrop-filter
    and backdrop-filter as ONE property and keeps whichever is declared LAST.
    Written as a normal pair with the standard property first, the whole rule
@@ -175,8 +189,6 @@
    collapsed into each other. Chrome skips the block (it does not support the
    prefixed form), Safari 15-17 uses it, Safari 18+ takes both and the values are
    identical. */
-:root[data-glass='on'] .pkc-nav-shell,
-:root[data-glass='on'] .pkc-shell,
 :root[data-glass='on'] .pkc-tool-intro,
 :root[data-glass='on'] .pkc-tool-header,
 :root[data-glass='on'] .pkc-love-note,
@@ -186,8 +198,6 @@
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
-  :root[data-glass='on'] .pkc-nav-shell,
-  :root[data-glass='on'] .pkc-shell,
   :root[data-glass='on'] .pkc-tool-intro,
   :root[data-glass='on'] .pkc-tool-header,
   :root[data-glass='on'] .pkc-love-note,
