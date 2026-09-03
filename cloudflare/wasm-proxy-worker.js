@@ -9,6 +9,7 @@
  * - /pymupdf/* - Proxies to PyMuPDF WASM source
  * - /gs/* - Proxies to Ghostscript WASM source
  * - /cpdf/* - Proxies to CoherentPDF WASM source
+ * - /libreoffice/* - Proxies to the LibreOffice WASM source (Office to PDF)
  *
  * Deploy: cd cloudflare && npx wrangler deploy -c wasm-wrangler.toml
  *
@@ -16,6 +17,9 @@
  * - PYMUPDF_SOURCE: Base URL for PyMuPDF WASM files (e.g., https://cdn.example.com/pymupdf)
  * - GS_SOURCE: Base URL for Ghostscript WASM files (e.g., https://cdn.example.com/gs)
  * - CPDF_SOURCE: Base URL for CoherentPDF files (e.g., https://cdn.example.com/cpdf)
+ * - LIBREOFFICE_SOURCE: Base URL for the LibreOffice WASM build. ~75 MB of
+ *   soffice.wasm.gz + soffice.data.gz, which is exactly why it is proxied
+ *   rather than shipped as a site asset (Cloudflare caps assets at 25 MiB).
  */
 
 const ALLOWED_ORIGINS = [
@@ -416,6 +420,17 @@ export default {
       return proxyRequest(request, env, env.CPDF_SOURCE, subpath, origin);
     }
 
+    if (pathname.startsWith('/libreoffice/')) {
+      const subpath = pathname.replace('/libreoffice', '');
+      return proxyRequest(
+        request,
+        env,
+        env.LIBREOFFICE_SOURCE,
+        subpath,
+        origin
+      );
+    }
+
     if (pathname.startsWith('/tesseract/')) {
       const subpath = pathname.replace('/tesseract', '');
       if (!isAllowedTesseractPath(subpath)) {
@@ -457,6 +472,7 @@ export default {
             pymupdf: '/pymupdf/*',
             gs: '/gs/*',
             cpdf: '/cpdf/*',
+            libreoffice: '/libreoffice/*',
             tesseract: '/tesseract/*',
             tesseractLang: '/tesseract-lang/<lang>.traineddata.gz',
           },
@@ -464,6 +480,7 @@ export default {
             pymupdf: !!env.PYMUPDF_SOURCE,
             gs: !!env.GS_SOURCE,
             cpdf: !!env.CPDF_SOURCE,
+            libreoffice: !!env.LIBREOFFICE_SOURCE,
             tesseract: true,
             tesseractLang: true,
           },
@@ -481,7 +498,8 @@ export default {
     return new Response(
       JSON.stringify({
         error: 'Not Found',
-        message: 'Use /pymupdf/*, /gs/*, or /cpdf/* endpoints',
+        message:
+          'Use /pymupdf/*, /gs/*, /cpdf/*, /libreoffice/*, /tesseract/* or /tesseract-lang/* endpoints',
       }),
       {
         status: 404,

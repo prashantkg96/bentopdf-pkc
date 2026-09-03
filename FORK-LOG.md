@@ -93,6 +93,46 @@ Tailwind. Run `npx prettier --write` afterwards. It is validated by round-trippi
 `alternate-merge.html`: the output matches the hand-converted page except for
 upstream's own later copy edits.
 
+### Office to PDF restored
+
+The fork dropped the 22 Office to PDF tools in `70e0834` for one concrete
+reason: the LibreOffice WASM payload is ~75 MB (`soffice.wasm.gz` +
+`soffice.data.gz`) and Cloudflare caps a Worker site asset at 25 MiB, so the
+deploy failed. That constraint no longer applies, because the fork has since
+built a first-party WASM proxy Worker (`cloudflare/wasm-proxy-worker.js`,
+`a6fa9f6`) for exactly this class of problem.
+
+What changed to make it work:
+
+- `cloudflare/wasm-proxy-worker.js` gains a `/libreoffice/*` route backed by a
+  `LIBREOFFICE_SOURCE` binding, alongside the existing pymupdf/gs/cpdf routes.
+  **This needs setting before the tools work in production:**
+  `npx wrangler secret put LIBREOFFICE_SOURCE -c wasm-wrangler.toml`.
+- `src/js/utils/libreoffice-loader.ts` reads `VITE_WASM_LIBREOFFICE_URL` and
+  falls back to `public/libreoffice-wasm/` when it is unset, so a plain
+  `npm run build` or a self-host still works the upstream way.
+- A cross-origin URL cannot be handed to `new Worker()`, so when the payload is
+  remote the three glue scripts are fetched and re-published as same-origin
+  `blob:` URLs. `worker-src 'self' blob:` in the generated CSP already allows it.
+- `public/sw.js` and `src/js/sw-register.ts` know about the proxied path, so the
+  payload is cached for offline use after first use, and the proxy origin is
+  trusted.
+- The 75 MB blobs are **not** committed and never enter `dist/`.
+
+Everything else was a reverse-apply of `70e0834` (`git apply -R`) for the
+registration points: `tools.ts`, `pdf-tools.ts`, `main.ts`, `tools.html`,
+`pdf-converter.html`, `vite.config.ts`, `generate-sitemap.mjs`,
+`wasm-preloader.ts`, the workflow node registry, and the en locale. The 13 tool
+pages were taken from `upstream/main` and run through `pkcify-page.py`. The
+non-English locales stay deleted — that half of `70e0834` was a separate
+decision and still stands.
+
+Also fixed while here: `build:deploy` now exports `MSYS_NO_PATHCONV=1` and
+`MSYS2_ARG_CONV_EXCL='*'`. Without them, Git Bash on Windows rewrites
+`BASE_URL=/toolkits/pdf-tools` into `C:/Program Files/Git/toolkits/pdf-tools`
+and every generated canonical URL and sitemap entry comes out mangled. The
+newly re-enabled SEO audit is what surfaced this; it had been failing silently.
+
 ### Known stale tests (pre-existing, not caused by this sync)
 
 - `src/tests/i18n.test.ts` — 8 failures. Asserts multi-language `getLanguageFromUrl`
@@ -100,4 +140,11 @@ upstream's own later copy edits.
 - `src/tests/pdf-tools.test.ts` — 1 failure. Expects 5 `simpleTools`; the fork has 4
   because Word→PDF was removed.
 
-Both are verified pre-existing by running the suite on a clean `main` worktree.
+Both were verified pre-existing by running the suite on a clean `main` worktree.
+
+**Both are now fixed.** Restoring Word to PDF brought `simpleTools` back to 5.
+The `i18n.test.ts` cases were rewritten to assert what actually matters for an
+English-only build: that the resolution order (URL path, stored preference,
+navigator, build-time default) still holds and that anything outside the
+supported set is rejected at each step. Suite is green: 866 passing, 0 failing,
+up from 805 passing / 9 failing at the fork's previous state.

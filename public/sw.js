@@ -302,7 +302,10 @@ async function networkFirstStrategy(request) {
  * Map CDN URL path to local path
  * Returns the local directory path for a given CDN package
  */
-function getLocalPathForCDNUrl(_pathname) {
+function getLocalPathForCDNUrl(pathname) {
+  if (pathname.includes('/@matbee/libreoffice-converter')) {
+    return '/libreoffice-wasm/';
+  }
   return null;
 }
 
@@ -318,11 +321,16 @@ function shouldCache(pathname, isCDN = false) {
     return (
       pathname.includes('/@bentopdf/pymupdf-wasm') ||
       pathname.includes('/@bentopdf/gs-wasm') ||
+      pathname.includes('/@matbee/libreoffice-converter') ||
+      // The LibreOffice payload served by our own WASM proxy Worker
+      // (/libreoffice/soffice.*), not just the jsDelivr package path.
+      pathname.includes('/libreoffice/') ||
       CACHEABLE_EXTENSIONS.test(pathname)
     );
   }
 
   return (
+    pathname.includes('/libreoffice-wasm/') ||
     pathname.includes('/embedpdf/') ||
     pathname.includes('/assets/') ||
     CACHEABLE_EXTENSIONS.test(pathname)

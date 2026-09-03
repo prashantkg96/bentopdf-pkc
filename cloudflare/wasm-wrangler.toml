@@ -12,12 +12,13 @@ compatibility_date = "2024-01-01"
 # Set environment secrets (one of the following methods):
 #   Option A: Cloudflare Dashboard
 #     Go to Workers & Pages > bentopdf-wasm-proxy > Settings > Variables
-#     Add: PYMUPDF_SOURCE, GS_SOURCE, CPDF_SOURCE
+#     Add: PYMUPDF_SOURCE, GS_SOURCE, CPDF_SOURCE, LIBREOFFICE_SOURCE
 #
 #   Option B: Wrangler CLI
 #     npx wrangler secret put PYMUPDF_SOURCE -c wasm-wrangler.toml
 #     npx wrangler secret put GS_SOURCE -c wasm-wrangler.toml
 #     npx wrangler secret put CPDF_SOURCE -c wasm-wrangler.toml
+#     npx wrangler secret put LIBREOFFICE_SOURCE -c wasm-wrangler.toml
 
 # =============================================================================
 # WASM SOURCE URLS
@@ -35,6 +36,12 @@ compatibility_date = "2024-01-01"
 # CPDF_SOURCE: Base URL to CoherentPDF files
 #   Example: https://cdn.jsdelivr.net/npm/coherentpdf/cpdf
 #            https://your-bucket.r2.cloudflarestorage.com/cpdf
+#
+# LIBREOFFICE_SOURCE: Base URL to the LibreOffice WASM build (Office to PDF).
+#   ~75 MB of soffice.wasm.gz + soffice.data.gz, which is why it is proxied
+#   rather than shipped as a site asset (Cloudflare caps assets at 25 MiB).
+#   Example: https://cdn.jsdelivr.net/npm/@matbee/libreoffice-converter/dist/wasm
+#            https://your-bucket.r2.cloudflarestorage.com/libreoffice
 
 # =============================================================================
 # USAGE FROM BENTOPDF

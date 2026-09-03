@@ -18,6 +18,7 @@ function collectTrustedWasmHosts(): string[] {
     import.meta.env.VITE_WASM_PYMUPDF_URL,
     import.meta.env.VITE_WASM_GS_URL,
     import.meta.env.VITE_WASM_CPDF_URL,
+    import.meta.env.VITE_WASM_LIBREOFFICE_URL,
     import.meta.env.VITE_TESSERACT_WORKER_URL,
     import.meta.env.VITE_TESSERACT_CORE_URL,
     import.meta.env.VITE_TESSERACT_LANG_URL,
