@@ -36,8 +36,15 @@ self.addEventListener('install', (event) => {
       })
       .then(() => {
         // console.log('✅ [ServiceWorker] All critical assets cached successfully!');
-        // console.log('⏭️  [ServiceWorker] Skipping waiting, activating immediately...');
-        return self.skipWaiting();
+        // Deliberately NO skipWaiting() here. An updated worker installs and
+        // then WAITS, taking over once every tab in scope has closed. Calling
+        // it made each deploy evict the running version mid-session, and since
+        // activate() calls clients.claim(), that fired controllerchange and
+        // reloaded the page out from under whoever was using a tool — with
+        // files staged in memory that no reload can bring back. The explicit
+        // SKIP_WAITING message below still exists for a caller that has asked
+        // the user first.
+        return undefined;
       })
       .catch((error) => {
         console.error('[ServiceWorker] Cache installation failed:', error);

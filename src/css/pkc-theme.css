@@ -193,7 +193,8 @@
 :root[data-glass='on'] .pkc-tool-header,
 :root[data-glass='on'] .pkc-love-note,
 :root[data-glass='on'] .pkc-feature-tile,
-:root[data-glass='on'] .tool-card {
+:root[data-glass='on'] .tool-card,
+:root[data-glass='on'] #scroll-to-top-btn {
   backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
 }
 
@@ -202,9 +203,37 @@
   :root[data-glass='on'] .pkc-tool-header,
   :root[data-glass='on'] .pkc-love-note,
   :root[data-glass='on'] .pkc-feature-tile,
-  :root[data-glass='on'] .tool-card {
+  :root[data-glass='on'] .tool-card,
+  :root[data-glass='on'] #scroll-to-top-btn {
     -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
   }
+}
+
+/* The scroll-to-top button is the page's only floating control, and it shipped
+   with hard-coded Tailwind colour utilities: bg-indigo-600, hover:bg-indigo-700,
+   text-white, shadow-lg. The palette remap further down turns indigo into
+   --primary, so it did follow day/night — but as a SOLID brand-orange disc it
+   was the one surface on the page that ignored glass mode completely, which is
+   exactly how it read: a sticker on top of the glass rather than part of it.
+
+   Those colour utilities are gone from the markup (index.html and
+   simple-index.html); this rule owns the appearance, and the frost union above
+   puts the button on the same material as .tool-card.
+
+   The arrow stays --text-strong rather than --primary. On a frosted disc whose
+   fill is already a primary tint, a primary-coloured glyph falls under the 3:1
+   non-text contrast floor in light mode; the brand reads in the ring instead,
+   which has the backdrop to sit against. */
+#scroll-to-top-btn {
+  background: var(--surface-3);
+  border: 1px solid color-mix(in srgb, var(--primary) 34%, var(--outline));
+  color: var(--text-strong);
+  box-shadow: var(--soft-shadow);
+}
+
+#scroll-to-top-btn:hover {
+  background: color-mix(in srgb, var(--primary) 16%, var(--surface-3));
+  border-color: color-mix(in srgb, var(--primary) 62%, var(--outline));
 }
 
 @media (prefers-reduced-transparency: reduce) {

@@ -53,6 +53,11 @@ if (isDevelopment) {
     // may already control this page (e.g. the main PKC site registers a
     // broader-scope /sw.js that claims /toolkits/pdf-tools/ too).
     const swUrl = new URL(swPath, window.location.href).href;
+    // Was this page already controlled by a PREVIOUS copy of *our* SW when it
+    // loaded? That is the only case in which a controllerchange is a genuine
+    // handover worth reacting to. Read it now, before register() can change it.
+    const hadOwnController =
+      navigator.serviceWorker.controller?.scriptURL === swUrl;
     console.log('[SW] Registering Service Worker at:', swPath);
     navigator.serviceWorker
       .register(swPath)
@@ -90,16 +95,22 @@ if (isDevelopment) {
                 controller &&
                 controller.scriptURL === swUrl
               ) {
-                console.log('[SW] New version available! Reload to update.');
-
-                if (
-                  confirm(
-                    'A new version of PKC PDF Tools is available. Reload to update?'
-                  )
-                ) {
-                  newWorker.postMessage({ type: 'SKIP_WAITING' });
-                  window.location.reload();
-                }
+                // No prompt. This used to confirm() on every load after a
+                // deploy, and the question was never real: sw.js called
+                // skipWaiting() in install and clients.claim() in activate, so
+                // the new worker took over and the controllerchange handler
+                // below reloaded the page whichever button was pressed.
+                // Cancelling bought nothing but a second of delay.
+                //
+                // sw.js no longer skips waiting, so this worker now sits in
+                // 'waiting' until every tab in scope is closed and picks itself
+                // up on the next visit. Navigations are network-first, so the
+                // HTML and its hashed bundles are already current regardless;
+                // what waits here is the offline cache, which nobody needs to
+                // be interrupted for.
+                console.log(
+                  '[SW] New version installed; it will activate once all tabs are closed.'
+                );
               }
             });
           }
@@ -114,7 +125,16 @@ if (isDevelopment) {
     });
 
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      console.log('[SW] New service worker activated, reloading...');
+      // Only a HANDOVER justifies a reload. On a first visit there is no
+      // controller at all until our SW calls clients.claim() — and this event
+      // fires for that too, so the unguarded version reloaded the page on every
+      // visitor's first ever view of the tools, discarding a page they had just
+      // waited for. hadOwnController is false in exactly that case.
+      if (!hadOwnController) {
+        console.log('[SW] First install claimed this page; not reloading.');
+        return;
+      }
+      console.log('[SW] New service worker took over, reloading...');
       window.location.reload();
     });
   });
