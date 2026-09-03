@@ -1,6 +1,5 @@
 import { createIcons, icons } from 'lucide';
 import { degrees, PDFDocument as PDFLibDocument, PDFPage } from 'pdf-lib';
-import * as pdfjsLib from 'pdfjs-dist';
 import JSZip from 'jszip';
 import Sortable from 'sortablejs';
 import { downloadFile, getPDFDocument } from '../utils/helpers';
@@ -15,13 +14,9 @@ import { repairPdfFile } from './repair-pdf.js';
 import { partitionIncomingFiles } from '../utils/multi-tool-file-input.js';
 import { convertImagesToPdfFile } from '../utils/images-to-pdf-lib.js';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
-).toString();
-
 import { t } from '../i18n/i18n';
 import { loadPdfDocument } from '../utils/load-pdf-document.js';
+import '../utils/setup-pdf-worker.js';
 
 interface PageData {
   id: string; // Unique ID for DOM reconciliation

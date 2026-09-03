@@ -8,7 +8,6 @@ import {
 } from '../utils/helpers.js';
 import { createIcons, icons } from 'lucide';
 import JSZip from 'jszip';
-import * as pdfjsLib from 'pdfjs-dist';
 import { PDFPageProxy } from 'pdfjs-dist';
 import { t } from '../i18n/i18n';
 import {
@@ -18,11 +17,7 @@ import {
 } from '../utils/comic-info.js';
 import type { CbzOptions, ComicMetadata } from '@/types';
 import { loadPdfWithPasswordPrompt } from '../utils/password-prompt.js';
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
-).toString();
+import '../utils/setup-pdf-worker.js';
 
 let files: File[] = [];
 

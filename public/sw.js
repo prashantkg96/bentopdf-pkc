@@ -229,7 +229,12 @@ async function findCachedFile(fileName, requestUrl) {
   const requests = await cache.keys();
   for (const req of requests) {
     const reqUrl = new URL(req.url);
-    if (reqUrl.pathname.endsWith(fileName)) {
+    // Only ever fall back to a same-origin or trusted-CDN entry, and match the
+    // exact file name — a loose endsWith() would happily serve
+    // https://evil.example/x-pdf.worker.min.mjs as our worker.
+    const trustedOrigin =
+      reqUrl.origin === location.origin || trustedCdnOrigins.has(reqUrl.origin);
+    if (trustedOrigin && reqUrl.pathname.split('/').pop() === fileName) {
       const response = await cache.match(req);
       if (response) {
         const clone = response.clone();
@@ -249,7 +254,7 @@ async function removeDuplicateCache(cache, fileName, isCDN) {
 
   for (const req of requests) {
     const reqUrl = new URL(req.url);
-    if (reqUrl.pathname.endsWith(fileName)) {
+    if (reqUrl.pathname.split('/').pop() === fileName) {
       const reqIsCDN = trustedCdnOrigins.has(reqUrl.origin);
       if (reqIsCDN !== isCDN) {
         await cache.delete(req);

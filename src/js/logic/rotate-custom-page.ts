@@ -17,11 +17,7 @@ import {
   roundToStep,
   parseAngleInput,
 } from '../utils/rotation-utils.js';
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
-).toString();
+import '../utils/setup-pdf-worker.js';
 
 interface RotateState {
   file: File | null;

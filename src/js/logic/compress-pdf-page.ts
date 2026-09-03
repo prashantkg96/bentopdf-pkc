@@ -11,13 +11,8 @@ import { PDFDocument } from 'pdf-lib';
 import { createIcons, icons } from 'lucide';
 import { showWasmRequiredDialog } from '../utils/wasm-provider.js';
 import { loadPyMuPDF, isPyMuPDFAvailable } from '../utils/pymupdf-loader.js';
-import * as pdfjsLib from 'pdfjs-dist';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
-).toString();
+import '../utils/setup-pdf-worker.js';
 
 const CONDENSE_PRESETS = {
   light: {
