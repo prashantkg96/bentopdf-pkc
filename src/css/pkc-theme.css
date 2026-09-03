@@ -161,6 +161,20 @@
   background-attachment: fixed;
 }
 
+/* WHY THE PREFIXED COPY IS QUARANTINED IN AN @supports BLOCK.
+   Lightning CSS (the minifier behind vite build) treats -webkit-backdrop-filter
+   and backdrop-filter as ONE property and keeps whichever is declared LAST.
+   Written as a normal pair with the standard property first, the whole rule
+   minified down to the -webkit- form alone — and Chrome does not accept that
+   form at all (getComputedStyle reports no such property), so glass mode shipped
+   to production frosting precisely nothing here. It survived review because
+   `npm run dev` does not minify, and this app has no staging copy to catch the
+   difference.
+   Separate rules do not help: the minifier merges those too. An @supports block
+   does, because the two declarations are then in different rules that cannot be
+   collapsed into each other. Chrome skips the block (it does not support the
+   prefixed form), Safari 15-17 uses it, Safari 18+ takes both and the values are
+   identical. */
 :root[data-glass='on'] .pkc-nav-shell,
 :root[data-glass='on'] .pkc-shell,
 :root[data-glass='on'] .pkc-tool-intro,
@@ -169,7 +183,18 @@
 :root[data-glass='on'] .pkc-feature-tile,
 :root[data-glass='on'] .tool-card {
   backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+}
+
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  :root[data-glass='on'] .pkc-nav-shell,
+  :root[data-glass='on'] .pkc-shell,
+  :root[data-glass='on'] .pkc-tool-intro,
+  :root[data-glass='on'] .pkc-tool-header,
+  :root[data-glass='on'] .pkc-love-note,
+  :root[data-glass='on'] .pkc-feature-tile,
+  :root[data-glass='on'] .tool-card {
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+  }
 }
 
 @media (prefers-reduced-transparency: reduce) {
@@ -191,9 +216,17 @@
     --outline: #efcfae;
   }
 
+  /* Same minifier collapse as above — the pair became -webkit- only, which is
+     the half Chrome ignores, so reduced-transparency did not switch the frost
+     off. Split for the same reason. */
   :root[data-glass='on'] * {
     backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+  }
+
+  @supports (-webkit-backdrop-filter: blur(1px)) {
+    :root[data-glass='on'] * {
+      -webkit-backdrop-filter: none !important;
+    }
   }
 }
 
