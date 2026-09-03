@@ -57,6 +57,146 @@
   --soft-shadow: 0 24px 46px rgba(56, 76, 117, 0.2);
 }
 
+/* ── Glass mode ───────────────────────────────────────────────────────────
+   Mirrors PKC_In/assets/shared/top-pills.css. `data-glass` is set on <html> by
+   the shared nav's toggle (top-pills.js, loaded from the main origin) and by
+   this app's own pre-paint bootstrap, and the localStorage key is shared —
+   this app is reverse-proxied onto prashantkumarchandra.in, so it is literally
+   the same origin and the same stored preference.
+
+   Nothing here needs to know about Tailwind: the remap below already funnels
+   every background, border and text utility through these semantic tokens, so
+   giving them alpha makes the whole UI translucent. --bg is overridden too,
+   unlike on
+   the main site, precisely BECAUSE of that remap — --color-gray-900 resolves to
+   var(--bg) and is used on ~485 elements, which would otherwise stay solid
+   black panels on an otherwise glass page.
+
+   Dark is SMOKED, not white-tinted, for the same reason as the main site: white
+   alpha makes panels lighter than the backdrop and collapses the contrast of
+   status colours that were tuned for near-black chips.
+   Specificity: (0,3,0) here vs (0,1,0) for the [data-theme='light'] block
+   above, so these win regardless of source order. */
+:root[data-glass='on']:not([data-theme='light']) {
+  --glass-blur: 16px;
+  --glass-sat: 140%;
+  --glass-fill: rgba(18, 14, 32, 0.55);
+  --glass-edge: rgba(255, 255, 255, 0.18);
+  --glass-base: #1c1630;
+  --glass-backdrop:
+    radial-gradient(
+      1100px circle at 12% -5%,
+      rgba(255, 106, 0, 0.32),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px circle at 92% 2%,
+      rgba(139, 92, 246, 0.3),
+      transparent 52%
+    ),
+    radial-gradient(
+      1000px circle at 50% 108%,
+      rgba(255, 159, 69, 0.22),
+      transparent 60%
+    );
+
+  --bg: rgba(14, 11, 26, 0.55);
+  --bg-elevated: rgba(14, 11, 26, 0.55);
+  --surface-1: rgba(18, 14, 32, 0.55);
+  --surface-2: rgba(26, 21, 42, 0.62);
+  --surface-3: rgba(36, 29, 56, 0.7);
+  --complement-1: rgba(24, 32, 29, 0.55);
+  --complement-2: rgba(31, 42, 37, 0.55);
+  --outline: rgba(255, 255, 255, 0.18);
+  --text-strong: #ffffff;
+  --text-muted: #ccd1da;
+  --soft-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  --glow: none;
+}
+
+:root[data-glass='on'][data-theme='light'] {
+  --glass-blur: 16px;
+  --glass-sat: 150%;
+  --glass-fill: rgba(255, 255, 255, 0.68);
+  --glass-edge: rgba(120, 80, 40, 0.2);
+  --glass-base: #fff6ee;
+  --glass-backdrop:
+    radial-gradient(
+      900px circle at 15% 5%,
+      rgba(226, 95, 0, 0.3),
+      transparent 52%
+    ),
+    radial-gradient(
+      800px circle at 88% 0%,
+      rgba(124, 58, 237, 0.22),
+      transparent 46%
+    ),
+    radial-gradient(
+      900px circle at 50% 104%,
+      rgba(243, 154, 49, 0.26),
+      transparent 58%
+    );
+
+  --bg: rgba(255, 255, 255, 0.74);
+  --bg-elevated: rgba(255, 255, 255, 0.68);
+  --surface-1: rgba(255, 255, 255, 0.74);
+  --surface-2: rgba(255, 252, 248, 0.62);
+  --surface-3: rgba(255, 246, 236, 0.68);
+  --complement-1: rgba(240, 247, 242, 0.55);
+  --complement-2: rgba(231, 241, 234, 0.55);
+  --outline: rgba(120, 80, 40, 0.24);
+  --text-strong: #1c0f06;
+  --text-muted: #5a3f27;
+  --soft-shadow: 0 24px 46px rgba(90, 63, 39, 0.22);
+  --glow: none;
+}
+
+/* The backdrop goes on the ROOT, not the body: a body background only fills the
+   screen if it propagates to the canvas, and it does not here either — a short
+   tool page left everything below the content as flat canvas under the frost.
+   Unlayered, so it beats the `@layer base` html/body rules further down. */
+:root[data-glass='on'] {
+  background-color: var(--glass-base);
+  background-image: var(--glass-backdrop);
+  background-attachment: fixed;
+}
+
+:root[data-glass='on'] .pkc-nav-shell,
+:root[data-glass='on'] .pkc-shell,
+:root[data-glass='on'] .pkc-tool-intro,
+:root[data-glass='on'] .pkc-tool-header,
+:root[data-glass='on'] .pkc-love-note,
+:root[data-glass='on'] .pkc-feature-tile,
+:root[data-glass='on'] .tool-card {
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root[data-glass='on']:not([data-theme='light']) {
+    --bg: #000000;
+    --bg-elevated: #000000;
+    --surface-1: #0b0b0b;
+    --surface-2: #121212;
+    --surface-3: #1a1a1a;
+    --outline: #2d2d2d;
+  }
+
+  :root[data-glass='on'][data-theme='light'] {
+    --bg: #fff8f2;
+    --bg-elevated: #fffdf9;
+    --surface-1: #ffffff;
+    --surface-2: #fff1e1;
+    --surface-3: #ffe6cc;
+    --outline: #efcfae;
+  }
+
+  :root[data-glass='on'] * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
 /* Remap the Tailwind palette the app uses onto PKC tokens. Tailwind generates
    `.bg-gray-800{background-color:var(--color-gray-800)}` etc., so redefining
    the --color-* custom properties here recolors every utility. !important so
