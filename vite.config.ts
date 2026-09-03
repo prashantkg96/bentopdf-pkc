@@ -6,12 +6,27 @@ import type { Connect, Plugin } from 'vite';
 // import basicSsl from '@vitejs/plugin-basic-ssl';
 import tailwindcss from '@tailwindcss/vite';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 import viteCompression from 'vite-plugin-compression';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
 import fs from 'fs';
 import { constants as zlibConstants } from 'zlib';
+import { createHash } from 'crypto';
+
+// Cache-busting id for the editcore WASM engine: a hash of the vendored build,
+// so a bumped tarball invalidates any cached copy of editcore.wasm.
+function engineVersion(): string {
+  try {
+    const dir = resolve(__dirname, 'node_modules/bentopdf-pdfium');
+    const h = createHash('sha256');
+    for (const f of ['editcore.js', 'editcore.wasm']) {
+      h.update(fs.readFileSync(resolve(dir, f)));
+    }
+    return h.digest('hex').slice(0, 12);
+  } catch {
+    return 'dev';
+  }
+}
 
 const SUPPORTED_LANGUAGES = [
   'en',
@@ -463,13 +478,6 @@ export default defineConfig(() => {
     console.log('[Vite] Using local WASM files only');
   }
 
-  const staticCopyTargets = [
-    {
-      src: 'node_modules/embedpdf-snippet/dist/pdfium.wasm',
-      dest: 'embedpdf',
-    },
-  ];
-
   return {
     base: (process.env.BASE_URL || '/').replace(/\/?$/, '/'),
     plugins: [
@@ -496,9 +504,6 @@ export default defineConfig(() => {
           global: false,
           process: true,
         },
-      }),
-      viteStaticCopy({
-        targets: staticCopyTargets,
       }),
       viteCompression({
         algorithm: 'brotliCompress',
@@ -531,6 +536,7 @@ export default defineConfig(() => {
           .map((s) => s.trim())
           .filter(Boolean)
       ),
+      __ENGINE_VERSION__: JSON.stringify(engineVersion()),
     },
     resolve: {
       alias: {
@@ -593,6 +599,7 @@ export default defineConfig(() => {
           'split-pdf': resolve(__dirname, 'src/pages/split-pdf.html'),
           'compress-pdf': resolve(__dirname, 'src/pages/compress-pdf.html'),
           'edit-pdf': resolve(__dirname, 'src/pages/edit-pdf.html'),
+          'edit-pdf-text': resolve(__dirname, 'src/pages/edit-pdf-text.html'),
           'jpg-to-pdf': resolve(__dirname, 'src/pages/jpg-to-pdf.html'),
           'sign-pdf': resolve(__dirname, 'src/pages/sign-pdf.html'),
           'crop-pdf': resolve(__dirname, 'src/pages/crop-pdf.html'),

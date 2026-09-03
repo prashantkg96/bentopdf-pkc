@@ -92,6 +92,26 @@ def pkcify(html):
 
     # 6. pkc-shell wrapper
     if 'pkc-shell' not in html:
+        # Most tool pages are flat: navbar, content, footer, all siblings of
+        # <body>. A few (edit-pdf-text.html) nest {{> footer }} inside the
+        # #uploader div and put a full-screen overlay after it, so a blind
+        # wrapper would close <main> in the wrong place and produce invalid
+        # HTML. Detect that and refuse rather than emit something broken.
+        nav_at = html.find('{{> navbar }}')
+        foot_at = html.find('{{> footer }}')
+        if nav_at == -1 or foot_at == -1:
+            raise SystemExit(
+                'pkcify: no navbar/footer partial to wrap; place '
+                '<main class="pkc-shell"> by hand'
+            )
+        depth = (html.count('<div', nav_at, foot_at)
+                 - html.count('</div>', nav_at, foot_at))
+        if depth != 0:
+            raise SystemExit(
+                'pkcify: {{> footer }} is nested %d <div> level(s) deep inside '
+                'the content; wrap this page by hand so </main> closes in the '
+                'right place' % depth
+            )
         html = html.replace('{{> navbar }}' + nl,
                             '{{> navbar }}' + nl + '    <main class="pkc-shell">' + nl, 1)
         html = html.replace('{{> footer }}' + nl,

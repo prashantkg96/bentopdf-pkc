@@ -133,6 +133,40 @@ Also fixed while here: `build:deploy` now exports `MSYS_NO_PATHCONV=1` and
 and every generated canonical URL and sitemap entry comes out mangled. The
 newly re-enabled SEO audit is what surfaced this; it had been failing silently.
 
+### Edit PDF Text, and the viewer engine swap underneath it
+
+Upstream's headline feature for this window. Click a paragraph in a PDF and
+rewrite it in place, with live reflow, font and style controls, and FreeText
+annotations burned into the page content stream on export.
+
+It does not work on `embedpdf-snippet`, so this also does the engine migration
+upstream did across `e8f26c4`, `78cb827`, `8dc7509` and `6ac503e`:
+
+- `vendor/embedpdf/embedpdf-snippet-2.9.1.tgz` is gone. In its place,
+  `vendor/bentopdf-viewer/` and `vendor/bentopdf-pdfium/` (both at upstream's
+  `8ff5002c6cd5` build) — one engine shared by the viewer and the text editor,
+  instead of two WebAssembly instances.
+- The viewer no longer ships its own `pdfium.wasm`, so `viteStaticCopy` and its
+  target are gone from `vite.config.ts`. The engine is loaded through
+  `EmbedPDF.init({ wasmUrl })`.
+- `__ENGINE_VERSION__` (a hash of the vendored `editcore.js` + `editcore.wasm`)
+  is defined at build time so bumping the tarball invalidates cached copies.
+- New: `src/js/editcore/` (7 files), `edit-pdf-text-page.ts`,
+  `edit-pdf-text-dock.ts`, `editor-fonts.ts`, the three `freetext-*` utils,
+  `edit-pdf-text.css`, and the page. Registered in `tools.ts` (including popular
+  tools), `main.ts`, `tools.html`, `pdf-editor.html`, `vite.config.ts`, and the
+  en locale (114 strings, so the tool is fully internationalised).
+
+Built assets stay well inside Cloudflare's 25 MiB per-asset cap — the largest is
+`editcore.wasm` at 7.0 MB.
+
+**One fix carried on top of upstream.** `src/js/editcore/engine-loader.js`
+resolved the Node-side wasm path with `new URL(...).pathname`, which on Windows
+yields `/D:/...`; Emscripten then resolved that against the current drive root
+and looked for `D:\D:\...`. The leading slash is now stripped and the path
+percent-decoded, so the editcore tests run on Windows. Worth re-checking after
+any upstream bump of that file — it is an upstream bug, not a fork-local one.
+
 ### Known stale tests (pre-existing, not caused by this sync)
 
 - `src/tests/i18n.test.ts` — 8 failures. Asserts multi-language `getLanguageFromUrl`

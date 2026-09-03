@@ -117,6 +117,7 @@ const init = async () => {
     'Split PDF': 'tools:splitPdf',
     'Compress PDF': 'tools:compressPdf',
     'PDF Editor': 'tools:pdfEditor',
+    'Edit PDF Text': 'tools:editPdfText',
     'JPG to PDF': 'tools:jpgToPdf',
     'Sign PDF': 'tools:signPdf',
     'Crop PDF': 'tools:cropPdf',
