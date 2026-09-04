@@ -2,21 +2,21 @@
 <Container version="2">
   <Name>pkc-pdf-tools</Name>
   <Repository>pkcpdftools/pkc-pdf-tools</Repository>
-  <Registry>https://github.com/prashantkg96/pkc-pdf-tools-pkc</Registry>
+  <Registry>https://github.com/prashantkg96/bentopdf-pkc</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/prashantkg96/pkc-pdf-tools-pkc</Support>
+  <Support>https://github.com/prashantkg96/bentopdf-pkc</Support>
   <Project>https://prashantkumarchandra.in/toolkits/pdf-tools/</Project>
   <Overview>Uploaded on behalf of creator: alam00000&#13;
 PKC PDF Tools is a privacy first PDF Toolkit&#13;
 &#13;
-https://github.com/prashantkg96/pkc-pdf-tools-pkc</Overview>
+https://github.com/prashantkg96/bentopdf-pkc</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/alam00000/pkc-pdf-tools/refs/heads/main/public/images/pkc-icon-192.png</Icon>
+  <Icon>https://raw.githubusercontent.com/alam00000/bentopdf/refs/heads/main/public/images/pkc-icon-192.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

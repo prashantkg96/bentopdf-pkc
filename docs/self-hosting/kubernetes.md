@@ -16,7 +16,7 @@ Kubernetes may be overkill for a static site, but it can be a great fit if you a
 
 - Kubernetes cluster
 - Helm v3
-- A PKC PDF Tools nginx image (e.g. `ghcr.io/alam00000/pkc-pdf-tools:<tag>`) that serves on **port 8080**
+- A PKC PDF Tools nginx image (e.g. `ghcr.io/alam00000/bentopdf:<tag>`) that serves on **port 8080**
 
 ## Deploy with Helm
 
@@ -27,7 +27,7 @@ kubectl create namespace pkc-pdf-tools
 
 helm upgrade --install pkc-pdf-tools /path/to/pkc-pdf-tools/chart \
   --namespace pkc-pdf-tools \
-  --set image.repository=ghcr.io/alam00000/pkc-pdf-tools \
+  --set image.repository=ghcr.io/alam00000/bentopdf \
   --set image.tag=latest
 ```
 
@@ -42,7 +42,7 @@ helm upgrade --install pkc-pdf-tools oci://ghcr.io/$GHCR_USERNAME/charts/pkc-pdf
   --namespace pkc-pdf-tools \
   --create-namespace \
   --version 0.1.0 \
-  --set image.repository=ghcr.io/alam00000/pkc-pdf-tools \
+  --set image.repository=ghcr.io/alam00000/bentopdf \
   --set image.tag=latest
 ```
 

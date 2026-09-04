@@ -25,10 +25,10 @@ Visit [pkc-pdf-tools.com](https://prashantkumarchandra.in/toolkits/pdf-tools) to
 
 ```bash
 # Pull and run the Docker image (self-hosted build)
-docker run -d -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker run -d -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 
 # Or use Docker Compose
-curl -O https://raw.githubusercontent.com/alam00000/pkc-pdf-tools/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/alam00000/bentopdf/main/docker-compose.yml
 docker compose up -d
 ```
 
@@ -44,7 +44,7 @@ Then open `http://localhost:3000` in your browser.
 
 ```bash
 # Clone the repository
-git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+git clone https://github.com/prashantkg96/bentopdf-pkc.git
 cd pkc-pdf-tools
 
 # Install dependencies

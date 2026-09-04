@@ -568,7 +568,7 @@ When adding a new language, make sure these files are updated:
 If you have questions or need help:
 
 1. Check existing translations in `public/locales/de/common.json` for reference
-2. Open an issue on [GitHub](https://github.com/prashantkg96/pkc-pdf-tools-pkc/issues)
+2. Open an issue on [GitHub](https://github.com/prashantkg96/bentopdf-pkc/issues)
 3. Join our [Discord server](https://discord.gg/Bgq3Ay3f2w)
 
 ---

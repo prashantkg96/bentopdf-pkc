@@ -218,7 +218,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/prashantkg96/pkc-pdf-tools-pkc' },
+            { icon: 'github', link: 'https://github.com/prashantkg96/bentopdf-pkc' },
             { icon: 'discord', link: 'https://discord.gg/Bgq3Ay3f2w' }
         ],
 

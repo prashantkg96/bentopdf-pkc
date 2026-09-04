@@ -4,13 +4,13 @@
 
 ## One-Click Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/prashantkg96/pkc-pdf-tools-pkc)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/prashantkg96/bentopdf-pkc)
 
 ## Manual Deployment
 
 ### Step 1: Fork the Repository
 
-Fork [pkc-pdf-tools/pkc-pdf-tools](https://github.com/prashantkg96/pkc-pdf-tools-pkc) to your GitHub account.
+Fork [pkc-pdf-tools/pkc-pdf-tools](https://github.com/prashantkg96/bentopdf-pkc) to your GitHub account.
 
 ### Step 2: Import to Vercel
 

@@ -22,8 +22,8 @@ The easiest way to self-host PKC PDF Tools in a production environment.
 > [!TIP]
 > PKC PDF Tools ships in two builds:
 >
-> - **Self-Hosted build** — `ghcr.io/alam00000/pkc-pdf-tools-simple:latest`. Every PDF tool, **without** the marketing chrome (no hero, FAQ, testimonials, footer). Use this for internal/team/organization deployments. It is **not** a feature-reduced "lite" version.
-> - **Commercial build** — `ghcr.io/alam00000/pkc-pdf-tools:latest`. The full marketing site, used by pkc-pdf-tools.com itself and by commercial license holders running public-facing deployments.
+> - **Self-Hosted build** — `ghcr.io/alam00000/bentopdf-simple:latest`. Every PDF tool, **without** the marketing chrome (no hero, FAQ, testimonials, footer). Use this for internal/team/organization deployments. It is **not** a feature-reduced "lite" version.
+> - **Commercial build** — `ghcr.io/alam00000/bentopdf:latest`. The full marketing site, used by pkc-pdf-tools.com itself and by commercial license holders running public-facing deployments.
 >
 > If in doubt: pull the Self-Hosted build.
 
@@ -33,13 +33,13 @@ docker run -d \
   --name pkc-pdf-tools \
   -p 3000:8080 \
   --restart unless-stopped \
-  ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+  ghcr.io/alam00000/bentopdf-simple:latest
 
 # Podman
 podman run -d \
   --name pkc-pdf-tools \
   -p 3000:8080 \
-  ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+  ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 ## Docker Compose / Podman Compose
@@ -49,7 +49,7 @@ Create `docker-compose.yml`:
 ```yaml
 services:
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     container_name: pkc-pdf-tools
     ports:
       - '3000:8080'
@@ -207,7 +207,7 @@ Mount a `config.json` file into the served directory — no rebuild needed:
 docker run -d \
   -p 3000:8080 \
   -v ./config.json:/usr/share/nginx/html/config.json:ro \
-  ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+  ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 Or with Docker Compose:
@@ -215,7 +215,7 @@ Or with Docker Compose:
 ```yaml
 services:
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     ports:
       - '3000:8080'
     volumes:
@@ -332,7 +332,7 @@ Set a variable to empty string to disable that module (users must configure manu
 By default, PKC PDF Tools listens on port `8080` inside the container. To change this, set the `PORT` environment variable at runtime:
 
 ```bash
-docker run -p 3000:9090 -e PORT=9090 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker run -p 3000:9090 -e PORT=9090 ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 | Variable | Description                    | Default |
@@ -418,7 +418,7 @@ services:
       - ./letsencrypt:/letsencrypt
 
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.pkc-pdf-tools.rule=Host(`pdf.example.com`)'
@@ -446,7 +446,7 @@ services:
       - caddy_data:/data
 
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     restart: unless-stopped
 
 volumes:
@@ -468,7 +468,7 @@ pdf.example.com {
 ```yaml
 services:
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     deploy:
       resources:
         limits:
@@ -494,7 +494,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Container]
-Image=ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+Image=ghcr.io/alam00000/bentopdf-simple:latest
 ContainerName=pkc-pdf-tools
 PublishPort=3000:8080
 AutoUpdate=registry
@@ -538,7 +538,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Container]
-Image=ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+Image=ghcr.io/alam00000/bentopdf-simple:latest
 ContainerName=pkc-pdf-tools
 PublishPort=3000:8080
 AutoUpdate=registry
@@ -584,7 +584,7 @@ Then reference it in your container file:
 
 ```ini
 [Container]
-Image=ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+Image=ghcr.io/alam00000/bentopdf-simple:latest
 ContainerName=pkc-pdf-tools
 PublishPort=3000:8080
 Network=pkc-pdf-tools.network

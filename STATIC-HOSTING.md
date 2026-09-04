@@ -6,9 +6,9 @@ As an alternative to runnning BenotPDF locally or in a Docker container, you can
 
 ### Netlify - static deployment
 
-One of simplest ways to host PKC PDF Tools is to create a project at [Netlify](https://www.netlify.com/) and create a static deployment. You can accomplish this by first downloading the pre-built distribution file from our [GitHub releases](https://github.com/prashantkg96/pkc-pdf-tools-pkc/releases). Each release includes a `dist-{version}.zip` file that contains all necessary files for self-hosting.
+One of simplest ways to host PKC PDF Tools is to create a project at [Netlify](https://www.netlify.com/) and create a static deployment. You can accomplish this by first downloading the pre-built distribution file from our [GitHub releases](https://github.com/prashantkg96/bentopdf-pkc/releases). Each release includes a `dist-{version}.zip` file that contains all necessary files for self-hosting.
 
-1. Go to [PKC PDF Tools Releases](https://github.com/prashantkg96/pkc-pdf-tools-pkc/releases)
+1. Go to [PKC PDF Tools Releases](https://github.com/prashantkg96/bentopdf-pkc/releases)
 2. Download the latest `dist-{version}.zip` file
 3. Next, if you have not already done so, create a Netlify account and log in.
 4. From your Netlify projects page, add a new project and select "Deploy manually".
@@ -103,7 +103,7 @@ by default, so when crawlers do follow internal links they still see
 pkc-pdf-tools.com as the authoritative source.
 
 ```sh
-docker run -d -p 8080:8080 -e ROBOTS_NOINDEX=true ghcr.io/alam00000/pkc-pdf-tools:latest
+docker run -d -p 8080:8080 -e ROBOTS_NOINDEX=true ghcr.io/alam00000/bentopdf:latest
 ```
 
 You can combine the two: build with your own `SITE_URL` and run with

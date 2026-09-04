@@ -9,8 +9,8 @@ The fastest way to self-host PKC PDF Tools:
 > [!TIP]
 > PKC PDF Tools ships in two builds:
 >
-> - **Self-Hosted build** — `ghcr.io/alam00000/pkc-pdf-tools-simple:latest`. Every PDF tool, **without** the marketing chrome (no hero, FAQ, testimonials, footer). Use this for internal/team/organization deployments. It is **not** a feature-reduced "lite" version.
-> - **Commercial build** — `ghcr.io/alam00000/pkc-pdf-tools:latest`. The full marketing site, used by pkc-pdf-tools.com itself and by commercial license holders running public-facing deployments.
+> - **Self-Hosted build** — `ghcr.io/alam00000/bentopdf-simple:latest`. Every PDF tool, **without** the marketing chrome (no hero, FAQ, testimonials, footer). Use this for internal/team/organization deployments. It is **not** a feature-reduced "lite" version.
+> - **Commercial build** — `ghcr.io/alam00000/bentopdf:latest`. The full marketing site, used by pkc-pdf-tools.com itself and by commercial license holders running public-facing deployments.
 >
 > If in doubt: pull the Self-Hosted build.
 
@@ -21,10 +21,10 @@ The fastest way to self-host PKC PDF Tools:
 
 ```bash
 # Docker
-docker run -d -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker run -d -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 
 # Podman
-podman run -d -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+podman run -d -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 Or with Docker Compose / Podman Compose:
@@ -33,7 +33,7 @@ Or with Docker Compose / Podman Compose:
 # docker-compose.yml
 services:
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     ports:
       - '3000:8080'
     restart: unless-stopped
@@ -53,7 +53,7 @@ Run PKC PDF Tools as a systemd service. Create `~/.config/containers/systemd/pkc
 
 ```ini
 [Container]
-Image=ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+Image=ghcr.io/alam00000/bentopdf-simple:latest
 ContainerName=pkc-pdf-tools
 PublishPort=3000:8080
 AutoUpdate=registry
@@ -76,7 +76,7 @@ See [Docker deployment guide](/self-hosting/docker) for full Quadlet documentati
 
 ```bash
 # Clone and build
-git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+git clone https://github.com/prashantkg96/bentopdf-pkc.git
 cd pkc-pdf-tools
 npm install
 npm run build
@@ -100,19 +100,19 @@ The Self-Hosted build (the `pkc-pdf-tools-simple` image, also called Simple Mode
 - Every PDF tool (merge, split, edit, sign, OCR, Office conversion, etc.)
 - Custom branding support, all build-time and runtime config
 
-The Commercial build (`ghcr.io/alam00000/pkc-pdf-tools:latest`) is what powers pkc-pdf-tools.com itself and is used by commercial license holders running public-facing deployments — it adds the hero, FAQ, testimonials, and footer that wouldn't make sense on an internal tool.
+The Commercial build (`ghcr.io/alam00000/bentopdf:latest`) is what powers pkc-pdf-tools.com itself and is used by commercial license holders running public-facing deployments — it adds the hero, FAQ, testimonials, and footer that wouldn't make sense on an internal tool.
 
 If you're self-hosting PKC PDF Tools for your team, organization, or as an internal tool, pull the Self-Hosted build:
 
 ```bash
 # Use the pre-built image (recommended)
-docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker run -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 
 # Or build it yourself
 SIMPLE_MODE=true npm run build
 ```
 
-See [SIMPLE_MODE.md](https://github.com/prashantkg96/pkc-pdf-tools-pkc/blob/main/SIMPLE_MODE.md) for full details.
+See [SIMPLE_MODE.md](https://github.com/prashantkg96/bentopdf-pkc/blob/main/SIMPLE_MODE.md) for full details.
 
 ### Commercial build (public-facing deployments with your own brand)
 
@@ -125,7 +125,7 @@ The Commercial build (the `pkc-pdf-tools` image — no `-simple` suffix) is what
 **Run it as-is** (PKC PDF Tools branding — useful to preview the build):
 
 ```bash
-docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools:latest
+docker run -p 3000:8080 ghcr.io/alam00000/bentopdf:latest
 ```
 
 **Build with your own brand** (the typical commercial workflow):
@@ -212,7 +212,7 @@ DISABLE_TOOLS="edit-pdf,sign-pdf" npm run build
 ```bash
 docker run -d -p 3000:8080 \
   -v ./config.json:/usr/share/nginx/html/config.json:ro \
-  ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+  ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 Both methods can be combined — the lists are merged.
@@ -357,7 +357,7 @@ For networks with no internet access (government, healthcare, financial, etc.). 
 The included `prepare-airgap.sh` script automates the entire process — downloading WASM packages, building the Docker image, and producing a self-contained bundle with a setup script.
 
 ```bash
-git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+git clone https://github.com/prashantkg96/bentopdf-pkc.git
 cd pkc-pdf-tools
 
 # Show supported OCR language codes (for --ocr-languages)
@@ -442,7 +442,7 @@ curl -fsSL https://raw.githack.com/googlefonts/noto-fonts/main/hinted/ttf/NotoSa
 **Step 2: Build the Docker image with internal URLs**
 
 ```bash
-git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+git clone https://github.com/prashantkg96/bentopdf-pkc.git
 cd pkc-pdf-tools
 
 docker build \
@@ -515,7 +515,7 @@ VITE_OCR_FONT_BASE_URL=https://internal-server.example.com/wasm/ocr/fonts
 
 ### Hosting Your Own WASM Proxy
 
-If you need to serve AGPL WASM files with proper CORS headers, you can deploy a simple proxy. See the [Cloudflare WASM Proxy guide](https://github.com/prashantkg96/pkc-pdf-tools-pkc/blob/main/cloudflare/WASM-PROXY.md) for an example implementation.
+If you need to serve AGPL WASM files with proper CORS headers, you can deploy a simple proxy. See the [Cloudflare WASM Proxy guide](https://github.com/prashantkg96/bentopdf-pkc/blob/main/cloudflare/WASM-PROXY.md) for an example implementation.
 
 ::: tip Why Separate?
 This separation ensures:

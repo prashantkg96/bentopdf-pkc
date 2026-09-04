@@ -34,7 +34,7 @@ If you're self-hosting PKC PDF Tools, you'll need to deploy your own CORS proxy 
 3. **Clone PKC PDF Tools and update allowed origins**:
 
    ```bash
-   git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+   git clone https://github.com/prashantkg96/bentopdf-pkc.git
    cd pkc-pdf-tools/cloudflare
    ```
 

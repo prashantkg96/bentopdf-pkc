@@ -4,7 +4,7 @@
 
 ## One-Click Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prashantkg96/pkc-pdf-tools-pkc)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prashantkg96/bentopdf-pkc)
 
 ## Manual Deployment
 

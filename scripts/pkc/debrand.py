@@ -26,6 +26,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 
 SITE = 'https://prashantkumarchandra.in/toolkits/pdf-tools'
 FORK_REPO = 'https://github.com/prashantkg96/bentopdf-pkc'
+
+# The fork's own repo name CONTAINS "bentopdf". protect() runs once, BEFORE
+# the rules, so a FORK_REPO that a URL rule *inserts* afterwards is not
+# protected -- and the prose rule that rewrites the brand word then chewed the
+# freshly inserted repo name into a URL for a repository that does not exist.
+# That bug shipped to production in 69 places, including the homepage credit to
+# upstream, which became a dead link thanking this project's own team.
+#
+# So the rules emit this token instead, and convert() swaps in the real URL at
+# the very end, after every prose rule has already run.
+FORK_REPO_TOKEN = chr(0) + 'FORKREPO' + chr(0)
 BRAND = 'PKC PDF Tools'
 
 SKIP_DIRS = {
@@ -45,6 +56,13 @@ SKIP_PATHS = {
     'README.md',
     'FORK-LOG.md',
     'CLAUDE.md',
+    # The shipped homepage carries the ONE user-visible credit to upstream —
+    # "Built on the open-source BentoPDF project — special thanks to the
+    # BentoPDF team", linking github.com/alam00000/bentopdf. A previous run of
+    # this script rewrote it into "special thanks to the PKC PDF Tools team"
+    # pointing at a repo that does not exist: self-congratulation where a credit
+    # used to be. It is deliberate, it stays, and it is why this file is listed.
+    'simple-index.html',
 }
 SKIP_DOC_PREFIXES = ('scripts/pkc/',)
 SKIP_PREFIXES = ('public/pdfjs-viewer/', 'public/pdfjs-annotation-viewer/')
@@ -64,6 +82,14 @@ PROTECTED = [
     'bentopdf-pkc',
     'bentopdf-wasm-proxy',
     'bentopdf-cors-proxy',
+    # Upstream's namespace. Everything under alam00000/ names something that
+    # actually exists and belongs to someone else -- their repo, their ghcr
+    # images. Renaming any of it invented artifacts that do not exist
+    # (ghcr.io/alam00000/pkc-pdf-tools and friends). Factual references to
+    # upstream stay factual; the shipped site's own branding is handled by
+    # the prose rules, and the one deliberate credit lives in a SKIP_PATHS
+    # file.
+    'alam00000/bentopdf',
     'bentopdf-gs-wasm',
     'bentopdf-pymupdf-wasm',
     # Load-bearing runtime keys. Renaming these is a silent data migration:
@@ -88,15 +114,10 @@ RULES = [
     (re.compile(r'https://(?:www\.)?bentopdf\.com/images/[a-zA-Z0-9._-]+'), SITE + '/assets/favicon.svg'),
     (re.compile(r'https://(?:www\.)?bentopdf\.com'), SITE),
     (re.compile(r'https://wasm\.bentopdf\.com/'), 'https://wasm.example.com/'),
-    (re.compile(r'https://x\.com/BentoPDF'), FORK_REPO),
-    (re.compile(r'https://www\.linkedin\.com/company/bentopdf/?'), FORK_REPO),
-    (re.compile(r'https://www\.instagram\.com/thebentopdf/?'), FORK_REPO),
-    (re.compile(r'https://hub\.docker\.com/r/bentopdfteam/bentopdf/?'), FORK_REPO),
-    (re.compile(r'https://api\.github\.com/repos/alam00000/bentopdf'),
-     'https://api.github.com/repos/prashantkg96/bentopdf-pkc'),
-    (re.compile(r'https://github\.com/alam00000/bentopdf\.git'), FORK_REPO + '.git'),
-    (re.compile(r'https://github\.com/alam00000/bentopdf(/[a-zA-Z0-9./_-]*)?'),
-     lambda m: FORK_REPO + (m.group(1) or '')),
+    (re.compile(r'https://x\.com/BentoPDF'), FORK_REPO_TOKEN),
+    (re.compile(r'https://www\.linkedin\.com/company/bentopdf/?'), FORK_REPO_TOKEN),
+    (re.compile(r'https://www\.instagram\.com/thebentopdf/?'), FORK_REPO_TOKEN),
+    (re.compile(r'https://hub\.docker\.com/r/bentopdfteam/bentopdf/?'), FORK_REPO_TOKEN),
     (re.compile(r'@BentoPDF\b'), '@pkcpdftools'),
     # Prose / identifiers.
     (re.compile(r'\bBento PDF\b'), BRAND),
@@ -129,7 +150,9 @@ def convert(text):
     text, holes = protect(text)
     for pattern, repl in RULES:
         text = pattern.sub(repl, text)
-    return restore(text, holes)
+    text = restore(text, holes)
+    # Last, so no prose rule can touch the repo name it contains.
+    return text.replace(FORK_REPO_TOKEN, FORK_REPO)
 
 
 def walk():

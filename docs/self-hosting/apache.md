@@ -11,7 +11,7 @@ Host PKC PDF Tools using Apache HTTP Server.
 ## Step 1: Build the Project
 
 ```bash
-git clone https://github.com/prashantkg96/pkc-pdf-tools-pkc.git
+git clone https://github.com/prashantkg96/bentopdf-pkc.git
 cd pkc-pdf-tools
 npm install
 npm run build

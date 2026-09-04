@@ -26,7 +26,7 @@ For complete licensing information, delivery details, AGPL component notices, an
 - Upon purchase, users receive a ZIP archive containing the complete PKC PDF Tools source code and binaries.
 - The source code provided is identical to the code published in our public open-source repository.
 
-**GitHub Repository:** [github.com/alam00000/pkc-pdf-tools](https://github.com/prashantkg96/pkc-pdf-tools-pkc)
+**GitHub Repository:** [github.com/alam00000/bentopdf](https://github.com/prashantkg96/bentopdf-pkc)
 
 ## Important Notice on Third-Party Components
 

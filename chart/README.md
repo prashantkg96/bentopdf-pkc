@@ -60,7 +60,7 @@ httpRoute:
 
 ### Image
 
-- **`image.repository`**: container image repo (default: `ghcr.io/alam00000/pkc-pdf-tools-simple`)
+- **`image.repository`**: container image repo (default: `ghcr.io/alam00000/bentopdf-simple`)
 - **`image.tag`**: image tag (default: `Chart.appVersion`)
 - **`image.pullPolicy`**: default `IfNotPresent`
 

@@ -4,7 +4,7 @@ Simple Mode is what powers the **Self-Hosted build** of PKC PDF Tools (`pkc-pdf-
 
 > **Simple Mode is not a feature-reduced "lite" version.** Every PDF tool — merge, split, edit, sign, OCR, Office conversion, every other tool — works identically in both builds. The only difference is the marketing UI around the tools.
 
-The Commercial build (`ghcr.io/alam00000/pkc-pdf-tools:latest`) is used by pkc-pdf-tools.com itself and by commercial license holders running public-facing PDF deployments where the full marketing site makes sense.
+The Commercial build (`ghcr.io/alam00000/bentopdf:latest`) is used by pkc-pdf-tools.com itself and by commercial license holders running public-facing PDF deployments where the full marketing site makes sense.
 
 ## What Simple Mode Hides
 
@@ -31,10 +31,10 @@ Use the pre-built Simple Mode image directly:
 
 ```bash
 # Docker
-docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker run -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 
 # Podman
-podman run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+podman run -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 **Using Docker Hub:**
@@ -53,7 +53,7 @@ Or with Docker Compose / Podman Compose:
 services:
   pkc-pdf-tools:
     # Using GitHub Container Registry (Recommended)
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     # Or using Docker Hub
     # image: pkcpdftools/pkc-pdf-tools-simple:latest
     container_name: pkc-pdf-tools
@@ -118,12 +118,12 @@ This automatically builds and serves Simple Mode on `http://localhost:3000`.
 
 ```bash
 # Docker - Pull and run the Simple Mode image
-docker pull ghcr.io/alam00000/pkc-pdf-tools-simple:latest
-docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker pull ghcr.io/alam00000/bentopdf-simple:latest
+docker run -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 
 # Podman
-podman pull ghcr.io/alam00000/pkc-pdf-tools-simple:latest
-podman run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+podman pull ghcr.io/alam00000/bentopdf-simple:latest
+podman run -p 3000:8080 ghcr.io/alam00000/bentopdf-simple:latest
 ```
 
 Open `http://localhost:3000` in your browser.
@@ -144,10 +144,10 @@ Open `http://localhost:3000` in your browser.
 
 ```bash
 # Commercial build (the pkc-pdf-tools.com look)
-docker run -p 3000:8080 ghcr.io/alam00000/pkc-pdf-tools:latest
+docker run -p 3000:8080 ghcr.io/alam00000/bentopdf:latest
 
 # Self-Hosted build (Simple Mode)
-docker run -p 3001:8080 ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+docker run -p 3001:8080 ghcr.io/alam00000/bentopdf-simple:latest
 
 # Podman users: replace 'docker' with 'podman'
 ```
@@ -173,8 +173,8 @@ When Simple Mode is working correctly, you should see:
 
 **GitHub Container Registry (Recommended):**
 
-- `ghcr.io/alam00000/pkc-pdf-tools-simple:latest`
-- `ghcr.io/alam00000/pkc-pdf-tools-simple:v1.0.0` (versioned)
+- `ghcr.io/alam00000/bentopdf-simple:latest`
+- `ghcr.io/alam00000/bentopdf-simple:v1.0.0` (versioned)
 
 **Docker Hub:**
 
@@ -187,8 +187,8 @@ The full marketing site, including hero/FAQ/testimonials/footer. Pull this only 
 
 **GitHub Container Registry (Recommended):**
 
-- `ghcr.io/alam00000/pkc-pdf-tools:latest`
-- `ghcr.io/alam00000/pkc-pdf-tools:v1.0.0` (versioned)
+- `ghcr.io/alam00000/bentopdf:latest`
+- `ghcr.io/alam00000/bentopdf:v1.0.0` (versioned)
 
 **Docker Hub:**
 
@@ -202,7 +202,7 @@ The full marketing site, including hero/FAQ/testimonials/footer. Pull this only 
 ```yaml
 services:
   pkc-pdf-tools:
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest # Recommended
+    image: ghcr.io/alam00000/bentopdf-simple:latest # Recommended
     # image: pkcpdftools/pkc-pdf-tools-simple:latest     # Alternative: Docker Hub
     container_name: pkc-pdf-tools
     restart: unless-stopped
@@ -223,7 +223,7 @@ Description=PKC PDF Tools Simple Mode
 After=network-online.target
 
 [Container]
-Image=ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+Image=ghcr.io/alam00000/bentopdf-simple:latest
 ContainerName=pkc-pdf-tools-simple
 PublishPort=80:8080
 AutoUpdate=registry
@@ -244,7 +244,7 @@ systemctl --user enable --now pkc-pdf-tools-simple
 
 ## ⚠️ Important Notes
 
-- **Pre-built images**: Use `ghcr.io/alam00000/pkc-pdf-tools-simple:latest` for Simple Mode (recommended)
+- **Pre-built images**: Use `ghcr.io/alam00000/bentopdf-simple:latest` for Simple Mode (recommended)
 - **Environment variables**: `SIMPLE_MODE=true` only works during build, not runtime
 - **Build-time optimization**: Simple Mode uses dead code elimination for smaller bundles
 - **Same functionality**: All PDF tools work identically in both modes

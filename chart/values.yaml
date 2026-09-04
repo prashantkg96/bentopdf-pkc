@@ -3,7 +3,7 @@ replicaCount: 1
 
 image:
   # Image built from this repo's `Dockerfile` (nginx serving static frontend).
-  repository: ghcr.io/alam00000/pkc-pdf-tools-simple
+  repository: ghcr.io/alam00000/bentopdf-simple
   pullPolicy: IfNotPresent
   tag: ''
 

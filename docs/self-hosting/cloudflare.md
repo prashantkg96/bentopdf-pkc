@@ -151,4 +151,4 @@ DOCKER_BUILDKIT=1 docker build \
   -t your-pkc-pdf-tools .
 ```
 
-> **Note:** See [README](https://github.com/prashantkg96/pkc-pdf-tools-pkc#digital-signature-cors-proxy-required) for HMAC signature setup.
+> **Note:** See [README](https://github.com/prashantkg96/bentopdf-pkc#digital-signature-cors-proxy-required) for HMAC signature setup.

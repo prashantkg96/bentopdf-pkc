@@ -135,7 +135,7 @@ function main() {
   console.log(`📦 Distribution: dist-${newVersion}.zip`);
   console.log(`📦 Distribution (simple): dist-simple-${newVersion}.zip`);
   console.log(
-    `🏷️  GitHub release: https://github.com/prashantkg96/pkc-pdf-tools-pkc/releases/tag/${tagName}`
+    `🏷️  GitHub release: https://github.com/prashantkg96/bentopdf-pkc/releases/tag/${tagName}`
   );
 }
 

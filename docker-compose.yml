@@ -1,12 +1,12 @@
 services:
   pkc-pdf-tools:
     # GitHub Container Registry (Recommended)
-    # Self-Hosted build - ghcr.io/alam00000/pkc-pdf-tools-simple:latest
-    # Commercial build  - ghcr.io/alam00000/pkc-pdf-tools:latest
+    # Self-Hosted build - ghcr.io/alam00000/bentopdf-simple:latest
+    # Commercial build  - ghcr.io/alam00000/bentopdf:latest
     # Docker Hub (Alternative)
     # Self-Hosted build - pkcpdftools/pkc-pdf-tools-simple:latest
     # Commercial build  - pkcpdftools/pkc-pdf-tools:latest
-    image: ghcr.io/alam00000/pkc-pdf-tools-simple:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     container_name: pkc-pdf-tools
     restart: unless-stopped
     ports:
