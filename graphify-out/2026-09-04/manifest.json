@@ -225,8 +225,8 @@
     "semantic_hash": ""
   },
   "scripts/generate-offline-manifest.mjs": {
-    "mtime": 1788475636.4265735,
-    "ast_hash": "4eb7e4085d09807202edd02a35c6d252",
+    "mtime": 1788478563.0351484,
+    "ast_hash": "0c8579e53f6d93f3f723ad067b9a6a5e",
     "semantic_hash": ""
   },
   "scripts/generate-security-headers.mjs": {
@@ -1005,8 +1005,8 @@
     "semantic_hash": "5e0b5c11afa75b60283c4cba99dbdb7c"
   },
   "src/js/main.ts": {
-    "mtime": 1788475677.1183536,
-    "ast_hash": "559fcfbc0fa086133e2764ce031e1afe",
+    "mtime": 1788477463.0741658,
+    "ast_hash": "dd0012a1e6dbbc2c7d1a58988fe4a4de",
     "semantic_hash": ""
   },
   "src/js/mobileMenu.ts": {
@@ -3980,8 +3980,8 @@
     "semantic_hash": ""
   },
   "FORK-LOG.md": {
-    "mtime": 1788476340.1641643,
-    "ast_hash": "4447ea6ea084548894909c191f207f9e",
+    "mtime": 1788478557.181324,
+    "ast_hash": "a5e74527205444e638999fc1b9c391ba",
     "semantic_hash": ""
   },
   "docs/tools/duplex-collate.md": {
@@ -4767,6 +4767,21 @@
   "public/pdfjs-viewer/images/treeitem-expanded.svg": {
     "mtime": 1782151869.899575,
     "ast_hash": "af9e269b3a6939136b579962c0fdb3ef",
+    "semantic_hash": ""
+  },
+  "src/js/config/internet-required-tools.json": {
+    "mtime": 1788477429.3514347,
+    "ast_hash": "988570db16eb3ddb53e484deb8002710",
+    "semantic_hash": ""
+  },
+  "src/js/utils/internet-required.ts": {
+    "mtime": 1788477970.7867813,
+    "ast_hash": "5a4523a88bd0401cd9452f33553b433e",
+    "semantic_hash": ""
+  },
+  "src/tests/internet-required.test.ts": {
+    "mtime": 1788478563.2458057,
+    "ast_hash": "7a1613adfcd72b5e9c903d7b563e772c",
     "semantic_hash": ""
   }
 }

@@ -2,18 +2,18 @@
 
 ## Corpus Check
 
-- 653 files · ~1,143,338 words
+- 653 files · ~1,144,554 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 
-- 15321 nodes · 40813 edges · 379 communities (268 shown, 111 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 2779 edges (avg confidence: 0.61)
+- 15327 nodes · 40828 edges · 396 communities (268 shown, 128 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 2780 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
 
-- Built from commit: `a49294f8`
+- Built from commit: `93085d5d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -31,99 +31,99 @@
 - forEach
 - shadow
 - l
-- n
+- Nt
 - info
 - pdf.mjs
-- Ot
+- It
 - TextState
 - s
 - \_a
 - ConfigNamespace
 - AnnotationEditor
 - CanvasGraphics
-- .getObj
+- Ft
 - web/viewer.mjs
 - AnnotationEditorUIManager
-- getLibreOfficeConverter
+- pdf-workflow-page.ts
 - pdfjs-viewer/viewer.mjs
 - dependencies
 - Dict
 - assert
 - types/index.ts
 - WasmProvider
-- WorkerTransport
+- .resolve
 - TemplateNamespace
-- Comment
-- BaseWorkflowNode
-- AnnotationElement
+- .push
+- loadPdfDocument
+- .write
 - .checkAndRepair
-- r
+- n
 - HighlightEditor
 - app.js
 - .toString
 - .add
-- kxt
+- qt
 - PDFViewer
 - PDFViewer
 - pdf_viewer.mjs
 - pdf-multi-tool.ts
 - PDFViewer
 - XFAObject
-- t
-- password-prompt.ts
-- SignatureManager
+- digital-sign-pdf-page.ts
+- Stream
+- e
 - .push
 - PDFPageView
 - CanvasDependencyTracker
-- FreeTextEditor
+- DOMFilterFactory
 - bookmark-pdf.ts
 - P
-- Ct
+- TextMeasure
 - .close
-- .reset
+- .push
 - Binder
 - \_o
 - .add
 - email-to-pdf.ts
 - PDFLinkService
-- hocr-transform.ts
-- image-to-pdf-page.ts
-- .get
+- ocr.ts
+- PyMuPDFInstance
+- .render
 - PDFPageView
 - devDependencies
 - unreachable
 - form-creator.ts
 - view-metadata-page.ts
-- U
-- .push
-- PDFSidebar
+- main.ts
+- .get
+- .reset
 - shadingsurgery.js
-- i18n/i18n.ts
-- unreachable
+- edit-pdf-page.ts
+- InkDrawOutline
 - FontInfo
 - footer.html partial (full site footer with company/legal/social links)
 - Word64
 - extract-page-model.ts
 - StructTreeLayerBuilder
-- loadPdfWithPasswordPrompt
-- .push
+- delete-pages-page.ts
+- .toString
 - .parse
-- loadPyMuPDF
+- PDFPresentationMode
 - FontInfo
 - CommentSidebar
 - wn
 - .remove
-- wfError
+- scanner-effect-page.ts
 - PDFPageView
-- workflow/types.ts
-- PDFDocument
+- ColorConverters
+- sanitize.ts
 - edit-pdf-text-page.ts
 - TextLayerBuilder
 - DOMLocalization
 - PDFFindController
 - ge
-- StructTreeLayerBuilder
-- remove-blank-pages-page.ts
+- TextLayerBuilder
+- Event
 - PdfEngine
 - StampEditor
 - compare-render.ts
@@ -132,18 +132,18 @@
 - PDFThumbnailView
 - scripts
 - DOMLocalization
-- PDFDocumentProxy
+- shadow
 - tesseract-runtime.ts
 - PDFFindController
 - .#toRgb
 - PDFHistory
 - sign-pdf-page.ts
-- image-input-node.ts
+- form-creator-extraction.ts
 - PDFHistory
-- .remove
+- PopupElement
 - stagePointHandlers
 - compare-pdfs-page.ts
-- registry.ts
+- renderField
 - .toggle
 - ghostscript-loader.ts
 - L10n
@@ -151,46 +151,46 @@
 - validate-signature-pdf.ts
 - BentoPDF Chart Default Values
 - PDFFindController
-- PyMuPDFInstance
+- StructTreeLayerBuilder
 - L10n
 - PDFHistory
-- .setup
-- pdf-input-node.ts
-- PostScriptStack
-- shadow
-- .reset
+- CalRGBCS
+- PDFInputNode
+- ShortcutsManager
+- FontFaceObject
+- PDFDocumentProperties
 - PDFScriptingManager
 - warn
 - SandboxSupportBase
-- .compile
+- ExpressionBuilderVisitor
 - XMLParserBase
 - LocaleSetNamespace
 - compare.worker.ts
-- merge-pdf-page.ts
+- page-dimensions-page.ts
 - bookmark-pdf-type.ts
 - utils-types.ts
 - generate-i18n-pages.mjs
-- Range
-- SignatureEditor
-- add-watermark-page.ts
+- CommentManager
+- i18n/index.ts
+- PDFDocument
 - Tools Reference (index)
 - L10n
-- AnnotationLayer
+- markdown-editor.ts
 - compare/types.ts
 - CaretBrowsingMode
-- ColorPicker
+- Comment
 - PDFPageProxy
 - createNodeElement
 - WasmProviderManager
 - seo-audit.mjs
 - compare-page-models.ts
 - streamsplice.js
-- PDFThumbnailView
+- .reset
 - Compress PDF
-- timestamp-node.ts
+- form-filler-page.ts
 - Util
 - Util
-- split-pdf-page.ts
+- AnnotationLayerBuilder
 - Self-Hosting Guide
 - CBZ to PDF
 - duplex-collate-page.ts
@@ -210,16 +210,16 @@
 - PDFScriptingManager
 - generate-security-headers.mjs
 - add-stamps.ts
-- page-dimensions-page.ts
+- CommandManager
 - validate-signature-pdf-page.ts
 - cors-proxy-worker.js
-- overlay-node.ts
+- email-to-pdf.test.ts
 - check-translations.js
-- ColorConverters
+- CanvasExtraState
 - BasePreferences
 - Word to PDF
 - PDF to JPG
-- PDFDocumentProperties
+- PasswordPrompt
 - XhtmlNamespace
 - PyMuPDFDocument
 - pkc-tool-analytics.ts
@@ -227,7 +227,7 @@
 - Sign PDF
 - PDF Editor Tool Grid (25+ tools)
 - AltTextManager
-- node
+- TextAccessibilityManager
 - ConnectionSetNamespace
 - SingleIntersector
 - sw.js
@@ -236,9 +236,9 @@
 - vite.config.ts
 - Common Issue: SharedArrayBuffer Unavailable
 - Encrypt PDF
-- .cancel
+- shortcuts.ts
 - generate-offline-manifest.mjs
-- font-loader.ts
+- handlePdfUpload
 - PyMuPDFPage
 - freetext-font-embed.ts
 - bentopdf-pkc Cloudflare Worker
@@ -250,7 +250,7 @@
 - PDF Workflow Builder
 - Homepage (index.html)
 - package.json
-- tesseract-language-availability.ts
+- AnnotationBorderStyle
 - .reason
 - NullOptimizer
 - edit-attachments.worker.d.ts
@@ -259,7 +259,7 @@
 - offline-mode.ts
 - wasm-proxy-worker.js
 - AWS CloudFront Distribution
-- ocr.ts
+- Commands
 - Licensing Page
 - AnnotationLayerBuilder
 - TextAccessibilityManager
@@ -274,18 +274,18 @@
 - Digital Signature CORS Proxy
 - Engine
 - GrabToPan
-- overlay-pdf-page.ts
+- AppOptions
 - GrabToPan
 - 2026-09-04 — Upstream sync: 2026-06-27 → 2026-09-03 (upstream v2.8.8)
-- remove-annotations-page.ts
-- markdown-to-pdf-node.ts
-- SvgToPdfNode
+- pdf-tools.ts
+- hasTransparentBackground
+- Ui
 - internet-required.ts
-- cbz-to-pdf-node.ts
+- table-of-contents-type.ts
 - LibreOfficeConverter
-- digital-sign-node.ts
-- form-creator-extraction.ts
-- mobi-to-pdf-node.ts
+- validate-signature-type.ts
+- form-creator-extraction.test.ts
+- tiff-utils.ts
 - overrides
 - security-patterns-check.mjs
 - PDFWorkerStreamReader
@@ -294,14 +294,14 @@
 - Sandbox
 - build.js
 - include-docs-in-dist.js
-- PDFNetworkStream
+- bentopdf-pdfium
 - map-upsert-polyfill.ts
 - Duplex Collate
 - WorkerTask
 - xml-to-pdf.test.ts
 - Text to PDF
-- XfaLayerBuilder
-- EvalState
+- blob-stream
+- cropperjs
 - $root
 - merge.worker.d.ts
 - init
@@ -313,7 +313,7 @@
 - DrawLayerBuilder
 - AES128Cipher
 - CFFIndex
-- SignatureWidgetAnnotation
+- @fontsource/cedarville-cursive
 - DeviceRgbCS
 - LocalPdfManager
 - DrawLayerBuilder
@@ -322,9 +322,10 @@
 - internet-required.test.ts
 - Add Watermark Tool
 - ODT to PDF
-- fileHandler.ts
+- canvasEditor.ts
+- @fontsource/kalam
 - DownloadManager
-- ContentObject
+- @fontsource/lato
 - GlobalColorSpaceCache
 - GenericScripting
 - DeviceGrayCS
@@ -336,17 +337,22 @@
 - table-of-contents.worker.d.ts
 - update-partials.js
 - verify-sw-guard.mjs
+- i18next-browser-languagedetector
 - rotate-pdf-page.test.ts
 - Create PDF Form
 - JSON to PDF
 - View Metadata
-- applyTagSurgery
+- i18next-http-backend
 - DownloadManager
 - ArithmeticDecoder
 - pdf-worker-polyfill.test.ts
-- loadPdfDocument
+- @kenjiuno/msgreader
+- lucide
+- add-attachments.worker.js
 - pwa-nav.ts
 - CLAUDE.md
+- markdown-it-abbr
+- markdown-it-emoji
 - Check existing API before rebuilding WASM or forking libraries
 - DISABLE_TOOLS / config.json Tool Disabling
 - Adjust Colors Tool
@@ -356,12 +362,23 @@
 - cleanTitle
 - sw-register.ts
 - full-width.ts
+- markdown-it-sup
+- node-forge
 - markdown-mermaid.test.ts
 - globals.d.ts
 - Never bundle unrelated features into one patch
+- pdf-lib
+- rete-area-plugin
 - PowerPoint to PDF
+- @retejs/lit-plugin
 - entrypoint.sh
 - PKC PDF Tools CodeQL Config
+- terser
+- @types/markdown-it
+- utif
+- wasm-vips
+- xlsx
+- zgapdfsigner
 - PDF Security Hub Page
 - vite-plugin-handlebars.d.ts
 - Never leave any in a bug fix when library types can be narrowed
@@ -455,27 +472,27 @@
 - **Tool pages sharing the shared footer partial layout** — src_partials_footer, src_pages_rotate_pdf, src_pages_sanitize_pdf, src_pages_scanner_effect, src_pages_sign_pdf, src_pages_split_pdf, src_pages_svg_to_pdf, src_pages_table_of_contents, src_pages_text_color, src_pages_tiff_to_pdf, src_pages_timestamp_pdf, src_pages_txt_to_pdf, src_pages_validate_signature_pdf, src_pages_view_metadata, src_pages_wasm_settings, src_pages_webp_to_pdf, src_pages_xml_to_pdf, src_pages_xps_to_pdf [EXTRACTED 1.00]
 - **Tool pages that cross-link to Rotate PDF as a related tool** — src_pages_rotate_pdf, src_pages_sanitize_pdf, src_pages_scanner_effect, src_pages_sign_pdf, src_pages_svg_to_pdf, src_pages_table_of_contents, src_pages_text_color, src_pages_tiff_to_pdf, src_pages_txt_to_pdf, src_pages_webp_to_pdf, src_pages_xml_to_pdf, src_pages_xps_to_pdf [INFERRED 0.85]
 
-## Communities (379 total, 111 thin omitted)
+## Communities (396 total, 128 thin omitted)
 
 ### Community 0 - "pdf.worker.mjs"
 
 Cohesion: 0.00
-Nodes (544): AbortException, $acceptWhitespace, Acrobat, Acrobat7, ADBE_JSConsole, ADBE_JSDebugger, $addHTML, AddSilentPrint (+536 more)
+Nodes (542): AbortException, $acceptWhitespace, Acrobat, Acrobat7, ADBE_JSConsole, ADBE_JSDebugger, $addHTML, AddSilentPrint (+534 more)
 
 ### Community 1 - "$"
 
 Cohesion: 0.01
-Nodes (361): lOt(), wOt(), $, actualCellCount(), actualColumnCount(), actualRowCount(), add(), addCell() (+353 more)
+Nodes (330): lOt(), wOt(), $, actualCellCount(), actualColumnCount(), actualRowCount(), add(), addCell() (+322 more)
 
 ### Community 2 - "K"
 
 Cohesion: 0.02
-Nodes (31): \_applyShadow(), cloneObject(), closed(), \_drag(), drawRoundedRectPath(), ei(), \_endDragAfter(), \_endDragBefore() (+23 more)
+Nodes (21): addColumn(), cacheState(), cloneObject(), Dh(), \_drag(), \_endDragAfter(), \_endDragBefore(), f() (+13 more)
 
 ### Community 3 - "getStringOption"
 
 Cohesion: 0.01
-Nodes (130): AppearanceFilter, applyAssist(), Arc, Area, ariaLabel(), Barcode, BatchOutput, Bind (+122 more)
+Nodes (143): AppearanceFilter, applyAssist(), Arc, Area, ariaLabel(), Barcode, BatchOutput, Bind (+135 more)
 
 ### Community 4 - "coherentpdf.global.d.ts"
 
@@ -485,107 +502,107 @@ Nodes (11): CoherentPdf, CpdfEncryptionMethod, CpdfFont, CpdfJustification, Cpdf
 ### Community 5 - ".push"
 
 Cohesion: 0.02
-Nodes (63): getPdfFilenameFromUrl(), addCachedImageOps(), addChildren(), adjustMapping(), Annotation, AnnotationFactory, buildHuffmanTable(), ButtonWidgetAnnotation (+55 more)
+Nodes (54): getPdfFilenameFromUrl(), addCachedImageOps(), addChildren(), adjustMapping(), Annotation, AnnotationFactory, Catalog, ChoiceWidgetAnnotation (+46 more)
 
 ### Community 6 - "r"
 
 Cohesion: 0.02
-Nodes (230): Aa(), ac(), Ai(), al(), Ao(), as(), Ay(), ba() (+222 more)
+Nodes (216): Aa(), ac(), Ai(), al(), Ao(), as(), Ay(), ba() (+208 more)
 
 ### Community 7 - "showAlert"
 
-Cohesion: 0.03
-Nodes (179): RFC-2822, addBlankPages(), handleFileSelect(), pageState, resetState(), updateUI(), mixPages(), changeBackgroundColor() (+171 more)
+Cohesion: 0.02
+Nodes (320): RFC-2822, activeImageUrls, handleMultiFileUpload(), handleSinglePdfUpload(), rotationState, setupFileInputHandler(), t(), addBlankPages() (+312 more)
 
 ### Community 8 - "coherentpdf.browser.min.js"
 
 Cohesion: 0.02
-Nodes (219): \_7t(), \_9t(), a4(), a6(), a7t(), a9t(), aIt(), am() (+211 more)
+Nodes (207): \_7t(), a4(), a6(), a7t(), a9t(), a_t(), am(), aMt() (+199 more)
 
 ### Community 9 - "forEach"
 
-Cohesion: 0.03
-Nodes (47): addPostProcessor(), addStyleModel(), addWorksheet(), ae(), b(), close(), columns(), e() (+39 more)
+Cohesion: 0.02
+Nodes (56): addComponentsGetterSetter(), addPostProcessor(), addRow(), addRows(), addStyleModel(), addWorksheet(), ae(), b() (+48 more)
 
 ### Community 10 - "shadow"
 
-Cohesion: 0.02
-Nodes (29): AppearanceStreamEvaluator, arrayBuffersToBytes(), Catalog, CategoryCache, CFFPrivateDict, CFFTopDict, ChunkedStreamManager, clearGlobalCaches() (+21 more)
+Cohesion: 0.04
+Nodes (14): AppearanceStreamEvaluator, CFFPrivateDict, CFFTopDict, ColorSpaceUtils, DecodingContext, EquateRange, FeatureTest, FileSpec (+6 more)
 
 ### Community 11 - "l"
 
 Cohesion: 0.02
-Nodes (70): k(), tm(), Ah(), At(), aV(), be(), bH(), bv() (+62 more)
+Nodes (82): k(), tm(), Ah(), At(), aV(), bc(), be(), bH() (+74 more)
 
-### Community 12 - "n"
+### Community 12 - "Nt"
 
 Cohesion: 0.06
-Nodes (200): \_6(), a(), agt(), aLt(), ANt(), aUt(), azt(), b() (+192 more)
+Nodes (174): \_6(), agt(), ajt(), aLt(), ANt(), aUt(), azt(), b7t() (+166 more)
 
 ### Community 13 - "info"
 
-Cohesion: 0.03
-Nodes (37): Ascii85Stream, AsciiHexStream, bytesToString(), CCITTFaxDecoder, CCITTFaxStream, CFFHeader, CompositeGlyph, DecodeStream (+29 more)
+Cohesion: 0.02
+Nodes (70): addHex(), Ascii85Stream, AsciiHexStream, BinaryCMapReader, BinaryCMapStream, BUILT_IN_CMAPS, bytesToString(), CCITTFaxDecoder (+62 more)
 
 ### Community 14 - "pdf.mjs"
 
 Cohesion: 0.01
-Nodes (110): AbortException, AnnotationActionEventType, AnnotationBorderStyleType, AnnotationEditorParamsType, AnnotationEditorType, AnnotationFieldFlag, AnnotationFlag, AnnotationMode (+102 more)
+Nodes (106): AbortException, AnnotationActionEventType, AnnotationBorderStyleType, AnnotationEditorParamsType, AnnotationEditorType, AnnotationFieldFlag, AnnotationFlag, AnnotationMode (+98 more)
 
-### Community 15 - "Ot"
+### Community 15 - "It"
 
 Cohesion: 0.06
-Nodes (169): $8t(), aCt(), aDt(), aEt(), aFt(), aRt(), awt(), bDt() (+161 more)
+Nodes (149): $8t(), aCt(), aDt(), aFt(), aRt(), awt(), bDt(), bEt() (+141 more)
 
 ### Community 17 - "s"
 
 Cohesion: 0.03
-Nodes (16): Bz(), createCanvasElement(), createNewModel(), getAnchorRect(), getDefaultRect(), h(), horizontal(), isInternalLink() (+8 more)
+Nodes (31): Bg(), Bz(), convertPasswordToHash(), createCanvasElement(), ei(), \_flush(), getAnchorRect(), getDefaultRect() (+23 more)
 
 ### Community 18 - "\_a"
 
-Cohesion: 0.03
-Nodes (12): \_a(), advancePastLine(), alignment(), \_applyStyle(), border(), font(), isEmptyRow(), isTokenComment() (+4 more)
+Cohesion: 0.02
+Nodes (28): \_a(), alignment(), \_applyShadow(), \_applyStyle(), border(), closed(), drawRoundedRectPath(), fill() (+20 more)
+
+### Community 20 - "AnnotationEditor"
+
+Cohesion: 0.01
+Nodes (5): AnnotationEditor, FakeEditor, FreeTextEditor, MathClamp(), parseHexColorToRgbArray()
 
 ### Community 21 - "CanvasGraphics"
 
 Cohesion: 0.03
 Nodes (17): applyBoundingBox(), CanvasGraphics, CanvasNestedDependencyTracker, copyCtxState(), drawImageAtIntegerCoords(), getCurrentTransform(), getCurrentTransformInverse(), getImageSmoothingEnabled() (+9 more)
 
-### Community 22 - ".getObj"
+### Community 22 - "Ft"
 
-Cohesion: 0.04
-Nodes (32): addHex(), BinaryCMapReader, BinaryCMapStream, BUILT_IN_CMAPS, CMapFactory, Cmd, createBuiltInCMap(), decryptAscii() (+24 more)
+Cohesion: 0.07
+Nodes (82): aIt(), aTt(), b_t(), bIt(), bTt(), bwt(), cDt(), cIt() (+74 more)
 
 ### Community 23 - "web/viewer.mjs"
 
 Cohesion: 0.02
 Nodes (77): animationStarted, AppConstants, cache, CachedIterable, CHARACTERS_TO_NORMALIZE, CharacterType, createSanitizedElement(), createTextNodeFromTextContent() (+69 more)
 
-### Community 24 - "AnnotationEditorUIManager"
+### Community 25 - "pdf-workflow-page.ts"
 
-Cohesion: 0.02
-Nodes (4): AltText, AnnotationEditorLayer, AnnotationEditorUIManager, CommandManager
-
-### Community 25 - "getLibreOfficeConverter"
-
-Cohesion: 0.03
-Nodes (13): getLibreOfficeConverter(), ExcelToPdfNode, OdgToPdfNode, PagesToPdfNode, PdfToImagesNode, PowerPointToPdfNode, PubToPdfNode, VsdToPdfNode (+5 more)
+Cohesion: 0.01
+Nodes (78): addNodeToCanvas(), buildFileList(), buildToolbox(), deleteNodeById(), deleteSelectedNode(), formatLabel(), getCanvasCenter(), initializePage() (+70 more)
 
 ### Community 26 - "pdfjs-viewer/viewer.mjs"
 
 Cohesion: 0.02
-Nodes (94): animationStarted, AppConstants, AppOptions, cache, CachedIterable, calculateLinkPosition(), CHARACTERS_TO_NORMALIZE, CharacterType (+86 more)
+Nodes (86): animationStarted, AppConstants, Autolinker, backtrackBeforeAllVisibleElements(), cache, CachedIterable, calculateLinkPosition(), CHARACTERS_TO_NORMALIZE (+78 more)
 
 ### Community 27 - "dependencies"
 
-Cohesion: 0.01
-Nodes (137): archiver, bentopdf-pdfium, bentopdf-viewer, blob-stream, bwip-js, cropperjs, diff, fast-xml-parser (+129 more)
+Cohesion: 0.02
+Nodes (93): archiver, bentopdf-viewer, bwip-js, diff, fast-xml-parser, @fontsource/dancing-script, @fontsource/dm-sans, @fontsource/great-vibes (+85 more)
 
 ### Community 28 - "Dict"
 
 Cohesion: 0.03
-Nodes (35): AnnotationBorderStyle, ChoiceWidgetAnnotation, codePointIter(), createDefaultAppearance(), Dict, ErrorFont, escapePDFName(), escapeString() (+27 more)
+Nodes (46): ButtonWidgetAnnotation, codePointIter(), computeIDs(), computeMD5(), createDefaultAppearance(), DatasetsNamespace, Dict, ErrorFont (+38 more)
 
 ### Community 29 - "assert"
 
@@ -594,63 +611,68 @@ Nodes (34): assert(), ContextCache, convertBlackAndWhiteToRGBA(), convertRGBToRG
 
 ### Community 30 - "types/index.ts"
 
-Cohesion: 0.02
-Nodes (73): changePermissions(), handleFileSelect(), pageState, resetState(), updateUI(), convert(), files, getExtension() (+65 more)
+Cohesion: 0.03
+Nodes (59): handleFileSelect(), pageState, resetState(), updateUI(), AddBlankPageState, AlternateMergeState, AddAttachmentState, BackgroundColorState (+51 more)
 
 ### Community 31 - "WasmProvider"
 
-Cohesion: 0.03
-Nodes (123): addAttachments(), handleAttachmentSelect(), handleFileSelect(), pageState, resetState(), updateAttachmentList(), updateUI(), worker (+115 more)
-
-### Community 32 - "WorkerTransport"
-
 Cohesion: 0.02
-Nodes (22): BaseWasmFactory, createFetchOptions(), createResponseError(), extractFilenameFromHeader(), getArrayBuffer(), getFilenameFromContentDispositionHeader(), getResponseOrigin(), isPdfFile() (+14 more)
+Nodes (149): initI18n(), addAttachments(), handleAttachmentSelect(), handleFileSelect(), pageState, resetState(), updateAttachmentList(), updateUI() (+141 more)
 
-### Community 35 - "BaseWorkflowNode"
+### Community 32 - ".resolve"
 
-Cohesion: 0.05
-Nodes (40): loadGhostscript(), loadScript(), AddBlankPageNode, BackgroundColorNode, BaseWorkflowNode, BookletNode, paperSizeLookup, CombineSinglePageNode (+32 more)
+Cohesion: 0.03
+Nodes (21): BaseWasmFactory, createFetchOptions(), createResponseError(), extractFilenameFromHeader(), getArrayBuffer(), getFilenameFromContentDispositionHeader(), getResponseOrigin(), isPdfFile() (+13 more)
 
-### Community 36 - "AnnotationElement"
+### Community 34 - ".push"
 
-Cohesion: 0.04
-Nodes (11): AnnotationElement, AnnotationStorage, CheckboxWidgetAnnotationElement, ChoiceWidgetAnnotationElement, EditorAnnotationElement, GetElementsByNameSet, PopupAnnotationElement, RadioButtonWidgetAnnotationElement (+3 more)
+Cohesion: 0.08
+Nodes (9): CachedAsyncIterable, CachedSyncIterable, createBundle(), EventBus, FluentBundle, genericl10n_GenericL10n, keysFromBundle(), PDFPageViewBuffer (+1 more)
+
+### Community 35 - "loadPdfDocument"
+
+Cohesion: 0.03
+Nodes (96): jszip, jszip, InterleaveFile, interleavePdfs(), CONDENSE_PRESETS, CondenseCustomSettings, performCondenseCompression(), performPhotonCompression() (+88 more)
+
+### Community 36 - ".write"
+
+Cohesion: 0.08
+Nodes (6): CFFHeader, CompositeGlyph, GlyfTable, Glyph, GlyphHeader, SimpleGlyph
 
 ### Community 37 - ".checkAndRepair"
 
 Cohesion: 0.03
-Nodes (54): adjustTrueTypeToUnicode(), adjustType1ToUnicode(), adjustWidths(), amendFallbackToUnicode(), applyStandardFontGlyphMap(), buildToFontChar(), CFF, CFFFont (+46 more)
+Nodes (52): adjustTrueTypeToUnicode(), adjustType1ToUnicode(), adjustWidths(), amendFallbackToUnicode(), applyStandardFontGlyphMap(), buildToFontChar(), CFF, CFFFont (+44 more)
 
-### Community 38 - "r"
+### Community 38 - "n"
 
-Cohesion: 0.06
-Nodes (60): ajt(), AOt(), bCt(), bm(), cgt(), ckt(), cxt(), d6() (+52 more)
+Cohesion: 0.10
+Nodes (108): \_9t(), a(), AOt(), b(), b9t(), bv(), ckt(), cOt() (+100 more)
 
 ### Community 39 - "HighlightEditor"
 
-Cohesion: 0.03
-Nodes (9): ContourDrawOutline, DrawingEditor, DrawingOptions, DrawnSignatureOptions, FreeHighlightOutline, HighlightEditor, InkDrawingOptions, InkEditor (+1 more)
+Cohesion: 0.02
+Nodes (15): BaseShadingPattern, BaseSVGFactory, ContourDrawOutline, DrawingEditor, DrawingOptions, DrawLayer, DrawnSignatureOptions, FreeHighlightOutline (+7 more)
 
 ### Community 40 - "app.js"
 
 Cohesion: 0.05
-Nodes (89): adoptBlockFonts(), applyAtomicSpanStyle(), applyDocFonts(), applyDsToRun(), applyLockedGeom(), applySpanStyle(), blockMembers(), buildAtomicSnips() (+81 more)
+Nodes (94): adoptBlockFonts(), applyAtomicSpanStyle(), applyDocFonts(), applyDsToRun(), applyLockedGeom(), applySpanStyle(), blockMembers(), buildAtomicSnips() (+86 more)
 
 ### Community 41 - ".toString"
 
-Cohesion: 0.03
-Nodes (18): BooleanElement, DateElement, DateTime, Decimal, encodeToXmlString(), Float, Integer, MurmurHash3_64 (+10 more)
+Cohesion: 0.02
+Nodes (18): ColorConverters, DateElement, DateTime, Decimal, encodeToXmlString(), Float, Integer, makeColorComp() (+10 more)
 
 ### Community 42 - ".add"
 
-Cohesion: 0.04
-Nodes (16): CFFCompiler, CFFDict, CFFFDSelect, CFFOffsetTracker, CFFParser, checkStyle(), Commands, CompiledFont (+8 more)
+Cohesion: 0.07
+Nodes (8): CFFCompiler, CFFDict, CFFOffsetTracker, CFFParser, GlobalImageCache, parseIndex(), StringStream, stringToBytes()
 
-### Community 43 - "kxt"
+### Community 43 - "qt"
 
-Cohesion: 0.08
-Nodes (77): \_4(), a_t(), aAt(), akt(), aPt(), \_At(), axt(), b_t() (+69 more)
+Cohesion: 0.09
+Nodes (74): \_4(), aAt(), aEt(), akt(), aPt(), \_At(), axt(), bAt() (+66 more)
 
 ### Community 44 - "PDFViewer"
 
@@ -660,57 +682,62 @@ Nodes (11): apiPageLayoutToViewerModes(), getActiveOrFocusedElement(), isPortrai
 ### Community 45 - "PDFViewer"
 
 Cohesion: 0.04
-Nodes (8): isPortraitOrientation(), isValidAnnotationEditorMode(), isValidRotation(), isValidScrollMode(), isValidSpreadMode(), PDFSinglePageViewer, PDFViewer, watchScroll()
+Nodes (9): apiPageLayoutToViewerModes(), isPortraitOrientation(), isValidAnnotationEditorMode(), isValidRotation(), isValidScrollMode(), isValidSpreadMode(), PDFSinglePageViewer, PDFViewer (+1 more)
 
 ### Community 46 - "pdf_viewer.mjs"
 
 Cohesion: 0.03
-Nodes (65): animationStarted, approximateFraction(), backtrackBeforeAllVisibleElements(), cache, CachedIterable, calculateLinkPosition(), CHARACTERS_TO_NORMALIZE, CharacterType (+57 more)
+Nodes (65): animationStarted, backtrackBeforeAllVisibleElements(), cache, CachedIterable, calcRound, calculateLinkPosition(), CHARACTERS_TO_NORMALIZE, CharacterType (+57 more)
 
 ### Community 47 - "pdf-multi-tool.ts"
 
-Cohesion: 0.12
-Nodes (48): Event, addBlankPage(), allPages, bulkDelete(), bulkDuplicate(), bulkRotate(), bulkSplit(), createPageElement() (+40 more)
+Cohesion: 0.07
+Nodes (71): addBlankPage(), allPages, bulkDelete(), bulkDuplicate(), bulkRotate(), bulkSplit(), createPageElement(), currentPdfDocs (+63 more)
 
 ### Community 48 - "PDFViewer"
 
 Cohesion: 0.05
-Nodes (12): apiPageLayoutToViewerModes(), isPortraitOrientation(), isValidAnnotationEditorMode(), isValidRotation(), isValidScrollMode(), isValidSpreadMode(), PDFViewer, removeNullCharacters() (+4 more)
+Nodes (11): apiPageLayoutToViewerModes(), isPortraitOrientation(), isValidAnnotationEditorMode(), isValidRotation(), isValidScrollMode(), isValidSpreadMode(), PDFViewer, webViewerNextPage() (+3 more)
 
-### Community 50 - "t"
+### Community 49 - "XFAObject"
 
-Cohesion: 0.07
-Nodes (68): isValidTsaRequestUrl(), t(), buildCorsProxyUrl(), createCorsAwareFetch(), generateProxySignature(), getCertificateInfo(), getElement(), handleCertFile() (+60 more)
+Cohesion: 0.03
+Nodes (12): buildAddOperation(), Builder, buildHuffmanTable(), buildMinOperation(), buildMulOperation(), buildSubOperation(), FontSelector, PostScriptCompiler (+4 more)
 
-### Community 51 - "password-prompt.ts"
+### Community 50 - "digital-sign-pdf-page.ts"
 
 Cohesion: 0.05
-Nodes (85): jszip, jszip, handleFileSelect(), pageState, resetState(), updateUI(), handleFileSelect(), linearizePdf() (+77 more)
+Nodes (61): RFC-3161, ALLOWED_TSA_HOSTS, isAllowedTsaUrl(), isValidTsaRequestUrl(), TIMESTAMP_TSA_PRESETS, TimestampTsaPreset, buildCorsProxyUrl(), createCorsAwareFetch() (+53 more)
 
-### Community 52 - "SignatureManager"
+### Community 51 - "Stream"
 
-Cohesion: 0.06
-Nodes (8): DOMSVGFactory, SupportedImageMimeTypes, abort(), AltTextManager, CommentDialog, CommentPopup, EditDescriptionDialog, SignatureManager
+Cohesion: 0.13
+Nodes (4): arrayBuffersToBytes(), ChunkedStreamManager, OpenJPEG(), Stream
+
+### Community 52 - "e"
+
+Cohesion: 0.05
+Nodes (10): DOMSVGFactory, e(), SupportedImageMimeTypes, abort(), AltTextManager, CommentDialog, CommentPopup, EditDescriptionDialog (+2 more)
 
 ### Community 53 - ".push"
 
-Cohesion: 0.07
-Nodes (10): CachedAsyncIterable, CachedSyncIterable, createBundle(), dispatchEvent(), EventBus, genericl10n_GenericL10n, GenericScripting, PDFPageViewBuffer (+2 more)
+Cohesion: 0.06
+Nodes (21): CachedAsyncIterable, CachedSyncIterable, dispatchEvent(), docProperties(), EventBus, FluentNumber, GenericScripting, getArguments() (+13 more)
 
 ### Community 54 - "PDFPageView"
 
 Cohesion: 0.05
-Nodes (10): approximateFraction(), backtrackBeforeAllVisibleElements(), BasePDFPageView, calcRound, floorToDivide(), getVisibleElements(), PDFPageDetailView, PDFPageView (+2 more)
+Nodes (8): approximateFraction(), BasePDFPageView, calcRound, floorToDivide(), PDFPageDetailView, PDFPageView, PDFThumbnailViewer, watchScroll()
 
 ### Community 55 - "CanvasDependencyTracker"
 
 Cohesion: 0.07
 Nodes (3): CanvasDependencyTracker, ensureDebugMetadata(), expandBBox()
 
-### Community 56 - "FreeTextEditor"
+### Community 56 - "DOMFilterFactory"
 
-Cohesion: 0.05
-Nodes (4): FakeEditor, FreeTextEditor, KeyboardManager, parseHexColorToRgbArray()
+Cohesion: 0.19
+Nodes (3): DOMFilterFactory, getRGB(), isDataScheme()
 
 ### Community 57 - "bookmark-pdf.ts"
 
@@ -720,22 +747,22 @@ Nodes (63): addTopLevelBtn, appEl, autoExtractCheckbox, backToToolsBtn, batchCol
 ### Community 58 - "P"
 
 Cohesion: 0.09
-Nodes (81): addImageFromFile(), adjustListLevel(), alignSelection(), applyPathStroke(), arrangeSel(), cascadeParagraphGrowth(), changeFormat(), collectBlockFonts() (+73 more)
+Nodes (78): addImageFromFile(), adjustListLevel(), alignSelection(), applyPathStroke(), arrangeSel(), cascadeParagraphGrowth(), changeFormat(), collectBlockFonts() (+70 more)
 
-### Community 59 - "Ct"
+### Community 59 - "TextMeasure"
 
-Cohesion: 0.09
-Nodes (66): aMt(), aSt(), b6(), BMt(), c_t(), cMt(), CSt(), Ct() (+58 more)
+Cohesion: 0.11
+Nodes (7): checkStyle(), I, layoutText(), NoWhites, TextMeasure, VALID_STYLES, XhtmlObject
 
 ### Community 60 - ".close"
 
 Cohesion: 0.04
-Nodes (18): abort(), AnnotationEditorParams, BaseExternalServices, dispatchEvent(), ensureOverlay(), GenericScripting, getActiveOrFocusedElement(), OverlayManager (+10 more)
+Nodes (17): abort(), AnnotationEditorParams, BaseExternalServices, dispatchEvent(), ensureOverlay(), GenericScripting, getActiveOrFocusedElement(), OverlayManager (+9 more)
 
-### Community 61 - ".reset"
+### Community 61 - ".push"
 
 Cohesion: 0.05
-Nodes (7): AppOptions, docProperties(), PDFAttachmentViewer, PDFLayerViewer, PDFLinkService, PDFOutlineViewer, webViewerHashchange()
+Nodes (9): CachedAsyncIterable, CachedSyncIterable, EventBus, PDFLayerViewer, PDFLinkService, PDFOutlineViewer, PDFPageViewBuffer, removeNullCharacters() (+1 more)
 
 ### Community 62 - "Binder"
 
@@ -744,38 +771,43 @@ Nodes (14): Binder, createText(), DatasetReader, decodeString(), isWhitespaceStr
 
 ### Community 63 - "\_o"
 
-Cohesion: 0.05
-Nodes (3): dimensions(), \_o(), throw()
+Cohesion: 0.04
+Nodes (12): decode(), decodeAddress(), deepMerge(), dimensions(), \_explore(), fillFormula(), getRanges(), model() (+4 more)
 
 ### Community 64 - ".add"
 
 Cohesion: 0.02
-Nodes (19): AnnotationElementFactory, BaseSVGFactory, bindEvents(), CircleAnnotationElement, EditorToolbar, FileAttachmentAnnotationElement, getColorValues(), getRGB() (+11 more)
+Nodes (30): AnnotationElement, bindEvents(), CaretAnnotationElement, CircleAnnotationElement, CSSConstants, EditorAnnotationElement, EditorToolbar, FileAttachmentAnnotationElement (+22 more)
 
 ### Community 65 - "email-to-pdf.ts"
 
-Cohesion: 0.11
-Nodes (19): postal-mime, postal-mime, formatAddress(), MsgReaderCtor, parseEmailFile(), parseEmlFile(), parseMsgFile(), processInlineImages() (+11 more)
+Cohesion: 0.12
+Nodes (24): formatAddress(), MsgReaderCtor, parseEmailFile(), parseEmlFile(), parseMsgFile(), processInlineImages(), renderEmailToHtml(), downloadFile() (+16 more)
 
 ### Community 66 - "PDFLinkService"
 
-Cohesion: 0.06
-Nodes (5): BaseTreeViewer, docProperties(), PDFLayerViewer, PDFLinkService, PDFOutlineViewer
+Cohesion: 0.07
+Nodes (4): BaseTreeViewer, PDFLayerViewer, PDFLinkService, PDFOutlineViewer
 
-### Community 67 - "hocr-transform.ts"
+### Community 67 - "ocr.ts"
 
-Cohesion: 0.18
-Nodes (21): Baseline, BBox, OcrLine, OcrPage, OcrState, OcrWord, WordTransform, calculateBoundingBox() (+13 more)
+Cohesion: 0.07
+Nodes (46): fontFamilyToUrl, getFontAssetFileName(), getFontUrlForFamily(), languageToFontFamily, Baseline, BBox, OcrLine, OcrPage (+38 more)
 
-### Community 68 - "image-to-pdf-page.ts"
+### Community 68 - "PyMuPDFInstance"
+
+Cohesion: 0.03
+Nodes (78): convertToPdf(), ensurePyMuPDF(), files, handleFiles(), handleFileUpload(), initializePage(), resetState(), updateUI() (+70 more)
+
+### Community 69 - ".render"
 
 Cohesion: 0.08
-Nodes (52): convertToPdf(), ensurePyMuPDF(), files, handleFiles(), handleFileUpload(), initializePage(), resetState(), updateUI() (+44 more)
+Nodes (6): AnnotationElementFactory, AnnotationLayer, HighlightOutliner, IdManager, setLayerDimensions(), TextLayer
 
 ### Community 70 - "PDFPageView"
 
 Cohesion: 0.07
-Nodes (5): BasePDFPageView, calcRound, floorToDivide(), PDFPageDetailView, PDFPageView
+Nodes (5): approximateFraction(), BasePDFPageView, floorToDivide(), PDFPageDetailView, PDFPageView
 
 ### Community 71 - "devDependencies"
 
@@ -785,47 +817,47 @@ Nodes (51): eslint, eslint-config-prettier, @eslint/js, eslint-plugin-no-unsanit
 ### Community 72 - "unreachable"
 
 Cohesion: 0.04
-Nodes (11): AESBaseCipher, AstNode, BaseLocalCache, BasePdfManager, BaseShading, BaseStream, ColorSpace, Pattern (+3 more)
+Nodes (13): AESBaseCipher, AstNode, BaseLocalCache, BasePdfManager, BaseShading, BaseStream, ColorSpace, CompiledFont (+5 more)
 
 ### Community 73 - "form-creator.ts"
 
 Cohesion: 0.04
-Nodes (71): RFC-3986, addPageBtn, applyFieldContainerState(), backToToolsBtn, backToToolsBtns, blankPdfBtn, canvas, clearTransparentFieldWidgetBackgrounds() (+63 more)
+Nodes (45): RFC-3986, addPageBtn, backToToolsBtn, backToToolsBtns, blankPdfBtn, canvas, confirmBlankBtn, customDimensionsInput (+37 more)
 
 ### Community 74 - "view-metadata-page.ts"
 
 Cohesion: 0.21
 Nodes (14): appendXmpNodes(), copyMetadataAsJson(), createListItem(), createSection(), createXmpHeaderItem(), createXmpListItem(), displayMetadata(), handleFileSelect() (+6 more)
 
-### Community 75 - "U"
+### Community 75 - "main.ts"
 
-Cohesion: 0.06
-Nodes (7): addComponentsGetterSetter(), bd(), constructor(), d(), hash(), U(), z()
+Cohesion: 0.19
+Nodes (16): applyTranslations(), init(), AppConfig, dom, hideAlert(), disabledToolsSet, editorDisabledCategories, getToolIdFromPath() (+8 more)
 
-### Community 76 - ".push"
+### Community 76 - ".get"
 
-Cohesion: 0.06
-Nodes (22): CachedAsyncIterable, CachedSyncIterable, DATETIME(), EventBus, FluentBundle, FluentDateTime, FluentNumber, FluentType (+14 more)
+Cohesion: 0.10
+Nodes (19): AppOptions, DATETIME(), FluentDateTime, FluentNumber, FluentType, getArguments(), getDefault(), getMemoizerForLocale() (+11 more)
 
-### Community 77 - "PDFSidebar"
+### Community 77 - ".reset"
 
-Cohesion: 0.06
-Nodes (6): OverlayManager, PasswordPrompt, PDFCursorTools, PDFFindBar, PDFSidebar, toggleExpandedBtn()
+Cohesion: 0.04
+Nodes (11): AnnotationEditorParams, ensureOverlay(), FirefoxEventBus, OverlayManager, PDFCursorTools, PDFFindBar, PDFSidebar, SecondaryToolbar (+3 more)
 
 ### Community 78 - "shadingsurgery.js"
 
 Cohesion: 0.10
-Nodes (44): EC_BUILD, OBJ, OBJECT_MUTATORS, sfntCoverMemo, sfntCovers(), sfntCoversUncached(), createEngineModule(), ENGINE_BUILD (+36 more)
+Nodes (45): EC_BUILD, OBJ, OBJECT_MUTATORS, scriptFallbackFamilies(), sfntCoverMemo, sfntCovers(), sfntCoversUncached(), createEngineModule() (+37 more)
 
-### Community 79 - "i18n/i18n.ts"
+### Community 79 - "edit-pdf-page.ts"
+
+Cohesion: 0.15
+Nodes (19): CHARSET, editorFontFallback, PACK, addFileEntries(), collectAllFreeTexts(), fileEntryMap, handleFiles(), handleFileUpload() (+11 more)
+
+### Community 80 - "InkDrawOutline"
 
 Cohesion: 0.06
-Nodes (47): CHARSET, editorFontFallback, PACK, baseCategories, categories, applyTranslations(), changeLanguage(), getLanguageFromUrl() (+39 more)
-
-### Community 80 - "unreachable"
-
-Cohesion: 0.04
-Nodes (8): BaseShadingPattern, CanvasExtraState, FreeDrawOutline, InkDrawOutline, InkDrawOutliner, Outline, PrintAnnotationStorage, unreachable()
+Nodes (4): FreeDrawOutline, InkDrawOutline, InkDrawOutliner, Outline
 
 ### Community 81 - "FontInfo"
 
@@ -834,43 +866,38 @@ Nodes (9): assert(), CssFontInfo, FontInfo, parseUrlOrPath(), PDFDataRangeTransp
 
 ### Community 82 - "footer.html partial (full site footer with company/legal/social links)"
 
-Cohesion: 0.08
-Nodes (49): decryptPdf(), handleFileSelect(), pageState, resetState(), updateUI(), DecryptPdfState, Add Attachments tool page, Add Blank Page tool page (+41 more)
+Cohesion: 0.11
+Nodes (42): Add Attachments tool page, Add Blank Page tool page, Add Page Labels tool page, Add Watermark tool page, Adjust Colors tool page, Alternate Merge tool page, Background Color tool page, Bates Numbering tool page (+34 more)
 
 ### Community 83 - "Word64"
 
-Cohesion: 0.07
-Nodes (18): ARCFourCipher, calculateMD5(), calculateSHA384(), calculateSHA512(), ch(), CipherTransform, CipherTransformFactory, isArrayEqual() (+10 more)
+Cohesion: 0.06
+Nodes (20): ARCFourCipher, calculateMD5(), calculateSHA384(), calculateSHA512(), ch(), CipherTransform, CipherTransformFactory, Color (+12 more)
 
 ### Community 84 - "extract-page-model.ts"
 
-Cohesion: 0.10
-Nodes (38): averageCharacterWidth(), buildItemWordTokens(), buildMergedWordTokens(), extractAnnotations(), extractImages(), extractPageModel(), FontNameMap, measureTextWidth() (+30 more)
+Cohesion: 0.08
+Nodes (39): splitCJKToken(), averageCharacterWidth(), buildItemWordTokens(), buildMergedWordTokens(), extractAnnotations(), extractImages(), extractPageModel(), FontNameMap (+31 more)
 
 ### Community 85 - "StructTreeLayerBuilder"
 
 Cohesion: 0.05
-Nodes (11): AnnotationEditorLayerBuilder, EditorUndoBar, ensureOverlay(), getXfaHtmlForPrinting(), PDFPrintService, ProgressBar, removeNullCharacters(), renderPage() (+3 more)
+Nodes (10): AnnotationEditorLayerBuilder, EditorUndoBar, getXfaHtmlForPrinting(), PDFPrintService, ProgressBar, removeNullCharacters(), renderPage(), renderProgress() (+2 more)
 
-### Community 86 - "loadPdfWithPasswordPrompt"
+### Community 86 - "delete-pages-page.ts"
 
-Cohesion: 0.05
-Nodes (65): deletePages(), deleteState, handleFile(), handleFileUpload(), initializePage(), renderThumbnails(), resetState(), showOptions() (+57 more)
+Cohesion: 0.07
+Nodes (42): deletePages(), deleteState, handleFile(), handleFileUpload(), initializePage(), renderThumbnails(), resetState(), showOptions() (+34 more)
 
-### Community 87 - ".push"
+### Community 87 - ".toString"
 
-Cohesion: 0.05
-Nodes (22): CachedAsyncIterable, CachedSyncIterable, createBundle(), EventBus, FluentBundle, FluentDateTime, FluentNumber, genericl10n_GenericL10n (+14 more)
+Cohesion: 0.11
+Nodes (16): FluentDateTime, FluentNumber, getArguments(), getDefault(), match(), messageFromBundle(), resolveComplexPattern(), resolveExpression() (+8 more)
 
 ### Community 88 - ".parse"
 
-Cohesion: 0.03
-Nodes (40): AlternateCS, CalRGBCS, Color, compileGlyf(), copyRgbaImage(), decodeScan(), DeviceRgbaCS, EvaluatorPreprocessor (+32 more)
-
-### Community 89 - "loadPyMuPDF"
-
 Cohesion: 0.04
-Nodes (14): convertCbrToPdf(), performCondenseCompression(), ensurePyMuPDF(), CONDENSE_PRESETS, CondenseCustomSettings, performCondenseCompression(), performPhotonCompression(), PHOTON_PRESETS (+6 more)
+Nodes (29): compileGlyf(), decodeScan(), EvaluatorPreprocessor, findNextFileMarker(), FontRendererFactory, getFloat214(), JpegStream, parseAppearanceStream() (+21 more)
 
 ### Community 90 - "FontInfo"
 
@@ -879,38 +906,38 @@ Nodes (3): CssFontInfo, FontInfo, SystemFontInfo
 
 ### Community 91 - "CommentSidebar"
 
-Cohesion: 0.08
-Nodes (4): binarySearchFirstItem(), CommentManager, CommentSidebar, TextAccessibilityManager
+Cohesion: 0.14
+Nodes (4): node(), binarySearchFirstItem(), CommentSidebar, TextAccessibilityManager
 
 ### Community 92 - "wn"
 
 Cohesion: 0.10
-Nodes (44): an(), Ar(), Bn(), Br(), cn(), Cr(), dn(), Dr() (+36 more)
+Nodes (45): an(), Ar(), Bn(), Br(), cn(), Cr(), dn(), Dr() (+37 more)
 
 ### Community 93 - ".remove"
 
 Cohesion: 0.07
-Nodes (6): BaseTreeViewer, download(), PDFPresentationMode, PDFSidebar, webViewerNamedAction(), webViewerPageMode()
+Nodes (8): AppOptions, BaseTreeViewer, docProperties(), download(), PDFSidebar, toggleExpandedBtn(), webViewerNamedAction(), webViewerPageMode()
 
-### Community 94 - "wfError"
+### Community 94 - "scanner-effect-page.ts"
 
-Cohesion: 0.05
-Nodes (29): AdjustColorsSettings, ScannerEffectState, ScanSettings, InterleaveFile, interleavePdfs(), applyColorAdjustments(), applyGreyscale(), applyInvertColors() (+21 more)
+Cohesion: 0.13
+Nodes (22): renderPreview(), resetSettings(), setupSettingsListeners(), updatePreview(), files, getSettings(), processAllPages(), renderPreview() (+14 more)
 
 ### Community 95 - "PDFPageView"
 
 Cohesion: 0.09
 Nodes (5): approximateFraction(), PDFPageView, PDFThumbnailViewer, roundToDivide(), watchScroll()
 
-### Community 96 - "workflow/types.ts"
+### Community 96 - "ColorConverters"
 
-Cohesion: 0.08
-Nodes (42): addNodeToCanvas(), buildFileList(), deleteNodeById(), deleteSelectedNode(), formatLabel(), getCanvasCenter(), initializePage(), promptPdfPassword() (+34 more)
+Cohesion: 0.18
+Nodes (3): ColorConverters, makeColorComp(), scaleAndClamp()
 
-### Community 97 - "PDFDocument"
+### Community 97 - "sanitize.ts"
 
-Cohesion: 0.09
-Nodes (26): PDFDocument, PDFDocumentInternal, FixPageSizeOptions, defaultSanitizeOptions, flattenFormsInDoc(), getCatalogDict(), getErrorMessage(), lookupAsArray() (+18 more)
+Cohesion: 0.26
+Nodes (18): PDFDocumentInternal, defaultSanitizeOptions, flattenFormsInDoc(), getCatalogDict(), getErrorMessage(), lookupAsArray(), lookupAsDict(), removeAnnotationsFromDoc() (+10 more)
 
 ### Community 98 - "edit-pdf-text-page.ts"
 
@@ -924,33 +951,33 @@ Nodes (9): AnnotationEditorLayerBuilder, AnnotationLayerBuilder, clamp(), getXfa
 
 ### Community 100 - "DOMLocalization"
 
-Cohesion: 0.07
-Nodes (8): AnnotationLayerBuilder, DOMLocalization, FluentBundle, hasAttribute(), keysFromBundle(), Localization, messageFromBundle(), valueFromBundle()
+Cohesion: 0.10
+Nodes (6): DOMLocalization, FluentBundle, keysFromBundle(), Localization, messageFromBundle(), valueFromBundle()
 
 ### Community 101 - "PDFFindController"
 
-Cohesion: 0.10
-Nodes (5): Autolinker, getNormalizeWithNFKC(), getOriginalIndex(), normalize(), PDFFindController
+Cohesion: 0.08
+Nodes (5): PDFDateString, getPageName(), getPageSizeInches(), PDFDocumentProperties, PDFFindController
 
 ### Community 102 - "ge"
 
-Cohesion: 0.07
-Nodes (16): Bg(), convertPasswordToHash(), ge(), getRandomColor(), He(), Jn(), od(), protect() (+8 more)
+Cohesion: 0.09
+Nodes (13): \_copyModel(), ge(), get(), He(), md(), od(), ss(), Ue() (+5 more)
 
-### Community 103 - "StructTreeLayerBuilder"
+### Community 103 - "TextLayerBuilder"
 
-Cohesion: 0.06
-Nodes (6): AnnotationEditorLayerBuilder, ProgressBar, removeNullCharacters(), StructTreeLayerBuilder, TextLayerBuilder, XfaLayerBuilder
+Cohesion: 0.09
+Nodes (4): AnnotationEditorLayerBuilder, ProgressBar, TextLayerBuilder, XfaLayerBuilder
 
-### Community 104 - "remove-blank-pages-page.ts"
+### Community 104 - "Event"
 
-Cohesion: 0.27
-Nodes (15): detectBlankPages(), downloadFile(), generateThumbnail(), handleFileUpload(), hideLoader(), isPageBlank(), pageState, processRemoveBlankPages() (+7 more)
+Cohesion: 0.10
+Nodes (37): Event, applyCustomOrder(), attachEventListeners(), handleFile(), handleFileUpload(), initializePage(), initializeSortable(), OrganizeState (+29 more)
 
 ### Community 107 - "compare-render.ts"
 
-Cohesion: 0.12
-Nodes (31): COMPARE_CACHE_MAX_SIZE, COMPARE_COLORS, COMPARE_GEOMETRY, COMPARE_RENDER, COMPARE_TEXT, HIGHLIGHT_OPACITY, VISUAL_DIFF, comparePageModelsAsync() (+23 more)
+Cohesion: 0.11
+Nodes (33): COMPARE_CACHE_MAX_SIZE, COMPARE_COLORS, COMPARE_GEOMETRY, COMPARE_RENDER, COMPARE_TEXT, HIGHLIGHT_OPACITY, VISUAL_DIFF, recognizePageCanvas() (+25 more)
 
 ### Community 108 - "MarkdownEditor"
 
@@ -964,7 +991,7 @@ Nodes (3): BasePreferences, ViewHistory, webViewerUpdateViewarea()
 
 ### Community 110 - "PDFThumbnailView"
 
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (4): onPageRendered(), PDFThumbnailView, TempImageFactory, zeroCanvas()
 
 ### Community 111 - "scripts"
@@ -974,13 +1001,18 @@ Nodes (37): scripts, build, build:all, build:brotli, build:deploy, build:docker,
 
 ### Community 112 - "DOMLocalization"
 
-Cohesion: 0.11
-Nodes (6): DOMLocalization, hasAttribute(), keysFromBundle(), Localization, messageFromBundle(), valueFromBundle()
+Cohesion: 0.12
+Nodes (4): DOMLocalization, hasAttribute(), Localization, valueFromBundle()
+
+### Community 113 - "shadow"
+
+Cohesion: 0.03
+Nodes (6): ColorScheme, PageViewport, PDFDocumentProxy, PrintAnnotationStorage, shadow(), util_FeatureTest
 
 ### Community 114 - "tesseract-runtime.ts"
 
-Cohesion: 0.17
-Nodes (17): buildTesseractWorkerOptions(), createConfiguredTesseractWorker(), getIncompleteTesseractOverrideKeys(), hasCompleteTesseractOverrides(), hasConfiguredTesseractOverrides(), normalizeDirectoryUrl(), normalizeFileUrl(), resolveTesseractAssetConfig() (+9 more)
+Cohesion: 0.10
+Nodes (31): tesseractLanguages, updateLanguageAvailabilityNotice(), assertTesseractLanguagesAvailable(), buildUnsupportedLanguageMessage(), formatLanguageLabel(), formatTesseractLanguageList(), getAvailableTesseractLanguageEntries(), getUnavailableTesseractLanguages() (+23 more)
 
 ### Community 115 - "PDFFindController"
 
@@ -1002,20 +1034,15 @@ Nodes (7): getCurrentHash(), isDestArraysEqual(), isDestHashesEqual(), parseQuer
 Cohesion: 0.09
 Nodes (26): flattenFormsInDoc(), flattenPdf(), handleFileSelect(), pageState, resetState(), updateUI(), applyAndSaveSignatures(), cleanup() (+18 more)
 
-### Community 119 - "image-input-node.ts"
+### Community 119 - "form-creator-extraction.ts"
 
-Cohesion: 0.09
-Nodes (17): getFileExtension(), IMAGE_ACCEPT, IMAGE_EXTENSIONS, IMAGE_FORMATS_LABEL, isValidImageFile(), preprocessImageFile(), convertImagesToPdfFile(), EmbeddableImage (+9 more)
+Cohesion: 0.24
+Nodes (14): applyChoiceFieldDetails(), applyTextFieldDetails(), buildBaseField(), buildRadioField(), buildStandardField(), extractExistingFields(), getPageAnnotationRefs(), getSupportedFieldType() (+6 more)
 
 ### Community 120 - "PDFHistory"
 
-Cohesion: 0.13
-Nodes (6): getCurrentHash(), isDestArraysEqual(), isDestHashesEqual(), parseQueryString(), PDFHistory, waitOnEventOrTimeout()
-
-### Community 121 - ".remove"
-
-Cohesion: 0.05
-Nodes (4): DOMFilterFactory, DrawLayer, isDataScheme(), PopupElement
+Cohesion: 0.11
+Nodes (7): getCurrentHash(), isDestArraysEqual(), isDestHashesEqual(), parseQueryString(), PDFAttachmentViewer, PDFHistory, waitOnEventOrTimeout()
 
 ### Community 122 - "stagePointHandlers"
 
@@ -1027,14 +1054,14 @@ Nodes (33): applyPlacement(), attachParaLongPress(), beginEdit(), beginNewTextBo
 Cohesion: 0.15
 Nodes (30): applyZoom(), buildReportResults(), caches, documentNames, getActivePair(), getEffectiveCategoryFilter(), getRenderContext(), getVisibleChanges() (+22 more)
 
-### Community 124 - "registry.ts"
+### Community 124 - "renderField"
 
-Cohesion: 0.08
-Nodes (20): buildToolbox(), CATEGORY_KEYS, SPECIAL_NODE_KEYS, toCamelCase(), translateCategory(), translateNodeDescription(), translateNodeLabel(), translateOrFallback() (+12 more)
+Cohesion: 0.22
+Nodes (13): applyFieldContainerState(), createField(), deleteField(), deselectAll(), hideProperties(), renderField(), renderGrid(), rerenderSelectedField() (+5 more)
 
 ### Community 125 - ".toggle"
 
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (3): ImageAltTextSettings, MLManager, NewAltTextManager
 
 ### Community 126 - "ghostscript-loader.ts"
@@ -1042,20 +1069,15 @@ Nodes (3): ImageAltTextSettings, MLManager, NewAltTextManager
 Cohesion: 0.12
 Nodes (24): fetchWasmFile(), getWasmBaseUrl(), getWasmConfigInfo(), isWasmAvailable(), WasmPackage, PACKAGE_VERSIONS, addPageGroupDictionaries(), convertFileToOutlines() (+16 more)
 
-### Community 127 - "L10n"
-
-Cohesion: 0.08
-Nodes (5): createBundle(), genericl10n_GenericL10n, L10n, PDFRenderingQueue, PLATFORM()
-
 ### Community 128 - "DOMLocalization"
 
-Cohesion: 0.11
-Nodes (6): DOMLocalization, hasAttribute(), keysFromBundle(), Localization, messageFromBundle(), valueFromBundle()
+Cohesion: 0.12
+Nodes (5): DOMLocalization, hasAttribute(), Localization, messageFromBundle(), valueFromBundle()
 
 ### Community 129 - "validate-signature-pdf.ts"
 
-Cohesion: 0.12
-Nodes (26): countSignatures(), createMd(), CryptoVerificationResult, curveFromSpki(), detectSigScheme(), ecdsaDerToP1363(), extractSignatures(), extractSignerInfoFields() (+18 more)
+Cohesion: 0.17
+Nodes (22): countSignatures(), createMd(), CryptoVerificationResult, curveFromSpki(), detectSigScheme(), ecdsaDerToP1363(), extractSignatures(), extractSignerInfoFields() (+14 more)
 
 ### Community 130 - "BentoPDF Chart Default Values"
 
@@ -1064,58 +1086,43 @@ Nodes (30): BentoPDF Helm Chart Metadata, BentoPDF Helm Chart README, Deployment
 
 ### Community 131 - "PDFFindController"
 
-Cohesion: 0.06
-Nodes (9): AutomationEventBus, getNormalizeWithNFKC(), normalize(), PDFFindController, SecondaryToolbar, toggleCheckedBtn(), Toolbar, webViewerFindFromUrlHash() (+1 more)
-
-### Community 132 - "PyMuPDFInstance"
-
-Cohesion: 0.08
-Nodes (11): DeskewResult, displayResults(), hideLoader(), initPage(), initPyMuPDF(), processDeskew(), selectedFiles, showAlert() (+3 more)
+Cohesion: 0.12
+Nodes (3): getNormalizeWithNFKC(), normalize(), PDFFindController
 
 ### Community 133 - "L10n"
 
-Cohesion: 0.07
-Nodes (5): getPageName(), getPageSizeInches(), L10n, PDFDocumentProperties, PDFRenderingQueue
+Cohesion: 0.08
+Nodes (6): createBundle(), FluentBundle, genericl10n_GenericL10n, keysFromBundle(), L10n, PDFRenderingQueue
 
 ### Community 134 - "PDFHistory"
 
 Cohesion: 0.14
 Nodes (6): getCurrentHash(), isDestArraysEqual(), isDestHashesEqual(), parseQueryString(), PDFHistory, waitOnEventOrTimeout()
 
-### Community 135 - ".setup"
+### Community 135 - "CalRGBCS"
 
-Cohesion: 0.20
-Nodes (3): setVerbosityLevel(), TranslatedFont, WorkerMessageHandler
+Cohesion: 0.04
+Nodes (16): AlternateCS, CalRGBCS, CmykICCBasedCS, copyRgbaImage(), DeviceRgbaCS, fetchSync(), grayToRGBA(), IccColorSpace (+8 more)
 
-### Community 137 - "PostScriptStack"
+### Community 138 - "FontFaceObject"
 
-Cohesion: 0.07
-Nodes (14): find(), FontFinder, fonts_getMetrics(), FontSelector, getCurrentPara(), PageSet, PostScriptEvaluator, PostScriptStack (+6 more)
+Cohesion: 0.05
+Nodes (4): FontFaceObject, FontLoader, string32(), toBase64Util()
 
-### Community 138 - "shadow"
+### Community 139 - "PDFDocumentProperties"
 
-Cohesion: 0.03
-Nodes (11): ColorManager, ColorScheme, FontFaceObject, FontLoader, LoopbackPort, PageViewport, PDFWorker, shadow() (+3 more)
-
-### Community 139 - ".reset"
-
-Cohesion: 0.11
-Nodes (5): AnnotationEditorParams, FirefoxEventBus, SecondaryToolbar, toggleCheckedBtn(), Toolbar
-
-### Community 140 - "PDFScriptingManager"
-
-Cohesion: 0.10
-Nodes (4): apiPageLayoutToViewerModes(), AppOptions, getMemoizerForLocale(), PDFScriptingManager
+Cohesion: 0.26
+Nodes (3): getPageName(), getPageSizeInches(), PDFDocumentProperties
 
 ### Community 141 - "warn"
 
-Cohesion: 0.06
-Nodes (10): ColorConverters, getModificationDate(), IdManager, makeColorComp(), MurmurHash3_64, OptionalContentConfig, OptionalContentGroup, scaleAndClamp() (+2 more)
+Cohesion: 0.04
+Nodes (9): AnnotationStorage, getModificationDate(), isRefProxy(), MurmurHash3_64, OptionalContentConfig, OptionalContentGroup, StatTimer, warn() (+1 more)
 
-### Community 143 - ".compile"
+### Community 143 - "ExpressionBuilderVisitor"
 
-Cohesion: 0.07
-Nodes (12): AstArgument, AstBinaryOperation, AstLiteral, AstMin, AstVariable, AstVariableDefinition, buildAddOperation(), buildMinOperation() (+4 more)
+Cohesion: 0.08
+Nodes (7): AstArgument, AstBinaryOperation, AstLiteral, AstMin, AstVariable, AstVariableDefinition, ExpressionBuilderVisitor
 
 ### Community 144 - "XMLParserBase"
 
@@ -1127,10 +1134,10 @@ Nodes (3): DatasetXMLParser, XFAParser, XMLParserBase
 Cohesion: 0.14
 Nodes (20): DiffMessage, DiffResult, ErrorResult, PairMessage, PairResult, WorkerMessage, pairPages(), similarityScore() (+12 more)
 
-### Community 147 - "merge-pdf-page.ts"
+### Community 147 - "page-dimensions-page.ts"
 
-Cohesion: 0.05
-Nodes (68): files, getSettings(), processAllPages(), renderPreview(), resetSettings(), resetState(), setupSettingsListeners(), sliderDefaults (+60 more)
+Cohesion: 0.07
+Nodes (43): analyzeAndDisplayDimensions(), analyzedPagesData, calculateArea(), calculateAspectRatio(), exportToCSV(), getSummaryStats(), handleFileSelect(), pageState (+35 more)
 
 ### Community 148 - "bookmark-pdf-type.ts"
 
@@ -1139,28 +1146,43 @@ Nodes (25): BaseModalField, BookmarkColor, BookmarkEditorState, BookmarkNode, Bo
 
 ### Community 149 - "utils-types.ts"
 
-Cohesion: 0.06
-Nodes (17): MarkdownItRendererSelf, MarkdownItRenderRule, MarkdownItToken, EmscriptenFSExtended, GhostscriptDynamicInstance, GlobalScopeWithGhostscript, PyMuPDFCompressOptions, PyMuPDFDeskewOptions (+9 more)
+Cohesion: 0.08
+Nodes (10): EmscriptenFSExtended, GhostscriptDynamicInstance, GlobalScopeWithGhostscript, PyMuPDFCompressOptions, PyMuPDFDeskewOptions, PyMuPDFExtractTextOptions, PyMuPDFRasterizeOptions, PyMuPDFTextToPdfOptions (+2 more)
 
 ### Community 150 - "generate-i18n-pages.mjs"
 
 Cohesion: 0.14
 Nodes (23): jsdom, jsdom, BASE_PATH, buildUrl(), **dirname, DIST_DIR, ENGLISH_TOOLS, **filename (+15 more)
 
-### Community 151 - "Range"
+### Community 151 - "CommentManager"
 
-Cohesion: 0.12
-Nodes (4): Range, CaretBrowsingMode, scrollIntoView(), TextHighlighter
+Cohesion: 0.07
+Nodes (5): Range, CaretBrowsingMode, CommentManager, scrollIntoView(), TextHighlighter
 
-### Community 153 - "add-watermark-page.ts"
+### Community 152 - "i18n/index.ts"
 
-Cohesion: 0.15
-Nodes (28): applyLayoutUI(), applyWatermark(), changePage(), getCurrentConfig(), getDefaultConfig(), handleFiles(), handleFileUpload(), initializePage() (+20 more)
+Cohesion: 0.35
+Nodes (8): changeLanguage(), getLanguageFromUrl(), languageNames, rewriteLinks(), SupportedLanguage, supportedLanguages, createLanguageSwitcher(), injectLanguageSwitcher()
+
+### Community 153 - "PDFDocument"
+
+Cohesion: 0.03
+Nodes (85): PDFDocument, applyLayoutUI(), applyWatermark(), changePage(), getCurrentConfig(), getDefaultConfig(), handleFiles(), handleFileUpload() (+77 more)
 
 ### Community 154 - "Tools Reference (index)"
 
 Cohesion: 0.14
 Nodes (23): Ghostscript (WebAssembly), heic2any library, pdf-lib, PyMuPDF (rendering/conversion engine), QPDF (WebAssembly), Tesseract OCR, Add Blank Page Tool, Extract Images (+15 more)
+
+### Community 155 - "L10n"
+
+Cohesion: 0.08
+Nodes (5): createBundle(), genericl10n_GenericL10n, L10n, PDFRenderingQueue, PLATFORM()
+
+### Community 156 - "markdown-editor.ts"
+
+Cohesion: 0.20
+Nodes (7): MarkdownItRendererSelf, MarkdownItRenderRule, MarkdownItToken, WindowWithI18next, WindowWithLucide, MarkdownEditorOptions, Markdown to PDF tool page
 
 ### Community 157 - "compare/types.ts"
 
@@ -1171,6 +1193,16 @@ Nodes (14): LRUCache, CompareCaches, CompareCategoryFilterState, CompareChangeTy
 
 Cohesion: 0.15
 Nodes (3): CaretBrowsingMode, scrollIntoView(), TextHighlighter
+
+### Community 159 - "Comment"
+
+Cohesion: 0.05
+Nodes (4): BasicColorPicker, ColorPicker, Comment, KeyboardManager
+
+### Community 160 - "PDFPageProxy"
+
+Cohesion: 0.04
+Nodes (8): XfaLayerBuilder, InternalRenderTask, PDFDocumentLoadingTask, PDFNetworkStream, PDFPageProxy, XfaLayer, XfaText, XfaLayerBuilder
 
 ### Community 161 - "createNodeElement"
 
@@ -1189,33 +1221,28 @@ Nodes (20): auditHtml(), auditSitemap(), BASE_PATH, \_\_dirname, DIST_DIR, expec
 
 ### Community 164 - "compare-page-models.ts"
 
-Cohesion: 0.13
-Nodes (19): annotationKey(), buildCategorySummary(), classifyChangeCategory(), diffAnnotations(), diffImages(), formatAnnotationDescription(), imagesOverlap(), isHeaderFooterZone() (+11 more)
+Cohesion: 0.18
+Nodes (17): annotationKey(), buildCategorySummary(), classifyChangeCategory(), diffAnnotations(), diffImages(), formatAnnotationDescription(), imagesOverlap(), isHeaderFooterZone() (+9 more)
 
 ### Community 165 - "streamsplice.js"
 
 Cohesion: 0.17
 Nodes (24): op(), activeSpacing(), applyPlan(), bin(), buildDrawBlock(), buildTJ(), col(), danglingCtm() (+16 more)
 
-### Community 166 - "PDFThumbnailView"
+### Community 166 - ".reset"
 
-Cohesion: 0.13
-Nodes (5): PDFThumbnailView, webViewerPageChanging(), webViewerPageNumberChanged(), webViewerPageRender(), webViewerPageRendered()
+Cohesion: 0.07
+Nodes (11): AutomationEventBus, PDFThumbnailView, SecondaryToolbar, toggleCheckedBtn(), Toolbar, webViewerFindFromUrlHash(), webViewerPageChanging(), webViewerPageNumberChanged() (+3 more)
 
 ### Community 167 - "Compress PDF"
 
 Cohesion: 0.12
 Nodes (20): Compress PDF, Condense Algorithm (default; recompresses/subsets fonts, keeps text selectable, requires PyMuPDF WASM), Photon Algorithm (rasterizes pages to JPEG; trades away text selection/links for smaller photo-heavy PDFs), PyMuPDF WASM Engine, Deskew PDF, OpenCV (skew-angle detection via dominant line angles), Digital Signature, PEM Format (text-based cert + key) (+12 more)
 
-### Community 168 - "timestamp-node.ts"
+### Community 168 - "form-filler-page.ts"
 
-Cohesion: 0.14
-Nodes (6): RFC-3161, ALLOWED_TSA_HOSTS, isAllowedTsaUrl(), TIMESTAMP_TSA_PRESETS, TimestampTsaPreset, TimestampNode
-
-### Community 171 - "split-pdf-page.ts"
-
-Cohesion: 0.07
-Nodes (50): attachEventListeners(), duplicateOrganizeState, initializePageGridSortable(), renderDuplicateOrganizeThumbnails(), createPageWrapper(), handleFileSelect(), pageState, renderThumbnails() (+42 more)
+Cohesion: 0.36
+Nodes (10): adjustViewerHeight(), handleFileUpload(), hideLoader(), processAndDownloadForm(), resetState(), setupFormViewer(), showAlert(), showLoader() (+2 more)
 
 ### Community 172 - "Self-Hosting Guide"
 
@@ -1244,8 +1271,8 @@ Nodes (15): check_prerequisites(), error(), info(), interactive_mode(), is_suppo
 
 ### Community 179 - "diff-text-runs.ts"
 
-Cohesion: 0.20
-Nodes (18): areEquivalentIgnoringWordBreaks(), collapseWords(), createWordChange(), detectMovedText(), detectStyleChanges(), diffTextRuns(), getCharMap(), groupAdjacentRects() (+10 more)
+Cohesion: 0.22
+Nodes (17): areEquivalentIgnoringWordBreaks(), collapseWords(), createWordChange(), detectMovedText(), detectStyleChanges(), diffTextRuns(), getCharMap(), groupAdjacentRects() (+9 more)
 
 ### Community 180 - "bates-numbering-page.ts"
 
@@ -1279,38 +1306,28 @@ Nodes (14): connectOrigins, corsProxyOrigin, csp, DEFAULT_WASM_ORIGINS, directiv
 
 ### Community 190 - "add-stamps.ts"
 
-Cohesion: 0.17
-Nodes (15): adjustViewerHeight(), backToToolsBtn, dropZone, fileListDiv, loadPdfInViewer(), onPdfSelected(), pdfInput, resetState() (+7 more)
-
-### Community 191 - "page-dimensions-page.ts"
-
-Cohesion: 0.19
-Nodes (17): analyzeAndDisplayDimensions(), analyzedPagesData, calculateArea(), calculateAspectRatio(), exportToCSV(), getSummaryStats(), handleFileSelect(), pageState (+9 more)
+Cohesion: 0.15
+Nodes (16): adjustViewerHeight(), backToToolsBtn, dropZone, fileListDiv, loadPdfInViewer(), onPdfSelected(), pdfInput, resetState() (+8 more)
 
 ### Community 192 - "validate-signature-pdf-page.ts"
 
-Cohesion: 0.33
-Nodes (15): createSignatureCard(), displayResults(), escapeHtml(), getElement(), handleCertFile(), handleCertUpload(), handlePdfFile(), handlePdfUpload() (+7 more)
+Cohesion: 0.31
+Nodes (16): createSignatureCard(), displayResults(), escapeHtml(), getElement(), handleCertFile(), handleCertUpload(), handlePdfFile(), handlePdfUpload() (+8 more)
 
 ### Community 193 - "cors-proxy-worker.js"
 
 Cohesion: 0.26
 Nodes (14): ALLOWED_ORIGINS, ALLOWED_PATH_PATTERNS, ALLOWED_TSA_HOSTS, corsHeaders(), fetch(), getSafeContentType(), handleOptions(), isAllowedOrigin() (+6 more)
 
-### Community 194 - "overlay-node.ts"
+### Community 194 - "email-to-pdf.test.ts"
 
-Cohesion: 0.13
-Nodes (4): Fb2ToPdfNode, OverlayNode, clonePdf(), extractSinglePdf()
+Cohesion: 0.22
+Nodes (3): MockMsgData, MockMsgReader, { mockState }
 
 ### Community 195 - "check-translations.js"
 
 Cohesion: 0.21
 Nodes (13): args, colors, compareKeys(), **dirname, **filename, flattenObject(), getAvailableLanguages(), loadTranslation() (+5 more)
-
-### Community 196 - "ColorConverters"
-
-Cohesion: 0.18
-Nodes (3): ColorConverters, makeColorComp(), scaleAndClamp()
 
 ### Community 198 - "Word to PDF"
 
@@ -1321,11 +1338,6 @@ Nodes (14): CSV to PDF, Excel to PDF, Browser-based LibreOffice Engine (preserve
 
 Cohesion: 0.15
 Nodes (20): PDF to BMP, BMP uncompressed bitmap format, PDF to CBZ, CBZ (Comic Book ZIP) archive format, ComicBookInfo JSON (ZIP comment) metadata format, ComicInfo.xml metadata format, metadata.opf metadata format (Calibre), PDF to Greyscale (+12 more)
-
-### Community 200 - "PDFDocumentProperties"
-
-Cohesion: 0.21
-Nodes (4): PDFDateString, getPageName(), getPageSizeInches(), PDFDocumentProperties
 
 ### Community 203 - "pkc-tool-analytics.ts"
 
@@ -1347,10 +1359,10 @@ Nodes (19): Add Stamps, Add Watermark, PDF Editor, Remove Annotations, Features,
 Cohesion: 0.22
 Nodes (13): PDF Converter Hub Page, PDF to Greyscale Tool, PDF Converter Tool Grid (40+ formats), PDF Editor Hub Page, PDF Editor Tool Grid (25+ tools), PDF Merge & Split Hub Page, Add Blank Page Tool, Delete Pages Tool (+5 more)
 
-### Community 208 - "node"
+### Community 208 - "TextAccessibilityManager"
 
-Cohesion: 0.22
-Nodes (6): node(), backtrackBeforeAllVisibleElements(), binarySearchFirstItem(), getOriginalIndex(), getVisibleElements(), TextAccessibilityManager
+Cohesion: 0.23
+Nodes (5): backtrackBeforeAllVisibleElements(), binarySearchFirstItem(), getOriginalIndex(), getVisibleElements(), TextAccessibilityManager
 
 ### Community 211 - "sw.js"
 
@@ -1382,15 +1394,20 @@ Nodes (12): CloudFront Response Headers Policy (COOP/COEP), Cloudflare Pages \_h
 Cohesion: 0.26
 Nodes (12): 256-bit AES Encryption (enforces permission flags; unenforceable without owner password), Change Permissions, Owner Password (required to change/enforce permissions), User Password (required to open file), Decrypt PDF, AES-256 Encryption (PDF 2.0 standard, computationally infeasible to brute-force), Encrypt PDF, Owner Password (optional, applies strictest restriction set when distinct) (+4 more)
 
+### Community 217 - "shortcuts.ts"
+
+Cohesion: 0.32
+Nodes (3): baseCategories, categories, ToolEntry
+
 ### Community 218 - "generate-offline-manifest.mjs"
 
 Cohesion: 0.14
 Nodes (12): BASE, cdnWasmUrls, internetRequiredChunk, localUrls, manifest, require, skippedOfflineChunks, TESS_CORE_VARIANTS (+4 more)
 
-### Community 219 - "font-loader.ts"
+### Community 219 - "handlePdfUpload"
 
-Cohesion: 0.22
-Nodes (11): fontFamilyToUrl, getFontAssetFileName(), getFontUrlForFamily(), fontCache, getCachedFontFromDB(), getFontForLanguage(), normalizeFontBaseUrl(), OcrFontEnv (+3 more)
+Cohesion: 0.29
+Nodes (8): createBlankPage(), extractExistingFields(), handlePdfUpload(), renderCanvas(), showModal(), switchToPage(), updatePageNavigation(), FormField
 
 ### Community 221 - "freetext-font-embed.ts"
 
@@ -1442,11 +1459,6 @@ Nodes (11): Offline Tool Usage FAQ Answer, Homepage (index.html), Donation Ribbo
 Cohesion: 0.20
 Nodes (10): license, lint-staged, _.{js,ts,mjs,cjs}, _.{json,md,html,css}, name, private, type, version (+2 more)
 
-### Community 231 - "tesseract-language-availability.ts"
-
-Cohesion: 0.20
-Nodes (12): tesseractLanguages, assertTesseractLanguagesAvailable(), buildUnsupportedLanguageMessage(), formatLanguageLabel(), formatTesseractLanguageList(), getUnavailableTesseractLanguages(), normalizeLanguageCodes(), resolveConfiguredTesseractAvailableLanguages() (+4 more)
-
 ### Community 234 - "edit-attachments.worker.d.ts"
 
 Cohesion: 0.18
@@ -1469,18 +1481,13 @@ Nodes (10): btn(), disableOffline(), fetchManifest(), getSw(), init(), maybeAuto
 
 ### Community 238 - "wasm-proxy-worker.js"
 
-Cohesion: 0.29
-Nodes (13): ALLOWED_EXTENSIONS, ALLOWED_ORIGINS, corsHeaders(), fetch(), getContentType(), handleOptions(), isAllowedFile(), isAllowedOrigin() (+5 more)
+Cohesion: 0.28
+Nodes (15): ALLOWED_EXTENSIONS, ALLOWED_ORIGINS, corsHeaders(), fetch(), getContentType(), handleOptions(), isAllowedFile(), isAllowedOrigin() (+7 more)
 
 ### Community 239 - "AWS CloudFront Distribution"
 
 Cohesion: 0.24
 Nodes (10): AWS CloudFront Distribution, .mjs Content-Type Fix (S3), AWS S3 (Static Hosting), Terraform Automation for S3/CloudFront, Common Issue: .mjs Served as octet-stream, Gateway API (Gateway + HTTPRoute), Kubernetes Ingress (nginx-ingress), .mjs MIME Fix (K8s Ingress/Gateway) (+2 more)
-
-### Community 240 - "ocr.ts"
-
-Cohesion: 0.15
-Nodes (14): languageToFontFamily, scaleBBox(), scaleOcrPageToPdfPoints(), binarizeCanvas(), OcrOptions, OcrResult, OcrWarning, performOcr() (+6 more)
 
 ### Community 241 - "Licensing Page"
 
@@ -1522,30 +1529,45 @@ Nodes (9): CORS Proxy Worker (Digital Signature), Rate Limiting via Cloudflare K
 Cohesion: 0.18
 Nodes (4): AnnotModule, EngineWithModule, Engine, modelOf()
 
-### Community 255 - "overlay-pdf-page.ts"
-
-Cohesion: 0.24
-Nodes (9): isPdf(), pageState, processOverlay(), renderFileEntry(), resetState(), setupDropZone(), updateUI(), OverlayPdfState (+1 more)
-
 ### Community 257 - "2026-09-04 — Upstream sync: 2026-06-27 → 2026-09-03 (upstream v2.8.8)"
 
-Cohesion: 0.14
-Nodes (13): 2026-09-04 — Upstream sync: 2026-06-27 → 2026-09-03 (upstream v2.8.8), Branding sweep, Browser verification (2026-09-04), Deliberately not taken, Edit PDF Text, and the viewer engine swap underneath it, Features taken, Known stale tests (pre-existing, not caused by this sync), Office to PDF is excluded from offline mode, by design (+5 more)
+Cohesion: 0.12
+Nodes (15): 2026-09-04 — Upstream sync: 2026-06-27 → 2026-09-03 (upstream v2.8.8), Branding sweep, Browser verification (2026-09-04), Deliberately not taken, Edit PDF Text, and the viewer engine swap underneath it, Features taken, Known stale tests (pre-existing, not caused by this sync), Office to PDF is deployed and live (2026-09-04) (+7 more)
 
-### Community 258 - "remove-annotations-page.ts"
+### Community 258 - "pdf-tools.ts"
 
-Cohesion: 0.36
-Nodes (10): downloadFile(), handleFileUpload(), hideLoader(), pageState, processRemoveAnnotations(), resetState(), showAlert(), showLoader() (+2 more)
+Cohesion: 0.70
+Nodes (3): multiFileTools, simpleTools, singlePdfLoadTools
+
+### Community 259 - "hasTransparentBackground"
+
+Cohesion: 0.50
+Nodes (5): clearTransparentFieldWidgetBackgrounds(), clearTransparentWidgetBackground(), getPdfBackgroundOptions(), getPreviewBackgroundColor(), hasTransparentBackground()
 
 ### Community 261 - "internet-required.ts"
 
-Cohesion: 0.33
-Nodes (8): currentSlug(), initInternetRequiredNotice(), internetRequiredTools, isInternetRequiredTool(), noticeMarkup(), showNotice(), sync(), TOOLS
+Cohesion: 0.29
+Nodes (10): currentSlug(), initInternetRequiredNotice(), installLinkStyles(), internetRequiredTools, isInternetRequiredTool(), markLinks(), noticeMarkup(), showNotice() (+2 more)
 
-### Community 265 - "form-creator-extraction.ts"
+### Community 262 - "table-of-contents-type.ts"
 
-Cohesion: 0.10
-Nodes (28): applyChoiceFieldDetails(), applyTextFieldDetails(), buildBaseField(), buildRadioField(), buildStandardField(), extractExistingFields(), getPageAnnotationRefs(), getSupportedFieldType() (+20 more)
+Cohesion: 0.50
+Nodes (3): GenerateTOCMessage, TOCErrorResponse, TOCSuccessResponse
+
+### Community 263 - "LibreOfficeConverter"
+
+Cohesion: 0.24
+Nodes (3): fetchAsDecompressedUrl(), isCrossOrigin(), LibreOfficeConverter
+
+### Community 264 - "validate-signature-type.ts"
+
+Cohesion: 0.50
+Nodes (3): ExtractedSignature, SignatureValidationResult, ValidateSignatureState
+
+### Community 265 - "form-creator-extraction.test.ts"
+
+Cohesion: 0.13
+Nodes (14): ExtractedFieldLike, ExtractExistingFieldsOptions, ExtractExistingFieldsResult, ExtractionViewportMetrics, FORM_CREATOR_FIELD_TYPES, FormCreatorFieldType, PageData, addAnnotRefToPage() (+6 more)
 
 ### Community 267 - "overrides"
 
@@ -1632,10 +1654,10 @@ Nodes (5): Add Page Labels Tool, Add Stamps Tool, Add Watermark Tool, Bates Numb
 Cohesion: 0.40
 Nodes (5): ODT to PDF, LibreOffice-based browser engine (Writer), OpenDocument Text (.odt) format, RTF to PDF, LibreOffice engine (used by RTF to PDF)
 
-### Community 303 - "fileHandler.ts"
+### Community 303 - "canvasEditor.ts"
 
-Cohesion: 0.07
-Nodes (46): calculateFitScale(), editorState, getEventCoordinates(), handleInteractionEnd(), handleInteractionMove(), handleInteractionStart(), queueRenderPage(), redrawShapes() (+38 more)
+Cohesion: 0.18
+Nodes (18): calculateFitScale(), editorState, getEventCoordinates(), handleInteractionEnd(), handleInteractionMove(), handleInteractionStart(), queueRenderPage(), redrawShapes() (+10 more)
 
 ### Community 311 - "add-attachments.worker.d.ts"
 
@@ -1687,11 +1709,6 @@ Nodes (4): CPDF WebAssembly engine, Mermaid diagrams, JSON to PDF, Markdown to P
 Cohesion: 0.13
 Nodes (17): Add Attachments, Edit Attachments, Edit Metadata, Extract Attachments, Extract Images, PDF OCG Layers, Optional Content Groups (OCG) layers, PDF OCG Layers (+9 more)
 
-### Community 329 - "loadPdfDocument"
-
-Cohesion: 0.06
-Nodes (40): addAttachmentsToPDFInWorker(), parsePageRange(), LoadOptions, loadPdfDocument(), PDFDocumentInstance, repairPdfBytes(), addImageWatermark(), addPageNumbers() (+32 more)
-
 ### Community 331 - "pwa-nav.ts"
 
 Cohesion: 0.83
@@ -1741,9 +1758,9 @@ Nodes (3): Never bundle unrelated features into one patch, Carefully update unif
 
 ## Knowledge Gaps
 
-- **1434 isolated node(s):** `ALLOWED_TSA_HOSTS`, `ALLOWED_ORIGINS`, `ALLOWED_ORIGINS`, `TESSERACT_LANG_DATA_VERSIONS`, `entrypoint.sh script` (+1429 more)
+- **1436 isolated node(s):** `ALLOWED_TSA_HOSTS`, `ALLOWED_ORIGINS`, `ALLOWED_ORIGINS`, `TESSERACT_LANG_DATA_VERSIONS`, `entrypoint.sh script` (+1431 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **111 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **128 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 

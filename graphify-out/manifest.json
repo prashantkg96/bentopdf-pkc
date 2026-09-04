@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "cloudflare/wasm-proxy-worker.js": {
-    "mtime": 1788475636.2674835,
-    "ast_hash": "4258f71473833763695157e58322b798",
+    "mtime": 1788480442.823934,
+    "ast_hash": "72d00881e81270d749b8143cad0dd836",
     "semantic_hash": ""
   },
   "docs/.vitepress/config.mts": {
@@ -3980,8 +3980,8 @@
     "semantic_hash": ""
   },
   "FORK-LOG.md": {
-    "mtime": 1788478557.181324,
-    "ast_hash": "a5e74527205444e638999fc1b9c391ba",
+    "mtime": 1788480552.163853,
+    "ast_hash": "350a2412897a52cd29c54bc9e8985b33",
     "semantic_hash": ""
   },
   "docs/tools/duplex-collate.md": {
@@ -4775,8 +4775,8 @@
     "semantic_hash": ""
   },
   "src/js/utils/internet-required.ts": {
-    "mtime": 1788477970.7867813,
-    "ast_hash": "5a4523a88bd0401cd9452f33553b433e",
+    "mtime": 1788480032.0800724,
+    "ast_hash": "82cdf8a5dd3654333bcee7cc2fa6557c",
     "semantic_hash": ""
   },
   "src/tests/internet-required.test.ts": {
