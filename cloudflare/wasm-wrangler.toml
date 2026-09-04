@@ -52,6 +52,24 @@ compatibility_date = "2024-01-01"
 #   CoherentPDF: https://wasm.example.com/cpdf/
 
 # =============================================================================
+# LIBREOFFICE PAYLOAD (R2)
+# =============================================================================
+# Office to PDF runs on a ~75 MB LibreOffice WASM payload (soffice.wasm.gz +
+# soffice.data.gz + three glue scripts) under the "libreoffice/" prefix.
+#
+# Bound directly rather than proxied through a public bucket URL: the bucket
+# stays private, there is no pub-*.r2.dev endpoint to rate-limit or abuse, no
+# second network hop, and no DNS setup. The Worker falls back to proxying
+# LIBREOFFICE_SOURCE when this binding is absent, so a self-hoster can still
+# point it at any CDN instead.
+#
+# To repopulate the bucket, the payload is recoverable from this repo's history:
+#   git cat-file -p 70e0834^:public/libreoffice-wasm/<file>
+[[r2_buckets]]
+binding = "LIBREOFFICE_BUCKET"
+bucket_name = "pkc-pdf-tools-wasm"
+
+# =============================================================================
 # RATE LIMITING (Optional but recommended)
 # =============================================================================
 # Create KV namespace:

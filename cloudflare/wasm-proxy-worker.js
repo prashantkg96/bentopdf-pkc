@@ -201,6 +201,107 @@ async function proxyTesseractLangData(request, subpath, origin) {
   );
 }
 
+/**
+ * Attach this request's CORS headers to a response, replacing any that a cached
+ * copy already carries. Cached bodies are stored CORS-free on purpose.
+ */
+function withCors(response, origin) {
+  const headers = new Headers(response.headers);
+  for (const [k, v] of Object.entries(corsHeaders(origin))) headers.set(k, v);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+/**
+ * Serve the LibreOffice payload straight out of R2.
+ *
+ * Preferred over proxying a public bucket URL: the bucket stays private (no
+ * pub-*.r2.dev endpoint to rate-limit or abuse), there is no second network hop,
+ * and no DNS/custom-domain setup. Falls back to LIBREOFFICE_SOURCE proxying when
+ * no binding is present, so a self-hoster can still point this at any CDN.
+ */
+async function serveFromR2(request, ctx, bucket, key, origin) {
+  if (!isAllowedFile(`/${key}`)) {
+    return new Response(
+      JSON.stringify({
+        error: 'Forbidden file type',
+        message: 'Only WASM-related file types are allowed.',
+      }),
+      {
+        status: 403,
+        headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+      }
+    );
+  }
+
+  // The cache key does not vary on Range, so a cached full response would be
+  // handed back for a ranged request. Range requests therefore skip the cache
+  // in both directions and go straight to R2.
+  const rangeRequested = request.headers.has('Range');
+  const cache = caches.default;
+  const cacheKey = new Request(new URL(request.url).toString(), {
+    method: 'GET',
+  });
+  if (!rangeRequested) {
+    const cached = await cache.match(cacheKey);
+    if (cached) return withCors(cached, origin);
+  }
+
+  // Only ask R2 for a range when the client actually sent one. Passing an
+  // options object at all makes R2 populate object.range, which would otherwise
+  // make every plain GET answer 206 — a protocol violation that some clients
+  // (and intermediary caches) handle badly.
+  const object = rangeRequested
+    ? await bucket.get(key, { range: request.headers })
+    : await bucket.get(key);
+  if (!object) {
+    return new Response(
+      JSON.stringify({
+        error: 'Not Found',
+        message: `No object at ${key}. Upload the LibreOffice payload to the bound bucket.`,
+      }),
+      {
+        status: 404,
+        headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+      }
+    );
+  }
+
+  // NB: no CORS headers here. The cache key does not vary on Origin, so baking
+  // Access-Control-Allow-Origin into the cached body would serve whichever
+  // origin happened to warm the cache to every other one — and both
+  // prashantkumarchandra.in and its www. host are allowed, so that is a real
+  // failure, not a theoretical one. CORS is applied per-request by withCors().
+  const headers = new Headers({
+    'Content-Type':
+      object.httpMetadata?.contentType || getContentType(`/${key}`),
+    'Cache-Control': `public, max-age=${CACHE_TTL_SECONDS}, immutable`,
+    ETag: object.httpEtag,
+    'X-Served-By': 'r2',
+  });
+  const isPartial = !!(rangeRequested && object.range);
+  if (isPartial && object.size != null) {
+    const start = object.range.offset ?? 0;
+    const end = start + (object.range.length ?? object.size) - 1;
+    headers.set('Content-Range', `bytes ${start}-${end}/${object.size}`);
+  }
+  if (object.size != null && !isPartial) {
+    headers.set('Content-Length', String(object.size));
+  }
+  headers.set('Accept-Ranges', 'bytes');
+
+  const status = isPartial ? 206 : 200;
+  const response = new Response(object.body, { status, headers });
+  // Only full 200s are worth putting in the edge cache.
+  if (status === 200) {
+    ctx?.waitUntil?.(cache.put(cacheKey, response.clone()));
+  }
+  return withCors(response, origin);
+}
+
 async function proxyRequest(request, env, sourceBaseUrl, subpath, origin) {
   if (!sourceBaseUrl) {
     return new Response(
@@ -422,6 +523,15 @@ export default {
 
     if (pathname.startsWith('/libreoffice/')) {
       const subpath = pathname.replace('/libreoffice', '');
+      if (env.LIBREOFFICE_BUCKET) {
+        return serveFromR2(
+          request,
+          ctx,
+          env.LIBREOFFICE_BUCKET,
+          `libreoffice${subpath}`,
+          origin
+        );
+      }
       return proxyRequest(
         request,
         env,
@@ -480,7 +590,12 @@ export default {
             pymupdf: !!env.PYMUPDF_SOURCE,
             gs: !!env.GS_SOURCE,
             cpdf: !!env.CPDF_SOURCE,
-            libreoffice: !!env.LIBREOFFICE_SOURCE,
+            libreoffice: !!(env.LIBREOFFICE_BUCKET || env.LIBREOFFICE_SOURCE),
+            libreofficeBackend: env.LIBREOFFICE_BUCKET
+              ? 'r2-binding'
+              : env.LIBREOFFICE_SOURCE
+                ? 'proxy'
+                : 'unconfigured',
             tesseract: true,
             tesseractLang: true,
           },

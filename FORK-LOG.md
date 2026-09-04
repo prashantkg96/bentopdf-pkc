@@ -306,6 +306,60 @@ Until both are done, the Office tools will fail at the payload fetch. Everything
 on the client side is verified correct — it requests
 `<proxy>/libreoffice/soffice.{wasm,data}.gz` and the three glue scripts.
 
+### Office to PDF is deployed and live (2026-09-04)
+
+**Done — no further action needed.** The Worker is deployed and Word to PDF was
+verified converting against it end to end.
+
+- **R2 bucket `pkc-pdf-tools-wasm`**, prefix `libreoffice/`, holding the 75 MB
+  payload (`soffice.wasm.gz` 46.5 MB, `soffice.data.gz` 27.3 MB, plus the three
+  glue scripts). The files were recovered from this repo's own history —
+  `git cat-file -p 70e0834^:public/libreoffice-wasm/<file>` — so they are the
+  exact build the loader expects, not a repack.
+- **Bound to the Worker, not proxied through a public bucket URL.**
+  `[[r2_buckets]] binding = "LIBREOFFICE_BUCKET"` in `wasm-wrangler.toml`. This
+  keeps the bucket private (no `pub-*.r2.dev` endpoint to rate-limit or abuse),
+  removes a network hop, and needs no DNS. `LIBREOFFICE_SOURCE` proxying is kept
+  as a fallback for self-hosters, so no secret is required here at all.
+- The `/` health endpoint now reports `libreofficeBackend: "r2-binding"`.
+
+**Three bugs found and fixed by testing this properly rather than assuming:**
+
+1. `bucket.get(key, { range })` was passed the whole `Request`; R2 wants
+   `request.headers`. Range requests 500'd.
+2. Every plain GET answered **206**. Passing an options object at all makes R2
+   populate `object.range`, so the 206 branch fired without a Range request —
+   a protocol violation. Now only ranged requests get 206.
+3. **The important one.** CORS headers were baked into the cached response, and
+   the cache key does not vary on `Origin`. Whichever origin warmed the cache
+   had its `Access-Control-Allow-Origin` served to every other origin. Both
+   `prashantkumarchandra.in` and its `www.` host are allowlisted, so this was a
+   real production failure waiting to happen, not a theoretical one. Cached
+   bodies are now stored CORS-free and `withCors()` applies the right header per
+   request. Verified: apex, www and a third origin each get their own ACAO back
+   from the same cached object.
+
+Verification note: the allowlist briefly included `http://localhost:4173` so the
+conversion could be driven from a local build. It was removed and redeployed
+immediately; `localhost` is confirmed 403 again and both production origins 200.
+
+### Offline marking on tool cards
+
+Links to the 13 internet-required tools are dimmed and badged "Needs internet"
+while the browser is offline, so the limitation shows before the click as well
+as after it.
+
+Implemented as a generated stylesheet keyed on `href` plus one `data-offline`
+attribute on `<html>`, rather than by tagging elements. The homepage tool grid is
+built dynamically by `main.ts` and other pages render their own cards, so
+anything element-based would need a MutationObserver and would still miss late
+renders; CSS applies to whatever exists whenever it appears. The links stay
+clickable on purpose — reaching the page's full explanation beats a dead card.
+
+Verified in-browser on `pdf-converter.html`: exactly 13 cards marked, the
+image/text/data converters (jpg, png, webp, svg, heic, tiff, bmp, markdown, csv,
+json) untouched, and everything clears on reconnect.
+
 ### Known stale tests (pre-existing, not caused by this sync)
 
 - `src/tests/i18n.test.ts` — 8 failures. Asserts multi-language `getLanguageFromUrl`

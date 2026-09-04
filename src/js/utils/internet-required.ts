@@ -115,19 +115,74 @@ function hideNotice(): void {
   }
 }
 
+const STYLE_ID = 'internet-required-style';
+
+/**
+ * Mark links to these tools while the browser is offline, so the limitation is
+ * visible before the click rather than only after it.
+ *
+ * Done as a generated stylesheet keyed on href plus one `data-offline` flag on
+ * <html>, rather than by tagging elements: the homepage tool grid is built
+ * dynamically by main.ts and other pages render their own cards, so anything
+ * element-based would need a MutationObserver and would still miss late
+ * renders. CSS applies to whatever exists, whenever it appears.
+ *
+ * The links stay clickable on purpose — clicking through to the page's full
+ * explanation is more useful than a dead card.
+ */
+function installLinkStyles(): void {
+  if (document.getElementById(STYLE_ID)) return;
+
+  const selectors = config.tools
+    .flatMap((slug) => [`a[href$="/${slug}"]`, `a[href$="/${slug}.html"]`])
+    .map((sel) => `html[data-offline] ${sel}`);
+
+  const css = `
+${selectors.join(', ')} {
+  opacity: 0.55;
+}
+${selectors.map((sel) => `${sel}.tool-card::after`).join(', ')} {
+  content: 'Needs internet';
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.65rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: rgb(251 191 36);
+  border: 1px solid rgb(251 191 36 / 0.4);
+  border-radius: 9999px;
+  padding: 0.2rem 0.45rem;
+}`;
+
+  const style = document.createElement('style');
+  style.id = STYLE_ID;
+  style.textContent = css;
+  document.head.appendChild(style);
+}
+
+function markLinks(offline: boolean): void {
+  if (offline) {
+    installLinkStyles();
+    document.documentElement.setAttribute('data-offline', '');
+  } else {
+    document.documentElement.removeAttribute('data-offline');
+  }
+}
+
 function sync(): void {
+  markLinks(!navigator.onLine);
   if (navigator.onLine) {
     // Coming back online mid-session: the per-tool chunk was never fetched, so
     // reload to pick it up rather than un-hiding a drop zone with no handlers.
     if (document.getElementById(NOTICE_ID)) window.location.reload();
     return;
   }
-  showNotice();
+  if (isInternetRequiredTool(currentSlug())) showNotice();
 }
 
 export function initInternetRequiredNotice(): void {
-  if (!isInternetRequiredTool(currentSlug())) return;
-
+  // Runs on every page: the on-page notice only applies to the 13 tools, but
+  // the offline link marking applies anywhere those tools are linked from.
   const run = () => {
     sync();
     window.addEventListener('offline', sync);
