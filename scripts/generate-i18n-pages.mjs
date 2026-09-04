@@ -99,6 +99,23 @@ function buildUrl(langPrefix, pagePath) {
 
 const ORGANIZATION_LD_MARKER = 'data-pkc-organization';
 
+// PWA installability. Without a <link rel="manifest"> on the page a visitor is
+// actually looking at, the browser has nothing to install and can only offer a
+// plain "Add to Home screen" bookmark. Only index.html/simple-index.html shipped
+// one, so every tool page -- where most visitors land, from search or a shared
+// link -- silently degraded to a shortcut.
+//
+// Absolute, not relative: a bare `site.webmanifest` next to a page at
+// <base>/<lang>/<tool> resolves to <base>/<lang>/site.webmanifest, which does
+// not exist. BASE_PATH is the one correct root.
+function ensureManifestLink(document) {
+  if (document.querySelector('link[rel="manifest"]')) return;
+  const link = document.createElement('link');
+  link.rel = 'manifest';
+  link.href = `${BASE_PATH}/site.webmanifest`;
+  document.head.appendChild(link);
+}
+
 function injectOrganizationLd() {
   // PKC: intentionally a no-op. Upstream PKC PDF Tools injected an Organization
   // schema with PKC PDF Tools social links here; we don't want that branding.
@@ -302,6 +319,8 @@ function processFileForLanguage(
 
   const localizedUrl = buildUrl(lang, pagePath);
   const canonicalUrl = buildUrl('', pagePath);
+  ensureManifestLink(document);
+
   let canonical = document.querySelector('link[rel="canonical"]');
   if (!canonical) {
     canonical = document.createElement('link');
@@ -392,6 +411,8 @@ function updateEnglishFile(filePath, originalContent) {
   defaultLink.hreflang = 'x-default';
   defaultLink.href = canonicalUrl;
   document.head.appendChild(defaultLink);
+
+  ensureManifestLink(document);
 
   let canonical = document.querySelector('link[rel="canonical"]');
   if (!canonical) {

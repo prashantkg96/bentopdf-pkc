@@ -1,5 +1,6 @@
 {
     "name": "PKC PDF Tools",
+    "id": "/toolkits/pdf-tools/",
     "short_name": "PDF Tools",
     "description": "100+ free PDF tools — merge, split, compress, convert and more. 100% browser-based, works offline, no upload.",
     "start_url": "/toolkits/pdf-tools/",
