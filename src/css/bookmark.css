@@ -20,7 +20,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  /* PKC: 4000, not 1000. The shared top pill is z-index 1000 and became STICKY on
+     2026-09-11, so a tie here let the nav paint over this modal's backdrop depending on
+     source order. Matches the number the rest of the app's overlays were raised to. */
+  z-index: 4000;
   padding: 1rem;
 }
 
@@ -33,14 +36,18 @@ body {
   overflow-y: auto;
 }
 
+/* PKC: this one had to MOVE, not just be raised. `top: 1rem; right: 1rem` is exactly where
+   the sticky top pill's action group now sits, so a minimized modal and the nav were
+   fighting over the same corner — and at 1001 it was winning, covering the nav. Dropped
+   below the header: 0.9rem of offset plus the 58px pill plus a gap. */
 .modal-minimized {
   position: fixed;
-  top: 1rem;
+  top: calc(0.9rem + 58px + 0.75rem);
   right: 1rem;
   max-width: 350px;
   max-height: none;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  z-index: 1001;
+  z-index: 4001;
 }
 
 .child-container {

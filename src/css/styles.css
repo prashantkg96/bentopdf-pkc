@@ -783,6 +783,54 @@ input[type='number']::-webkit-outer-spin-button {
   padding-top: 1rem;
 }
 
+/* PKC: MAKE THE SHARED TOP PILL ACTUALLY STICK ON THIS SITE TOO.
+   `.top-pills` has been `position: sticky` forever and never stuck anywhere. The main site
+   fixed it on 2026-09-11 by giving `#topPillsMount` `display: contents` in the shared
+   top-pills.css, which we load from that origin — so that rule already applies here and
+   still changes nothing, because a sticky element is bounded by its containing block and
+   here there is a SECOND wrapper: this one. Measured on the live page at 74px tall, which
+   is the pill plus the padding above it, leaving about 2px of travel.
+
+   So the wrapper has to stop being a box too. `display: contents` discards its width,
+   centring and padding along with it, hence the sizing moving onto the pill below — those
+   three values are the whole reason this wrapper exists (see the note above it). With both
+   wrappers gone the pill becomes a layout child of <body>, which is the full document
+   height, and it pins. Verified live: 14px from the top at every scroll depth.
+
+   `display: contents` does not change selector matching, only layout, so
+   `.pkc-nav-shell .top-pills` below still matches. */
+.pkc-nav-shell:not(.pkc-nav-shell--fixed-viewport) {
+  display: contents;
+}
+
+.pkc-nav-shell:not(.pkc-nav-shell--fixed-viewport) .top-pills {
+  width: min(1120px, 92vw);
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+/* PKC: the opt-out, for a page whose <body> is a clipped full-height flex column
+   (`h-[100dvh] overflow-hidden flex flex-col`). Such a page does not scroll, so sticky buys
+   it nothing — and unwrapping there would actively break it, because the wrapper is the
+   flex item carrying `flex-none` and the pill would inherit neither the sizing nor the
+   "do not shrink". An explicit class rather than a `:not(.flex-none)` or
+   `body:not(.overflow-hidden)` selector, both of which would be quietly depending on a
+   Tailwind utility staying exactly where it is. */
+
+/* PKC: WHAT THE PILL NOW FLOATS OVER, which is the other half of making it sticky.
+   Until it pinned, it scrolled away and never met a modal. At `z-index: 1000` it now
+   out-ranks every full-screen overlay in the app — Tailwind's `z-50` on 469 of them and
+   `z-40` on three — so the nav would paint on top of a modal and its backdrop. Raised as
+   one rule rather than edited across 118 files: `.fixed.inset-0.z-50` is three classes
+   against Tailwind's one, so it wins on specificity with no `!important`.
+   The `z-[9999]` overlays (markdown editor, form creator) were already above and are left
+   alone. So is the scroll-to-top button at `z-40`, which lives at the bottom of the
+   viewport and never meets the header. */
+.fixed.inset-0.z-50,
+.fixed.inset-0.z-40 {
+  z-index: 4000;
+}
+
 /* PKC: page content shell — same width as the top-pill nav (and the main site's
    .shell on /sir/jharkhand) so tool content lines up edge-to-edge with the pill
    instead of using Tailwind's `container` (index) or bleeding full-width (tool

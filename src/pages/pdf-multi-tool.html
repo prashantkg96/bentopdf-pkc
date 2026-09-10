@@ -117,7 +117,13 @@
          every other tool page). The old "Close" button just went to BASE_URL
          (the tools index) — the pill's "Toolkits → PDF Tools"/"Home" links
          provide the same exit, so the bespoke bar is no longer needed. -->
-    <div class="pkc-nav-shell flex-none" data-simple-nav="true">
+    <!-- pkc-nav-shell--fixed-viewport: this page's <body> is a clipped full-height flex
+         column, so it never scrolls and the pill must NOT be unwrapped for stickiness.
+         See the note beside the rule in styles.css. -->
+    <div
+      class="pkc-nav-shell pkc-nav-shell--fixed-viewport flex-none"
+      data-simple-nav="true"
+    >
       <div id="topPillsMount"></div>
     </div>
 
