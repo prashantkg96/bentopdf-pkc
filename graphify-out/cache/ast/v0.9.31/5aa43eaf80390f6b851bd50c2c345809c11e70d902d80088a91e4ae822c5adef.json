@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_md",
+      "label": "sign-pdf.md",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "label": "Sign PDF",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_how_it_works",
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_options",
+      "label": "Options",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_features",
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_use_cases",
+      "label": "Use Cases",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_tips",
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_sign_pdf_related_tools",
+      "label": "Related Tools",
+      "file_type": "document",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L44"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_md",
+      "target": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "target": "$graphify-root$_docs_tools_sign_pdf_how_it_works",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "target": "$graphify-root$_docs_tools_sign_pdf_options",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "target": "$graphify-root$_docs_tools_sign_pdf_features",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "target": "$graphify-root$_docs_tools_sign_pdf_use_cases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "target": "$graphify-root$_docs_tools_sign_pdf_tips",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_sign_pdf",
+      "target": "$graphify-root$_docs_tools_sign_pdf_related_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_md",
+      "target": "$graphify-root$_docs_tools_edit_pdf_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/edit-pdf.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_md",
+      "target": "$graphify-root$_docs_tools_add_stamps_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/add-stamps.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_sign_pdf_md",
+      "target": "$graphify-root$_docs_tools_form_filler_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/sign-pdf.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/form-filler.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

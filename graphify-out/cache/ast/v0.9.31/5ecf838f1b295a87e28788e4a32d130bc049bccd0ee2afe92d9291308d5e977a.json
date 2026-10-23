@@ -1,0 +1,405 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_py",
+      "label": "debrand.py",
+      "file_type": "code",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_protect",
+      "label": "protect()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L133",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_restore",
+      "label": "restore()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L143",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_convert",
+      "label": "convert()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L149",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_walk",
+      "label": "walk()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L158",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L173",
+      "_callable": true
+    },
+    {
+      "id": "$graphify-root$_scripts_pkc_debrand_rationale_1",
+      "label": "Rewrite BentoPDF branding to PKC PDF Tools across the repo. Run after porting\u2026",
+      "file_type": "rationale",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "io",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "$graphify-root$_scripts_pkc_debrand_protect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "$graphify-root$_scripts_pkc_debrand_restore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "$graphify-root$_scripts_pkc_debrand_convert",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "$graphify-root$_scripts_pkc_debrand_walk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_py",
+      "target": "$graphify-root$_scripts_pkc_debrand_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_convert",
+      "target": "$graphify-root$_scripts_pkc_debrand_protect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_convert",
+      "target": "$graphify-root$_scripts_pkc_debrand_restore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_main",
+      "target": "$graphify-root$_scripts_pkc_debrand_walk",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_main",
+      "target": "$graphify-root$_scripts_pkc_debrand_convert",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_scripts_pkc_debrand_rationale_1",
+      "target": "$graphify-root$_scripts_pkc_debrand_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_protect",
+      "callee": "PROTECTED",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_protect",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L138",
+      "receiver": "text"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_restore",
+      "callee": "items",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L144",
+      "receiver": "holes"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_restore",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L145",
+      "receiver": "text"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_convert",
+      "callee": "sub",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L152",
+      "receiver": "pattern"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_convert",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L155",
+      "receiver": "text"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_convert",
+      "callee": "FORK_REPO_TOKEN",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_convert",
+      "callee": "FORK_REPO",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "ROOT",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "join",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L162",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L163",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "relpath",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L163",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "ROOT",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L163"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "startswith",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L164",
+      "receiver": "rel"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "SKIP_PREFIXES",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L164"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "startswith",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L165",
+      "receiver": "rel"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "SKIP_DOC_PREFIXES",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "argument",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L165"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "lower",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L167",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_walk",
+      "callee": "splitext",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L167",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_main",
+      "callee": "read",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L177",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_main",
+      "callee": "UnicodeDecodeError",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "collection",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_main",
+      "callee": "OSError",
+      "is_member_call": false,
+      "indirect": true,
+      "context": "collection",
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_main",
+      "callee": "lower",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L180",
+      "receiver": "src"
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_main",
+      "callee": "write",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L187",
+      "receiver": null
+    },
+    {
+      "caller_nid": "$graphify-root$_scripts_pkc_debrand_main",
+      "callee": "findall",
+      "is_member_call": true,
+      "source_file": "scripts/pkc/debrand.py",
+      "source_location": "L188",
+      "receiver": "re"
+    }
+  ]
+}

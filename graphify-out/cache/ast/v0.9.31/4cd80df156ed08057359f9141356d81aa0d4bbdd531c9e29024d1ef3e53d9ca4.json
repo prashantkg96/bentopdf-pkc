@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_md",
+      "label": "duplex-collate.md",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "label": "Duplex Collate",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_how_it_works",
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_options",
+      "label": "Options",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L24"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_output_behavior",
+      "label": "Output Behavior",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_common_use_cases",
+      "label": "Common Use Cases",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_tips",
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L44"
+    },
+    {
+      "id": "$graphify-root$_docs_tools_duplex_collate_related_tools",
+      "label": "Related Tools",
+      "file_type": "document",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_md",
+      "target": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "target": "$graphify-root$_docs_tools_duplex_collate_how_it_works",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "target": "$graphify-root$_docs_tools_duplex_collate_options",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "target": "$graphify-root$_docs_tools_duplex_collate_output_behavior",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "target": "$graphify-root$_docs_tools_duplex_collate_common_use_cases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "target": "$graphify-root$_docs_tools_duplex_collate_tips",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_duplex_collate",
+      "target": "$graphify-root$_docs_tools_duplex_collate_related_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_md",
+      "target": "$graphify-root$_docs_tools_alternate_merge_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/alternate-merge.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_md",
+      "target": "$graphify-root$_docs_tools_split_pdf_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/split-pdf.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_md",
+      "target": "$graphify-root$_docs_tools_merge_pdf_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/merge-pdf.md"
+    },
+    {
+      "source": "$graphify-root$_docs_tools_duplex_collate_md",
+      "target": "$graphify-root$_docs_tools_organize_pdf_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/tools/duplex-collate.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "target_file": "$graphify-root$/docs/tools/organize-pdf.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
