@@ -1005,8 +1005,8 @@
     "semantic_hash": "5e0b5c11afa75b60283c4cba99dbdb7c"
   },
   "src/js/main.ts": {
-    "mtime": 1792737095.6305707,
-    "ast_hash": "119508de1f93d06141018e42337f4093",
+    "mtime": 1792738744.120139,
+    "ast_hash": "c2970020b9623cdaccfb357183fc43fa",
     "semantic_hash": ""
   },
   "src/js/mobileMenu.ts": {
@@ -3130,8 +3130,8 @@
     "semantic_hash": ""
   },
   "src/pages/add-stamps.html": {
-    "mtime": 1792736151.161876,
-    "ast_hash": "52acfe02b68e645811df29974b211c1f",
+    "mtime": 1792738744.1517706,
+    "ast_hash": "5c945f3fa7bd63ca94d4dff23d5d4f32",
     "semantic_hash": ""
   },
   "src/pages/add-watermark.html": {
@@ -3165,8 +3165,8 @@
     "semantic_hash": ""
   },
   "src/pages/bookmark.html": {
-    "mtime": 1792736680.9674785,
-    "ast_hash": "58f6e45c5951a15301d3447cc7d65125",
+    "mtime": 1792738744.1700046,
+    "ast_hash": "96908a7fd982f61e324bf1fee827ab09",
     "semantic_hash": ""
   },
   "src/pages/cbz-to-pdf.html": {
@@ -3185,8 +3185,8 @@
     "semantic_hash": ""
   },
   "src/pages/compare-pdfs.html": {
-    "mtime": 1792736151.2236533,
-    "ast_hash": "93bfcbcd1abba758721bc392875ddc56",
+    "mtime": 1792738744.203982,
+    "ast_hash": "c03cd8f9374cc2ac68c04eabb519d6bd",
     "semantic_hash": ""
   },
   "src/pages/compress-pdf.html": {
@@ -3240,8 +3240,8 @@
     "semantic_hash": ""
   },
   "src/pages/edit-pdf.html": {
-    "mtime": 1792736151.0981681,
-    "ast_hash": "3e2ea5ad76f7ce700b1d00bb50c59991",
+    "mtime": 1792738744.2351565,
+    "ast_hash": "c52dbf86a68e5b34312d12ea351fad8a",
     "semantic_hash": ""
   },
   "src/pages/email-to-pdf.html": {
@@ -3300,13 +3300,13 @@
     "semantic_hash": ""
   },
   "src/pages/form-creator.html": {
-    "mtime": 1792736705.3708055,
-    "ast_hash": "2536e378c4680be16977d8741835fe73",
+    "mtime": 1792738744.2543402,
+    "ast_hash": "c5a38896e53f4020f8760338aee377f6",
     "semantic_hash": ""
   },
   "src/pages/form-filler.html": {
-    "mtime": 1792736151.193097,
-    "ast_hash": "85c327e813c318f77c7761305e2a1b29",
+    "mtime": 1792738744.2803028,
+    "ast_hash": "a170a39364f4c1e53817116796b3a659",
     "semantic_hash": ""
   },
   "src/pages/header-footer.html": {
@@ -3345,8 +3345,8 @@
     "semantic_hash": ""
   },
   "src/pages/markdown-to-pdf.html": {
-    "mtime": 1788453273.186611,
-    "ast_hash": "aa6374d82c29681825d44f8583b2ef30",
+    "mtime": 1792738744.2813025,
+    "ast_hash": "044b8672451d29d4a358c07ab49866eb",
     "semantic_hash": ""
   },
   "src/pages/merge-pdf.html": {
@@ -3565,8 +3565,8 @@
     "semantic_hash": ""
   },
   "src/pages/sign-pdf.html": {
-    "mtime": 1792736151.1301432,
-    "ast_hash": "6ffdfb3749338e37dba7c260a27d2029",
+    "mtime": 1792738744.3213885,
+    "ast_hash": "37c5ab4d739374bd6016fd9890895d16",
     "semantic_hash": ""
   },
   "src/pages/split-pdf.html": {
@@ -3980,8 +3980,8 @@
     "semantic_hash": ""
   },
   "FORK-LOG.md": {
-    "mtime": 1792736974.1236482,
-    "ast_hash": "1f33df106dc17e896074ea64fb99fbc1",
+    "mtime": 1792738743.15608,
+    "ast_hash": "21f13486546133c3898366cccb6073f0",
     "semantic_hash": ""
   },
   "docs/tools/duplex-collate.md": {
@@ -4785,18 +4785,18 @@
     "semantic_hash": ""
   },
   "scripts/pkc/audit-nav-overlap.mjs": {
-    "mtime": 1792736890.1364167,
-    "ast_hash": "c4373f64691c5c6cdb0cea8f136bc4c6",
+    "mtime": 1792738744.0248191,
+    "ast_hash": "650130bcd814a8898b80d1f62a8cf6ac",
     "semantic_hash": ""
   },
   "src/js/nav-yield.ts": {
-    "mtime": 1792736705.8136494,
-    "ast_hash": "ef311c27e2973c01e549c8d297c9ff68",
+    "mtime": 1792738744.1211383,
+    "ast_hash": "78da68b904d5ec13e8766b04d0fc767f",
     "semantic_hash": ""
   },
   "src/tests/nav-clearance.test.ts": {
-    "mtime": 1792736207.6277497,
-    "ast_hash": "74327647c62b36476004809f923e8564",
+    "mtime": 1792738744.3223884,
+    "ast_hash": "78f0cc66c17ee4a296bc213c779a8c3f",
     "semantic_hash": ""
   }
 }

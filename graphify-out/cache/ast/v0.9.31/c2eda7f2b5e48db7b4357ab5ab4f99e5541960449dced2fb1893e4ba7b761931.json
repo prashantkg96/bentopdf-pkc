@@ -1,0 +1,280 @@
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_fork_log_md",
+      "label": "FORK-LOG.md",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_fork_log_pkc_pdf_tools_fork_log",
+      "label": "PKC PDF Tools \u2014 fork log",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "label": "2026-09-04 \u2014 Upstream sync: 2026-06-27 \u2192 2026-09-03 (upstream v2.8.8)",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "$graphify-root$_fork_log_security_and_correctness_fixes_taken",
+      "label": "Security and correctness fixes taken",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "$graphify-root$_fork_log_deliberately_not_taken",
+      "label": "Deliberately not taken",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "$graphify-root$_fork_log_features_taken",
+      "label": "Features taken",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L66"
+    },
+    {
+      "id": "$graphify-root$_fork_log_porting_a_page_from_upstream",
+      "label": "Porting a page from upstream",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L85"
+    },
+    {
+      "id": "$graphify-root$_fork_log_office_to_pdf_restored",
+      "label": "Office to PDF restored",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L102"
+    },
+    {
+      "id": "$graphify-root$_fork_log_edit_pdf_text_and_the_viewer_engine_swap_underneath_it",
+      "label": "Edit PDF Text, and the viewer engine swap underneath it",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L142"
+    },
+    {
+      "id": "$graphify-root$_fork_log_branding_sweep",
+      "label": "Branding sweep",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L176"
+    },
+    {
+      "id": "$graphify-root$_fork_log_pwa_and_offline_mode",
+      "label": "PWA and offline mode",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L232"
+    },
+    {
+      "id": "$graphify-root$_fork_log_office_to_pdf_is_excluded_from_offline_mode_by_design",
+      "label": "Office to PDF is excluded from offline mode, by design",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L257"
+    },
+    {
+      "id": "$graphify-root$_fork_log_browser_verification_2026_09_04",
+      "label": "Browser verification (2026-09-04)",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L281"
+    },
+    {
+      "id": "$graphify-root$_fork_log_office_to_pdf_is_deployed_and_live_2026_09_04",
+      "label": "Office to PDF is deployed and live (2026-09-04)",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L315"
+    },
+    {
+      "id": "$graphify-root$_fork_log_offline_marking_on_tool_cards",
+      "label": "Offline marking on tool cards",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L352"
+    },
+    {
+      "id": "$graphify-root$_fork_log_known_stale_tests_pre_existing_not_caused_by_this_sync",
+      "label": "Known stale tests (pre-existing, not caused by this sync)",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L369"
+    },
+    {
+      "id": "$graphify-root$_fork_log_2026_10_23_the_sticky_top_pill_no_longer_sits_on_any_tool_s_controls",
+      "label": "2026-10-23 \u2014 The sticky top pill no longer sits on any tool's controls",
+      "file_type": "document",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L387"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_fork_log_md",
+      "target": "$graphify-root$_fork_log_pkc_pdf_tools_fork_log",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_pkc_pdf_tools_fork_log",
+      "target": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_security_and_correctness_fixes_taken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_deliberately_not_taken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_features_taken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_porting_a_page_from_upstream",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_office_to_pdf_restored",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_edit_pdf_text_and_the_viewer_engine_swap_underneath_it",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_branding_sweep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_pwa_and_offline_mode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L232",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_office_to_pdf_is_excluded_from_offline_mode_by_design",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_browser_verification_2026_09_04",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_office_to_pdf_is_deployed_and_live_2026_09_04",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_md",
+      "target": "$graphify-root$_r2_buckets_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_offline_marking_on_tool_cards",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L352",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_2026_09_04_upstream_sync_2026_06_27_2026_09_03_upstream_v2_8_8",
+      "target": "$graphify-root$_fork_log_known_stale_tests_pre_existing_not_caused_by_this_sync",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L369",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_fork_log_pkc_pdf_tools_fork_log",
+      "target": "$graphify-root$_fork_log_2026_10_23_the_sticky_top_pill_no_longer_sits_on_any_tool_s_controls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "FORK-LOG.md",
+      "source_location": "L387",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
