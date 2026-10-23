@@ -129,6 +129,7 @@ describe('no tool pins anything under the header', () => {
       ['add-stamps.html', 'stamp-viewer-container'],
       ['form-filler.html', 'pdf-viewer-container'],
       ['compare-pdfs.html', 'compare-viewer'],
+      ['markdown-to-pdf.html', 'markdown-editor-container'],
     ];
     for (const [page, id] of viewers) {
       const text = pages.find((p) => p.file.endsWith(`/${page}`))!.text;

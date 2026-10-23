@@ -11,9 +11,11 @@
  *   PINNED     a fixed or sticky control under the header. Scrolling cannot
  *              rescue it.
  *   AT-TOP     an in-flow control already under the header at scroll 0.
- *   WORKSPACE  a control inside an embedded viewer (its own scrolling) that
- *              ever passes under the header. Scrolling back up does not rescue
- *              it either: the wheel scrolls the viewer, not the page.
+ *   WORKSPACE  an embedded viewer or editor pane (anything tall that scrolls on
+ *              its own) whose top edge, or a control inside it, ever passes
+ *              under the header. Scrolling back up does not rescue it: the
+ *              wheel scrolls the viewer, not the page. The fix is
+ *              `data-pkc-workspace` on it (src/js/nav-yield.ts).
  *
  * Ordinary page content scrolling under the header is how a sticky header
  * works, and is not reported.
@@ -245,14 +247,7 @@ function scan() {
       !el.checkVisibility({ opacityProperty: true, visibilityProperty: true })
     )
       continue;
-    let pinned = null;
-    for (let a = el; a && a !== document.documentElement; a = parentOf(a)) {
-      const p = getComputedStyle(a).position;
-      if (p === 'fixed' || p === 'sticky') {
-        pinned = `${p} ${describe(a).split(' "')[0]}`;
-        break;
-      }
-    }
+    const pinned = pinnedOf(el);
     let workspace = null;
     for (let a = parentOf(el); a && a !== document.body; a = parentOf(a)) {
       if (a.getBoundingClientRect().height < innerHeight * 0.45) continue;
@@ -295,18 +290,62 @@ function scan() {
           else under++;
         } else under++;
       }
-    if (!sawPill) {
-      let z = 0;
-      for (let a = el; a && a !== document.documentElement; a = parentOf(a)) {
-        const cs = getComputedStyle(a);
-        if (cs.position !== 'static' && cs.zIndex !== 'auto')
-          z = Math.max(z, Number(cs.zIndex));
-      }
-      above = z > 1000;
-    }
+    if (!sawPill) above = zOf(el) > 1000;
     if (under && !above) out.push({ el: describe(el), pinned, workspace });
   }
+
+  // The workspace itself, controls or not. Its top edge is where a viewer keeps
+  // its toolbar and an editor its pane labels, so any tall pane that scrolls on
+  // its own (or a frame, or a shadow-rooted viewer) must keep that edge out from
+  // under the header — even when nothing the loop above recognises sits there.
+  const EDGE = 48;
+  const walkRoots = (root) =>
+    root.querySelectorAll('*').forEach((e) => {
+      if (e.shadowRoot) walkRoots(e.shadowRoot);
+      if (e === document.body || pill.contains(e)) return;
+      const r = e.getBoundingClientRect();
+      if (r.height < innerHeight * 0.45 || r.width < 300) return;
+      if (r.top >= cut || r.top + EDGE <= 0) return;
+      const cs = getComputedStyle(e);
+      const scrolls =
+        /(auto|scroll)/.test(cs.overflowY) &&
+        e.scrollHeight > e.clientHeight + 20;
+      if (!(scrolls || e.shadowRoot || e.tagName === 'IFRAME')) return;
+      if (zOf(e) > 1000) return;
+      const name = describe(e).split(' "')[0];
+      out.push({
+        el: `${name} (its top edge)`,
+        pinned: pinnedOf(e),
+        workspace: name,
+      });
+    });
+  walkRoots(document);
   return { items: out, scrollY: Math.round(scrollY) };
+
+  function pinnedOf(el) {
+    for (let a = el; a && a !== document.documentElement; a = parentOf(a)) {
+      const cs = getComputedStyle(a);
+      if (cs.position === 'fixed') return `fixed ${describe(a).split(' "')[0]}`;
+      if (cs.position === 'sticky') {
+        // Only while actually stuck at its offset. Once its container ends, a
+        // sticky bar scrolls away like any other content, passing under the
+        // header on its way out, and that is not a fault.
+        const stuck =
+          Math.abs(a.getBoundingClientRect().top - parseFloat(cs.top)) < 1.5;
+        if (stuck) return `sticky ${describe(a).split(' "')[0]}`;
+      }
+    }
+    return null;
+  }
+  function zOf(el) {
+    let z = 0;
+    for (let a = el; a && a !== document.documentElement; a = parentOf(a)) {
+      const cs = getComputedStyle(a);
+      if (cs.position !== 'static' && cs.zIndex !== 'auto')
+        z = Math.max(z, Number(cs.zIndex));
+    }
+    return z;
+  }
 }
 
 // ── Run ─────────────────────────────────────────────────────────────────────
@@ -357,7 +396,7 @@ async function auditTool(tool, W, H) {
         () => document.documentElement.scrollHeight - innerHeight
       );
       const ys = [0];
-      for (let y = 200; y < maxY; y += 200) ys.push(y);
+      for (let y = 100; y < maxY; y += 100) ys.push(y); // under the 140px it looks in
       if (maxY > 0) ys.push(maxY);
       for (const y of ys) {
         await page.evaluate((y) => scrollTo(0, y), y);

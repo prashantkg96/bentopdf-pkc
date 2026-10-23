@@ -3,10 +3,11 @@
  *
  * The pill sticks to the top of every tool page (styles.css). A tool whose main
  * job happens inside an embedded viewer — Edit PDF, Sign PDF, Add Stamps, Form
- * Filler, Compare — has that viewer's own toolbar along its top edge, and
- * scrolling the page down to the viewer slid exactly that toolbar under the
- * pill. Scrolling back up does not rescue it either: the wheel over a viewer
- * scrolls the PDF inside it, not the page.
+ * Filler, Compare, and Markdown to PDF's editor — has that viewer's own toolbar
+ * (or the editor's pane headers) along its top edge, and scrolling the page
+ * down to it slid exactly that edge under the pill. Scrolling back up does not
+ * rescue it either: the wheel over a viewer scrolls the PDF inside it, not the
+ * page.
  *
  * So the workspace pushes the header. Each element marked `data-pkc-workspace`
  * acts as a solid block the pill cannot overlap: as its top edge rises into

@@ -399,6 +399,9 @@ bottom at desktop sizes, found three kinds of fault:
 | Form Creator                                         | Upstream's offsets for its own 64px navbar (`top-4`, `top-16`, `top-[120px]`): the Properties heading and the page/grid toolbar. Its two toolbars also overlapped each other whenever the first wrapped onto two rows.                                                        |
 | Edit PDF, Sign PDF, Add Stamps, Form Filler, Compare | The embedded viewer's own toolbar (Annotate, Shapes, Redact, zoom, the stamp and signature tools, page navigation) slid under the pill when the page was scrolled to the viewer. Scrolling back up does not rescue it: the wheel over a viewer scrolls the PDF, not the page. |
 
+Markdown to PDF is the same case as the viewers: its editor and preview panes
+scroll on their own, and their tops slid under the pill.
+
 Also two overlays still under the pill (`z-[60]` page preview, `z-[100]`
 password prompt), missed by `bc6cefc` because both are built in TypeScript.
 
@@ -425,4 +428,5 @@ overlay on a z-index that is raised, and every viewer marked. It fails on the
 old Bookmark page. `scripts/pkc/audit-nav-overlap.mjs` is the browser audit
 itself; run it after porting any page from upstream (usage in its header). On
 the live site before this change it reports all of the above; on this build it
-reports nothing at 1440x900, 1366x768 and 1920x1080.
+reports nothing for any of the 119 tools at 1440x900, 1366x768, 1920x1080 or
+390x844.
