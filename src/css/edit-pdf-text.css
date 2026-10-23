@@ -8,7 +8,12 @@
   --ecaccent: #6366f1;
   --ecstage: #383838;
   position: fixed;
-  inset: 0;
+  /* PKC: starts below the shared header, not at 0. At `inset: 0` the sticky top pill
+     (z-index 1000) sat on this editor's whole toolbar — Export, Back, Add a text box, Find
+     — and could not be scrolled off, because this layer is fixed. Below it, not above it,
+     so the site nav stays reachable as it does on PDF Multi Tool. See --pkc-nav-clear in
+     styles.css. */
+  inset: var(--pkc-nav-clear, 112px) 0 0 0;
   z-index: 40;
   display: flex;
   flex-direction: column;
@@ -24,6 +29,14 @@
 }
 #text-editor-app[hidden] {
   display: none;
+}
+/* PKC: with the editor starting below the header, the strip above it shows the page —
+   and the PKC intro cards (Back to Tools, the privacy note) sat in it, their tops peeking
+   out between the pill and the editor's toolbar. The editor already hides the uploader
+   while it is open; the intro is ours, so this hides it. `visibility`, not `display`, so
+   closing the editor does not reflow the page. */
+body:has(> #text-editor-app:not([hidden])) .pkc-tool-intro {
+  visibility: hidden;
 }
 #text-editor-app * {
   box-sizing: border-box;

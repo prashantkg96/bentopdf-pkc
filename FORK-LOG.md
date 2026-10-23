@@ -93,6 +93,12 @@ Tailwind. Run `npx prettier --write` afterwards. It is validated by round-trippi
 `alternate-merge.html`: the output matches the hand-converted page except for
 upstream's own later copy edits.
 
+It does NOT fix where the page pins things. Upstream assumed a 64px navbar, so a
+ported page with a sticky bar, a full-screen editor or an embedded viewer will sit
+under the shared top pill. After building, run
+`node scripts/pkc/audit-nav-overlap.mjs <page>` and apply the rule in the
+2026-10-23 entry below.
+
 ### Office to PDF restored
 
 The fork dropped the 22 Office to PDF tools in `70e0834` for one concrete
@@ -375,3 +381,48 @@ English-only build: that the resolution order (URL path, stored preference,
 navigator, build-time default) still holds and that anything outside the
 supported set is rejected at each step. Suite is green: 866 passing, 0 failing,
 up from 805 passing / 9 failing at the fork's previous state.
+
+---
+
+## 2026-10-23 — The sticky top pill no longer sits on any tool's controls
+
+Since the shared top pill started sticking on 2026-09-11 (`bc6cefc`) it covers
+the top of the viewport at every scroll depth: the pills down to 72px, then the
+frosted band that fades out by 112px. Nothing checked what that landed on. An
+audit of all 119 tool pages, each opened with a sample file and scrolled top to
+bottom at desktop sizes, found three kinds of fault:
+
+| Tool                                                 | What was under the header                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Edit PDF Text                                        | Its whole toolbar: Export, Back, Open, Add a text box, Find, Add an image. The editor is `position: fixed; inset: 0`, so no scrolling could uncover it.                                                                                                                       |
+| Bookmark                                             | The sticky Undo / Redo / Delete All / Reset / Back bar (`sticky top-0`), as soon as the page scrolled.                                                                                                                                                                        |
+| Form Creator                                         | Upstream's offsets for its own 64px navbar (`top-4`, `top-16`, `top-[120px]`): the Properties heading and the page/grid toolbar. Its two toolbars also overlapped each other whenever the first wrapped onto two rows.                                                        |
+| Edit PDF, Sign PDF, Add Stamps, Form Filler, Compare | The embedded viewer's own toolbar (Annotate, Shapes, Redact, zoom, the stamp and signature tools, page navigation) slid under the pill when the page was scrolled to the viewer. Scrolling back up does not rescue it: the wheel over a viewer scrolls the PDF, not the page. |
+
+Also two overlays still under the pill (`z-[60]` page preview, `z-[100]`
+password prompt), missed by `bc6cefc` because both are built in TypeScript.
+
+**The rule, written beside `--pkc-nav-clear` in `src/css/styles.css`:**
+
+1. Anything pinned starts at `--pkc-nav-clear` (the END of the band, 112px — the
+   band blurs whatever sits between 72px and 112px). A pinned bar that content
+   scrolls under takes `pkc-pinned-bar`, which frosts it in glass mode.
+2. Full-screen overlays go above the header (z-index 4000).
+3. An embedded viewer carries `data-pkc-workspace`, and `src/js/nav-yield.ts`
+   moves the header out of its way: as the viewer's top rises into the band the
+   pill rises with it, and it slides back once the viewer has scrolled away.
+   This is sticky containment done by hand. It moves the pill's sticky `top` and
+   translates the band, never transforms `.top-pills` (that would shrink the
+   band to the pill's width).
+
+Edit PDF Text keeps the site nav above it, like PDF Multi Tool, and hides the PKC
+intro cards while open (they peeked out between the pill and the editor).
+Form Creator's two toolbars now stick as one block.
+
+**Checks.** `src/tests/nav-clearance.test.ts` is a static guard over every page
+and script: no sticky offset that ignores `--pkc-nav-clear`, every full-screen
+overlay on a z-index that is raised, and every viewer marked. It fails on the
+old Bookmark page. `scripts/pkc/audit-nav-overlap.mjs` is the browser audit
+itself; run it after porting any page from upstream (usage in its header). On
+the live site before this change it reports all of the above; on this build it
+reports nothing at 1440x900, 1366x768 and 1920x1080.

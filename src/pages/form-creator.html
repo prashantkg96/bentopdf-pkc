@@ -275,8 +275,12 @@
           <!-- Main Form Creator Area -->
           <div class="flex flex-col lg:flex-row gap-6">
             <!-- Sidebar with Properties -->
+            <!-- PKC: the sticky offsets on this page were upstream's, made for its 64px
+                 navbar (top-4, top-16, top-[120px]). Under the shared top pill they left
+                 the Properties heading and the page/grid toolbar underneath it. Both
+                 sticky parts now start at --pkc-nav-clear (styles.css). -->
             <aside
-              class="lg:w-64 flex-shrink-0 order-2 lg:order-1 lg:sticky lg:top-4 lg:self-start"
+              class="lg:w-64 flex-shrink-0 order-2 lg:order-1 lg:sticky lg:top-[var(--pkc-nav-clear)] lg:self-start"
             >
               <!-- Properties Section -->
               <div class="bg-gray-700 rounded-lg p-4">
@@ -311,218 +315,226 @@
 
             <!-- Canvas Area -->
             <main class="flex-1 order-1 lg:order-2 min-w-0">
-              <!-- Page Management Toolbar -->
+              <!-- PKC: both toolbars stick as ONE block. Upstream stuck them separately,
+                   the second at a fixed 56px below the first, so whenever the first
+                   wrapped onto two rows (it does beside the Properties sidebar) the Fields
+                   toolbar sat on top of its Reset and Add Page buttons. One block is as
+                   tall as its contents. pkc-pinned-bar frosts it in glass mode, where the
+                   gray surfaces are translucent and the form showed through. -->
               <div
-                class="bg-gray-700 rounded-lg p-3 mb-4 flex flex-wrap gap-2 justify-center md:justify-between items-center overflow-hidden sticky top-16 z-20"
+                class="pkc-pinned-bar sticky top-[var(--pkc-nav-clear)] z-20 mb-4 bg-gray-700 rounded-lg"
               >
+                <!-- Page Management Toolbar -->
                 <div
-                  class="flex flex-wrap items-center justify-center gap-2 min-w-0"
+                  class="p-3 flex flex-wrap gap-2 justify-center md:justify-between items-center overflow-hidden"
                 >
-                  <button
-                    id="prevPageBtn"
-                    class="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    disabled
-                  >
-                    <i data-lucide="chevron-left" class="w-4 h-4"></i>
-                  </button>
-                  <span id="pageIndicator" class="text-sm text-gray-300 px-2"
-                    >Page 1 of 1</span
-                  >
-                  <button
-                    id="nextPageBtn"
-                    class="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    disabled
-                  >
-                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                  </button>
                   <div
-                    class="flex items-center gap-2 md:ml-2 md:border-l border-gray-600 md:pl-2"
+                    class="flex flex-wrap items-center justify-center gap-2 min-w-0"
                   >
-                    <span class="text-sm text-gray-400">Go to:</span>
-                    <input
-                      type="number"
-                      id="gotoPageInput"
-                      min="1"
-                      class="w-16 bg-gray-600 border border-gray-500 text-white rounded px-2 py-1 text-sm focus:ring-indigo-500 focus:border-indigo-500"
-                    />
                     <button
-                      id="gotoPageBtn"
-                      class="bg-indigo-600 hover:bg-indigo-500 text-white px-2 py-1 rounded text-sm transition-colors"
+                      id="prevPageBtn"
+                      class="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      disabled
                     >
-                      Go
+                      <i data-lucide="chevron-left" class="w-4 h-4"></i>
                     </button>
-                  </div>
-                  <div
-                    class="hidden md:flex items-center gap-2 md:ml-2 md:border-l border-gray-600 md:pl-2"
-                  >
-                    <input
-                      type="checkbox"
-                      id="enableGridCheckbox"
-                      checked
-                      class="mr-1"
-                    />
-                    <label
-                      for="enableGridCheckbox"
-                      class="text-sm text-gray-400"
-                      >Grid:</label
+                    <span id="pageIndicator" class="text-sm text-gray-300 px-2"
+                      >Page 1 of 1</span
                     >
-                    <input
-                      type="number"
-                      id="gridVInput"
-                      min="2"
-                      max="14"
-                      value="2"
-                      placeholder="V"
-                      class="w-12 bg-gray-600 border border-gray-500 text-white rounded px-2 py-1 text-sm focus:ring-indigo-500 focus:border-indigo-500"
-                    />
-                    <span class="text-gray-400">x</span>
-                    <input
-                      type="number"
-                      id="gridHInput"
-                      min="2"
-                      max="14"
-                      value="2"
-                      placeholder="H"
-                      class="w-12 bg-gray-600 border border-gray-500 text-white rounded px-2 py-1 text-sm focus:ring-indigo-500 focus:border-indigo-500"
-                    />
                     <button
-                      id="toggleGridBtn"
-                      class="bg-gray-600 hover:bg-gray-500 text-white p-1 rounded transition-colors"
-                      title="Toggle Grid"
+                      id="nextPageBtn"
+                      class="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      disabled
                     >
-                      <i data-lucide="grid-3x3" class="w-4 h-4"></i>
+                      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                    <div
+                      class="flex items-center gap-2 md:ml-2 md:border-l border-gray-600 md:pl-2"
+                    >
+                      <span class="text-sm text-gray-400">Go to:</span>
+                      <input
+                        type="number"
+                        id="gotoPageInput"
+                        min="1"
+                        class="w-16 bg-gray-600 border border-gray-500 text-white rounded px-2 py-1 text-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      />
+                      <button
+                        id="gotoPageBtn"
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white px-2 py-1 rounded text-sm transition-colors"
+                      >
+                        Go
+                      </button>
+                    </div>
+                    <div
+                      class="hidden md:flex items-center gap-2 md:ml-2 md:border-l border-gray-600 md:pl-2"
+                    >
+                      <input
+                        type="checkbox"
+                        id="enableGridCheckbox"
+                        checked
+                        class="mr-1"
+                      />
+                      <label
+                        for="enableGridCheckbox"
+                        class="text-sm text-gray-400"
+                        >Grid:</label
+                      >
+                      <input
+                        type="number"
+                        id="gridVInput"
+                        min="2"
+                        max="14"
+                        value="2"
+                        placeholder="V"
+                        class="w-12 bg-gray-600 border border-gray-500 text-white rounded px-2 py-1 text-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      />
+                      <span class="text-gray-400">x</span>
+                      <input
+                        type="number"
+                        id="gridHInput"
+                        min="2"
+                        max="14"
+                        value="2"
+                        placeholder="H"
+                        class="w-12 bg-gray-600 border border-gray-500 text-white rounded px-2 py-1 text-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      />
+                      <button
+                        id="toggleGridBtn"
+                        class="bg-gray-600 hover:bg-gray-500 text-white p-1 rounded transition-colors"
+                        title="Toggle Grid"
+                      >
+                        <i data-lucide="grid-3x3" class="w-4 h-4"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center gap-2">
+                    <button
+                      id="resetBtn"
+                      class="bg-gray-600 hover:bg-gray-500 text-white p-2 px-3 rounded flex items-center gap-2 transition-colors"
+                    >
+                      <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                      <span class="text-sm">Reset</span>
+                    </button>
+                    <button
+                      id="addPageBtn"
+                      class="bg-indigo-600 hover:bg-indigo-500 text-white p-2 px-3 rounded flex items-center gap-2 transition-colors"
+                    >
+                      <i data-lucide="file-plus" class="w-4 h-4"></i>
+                      <span class="text-sm">Add Page</span>
                     </button>
                   </div>
                 </div>
-                <div class="flex items-center justify-center gap-2">
-                  <button
-                    id="resetBtn"
-                    class="bg-gray-600 hover:bg-gray-500 text-white p-2 px-3 rounded flex items-center gap-2 transition-colors"
-                  >
-                    <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
-                    <span class="text-sm">Reset</span>
-                  </button>
-                  <button
-                    id="addPageBtn"
-                    class="bg-indigo-600 hover:bg-indigo-500 text-white p-2 px-3 rounded flex items-center gap-2 transition-colors"
-                  >
-                    <i data-lucide="file-plus" class="w-4 h-4"></i>
-                    <span class="text-sm">Add Page</span>
-                  </button>
-                </div>
-              </div>
 
-              <!-- Top Toolbar -->
-              <div
-                class="bg-gray-700 rounded-lg p-3 mb-4 sticky top-[120px] z-20"
-              >
-                <div
-                  class="flex flex-wrap gap-2 justify-center items-center max-w-full py-1"
-                >
+                <!-- Top Toolbar -->
+                <div class="p-3 border-t border-gray-600">
                   <div
-                    class="text-gray-400 text-sm font-semibold mr-2 flex items-center gap-1"
+                    class="flex flex-wrap gap-2 justify-center items-center max-w-full py-1"
                   >
-                    <i data-lucide="wrench" class="w-4 h-4"></i> Fields:
-                  </div>
+                    <div
+                      class="text-gray-400 text-sm font-semibold mr-2 flex items-center gap-1"
+                    >
+                      <i data-lucide="wrench" class="w-4 h-4"></i> Fields:
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="text"
-                    title="Text Field"
-                  >
-                    <i data-lucide="type" class="w-4 h-4"></i>
-                    <span class="text-xs">Text</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="text"
+                      title="Text Field"
+                    >
+                      <i data-lucide="type" class="w-4 h-4"></i>
+                      <span class="text-xs">Text</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="checkbox"
-                    title="Checkbox"
-                  >
-                    <i data-lucide="check-square" class="w-4 h-4"></i>
-                    <span class="text-xs">Checkbox</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="checkbox"
+                      title="Checkbox"
+                    >
+                      <i data-lucide="check-square" class="w-4 h-4"></i>
+                      <span class="text-xs">Checkbox</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="radio"
-                    title="Radio Button"
-                  >
-                    <i data-lucide="circle-dot" class="w-4 h-4"></i>
-                    <span class="text-xs">Radio</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="radio"
+                      title="Radio Button"
+                    >
+                      <i data-lucide="circle-dot" class="w-4 h-4"></i>
+                      <span class="text-xs">Radio</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="dropdown"
-                    title="Dropdown"
-                  >
-                    <i data-lucide="chevron-down-square" class="w-4 h-4"></i>
-                    <span class="text-xs">Dropdown</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="dropdown"
+                      title="Dropdown"
+                    >
+                      <i data-lucide="chevron-down-square" class="w-4 h-4"></i>
+                      <span class="text-xs">Dropdown</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="optionlist"
-                    title="Option List"
-                  >
-                    <i data-lucide="list" class="w-4 h-4"></i>
-                    <span class="text-xs">List</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="optionlist"
+                      title="Option List"
+                    >
+                      <i data-lucide="list" class="w-4 h-4"></i>
+                      <span class="text-xs">List</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="button"
-                    title="Button"
-                  >
-                    <i data-lucide="square-mouse-pointer" class="w-4 h-4"></i>
-                    <span class="text-xs">Button</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="button"
+                      title="Button"
+                    >
+                      <i data-lucide="square-mouse-pointer" class="w-4 h-4"></i>
+                      <span class="text-xs">Button</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="signature"
-                    title="Signature"
-                  >
-                    <i data-lucide="pen-tool" class="w-4 h-4"></i>
-                    <span class="text-xs">Signature</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="signature"
+                      title="Signature"
+                    >
+                      <i data-lucide="pen-tool" class="w-4 h-4"></i>
+                      <span class="text-xs">Signature</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="date"
-                    title="Date Field"
-                  >
-                    <i data-lucide="calendar" class="w-4 h-4"></i>
-                    <span class="text-xs">Date</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="date"
+                      title="Date Field"
+                    >
+                      <i data-lucide="calendar" class="w-4 h-4"></i>
+                      <span class="text-xs">Date</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="image"
-                    title="Image Field"
-                  >
-                    <i data-lucide="image" class="w-4 h-4"></i>
-                    <span class="text-xs">Image</span>
-                  </div>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="image"
+                      title="Image Field"
+                    >
+                      <i data-lucide="image" class="w-4 h-4"></i>
+                      <span class="text-xs">Image</span>
+                    </div>
 
-                  <div
-                    class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
-                    draggable="true"
-                    data-type="barcode"
-                    title="Barcode Field"
-                  >
-                    <i data-lucide="qr-code" class="w-4 h-4"></i>
-                    <span class="text-xs">Barcode</span>
+                    <div
+                      class="tool-item bg-gray-600 hover:bg-indigo-600 text-white p-2 rounded cursor-move transition-colors flex items-center gap-2"
+                      draggable="true"
+                      data-type="barcode"
+                      title="Barcode Field"
+                    >
+                      <i data-lucide="qr-code" class="w-4 h-4"></i>
+                      <span class="text-xs">Barcode</span>
+                    </div>
                   </div>
                 </div>
               </div>

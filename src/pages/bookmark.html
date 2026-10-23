@@ -252,8 +252,12 @@
       </div>
 
       <div id="app" class="hidden bg-gray-900 min-h-screen">
+        <!-- PKC: sticks below the shared header, not at top-0, where the sticky pill sat on
+             Undo, Redo, Delete All, Reset and Back. See --pkc-nav-clear in styles.css.
+             pkc-pinned-bar frosts it in glass mode, where bg-gray-800 is translucent and
+             the bookmark list showed through it. -->
         <header
-          class="bg-gray-800 border-b border-gray-700 shadow-sm sticky top-0 z-50"
+          class="pkc-pinned-bar bg-gray-800 border-b border-gray-700 shadow-sm sticky top-[var(--pkc-nav-clear)] z-50"
         >
           <div class="max-w-7xl mx-auto px-4 py-3">
             <div class="flex items-center justify-between flex-wrap gap-2">

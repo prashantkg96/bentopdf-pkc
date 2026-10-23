@@ -807,6 +807,47 @@ input[type='number']::-webkit-outer-spin-button {
   width: min(1120px, 92vw);
   margin-inline: auto;
   margin-top: 1rem;
+  /* --pkc-nav-push is how far a tool's workspace has shoved the header up and out of its
+     way (see nav-yield.ts). 0 everywhere else, so this is the shared `top: 0.9rem`. */
+  top: calc(0.9rem - var(--pkc-nav-push, 0px));
+}
+
+/* The frosted band under the pills is `position: fixed`, so the sticky `top` above does
+   not carry it. It has to leave with the pills, or it would blur the very toolbar the
+   header just moved out of the way of. `translate` on the band itself, never on
+   .top-pills: a transform there would make the pill the band's containing block and shrink
+   it from full-bleed to the pill's width (see the note on it in top-pills.css). */
+.pkc-nav-shell:not(.pkc-nav-shell--fixed-viewport) .top-pills::before {
+  translate: 0 calc(-1 * var(--pkc-nav-push, 0px));
+}
+
+/* PKC: THE HEADER MUST NEVER SIT ON A TOOL'S CONTROLS.
+   Since the pill started sticking (2026-09-11) it covers the top of the viewport at every
+   scroll depth: the pills to 72px, then the frosted band fading out by 112px. Anything a
+   tool pins to the top of the viewport landed underneath it — Edit PDF Text's whole
+   toolbar, Export included, and Bookmark's Undo/Redo bar — and a viewer's own toolbar slid
+   under it whenever the page was scrolled to the viewer.
+
+   The rule, for every tool and every tool ported from upstream later:
+   1. Anything pinned (`fixed` or `sticky`) starts at --pkc-nav-clear, never at 0. That is
+      the END of the band, not the bottom of the pills: between 72px and 112px the band
+      still blurs whatever is under it, which smears a toolbar's buttons. A pinned bar
+      that content scrolls under also takes `pkc-pinned-bar` (pkc-theme.css): glass mode
+      makes the gray surfaces translucent, and without the frost the content reads
+      straight through the bar.
+   2. A full-screen overlay (a modal and its backdrop) goes ABOVE the header — the rule
+      below this one.
+   3. An in-flow workspace with its own toolbar and its own scrolling (an embedded viewer)
+      carries `data-pkc-workspace`, and the header slides out of its way (nav-yield.ts).
+   Upstream assumed a 64px navbar (`top-16`, `top-[120px]`); those offsets are wrong here.
+   The audit that found all of this is scripts/pkc/audit-nav-overlap.mjs — run it after
+   porting a page.
+
+   112px mirrors `--nav-scrim` in the shared top-pills.css, which defines it on .top-pills
+   where nothing outside the pill can read it. nav-yield.ts re-reads the live value and
+   writes it here, so this is only the first-paint fallback. */
+:root {
+  --pkc-nav-clear: 112px;
 }
 
 /* PKC: the opt-out, for a page whose <body> is a clipped full-height flex column
@@ -825,9 +866,14 @@ input[type='number']::-webkit-outer-spin-button {
    against Tailwind's one, so it wins on specificity with no `!important`.
    The `z-[9999]` overlays (markdown editor, form creator) were already above and are left
    alone. So is the scroll-to-top button at `z-40`, which lives at the bottom of the
-   viewport and never meets the header. */
+   viewport and never meets the header.
+   The page-preview lightbox (`z-[60]`) and the password prompt (`z-[100]`) were missed
+   the first time: both are built in TypeScript, so a search of the HTML did not find
+   them. */
 .fixed.inset-0.z-50,
-.fixed.inset-0.z-40 {
+.fixed.inset-0.z-40,
+.fixed.inset-0.z-\[60\],
+.fixed.inset-0.z-\[100\] {
   z-index: 4000;
 }
 

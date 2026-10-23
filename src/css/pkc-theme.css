@@ -194,6 +194,7 @@
 :root[data-glass='on'] .pkc-love-note,
 :root[data-glass='on'] .pkc-feature-tile,
 :root[data-glass='on'] .tool-card,
+:root[data-glass='on'] .pkc-pinned-bar,
 :root[data-glass='on'] #scroll-to-top-btn {
   backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
 }
@@ -204,6 +205,7 @@
   :root[data-glass='on'] .pkc-love-note,
   :root[data-glass='on'] .pkc-feature-tile,
   :root[data-glass='on'] .tool-card,
+  :root[data-glass='on'] .pkc-pinned-bar,
   :root[data-glass='on'] #scroll-to-top-btn {
     -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
   }
