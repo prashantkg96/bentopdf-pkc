@@ -1,6 +1,5 @@
-body {
-  color: #374151;
-}
+/* PKC: upstream set `body { color: #374151 }` here, a fixed dark grey that overrode the
+   theme text colour for the whole page. Removed: text follows pkc-theme.css. */
 
 .sortable-ghost {
   opacity: 0.4;
@@ -28,7 +27,10 @@ body {
 }
 
 .modal-content {
-  background: white;
+  /* PKC: the same surface and edge as every other dialog in the app (bg-gray-800,
+     border-gray-700), through the theme remap, so it follows light, dark and glass. */
+  background: var(--color-gray-800);
+  border: 1px solid var(--color-gray-700);
   border-radius: 0.5rem;
   max-width: 500px;
   width: 100%;
@@ -63,7 +65,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #e5e7eb;
+  background: var(--color-gray-600);
 }
 
 .child-container > li {
@@ -77,12 +79,12 @@ body {
   top: 1.25rem;
   width: 0.75rem;
   height: 2px;
-  background: #e5e7eb;
+  background: var(--color-gray-600);
 }
 
 .style-preview {
   padding: 0.5rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-gray-600);
   border-radius: 0.25rem;
   min-height: 2.5rem;
   display: flex;

@@ -659,8 +659,12 @@ function renderField(field: FormField): void {
       '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m6 9 6 6 6-6"/></svg>';
     fieldContainer.appendChild(arrow);
   } else if (field.type === 'optionlist') {
+    // PKC: fields are drawn on the page, which is white in every theme (.pkc-paper),
+    // so their greys are fixed values (upstream's own gray-300 to gray-600), not
+    // gray-* classes: pkc-theme.css remaps those, which made the labels pale grey
+    // on the white page in dark mode.
     contentEl.className =
-      'w-full h-full flex flex-col text-sm overflow-hidden border border-gray-300';
+      'w-full h-full flex flex-col text-sm overflow-hidden border border-[#d1d5db]';
     contentEl.style.backgroundColor = getPreviewBackgroundColor(
       field,
       '#ffffff'
@@ -702,7 +706,7 @@ function renderField(field: FormField): void {
     contentEl.textContent = field.label || 'Button';
   } else if (field.type === 'signature') {
     contentEl.className =
-      'w-full h-full flex items-center justify-center text-gray-400';
+      'w-full h-full flex items-center justify-center text-[#9ca3af]';
     contentEl.style.backgroundColor = getPreviewBackgroundColor(
       field,
       '#f9fafb'
@@ -712,7 +716,7 @@ function renderField(field: FormField): void {
     setTimeout(() => (window as LucideWindow).lucide?.createIcons(), 0);
   } else if (field.type === 'date') {
     contentEl.className =
-      'w-full h-full flex items-center justify-center text-gray-600 border border-gray-300';
+      'w-full h-full flex items-center justify-center text-[#4b5563] border border-[#d1d5db]';
     contentEl.style.backgroundColor = getPreviewBackgroundColor(
       field,
       '#ffffff'
@@ -721,7 +725,7 @@ function renderField(field: FormField): void {
     setTimeout(() => (window as LucideWindow).lucide?.createIcons(), 0);
   } else if (field.type === 'image') {
     contentEl.className =
-      'w-full h-full flex items-center justify-center text-gray-500 border border-gray-300';
+      'w-full h-full flex items-center justify-center text-[#6b7280] border border-[#d1d5db]';
     contentEl.style.backgroundColor = getPreviewBackgroundColor(
       field,
       '#f3f4f6'

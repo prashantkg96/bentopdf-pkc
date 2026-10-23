@@ -651,7 +651,7 @@ function createPageElement(
 
   const preview = document.createElement('div');
   preview.className =
-    'bg-white rounded mb-2 overflow-hidden w-full flex items-center justify-center relative h-36 sm:h-64';
+    'pkc-paper bg-white rounded mb-2 overflow-hidden w-full flex items-center justify-center relative h-36 sm:h-64';
 
   if (canvas) {
     const previewCanvas = canvas;
@@ -1010,7 +1010,7 @@ async function handleInsertPdf(e: Event) {
             // Re-create the preview content
             preview.innerHTML = '';
             preview.className =
-              'bg-white rounded mb-2 overflow-hidden w-full flex items-center justify-center relative h-36 sm:h-64';
+              'pkc-paper bg-white rounded mb-2 overflow-hidden w-full flex items-center justify-center relative h-36 sm:h-64';
 
             const previewCanvas = canvas;
             previewCanvas.className = 'max-w-full max-h-full object-contain';

@@ -227,17 +227,17 @@ function showInputModal(
         if (field.type === 'text') {
           return `
   <div class="mb-4">
-    <label class="block text-sm font-medium text-gray-700 mb-2">${escapeHTML(field.label)}</label>
+    <label class="block text-sm font-medium text-gray-300 mb-2">${escapeHTML(field.label)}</label>
       <input type="text" id="modal-${field.name}" value="${escapeHTML(String(defaultValues[field.name] || ''))}"
-class="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-900"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg"
 placeholder="${escapeHTML(field.placeholder || '')}" />
   </div>
     `;
         } else if (field.type === 'select') {
           return `
   <div class="mb-4">
-    <label class="block text-sm font-medium text-gray-700 mb-2">${escapeHTML(field.label)}</label>
-      <select id="modal-${field.name}" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-900">
+    <label class="block text-sm font-medium text-gray-300 mb-2">${escapeHTML(field.label)}</label>
+      <select id="modal-${field.name}" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg">
         ${field.options
           .map(
             (opt) => `
@@ -256,24 +256,24 @@ placeholder="${escapeHTML(field.placeholder || '')}" />
             defaultValues.destX !== null && defaultValues.destX !== undefined;
           return `
   <div class="mb-4">
-    <label class="block text-sm font-medium text-gray-700 mb-2">${escapeHTML(field.label)}</label>
-      <div class="p-3 bg-gray-50 rounded-lg border border-gray-200 space-y-2">
+    <label class="block text-sm font-medium text-gray-300 mb-2">${escapeHTML(field.label)}</label>
+      <div class="p-3 bg-gray-900 rounded-lg border border-gray-700 space-y-2">
         <div class="flex items-center gap-2">
           <label class="flex items-center gap-1 text-xs">
             <input type="checkbox" id="modal-use-destination" class="w-4 h-4" ${hasDestination ? 'checked' : ''}>
-              <span class="text-gray-700">Set custom destination</span>
+              <span class="text-gray-300">Set custom destination</span>
                 </label>
                 </div>
                 <div id="destination-controls" class="${hasDestination ? '' : 'hidden'} space-y-2">
                   <div class="grid grid-cols-2 gap-2">
                     <div>
-                    <label class="text-xs text-gray-600">Page</label>
+                    <label class="text-xs text-gray-400">Page</label>
                       <input type="number" id="modal-dest-page" min="1" max="${escapeHTML(String(field.maxPages || 1))}" value="${escapeHTML(String(defaultValues.destPage || field.page || 1))}"
-class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" step="1" />
+class="w-full px-2 py-1 bg-gray-700 border border-gray-600 text-white rounded text-sm" step="1" />
   </div>
   <div>
-  <label class="text-xs text-gray-600">Zoom(%)</label>
-    <select id="modal-dest-zoom" class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900">
+  <label class="text-xs text-gray-400">Zoom(%)</label>
+    <select id="modal-dest-zoom" class="w-full px-2 py-1 bg-gray-700 border border-gray-600 text-white rounded text-sm">
       <option value="">Inherit</option>
         <option value="0">Fit Page</option>
           <option value="50">50%</option>
@@ -287,14 +287,14 @@ class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" st
                       </div>
                       <div class="grid grid-cols-2 gap-2">
                         <div>
-                        <label class="text-xs text-gray-600">X Position</label>
+                        <label class="text-xs text-gray-400">X Position</label>
                           <input type="number" id="modal-dest-x" value="0" step="10"
-class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" />
+class="w-full px-2 py-1 bg-gray-700 border border-gray-600 text-white rounded text-sm" />
   </div>
   <div>
-  <label class="text-xs text-gray-600">Y Position</label>
+  <label class="text-xs text-gray-400">Y Position</label>
     <input type="number" id="modal-dest-y" value="0" step="10"
-class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" />
+class="w-full px-2 py-1 bg-gray-700 border border-gray-600 text-white rounded text-sm" />
   </div>
   </div>
   <button id="modal-pick-destination" class="w-full px-3 py-2 btn-gradient text-white rounded text-xs !flex items-center justify-center gap-1">
@@ -308,8 +308,8 @@ class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" />
         } else if (field.type === 'preview') {
           return `
         <div class="mb-4">
-          <label class="block text-sm font-medium text-gray-700 mb-2">${escapeHTML(field.label)}</label>
-            <div id="modal-preview" class="style-preview bg-gray-50">
+          <label class="block text-sm font-medium text-gray-300 mb-2">${escapeHTML(field.label)}</label>
+            <div id="modal-preview" class="style-preview bg-gray-900">
               <span id="preview-text" style="font-size: 16px;">Preview Text</span>
                 </div>
                 </div>
@@ -321,12 +321,12 @@ class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" />
 
     modal.innerHTML = `
                 <div class="p-6">
-                  <h3 class="text-xl font-bold text-gray-800 mb-4">${escapeHTML(title)}</h3>
+                  <h3 class="text-xl font-bold text-white mb-4">${escapeHTML(title)}</h3>
                     <div class="mb-6">
                       ${fieldsHTML}
 </div>
   <div class="flex gap-2 justify-end">
-    <button id="modal-cancel" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</button>
+    <button id="modal-cancel" class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-white">Cancel</button>
       <button id="modal-confirm" class="px-4 py-2 rounded btn-gradient text-white">Confirm</button>
         </div>
         </div>
@@ -362,7 +362,9 @@ class="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900" />
         if (color === 'custom' && colorPickerEl) {
           previewText.style.color = colorPickerEl.value;
         } else {
-          previewText.style.color = HEX_COLOR_MAP[color] || '#000';
+          // PKC: no colour inherits the theme's text colour; upstream's '#000' was
+          // black on the dark dialog.
+          previewText.style.color = HEX_COLOR_MAP[color] || '';
         }
 
         previewText.style.fontWeight =
@@ -824,10 +826,10 @@ function showConfirmModal(message: string): Promise<boolean> {
 
     modal.innerHTML = `
   <div class="p-6">
-    <h3 class="text-xl font-bold text-gray-800 mb-4">Confirm Action</h3>
-      <p class="text-gray-600 mb-6">${escapeHTML(message)}</p>
+    <h3 class="text-xl font-bold text-white mb-4">Confirm Action</h3>
+      <p class="text-gray-300 mb-6">${escapeHTML(message)}</p>
         <div class="flex gap-2 justify-end">
-          <button id="modal-cancel" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</button>
+          <button id="modal-cancel" class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-white">Cancel</button>
             <button id="modal-confirm" class="px-4 py-2 rounded btn-gradient text-white">Confirm</button>
               </div>
               </div>
@@ -877,8 +879,8 @@ function showAlertModal(title: string, message: string): Promise<boolean> {
 
     modal.innerHTML = `
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">${escapeHTML(title)}</h3>
-                  <p class="text-gray-600 mb-6">${escapeHTML(message)}</p>
+                <h3 class="text-xl font-bold text-white mb-4">${escapeHTML(title)}</h3>
+                  <p class="text-gray-300 mb-6">${escapeHTML(message)}</p>
                     <div class="flex justify-end">
                       <button id="modal-ok" class="px-4 py-2 rounded btn-gradient text-white">OK</button>
                         </div>
@@ -1573,13 +1575,13 @@ function getStyleClasses(style: BookmarkStyle): string {
 }
 
 function getTextColor(color: BookmarkColor | string): string {
-  if (!color) return 'text-gray-700';
+  if (!color) return 'text-gray-200';
 
   if (typeof color === 'string' && color.startsWith('#')) {
     return '';
   }
 
-  return TEXT_COLOR_CLASSES[color] || 'text-gray-700';
+  return TEXT_COLOR_CLASSES[color] || 'text-gray-200';
 }
 
 function renderBookmarkTree(): void {
@@ -1619,7 +1621,7 @@ function createNodeElement(node: BookmarkNode, level = 0): HTMLLIElement {
   const isSelected = selectedBookmarks.has(node.id);
   const isMatch =
     !searchQuery || node.title.toLowerCase().includes(searchQuery);
-  const highlight = isMatch && searchQuery ? 'bg-yellow-100' : '';
+  const highlight = isMatch && searchQuery ? 'bg-indigo-500/20' : '';
   const colorClass =
     node.color && typeof node.color === 'string'
       ? COLOR_CLASSES[node.color] || ''
@@ -1628,7 +1630,7 @@ function createNodeElement(node: BookmarkNode, level = 0): HTMLLIElement {
   const textColorClass = getTextColor(node.color);
 
   const div = document.createElement('div');
-  div.className = `flex items-center gap-2 p-2 rounded border border-gray-200 ${colorClass} ${highlight} ${isSelected ? 'ring-2 ring-blue-500' : ''} hover:bg-gray-50`;
+  div.className = `flex items-center gap-2 p-2 rounded border border-gray-700 ${colorClass} ${highlight} ${isSelected ? 'ring-2 ring-indigo-500' : ''} hover:bg-gray-700`;
 
   if (batchMode) {
     const checkbox = document.createElement('input');
@@ -1729,7 +1731,7 @@ function createNodeElement(node: BookmarkNode, level = 0): HTMLLIElement {
   actionsDiv.className = 'flex gap-1 flex-shrink-0';
 
   const addChildBtn = document.createElement('button');
-  addChildBtn.className = 'p-1 hover:bg-gray-200 rounded text-gray-700';
+  addChildBtn.className = 'p-1 hover:bg-gray-600 rounded text-gray-300';
   addChildBtn.title = 'Add child';
   addChildBtn.innerHTML = '<i data-lucide="plus" class="w-4 h-4"></i>';
   addChildBtn.addEventListener('click', async (e: MouseEvent) => {
@@ -1762,7 +1764,7 @@ function createNodeElement(node: BookmarkNode, level = 0): HTMLLIElement {
   actionsDiv.appendChild(addChildBtn);
 
   const editBtn = document.createElement('button');
-  editBtn.className = 'p-1 hover:bg-gray-200 rounded text-gray-700';
+  editBtn.className = 'p-1 hover:bg-gray-600 rounded text-gray-300';
   editBtn.title = 'Edit';
   editBtn.innerHTML = '<i data-lucide="edit-2" class="w-4 h-4"></i>';
   editBtn.addEventListener('click', async (e: MouseEvent) => {
@@ -1840,7 +1842,7 @@ function createNodeElement(node: BookmarkNode, level = 0): HTMLLIElement {
   actionsDiv.appendChild(editBtn);
 
   const deleteBtn = document.createElement('button');
-  deleteBtn.className = 'p-1 hover:bg-gray-200 rounded text-red-600';
+  deleteBtn.className = 'p-1 hover:bg-gray-600 rounded text-red-600';
   deleteBtn.title = 'Delete';
   deleteBtn.innerHTML = '<i data-lucide="trash-2" class="w-4 h-4"></i>';
   deleteBtn.addEventListener('click', async (e: MouseEvent) => {

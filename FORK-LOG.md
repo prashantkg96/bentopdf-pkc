@@ -430,3 +430,31 @@ itself; run it after porting any page from upstream (usage in its header). On
 the live site before this change it reports all of the above; on this build it
 reports nothing for any of the 119 tools at 1440x900, 1366x768, 1920x1080 or
 390x844.
+
+## 2026-10-23 — Light mode: Bookmark's panels, and white paper everywhere
+
+`pkc-theme.css` remaps the dark-first Tailwind palette this app is written in
+onto theme tokens, and `white` maps to the strong text colour so that
+`text-white` headings turn dark in light mode. Upstream's light-palette classes
+go through the same remap inside out:
+
+- **Bookmark** was written in them (`bg-white` panels, `bg-gray-50/100`
+  wells and buttons, `text-gray-700/800` text). In light mode its panels went
+  dark brown with cream text, and a hard `body { color: #374151 }` in
+  `bookmark.css` overrode the theme's text colour. The editor, its dialogs and
+  its bookmark rows (built in `bookmark-pdf.ts`) now use the house classes:
+  `bg-gray-800` panels, `bg-gray-700` inputs and buttons, `text-gray-200/300/400`.
+  The dialog's style preview no longer falls back to black.
+- **Paper.** Form Creator's blank page and PDF Multi Tool's thumbnail boxes are
+  `bg-white` too, and went dark brown in light mode. They take `.pkc-paper`
+  (styles.css), which is white in every theme. Form Creator's field labels drawn
+  on that page use fixed greys for the same reason; in dark mode they had been
+  pale grey on white.
+- **Glass.** Surfaces are translucent in glass mode, so anything that sits over
+  other content needs the frost: the Bookmark dialog (`.modal-content`) and its
+  Import/Export menus (`.pkc-frost`, a new class for floating menus) let the
+  page read straight through them.
+
+`src/tests/theme-palette.test.ts` keeps it that way: no light-palette panel or
+text classes in any tool page or script, and `bg-white` only on paper, toggle
+knobs and resize handles. It fails on the old code.

@@ -175,6 +175,11 @@
    layout containers — and keep every ancestor of .top-pills free of anything
    that opens a stacking context.
 
+   Anything that sits OVER other content needs this too, or glass mode's
+   translucent fills let that content read straight through it: .pkc-pinned-bar
+   for sticky bars, .modal-content for the Bookmark dialog, and .pkc-frost for a
+   floating menu.
+
    WHY THE PREFIXED COPY IS QUARANTINED IN AN @supports BLOCK.
    Lightning CSS (the minifier behind vite build) treats -webkit-backdrop-filter
    and backdrop-filter as ONE property and keeps whichever is declared LAST.
@@ -195,6 +200,8 @@
 :root[data-glass='on'] .pkc-feature-tile,
 :root[data-glass='on'] .tool-card,
 :root[data-glass='on'] .pkc-pinned-bar,
+:root[data-glass='on'] .modal-content,
+:root[data-glass='on'] .pkc-frost,
 :root[data-glass='on'] #scroll-to-top-btn {
   backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
 }
@@ -206,6 +213,8 @@
   :root[data-glass='on'] .pkc-feature-tile,
   :root[data-glass='on'] .tool-card,
   :root[data-glass='on'] .pkc-pinned-bar,
+  :root[data-glass='on'] .modal-content,
+  :root[data-glass='on'] .pkc-frost,
   :root[data-glass='on'] #scroll-to-top-btn {
     -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
   }

@@ -320,49 +320,58 @@
           </div>
         </div>
 
+        <!-- PKC: everything below uses the fork's dark-first classes (bg-gray-800 panels,
+             bg-gray-700 inputs and buttons, text-gray-200/300/400), which pkc-theme.css
+             remaps for light and dark. Upstream wrote this editor in light-palette
+             classes (bg-white, bg-gray-50/100, text-gray-700/800) that the remap turns
+             inside out: bg-white is the strong-text colour, so the panels went dark
+             brown in light mode with cream text on them. The same goes for the dialogs
+             and bookmark rows built in bookmark-pdf.ts. -->
         <div class="max-w-7xl mx-auto p-4">
           <div class="flex flex-col lg:flex-row gap-4">
             <div id="viewer-section" class="w-full lg:w-[50%] flex-shrink-0">
-              <div class="bg-white rounded-lg shadow-lg p-4">
+              <div
+                class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-4"
+              >
                 <div
                   class="flex flex-wrap items-center justify-between gap-2 mb-4"
                 >
                   <div class="flex items-center gap-2">
                     <button
                       id="prev-page"
-                      class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"
+                      class="px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm"
                     >
                       <i
                         data-lucide="chevron-left"
-                        class="w-5 h-5 text-blue-600"
+                        class="w-5 h-5 text-indigo-400"
                       ></i>
                     </button>
                     <span
                       id="page-indicator"
-                      class="text-sm font-medium text-gray-700 whitespace-nowrap"
+                      class="text-sm font-medium text-gray-200 whitespace-nowrap"
                       >Page 1 / 1</span
                     >
                     <button
                       id="next-page"
-                      class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"
+                      class="px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm"
                     >
                       <i
                         data-lucide="chevron-right"
-                        class="w-5 h-5 text-blue-600"
+                        class="w-5 h-5 text-indigo-400"
                       ></i>
                     </button>
                   </div>
                   <div class="flex items-center gap-2">
-                    <span class="text-sm text-gray-600">Go to:</span>
+                    <span class="text-sm text-gray-400">Go to:</span>
                     <input
                       type="number"
                       id="goto-page"
                       min="1"
-                      class="w-16 px-2 py-1 border border-gray-300 rounded text-sm"
+                      class="w-16 px-2 py-1 bg-gray-700 border border-gray-600 text-white rounded text-sm"
                     />
                     <button
                       id="goto-btn"
-                      class="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm"
+                      class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white rounded text-sm"
                     >
                       Go
                     </button>
@@ -370,26 +379,29 @@
                   <div class="flex items-center gap-2">
                     <button
                       id="zoom-out-btn"
-                      class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"
+                      class="px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm"
                       title="Zoom Out"
                     >
-                      <i data-lucide="minus" class="w-5 h-5 text-blue-600"></i>
+                      <i
+                        data-lucide="minus"
+                        class="w-5 h-5 text-indigo-400"
+                      ></i>
                     </button>
                     <span
                       id="zoom-indicator"
-                      class="text-sm font-medium text-gray-700 whitespace-nowrap min-w-[60px] text-center"
+                      class="text-sm font-medium text-gray-200 whitespace-nowrap min-w-[60px] text-center"
                       >100%</span
                     >
                     <button
                       id="zoom-in-btn"
-                      class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"
+                      class="px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm"
                       title="Zoom In"
                     >
-                      <i data-lucide="plus" class="w-5 h-5 text-blue-600"></i>
+                      <i data-lucide="plus" class="w-5 h-5 text-indigo-400"></i>
                     </button>
                     <button
                       id="zoom-fit-btn"
-                      class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-sm"
+                      class="px-3 py-1 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm"
                       title="Fit to Width"
                     >
                       Fit
@@ -399,15 +411,15 @@
 
                 <div
                   id="picking-mode-banner"
-                  class="hidden mb-4 p-3 bg-blue-100 border-2 border-blue-400 rounded-lg"
+                  class="hidden mb-4 p-3 bg-gray-900 border-2 border-indigo-500 rounded-lg"
                 >
                   <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                       <i
                         data-lucide="crosshair"
-                        class="w-5 h-5 text-blue-600"
+                        class="w-5 h-5 text-indigo-400"
                       ></i>
-                      <span class="text-sm font-medium text-blue-800"
+                      <span class="text-sm font-medium text-gray-200"
                         >Click on the PDF to set bookmark destination</span
                       >
                     </div>
@@ -421,7 +433,7 @@
                 </div>
 
                 <div
-                  class="overflow-auto border border-gray-200 rounded"
+                  class="overflow-auto border border-gray-700 rounded"
                   id="canvas-container"
                 >
                   <div class="pdf-canvas-wrapper" id="pdf-canvas-wrapper">
@@ -438,8 +450,10 @@
               id="bookmarks-section"
               class="hidden lg:block w-full lg:w-[50%] flex-shrink-0"
             >
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <h3 class="text-lg font-bold text-gray-800 mb-4">Bookmarks</h3>
+              <div
+                class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-4"
+              >
+                <h3 class="text-lg font-bold text-white mb-4">Bookmarks</h3>
 
                 <div class="mb-4">
                   <div class="relative">
@@ -451,17 +465,17 @@
                       type="text"
                       id="search-bookmarks"
                       placeholder="Search bookmarks..."
-                      class="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg text-sm text-gray-700"
+                      class="w-full pl-10 pr-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg text-sm"
                     />
                   </div>
                 </div>
 
-                <div class="mb-4 p-3 bg-gray-50 rounded-lg">
+                <div class="mb-4 p-3 bg-gray-900 rounded-lg">
                   <input
                     type="text"
                     id="bookmark-title"
                     placeholder="Bookmark title..."
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg mb-2 text-sm text-gray-700"
+                    class="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg mb-2 text-sm"
                   />
                   <button
                     id="add-top-level-btn"
@@ -477,7 +491,7 @@
 
                 <div class="mb-4">
                   <label
-                    class="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2"
+                    class="flex items-center gap-2 text-sm font-medium text-gray-300 mb-2"
                   >
                     <input
                       type="checkbox"
@@ -492,23 +506,23 @@
 
                   <div
                     id="batch-operations"
-                    class="hidden p-3 bg-blue-50 rounded-lg border border-blue-200"
+                    class="hidden p-3 bg-gray-900 rounded-lg border border-gray-700"
                   >
-                    <div class="text-xs font-semibold text-gray-700 mb-2">
+                    <div class="text-xs font-semibold text-gray-300 mb-2">
                       Batch Operations
                     </div>
                     <div class="flex flex-col gap-2">
                       <div class="flex gap-2">
                         <button
                           id="select-all-btn"
-                          class="flex-1 px-3 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-xs flex items-center justify-center gap-1"
+                          class="flex-1 px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded text-xs flex items-center justify-center gap-1"
                         >
                           <i data-lucide="check-square" class="w-3 h-3"></i>
                           Select All
                         </button>
                         <button
                           id="deselect-all-btn"
-                          class="flex-1 px-3 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded text-xs flex items-center justify-center gap-1"
+                          class="flex-1 px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-xs flex items-center justify-center gap-1"
                         >
                           <i data-lucide="square" class="w-3 h-3"></i> Deselect
                           All
@@ -517,7 +531,7 @@
 
                       <select
                         id="batch-color-select"
-                        class="text-xs p-2 border rounded"
+                        class="text-xs p-2 bg-gray-700 border border-gray-600 text-white rounded"
                       >
                         <option value="">Set Color...</option>
                         <option value="null">None</option>
@@ -530,7 +544,7 @@
 
                       <select
                         id="batch-style-select"
-                        class="text-xs p-2 border rounded"
+                        class="text-xs p-2 bg-gray-700 border border-gray-600 text-white rounded"
                       >
                         <option value="">Set Style...</option>
                         <option value="null">Normal</option>
@@ -553,14 +567,14 @@
                 <div class="flex gap-2 mb-4">
                   <button
                     id="expand-all-btn"
-                    class="flex-1 px-3 py-2 bg-gradient-to-b from-gray-100 to-gray-200 hover:shadow-md text-gray-700 rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-300 transition duration-200"
+                    class="flex-1 px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-600 transition duration-200"
                   >
                     <i data-lucide="chevrons-down" class="w-4 h-4"></i> Expand
                     All
                   </button>
                   <button
                     id="collapse-all-btn"
-                    class="flex-1 px-3 py-2 bg-gradient-to-b from-gray-100 to-gray-200 hover:shadow-md text-gray-700 rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-300 transition duration-200"
+                    class="flex-1 px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-600 transition duration-200"
                   >
                     <i data-lucide="chevrons-up" class="w-4 h-4"></i> Collapse
                     All
@@ -571,32 +585,32 @@
                   <div class="relative">
                     <button
                       id="import-dropdown-btn"
-                      class="w-full px-3 py-2 bg-gradient-to-b from-gray-100 to-gray-200 hover:shadow-md text-gray-700 rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-300 transition duration-200"
+                      class="w-full px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-600 transition duration-200"
                     >
                       <i data-lucide="upload" class="w-4 h-4"></i> Import
                       <i data-lucide="chevron-down" class="w-3 h-3"></i>
                     </button>
                     <div
                       id="import-dropdown"
-                      class="hidden absolute top-full left-0 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-10"
+                      class="pkc-frost hidden absolute top-full left-0 mt-1 w-full bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-10"
                     >
                       <button
                         id="import-csv-btn"
-                        class="w-full px-3 py-2 text-sm text-left flex items-center gap-2 rounded-t-lg bg-gradient-to-b from-gray-50 to-gray-100 hover:shadow-sm hover:from-gray-100 hover:to-gray-200 transition duration-150"
+                        class="w-full px-3 py-2 text-sm text-left flex items-center gap-2 rounded-t-lg text-gray-200 hover:bg-gray-700 transition duration-150"
                       >
                         <i
                           data-lucide="file-text"
-                          class="w-4 h-4 text-gray-600"
+                          class="w-4 h-4 text-gray-400"
                         ></i>
                         Import CSV
                       </button>
                       <button
                         id="import-json-btn"
-                        class="w-full px-3 py-2 text-sm text-left flex items-center gap-2 rounded-b-lg bg-gradient-to-b from-gray-50 to-gray-100 hover:shadow-sm hover:from-gray-100 hover:to-gray-200 transition duration-150"
+                        class="w-full px-3 py-2 text-sm text-left flex items-center gap-2 rounded-b-lg text-gray-200 hover:bg-gray-700 transition duration-150"
                       >
                         <i
                           data-lucide="braces"
-                          class="w-4 h-4 text-gray-600"
+                          class="w-4 h-4 text-gray-400"
                         ></i>
                         Import JSON
                       </button>
@@ -606,25 +620,25 @@
                   <div class="relative">
                     <button
                       id="export-dropdown-btn"
-                      class="w-full px-3 py-2 bg-gradient-to-b from-gray-100 to-gray-200 hover:shadow-md text-gray-700 rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-300 transition duration-200"
+                      class="w-full px-3 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm font-medium flex items-center justify-center gap-1 focus:ring-2 focus:ring-gray-600 transition duration-200"
                     >
                       <i data-lucide="download" class="w-4 h-4"></i> Export
                       <i data-lucide="chevron-down" class="w-3 h-3"></i>
                     </button>
                     <div
                       id="export-dropdown"
-                      class="hidden absolute top-full left-0 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-10"
+                      class="pkc-frost hidden absolute top-full left-0 mt-1 w-full bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-10"
                     >
                       <button
                         id="export-csv-btn"
-                        class="w-full px-3 py-2 text-sm text-left hover:bg-gray-50 flex items-center gap-2 rounded-t-lg"
+                        class="w-full px-3 py-2 text-sm text-left text-gray-200 hover:bg-gray-700 flex items-center gap-2 rounded-t-lg"
                       >
                         <i data-lucide="file-text" class="w-4 h-4"></i> Export
                         CSV
                       </button>
                       <button
                         id="export-json-btn"
-                        class="w-full px-3 py-2 text-sm text-left hover:bg-gray-50 flex items-center gap-2 rounded-b-lg"
+                        class="w-full px-3 py-2 text-sm text-left text-gray-200 hover:bg-gray-700 flex items-center gap-2 rounded-b-lg"
                       >
                         <i data-lucide="braces" class="w-4 h-4"></i> Export JSON
                       </button>
@@ -633,7 +647,7 @@
                 </div>
 
                 <div
-                  class="mb-4 max-h-96 overflow-y-auto border border-gray-200 rounded-lg p-2"
+                  class="mb-4 max-h-96 overflow-y-auto border border-gray-700 rounded-lg p-2"
                 >
                   <ul id="bookmark-tree-list" class="space-y-2"></ul>
                   <div
@@ -653,7 +667,7 @@
                   </button>
                   <button
                     id="extract-existing-btn"
-                    class="w-full px-4 py-2 bg-gray-50 text-gray-800 border border-gray-200 rounded-xl font-medium flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition duration-200"
+                    class="w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white border border-gray-600 rounded-xl font-medium flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition duration-200"
                   >
                     Extract Existing Bookmarks
                   </button>

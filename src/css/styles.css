@@ -877,6 +877,17 @@ input[type='number']::-webkit-outer-spin-button {
   z-index: 4000;
 }
 
+/* PKC: PAPER IS WHITE IN EVERY THEME. pkc-theme.css remaps `white` to the strong
+   text colour, so that `text-white` headings turn dark in light mode — and with it
+   every `bg-white`, which upstream also uses for the page itself: Form Creator's
+   blank page came out dark brown in light mode, and PDF Multi Tool's thumbnails got
+   dark brown bars down both sides. A surface that stands for the PDF page takes this
+   class. Unlayered, so it beats the `bg-white` utility it sits beside (that class
+   stays where scripts select by it). */
+.pkc-paper {
+  background-color: #fff;
+}
+
 /* PKC: page content shell — same width as the top-pill nav (and the main site's
    .shell on /sir/jharkhand) so tool content lines up edge-to-edge with the pill
    instead of using Tailwind's `container` (index) or bleeding full-width (tool
