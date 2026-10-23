@@ -465,8 +465,8 @@
     "semantic_hash": "d04f81bee461d7bc380b7891178f6c52"
   },
   "src/js/logic/bookmark-pdf.ts": {
-    "mtime": 1788491497.9426777,
-    "ast_hash": "ac40e169834cf1a15e0298140cfed252",
+    "mtime": 1792771760.1148946,
+    "ast_hash": "a29f26980ec56cdafe9e91e65daec08d",
     "semantic_hash": ""
   },
   "src/js/logic/cbz-to-pdf-page.ts": {
@@ -630,8 +630,8 @@
     "semantic_hash": "b1ccf630bcf09a3c8347dd359cf63f06"
   },
   "src/js/logic/form-creator.ts": {
-    "mtime": 1788491497.9541914,
-    "ast_hash": "f09a7e59a74f62defeb3eb4f4c6be17a",
+    "mtime": 1792771529.9214268,
+    "ast_hash": "3f76ad7cb613501648159d7e2a42b5e7",
     "semantic_hash": ""
   },
   "src/js/logic/form-filler-page.ts": {
@@ -740,8 +740,8 @@
     "semantic_hash": "23400a324d8d33e07e45edac210c0ce8"
   },
   "src/js/logic/pdf-multi-tool.ts": {
-    "mtime": 1788491497.959192,
-    "ast_hash": "f679b65b664eb199c334f859e6d76cfc",
+    "mtime": 1792771760.431874,
+    "ast_hash": "ab4e901c056e5194c4906ec25081a4f9",
     "semantic_hash": ""
   },
   "src/js/logic/pdf-to-bmp-page.ts": {
@@ -3165,8 +3165,8 @@
     "semantic_hash": ""
   },
   "src/pages/bookmark.html": {
-    "mtime": 1792738744.1700046,
-    "ast_hash": "96908a7fd982f61e324bf1fee827ab09",
+    "mtime": 1792771742.8839028,
+    "ast_hash": "8470cce6369b8fffd7f4646f5f8fdaa7",
     "semantic_hash": ""
   },
   "src/pages/cbz-to-pdf.html": {
@@ -3300,8 +3300,8 @@
     "semantic_hash": ""
   },
   "src/pages/form-creator.html": {
-    "mtime": 1792738744.2543402,
-    "ast_hash": "c5a38896e53f4020f8760338aee377f6",
+    "mtime": 1792771742.9317815,
+    "ast_hash": "d605212db0bf8632f35387ba163f1990",
     "semantic_hash": ""
   },
   "src/pages/form-filler.html": {
@@ -3980,8 +3980,8 @@
     "semantic_hash": ""
   },
   "FORK-LOG.md": {
-    "mtime": 1792738743.15608,
-    "ast_hash": "21f13486546133c3898366cccb6073f0",
+    "mtime": 1792771725.4754107,
+    "ast_hash": "7ab8e10594192d728cece3fa06d22d38",
     "semantic_hash": ""
   },
   "docs/tools/duplex-collate.md": {
@@ -4797,6 +4797,11 @@
   "src/tests/nav-clearance.test.ts": {
     "mtime": 1792738744.3223884,
     "ast_hash": "78f0cc66c17ee4a296bc213c779a8c3f",
+    "semantic_hash": ""
+  },
+  "src/tests/theme-palette.test.ts": {
+    "mtime": 1792771367.1823566,
+    "ast_hash": "64fae30089fb32616465dfbb13b1afa2",
     "semantic_hash": ""
   }
 }

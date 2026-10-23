@@ -2841,9 +2841,9 @@
     "word_count": 585
   },
   "src/js/logic/bookmark-pdf.ts": {
-    "size": 75055,
-    "mtime_ns": 1788491497942677800,
-    "word_count": 6746
+    "size": 72870,
+    "mtime_ns": 1792771760114894600,
+    "word_count": 6770
   },
   "src/js/logic/cbz-to-pdf-page.ts": {
     "size": 12409,
@@ -3006,9 +3006,9 @@
     "word_count": 1000
   },
   "src/js/logic/form-creator.ts": {
-    "size": 115190,
-    "mtime_ns": 1788491497954191400,
-    "word_count": 9957
+    "size": 112315,
+    "mtime_ns": 1792771529921426800,
+    "word_count": 10005
   },
   "src/js/logic/form-filler-page.ts": {
     "size": 9973,
@@ -3116,9 +3116,9 @@
     "word_count": 1358
   },
   "src/js/logic/pdf-multi-tool.ts": {
-    "size": 48216,
-    "mtime_ns": 1788491497959192100,
-    "word_count": 4215
+    "size": 46666,
+    "mtime_ns": 1792771760431874100,
+    "word_count": 4217
   },
   "src/js/logic/pdf-to-bmp-page.ts": {
     "size": 6571,
@@ -4421,9 +4421,9 @@
     "word_count": 1281
   },
   "src/pages/bookmark.html": {
-    "size": 38335,
-    "mtime_ns": 1792738744170004500,
-    "word_count": 2458
+    "size": 38188,
+    "mtime_ns": 1792771742883902800,
+    "word_count": 2540
   },
   "src/pages/cbz-to-pdf.html": {
     "size": 16269,
@@ -4556,9 +4556,9 @@
     "word_count": 1388
   },
   "src/pages/form-creator.html": {
-    "size": 33604,
-    "mtime_ns": 1792738744254340100,
-    "word_count": 2240
+    "size": 32802,
+    "mtime_ns": 1792771742931781600,
+    "word_count": 2241
   },
   "src/pages/form-filler.html": {
     "size": 17366,
@@ -5226,11 +5226,11 @@
     }
   },
   "FORK-LOG.md": {
-    "size": 32671,
-    "mtime_ns": 1792738743156080000,
-    "word_count": 3903,
+    "size": 33922,
+    "mtime_ns": 1792771725475410800,
+    "word_count": 4158,
     "hashes": {
-      "fork-log.md": "c2eda7f2b5e48db7b4357ab5ab4f99e5541960449dced2fb1893e4ba7b761931"
+      "fork-log.md": "2962b643d40f694e5b8aefddb6bfa5a7fd35e3fbac8eb43620f60a5b1e087441"
     }
   },
   "docs/public/images/pkc-icon-192.png": {
@@ -5644,5 +5644,10 @@
     "size": 5127,
     "mtime_ns": 1792738744322388300,
     "word_count": 565
+  },
+  "src/tests/theme-palette.test.ts": {
+    "size": 2267,
+    "mtime_ns": 1792771367182356600,
+    "word_count": 278
   }
 }
