@@ -2841,8 +2841,8 @@
     "word_count": 585
   },
   "src/js/logic/bookmark-pdf.ts": {
-    "size": 72870,
-    "mtime_ns": 1792771760114894600,
+    "size": 75223,
+    "mtime_ns": 1792777391519446700,
     "word_count": 6770
   },
   "src/js/logic/cbz-to-pdf-page.ts": {
@@ -3006,8 +3006,8 @@
     "word_count": 1000
   },
   "src/js/logic/form-creator.ts": {
-    "size": 112315,
-    "mtime_ns": 1792771529921426800,
+    "size": 115490,
+    "mtime_ns": 1792777391519446700,
     "word_count": 10005
   },
   "src/js/logic/form-filler-page.ts": {
@@ -3116,8 +3116,8 @@
     "word_count": 1358
   },
   "src/js/logic/pdf-multi-tool.ts": {
-    "size": 46666,
-    "mtime_ns": 1792771760431874100,
+    "size": 48236,
+    "mtime_ns": 1792777391521453700,
     "word_count": 4217
   },
   "src/js/logic/pdf-to-bmp-page.ts": {
@@ -3381,9 +3381,9 @@
     "word_count": 596
   },
   "src/js/main.ts": {
-    "size": 40617,
-    "mtime_ns": 1792738744120138800,
-    "word_count": 3142
+    "size": 39563,
+    "mtime_ns": 1792882955450479200,
+    "word_count": 3166
   },
   "src/js/mobileMenu.ts": {
     "size": 1940,
@@ -4421,8 +4421,8 @@
     "word_count": 1281
   },
   "src/pages/bookmark.html": {
-    "size": 38188,
-    "mtime_ns": 1792771742883902800,
+    "size": 39129,
+    "mtime_ns": 1792777391521453700,
     "word_count": 2540
   },
   "src/pages/cbz-to-pdf.html": {
@@ -4556,8 +4556,8 @@
     "word_count": 1388
   },
   "src/pages/form-creator.html": {
-    "size": 32802,
-    "mtime_ns": 1792771742931781600,
+    "size": 33614,
+    "mtime_ns": 1792777391523459800,
     "word_count": 2241
   },
   "src/pages/form-filler.html": {
@@ -5226,11 +5226,11 @@
     }
   },
   "FORK-LOG.md": {
-    "size": 33922,
-    "mtime_ns": 1792771725475410800,
+    "size": 34382,
+    "mtime_ns": 1792777391283263900,
     "word_count": 4158,
     "hashes": {
-      "fork-log.md": "2962b643d40f694e5b8aefddb6bfa5a7fd35e3fbac8eb43620f60a5b1e087441"
+      "fork-log.md": "2203746226714d0ab5bdcb58ee2334700d282ebd9a82be2f1b0411bc0ae3a5ac"
     }
   },
   "docs/public/images/pkc-icon-192.png": {
@@ -5646,8 +5646,51 @@
     "word_count": 565
   },
   "src/tests/theme-palette.test.ts": {
-    "size": 2267,
-    "mtime_ns": 1792771367182356600,
+    "size": 2322,
+    "mtime_ns": 1792777391523459800,
     "word_count": 278
+  },
+  "scripts/pkc/gen-tool-inputs.mjs": {
+    "size": 1797,
+    "mtime_ns": 1792882955218584300,
+    "word_count": 235
+  },
+  "src/js/config/tool-inputs.json": {
+    "size": 5014,
+    "mtime_ns": 1792882412839586200,
+    "word_count": 229,
+    "hashes": {
+      "src/js/config/tool-inputs.json": "a472a3432ff23010d81a5944bf4c48ff99ef2306239163d23966d87481bf13dd"
+    }
+  },
+  "src/js/utils/tool-search.ts": {
+    "size": 2290,
+    "mtime_ns": 1792882453919156600,
+    "word_count": 376
+  },
+  "src/js/utils/tool-suggest.ts": {
+    "size": 4939,
+    "mtime_ns": 1792882955497609400,
+    "word_count": 653
+  },
+  "src/js/wrong-file.ts": {
+    "size": 8704,
+    "mtime_ns": 1792882752828903800,
+    "word_count": 1067
+  },
+  "src/tests/tool-search.test.ts": {
+    "size": 2438,
+    "mtime_ns": 1792882955538106000,
+    "word_count": 290
+  },
+  "src/tests/tool-suggest.test.ts": {
+    "size": 5932,
+    "mtime_ns": 1792882955566644800,
+    "word_count": 615
+  },
+  "src/tests/wrong-file.test.ts": {
+    "size": 3507,
+    "mtime_ns": 1792882955582504700,
+    "word_count": 353
   }
 }

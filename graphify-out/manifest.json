@@ -465,8 +465,8 @@
     "semantic_hash": "d04f81bee461d7bc380b7891178f6c52"
   },
   "src/js/logic/bookmark-pdf.ts": {
-    "mtime": 1792771760.1148946,
-    "ast_hash": "a29f26980ec56cdafe9e91e65daec08d",
+    "mtime": 1792777391.5194466,
+    "ast_hash": "e65277dbc12fd2d2f10f6952deccdca1",
     "semantic_hash": ""
   },
   "src/js/logic/cbz-to-pdf-page.ts": {
@@ -630,8 +630,8 @@
     "semantic_hash": "b1ccf630bcf09a3c8347dd359cf63f06"
   },
   "src/js/logic/form-creator.ts": {
-    "mtime": 1792771529.9214268,
-    "ast_hash": "3f76ad7cb613501648159d7e2a42b5e7",
+    "mtime": 1792777391.5194466,
+    "ast_hash": "c8697d460df7ba4469121866398c4649",
     "semantic_hash": ""
   },
   "src/js/logic/form-filler-page.ts": {
@@ -740,8 +740,8 @@
     "semantic_hash": "23400a324d8d33e07e45edac210c0ce8"
   },
   "src/js/logic/pdf-multi-tool.ts": {
-    "mtime": 1792771760.431874,
-    "ast_hash": "ab4e901c056e5194c4906ec25081a4f9",
+    "mtime": 1792777391.5214536,
+    "ast_hash": "b2ed8ad271cae1d2d9d19de3f9136e1e",
     "semantic_hash": ""
   },
   "src/js/logic/pdf-to-bmp-page.ts": {
@@ -1005,8 +1005,8 @@
     "semantic_hash": "5e0b5c11afa75b60283c4cba99dbdb7c"
   },
   "src/js/main.ts": {
-    "mtime": 1792738744.120139,
-    "ast_hash": "c2970020b9623cdaccfb357183fc43fa",
+    "mtime": 1792882955.4504793,
+    "ast_hash": "18ae6cac06c5f18ada3d41b8c9996d0a",
     "semantic_hash": ""
   },
   "src/js/mobileMenu.ts": {
@@ -3165,8 +3165,8 @@
     "semantic_hash": ""
   },
   "src/pages/bookmark.html": {
-    "mtime": 1792771742.8839028,
-    "ast_hash": "8470cce6369b8fffd7f4646f5f8fdaa7",
+    "mtime": 1792777391.5214536,
+    "ast_hash": "c094c5379084e8d8f7e8b56b732a6ce6",
     "semantic_hash": ""
   },
   "src/pages/cbz-to-pdf.html": {
@@ -3300,8 +3300,8 @@
     "semantic_hash": ""
   },
   "src/pages/form-creator.html": {
-    "mtime": 1792771742.9317815,
-    "ast_hash": "d605212db0bf8632f35387ba163f1990",
+    "mtime": 1792777391.52346,
+    "ast_hash": "2d9d00d9081b66b12e18a7d0ef9cf15d",
     "semantic_hash": ""
   },
   "src/pages/form-filler.html": {
@@ -3980,8 +3980,8 @@
     "semantic_hash": ""
   },
   "FORK-LOG.md": {
-    "mtime": 1792771725.4754107,
-    "ast_hash": "7ab8e10594192d728cece3fa06d22d38",
+    "mtime": 1792777391.283264,
+    "ast_hash": "d2a85a86be4a4441c17cd50ce71211e3",
     "semantic_hash": ""
   },
   "docs/tools/duplex-collate.md": {
@@ -4800,8 +4800,48 @@
     "semantic_hash": ""
   },
   "src/tests/theme-palette.test.ts": {
-    "mtime": 1792771367.1823566,
-    "ast_hash": "64fae30089fb32616465dfbb13b1afa2",
+    "mtime": 1792777391.52346,
+    "ast_hash": "a9e428745365f740f898effdc859ece4",
+    "semantic_hash": ""
+  },
+  "scripts/pkc/gen-tool-inputs.mjs": {
+    "mtime": 1792882955.2185843,
+    "ast_hash": "24fe064eac6edf88bcd527673989139b",
+    "semantic_hash": ""
+  },
+  "src/js/config/tool-inputs.json": {
+    "mtime": 1792882412.8395863,
+    "ast_hash": "5b99ac2cd21a714ed9a9fa35694bf4fb",
+    "semantic_hash": ""
+  },
+  "src/js/utils/tool-search.ts": {
+    "mtime": 1792882453.9191566,
+    "ast_hash": "df78716d0ae2ab10b8cda3d2b6282b04",
+    "semantic_hash": ""
+  },
+  "src/js/utils/tool-suggest.ts": {
+    "mtime": 1792882955.4976094,
+    "ast_hash": "4927844702bb065cefd4301cdc6e96a6",
+    "semantic_hash": ""
+  },
+  "src/js/wrong-file.ts": {
+    "mtime": 1792882752.828904,
+    "ast_hash": "46530b8f5333b8101b6c5060204e0a35",
+    "semantic_hash": ""
+  },
+  "src/tests/tool-search.test.ts": {
+    "mtime": 1792882955.538106,
+    "ast_hash": "d67890a09d19764153705fd631eecaea",
+    "semantic_hash": ""
+  },
+  "src/tests/tool-suggest.test.ts": {
+    "mtime": 1792882955.566645,
+    "ast_hash": "263b8739c6cbb49fb5a2d51dcb4d6461",
+    "semantic_hash": ""
+  },
+  "src/tests/wrong-file.test.ts": {
+    "mtime": 1792882955.5825047,
+    "ast_hash": "5286d359482d4b62a7cf9c86057a8f2c",
     "semantic_hash": ""
   }
 }
