@@ -4,6 +4,8 @@ import './utils/pkc-tool-analytics.js'; // privacy-safe tool-usage logging (side
 import './pwa-nav.js'; // trims the top-pill nav to in-scope links when installed as a PWA
 import './nav-yield.js'; // the sticky top pill moves out of a tool workspace's way
 import './utils/internet-required.js'; // Office→PDF needs the network; say so offline
+import './wrong-file.js'; // a file this tool cannot take is pointed at the tool that can
+import { rankTools } from './utils/tool-search.js';
 import { dom, switchView, hideAlert } from './ui.js';
 import { ShortcutsManager } from './logic/shortcuts.js';
 import { createIcons, icons } from 'lucide';
@@ -400,40 +402,32 @@ const init = async () => {
       searchResultsContainer.innerHTML = '';
       searchResultsContainer.classList.remove('hidden');
 
+      // Each tool once (Popular Tools repeats some), in catalogue order; the
+      // ranking then puts the best names first (see utils/tool-search.ts).
       const seenToolIds = new Set<string>();
-      const allTools: HTMLElement[] = [];
+      const uniqueCards: Element[] = [];
 
       categoryGroups.forEach((group) => {
-        const toolCards = Array.from(group.querySelectorAll('.tool-card'));
-
-        toolCards.forEach((card) => {
-          const toolName = (
-            card.querySelector('h3')?.textContent || ''
-          ).toLowerCase();
-          const toolSubtitle = (
-            card.querySelector('p')?.textContent || ''
-          ).toLowerCase();
+        group.querySelectorAll('.tool-card').forEach((card) => {
           const toolHref =
             (card as HTMLAnchorElement).href ||
             (card as HTMLElement).dataset.toolId ||
             '';
-
           const toolId =
-            toolHref.split('/').pop()?.replace('.html', '') || toolName;
-
-          const isMatch =
-            toolName.includes(searchTerm) || toolSubtitle.includes(searchTerm);
-          const isDuplicate = seenToolIds.has(toolId);
-
-          if (isMatch && !isDuplicate) {
-            seenToolIds.add(toolId);
-            allTools.push(card.cloneNode(true) as HTMLElement);
-          }
+            toolHref.split('/').pop()?.replace('.html', '') ||
+            card.querySelector('h3')?.textContent ||
+            '';
+          if (seenToolIds.has(toolId)) return;
+          seenToolIds.add(toolId);
+          uniqueCards.push(card);
         });
       });
 
-      allTools.forEach((tool) => {
-        searchResultsContainer.appendChild(tool);
+      rankTools(uniqueCards, searchTerm, (card) => ({
+        name: card.querySelector('h3')?.textContent || '',
+        subtitle: card.querySelector('p')?.textContent || '',
+      })).forEach((card) => {
+        searchResultsContainer.appendChild(card.cloneNode(true));
       });
 
       createIcons({ icons });
